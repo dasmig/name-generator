@@ -1,11 +1,38 @@
 #include "../dasmig/namegen.hpp"
 #include <iostream>
 
-
 int main()
 {
-    std::wcout << dasmig::ng::instance().get_name().append_surname()
-               << std::endl;
+    auto& gen = dasmig::ng::instance();
+
+    // Random name + surname (any gender, any culture).
+    std::wcout << L"Random:     " << gen.get_name().append_surname() << L"\n";
+
+    // French female name + surname.
+    std::wcout << L"French (F): "
+               << gen.get_name(dasmig::gender::f, dasmig::culture::french)
+                      .append_surname()
+               << L"\n";
+
+    // American male name + middle name + surname.
+    std::wcout << L"American:   "
+               << gen.get_name(dasmig::gender::m, dasmig::culture::american)
+                      .append_name()
+                      .append_surname()
+               << L"\n";
+
+    // Deterministic generation — same seed always gives the same name.
+    constexpr std::uint64_t seed = 42;
+    auto seeded = gen.get_name(dasmig::gender::m, dasmig::culture::german, seed);
+    std::wcout << L"Seeded:     " << seeded << L"  (seed=" << seeded.seed()
+               << L")\n";
+
+    // Independent instance with its own databases and engine.
+    dasmig::ng my_gen;
+    my_gen.load("resources");
+    my_gen.seed(100);
+    std::wcout << L"Instance:   " << my_gen.get_name().append_surname()
+               << L"\n";
 
     return 0;
 }

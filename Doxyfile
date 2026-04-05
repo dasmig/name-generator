@@ -1,0 +1,64 @@
+# Doxyfile for Name Generator
+# Run: doxygen Doxyfile
+
+PROJECT_NAME           = "Name Generator"
+PROJECT_NUMBER         = 1.0.0
+PROJECT_BRIEF          = "Culture-aware name generation for C++23"
+PROJECT_LOGO           =
+
+OUTPUT_DIRECTORY       = doc/api
+CREATE_SUBDIRS         = NO
+
+# --- Input ----------------------------------------------------------------
+
+INPUT                  = dasmig/ doc/usage.md README.md
+FILE_PATTERNS          = *.hpp
+RECURSIVE              = YES
+USE_MDFILE_AS_MAINPAGE = README.md
+
+# --- Extraction -----------------------------------------------------------
+
+EXTRACT_ALL            = NO
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+
+# --- Source browsing -------------------------------------------------------
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+STRIP_CODE_COMMENTS    = NO
+
+# --- Build ----------------------------------------------------------------
+
+BUILTIN_STL_SUPPORT    = YES
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+PREDEFINED             =
+
+# Exclude vendored random.hpp.
+EXCLUDE                = dasmig/random.hpp
+
+# --- Warnings -------------------------------------------------------------
+
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = NO
+
+# --- Output formats --------------------------------------------------------
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_EXTRA_STYLESHEET  = doc/doxygen-awesome-css/doxygen-awesome.css
+HTML_COLORSTYLE        = LIGHT
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = NO
+TOC_INCLUDE_HEADINGS   = 3
+
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_XML           = NO
+
+# --- Graphs ----------------------------------------------------------------
+
+HAVE_DOT               = NO
