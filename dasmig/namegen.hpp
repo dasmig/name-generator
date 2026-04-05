@@ -473,27 +473,124 @@ class ng
                 resolved_gender, resolved_culture, this};
     }
 
+    /// @brief Decode a UTF-8 byte string into a wide string.
+    ///
+    /// Handles 1–4 byte sequences and produces UTF-32 on Linux
+    /// (wchar_t is 4 bytes) or UTF-16 surrogate pairs on Windows
+    /// (wchar_t is 2 bytes). Invalid lead bytes are silently skipped.
+    // NOLINTNEXTLINE(readability-function-cognitive-complexity)
+    static std::wstring utf8_to_wstring(const std::string& utf8)
+    {
+        // UTF-8 prefix masks and value masks for each sequence length.
+        static constexpr unsigned char ascii_max       = 0x80U;
+        static constexpr unsigned char two_byte_mask   = 0xE0U;
+        static constexpr unsigned char two_byte_lead   = 0xC0U;
+        static constexpr unsigned char two_byte_val    = 0x1FU;
+        static constexpr unsigned char three_byte_mask = 0xF0U;
+        static constexpr unsigned char three_byte_lead = 0xE0U;
+        static constexpr unsigned char three_byte_val  = 0x0FU;
+        static constexpr unsigned char four_byte_mask  = 0xF8U;
+        static constexpr unsigned char four_byte_lead  = 0xF0U;
+        static constexpr unsigned char four_byte_val   = 0x07U;
+        static constexpr unsigned char cont_val        = 0x3FU;
+        static constexpr unsigned cont_shift           = 6U;
+        // Surrogate-pair constants (UTF-16, wchar_t == 2 bytes only).
+        static constexpr char32_t surrogate_offset     = 0x10000U;
+        static constexpr char32_t high_surrogate_base  = 0xD800U;
+        static constexpr char32_t low_surrogate_base   = 0xDC00U;
+        static constexpr unsigned surrogate_shift      = 10U;
+        static constexpr char32_t surrogate_mask       = 0x3FFU;
+
+        std::wstring result;
+        result.reserve(utf8.size());
+        std::size_t i = 0;
+
+        while (i < utf8.size())
+        {
+            char32_t codepoint = 0;
+            auto lead = static_cast<unsigned char>(utf8.at(i));
+            std::size_t extra = 0;
+
+            if (lead < ascii_max)
+            {
+                codepoint = lead;
+            }
+            else if ((lead & two_byte_mask) == two_byte_lead)
+            {
+                codepoint = lead & two_byte_val;
+                extra = 1;
+            }
+            else if ((lead & three_byte_mask) == three_byte_lead)
+            {
+                codepoint = lead & three_byte_val;
+                extra = 2;
+            }
+            else if ((lead & four_byte_mask) == four_byte_lead)
+            {
+                codepoint = lead & four_byte_val;
+                extra = 3;
+            }
+            else
+            {
+                ++i;
+                continue; // skip invalid lead byte
+            }
+
+            ++i;
+            for (std::size_t j = 0; j < extra && i < utf8.size(); ++j, ++i)
+            {
+                auto continuation = static_cast<char32_t>(
+                    static_cast<unsigned char>(utf8.at(i)));
+                codepoint = (codepoint << cont_shift) |
+                            (continuation & static_cast<char32_t>(cont_val));
+            }
+
+            if constexpr (sizeof(wchar_t) >= 4)
+            {
+                result.push_back(static_cast<wchar_t>(codepoint));
+            }
+            else
+            {
+                if (codepoint < surrogate_offset)
+                {
+                    result.push_back(static_cast<wchar_t>(codepoint));
+                }
+                else
+                {
+                    const char32_t shifted = codepoint - surrogate_offset;
+                    result.push_back(static_cast<wchar_t>(
+                        high_surrogate_base + (shifted >> surrogate_shift)));
+                    result.push_back(static_cast<wchar_t>(
+                        low_surrogate_base + (shifted & surrogate_mask)));
+                }
+            }
+        }
+        return result;
+    }
+
     // Parse a .names file and index it into the appropriate map.
+    // Uses std::ifstream (byte-oriented) + utf8_to_wstring so that
+    // non-ASCII names load correctly regardless of the system locale.
     // NOLINTNEXTLINE(readability-function-cognitive-complexity)
     void parse_file(const std::filesystem::path& file)
     {
-        std::wifstream tentative_file{file};
+        std::ifstream tentative_file{file};
 
         if (tentative_file.is_open())
         {
-            const wchar_t delimiter{'\n'};
-            std::wstring file_line;
+            std::string raw_line;
 
             // Read culture from the first line.
-            if (!std::getline(tentative_file, file_line, delimiter))
+            if (!std::getline(tentative_file, raw_line))
             {
                 return;
             }
-            if (!file_line.empty() && file_line.back() == L'\r')
+            if (!raw_line.empty() && raw_line.back() == '\r')
             {
-                file_line.pop_back();
+                raw_line.pop_back();
             }
-            const culture culture_read = to_culture(file_line);
+            const culture culture_read =
+                to_culture(utf8_to_wstring(raw_line));
 
             // We can't continue without a valid culture.
             if (culture_read == culture::any)
@@ -502,27 +599,27 @@ class ng
             }
 
             // Read gender from the second line.
-            if (!std::getline(tentative_file, file_line, delimiter))
+            if (!std::getline(tentative_file, raw_line))
             {
                 return;
             }
-            if (!file_line.empty() && file_line.back() == L'\r')
+            if (!raw_line.empty() && raw_line.back() == '\r')
             {
-                file_line.pop_back();
+                raw_line.pop_back();
             }
-            const gender gender_read = to_gender(file_line);
+            const gender gender_read = to_gender(utf8_to_wstring(raw_line));
 
             // Read all remaining lines as names.
             name_container names_read;
-            while (std::getline(tentative_file, file_line, delimiter))
+            while (std::getline(tentative_file, raw_line))
             {
-                if (!file_line.empty() && file_line.back() == L'\r')
+                if (!raw_line.empty() && raw_line.back() == '\r')
                 {
-                    file_line.pop_back();
+                    raw_line.pop_back();
                 }
-                if (!file_line.empty())
+                if (!raw_line.empty())
                 {
-                    names_read.push_back(std::move(file_line));
+                    names_read.push_back(utf8_to_wstring(raw_line));
                 }
             }
 
