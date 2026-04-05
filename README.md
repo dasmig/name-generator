@@ -2,7 +2,7 @@
 
 > **Requires C++23** (e.g., `-std=c++23` for GCC/Clang, `/std:c++latest` for MSVC).
 
-[![Name Generator for C++](https://raw.githubusercontent.com/dasmig/name-generator/master/doc/name-generator.gif)](https://github.com/dasmig/name-generator/releases)
+[![Name Generator for C++](https://raw.githubusercontent.com/dasmig/name-generator/master/doc/name-generator.png)](https://github.com/dasmig/name-generator/releases)
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/dasmig/name-generator/master/LICENSE.MIT)
 [![CI](https://github.com/dasmig/name-generator/actions/workflows/ci.yml/badge.svg)](https://github.com/dasmig/name-generator/actions/workflows/ci.yml)

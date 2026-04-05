@@ -1,7 +1,8 @@
 #include "../dasmig/namegen.hpp"
+#include <cstdint>
 #include <iostream>
 
-int main()
+int main() // NOLINT(bugprone-exception-escape)
 {
     auto& gen = dasmig::ng::instance();
 
@@ -28,9 +29,10 @@ int main()
                << L")\n";
 
     // Independent instance with its own databases and engine.
+    constexpr std::uint64_t instance_seed = 100;
     dasmig::ng my_gen;
     my_gen.load("resources");
-    my_gen.seed(100);
+    my_gen.seed(instance_seed);
     std::wcout << L"Instance:   " << my_gen.get_name().append_surname()
                << L"\n";
 

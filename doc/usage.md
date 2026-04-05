@@ -52,6 +52,8 @@ The singleton `ng::instance()` auto-probes `resources/`, `../resources/`, and `n
 dasmig::ng::instance().load("/custom/path/to/resources");
 ```
 
+> **Note:** `load()` silently does nothing if the path does not exist or is not a directory. Always use `has_resources()` to verify that databases were actually loaded.
+
 Check whether resources loaded successfully:
 
 ```cpp
@@ -208,3 +210,5 @@ dasmig::ng dst = std::move(src);
 | Exception | Thrown by | Condition |
 |-----------|-----------|----------|
 | `std::invalid_argument` | `get_name()` / `get_surname()` | No names loaded for the resolved culture/gender |
+
+> **Note:** `load()` does **not** throw if the path is missing — it silently returns. Use `has_resources()` to check.
