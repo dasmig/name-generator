@@ -26,6 +26,10 @@ struct ng_test_access
     {
         return g._culture_indexed_surnames;
     }
+    static std::wstring utf8_to_wstring(const std::string& s)
+    {
+        return dasmig::ng::utf8_to_wstring(s);
+    }
 };
 
 // ---------------------------------------------------------------------------
@@ -636,6 +640,23 @@ TEST_CASE("get_name on empty instance throws", "[ng][error]")
                       std::invalid_argument);
 }
 
+TEST_CASE("get_name error message includes culture and gender", "[ng][error]")
+{
+    dasmig::ng empty;
+    try
+    {
+        static_cast<void>(
+            empty.get_name(dasmig::gender::m, dasmig::culture::american));
+        FAIL("expected std::invalid_argument");
+    }
+    catch (const std::invalid_argument& ex)
+    {
+        std::string msg = ex.what();
+        REQUIRE(msg.find("male") != std::string::npos);
+        REQUIRE(msg.find("american") != std::string::npos);
+    }
+}
+
 TEST_CASE("get_surname on empty instance throws", "[ng][error]")
 {
     dasmig::ng empty;
@@ -643,11 +664,112 @@ TEST_CASE("get_surname on empty instance throws", "[ng][error]")
                       std::invalid_argument);
 }
 
+TEST_CASE("get_surname error message includes culture", "[ng][error]")
+{
+    dasmig::ng empty;
+    try
+    {
+        static_cast<void>(
+            empty.get_surname(dasmig::culture::american));
+        FAIL("expected std::invalid_argument");
+    }
+    catch (const std::invalid_argument& ex)
+    {
+        std::string msg = ex.what();
+        REQUIRE(msg.find("american") != std::string::npos);
+    }
+}
+
 TEST_CASE("load with non-existent path is a no-op", "[ng][error]")
 {
     dasmig::ng g;
     g.load("this_path_does_not_exist_at_all");
     REQUIRE_FALSE(g.has_resources());
+}
+
+// ===========================================================================
+// UTF-8 decoder
+// ===========================================================================
+TEST_CASE("utf8_to_wstring decodes ASCII", "[ng][utf8]")
+{
+    REQUIRE(ng_test_access::utf8_to_wstring("Hello") == L"Hello");
+    REQUIRE(ng_test_access::utf8_to_wstring("") == L"");
+}
+
+TEST_CASE("utf8_to_wstring decodes 2-byte sequences", "[ng][utf8]")
+{
+    // "ü" = U+00FC = 0xC3 0xBC
+    std::string input{'\xC3', '\xBC'};
+    REQUIRE(ng_test_access::utf8_to_wstring(input) == L"\u00FC");
+}
+
+TEST_CASE("utf8_to_wstring decodes 3-byte sequences", "[ng][utf8]")
+{
+    // "€" = U+20AC = 0xE2 0x82 0xAC
+    std::string input{'\xE2', '\x82', '\xAC'};
+    REQUIRE(ng_test_access::utf8_to_wstring(input) == L"\u20AC");
+}
+
+TEST_CASE("utf8_to_wstring decodes 4-byte sequences", "[ng][utf8]")
+{
+    // U+1F600 (grinning face) = 0xF0 0x9F 0x98 0x80
+    std::string input{'\xF0', '\x9F', '\x98', '\x80'};
+    auto result = ng_test_access::utf8_to_wstring(input);
+    REQUIRE_FALSE(result.empty());
+    // Verify round-trip: on 4-byte wchar_t (Linux) it's one char,
+    // on 2-byte wchar_t (Windows) it's a surrogate pair of 2 chars.
+    if constexpr (sizeof(wchar_t) >= 4)
+    {
+        REQUIRE(result.size() == 1);
+        REQUIRE(static_cast<char32_t>(result[0]) == 0x1F600U);
+    }
+    else
+    {
+        REQUIRE(result.size() == 2);
+    }
+}
+
+TEST_CASE("utf8_to_wstring skips invalid lead bytes", "[ng][utf8]")
+{
+    // 0xFF is never valid UTF-8; surrounding ASCII should survive.
+    std::string input{'A', '\xFF', 'B'};
+    REQUIRE(ng_test_access::utf8_to_wstring(input) == L"AB");
+}
+
+TEST_CASE("utf8_to_wstring handles truncated sequence", "[ng][utf8]")
+{
+    // 0xC3 expects one continuation byte but string ends.
+    std::string input{'\xC3'};
+    REQUIRE(ng_test_access::utf8_to_wstring(input) == L"");
+}
+
+TEST_CASE("utf8_to_wstring rejects invalid continuation byte", "[ng][utf8]")
+{
+    // 0xC3 expects continuation (10xxxxxx) but gets 0x41 ('A').
+    std::string input{'\xC3', 'A', 'B'};
+    auto result = ng_test_access::utf8_to_wstring(input);
+    // The malformed 2-byte sequence is skipped; 'A' is consumed as
+    // continuation so only 'B' survives.
+    REQUIRE(result.find(L'B') != std::wstring::npos);
+}
+
+TEST_CASE("utf8_to_wstring rejects overlong codepoint > U+10FFFF",
+          "[ng][utf8]")
+{
+    // Fabricate a 4-byte sequence that decodes to U+110000 (invalid).
+    // F4 90 80 80 = U+110000
+    std::string input{'\xF4', '\x90', '\x80', '\x80'};
+    REQUIRE(ng_test_access::utf8_to_wstring(input) == L"");
+}
+
+TEST_CASE("utf8_to_wstring decodes real name Müller", "[ng][utf8]")
+{
+    REQUIRE(ng_test_access::utf8_to_wstring("M\xC3\xBCller") == L"M\u00FCller");
+}
+
+TEST_CASE("utf8_to_wstring decodes real name João", "[ng][utf8]")
+{
+    REQUIRE(ng_test_access::utf8_to_wstring("Jo\xC3\xA3o") == L"Jo\u00E3o");
 }
 
 // ===========================================================================

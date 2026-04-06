@@ -138,6 +138,25 @@ local static for safe initialization.
 
 For concurrent generation, give each thread its own `ng` instance.
 
+### Lifetime Safety
+
+A `name` object holds a back-pointer to the `ng` instance that created it.
+Calling `append_name()` or `append_surname()` on a `name` whose `ng` instance
+has been destroyed is **undefined behavior**. Keep the generator alive for as
+long as you need to chain appends:
+
+```cpp
+dasmig::ng gen;
+gen.load("resources");
+
+auto n = gen.get_name();
+// gen must remain alive while we append:
+n.append_surname();
+
+// After this point the name is self-contained — gen can be destroyed.
+std::wstring result = n;
+```
+
 ## Seeding and Deterministic Generation
 
 ### Per-call seeding

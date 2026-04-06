@@ -2,6 +2,8 @@
 #define DASMIG_NAMEGEN_HPP
 
 #include "random.hpp"
+#include <algorithm>
+#include <array>
 #include <cstddef>
 #include <cstdint>
 #include <filesystem>
@@ -360,15 +362,16 @@ class ng
     // Singleton constructor: auto-probes common resource locations.
     explicit ng(auto_probe_tag /*tag*/)
     {
-        for (const auto& candidate : {"resources", "../resources",
-                                       "name-generator/resources"})
+        static constexpr std::array probe_paths = {
+            "resources", "../resources", "name-generator/resources"};
+
+        auto found = std::ranges::find_if(probe_paths, [](const char* p) {
+            return std::filesystem::exists(p) &&
+                   std::filesystem::is_directory(p);
+        });
+        if (found != probe_paths.end())
         {
-            const std::filesystem::path p{candidate};
-            if (std::filesystem::exists(p) && std::filesystem::is_directory(p))
-            {
-                load(p);
-                break;
-            }
+            load(*found);
         }
     }
 
@@ -395,17 +398,47 @@ class ng
         return g;
     }
 
+    // Convert a culture enum to its display name for error messages.
+    [[nodiscard]] static const char* culture_label(culture c)
+    {
+        static constexpr std::array labels = {
+            "american",    "argentinian", "australian",
+            "brazilian",   "british",     "bulgarian",
+            "canadian",    "chinese",     "danish",
+            "finnish",     "french",      "german",
+            "kazakh",      "mexican",     "norwegian",
+            "polish",      "portuguese",  "russian",
+            "spanish",     "swedish",     "turkish",
+            "ukrainian",   "any"};
+        auto idx = static_cast<std::size_t>(c);
+        if (idx < labels.size()) { return labels.at(idx); }
+        return "unknown";
+    }
+
+    // Convert a gender enum to its display name for error messages.
+    [[nodiscard]] static const char* gender_label(gender g)
+    {
+        switch (g)
+        {
+        case gender::m:   return "male";
+        case gender::f:   return "female";
+        case gender::any: return "any";
+        }
+        return "unknown";
+    }
+
     // Pick a random name/surname from the appropriate map.
     [[nodiscard]] static std::wstring pick(
         const std::map<culture, name_container>& db,
-        culture c, effolkronium::random_local& engine)
+        culture c, gender g, effolkronium::random_local& engine)
     {
         if (auto it = db.find(c); it != db.end() && !it->second.empty())
         {
             return *engine.get(it->second);
         }
         throw std::invalid_argument(
-            "No names loaded for the requested culture");
+            std::string("No ") + gender_label(g) +
+            " names loaded for culture '" + culture_label(c) + "'");
     }
 
     /// @brief Number of bits to shift when XOR-folding a 64-bit seed to 32.
@@ -426,7 +459,8 @@ class ng
                              ? _culture_indexed_f_names
                              : _culture_indexed_m_names;
 
-        const std::wstring part = pick(db, resolved_c, call_engine);
+        const std::wstring part = pick(db, resolved_c, resolved_g,
+                                       call_engine);
         n._parts.push_back(part);
         n._full_string.append(L" ").append(part);
     }
@@ -441,7 +475,7 @@ class ng
 
         const culture resolved_c = resolve_culture(c, call_engine);
         const std::wstring part = pick(_culture_indexed_surnames, resolved_c,
-                                       call_engine);
+                                       gender::any, call_engine);
         n._parts.push_back(part);
         n._full_string.append(L" ").append(part);
     }
@@ -465,11 +499,12 @@ class ng
             const auto& db = (resolved_gender == gender::f)
                                  ? _culture_indexed_f_names
                                  : _culture_indexed_m_names;
-            return {pick(db, resolved_culture, call_engine),
+            return {pick(db, resolved_culture, resolved_gender, call_engine),
                     resolved_gender, resolved_culture, this};
         }
 
-        return {pick(_culture_indexed_surnames, resolved_culture, call_engine),
+        return {pick(_culture_indexed_surnames, resolved_culture,
+                     gender::any, call_engine),
                 resolved_gender, resolved_culture, this};
     }
 
@@ -493,7 +528,10 @@ class ng
         static constexpr unsigned char four_byte_lead  = 0xF0U;
         static constexpr unsigned char four_byte_val   = 0x07U;
         static constexpr unsigned char cont_val        = 0x3FU;
+        static constexpr unsigned char cont_check_mask  = 0xC0U;
+        static constexpr unsigned char cont_check_lead  = 0x80U;
         static constexpr unsigned cont_shift           = 6U;
+        static constexpr char32_t max_codepoint        = 0x10FFFFU;
         // Surrogate-pair constants (UTF-16, wchar_t == 2 bytes only).
         static constexpr char32_t surrogate_offset     = 0x10000U;
         static constexpr char32_t high_surrogate_base  = 0xD800U;
@@ -537,12 +575,28 @@ class ng
             }
 
             ++i;
-            for (std::size_t j = 0; j < extra && i < utf8.size(); ++j, ++i)
+            bool valid = true;
+            for (std::size_t j = 0; j < extra; ++j, ++i)
             {
-                auto continuation = static_cast<char32_t>(
-                    static_cast<unsigned char>(utf8.at(i)));
+                if (i >= utf8.size())
+                {
+                    valid = false;
+                    break; // truncated sequence
+                }
+                auto byte = static_cast<unsigned char>(utf8.at(i));
+                if ((byte & cont_check_mask) != cont_check_lead)
+                {
+                    valid = false;
+                    break; // not a valid continuation byte
+                }
                 codepoint = (codepoint << cont_shift) |
-                            (continuation & static_cast<char32_t>(cont_val));
+                            (static_cast<char32_t>(byte) &
+                             static_cast<char32_t>(cont_val));
+            }
+
+            if (!valid || codepoint > max_codepoint)
+            {
+                continue; // skip malformed or out-of-range sequence
             }
 
             if constexpr (sizeof(wchar_t) >= 4)
