@@ -23,7 +23,11 @@
 
 - **Full Name Chaining**. Append one or more names and surnames with an intuitive chainable API.
 
-- **23 Cultures Supported**. American, Argentinian, Australian, Brazilian, British, Bulgarian, Canadian, Chinese, Danish, Finnish, French, German, Kazakh, Mexican, Norwegian, Polish, Portuguese, Russian, Spanish, Swedish, Turkish, Ukrainian.
+- **105 Cultures Supported**. Afghan, Albanian, Algerian, American, Angolan, Argentinian, Austrian, Azerbaijani, Bahraini, Bangladeshi, Belgian, Bolivian, Botswanan, Brazilian, British, Bruneian, Bulgarian, Burkinabe, Burundian, Cambodian, Cameroonian, Canadian, Chilean, Chinese, Colombian, Costa Rican, Croatian, Cypriot, Czech, Danish, Djiboutian, Dutch, Ecuadorian, Egyptian, Emirati, Estonian, Ethiopian, Fijian, Filipino, Finnish, French, Georgian, German, Ghanaian, Greek, Guatemalan, Haitian, Honduran, Hong Konger, Hungarian, Icelandic, Indian, Indonesian, Iranian, Iraqi, Irish, Israeli, Italian, Jamaican, Japanese, Jordanian, Kazakh, Korean, Kuwaiti, Lebanese, Libyan, Lithuanian, Luxembourgish, Macanese, Malaysian, Maldivian, Maltese, Mauritian, Mexican, Moldovan, Moroccan, Namibian, Nigerian, Norwegian, Omani, Palestinian, Panamanian, Peruvian, Polish, Portuguese, Puerto Rican, Qatari, Russian, Salvadoran, Saudi, Serbian, Singaporean, Slovenian, South African, Spanish, Sudanese, Swedish, Swiss, Syrian, Taiwanese, Tunisian, Turkish, Turkmen, Uruguayan, Yemeni.
+
+- **Weighted Selection**. Names are weighted by real-world frequency so that common names appear more often than rare ones.
+
+- **Dataset Tiers**. Choose between a compact **lite** dataset (~2 MB, top-500 names per category) or the **full** dataset (~39 MB, complete name lists).
 
 - **ISO 2-Letter Codes**. `to_culture()` and `to_gender()` for converting strings to enums.
 
@@ -52,15 +56,21 @@ Additionally you must supply the name generator with the [`resources`](https://g
 
 Due to the necessity of supporting multiple culture characters and the way `std::string` works on Windows, this library uses `std::wstring` for all generated names.
 
-When requesting a name for the first time the library will attempt to load the resource files (the default path is `./resources`). Manually load the resources folder if it's in a different location.
+When requesting a name for the first time the library will attempt to load the resource files (the default path is `./resources`). Manually load the resources folder if it's in a different location, or use `load(dataset)` to pick between the **lite** and **full** tiers.
 
 ```cpp
 #include <dasmig/namegen.hpp>
 
 using ng = dasmig::ng;
 
-// Manually load the resources folder if necessary.
-ng::instance().load("path/to/resources");
+// Load the lite dataset (~2 MB, top-500 names per category).
+ng::instance().load(dasmig::dataset::lite);
+
+// Or load the full dataset (~39 MB, complete name lists).
+// ng::instance().load(dasmig::dataset::full);
+
+// Manually load a custom directory if necessary.
+// ng::instance().load("path/to/resources");
 
 // Generate a name of any culture and any gender.
 std::wstring name = ng::instance().get_name();
@@ -101,7 +111,3 @@ std::wstring name2 = my_gen.get_name().append_surname();
 ```
 
 For the complete feature guide — cultures, chaining, thread safety, seeding, and more — see the **[Usage Guide](doc/usage.md)**.
-
-### Disclaimer
-
-Ukrainian and Russian surnames are all in their male or neutral versions.

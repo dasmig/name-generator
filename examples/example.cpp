@@ -31,7 +31,7 @@ int main() // NOLINT(bugprone-exception-escape)
     // Independent instance with its own databases and engine.
     constexpr std::uint64_t instance_seed = 100;
     dasmig::ng my_gen;
-    my_gen.load("resources");
+    my_gen.load(dasmig::dataset::lite);  // or dataset::full for all names
     my_gen.seed(instance_seed);
     std::wcout << L"Instance:   " << my_gen.get_name().append_surname()
                << L"\n";

@@ -8,11 +8,14 @@
 #include <cstdint>
 #include <filesystem>
 #include <fstream>
+#include <functional>
+#include <iterator>
 #include <map>
 #include <ostream>
 #include <random>
 #include <stdexcept>
 #include <string>
+#include <string_view>
 #include <utility>
 #include <vector>
 
@@ -29,29 +32,119 @@ namespace dasmig
 /// @brief Culture representing a country or a broader group.
 enum class culture : std::uint8_t
 {
+    afghan,
+    albanian,
+    algerian,
     american,
+    angolan,
     argentinian,
-    australian,
+    austrian,
+    azerbaijani,
+    bahraini,
+    bangladeshi,
+    belgian,
+    bolivian,
+    botswanan,
     brazilian,
     british,
+    bruneian,
     bulgarian,
+    burkinabe,
+    burundian,
+    cambodian,
+    cameroonian,
     canadian,
+    chilean,
     chinese,
+    colombian,
+    costarican,
+    croatian,
+    cypriot,
+    czech,
     danish,
+    djiboutian,
+    dutch,
+    ecuadorian,
+    egyptian,
+    emirati,
+    estonian,
+    ethiopian,
+    fijian,
+    filipino,
     finnish,
     french,
+    georgian,
     german,
+    ghanaian,
+    greek,
+    guatemalan,
+    haitian,
+    honduran,
+    hongkonger,
+    hungarian,
+    icelandic,
+    indian,
+    indonesian,
+    iranian,
+    iraqi,
+    irish,
+    israeli,
+    italian,
+    jamaican,
+    japanese,
+    jordanian,
     kazakh,
+    korean,
+    kuwaiti,
+    lebanese,
+    libyan,
+    lithuanian,
+    luxembourgish,
+    macanese,
+    malaysian,
+    maldivian,
+    maltese,
+    mauritian,
     mexican,
+    moldovan,
+    moroccan,
+    namibian,
+    nigerian,
     norwegian,
+    omani,
+    palestinian,
+    panamanian,
+    peruvian,
     polish,
     portuguese,
+    puertorican,
+    qatari,
     russian,
+    salvadoran,
+    saudi,
+    serbian,
+    singaporean,
+    slovenian,
+    southafrican,
     spanish,
+    sudanese,
     swedish,
+    swiss,
+    syrian,
+    taiwanese,
+    tunisian,
     turkish,
-    ukrainian,
+    turkmen,
+    uruguayan,
+    yemeni,
     any
+};
+
+/// @brief Dataset size tier for resource loading.
+enum class dataset : std::uint8_t
+{
+    lite,     ///< Top-500 names per category (~2 MB).
+    full      ///< Complete dataset (~39 MB).
 };
 
 /// @brief Simple gender enum to distinguish between male and female names.
@@ -149,7 +242,7 @@ class name
 /// @brief Name generator that produces culture-aware names and surnames.
 ///
 /// Generates realistic names by picking from popular name databases indexed
-/// by culture and gender. Supports 23 cultures.
+/// by culture and gender. Supports 105 cultures.
 ///
 /// Can be used as a singleton via instance() or constructed independently.
 /// Independent instances own their own name databases and random engine.
@@ -187,20 +280,63 @@ class ng
     /// @brief Translate an ISO 3166 2-letter country code to a culture enum.
     /// @param country_code Two-letter country code (e.g., L"us", L"br").
     /// @return Matching culture, or culture::any if not recognized.
-    [[nodiscard]] static culture to_culture(const std::wstring& country_code)
+    [[nodiscard]] static culture to_culture(std::wstring_view country_code)
     {
-        static const std::map<std::wstring, culture> country_code_map = {
-            {L"ar", culture::argentinian}, {L"us", culture::american},
-            {L"au", culture::australian},  {L"br", culture::brazilian},
-            {L"gb", culture::british},     {L"bg", culture::bulgarian},
-            {L"ca", culture::canadian},    {L"cn", culture::chinese},
-            {L"dk", culture::danish},      {L"fi", culture::finnish},
-            {L"fr", culture::french},      {L"de", culture::german},
-            {L"kz", culture::kazakh},      {L"mx", culture::mexican},
-            {L"no", culture::norwegian},   {L"pl", culture::polish},
-            {L"pt", culture::portuguese},  {L"ru", culture::russian},
-            {L"es", culture::spanish},     {L"se", culture::swedish},
-            {L"tr", culture::turkish},     {L"ua", culture::ukrainian}};
+        static const std::map<std::wstring, culture, std::less<>>
+            country_code_map = {
+            {L"ae", culture::emirati},       {L"af", culture::afghan},
+            {L"al", culture::albanian},      {L"ao", culture::angolan},
+            {L"ar", culture::argentinian},   {L"at", culture::austrian},
+            {L"az", culture::azerbaijani},   {L"bd", culture::bangladeshi},
+            {L"be", culture::belgian},       {L"bf", culture::burkinabe},
+            {L"bg", culture::bulgarian},     {L"bh", culture::bahraini},
+            {L"bi", culture::burundian},     {L"bn", culture::bruneian},
+            {L"bo", culture::bolivian},      {L"br", culture::brazilian},
+            {L"bw", culture::botswanan},     {L"ca", culture::canadian},
+            {L"ch", culture::swiss},         {L"cl", culture::chilean},
+            {L"cm", culture::cameroonian},   {L"cn", culture::chinese},
+            {L"co", culture::colombian},     {L"cr", culture::costarican},
+            {L"cy", culture::cypriot},       {L"cz", culture::czech},
+            {L"de", culture::german},        {L"dj", culture::djiboutian},
+            {L"dk", culture::danish},        {L"dz", culture::algerian},
+            {L"ec", culture::ecuadorian},    {L"ee", culture::estonian},
+            {L"eg", culture::egyptian},      {L"es", culture::spanish},
+            {L"et", culture::ethiopian},     {L"fi", culture::finnish},
+            {L"fj", culture::fijian},        {L"fr", culture::french},
+            {L"gb", culture::british},       {L"ge", culture::georgian},
+            {L"gh", culture::ghanaian},      {L"gr", culture::greek},
+            {L"gt", culture::guatemalan},    {L"hk", culture::hongkonger},
+            {L"hn", culture::honduran},      {L"hr", culture::croatian},
+            {L"ht", culture::haitian},       {L"hu", culture::hungarian},
+            {L"id", culture::indonesian},    {L"ie", culture::irish},
+            {L"il", culture::israeli},       {L"in", culture::indian},
+            {L"iq", culture::iraqi},         {L"ir", culture::iranian},
+            {L"is", culture::icelandic},     {L"it", culture::italian},
+            {L"jm", culture::jamaican},      {L"jo", culture::jordanian},
+            {L"jp", culture::japanese},      {L"kh", culture::cambodian},
+            {L"kr", culture::korean},        {L"kw", culture::kuwaiti},
+            {L"kz", culture::kazakh},        {L"lb", culture::lebanese},
+            {L"lt", culture::lithuanian},    {L"lu", culture::luxembourgish},
+            {L"ly", culture::libyan},        {L"ma", culture::moroccan},
+            {L"md", culture::moldovan},      {L"mo", culture::macanese},
+            {L"mt", culture::maltese},       {L"mu", culture::mauritian},
+            {L"mv", culture::maldivian},     {L"mx", culture::mexican},
+            {L"my", culture::malaysian},     {L"na", culture::namibian},
+            {L"ng", culture::nigerian},      {L"nl", culture::dutch},
+            {L"no", culture::norwegian},     {L"om", culture::omani},
+            {L"pa", culture::panamanian},    {L"pe", culture::peruvian},
+            {L"ph", culture::filipino},      {L"pl", culture::polish},
+            {L"pr", culture::puertorican},   {L"ps", culture::palestinian},
+            {L"pt", culture::portuguese},    {L"qa", culture::qatari},
+            {L"rs", culture::serbian},       {L"ru", culture::russian},
+            {L"sa", culture::saudi},         {L"sd", culture::sudanese},
+            {L"se", culture::swedish},       {L"sg", culture::singaporean},
+            {L"si", culture::slovenian},     {L"sv", culture::salvadoran},
+            {L"sy", culture::syrian},        {L"tm", culture::turkmen},
+            {L"tn", culture::tunisian},      {L"tr", culture::turkish},
+            {L"tw", culture::taiwanese},     {L"us", culture::american},
+            {L"uy", culture::uruguayan},     {L"ye", culture::yemeni},
+            {L"za", culture::southafrican}};
 
         if (auto it = country_code_map.find(country_code);
             it != country_code_map.end())
@@ -213,9 +349,9 @@ class ng
     /// @brief Translate a gender string to a gender enum.
     /// @param gender_string Gender string (e.g., L"male", L"female", L"m", L"f").
     /// @return Matching gender, or gender::any if not recognized.
-    [[nodiscard]] static gender to_gender(const std::wstring& gender_string)
+    [[nodiscard]] static gender to_gender(std::wstring_view gender_string)
     {
-        static const std::map<std::wstring, gender> gender_map = {
+        static const std::map<std::wstring, gender, std::less<>> gender_map = {
             {L"m", gender::m},
             {L"f", gender::f},
             {L"male", gender::m},
@@ -312,9 +448,9 @@ class ng
     /// @return `true` if at least one name file has been loaded.
     [[nodiscard]] bool has_resources() const
     {
-        return !_culture_indexed_m_names.empty() ||
-               !_culture_indexed_f_names.empty() ||
-               !_culture_indexed_surnames.empty();
+        return !_m_pool.empty() ||
+               !_f_pool.empty() ||
+               !_sur_pool.empty();
     }
 
     /// @brief Load name files from a directory.
@@ -340,18 +476,51 @@ class ng
         }
     }
 
-  private:
-    // Container of names.
-    using name_container = std::vector<std::wstring>;
+    /// @brief Load a specific dataset tier from a base resources directory.
+    ///
+    /// Probes common base paths ("resources", "../resources",
+    /// "name-generator/resources") and loads from the `lite/` or `full/`
+    /// subfolder according to @p tier.
+    ///
+    /// @param tier The dataset size to load (dataset::lite or dataset::full).
+    /// @return `true` if a matching directory was found and loaded.
+    bool load(dataset tier)
+    {
+        static constexpr std::array probe_paths = {
+            "resources", "../resources", "name-generator/resources"};
 
-    // Number of concrete cultures (excluding `any`).
-    static constexpr std::size_t culture_count =
-        static_cast<std::size_t>(culture::any);
+        const char* subfolder =
+            (tier == dataset::full) ? "full" : "lite";
+
+        auto found = std::ranges::find_if(probe_paths, [&](const char* base) {
+            const std::filesystem::path dir =
+                std::filesystem::path{base} / subfolder;
+            return std::filesystem::is_directory(dir);
+        });
+        if (found != probe_paths.end())
+        {
+            load(std::filesystem::path{*found} / subfolder);
+            return true;
+        }
+        return false;
+    }
+
+  private:
+    // Container of names paired with their selection weights.
+    struct name_pool
+    {
+        std::vector<std::wstring> names;
+        std::vector<double> weights;
+        // Mutable because discrete_distribution::operator() is non-const
+        // (it may update internal generator state), but the distribution
+        // parameters are immutable after construction.
+        mutable std::discrete_distribution<std::size_t> dist;
+    };
 
     // Maps for accessing names through culture.
-    std::map<culture, name_container> _culture_indexed_m_names;
-    std::map<culture, name_container> _culture_indexed_f_names;
-    std::map<culture, name_container> _culture_indexed_surnames;
+    std::map<culture, name_pool> _m_pool;
+    std::map<culture, name_pool> _f_pool;
+    std::map<culture, name_pool> _sur_pool;
 
     // Per-instance random engine for seed drawing.
     std::mt19937_64 _engine{std::random_device{}()};
@@ -371,20 +540,38 @@ class ng
         });
         if (found != probe_paths.end())
         {
-            load(*found);
+            const std::filesystem::path base{*found};
+            auto lite_dir = base / "lite";
+            auto full_dir = base / "full";
+            if (std::filesystem::is_directory(lite_dir))
+            {
+                load(lite_dir);
+            }
+            else if (std::filesystem::is_directory(full_dir))
+            {
+                load(full_dir);
+            }
+            else
+            {
+                load(base);
+            }
         }
     }
 
-    // Resolve `any` culture to a concrete random culture.
+    // Resolve `any` culture to a random culture from those actually loaded.
     static culture resolve_culture(culture c,
+                                   const std::map<culture, name_pool>& db,
                                    effolkronium::random_local& engine)
     {
-        if (c == culture::any)
+        if (c != culture::any) { return c; }
+        if (db.empty())
         {
-            return static_cast<culture>(
-                engine.get<std::size_t>(0, culture_count - 1));
+            throw std::invalid_argument("No names loaded for any culture");
         }
-        return c;
+        auto idx = engine.get<std::size_t>(0, db.size() - 1);
+        auto it = db.begin();
+        std::advance(it, static_cast<std::ptrdiff_t>(idx));
+        return it->first;
     }
 
     // Resolve `any` gender to a concrete random gender.
@@ -402,14 +589,42 @@ class ng
     [[nodiscard]] static const char* culture_label(culture c)
     {
         static constexpr std::array labels = {
-            "american",    "argentinian", "australian",
-            "brazilian",   "british",     "bulgarian",
-            "canadian",    "chinese",     "danish",
-            "finnish",     "french",      "german",
-            "kazakh",      "mexican",     "norwegian",
-            "polish",      "portuguese",  "russian",
-            "spanish",     "swedish",     "turkish",
-            "ukrainian",   "any"};
+            "afghan",       "albanian",     "algerian",
+            "american",     "angolan",      "argentinian",
+            "austrian",     "azerbaijani",  "bahraini",
+            "bangladeshi",  "belgian",      "bolivian",
+            "botswanan",    "brazilian",    "british",
+            "bruneian",     "bulgarian",    "burkinabe",
+            "burundian",    "cambodian",    "cameroonian",
+            "canadian",     "chilean",      "chinese",
+            "colombian",    "costarican",   "croatian",
+            "cypriot",      "czech",        "danish",
+            "djiboutian",   "dutch",        "ecuadorian",
+            "egyptian",     "emirati",      "estonian",
+            "ethiopian",    "fijian",       "filipino",
+            "finnish",      "french",       "georgian",
+            "german",       "ghanaian",     "greek",
+            "guatemalan",   "haitian",      "honduran",
+            "hongkonger",   "hungarian",    "icelandic",
+            "indian",       "indonesian",   "iranian",
+            "iraqi",        "irish",        "israeli",
+            "italian",      "jamaican",     "japanese",
+            "jordanian",    "kazakh",       "korean",
+            "kuwaiti",      "lebanese",     "libyan",
+            "lithuanian",   "luxembourgish","macanese",
+            "malaysian",    "maldivian",    "maltese",
+            "mauritian",    "mexican",      "moldovan",
+            "moroccan",     "namibian",     "nigerian",
+            "norwegian",    "omani",        "palestinian",
+            "panamanian",   "peruvian",     "polish",
+            "portuguese",   "puertorican",  "qatari",
+            "russian",      "salvadoran",   "saudi",
+            "serbian",      "singaporean",  "slovenian",
+            "southafrican", "spanish",      "sudanese",
+            "swedish",      "swiss",        "syrian",
+            "taiwanese",    "tunisian",     "turkish",
+            "turkmen",      "uruguayan",    "yemeni",
+            "any"};
         auto idx = static_cast<std::size_t>(c);
         if (idx < labels.size()) { return labels.at(idx); }
         return "unknown";
@@ -427,18 +642,26 @@ class ng
         return "unknown";
     }
 
-    // Pick a random name/surname from the appropriate map.
+    // Pick a weighted-random name/surname from the appropriate map.
     [[nodiscard]] static std::wstring pick(
-        const std::map<culture, name_container>& db,
+        const std::map<culture, name_pool>& db,
         culture c, gender g, effolkronium::random_local& engine)
     {
-        if (auto it = db.find(c); it != db.end() && !it->second.empty())
+        auto it = db.find(c);
+        if (it == db.end() || it->second.names.empty())
         {
-            return *engine.get(it->second);
+            throw std::invalid_argument(
+                std::string("No ") + gender_label(g) +
+                " names loaded for culture '" + culture_label(c) + "'");
         }
-        throw std::invalid_argument(
-            std::string("No ") + gender_label(g) +
-            " names loaded for culture '" + culture_label(c) + "'");
+        const auto& pool = it->second;
+        if (!pool.weights.empty())
+        {
+            // Use the pre-built distribution — avoids reconstructing
+            // the prefix-sum table on every call.
+            return pool.names.at(pool.dist(engine.engine()));
+        }
+        return *engine.get(pool.names);
     }
 
     /// @brief Number of bits to shift when XOR-folding a 64-bit seed to 32.
@@ -452,12 +675,12 @@ class ng
         call_engine.seed(static_cast<std::mt19937::result_type>(
             (call_seed ^ (call_seed >> seed_fold_shift))));
 
-        const culture resolved_c = resolve_culture(c, call_engine);
         const gender resolved_g = resolve_gender(g, call_engine);
 
         const auto& db = (resolved_g == gender::f)
-                             ? _culture_indexed_f_names
-                             : _culture_indexed_m_names;
+                             ? _f_pool : _m_pool;
+
+        const culture resolved_c = resolve_culture(c, db, call_engine);
 
         const std::wstring part = pick(db, resolved_c, resolved_g,
                                        call_engine);
@@ -473,9 +696,10 @@ class ng
         call_engine.seed(static_cast<std::mt19937::result_type>(
             (call_seed ^ (call_seed >> seed_fold_shift))));
 
-        const culture resolved_c = resolve_culture(c, call_engine);
-        const std::wstring part = pick(_culture_indexed_surnames, resolved_c,
-                                       gender::any, call_engine);
+        const culture resolved_c = resolve_culture(c,
+            _sur_pool, call_engine);
+        const std::wstring part = pick(_sur_pool,
+                                       resolved_c, gender::any, call_engine);
         n._parts.push_back(part);
         n._full_string.append(L" ").append(part);
     }
@@ -489,22 +713,24 @@ class ng
         call_engine.seed(static_cast<std::mt19937::result_type>(
             (call_seed ^ (call_seed >> seed_fold_shift))));
 
-        const culture resolved_culture = resolve_culture(requested_culture,
-                                                         call_engine);
         const gender resolved_gender = resolve_gender(requested_gender,
                                                       call_engine);
 
         if (is_name)
         {
             const auto& db = (resolved_gender == gender::f)
-                                 ? _culture_indexed_f_names
-                                 : _culture_indexed_m_names;
-            return {pick(db, resolved_culture, resolved_gender, call_engine),
+                                 ? _f_pool : _m_pool;
+            const culture resolved_culture = resolve_culture(
+                requested_culture, db, call_engine);
+            return {pick(db, resolved_culture, resolved_gender,
+                         call_engine),
                     resolved_gender, resolved_culture, this};
         }
 
-        return {pick(_culture_indexed_surnames, resolved_culture,
-                     gender::any, call_engine),
+        const culture resolved_culture = resolve_culture(
+            requested_culture, _sur_pool, call_engine);
+        return {pick(_sur_pool,
+                     resolved_culture, gender::any, call_engine),
                 resolved_gender, resolved_culture, this};
     }
 
@@ -663,8 +889,9 @@ class ng
             }
             const gender gender_read = to_gender(utf8_to_wstring(raw_line));
 
-            // Read all remaining lines as names.
-            name_container names_read;
+            // Read all remaining lines as names with optional weights.
+            // Format: "name\tweight" or just "name" (weight defaults to 1.0).
+            name_pool pool;
             while (std::getline(tentative_file, raw_line))
             {
                 if (!raw_line.empty() && raw_line.back() == '\r')
@@ -673,29 +900,45 @@ class ng
                 }
                 if (!raw_line.empty())
                 {
-                    names_read.push_back(utf8_to_wstring(raw_line));
+                    auto tab_pos = raw_line.find('\t');
+                    if (tab_pos != std::string::npos)
+                    {
+                        pool.names.push_back(
+                            utf8_to_wstring(raw_line.substr(0, tab_pos)));
+                        pool.weights.push_back(
+                            std::stod(raw_line.substr(tab_pos + 1)));
+                    }
+                    else
+                    {
+                        pool.names.push_back(utf8_to_wstring(raw_line));
+                        pool.weights.push_back(1.0);
+                    }
                 }
             }
 
-            if (names_read.empty())
+            if (pool.names.empty())
             {
                 return;
+            }
+
+            // Pre-build the weighted distribution for O(1) generation.
+            if (!pool.weights.empty())
+            {
+                pool.dist = std::discrete_distribution<std::size_t>(
+                    pool.weights.begin(), pool.weights.end());
             }
 
             // Index by gender.
             switch (gender_read)
             {
             case gender::m:
-                _culture_indexed_m_names[culture_read] =
-                    std::move(names_read);
+                _m_pool[culture_read] = std::move(pool);
                 break;
             case gender::f:
-                _culture_indexed_f_names[culture_read] =
-                    std::move(names_read);
+                _f_pool[culture_read] = std::move(pool);
                 break;
             default:
-                _culture_indexed_surnames[culture_read] =
-                    std::move(names_read);
+                _sur_pool[culture_read] = std::move(pool);
                 break;
             }
         }

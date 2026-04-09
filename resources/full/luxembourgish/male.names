@@ -1,0 +1,4902 @@
+lu
+male
+Claude	1.000000
+Laurent	0.707107
+Christophe	0.577350
+Philippe	0.500000
+Romain	0.447214
+Rui	0.408248
+Filipe	0.377964
+Tiago	0.353553
+Nuno	0.316228
+Gilles	0.301511
+Luc	0.288675
+Diogo	0.277350
+Thierry	0.258199
+Yves	0.250000
+Georges	0.242536
+Yannick	0.235702
+Vitor	0.229416
+Sven	0.223607
+Pit	0.213201
+João	0.208514
+Fernand	0.188982
+Pol	0.185695
+Jean-Paul	0.176777
+Yann	0.174078
+Jean-Marie	0.171499
+Jérôme	0.169031
+Stéphane	0.166667
+Jeannot	0.162221
+Rodrigues	0.158114
+François	0.156174
+Frédéric	0.154303
+Jean-Claude	0.152499
+Charel	0.150756
+Cédric	0.149071
+Lopes	0.147442
+Ferreira	0.145865
+Da Silva	0.144338
+Sébastien	0.142857
+Pereira	0.140028
+Fernandes	0.138675
+Martins	0.137361
+Sebastien	0.131306
+Oliveira	0.130189
+Joé	0.129099
+Gomes	0.128037
+Marques	0.127000
+Jean-Marc	0.124035
+António	0.123091
+Adrien	0.122169
+Alves	0.118678
+Jean-Luc	0.117041
+Lux	0.116248
+Ribeiro	0.114708
+Joël	0.113961
+Benoit	0.113228
+Tun	0.111803
+Gonçalo	0.111111
+Teixeira	0.109764
+Schmit	0.107211
+Goncalves	0.106600
+Fränk	0.106000
+Soares	0.105409
+Sousa	0.104828
+Gérard	0.104257
+Agostinho	0.103695
+Mendes	0.102598
+Monteiro	0.102062
+Weber	0.101535
+Dinis	0.101015
+Fränz	0.100504
+Loïc	0.100000
+Cardoso	0.099015
+Dos Santos	0.098533
+Almeida	0.098058
+Jang	0.096674
+Armindo	0.096225
+Sérgio	0.095783
+Schroeder	0.095346
+Mário	0.094916
+Correia	0.093659
+Tavares	0.093250
+Petz	0.092848
+Jean-François	0.092450
+Benoît	0.092057
+Vieira	0.091287
+Raphaël	0.090536
+Jemp	0.090167
+Carvalho	0.089803
+Aloyse	0.088736
+Schmitz	0.087370
+Klein	0.087039
+Romaine	0.086387
+Muller	0.084819
+Thill	0.084515
+Jean Marie	0.083918
+Moreira	0.083333
+Thibault	0.083045
+Becker	0.082761
+Misch	0.082479
+Jean-Louis	0.082199
+Pierrot	0.081923
+Zé	0.081650
+Antunes	0.081379
+Clément	0.080582
+Jean-Michel	0.080322
+Simoes	0.080064
+Quim	0.079809
+Ilidio	0.079556
+Gast	0.079305
+Krier	0.079057
+Simao	0.078811
+Rocha	0.078567
+Hoffmann	0.078326
+Paulo Jorge	0.077850
+Sabotic	0.076923
+Cosimo	0.076696
+Joao Paulo	0.076472
+Weis	0.075378
+Jérémy	0.075165
+Hervé	0.074536
+Morais	0.074329
+Luis Filipe	0.073922
+Cunha	0.073721
+Schneider	0.073521
+Jean-Philippe	0.073324
+Jean-Jacques	0.073127
+Änder	0.072932
+Goncalo	0.072357
+Grégory	0.071982
+Arsène	0.071796
+Ries	0.071611
+Reuter	0.071247
+Rastoder	0.071067
+Freitas	0.070535
+Kremer	0.069673
+Diamantino	0.069505
+Machado	0.069338
+Mathis	0.069171
+Thibaut	0.069007
+Renaud	0.068843
+Aurélien	0.068680
+Wirtz	0.068519
+Chrescht	0.068359
+Schiltz	0.068199
+Gonçalves	0.068041
+Pires	0.067884
+Faber	0.067574
+Majerus	0.067420
+Nunes	0.067267
+Araujo	0.067116
+Borges	0.066965
+Da Costa	0.066667
+Toze	0.066519
+Alcino	0.065938
+Azevedo	0.065795
+Barbosa	0.065653
+Ernad	0.065512
+Patrizio	0.065372
+Schmitt	0.065233
+Kévin	0.065094
+Rémi	0.064957
+Lentz	0.064820
+Adrovic	0.064685
+Hélder	0.064550
+Aderito	0.064416
+Amandio	0.064282
+Licinio	0.063888
+Magalhaes	0.063758
+De Sousa	0.063628
+Léon	0.063500
+Jean-Christophe	0.063372
+Geoffroy	0.063119
+Jean-Francois	0.062994
+Abbes	0.062869
+Welter	0.062746
+Dwayn	0.062622
+Barros	0.062500
+Müller	0.062378
+Frenz	0.062017
+Agovic	0.061780
+Rosch	0.061663
+Berg	0.061546
+Gaetan	0.061314
+Michaël	0.061085
+Licina	0.060971
+Régis	0.060746
+Pitt	0.060412
+Chaussy	0.060193
+Pilici	0.060084
+João Paulo	0.059976
+Matos	0.059868
+Pinheiro	0.059655
+Da Cruz	0.059444
+Nuno Miguel	0.059339
+Jean-Yves	0.059028
+Pierre-Yves	0.058926
+Neckel	0.058621
+Henriques	0.058521
+Felisberto	0.058421
+Figueiredo	0.058321
+Loureiro	0.058222
+Mirnes	0.058026
+Maximilien	0.057831
+Muratovic	0.057639
+Kirsch	0.057544
+Verkaafen	0.057448
+Wagener	0.057354
+Skenderovic	0.057260
+Valente	0.057166
+Bastos	0.057073
+Nogueira	0.056888
+Marinho	0.056705
+Vitor Manuel	0.056614
+Semedo	0.056433
+Ferny	0.056344
+Peters	0.056254
+Corentin	0.056166
+Eugène	0.055989
+Feller	0.055815
+Ech	0.055728
+Rollinger	0.055641
+Kalac	0.055556
+Raach	0.055385
+Mossong	0.055216
+Lourenço	0.055132
+Valentim	0.054965
+Esteves	0.054718
+Coelho	0.054636
+Rui Manuel	0.054554
+Fortes	0.054473
+Gusty	0.054393
+Maus	0.054233
+Hodzic	0.054153
+Braun	0.054074
+Muric	0.053995
+Aymeric	0.053838
+Arend	0.053376
+Schumacher	0.053300
+Scholtes	0.053149
+Kuc	0.053074
+Schanen	0.053000
+Kozar	0.052926
+Isad	0.052852
+Nelito	0.052705
+Bruno Miguel	0.052632
+Fernando Jorge	0.052559
+Flavien	0.052414
+Carneiro	0.052342
+Jasko	0.052200
+Siggi	0.052129
+Stéphan	0.051988
+Wolff	0.051571
+Theis	0.051503
+Kieffer	0.051434
+Marinelli	0.051367
+Gengler	0.051299
+Beideler	0.051098
+Backes	0.050899
+Fons	0.050833
+Mett	0.050767
+Cabral	0.050572
+Rúben	0.050508
+Amorim	0.050443
+Tó	0.050379
+Furtado	0.050315
+Macedo	0.050252
+Anildo	0.050189
+Vítor	0.050125
+Rui Miguel	0.050063
+Pimenta	0.050000
+Belmin	0.049938
+Kohl	0.049752
+Latic	0.049690
+Donner	0.049629
+Gaëtan	0.049507
+Thibaud	0.049386
+Gérald	0.049266
+Jérome	0.049207
+Jempi	0.049088
+Meyers	0.049029
+Diederich	0.048970
+Pinho	0.048912
+De Almeida	0.048853
+Jacoby	0.048795
+Hopp	0.048679
+Berchem	0.048622
+Raym	0.048564
+Fischbach	0.048507
+Mousel	0.048450
+Gonner	0.048393
+Kohn	0.048337
+Heinen	0.048280
+Kugener	0.048224
+Schlim	0.048168
+Pleimling	0.048113
+Zahitovic	0.048002
+Mannes	0.047946
+Mulles	0.047891
+Ângelo	0.047727
+Coimbra	0.047458
+Sequeira	0.047405
+Ze Carlos	0.047351
+Alcidio	0.047298
+Graf	0.047193
+Dzenan	0.047140
+Resad	0.047088
+Putz	0.047036
+Jupp	0.046984
+Elsan	0.046881
+Menn	0.046829
+Maxence	0.046778
+Rui Filipe	0.046625
+Spina	0.046575
+Zimmer	0.046474
+Heck	0.046424
+Hukic	0.046374
+Scheer	0.046324
+Molitor	0.046274
+Eldan	0.046225
+Aender	0.046127
+Wampach	0.046078
+Lilgy	0.046029
+Thommes	0.045980
+Muhovic	0.045932
+Scheuer	0.045883
+Dos Reis	0.045739
+Nilles	0.045691
+Kevin Monique	0.045644
+Ramdedovic	0.045596
+Simão	0.045549
+Guedes	0.045502
+Braima	0.045268
+Toninho	0.045222
+Baudouin	0.045175
+Servais	0.045129
+Arnes	0.045083
+Remzo	0.044992
+Durakovic	0.044947
+Erdan	0.044901
+Grün	0.044856
+Grégoire	0.044811
+Mickaël	0.044721
+Thiry	0.044499
+Onofrio	0.044455
+Neyer	0.044412
+Couto	0.044324
+Rebelo	0.044281
+Fritsch	0.044151
+Lauer	0.044108
+Frisch	0.044065
+Veiga	0.044023
+Britz	0.043937
+Trierweiler	0.043895
+Risch	0.043853
+Noesen	0.043811
+Sauber	0.043769
+Reding	0.043685
+Hemmer	0.043561
+Peiffer	0.043519
+Funck	0.043478
+Theisen	0.043437
+Micucci	0.043396
+Tinelli	0.043355
+Koenig	0.043315
+Olinger	0.043234
+Kinnen	0.043153
+Jhemp	0.043073
+Mehovic	0.043033
+Tomasini	0.042993
+Kasel	0.042914
+Medinger	0.042835
+Mangen	0.042796
+Jaeger	0.042718
+Laurindo	0.042679
+Nascimento	0.042563
+Belchior	0.042524
+Puto	0.042486
+Viegas	0.042448
+Veloso	0.042409
+Joaquim Manuel	0.042371
+Sampaio	0.042333
+Tozé	0.042295
+De Oliveira	0.042220
+Jordao	0.042182
+Rui Jorge	0.042145
+Morgado	0.042070
+Joao Miguel	0.042033
+Paulo Alexandre	0.041996
+Anisio	0.041885
+Longo	0.041812
+Domingues	0.041776
+Carlos Alexandre	0.041739
+Passos	0.041667
+Rui Pedro	0.041631
+Fuchs	0.041523
+Dzemal	0.041487
+Reiter	0.041451
+Semso	0.041380
+Strasser	0.041345
+Schuster	0.041310
+Kovacevic	0.041274
+Amko	0.041239
+Rausch	0.041204
+Thiel	0.041169
+Mujanovic	0.041135
+Osmanovic	0.041100
+Scherer	0.041065
+Dubois	0.040825
+Dupont	0.040791
+J-C	0.040723
+Houss	0.040622
+Kries	0.040555
+Poncelet	0.040522
+Jempy	0.040456
+Pais	0.040423
+Peixoto	0.040390
+Da Rocha	0.040324
+Junker	0.040291
+Nuno Filipe	0.040258
+Nuno Alexandre	0.040226
+Armandino	0.040193
+Schumann	0.040032
+Hut	0.040000
+Gales	0.039968
+Lage	0.039936
+Metz	0.039904
+Thein	0.039841
+Glod	0.039809
+Korac	0.039746
+Ostertag	0.039715
+Dichter	0.039684
+Lippert	0.039653
+Bohler	0.039621
+Goergen	0.039590
+Kneip	0.039559
+Lacitignola	0.039528
+Linster	0.039498
+Bausch	0.039467
+Colbach	0.039436
+Fraenz	0.039406
+Spanier	0.039344
+Schintgen	0.039314
+Eiffes	0.039284
+Lanners	0.039253
+Kerschen	0.039223
+Seyler	0.039193
+Felten	0.039163
+Breyer	0.039133
+Nickels	0.039103
+Schlesser	0.039073
+Decker	0.039014
+Erpelding	0.038984
+Huberty	0.038954
+Michels	0.038925
+Heusbourg	0.038895
+Busca	0.038866
+Donven	0.038778
+Lorang	0.038720
+Petesch	0.038691
+Malget	0.038662
+Luis Sousa	0.038633
+Zeimet	0.038605
+Hilger	0.038576
+Gelhausen	0.038519
+Binsfeld	0.038490
+Schuller	0.038405
+Carreira	0.038376
+Weisen	0.038348
+Admiir	0.038292
+Winandy	0.038264
+Skrijelj	0.038236
+Bajrami	0.038180
+Sulejmani	0.038152
+Gé	0.038125
+Eugénio	0.038097
+Cândido	0.038042
+Ivanilson	0.038014
+Tomé	0.037959
+António José	0.037932
+Aguiar	0.037905
+Ilídio	0.037878
+Zezinho	0.037851
+Alexandrino	0.037796
+Carlos Silva	0.037769
+Jailson	0.037716
+Vasconcelos	0.037689
+Freire	0.037662
+Artur Jorge	0.037635
+Zezito	0.037582
+Adulai	0.037556
+Màrio	0.037503
+Mesquita	0.037477
+Guerreiro	0.037424
+Marco Paulo	0.037372
+Vitinho	0.037346
+Umaro	0.037320
+Helder Filipe	0.037294
+Xano	0.037268
+Antonio Augusto	0.037242
+Petrovic	0.037216
+Izudin	0.037190
+Crni	0.037113
+Mersudin	0.037088
+Dzemil	0.037062
+Dzenis	0.037037
+Nisvet	0.036986
+Beppo	0.036961
+Floryn	0.036911
+Sinanovic	0.036886
+Rejhan	0.036835
+Dzeko	0.036811
+Schreiber	0.036786
+Enko	0.036761
+Jean-Pol	0.036736
+François-Xavier	0.036662
+Asbl	0.036588
+Dumont	0.036539
+Duren	0.036418
+Andre Filipe	0.036226
+Nuno Manuel	0.036202
+Vito Antonio	0.036179
+Barthel	0.036084
+Ruppert	0.036061
+Djillali	0.036037
+Kujo	0.035991
+Schwartz	0.035944
+Urso	0.035898
+Mazzone	0.035875
+Sidella	0.035852
+Chrëscht	0.035829
+Theissen	0.035783
+Burmer	0.035737
+Luxembourg	0.035714
+Thinnes	0.035692
+Mulic	0.035646
+Néckel	0.035624
+Flepp	0.035601
+Bredimus	0.035578
+Marchione	0.035511
+Quaring	0.035489
+Feitler	0.035466
+Federspiel	0.035444
+De Matos	0.035422
+Pejcinovic	0.035377
+Biver	0.035355
+Serres	0.035289
+Block	0.035267
+Bewer	0.035245
+Uranik	0.035223
+Streff	0.035180
+Reiser	0.035158
+Oliveira Rodrigues	0.035136
+Flammang	0.035072
+Baustert	0.035050
+Feiereisen	0.035028
+Weiler	0.035007
+Urbing	0.034986
+Rommes	0.034922
+Feltus	0.034900
+Gaasch	0.034879
+Kocan	0.034794
+Ahmedkarim	0.034773
+Winckel	0.034752
+Morlak	0.034731
+Bulas	0.034711
+Bourens	0.034690
+Esch	0.034606
+Fonck	0.034586
+Rodenbour	0.034565
+Marnach	0.034544
+Reiff	0.034503
+Drouet	0.034483
+Merges	0.034462
+Karger	0.034442
+Jorge Bairro	0.034421
+Schwitz	0.034401
+Pushkolli	0.034340
+Eich	0.034280
+Mustic	0.034239
+Djau	0.034219
+Ajlan	0.034179
+Dervisevic	0.034159
+Bemtgen	0.034100
+Zukka	0.034080
+Gritty	0.034021
+Badic	0.033981
+Palzer	0.033942
+Heco	0.033923
+Nukic	0.033903
+Jusufovic	0.033864
+Damnjan	0.033845
+Rifko	0.033826
+Skendo	0.033787
+Misin	0.033768
+Rustemi	0.033748
+Sebastiani	0.033729
+Conter	0.033710
+Alsad	0.033691
+Kujto	0.033672
+Mergen	0.033653
+Resmo	0.033634
+Onkel	0.033615
+Adão	0.033596
+Ferraz	0.033501
+Mendonça	0.033464
+Paiva	0.033426
+Lisboa	0.033408
+Agustinho	0.033389
+Joao Antonio	0.033370
+Abrantes	0.033352
+Figueira	0.033278
+Gouveia	0.033260
+Antonio Joao	0.033241
+Arménio	0.033204
+Cordeiro	0.033150
+Natalicio	0.033113
+Francelino	0.033077
+Osvaldino	0.033059
+Meireles	0.033041
+Dourado	0.033023
+Damasio	0.032969
+Manuel Joaquim	0.032951
+Filipe Manuel	0.032915
+Jose Pereira	0.032898
+Ramalho	0.032880
+Moutinho	0.032862
+Benfica	0.032827
+Matcho	0.032809
+Neyen	0.032774
+Mikica	0.032739
+Savic	0.032721
+Babic	0.032703
+Mirhad	0.032686
+Avdic	0.032634
+Semsudin	0.032616
+Baum	0.032599
+Muris	0.032582
+Kaufmann	0.032564
+Flaviu	0.032547
+Fränky	0.032530
+Spahic	0.032513
+Blum	0.032410
+Karic	0.032393
+Mujkic	0.032376
+Mersud	0.032359
+Huter	0.032342
+Zimmermann	0.032325
+Senko	0.032292
+Rolli	0.032275
+Huremovic	0.032258
+Schenk	0.032225
+Stefaan	0.032191
+Séba	0.032108
+Naïm	0.032092
+Théodore	0.032026
+Valérian	0.032009
+Gioacchino	0.031993
+Séb	0.031976
+Godefroid	0.031960
+Édouard	0.031928
+Jean-Nicolas	0.031846
+Girolamo	0.031830
+Ouali	0.031798
+Pierre-Michel	0.031782
+Fréd	0.031766
+Jean-Daniel	0.031734
+Reinert	0.031718
+Joë	0.031702
+Lempereur	0.031686
+Jean Roger	0.031654
+Polycarpe	0.031639
+Micaël	0.031623
+Menko	0.031575
+Séverin	0.031560
+Alecio	0.031528
+Jose Henrique	0.031497
+Avelar	0.031450
+Antonio Sergio	0.031435
+Lecio	0.031404
+Romilton	0.031388
+Tiiago	0.031357
+Odorico	0.031342
+Brandao	0.031327
+Eicher	0.031311
+Wirth	0.031296
+Ze Manel	0.031281
+Carlos Filipe	0.031250
+Oronzo	0.031189
+Thies	0.031174
+Ademovic	0.031159
+Palamar	0.031144
+Mätti	0.031114
+Johanns	0.031099
+Edgar Alexander	0.031083
+Feider	0.031068
+Deilan	0.031054
+Picco	0.031024
+An Dy	0.031009
+Eberhardt	0.030979
+Schilling	0.030964
+Haag	0.030949
+Esser	0.030934
+Bremer	0.030920
+Micas	0.030905
+Erki	0.030875
+Arhip	0.030861
+Endres	0.030802
+Renov	0.030758
+Hendel	0.030744
+Refko	0.030729
+Hilmo	0.030715
+Joseph Louis	0.030700
+Reichert	0.030686
+Ferber	0.030671
+Lanter	0.030657
+Kcirtap	0.030643
+Freymann	0.030628
+Pierluca	0.030614
+Vittore	0.030600
+Bellucci	0.030585
+Ninno	0.030557
+Laterza	0.030542
+Laera	0.030528
+Viaggi	0.030514
+Pimpim	0.030500
+Mertz	0.030486
+Juchem	0.030471
+Feltes	0.030457
+Schwickert	0.030443
+Asselborn	0.030429
+Stocklausen	0.030415
+Karier	0.030401
+Ongaro	0.030359
+Biwer	0.030331
+Jeiss	0.030317
+Varandas	0.030303
+Steffes	0.030289
+Trausch	0.030275
+Kintziger	0.030248
+De Barros	0.030234
+Schaul	0.030220
+Alves Dias	0.030192
+Lepage	0.030179
+Weirich	0.030165
+Jose Rui	0.030151
+Ferreol	0.030137
+Di Pinto	0.030124
+Schares	0.030110
+Bettendorff	0.030096
+Kohnen	0.030083
+Erko Anita	0.030069
+Schleck	0.030056
+Mendes Varela	0.030029
+Halsdorf	0.029988
+Nierenhausen	0.029975
+Schwarzen	0.029961
+Flesch	0.029948
+Stelmes	0.029934
+Urbany	0.029921
+Ferreira Silva	0.029907
+Gomesfigueiredo	0.029894
+Poos	0.029881
+Manderscheid	0.029867
+Velince	0.029854
+Eddes	0.029841
+Streitz	0.029814
+Ceravolo	0.029788
+Pleger	0.029775
+Zembrush	0.029761
+Scharel	0.029748
+Alff	0.029735
+Rui Alexandre	0.029722
+Gitzinger	0.029709
+Pesch	0.029683
+Da Mota	0.029670
+Joffer	0.029656
+Pettinger	0.029643
+Kalmes	0.029630
+Reiners	0.029617
+Gillen	0.029604
+Majeres	0.029579
+Pereira Rodrigues	0.029553
+Costa Alves	0.029514
+Robinet	0.029488
+Weiwers	0.029476
+Pedroso	0.029463
+Joao Nuno	0.029424
+Kauffmann	0.029412
+Ristovski	0.029399
+Nalondon	0.029374
+Wilmes	0.029361
+Steil	0.029348
+Vinandy	0.029336
+Pereira Da Silva	0.029323
+Hardt	0.029298
+Frantzen	0.029285
+Djunga	0.029260
+Staudt	0.029248
+Diogo Filipe	0.029223
+Eugéne	0.029210
+Keipes	0.029198
+Ninguem	0.029185
+Origer	0.029173
+Kucharzyk	0.029148
+Bofferding	0.029136
+Kcinnay	0.029123
+Loconte	0.029086
+Peffer	0.029074
+Frederes	0.029050
+Rodrigues Da Costa	0.029025
+Junckel	0.029001
+Rippinger	0.028976
+Salentiny	0.028952
+Kaafen	0.028940
+Lemmer	0.028916
+Diogo Miguel	0.028904
+Nickts	0.028880
+Djgerard	0.028868
+Gomes Da Silva	0.028855
+Slb	0.028831
+Zolver	0.028820
+Hoven	0.028796
+Furiato	0.028784
+Brunø	0.028772
+Santinho	0.028760
+Schommer	0.028748
+Screpy	0.028736
+Gracelino	0.028724
+Soares Da Silva	0.028712
+Zulic	0.028701
+Decken	0.028689
+Klopp	0.028677
+Menghi	0.028653
+Murana	0.028642
+Offermann	0.028630
+Tamaragiovanni	0.028618
+Van Leuvenheim	0.028583
+Bäcker	0.028560
+Aqete	0.028548
+Cardellini	0.028513
+Hursid	0.028490
+Larison	0.028467
+Puppa	0.028456
+Jungblut	0.028433
+Kirch	0.028421
+Dzogovic	0.028410
+Nuno Rafael	0.028375
+Klica	0.028352
+Prentic	0.028307
+Mukovic	0.028296
+Mauricio Zacarias	0.028284
+Baltac	0.028262
+Hott	0.028250
+Zéé	0.028228
+Ferreira Marques	0.028217
+Le Rock	0.028205
+Cerqueira	0.028194
+Collino	0.028183
+Heischbourg	0.028161
+Prbruno	0.028138
+Hecker	0.028127
+Uie	0.028105
+Keppler	0.028061
+Balauca	0.028050
+Arendt	0.028039
+Bintner	0.028028
+Tiago Miguel	0.028006
+Lamdji	0.027984
+Volz	0.027962
+Haler	0.027951
+Klauner	0.027929
+De Freitas	0.027918
+Goetzinger	0.027907
+Pereira Loureiro	0.027886
+Beslaga	0.027864
+Gibbes	0.027842
+Weisgerber	0.027832
+Franzen	0.027821
+Tintinger	0.027810
+Edzevid	0.027789
+Cornaro	0.027778
+Groeber	0.027767
+Joana Dario	0.027756
+Edolino	0.027746
+Gallion	0.027735
+Leandrø	0.027724
+Black-Dany	0.027714
+Ajdarpasic	0.027703
+Ferreira Da Silva	0.027682
+Bermer	0.027661
+Bione	0.027650
+Ledinic	0.027639
+Berscheid	0.027629
+Mauer	0.027618
+Ibisi	0.027597
+Paixao Iduino	0.027587
+Leomedas	0.027576
+Rrapi	0.027535
+Xhorxho	0.027524
+Sinani	0.027503
+Ceku	0.027493
+Dibrani	0.027482
+Kamberi	0.027472
+Jashari	0.027462
+Isufi	0.027451
+Kastrati	0.027441
+Curri	0.027420
+Nadio	0.027369
+Shaqiri	0.027349
+Flav	0.027338
+Sílvio	0.027318
+Cristóvão	0.027308
+Abílio	0.027298
+Herlander	0.027287
+Valério	0.027277
+Gregório	0.027267
+Araújo	0.027257
+Magalhães	0.027247
+Cesário	0.027237
+Liedson	0.027227
+Manuel António	0.027206
+Joâo	0.027186
+Arilton	0.027176
+Guimarães	0.027166
+Madureira	0.027156
+Décio	0.027146
+Manuel Dias	0.027136
+Antonio Domingos	0.027116
+Arantes	0.027077
+Gualdino	0.027067
+Domingos Miguel	0.027057
+Emídio	0.027047
+Manuel Silva	0.027037
+Paim	0.027027
+Hernâni	0.027007
+Manuel Rodrigues	0.026997
+Idalécio	0.026978
+Paulo Silva	0.026958
+Joao Fernando	0.026948
+Jandir	0.026939
+Paulo Fernandes	0.026909
+Palanca	0.026900
+Zuca	0.026890
+Joao Gomes	0.026870
+Pompeu	0.026861
+João Batista	0.026851
+Pedro Silva	0.026832
+Portuga	0.026812
+Michaux	0.026803
+Noemio	0.026793
+Capela	0.026784
+Joaquim Carlos	0.026774
+Manuel Teixeira	0.026764
+Manuel Pinto	0.026745
+Paulo Santos	0.026736
+Joao Alberto	0.026726
+Nadilson	0.026717
+Joaozinho	0.026707
+Videira	0.026698
+Joao Filipe	0.026688
+Jose Oliveira	0.026679
+Joao Costa	0.026669
+Guimaraes	0.026650
+Jose Costa	0.026641
+Jose Adriano	0.026622
+Jose Lopes	0.026612
+Mário José	0.026603
+Adão Manuel	0.026593
+Pratas	0.026575
+Silva Lopes	0.026565
+Albuquerque	0.026556
+Daniel Filipe	0.026547
+Tonecas	0.026537
+Luís Filipe	0.026528
+Filipe Luis	0.026519
+Carlos Marques	0.026509
+Dulcinio	0.026500
+António Jorge	0.026491
+Nelson Alexandre	0.026472
+Nuno Ricardo	0.026444
+Blese	0.026435
+André Filipe	0.026426
+Luisete	0.026417
+Ze Mario	0.026407
+Fidalgo	0.026389
+Chinois	0.026380
+Alidor	0.026371
+Gasty	0.026361
+Almada	0.026352
+Guillermo Alfredo	0.026334
+Hans-Jürgen	0.026325
+Franz-Josef	0.026316
+Vasic	0.026307
+Stojanovic	0.026298
+Einfach	0.026279
+Selvedin	0.026261
+Hadzic	0.026252
+Delic	0.026243
+Juso	0.026234
+Semka	0.026207
+Cosic	0.026198
+Omerovic	0.026189
+Schreiner	0.026180
+Schuh	0.026171
+Bichler	0.026162
+Pfeiffer	0.026144
+Milanovic	0.026126
+Petkovic	0.026109
+Nysret	0.026091
+Brandl	0.026082
+Zocker	0.026073
+Pilz	0.026064
+Senid	0.026055
+Bagger	0.026038
+Esnaf	0.026011
+Kemajl	0.026003
+Lucaci	0.025994
+Schütz	0.025985
+Srećko	0.025976
+Zoller	0.025967
+Kellner	0.025959
+Speck	0.025941
+Tomei	0.025933
+Friederich	0.025915
+Mesen	0.025906
+Willems	0.025846
+Mertens	0.025837
+Mattéo	0.025811
+Jean-Sébastien	0.025803
+Jean-Noël	0.025794
+Gaétan	0.025786
+Philou	0.025768
+Gégé	0.025760
+Pierre-Jean	0.025734
+Deprez	0.025726
+Timothé	0.025717
+Smeets	0.025709
+Vanden	0.025692
+Titouan	0.025675
+Jean-Denis	0.025649
+Charles-Antoine	0.025633
+Daems	0.025624
+Brasserie	0.025616
+Gillet	0.025607
+Léandre	0.025599
+Barbier	0.025582
+Côme	0.025549
+Proost	0.025540
+Pierre-Henry	0.025516
+Rudolphe	0.025482
+Rutten	0.025433
+Courtois	0.025425
+Godefroy	0.025416
+Bérenger	0.025408
+Niculae	0.025392
+Jean-René	0.025384
+Moustique	0.025367
+Mouton	0.025359
+J-Marc	0.025343
+Bureau	0.025335
+Haeck	0.025310
+Jyrki	0.025294
+Peinture	0.025286
+Nikolov	0.025246
+Batko	0.025238
+Giannhs	0.025230
+Farko	0.025222
+Sosthène	0.025206
+J Claude	0.025198
+Damit	0.025190
+Vidic	0.025174
+Joaopaulo	0.025126
+Hyago	0.025110
+João Augusto	0.025063
+Joao Ricardo	0.025031
+Ciso	0.024945
+Flamarion	0.024938
+Zè	0.024915
+Jairson	0.024907
+Pierri	0.024891
+Salmir	0.024876
+Seiler	0.024830
+Marc-Henri	0.024822
+Damico	0.024807
+Metzger	0.024799
+Fortunat	0.024792
+Bajra	0.024776
+Fiorentino	0.024769
+Ferizi	0.024761
+Palumbo	0.024754
+Volken	0.024731
+Meharena	0.024723
+Pedro Filipe	0.024716
+Sefadin	0.024701
+Flavio Antonio	0.024693
+Leclerc	0.024648
+Andrien	0.024633
+Jannot	0.024626
+Guohui	0.024611
+Shaohui	0.024603
+Haoze	0.024589
+Jeis	0.024544
+Dimosthenis	0.024529
+Bohy	0.024507
+Umpa	0.024485
+Olgerd	0.024478
+Pentti	0.024470
+Datan	0.024463
+Goetz	0.024456
+Schaefer	0.024441
+Michaelis	0.024434
+Vivre	0.024427
+Arnar	0.024419
+Gudmundur	0.024412
+Brynjar	0.024405
+Sveinn	0.024390
+Chinwi	0.024354
+Radoine	0.024340
+Boukhatem	0.024332
+Artiste	0.024325
+Plombier	0.024318
+Hireche	0.024311
+Bous	0.024304
+Djebril	0.024289
+Cherche	0.024282
+Carni	0.024261
+Luukas	0.024232
+Tiberi	0.024225
+Sassu	0.024218
+Bingen	0.024197
+Basili	0.024190
+Bounama	0.024183
+Ari-Pekka	0.024175
+Klinz	0.024161
+Youenn	0.024154
+Zarzis	0.024147
+Jean-Dominique	0.024140
+Gaillard	0.024133
+Niamor	0.024119
+Smaïn	0.024112
+Lothaire	0.024105
+Bouboul	0.024098
+Melvil	0.024091
+Wull	0.024070
+Resko	0.024042
+Jahbless	0.024035
+Amevi	0.024028
+Vasques	0.024015
+Yiuming	0.024008
+Zelko	0.023987
+Melko	0.023973
+Ruga	0.023953
+Sadikovic	0.023939
+Síomón	0.023918
+Razvy	0.023911
+Rekad	0.023905
+Sambhav	0.023898
+Zakho	0.023884
+Seyed Jalal	0.023877
+Gylfi	0.023864
+Gianvito	0.023857
+Zaccaria	0.023850
+Rizzi	0.023843
+Quirico	0.023837
+Spinelli	0.023830
+Serafini	0.023823
+Agostini	0.023816
+Berardi	0.023810
+Umbe	0.023803
+Locatelli	0.023796
+Bologna	0.023789
+Fantini	0.023783
+Agosta	0.023776
+Montanaro	0.023769
+Formica	0.023756
+Paladino	0.023749
+Bressan	0.023742
+Viscardo	0.023736
+Bellomo	0.023729
+Foschi	0.023722
+Ingerul	0.023716
+Kimmel	0.023709
+Neico	0.023689
+Greggory	0.023682
+Toshihiko	0.023656
+Bhabindra	0.023649
+Mochito	0.023629
+Patrick An	0.023610
+Jackda	0.023603
+Limoncello	0.023596
+Bauler	0.023577
+Cordella Cucinelli	0.023564
+Piduca	0.023538
+Carlosnorberto	0.023518
+Haico	0.023505
+Weyer	0.023492
+Salgueiro	0.023486
+Pierotti	0.023473
+Weyrich	0.023466
+Hellers	0.023460
+De Lux	0.023421
+Pütz	0.023408
+Ayzo	0.023402
+Vitor Lurdes	0.023383
+Jamos	0.023376
+Bicci	0.023370
+Alexander Pétur	0.023363
+Aduccio	0.023351
+Reinertz	0.023344
+Ensch	0.023338
+Jalal Altmimi Altmimi	0.023332
+Denuit	0.023325
+Mijaz	0.023319
+Halilović	0.023313
+Collini	0.023306
+De Sousa Manuel	0.023300
+Krecké	0.023294
+Dossantos	0.023287
+Raposo	0.023281
+Krack	0.023268
+Jose Simoes	0.023262
+Schrantz	0.023256
+Kaadir	0.023250
+Alkpote	0.023243
+Hosinger	0.023237
+Bruno Graca	0.023231
+Yff	0.023218
+Tangeten	0.023212
+Romito	0.023206
+Tubaron	0.023187
+Freitag	0.023181
+Christian Menn	0.023162
+Dragao	0.023150
+Englaro	0.023143
+Nothum	0.023137
+Streveler	0.023131
+Grosber	0.023119
+Scozzese	0.023106
+Jaeck	0.023100
+Jérônimo	0.023088
+Kolic	0.023082
+Oé	0.023069
+Colling	0.023063
+Alves Gouveia	0.023057
+Ivete-Luigi	0.023051
+Tomáz	0.023039
+Dentzer	0.023033
+Orlando Jorge	0.023027
+Laquintana	0.023020
+Bacic	0.023014
+Cremmer	0.023008
+Quiring	0.022996
+Stauto	0.022978
+Antônio Fernando	0.022972
+Oldbar	0.022966
+Clarki	0.022960
+Da Silva Martins	0.022954
+Detail	0.022923
+Soragna	0.022917
+Ferreira Viegas	0.022899
+Sifu Marc	0.022887
+Semir Bjelic	0.022881
+Vaz Jose	0.022863
+Ivo Rafael	0.022852
+Maranha	0.022846
+Hun Keen	0.022828
+Yann Audrey	0.022822
+Alves Da Silva	0.022798
+Coos	0.022792
+Cescutti	0.022786
+Silva Costa	0.022768
+Pleim	0.022763
+Castanheira	0.022757
+Pirmat	0.022751
+Laranjeira	0.022739
+Rasqui	0.022733
+Emanuel Silva	0.022727
+Jewi	0.022721
+Costinha	0.022716
+Benvas	0.022710
+Puttes	0.022704
+De Lima	0.022698
+Hugo E Lucia	0.022692
+Krescht	0.022686
+Laschette	0.022680
+Crelo	0.022675
+Klomp	0.022669
+Karels	0.022663
+Euzebius	0.022646
+Madail	0.022622
+Inacio Tomaz	0.022617
+Schanck	0.022605
+Osmanović	0.022593
+Welbes	0.022588
+Alomerovic	0.022570
+Carau	0.022565
+Barrela	0.022559
+Daleiden	0.022553
+Mexx An Martine	0.022547
+Antao	0.022542
+Sifu David	0.022536
+Brochmann	0.022530
+Kocks	0.022519
+Gambuto	0.022513
+Laschet	0.022485
+Hutmacher	0.022479
+Geraldes	0.022456
+Stoltz	0.022445
+Beauchet	0.022439
+Souvigne	0.022434
+Kettmann	0.022422
+Leflor	0.022417
+Cabrita	0.022411
+Vitopaolo	0.022406
+Ewert	0.022400
+Balsa	0.022394
+Benjamim Felix Junior	0.022383
+Olm	0.022372
+Friden	0.022361
+Willex	0.022355
+Schwirtz	0.022350
+Diamante Gould	0.022344
+Troncao	0.022333
+Wolzfeld	0.022327
+Wildgen	0.022322
+Kappler	0.022316
+Afonso Gil	0.022311
+Zappone	0.022299
+Kadric	0.022294
+Zeitz	0.022288
+Pedro Oliveira	0.022283
+Roeder	0.022272
+Rui David	0.022266
+Freres	0.022244
+Birden	0.022233
+Almor	0.022228
+Viichter	0.022222
+Zappala	0.022211
+Patrao	0.022200
+Fernando Custódio	0.022189
+De Zorzi	0.022184
+Kikuh	0.022178
+Focaccetti	0.022173
+Klengen	0.022162
+Vesque	0.022157
+Dahm	0.022151
+Jumex	0.022146
+Peopleof	0.022140
+Roef	0.022135
+Dnb	0.022124
+Guilyan	0.022102
+Ignassus	0.022097
+Serangeli	0.022086
+Ravinger	0.022070
+Steinmetz	0.022065
+Pirsch	0.022059
+Fernandes Martins	0.022043
+Marrafa	0.022022
+Fogens	0.022017
+Santantoni	0.022011
+Yrmux	0.022006
+Correia Fernandes	0.021990
+Bettendorf	0.021985
+El Khal	0.021969
+Braquet	0.021958
+Perrad	0.021953
+Loron	0.021948
+Marian Victor	0.021942
+Gehlen	0.021937
+Schmit Natascha	0.021932
+Cristiano Sarmento	0.021926
+Hentzen	0.021921
+Omes	0.021916
+Servicos	0.021905
+De Carvalho	0.021900
+Sirilyas	0.021884
+Weser	0.021879
+Dox Tavares	0.021874
+Rui E	0.021869
+Schmitzi	0.021863
+Bourg	0.021858
+Mīgûël	0.021848
+Hipp	0.021843
+Dieschbourg	0.021837
+Cucchiaro	0.021827
+Bananinha	0.021817
+Ourth	0.021811
+Bauschleid	0.021801
+Perdiz	0.021796
+Hassane Ben	0.021791
+Fernando Martins	0.021780
+Gelf	0.021765
+Frappier	0.021739
+Skelic	0.021734
+Djamilo	0.021729
+Jungers	0.021724
+Smö	0.021719
+Leichtenberg	0.021713
+Hasiban	0.021703
+Fanp	0.021688
+Gaan	0.021673
+Willii	0.021668
+Iero	0.021662
+Aiguang	0.021657
+Canelas	0.021647
+Wuqiang	0.021632
+Vitor E Carla	0.021622
+Tharp	0.021617
+Firme	0.021602
+Minculeasa	0.021597
+Bolad	0.021592
+Spirko	0.021582
+Marco Silva Sd	0.021567
+Picollo	0.021557
+Duprel	0.021542
+De Codé	0.021537
+Smeilyng	0.021527
+Avaux	0.021522
+Laures	0.021517
+Skama	0.021512
+Silva Pinto	0.021507
+Paramemalick	0.021502
+Lampertz	0.021497
+Americo Silva	0.021492
+Toschi	0.021487
+Wealer	0.021477
+Walentiny	0.021472
+J-Cl	0.021467
+Muacho	0.021462
+Henrique Cardoso	0.021457
+Sousa Marques	0.021442
+Daniel E Graciete	0.021437
+Carlides	0.021423
+Tessaro	0.021418
+Domocos	0.021408
+Yenge	0.021398
+Ziethen	0.021393
+Glaesener	0.021383
+To-Ze	0.021378
+Akwar	0.021369
+Jorge Ventura	0.021344
+Dreco	0.021335
+Berck	0.021330
+Nayss	0.021315
+Vidjay	0.021310
+Daiwelschöön	0.021306
+Ernster	0.021296
+Mehdija	0.021286
+Lopes Borges	0.021281
+Kikinho	0.021277
+Berens	0.021272
+Aust	0.021267
+Boultgen	0.021262
+Guelff	0.021257
+Reinesch	0.021253
+Kugi	0.021248
+Treinen	0.021243
+Ceniviva	0.021238
+Dasilvamadeira	0.021229
+Thafakar	0.021224
+Adao Martinho	0.021219
+Bertame	0.021209
+Ludowick	0.021200
+Helder Hugo	0.021186
+Petzilu	0.021181
+Ãñthøñÿ	0.021171
+Eduardo E Fatima	0.021167
+Filipe Lopes	0.021162
+Henriques Inacio	0.021152
+Welz	0.021143
+Bossio	0.021119
+Brunodaniel	0.021115
+Bolmer	0.021105
+Joelle-Reggie	0.021096
+Ngoc Cuong	0.021082
+Ricardo Ferreira	0.021072
+Stoco	0.021063
+Tosse	0.021054
+Azevedo Fernando	0.021049
+Ferreira Oliveira	0.021044
+Rafæl	0.021035
+Vandivinit	0.021026
+Luis Lousada	0.021017
+Jilhiard	0.021012
+Antoine Alias Toune	0.020998
+Cano Vazquez	0.020993
+Rodrigues Fernandes	0.020989
+Schockmel	0.020984
+Streumer	0.020980
+Suljo Nermina	0.020961
+Martinetti	0.020952
+Vlasic	0.020943
+Micau	0.020924
+Pétouilla	0.020915
+Stephane Philipa	0.020911
+Dakato	0.020906
+Afintinda	0.020901
+Staus	0.020892
+Bruno Ana	0.020888
+Joseph Nikolaus	0.020883
+Minley	0.020865
+Bahtijari	0.020861
+Niinys	0.020856
+Marco-Lisa	0.020847
+Grompere	0.020838
+Da Silva Duarte	0.020829
+Marques Ribeiro	0.020820
+Codato	0.020811
+Quietsch	0.020788
+Martins Vieira	0.020784
+Monteiro Mendes	0.020779
+Qiucheng	0.020770
+Taletovic	0.020761
+Rodrigues Barbosa	0.020752
+Junck	0.020743
+Cloos	0.020735
+Mutairu	0.020726
+Sachen	0.020721
+Helioines	0.020717
+Elio Gomes	0.020712
+Djassi	0.020708
+Cotor	0.020703
+Scheinen	0.020695
+Sousa Santos	0.020690
+Tchorel	0.020686
+Taehum	0.020681
+Bodem	0.020677
+Scholler	0.020672
+Gabriel Jojo	0.020668
+Schmartz	0.020664
+Ndewa	0.020650
+Pęřęïřa	0.020646
+Cega	0.020642
+Djeris	0.020633
+Depienne	0.020628
+Maersk	0.020624
+Sheila Adelmo	0.020615
+Zou Nadou	0.020611
+Bratstvo	0.020607
+Lanser	0.020602
+Spaus	0.020593
+Valmorbida	0.020589
+Max Nicolas	0.020580
+Morth	0.020576
+Colamonico	0.020572
+Bamousse	0.020567
+Scen	0.020563
+Da Fonte	0.020559
+Brever	0.020554
+Thomé	0.020550
+Dol-Dek Dolisy	0.020546
+Beim	0.020541
+Zelur	0.020537
+Lameiras	0.020533
+Nuco	0.020524
+Sebali	0.020520
+Almeida Ferreira	0.020515
+Gansen	0.020511
+Rolz	0.020507
+Americo Paulo	0.020489
+Pedro Gonçalo	0.020485
+Gouden	0.020481
+De Matteis	0.020472
+Lommer	0.020468
+Specchio	0.020464
+Cracel	0.020459
+Thunus	0.020451
+Zens	0.020447
+Rasque	0.020438
+Grisius	0.020434
+Rasqué	0.020425
+Kutluay	0.020421
+Da Silva Costa	0.020417
+Cidalio	0.020412
+Koehler	0.020404
+Sinexe	0.020391
+Skreoox	0.020387
+Savaro	0.020383
+Sefkija	0.020370
+Dat Sin	0.020366
+Senyu	0.020362
+Portha	0.020357
+Kremmydas	0.020353
+Erreip	0.020341
+Marques Inacio	0.020332
+Barnich	0.020328
+Langers	0.020307
+Yyassir	0.020303
+Dias Lopes	0.020299
+Redonii	0.020290
+Âchrâf	0.020286
+Motta Amancio	0.020278
+Orobator	0.020274
+Panichi	0.020265
+Alex Brander	0.020261
+Andre Edmond	0.020253
+Alin Ionut	0.020249
+Lauth	0.020240
+Nejus	0.020236
+Bubacary	0.020207
+Osio	0.020203
+Veleno	0.020199
+Hachtel	0.020191
+Onça	0.020182
+Bintz	0.020178
+Pimpinn	0.020174
+Libardi	0.020166
+Anacsajardel	0.020162
+Griné	0.020158
+Rafko	0.020150
+Fransuar	0.020146
+Bossers	0.020141
+Euchimel	0.020137
+Camon	0.020133
+Nikels	0.020129
+Joseph Carlo	0.020125
+Didier De Georges	0.020121
+Revonation	0.020105
+Luis Inês	0.020101
+Dos Santos Ferreira	0.020093
+Đe Ŕoŉđ	0.020089
+Paulo Joao	0.020085
+Virgolino	0.020080
+Bia E Nisio	0.020076
+Schenal	0.020072
+Jaouid	0.020064
+Keven Jake	0.020056
+Kloot	0.020052
+Wuerm	0.020048
+Antonio Gomez	0.020040
+Vicentearguelles	0.020036
+Henrique E	0.020032
+Feidt	0.020028
+Leo-Paul	0.020024
+Strotz	0.020020
+Wiseler	0.020016
+Nielcoen	0.020000
+Nicunicu	0.019996
+Andreclaudia	0.019992
+Hamatoi	0.019988
+Marbes	0.019984
+Logelin	0.019980
+Parcy	0.019976
+Pitz	0.019968
+Sergio Areias	0.019964
+Ganacioso	0.019956
+Konfe	0.019952
+Walers	0.019948
+Vagit	0.019940
+Schoué	0.019936
+Djempy	0.019928
+Bruno Mergulhão	0.019917
+Spini	0.019897
+Mouride Sadikh	0.019889
+Mokonen	0.019885
+Kaboth	0.019877
+Duarte Pereira	0.019873
+Plea	0.019858
+Indami	0.019854
+Gavrilovic	0.019850
+Nfaba	0.019838
+Serom	0.019834
+Messineo	0.019830
+Rolles	0.019826
+Da Ny	0.019819
+Owalid	0.019811
+Mike Lena	0.019803
+Médé	0.019799
+Lătinø	0.019795
+Braconnier	0.019791
+Sofia Rafael	0.019787
+Utter	0.019780
+Tajak	0.019776
+Taxis Ambulances	0.019772
+Alentejano	0.019768
+Jesulino	0.019757
+Schakalos	0.019753
+José Tavares	0.019749
+Metzler	0.019745
+Nols	0.019730
+Bollig	0.019726
+Radiofayl	0.019710
+Luis Cerqueira	0.019703
+Tunn	0.019699
+Lambrice	0.019687
+Ben-Esther	0.019676
+Possenti	0.019672
+Ramcilovic	0.019665
+Lemcee	0.019661
+Wīllīam	0.019649
+Jacøb	0.019638
+Umran Tahir	0.019634
+Lahr	0.019630
+Deedžej	0.019627
+Muhamed Alida	0.019623
+Sormy	0.019619
+Rívas	0.019612
+Da Silva Pereira	0.019608
+Da Costa Bento	0.019593
+Joel André	0.019585
+Cucchiara	0.019582
+Lao Rui	0.019578
+Aires Onildo	0.019570
+Daubenfeld	0.019567
+Sourou	0.019563
+Kevin Yves	0.019559
+Jøhññÿ	0.019552
+Fàbiõ	0.019548
+Vadu	0.019540
+Bes Arif	0.019533
+Onun	0.019529
+Hippert	0.019525
+Kiaro	0.019522
+Liami	0.019511
+Teodoro Carlo	0.019503
+Conrardy	0.019499
+Bruno E	0.019485
+Streimler	0.019481
+Fernando Pereira	0.019474
+Muntaga	0.019470
+Esposto	0.019466
+Sterpenig	0.019462
+Piěrre	0.019459
+Queiiróós	0.019437
+Lassing	0.019429
+Adrian Scott	0.019426
+Ze Manuel	0.019418
+Lacapra	0.019415
+Satiruces	0.019407
+Rita Carlos	0.019400
+Pedromiguel	0.019393
+Biljana Milan	0.019382
+Adanilson	0.019375
+Babacic	0.019367
+Martins Gomes	0.019360
+Sįviø	0.019356
+Santinhos	0.019353
+Jeremias Da Cruz	0.019349
+Lcrs Simoes	0.019346
+Melja	0.019331
+Ahmed Tidiane	0.019320
+Athiwat	0.019306
+Rosselet	0.019302
+Bellotto	0.019299
+Ianex	0.019295
+Schouka	0.019292
+De Carvalho Pereira	0.019277
+Dudunoelmabernardo	0.019263
+Istref Qendresa	0.019256
+Latko	0.019252
+Dautbasic	0.019249
+Da Fonseca	0.019245
+Manuel Bruno	0.019238
+Da Silva Matos	0.019234
+Delzito	0.019231
+Krystoff	0.019227
+Tamanaco	0.019220
+Zezão	0.019217
+Fabioandmic	0.019209
+Steines	0.019202
+Carlos Soares	0.019199
+Leiros	0.019192
+Selmanovic	0.019185
+Nerciso	0.019178
+Āl	0.019174
+Gusinac	0.019171
+Clàudia João	0.019160
+Moisesmarli	0.019157
+Filipé	0.019149
+Antonio Moreira	0.019146
+Elzino	0.019139
+Almeida Pinto	0.019135
+Hillsong	0.019132
+Diclindo	0.019128
+Duarte Soares	0.019121
+Del Zio	0.019118
+Dh Bm	0.019104
+Nylton	0.019101
+Steyer	0.019097
+Ruii	0.019090
+Stoneconcept	0.019083
+Jakyfuso	0.019080
+Ruzdo	0.019073
+Göhlhausen	0.019069
+Nabais	0.019066
+Varela Carlitos	0.019062
+Gutic	0.019059
+Trubljanin	0.019052
+Adnan-Maida	0.019042
+Shisha Bar	0.019035
+Louis Guillaume	0.019028
+Mos Bunituu	0.019021
+Daozao	0.019017
+Geschwindt	0.019011
+Calakovic	0.019007
+Frutz	0.019004
+Bybbo	0.019000
+Ligonja	0.018997
+Curado	0.018993
+Šabotić	0.018990
+Paço	0.018987
+Zenner	0.018983
+Ismaeleclaudia	0.018973
+Dáàvíìd	0.018966
+Guanfeng	0.018959
+Prody	0.018956
+Ibris	0.018949
+Peter Stefhan	0.018946
+Kouadio Bertin	0.018939
+Steinfort	0.018935
+Buraima	0.018932
+Areghan	0.018929
+Hazbija	0.018925
+Iamaustine	0.018922
+Armacho	0.018919
+Radinaru	0.018912
+Marc Maee	0.018905
+Kazafer	0.018902
+Mensud	0.018891
+Stiven Elcotisao	0.018888
+Triizzy	0.018885
+Imbula	0.018878
+Adis Dise	0.018875
+Frazao	0.018871
+Klemente	0.018865
+Crnovrsanin	0.018861
+Maghyaru	0.018848
+Teixeira Meireles	0.018844
+Eldirson	0.018841
+Aventino	0.018834
+Aldolimi	0.018818
+Cakaj	0.018814
+Gauche	0.018811
+Albanomarisa	0.018808
+Qaderi	0.018804
+Bigui	0.018798
+Sanel Saky	0.018794
+William Lazare	0.018788
+Behlulaj	0.018785
+Pierre Joaquim	0.018771
+Arturribeiro	0.018765
+Peixinho	0.018761
+Pasteur Serge	0.018758
+Brad Coco	0.018748
+Costa Pereira	0.018745
+André Mena	0.018738
+Dzevad Mera	0.018732
+Spock Monteiro	0.018728
+Da Silva Gomes	0.018719
+Rostoff	0.018715
+Temko Anela	0.018712
+Tranjar	0.018709
+Kajevic	0.018689
+Hubsch	0.018686
+Kauanassuncao	0.018683
+Schilz	0.018676
+Lassga	0.018673
+Puuto	0.018663
+Reitz	0.018660
+Chrisluis	0.018653
+Necko Alma	0.018650
+Deddes	0.018647
+Rui Paulo	0.018640
+Qaad	0.018637
+Pedras	0.018634
+Nilvando	0.018631
+Kreins	0.018627
+Harly Yony	0.018624
+Lizender	0.018621
+Dragusic	0.018618
+Harko	0.018611
+Usmir	0.018602
+Gilson José	0.018598
+Fetz	0.018586
+Suplja	0.018576
+Sérgio Miguel	0.018570
+Zevin	0.018566
+Kleinbauer	0.018563
+Kahlki	0.018554
+Mménélik	0.018547
+Dellacqua	0.018544
+Knoop	0.018538
+Da Eira	0.018534
+Bekonhabebe	0.018515
+Krusic	0.018512
+Ivan Aleksandra	0.018509
+Arbeert	0.018506
+Chřïs	0.018503
+Luis Rosinha	0.018499
+Mchiri	0.018496
+Da Ki	0.018493
+Ganic	0.018481
+Martins Rodrigues	0.018477
+Pasteck	0.018471
+Haris Emila Elisa	0.018468
+Benyameen	0.018462
+Njogu Awa	0.018458
+Saianda	0.018449
+Iliri	0.018437
+Dylaver	0.018433
+Ermelind	0.018427
+Ekuran	0.018418
+Veliu	0.018415
+Zepe	0.018408
+Henkes	0.018396
+João Baptista	0.018393
+Januário	0.018390
+Damião	0.018387
+Cristovão	0.018377
+Admiro	0.018374
+Simão Pedro	0.018371
+Domingos José	0.018359
+Jose Ferreira	0.018356
+Manuel Fernandes	0.018352
+Antonio Fernandes	0.018349
+Rui Costa	0.018346
+Pedro Neto	0.018343
+Sidónio	0.018340
+Domigos	0.018337
+Miguel Gomes	0.018331
+Pedro Martins	0.018328
+Pedro Mateus	0.018325
+Joao Dos Santos	0.018322
+Antonio Lopes	0.018319
+Manuel Costa	0.018312
+Miguel Lopes	0.018309
+Desejo	0.018306
+Antonio Da Costa	0.018303
+Velhinho	0.018300
+Antonio Joaquim	0.018297
+Brás	0.018285
+Licínio	0.018282
+André Miguel	0.018279
+Natercio	0.018273
+João Eduardo	0.018270
+Tininho	0.018267
+Jose Mendes	0.018264
+Fernando Mendes	0.018260
+Pedro Lopes	0.018257
+Fernando Ferreira	0.018251
+Joao Jorge	0.018248
+Angélico	0.018242
+Antonio De Sousa	0.018239
+Antonio Monteiro	0.018236
+Jose Ribeiro	0.018233
+Manuel Monteiro	0.018230
+Manuel Oliveira	0.018227
+Joao Neto	0.018224
+Augusto Gomes	0.018221
+Carlos Mendes	0.018218
+Antonio Vieira	0.018215
+Amarilio	0.018212
+Mario Silva	0.018209
+Zé Maria	0.018203
+Alípio	0.018197
+Carlos Joao	0.018194
+Manuel Cardoso	0.018191
+Olhos	0.018188
+Derito	0.018185
+Miguel Da Costa	0.018182
+João Ramos	0.018179
+Zé Carlos	0.018173
+José Cardoso	0.018170
+Manasses	0.018164
+Craveiro	0.018161
+Kitumba	0.018152
+Darame	0.018146
+Teixeira De Sousa	0.018143
+Martins Da Costa	0.018140
+Bruno M	0.018137
+Joaomanuel	0.018128
+Orlando Diogo	0.018125
+Maiuca	0.018122
+Pajó	0.018116
+Leonel Dos Santos	0.018113
+Victor João	0.018110
+Antão	0.018107
+Coelhinho	0.018104
+Gabriel Marques	0.018101
+Luis Diogo	0.018098
+Paulo Cunha	0.018092
+Fränck	0.018089
+Monteiro Domingos	0.018086
+Ferreyra	0.018083
+Jorgedaniel	0.018080
+Carlos Americo	0.018078
+Thaigo	0.018075
+Hansjörg	0.018072
+Halilovic	0.018063
+Resch	0.018060
+Mehmedalija	0.018045
+Mehic	0.018039
+Hasanovic	0.018033
+Walch	0.018030
+Nusmir	0.018028
+Hauer	0.018025
+Knaus	0.018022
+Mitsch	0.018010
+Bastel	0.018004
+Nediljko	0.018001
+Büchler	0.017992
+Bürger	0.017990
+Demce	0.017984
+Imsirovic	0.017981
+Selimovic	0.017978
+Nussbaum	0.017975
+Zehrid	0.017972
+Jussuf	0.017966
+Sejfudin	0.017963
+Asim Edina	0.017961
+Ditsch	0.017958
+Buzatu	0.017955
+Emim	0.017943
+Xaos	0.017940
+Golam Rabbani	0.017935
+Dominiek	0.017932
+Thibeau	0.017926
+Corneel	0.017923
+Pauwels	0.017920
+Geoffray	0.017917
+Dhondt	0.017914
+Beckers	0.017911
+Réginald	0.017906
+Isidoor	0.017897
+Goethals	0.017894
+Swinnen	0.017891
+Smits	0.017889
+Guylian	0.017883
+Pierre-Philippe	0.017880
+Dorsan	0.017874
+Pierre-André	0.017871
+De Witte	0.017860
+De Clercq	0.017857
+Gérôme	0.017854
+Gwenaël	0.017851
+Niglo	0.017837
+Descamps	0.017832
+Guerric	0.017829
+Boulanger	0.017826
+Dejonghe	0.017823
+Gillou	0.017817
+Brasseur	0.017815
+De Backer	0.017809
+Paul-Henry	0.017800
+André-Marie	0.017795
+Meeus	0.017792
+Rénald	0.017789
+Schreurs	0.017786
+Demeulemeester	0.017784
+Cremer	0.017778
+Achten	0.017770
+Toiture	0.017767
+Pirotte	0.017764
+Isaï	0.017761
+Illario	0.017753
+Thijmen	0.017747
+Gouem	0.017744
+Mileto	0.017733
+Josep Maria	0.017730
+Sepol	0.017725
+Capsa	0.017722
+Dennar	0.017716
+Edicarlos	0.017711
+José Antônio	0.017705
+Gustavo Henrique	0.017697
+Adilso	0.017694
+Alécio	0.017680
+Jose Vitor	0.017667
+Luiz Francisco	0.017653
+Juvelino	0.017645
+Joao Alves	0.017631
+Jonatã	0.017625
+Rovilson	0.017620
+Pedro Alves	0.017617
+Servulo	0.017614
+Francisco Fernandes	0.017612
+Marcio Silva	0.017609
+Marcos Tadeu	0.017593
+Docks	0.017587
+Luyanda	0.017584
+Schuler	0.017582
+Probst	0.017576
+Stutz	0.017574
+Dimitrijevic	0.017571
+Wüst	0.017568
+Jean-Frédéric	0.017565
+Nikolco	0.017560
+Vasiljevic	0.017549
+Ljatif	0.017547
+Richemond	0.017538
+Jeanrene	0.017536
+Jean Albert	0.017525
+Yvano	0.017517
+Rabelais	0.017514
+Djelani	0.017512
+Claude Michel	0.017506
+Dupond	0.017493
+Yomba	0.017490
+Clemenceau	0.017479
+Jean Henri	0.017477
+Mbere	0.017474
+Laurent Pierre	0.017469
+Shidong	0.017434
+Zhenghui	0.017432
+Huifeng	0.017418
+Ka Wing	0.017405
+Xuping	0.017402
+Yongzhao	0.017400
+Yongxing	0.017376
+Chengfei	0.017360
+Lingrui	0.017355
+Dianchen	0.017353
+Morera	0.017347
+Alexandrou	0.017342
+Ciuraru	0.017334
+Nirolf	0.017332
+Tincu	0.017319
+Jindřich	0.017316
+Pepik	0.017314
+Pepek	0.017311
+Pates	0.017298
+Stehlik	0.017295
+Hanek	0.017293
+Džon	0.017290
+Cobol	0.017288
+Jens-Uwe	0.017285
+Thoralf	0.017283
+Karl-Josef	0.017280
+Jobst	0.017277
+Heinz-Georg	0.017275
+Hans-Rainer	0.017270
+Voll	0.017267
+Sven-Uwe	0.017264
+Jenö	0.017262
+Geyer	0.017257
+Quoc Hung	0.017252
+Youpa	0.017244
+Thorbjørn	0.017241
+Hans Jørgen	0.017239
+Hans Henrik	0.017236
+Teit	0.017231
+Kristján	0.017226
+Jóhannes	0.017218
+Áki	0.017216
+Karl-Gustav	0.017208
+Ingvi	0.017201
+Daði	0.017195
+Thomas Christian	0.017193
+Bagels	0.017190
+Hrafn	0.017185
+Tchiko	0.017180
+Djebbar	0.017178
+Louafi	0.017175
+Hacine	0.017170
+Nasraddine	0.017168
+Dawadi	0.017157
+Pedro Celestino	0.017155
+Aarne	0.017150
+Aniol	0.017130
+Txiki	0.017127
+Jramon	0.017122
+Yelko	0.017120
+Tafese	0.017115
+Jyry	0.017105
+Per-Olof	0.017100
+Karolus	0.017097
+Yvonnick	0.017095
+Toinou	0.017092
+Pierre-Alexis	0.017090
+Jean-Guillaume	0.017087
+Jean-Eudes	0.017085
+Pierre-Adrien	0.017082
+Jean-Raymond	0.017077
+Tancrède	0.017072
+J-Philippe	0.017062
+Peltier	0.017055
+Jean-Gilles	0.017052
+Jean-Albert	0.017050
+Enriqué	0.017042
+Francisque	0.017037
+Je Sais	0.017035
+Nicølas	0.017033
+Zézé	0.017028
+Maillet	0.017025
+Stuey	0.017018
+Mauzi	0.017013
+Ditt	0.017010
+Berben	0.017008
+Griffiths	0.017005
+Attiogbe	0.017003
+Fricky	0.017001
+Patrick Osei	0.016998
+Alphred	0.016996
+Azamela	0.016991
+Laertis	0.016988
+Spanos	0.016983
+Yohni	0.016978
+Wing Hang	0.016976
+Yuk Fai	0.016974
+Honming	0.016969
+Wai Kai	0.016966
+Chiuming	0.016964
+Hong Kiu	0.016959
+Nikša	0.016942
+Ja Sam	0.016939
+Kamenko	0.016937
+Frki	0.016935
+Aldijan	0.016930
+Leut	0.016925
+Aalen	0.016918
+Sevad	0.016915
+Lder	0.016913
+Ceric	0.016910
+Bien Aimé	0.016906
+Cordonnerie	0.016903
+Pierre Marcel	0.016901
+Joseph Jacques	0.016896
+Duchene	0.016893
+Bedő	0.016886
+Bánk	0.016884
+Ungi	0.016877
+Spiller	0.016874
+Hevér	0.016872
+Peller	0.016867
+Egres	0.016865
+Steier	0.016862
+Holtz	0.016850
+Seánie	0.016845
+Prem Lal	0.016836
+Nematolah	0.016833
+Apadana	0.016831
+Thordur	0.016817
+Gunnsteinn	0.016807
+Gudlaugur	0.016805
+Jói	0.016803
+Svafnir	0.016798
+Giandomenico	0.016793
+Amodio	0.016781
+Pierandrea	0.016779
+Bachisio	0.016774
+Pellegrini	0.016772
+Ferretti	0.016767
+Gianpy	0.016765
+Muzio	0.016762
+Colucci	0.016760
+Frediano	0.016758
+Gigetto	0.016755
+Stellario	0.016753
+Palmisano	0.016751
+Consiglio	0.016748
+Lazzarini	0.016746
+Alfonsino	0.016744
+Paolucci	0.016741
+Bonomi	0.016739
+Panetta	0.016737
+Contini	0.016734
+Fusaro	0.016732
+Ferranti	0.016730
+Mancinelli	0.016727
+Marcucci	0.016725
+Cuccu	0.016723
+Lippolis	0.016720
+Giorgetti	0.016718
+Prosperi	0.016715
+Minardi	0.016713
+Mario Domenico	0.016711
+Galletti	0.016708
+Alunni	0.016706
+Everad	0.016701
+Elkay	0.016699
+Yukinori	0.016695
+Shinri	0.016688
+Fujiyama	0.016681
+Jaekwon	0.016667
+Young Chan	0.016660
+Kazimieras	0.016653
+Kristijonas	0.016650
+Vincas	0.016648
+Rapolas	0.016646
+Emilijus	0.016644
+Rolanas	0.016641
+Carl-Filip	0.016637
+Metos	0.016632
+Jean-Paul Jibby	0.016627
+Harlay	0.016625
+Argezon	0.016621
+Benardino Almeida	0.016618
+Thomma	0.016616
+Reichenbach	0.016607
+Ranli	0.016600
+Romain-Marisa	0.016598
+Linhelinhe	0.016595
+Peinture Barbia Décor	0.016589
+Cardoso Lopes	0.016579
+Joao Tiago	0.016577
+Ze Santos	0.016573
+Faljic	0.016568
+Aficker	0.016566
+Cimarelli	0.016563
+Romanow	0.016550
+Carriso	0.016548
+Mupp	0.016534
+Claude Dit Georges	0.016529
+Figueiredo Simoes	0.016527
+Rafael John	0.016518
+Peugeot Peugeot	0.016516
+From	0.016514
+Stöps	0.016511
+Thiltgen	0.016509
+Rafailovic	0.016507
+Kiens	0.016502
+Mike Roger	0.016496
+Frères	0.016487
+Niclos	0.016485
+Nelo Mila	0.016482
+Noblet	0.016480
+Zouval	0.016478
+Marc-Pierre	0.016473
+Yolando Tomas	0.016471
+Paulo Vasco	0.016469
+Pinetti	0.016464
+Marcel Speller	0.016458
+Fernando Figueiredo	0.016455
+Frossi	0.016453
+Bartringer	0.016451
+Sredko	0.016449
+Ernzen	0.016447
+Beinhart	0.016444
+Nascimento Mota	0.016440
+Marvin-Dj Md	0.016438
+Mourão	0.016435
+Djjang	0.016433
+Fatigati	0.016431
+De Bauer	0.016427
+Jaakah	0.016420
+Guy Jean Joseph	0.016416
+Lombardelli	0.016413
+Augostino	0.016411
+Virgili	0.016409
+Joaò Carlos	0.016400
+Antonio Silva Canelas	0.016396
+Schritz	0.016393
+Silva Reis	0.016387
+Felisberto Paiva	0.016385
+Azul Cardoso	0.016374
+Titcho	0.016371
+Restilritrovo	0.016369
+François Francis Fränz	0.016367
+Cmcc	0.016365
+Qirex	0.016363
+De Köllsche	0.016360
+Xiangjie	0.016358
+Tavares Monteiro	0.016356
+Morhard	0.016350
+Mauricio Alexandre	0.016347
+Johnny Kimba	0.016343
+Armando Seven	0.016341
+Domé	0.016339
+Jose Carlos Silva	0.016336
+Dasbourg	0.016334
+Biej	0.016330
+Andrejos	0.016323
+Astrofun	0.016315
+Terffi	0.016310
+Baseuil	0.016308
+Sweaz	0.016302
+Houke	0.016300
+Matos Sousa	0.016297
+Dorigo	0.016293
+Seki Elmedina	0.016289
+Ihry	0.016287
+Iacomucci	0.016284
+Robin Maria	0.016282
+Chengshan	0.016280
+Liangshan	0.016278
+Herdade	0.016276
+Bouallagui	0.016274
+Mannone	0.016271
+Dmlgsanic	0.016263
+Keup	0.016261
+Marc Dräi	0.016259
+Pereira Da Costa	0.016256
+Alves Fernando	0.016252
+Serafim Lagoa	0.016241
+Armelim	0.016239
+Pulcinelli	0.016237
+Ernoult	0.016231
+Oliveira Fernandes	0.016229
+Veni Vidii	0.016224
+Barloukeric	0.016222
+Muvimentokabo	0.016218
+Dimonte	0.016216
+Mahzoune	0.016214
+Julien Olivier	0.016207
+Fett	0.016205
+Kausche	0.016203
+Altwiesdesign	0.016201
+Grommes	0.016197
+Debiere	0.016194
+Animasound	0.016190
+Bruno Emanuel	0.016188
+Deminda	0.016184
+Kandels	0.016180
+Wukkes	0.016169
+Magnin	0.016167
+Marco Rosa	0.016165
+Wetz	0.016163
+Oiveiramonteiro	0.016161
+Boyby	0.016158
+Jacques Mathieu	0.016154
+Ďa Śilvå	0.016152
+Luis Martins	0.016150
+Marc Henri	0.016144
+Ervideira	0.016140
+Bryanyann	0.016137
+René Ben	0.016135
+Jaime Cruz	0.016129
+Buschmann	0.016123
+Grégorio	0.016121
+Reinardt	0.016119
+Jemmeng	0.016114
+Lazzarone	0.016112
+Esteves Ferreira	0.016108
+Huth	0.016106
+Muppen	0.016104
+Altino Manuel	0.016100
+Fernando Teresa	0.016098
+Linkels	0.016096
+Ottos	0.016093
+Nipperts	0.016091
+Dongsun	0.016089
+Internaxx	0.016087
+Gaudront	0.016085
+D Chenot Belvaux	0.016083
+Herschbach	0.016081
+Feuerfaust	0.016079
+Mikkel Juul	0.016077
+Brancaleon	0.016075
+Jacinto Cardoso	0.016073
+Vladner	0.016071
+Chris Weirig	0.016064
+Paysages	0.016062
+Cargnelutti	0.016056
+Cadamuro	0.016054
+Atrois	0.016052
+Santos Gaspar	0.016050
+Duhem	0.016046
+Calcagniti	0.016044
+Thibz	0.016040
+Thodor	0.016035
+Akarever	0.016031
+Zeverkaafen	0.016027
+Facchinetti	0.016025
+Muleque	0.016021
+Burnart	0.016015
+S Lopes	0.016013
+Intralux	0.016011
+Esteves Faustino	0.016007
+Alvelosmartins	0.016005
+Christophory	0.016001
+Aagérard	0.015998
+Robbes	0.015994
+Sebastian Philip	0.015990
+Lambin	0.015988
+Mancinelli-Mirti	0.015986
+Mantoani	0.015980
+Pierlot	0.015978
+Bidibod	0.015974
+Hieronimus	0.015970
+Xtof	0.015968
+Jörg-Markus	0.015964
+Locorotondo	0.015956
+Roi Des	0.015952
+Musticchio	0.015950
+Bürgen	0.015948
+Xggl	0.015945
+Olivier Emmanuel	0.015943
+Belkbir	0.015939
+Tiago Vieira	0.015937
+Goffinet	0.015935
+Rettel	0.015933
+Ronoel	0.015931
+Fouarge	0.015929
+De Lemos Jaime	0.015927
+Rademilenkovic	0.015917
+Gatuno	0.015911
+Ajmal Aziz	0.015907
+Mîguel	0.015905
+Romé	0.015903
+Kleiton Ravidson	0.015901
+Naamkeng	0.015897
+Rasid-Gaga	0.015895
+Oliveira Pires	0.015893
+Amilcar-Lurdes	0.015891
+Aguiar De Nobrega	0.015887
+Santos Neves	0.015885
+Scholtus	0.015881
+Lucien Mag	0.015877
+Ferreira Cardoso	0.015875
+Manuel Elsa	0.015871
+Fichtner	0.015865
+Adelino Sousa	0.015861
+Supertramp	0.015859
+Lino Joao	0.015855
+Jarodes	0.015853
+Ali Luisa	0.015851
+Marc Lang	0.015849
+Ave-Lino	0.015847
+Opc Line	0.015845
+Max Strupp	0.015843
+Chouqui	0.015841
+Maia Pinto	0.015833
+Eisenbeis	0.015831
+Cristio	0.015827
+Tavares Pinto	0.015825
+Linnart	0.015823
+Hobscheit	0.015815
+Sobogusto	0.015813
+Botzfirma	0.015811
+Brunootilia	0.015807
+Hugli	0.015805
+Aristides-Sandra	0.015803
+T Hugo	0.015792
+Treis	0.015788
+Schammo	0.015784
+Mario Soares	0.015780
+Francois-Louis	0.015778
+Paroto	0.015776
+Azenha Té	0.015768
+Bermes	0.015764
+Pepulido	0.015762
+Bernard-Louis	0.015758
+Zijiang	0.015756
+E Dis	0.015752
+Enkeland	0.015750
+Hsrbert	0.015749
+Patator	0.015747
+Sybiont	0.015745
+Carreira Barroso Alfredo	0.015743
+Schoos	0.015737
+Acito	0.015735
+Diepeveen	0.015731
+Bevindo	0.015729
+Serv-Elec	0.015725
+Seffora	0.015717
+Patrick Petz	0.015710
+Hadzovic	0.015706
+De Sousa Rocha	0.015700
+Nojoneol	0.015698
+Da Costa Pinto	0.015696
+Friezas	0.015694
+Amin-H	0.015692
+Garer	0.015684
+Kraemer	0.015683
+Txeca	0.015681
+Roger-Pierre	0.015679
+Jean-Jacques Muffi	0.015677
+Baldoradance	0.015675
+Joel Filipe	0.015671
+José E Liliane	0.015669
+Pedrosa Vitorino	0.015665
+Schneider-Schneider	0.015661
+Patrick Fesch	0.015659
+Ruzzene	0.015658
+Torul	0.015652
+Vila Verde	0.015648
+Schrei	0.015636
+Eromej	0.015629
+Wennig	0.015627
+Fernando Pinto	0.015623
+Amavel Sequeira	0.015619
+Beriño	0.015614
+Möwe	0.015608
+Loureiro Silva	0.015604
+Jean-Jaques	0.015602
+Chenggen	0.015600
+Bizau	0.015598
+C-Immo	0.015596
+Sylvére	0.015595
+Kridel	0.015589
+Sølve	0.015587
+Švėñ	0.015585
+Diogo Benjamim	0.015581
+Mathieu René	0.015579
+Rui Manuel Moreira	0.015578
+Dlx	0.015574
+Moleiro	0.015568
+Joao Orlando	0.015566
+Pereira Monteiro	0.015561
+Jorge De Sousa	0.015555
+Martins Teixeira	0.015553
+Martin Christiaan	0.015551
+Ibims	0.015542
+Bosseboeuf	0.015540
+Mongelli	0.015534
+Toze Gomes	0.015530
+Thierry Terio	0.015519
+Bengt-Erik	0.015517
+Dias Sobreiro	0.015514
+Caçadore	0.015512
+Moutonartur	0.015502
+Deischter	0.015499
+Diibra	0.015493
+Den Gudden	0.015491
+Hale-Mira	0.015489
+Birchen	0.015488
+Carl-Taro	0.015486
+Feidet	0.015484
+André An	0.015482
+Seymon	0.015480
+Parcidio	0.015476
+Arlindo Atl	0.015475
+Jewes	0.015471
+Fernandes Tavares	0.015469
+Mbargane	0.015465
+Entao	0.015462
+Pinhal	0.015460
+Škrijelj	0.015458
+Depaoli	0.015456
+Lazzeri	0.015452
+Nakicevic	0.015451
+Ganfeng	0.015449
+Tang Y	0.015447
+Rohs	0.015445
+Didi De Sodade	0.015443
+Getachi	0.015438
+João Dimitri	0.015436
+De Abreu	0.015432
+Rodrigues Cacao	0.015428
+Aves Marques	0.015427
+Amlung	0.015425
+Mota Pinto	0.015423
+Zenton	0.015421
+Debastoscarvalho	0.015416
+Rigutto	0.015414
+Milos Bohler	0.015410
+Walté	0.015408
+Singh Mohan	0.015405
+Tavares Lages	0.015403
+Lorenzt	0.015401
+Tschibuti	0.015399
+Olga Ze	0.015397
+Praid	0.015392
+Brunaet	0.015385
+Schlacko	0.015383
+Leonardis	0.015379
+Gigi Jay	0.015376
+Krauss	0.015374
+Nepper	0.015370
+Borges Roque	0.015368
+Pierre Germain	0.015363
+Rainho	0.015361
+Federico-Anna	0.015357
+Omniscientbeing	0.015354
+Jorgesonia	0.015352
+Costa C. Pereira	0.015348
+Fernando Nunes	0.015345
+Carlos Sao	0.015341
+Pundel	0.015339
+Marcosandra	0.015334
+Sinner	0.015332
+Martins Goncalves	0.015327
+Mqp	0.015323
+Safet-Sajo	0.015321
+Caninaa	0.015319
+Nawami	0.015318
+Zzaschaa	0.015316
+Pizzutilo	0.015312
+Sibenbour	0.015309
+Nanuel Victor	0.015307
+Jose A A	0.015302
+Isoflam Toiture	0.015300
+Weicherding	0.015293
+Ramalho Goncalves	0.015289
+Zuyuan	0.015284
+José Costa Portilho	0.015282
+Controguerra	0.015277
+Scardino	0.015273
+Lucien Scwartz	0.015271
+De Cillia	0.015268
+Hayabougepas	0.015264
+Kehl	0.015262
+Allan Saustrup	0.015261
+G Joe	0.015255
+De Figueiredo Cardoso	0.015252
+Poupart	0.015248
+Nelson Andrea	0.015239
+Galizia	0.015237
+Vigario	0.015230
+Mendes José	0.015225
+Santos Ivo	0.015223
+Bayenet	0.015220
+Schirtz	0.015218
+Ellmer	0.015216
+Cappu	0.015215
+Stukaz	0.015213
+Manuel Vasques	0.015211
+Jorge Monteiro	0.015209
+Letome	0.015206
+Jean-Peirre	0.015204
+Oukili	0.015197
+Victor Artur	0.015195
+Marc Yeti	0.015193
+Victor Cardoso	0.015192
+Bonomally	0.015188
+Carrilho Barroso	0.015186
+Lebrett	0.015181
+Seabra Bras	0.015176
+De Sousa Aguiar	0.015174
+José Eva	0.015172
+De Jesuse Pereira	0.015171
+Young-Min	0.015169
+Enver Nadira	0.015167
+Adam Quaranta	0.015157
+Livração	0.015155
+João Rocha	0.015153
+Arlindo Gomes	0.015152
+Edmar Maia	0.015145
+Monho	0.015141
+Mahmutović	0.015138
+Ricardo Nelson	0.015132
+Geoserv	0.015131
+Da Silva Mesquita	0.015129
+Beim Franco	0.015127
+Spankyy	0.015125
+Dzeljo	0.015122
+Selma Adnan	0.015119
+Vitorinof	0.015117
+Teodor Cristiano	0.015115
+Alberto Rodrigues	0.015113
+Sntos Goncales	0.015112
+Stockreiser	0.015108
+Ennriques	0.015106
+Rúben Ana	0.015101
+Luis Matos	0.015098
+Menuisier	0.015096
+Dy-Anjo	0.015094
+Acácio R	0.015091
+Keith Canyon	0.015086
+Koluman	0.015084
+Morgasm	0.015082
+M-Antonio	0.015079
+Armando Aguiar	0.015077
+Mondim De	0.015076
+Jean-Claude Za	0.015074
+Frias Rodrigues	0.015070
+Basilio Sergio	0.015067
+Arroteia	0.015065
+Barnellini	0.015062
+Welfringer	0.015058
+Ahorn	0.015052
+Pap Fil	0.015050
+Jäng	0.015047
+Dylandidi	0.015045
+Fernando Soares	0.015043
+Bouillé	0.015040
+Heuschling	0.015038
+Ferreirinha	0.015036
+Patrick Yves	0.015035
+Eduardo De Oliveira	0.015033
+Ipatii	0.015030
+Kramp	0.015028
+Huppes	0.015026
+Jean Francios	0.015024
+Lehit	0.015023
+Michael Adekome	0.015021
+De Vor	0.015018
+Xyth	0.015014
+Jängli	0.015011
+Cantarella	0.015009
+Geditz	0.015006
+Armênio	0.015004
+Gomes De Jesus	0.014996
+Keesjan	0.014992
+Rodrigues Da Rocha	0.014986
+Martins Fernando	0.014982
+Pak L	0.014979
+Joao Malainnhi	0.014977
+Manuel Alves Ribeiro	0.014972
+Standardi	0.014970
+Don Louis	0.014965
+Christian Emile Frédéric	0.014964
+Tzaff	0.014962
+Noabe	0.014960
+Bucciarelli	0.014959
+Rol An	0.014957
+Tiburcio Santos	0.014954
+Zcrow	0.014945
+Loureiro Alves	0.014940
+De Sousa Cadete	0.014937
+Cruz De Almeida	0.014935
+Max Charel	0.014932
+Seiceira Dias	0.014929
+Trivigno	0.014927
+Zerbin	0.014925
+Rosado Pedrais	0.014924
+Reggaeboy	0.014920
+Taxifernando	0.014919
+Staudte	0.014915
+Bkaisz	0.014914
+Bouvy	0.014912
+Vitor Paulo	0.014910
+Penas	0.014907
+Hay Hay	0.014904
+Seligson	0.014902
+Xhonneux	0.014900
+Nicht	0.014897
+Graça Jacque	0.014896
+Merelabelair	0.014894
+Nekel	0.014892
+Navalhas	0.014887
+Cosimo Antonio	0.014886
+Btme	0.014882
+David Neves	0.014879
+Romace	0.014871
+Cafevitinho	0.014869
+Netranger	0.014866
+Angelo Mario	0.014864
+Guillod	0.014861
+Stant	0.014859
+John Arne	0.014858
+Wulms	0.014853
+Szkolik	0.014851
+Cantante Camelo	0.014848
+Marinovic	0.014846
+Cornelius Resch	0.014841
+Henrique Monteiro	0.014840
+Buenhijo	0.014835
+Claude Léon	0.014833
+Dos Santos Almeida	0.014832
+Danko Sonja	0.014828
+Màxim	0.014827
+Daubach	0.014825
+Santos Pereira	0.014823
+Manuel Texeira	0.014817
+Pilger	0.014815
+Siward	0.014812
+Carvalho Pereira	0.014810
+Borges Manuel	0.014807
+Chrstophe	0.014802
+Calderini	0.014794
+Manuel José Pires	0.014793
+Vinces	0.014791
+Chip Thu	0.014789
+Dewans	0.014786
+Carvalho Peixoto	0.014778
+Ruckert	0.014772
+Marioff	0.014767
+Felix-Flavius	0.014765
+Onerb	0.014763
+Beites	0.014759
+Muigg	0.014757
+Ginof	0.014754
+Zinsmeister	0.014751
+Tony Marques	0.014749
+Almeida Nunes	0.014747
+Jolujaj	0.014743
+Björn-Olav	0.014741
+Seninho	0.014738
+Sauvant	0.014736
+Doudot	0.014735
+Marcos Alexandre Ribeiro	0.014733
+Gomes De Macedo	0.014725
+Scharll	0.014723
+G-Joé	0.014720
+Soares Nuno	0.014712
+Frutuoso	0.014711
+Cunha Viana	0.014709
+Nekkelchen	0.014706
+Carvalho Verdete	0.014703
+Mastrini	0.014700
+Ottelé	0.014698
+Neumaier	0.014695
+Weyland	0.014693
+Xixa Salgueiro	0.014690
+Patrick-Stefan	0.014688
+Reyter	0.014684
+Matchek	0.014681
+Dach Decker	0.014676
+Tózé	0.014674
+Ântimo	0.014673
+Ko Be	0.014671
+Montenero	0.014669
+Armindo Afonso	0.014668
+Mickouts	0.014666
+Gasperini	0.014665
+Dias Martins	0.014663
+Truka	0.014660
+Joel Pereira	0.014658
+Feuerkiller	0.014655
+Charleshenri	0.014654
+Di Centa	0.014652
+Jay-Kay	0.014641
+Romain Dino	0.014640
+Francesco-Angela	0.014638
+Zibes	0.014633
+Iberico	0.014632
+Laugs	0.014630
+Boumédiène	0.014629
+Weintzen	0.014627
+Brausch	0.014622
+Arrebola	0.014619
+Tschick	0.014618
+Jean-Nico	0.014616
+Ralinger	0.014615
+Fernandes Da Costa	0.014611
+Atonio Fernando	0.014610
+Gatenbein	0.014604
+Grosch	0.014602
+Clesn	0.014600
+Reilendi	0.014599
+Soare Ferreira	0.014597
+Schlimm	0.014596
+Delgado Lopes	0.014594
+Shreyam	0.014593
+Manzari	0.014591
+Barroca Pinto	0.014586
+Costa E Maia	0.014585
+Laroschsteve	0.014582
+Neoneo	0.014577
+Fisimmo	0.014574
+Crestany	0.014573
+Konstantos	0.014571
+Varelas	0.014569
+Heintz	0.014568
+Rfc Sarl	0.014566
+Fernando Goncalves Da	0.014565
+Thomeskan	0.014563
+Pala De Sousa	0.014557
+Urmes	0.014554
+Woumffa	0.014552
+Frantz-Charles	0.014551
+Steffenmunsberg	0.014549
+Albino Pereira Guerra	0.014548
+Ikinci Ibrahim	0.014546
+Mirizzi	0.014545
+Remakel	0.014543
+Wegener	0.014542
+Bangthathead	0.014540
+Maîtres De	0.014539
+Tzony	0.014536
+Kyongshik	0.014534
+Luca Kev	0.014528
+Antunes Ribeiro	0.014526
+Carlos Moura	0.014523
+Navega	0.014520
+Crescht	0.014519
+Ferreira Carneiro	0.014517
+Raposeiro	0.014514
+Geoss	0.014511
+Capricorne	0.014508
+Steve L Fuss	0.014503
+Tomé Neiva	0.014502
+Freis	0.014500
+Marcelo Cathleen	0.014499
+Sasukes	0.014497
+Rietsch	0.014496
+Safko	0.014494
+Michel-Rogers	0.014491
+Quim Rosa	0.014490
+Chenglehui	0.014488
+Jesus Da Silva	0.014485
+Marc Wilhelm	0.014484
+Radu-Theodor	0.014479
+Car Net	0.014473
+Friture	0.014470
+Turping	0.014468
+Rachidbensaadi	0.014467
+Michel Angel	0.014465
+Tilt	0.014464
+Bocci	0.014459
+Holper	0.014455
+T-Harry	0.014452
+Cancela João	0.014450
+Manuel E Sara	0.014449
+Nunes Foseca	0.014446
+Pascal Pasi	0.014437
+Dervisi	0.014432
+Paolo Ymym	0.014429
+Tois	0.014428
+Pinto Simoes	0.014426
+Giovanna Cesare	0.014425
+Azenha Gonçalves	0.014422
+Raphaelo	0.014419
+Flagada	0.014416
+Ninija	0.014413
+Allcapone	0.014411
+Jengi	0.014408
+Luìs Filipe	0.014407
+Jaerling	0.014404
+Vannieuwenhuyse	0.014402
+Moggly	0.014398
+Nihad Niko	0.014395
+Klemann	0.014393
+Obji	0.014392
+Frossy	0.014390
+Feko-Hajra	0.014387
+Fugis	0.014386
+Kamadja	0.014384
+Harald-Sven	0.014381
+Antonio Garcia	0.014380
+Luxien	0.014378
+Whitehead	0.014377
+Potjanarth	0.014375
+Mendes Magalhaes	0.014374
+Jendrick	0.014371
+Tschiderer	0.014364
+Duo Visão	0.014362
+Simoes Dos Santos	0.014361
+Jorge Moutinho	0.014358
+Angie Sergio	0.014356
+Dàrio	0.014353
+Quhila	0.014352
+Valbion	0.014350
+Mangini	0.014347
+Tigrane	0.014346
+Larbii	0.014344
+Fernandes Antunes	0.014343
+Hokaïdo	0.014341
+Cattazzo	0.014340
+Ruzdija	0.014336
+Silva Ferro	0.014327
+Yinkai	0.014325
+Antonio Paiva Cunha	0.014322
+Machado Rodrigues	0.014319
+Albertino Manuel	0.014318
+Leuck	0.014313
+Giancola	0.014309
+Shikuan	0.014308
+Laukamao	0.014305
+Patrignani	0.014303
+Gui Xiong	0.014296
+Streja	0.014294
+Patinhas	0.014293
+Marinangeli	0.014292
+Teroni	0.014290
+Natdanai	0.014286
+Saeul	0.014276
+Maassi	0.014274
+Tiagogoku	0.014271
+Angius	0.014270
+Sarafim	0.014268
+Natchez	0.014265
+Gasparro	0.014264
+Theid	0.014255
+Jah Kezz	0.014254
+Lopes Quaresma	0.014251
+Mitralal	0.014249
+Pīerre	0.014244
+Duarte Gomes	0.014242
+André-Louis	0.014241
+Mtiba	0.014238
+Dusemang	0.014236
+Borges Varela	0.014235
+John-Philippe	0.014232
+Balfroid	0.014229
+Meireles Mimoso	0.014228
+Santos Oliveira	0.014226
+Eyah Asha	0.014221
+Cirelli	0.014219
+Vroclav	0.014218
+Abbruscato	0.014215
+Ajantha Duminda	0.014213
+Kientz	0.014211
+Illiano	0.014209
+Yves Oscar	0.014203
+Icman	0.014202
+Jean-Marieo	0.014200
+Batschert	0.014192
+Vaz Da Silva	0.014189
+Henning Junkes	0.014188
+De Pap	0.014185
+Ferraz Cerqueira	0.014182
+Firmiliano	0.014178
+Carvalho Antonio	0.014173
+Bindazz	0.014168
+Wimp	0.014166
+Anbegar	0.014165
+Jhängi	0.014163
+Alvescars	0.014162
+Sadat-Anisa	0.014161
+Björn-David	0.014158
+Fernando Pestana	0.014156
+Nene Carlos	0.014153
+Andrade Jorge	0.014152
+Ynotna	0.014148
+Vtenac	0.014146
+Nicolas-Christiane	0.014141
+Fersino	0.014139
+Tirry	0.014134
+Sehad Selima	0.014128
+Carlos Reis	0.014125
+Centor	0.014124
+Carreira Pais	0.014122
+Mirgain	0.014120
+Chuckles	0.014117
+Fabiø	0.014114
+Garage Beim Serge	0.014113
+Joaquim Daniel	0.014111
+Ohl	0.014108
+Scootergang	0.014107
+Männ	0.014104
+Simoes Jose	0.014103
+Diluca	0.014097
+Ggesgineok	0.014096
+Fonçeca	0.014094
+Joäl	0.014091
+Celso Pereira	0.014089
+Alain An Chantal	0.014086
+Grignard	0.014085
+Tattel	0.014080
+Dragovic	0.014076
+Antinori	0.014075
+Kevin Alicia	0.014073
+Roeser	0.014071
+Kleman	0.014069
+Skorpioun	0.014068
+Elvis-Ilda	0.014066
+Yacinedz	0.014062
+Paolo Sante	0.014061
+Roque Loureiro	0.014059
+Opel Calibra	0.014058
+Meyket	0.014057
+Lietz	0.014055
+Frans Antonie	0.014054
+Freier	0.014052
+Tonio Lopes	0.014050
+Marctheanimal	0.014047
+Doerfel	0.014046
+Loetsch	0.014044
+Panier	0.014039
+Franceschetti	0.014037
+Pianosantamaria	0.014034
+Clemente Ribeiro Martins	0.014033
+Dluis	0.014030
+Copains	0.014029
+Miki Seka	0.014026
+Fa-Fi	0.014023
+Jumping Ludovicus	0.014021
+Jose-Benjamin	0.014019
+Shareeff	0.014010
+Dorjoo	0.014008
+Pierre Hilaire	0.014007
+Rhéto	0.014006
+Flinston	0.014000
+Shahrud	0.013999
+Andrei-Alexandru	0.013993
+Melotte	0.013990
+Wénaël	0.013985
+Aïssam	0.013984
+Lobol	0.013980
+Nzoungou	0.013978
+Estacaomir	0.013975
+Jdjwii	0.013973
+Crisiano	0.013971
+Filipajohny	0.013970
+Farzino	0.013967
+Pretabonita	0.013960
+Zvonislav	0.013958
+Gaators	0.013954
+Bernzrd	0.013950
+Phu-Van	0.013947
+El Jeronimo Friday	0.013945
+Artelux	0.013944
+Abilio Silva	0.013941
+Filet	0.013940
+Leappi	0.013939
+Lychar	0.013937
+Letze	0.013935
+Iván Camilo	0.013931
+Bigdan	0.013924
+José Carmindo	0.013923
+Eisrechter	0.013921
+Hardworking	0.013920
+Raschella	0.013918
+Antoniõ	0.013917
+Thanou	0.013916
+Annipim	0.013913
+Joel Kelly	0.013909
+Schonckert	0.013905
+Hirtziger	0.013902
+Mota De Oliveira	0.013898
+Rufio	0.013894
+Deierefrend	0.013889
+Gelmetti	0.013886
+Michel Norbert	0.013884
+Doffing	0.013882
+Nabilux	0.013881
+Kuduzovic	0.013880
+Nchen	0.013878
+Sigmatrans	0.013877
+Đavide	0.013874
+Tom Grüni	0.013872
+Joandre	0.013870
+Clementz	0.013868
+Hongzeng	0.013861
+Pietwi	0.013857
+Constro-Renov	0.013856
+Rene Edouard	0.013850
+Richadson	0.013845
+João C C	0.013841
+Pongsit	0.013840
+Lohei	0.013838
+Td Car	0.013837
+Thebrone	0.013836
+Dong Hoan	0.013834
+Charles Paul	0.013829
+Santos Carlos	0.013826
+Oliveira Francisco	0.013818
+Retuga	0.013817
+Ziganoo	0.013816
+Philé	0.013813
+Bernard Benjamine	0.013812
+O Rei	0.013811
+Samlan	0.013809
+Forw	0.013807
+Cukrowy	0.013805
+Ralph Grégoire	0.013804
+Vlar	0.013803
+Plepp	0.013801
+Jean-Regis	0.013800
+Marcelet	0.013799
+Dias Sampaio	0.013795
+Šchtiwi	0.013793
+Masshsh	0.013792
+Messee	0.013791
+Filipe Abreu	0.013789
+Jugendhaus	0.013788
+Macedo Nando	0.013787
+Salieri	0.013786
+Joajesus	0.013780
+Dulovic	0.013779
+Rios Alves	0.013778
+Galluzzo	0.013776
+Jos Flies	0.013775
+Raf Zuka	0.013774
+Uhres	0.013772
+Paintix	0.013771
+Ibric	0.013767
+Salem Amine	0.013765
+Ben Noah	0.013762
+Darioushka	0.013761
+Henrik Gamborg	0.013756
+Lefeber	0.013754
+Busser	0.013753
+Choochart	0.013752
+Dzrayler	0.013750
+Fonds	0.013749
+Banber	0.013748
+Guy J G	0.013746
+Canivet	0.013745
+Antonio-Sabrina	0.013740
+Zhembo	0.013737
+Mdance	0.013731
+Jyves	0.013730
+Borges Sampaio	0.013728
+Bellot	0.013726
+Nuno Pinto	0.013723
+Sunsick	0.013718
+Kimiala	0.013714
+Quinteira	0.013713
+Lordong	0.013712
+Paulosofia	0.013710
+Erwan Céline	0.013708
+Juknat	0.013705
+Yvandro	0.013704
+Karanovic	0.013700
+Angeletti	0.013699
+Branco Machado	0.013697
+Gortan	0.013693
+Dinis Pedro	0.013692
+Edouard Jean Pierre	0.013691
+Dinis Filipe	0.013687
+Anjos Leonel	0.013686
+Xisong	0.013685
+Fernanded	0.013682
+Nunogomes	0.013681
+Joaquim Fernandes	0.013678
+Thierry Nathalie Charlotte	0.013677
+Dubosc	0.013676
+Shehzar	0.013674
+J Eff	0.013673
+Valentim Cação	0.013668
+Germelino	0.013663
+Dibiasi	0.013662
+Don Jon	0.013658
+Pierre-Maxence	0.013654
+Secondhands	0.013651
+Thorsten Tom	0.013646
+Kapelas	0.013644
+Vitor Gonzalo	0.013641
+Felgueiras	0.013639
+Gândara	0.013636
+Tiago Rodrigues	0.013635
+Vettas	0.013634
+A Jean	0.013631
+Fuscano	0.013630
+Vildt	0.013627
+Sebastiao Sá	0.013626
+Bochuan	0.013622
+Icracker	0.013621
+Batiston	0.013620
+Gonçalves Tune	0.013618
+Kanuko	0.013617
+Jose Casañas	0.013616
+Jerwin Rafael	0.013612
+Raleb	0.013611
+Pengqian	0.013607
+Micaelpereira	0.013604
+Lasing	0.013603
+Tränen	0.013602
+Walterson	0.013601
+Did Home	0.013599
+Moimenta	0.013593
+Sfreder	0.013592
+Michele Esch	0.013587
+Venchiarutti	0.013584
+Hesper Park	0.013583
+Infolik	0.013582
+Plus Tony	0.013579
+Regaldino	0.013578
+Cândido Martinho	0.013576
+H Susto	0.013572
+Mehmet Atilla	0.013571
+Lucas Junior	0.013567
+Adriano-Valerio	0.013566
+Joao Kose	0.013556
+Mike Enna Dini	0.013553
+Freiden	0.013552
+Cardoso Jesus	0.013546
+Valente Coval	0.013542
+Drumon	0.013541
+Ujevic	0.013539
+Swidrak	0.013537
+Antunes Santos	0.013536
+Tavares Henrique	0.013535
+S Jose J	0.013532
+Stool	0.013528
+Da Silva Pedrosa	0.013527
+Rama Teixeira	0.013522
+Zivanic	0.013521
+Salder	0.013520
+Antonio Rebelo	0.013518
+Sponng	0.013517
+Pereira Teixeira	0.013504
+Luizcarvalho	0.013500
+Vanoni	0.013499
+Portal Petnjica	0.013498
+Ze Antonio	0.013496
+Paulo Da Piedade	0.013494
+Irmaos	0.013490
+Pais Santos	0.013489
+Lallemand	0.013488
+Denisneves	0.013484
+Reuter René	0.013480
+Salpico Oliveira	0.013479
+Fernando Carreira	0.013478
+Silva Pereira	0.013473
+Patrice Emery	0.013471
+Ferreira Guedes	0.013466
+Iacuba	0.013463
+Ahles	0.013462
+Finalho	0.013461
+Themix	0.013460
+Kenny Neal	0.013457
+Alves Pereira	0.013452
+Jhaak	0.013451
+Chrisvan	0.013446
+Tiotio	0.013445
+Bento Jose	0.013444
+Bénito	0.013439
+Nekenol	0.013438
+Theodoro Russel	0.013436
+Haouaz	0.013434
+Reimen	0.013432
+Ricardo Caetano	0.013430
+Dellaia	0.013429
+Vitorino Rocha Pinto	0.013428
+Jan-Felix	0.013427
+Tiago Sofia	0.013423
+Monteiro Pereira	0.013421
+Si Bi	0.013417
+Horch	0.013416
+Adriano Morais	0.013412
+Lion B	0.013411
+Scors	0.013410
+Saikou Oumar	0.013407
+Andréferreira	0.013405
+Moranguito	0.013401
+G Daniel	0.013397
+Goldschmit	0.013395
+Groussen	0.013392
+Ademes	0.013391
+Fuzil	0.013387
+Sahrss	0.013385
+Giyu	0.013383
+Alves Devsousa	0.013382
+Yąň	0.013381
+Pafanca	0.013376
+Heirens	0.013375
+Dpr Caires	0.013374
+Manuel Moura Carvalho	0.013373
+Merenz	0.013371
+Schertz	0.013365
+Beslija	0.013364
+Chris Bab	0.013363
+Avelino Vila Nova	0.013362
+Otelino	0.013361
+Feriz Seliha	0.013359
+Fuuss	0.013356
+Tapari	0.013355
+Arobase	0.013354
+Schwede	0.013351
+Lorenzo Von Matterhorn	0.013350
+R Gonzalez	0.013349
+Bapaume Hilaier	0.013348
+Adelino Alves	0.013345
+Ramiro Cruz	0.013342
+Martins Peixoto	0.013340
+Fraga Pereira	0.013339
+Miguel Susana	0.013336
+Antonio Guilherme	0.013335
+Syrex	0.013332
+Wahts New	0.013331
+Tabugbo	0.013325
+Sabastiao	0.013324
+Cunha Andra	0.013323
+Manuel Rosa Machado	0.013321
+Fernandesdasilva	0.013320
+El-Mostafa	0.013319
+Weffling	0.013317
+Macedo Souto	0.013314
+Malinconico	0.013311
+Jeribhai	0.013306
+Tung Si	0.013305
+Eduardo Macedo	0.013303
+Tøøn Lînk	0.013300
+Agadi	0.013299
+Gomes Varela	0.013297
+Holter	0.013293
+Verkaaf	0.013292
+Lansya	0.013290
+Housse	0.013289
+Tomás Gomes	0.013287
+Stassi	0.013286
+Dummong	0.013285
+Joseph Lino	0.013283
+Wecker	0.013281
+Nilpferd	0.013276
+Joaquim Oliveira	0.013274
+Leo-Thor	0.013273
+Bmwtuga	0.013272
+Pinto Marcos	0.013270
+Vinz R	0.013269
+Dupy	0.013264
+Tudell	0.013262
+Sept Sur Sept	0.013258
+Rui Fernanda	0.013256
+Mike Jonas	0.013253
+Centeio	0.013252
+José Rui	0.013250
+Zaishui	0.013248
+Isaac Dieudonne	0.013246
+Fernando H	0.013245
+Stèven	0.013244
+Vitelasilvia	0.013243
+Kiralj	0.013241
+Versavio	0.013237
+Carlos Lopes Matos	0.013235
+Rafael Rasga Santos	0.013234
+Thirunarayanan	0.013230
+Pereira De Sousa	0.013227
+Riscas	0.013226
+Pereirao	0.013224
+Prasad M	0.013223
+Bonea	0.013221
+Patrickpedrosonia	0.013219
+Sergio Ferreira	0.013216
+Alvaro Lucio	0.013215
+Angelo Branco	0.013214
+Carlos E Marina	0.013211
+Casimiro Monteiro	0.013207
+Pedro E Cristina	0.013204
+Plaimling	0.013203
+Mitrovice	0.013201
+François-Michel	0.013200
+Rui Fabio	0.013199
+Sieges	0.013196
+Guscht	0.013194
+Martinho Binga	0.013193
+Jozepf	0.013192
+Domingues Patarra	0.013188
+Scacchi	0.013182
+Scheidweiler	0.013178
+Portela Ferreira	0.013177
+Carlo Pierre	0.013176
+Luxnight	0.013174
+Fhair	0.013172
+Da Aprile	0.013170
+Haixiao	0.013169
+Pereira De Faria	0.013166
+Thayc	0.013165
+Mordada	0.013164
+Bacallau	0.013162
+Vmd	0.013160
+Paulo De Campos	0.013159
+Everwing	0.013157
+Goncalvez	0.013154
+Patkiller	0.013153
+Bananiel	0.013150
+Manuel Jaoa	0.013147
+Infolux	0.013145
+Gonçalo Filipe	0.013140
+Alvim Vicente	0.013139
+Cakaric	0.013137
+Gyáfrás	0.013136
+Jemi Tata	0.013135
+Richard Edward	0.013134
+Loclux	0.013133
+Ferreira Pedrosa	0.013131
+Agostinho Braz	0.013130
+Quim Almerinda	0.013128
+Li Xiao	0.013127
+Tuga-Ricas	0.013126
+Jaas Sam	0.013125
+Belchior Silva	0.013119
+Shaleesh	0.013117
+Ruscetta	0.013115
+Pâte Yannick	0.013113
+Filipe Albino	0.013111
+Bugudade Mendes	0.013110
+Quadro Folhado	0.013109
+Lepidi	0.013108
+Avelino Ribeiro	0.013106
+Davide Joao	0.013105
+Ammazzagatti	0.013102
+Avelino Majda	0.013100
+Ddriton	0.013099
+Picciolini	0.013098
+Arnoldas Mikulskas	0.013097
+Carlos Rina	0.013095
+Lucio Lux	0.013093
+Ribairoantonio	0.013092
+Vincenzo Attilio	0.013091
+José Bruno	0.013089
+Manhagor	0.013088
+Adao Luis	0.013086
+Koechlin	0.013083
+Francois Armand	0.013082
+Lugen	0.013078
+Scouby	0.013074
+Queiros Martins	0.013073
+Arian Vin	0.013072
+Nekas	0.013070
+Eugenio Alfredo	0.013065
+Hippolytusr	0.013064
+Jemming	0.013063
+Larlo	0.013060
+Fonseca Luis	0.013057
+Geertjan	0.013054
+Kazzong	0.013049
+Kevin Rosa	0.013043
+Piccotti	0.013042
+Gaetanozullo	0.013037
+Douds	0.013035
+Da Silva Oliveira	0.013033
+Boudicar	0.013032
+Gaiarin	0.013031
+Joant	0.013029
+Tardis	0.013022
+Gunckel	0.013021
+Baulesch	0.013018
+Pipifax	0.013017
+Cabral Landim	0.013014
+Bolyki	0.013013
+Jon Son	0.013012
+Karahmet	0.013010
+Jorge Telma	0.013003
+Gioe	0.013002
+Abel Da Silva	0.012999
+Salavdor	0.012996
+Artur José	0.012992
+Zuogong	0.012990
+Den Bub	0.012987
+Ladaie	0.012986
+Pedro Nuno	0.012982
+Antoniopdmhdd	0.012978
+Faycal Nourou	0.012976
+Erdin Almera	0.012975
+Titus Flavius	0.012972
+Kiesch	0.012971
+Parradas	0.012970
+Querezma	0.012968
+Dulcelino	0.012967
+M-Tintin	0.012965
+Dias Loureiro	0.012964
+Cosa Nostra	0.012963
+Layouni	0.012962
+Di Giacomo	0.012958
+Nopphachai	0.012956
+Dzurlic	0.012954
+Bengt-Olof	0.012953
+Jenarson	0.012952
+Anjo Negro	0.012951
+Renckens	0.012949
+Greatfranci	0.012948
+Josè Rocha	0.012947
+Rodrigues Gomes	0.012946
+Stegus	0.012945
+Wenguo	0.012942
+Rui Lopes	0.012941
+Jorge Rodrigues	0.012940
+Da Silva Miguel	0.012939
+Brimmeyer	0.012938
+Hentges	0.012935
+Nono-Tohtoh	0.012934
+Delmarko	0.012933
+De Jesus Venancio	0.012932
+Anathole	0.012930
+Khadem Hussain	0.012929
+Belomena	0.012928
+Ggoo	0.012927
+Francois Dit Papy	0.012926
+Bentoumia	0.012925
+Restau	0.012922
+Nunes Cardador	0.012920
+Tone Zé	0.012919
+Cancela	0.012916
+Pittlux	0.012915
+Sbjsushsjsush	0.012913
+Entrik	0.012908
+Nelson Cunha	0.012905
+António Figueiredo	0.012903
+Asergio	0.012902
+Emanoxx	0.012900
+Vinse	0.012899
+Mcmaurys Jr Fonju	0.012895
+Edir Dos Santos	0.012893
+António Gonçalves De	0.012891
+Jaferraodasivva	0.012887
+Luxsiliconematos	0.012886
+Mpcioea	0.012883
+Artur Cerqueira	0.012882
+Alves Canelas	0.012880
+Nblack	0.012879
+Tomãs	0.012877
+Bunama	0.012876
+Mitten	0.012875
+Claude-Jacques	0.012874
+Og Puto	0.012871
+Kartheiser	0.012869
+Vitostefano	0.012867
+Xames	0.012865
+Nemajnja	0.012864
+Tahntastic Et Misastounding	0.012862
+Alnard	0.012859
+Merveillestravel	0.012858
+Ernzer	0.012855
+Gaston Etienne	0.012854
+Europub	0.012851
+Ivo Ibrahim	0.012850
+Uding	0.012848
+Waïssen	0.012847
+Lolic	0.012846
+Mabalux	0.012845
+Tursi	0.012844
+Ccharles	0.012842
+Edonik	0.012838
+Hakimes	0.012837
+Rapden	0.012836
+António Encarnação	0.012834
+Sevtov	0.012829
+Gomes Monteiro	0.012828
+Bugatti Veyron	0.012827
+Anton Philippe	0.012826
+Boxin	0.012825
+Demichi	0.012823
+Garofoli	0.012822
+Sousa Cunha	0.012816
+Antoniodias	0.012815
+Mansoki	0.012811
+Maertine	0.012802
+Bruno Sousa	0.012801
+Domenico Mika	0.012799
+Martins Pereira	0.012798
+Francisp	0.012796
+Janks	0.012794
+Timethy	0.012793
+Jaime Lopes	0.012789
+Cosimo Francesca	0.012788
+Folschette	0.012786
+Leandroramos	0.012784
+Bo William	0.012783
+Fusuj	0.012782
+Roman Alena	0.012780
+Ricã	0.012775
+Josecf	0.012774
+Jacantko	0.012773
+Jean Bastien	0.012772
+Garrafas	0.012771
+Serge Santerre	0.012769
+Agostinholopes	0.012768
+Dario Silva	0.012762
+Farins	0.012761
+Emmanuél	0.012760
+Păpușă	0.012759
+Vladam	0.012757
+António André	0.012756
+Ying Tiau Wei	0.012755
+Cupralight	0.012754
+Muppets	0.012753
+Jose Pais Machado	0.012752
+Medernach	0.012750
+Tiäri	0.012749
+Gontard	0.012748
+Jeffandco	0.012747
+Hotep	0.012746
+Guy Jean Pierre	0.012744
+Pasquale Pizzù	0.012742
+Elisiopiazzavlogs	0.012740
+Magyarics	0.012739
+Dillaw	0.012737
+Callook	0.012735
+Camille Jacques	0.012734
+Ramos Costa	0.012733
+Reinert Mathias	0.012731
+Tchenta	0.012730
+Gomercindo	0.012728
+Avdusinovic	0.012725
+Päif	0.012724
+Pinto Ferreira	0.012722
+Lessio	0.012718
+Amiralisa	0.012715
+Osmo Sabina	0.012712
+Torrao	0.012710
+Peder Gervin	0.012709
+Sergio Filipe	0.012707
+Turo Tbc	0.012706
+Manelli	0.012704
+Haljko	0.012703
+Bollmann	0.012702
+De Cerqueira	0.012701
+Matteo Walter	0.012698
+Montei	0.012697
+Youres	0.012693
+Kauffmann Rol	0.012691
+Paulo Nunes	0.012689
+Koeune	0.012688
+Camic	0.012687
+Paulo Paula	0.012686
+Philippe Carlos	0.012684
+Lessel	0.012679
+Renato Cunha	0.012677
+Jt Daniel	0.012676
+Funkypig	0.012674
+Crauser	0.012672
+Bryan Castro	0.012670
+Belacchi	0.012669
+Carneiro Lobo	0.012666
+Esnaf Zecirovic	0.012664
+Ulix	0.012663
+Medvescek	0.012661
+Mike Ben	0.012659
+Arsenio Fatima	0.012656
+G-Yan	0.012655
+Fingen	0.012654
+Morais Dinis	0.012653
+Comis	0.012652
+Van De Beukelaer	0.012651
+Ze Carlos Vasconcelos	0.012649
+Vieira Martins	0.012647
+Calvetti	0.012646
+Fjell	0.012645
+Tiwaz	0.012644
+Beppe Tess	0.012641
+Alexandre Sa	0.012638
+Heiles	0.012637
+Niufeng	0.012635
+Nossem	0.012634
+Luxfit	0.012630
+Matthiru	0.012629
+Antonio Alves Cardoso	0.012626
+Joseamtonio	0.012625
+Frederico Leandro Toni	0.012624
+Freitas Antonio	0.012623
+Dylan Joe	0.012621
+Jorge Manuel Romao	0.012615
+Alvarim	0.012614
+Uesam Kankounde	0.012613
+Ianone	0.012610
+Antòn	0.012609
+Armenio-Gaspar	0.012607
+Zwally	0.012605
+Dirst	0.012604
+Joaquim Pereira	0.012602
+Ramcan	0.012601
+Vorselaars	0.012600
+Rogério C	0.012599
+Coert	0.012598
+Sacras	0.012596
+Balere	0.012595
+Hejian	0.012594
+Potcha	0.012592
+Papagaio	0.012591
+José Melo	0.012590
+Pedro Batista	0.012588
+Mithras Klaus	0.012586
+Lefemine	0.012585
+Dias Correia Pina	0.012584
+Yovgov	0.012583
+Osafiele	0.012582
+Oliveira Ferreira	0.012578
+Elmano Jose	0.012577
+Antonio-Goreti	0.012576
+Prashant Marc	0.012572
+Carlos Frazao	0.012571
+Sayed Aarif	0.012566
+Bertrange	0.012564
+Radenkovic	0.012561
+Sory Ibrahim	0.012560
+Bionature	0.012557
+Adinlejlanida	0.012555
+Karpen	0.012554
+Aperino	0.012553
+Hamilton Raul	0.012552
+Moreira Goncalves	0.012550
+Jorio	0.012549
+Figueiredo Silva	0.012548
+Morbus	0.012547
+Ahew	0.012546
+Mario Filipe	0.012544
+Abakduoa	0.012543
+Sergio Resende	0.012542
+Munjeviti	0.012540
+Luis Araujo	0.012539
+Sfdgsfd	0.012537
+Shatrolli	0.012535
+Rodrigues Lopes	0.012534
+Nuno Lopes	0.012532
+Sambakeba	0.012530
+Vogeler	0.012527
+Jorge Geraldo	0.012525
+Candido Antonio	0.012524
+Lafter	0.012524
+Schronen	0.012523
+Buqi	0.012522
+Lucianza	0.012521
+Bouyboud	0.012519
+Adriano Nascimento	0.012518
+Lîmon	0.012517
+Vasalves	0.012515
+Carlos Cristina	0.012513
+N Sei	0.012512
+Kykiyaya	0.012508
+Stenio Rocky	0.012507
+Antonio Manuel Oliveira	0.012505
+Jokox	0.012501
+Srdjo	0.012499
+Fiduciaire	0.012498
+Yungin	0.012496
+Gorcilo Abip	0.012495
+Spill	0.012494
+Antonio E Fatima	0.012493
+Pierre Luca	0.012492
+Barros Cunha	0.012490
+Iamin	0.012489
+Danny F	0.012488
+Marcelloni	0.012487
+Dominiwue	0.012486
+Pedro Rio	0.012483
+Mendes Alves	0.012481
+Vitoino Teixeira	0.012478
+Islamovič	0.012477
+Lemos Dias	0.012476
+Shaoguang	0.012473
+Wuping	0.012472
+Rudrigues	0.012468
+Knoerr	0.012464
+Clubfansricardo	0.012461
+Irkin	0.012459
+Shidon	0.012458
+Vitor Lopes	0.012457
+Foufoufa	0.012456
+Gilbertø	0.012455
+Sérgio Costa	0.012454
+Dinis Ferreira Queiros	0.012453
+Pedrosa Carlos	0.012452
+Miguel Anjelo	0.012451
+Guerreiro Batista	0.012450
+Lawène	0.012449
+Hatimhossin	0.012447
+Siccabo	0.012446
+Jian Guo	0.012445
+Ozh	0.012443
+Lioncar	0.012442
+Hoamea	0.012441
+Tonnton	0.012440
+Neutscher	0.012437
+Tobtab	0.012435
+Ricardo Jessica	0.012434
+Breden	0.012433
+Akovo	0.012427
+Célio António	0.012426
+Blummendoc	0.012425
+Silvio Claudio	0.012425
+Itschi	0.012424
+Settox	0.012423
+Patrick An Sandy	0.012418
+Pinto Azevedo	0.012417
+Thilgen	0.012416
+Xfighter	0.012415
+Laapchen	0.012414
+Halteinfach	0.012411
+Schrœder	0.012410
+Marbach	0.012408
+Ho Kin Ping	0.012406
+Zinka-Avdo	0.012405
+Barbaque	0.012403
+Girson	0.012402
+Matos Cunha	0.012399
+Ürssl	0.012398
+Zador	0.012397
+Martinho Fernandes	0.012396
+Uquinze	0.012394
+Pommerell	0.012391
+Poinsignon	0.012388
+Gngsta	0.012387
+Marques Paiva	0.012386
+Villaume	0.012385
+Antonio Manuel Oliveiraa	0.012382
+Skifi	0.012380
+Krausel	0.012376
+Kevmonique	0.012374
+Fricraide	0.012372
+Ducrocq	0.012371
+Sandrojorge	0.012366
+Anh-Tu	0.012361
+Sadatin	0.012360
+Molveaux	0.012359
+Fernandolurdes	0.012356
+Secundino Lourenço	0.012355
+Nuno Osvaldo	0.012354
+Sirito	0.012351
+Markins	0.012350
+Nelson Bento	0.012349
+Petz Sisa	0.012349
+J-Francois	0.012348
+Giraldi	0.012347
+Barbatruc	0.012346
+Bhavjit	0.012345
+Oliviier	0.012344
+Capellini	0.012342
+Tejvinder	0.012341
+Haranath	0.012340
+Domans	0.012339
+Senhaji	0.012338
+Ceccotti	0.012335
+Frans Hurluberlus	0.012333
+Egaras	0.012333
+Gomes Almeida	0.012332
+Kemmer	0.012329
+Bazaj	0.012325
+Vlaznim	0.012324
+Seceleanu	0.012321
+Duranton	0.012318
+Mihau	0.012317
+Ramiro Conceicao	0.012316
+Tommyfloriane	0.012313
+Njang Mbah	0.012312
+André Ferreira	0.012310
+Gao Da Long	0.012309
+Meysembourg	0.012308
+Antonio Prudencio	0.012306
+Jan-Luurt	0.012305
+Zebessa	0.012304
+Camilo Damasio	0.012304
+Antonio Paula	0.012301
+António Joao	0.012300
+Manuelpereiraalmeida	0.012299
+Josè Pires	0.012297
+Ceedric	0.012296
+Vitrerie	0.012294
+Fu Jun	0.012291
+Alves Ferreira	0.012290
+Appart	0.012286
+Hurensoohn	0.012285
+Arktas	0.012284
+Taxi Nando	0.012283
+El Ma	0.012282
+Oadingerror	0.012281
+Rui Emilia	0.012279
+Americosilvino	0.012278
+Marco Lima	0.012278
+António Guerreiro	0.012277
+Gamemax	0.012276
+Liotti	0.012275
+Gois Cardoso	0.012273
+Moldo	0.012272
+Pedrooliveira Torrezao	0.012269
+Jeanmari	0.012268
+Danielduarte	0.012267
+Pulpe	0.012266
+Greenmango	0.012266
+Agnide	0.012265
+Udayy	0.012264
+Siph	0.012263
+Paulo Rosas	0.012262
+Carlosbiegas	0.012261
+Naitsirch	0.012258
+Vincenzo Mammella	0.012255
+Djbrown Alsina	0.012253
+Halodri	0.012252
+Jdad	0.012250
+Youngsyde	0.012249
+Sergio Peta	0.012248
+Alekson	0.012246
+João L	0.012244
+Philippe Daniel	0.012243
+Mārtim	0.012243
+Rehân	0.012240
+Joe Echo	0.012239
+Abelinofernandodasilvabraz	0.012238
+Zéca	0.012237
+Vreg	0.012235
+Shorifulhok	0.012233
+Mpape	0.012232
+Silva Rodrigues	0.012232
+Jurego	0.012231
+Miguilto	0.012228
+Haoussaba	0.012224
+Leiqiang	0.012223
+Batista Simões	0.012222
+Kiki Dos Santos	0.012222
+Pätter	0.012219
+Manuel Ds	0.012218
+Pidonihad	0.012217
+De Oliveira Gonçalves	0.012216
+Laurent Nicolas Marc	0.012214
+Mariu Pereira	0.012211
+Neiva Lopes	0.012211
+Gnoud	0.012209
+Naoprecisas	0.012207
+Barrosdias	0.012206
+Gomes Andrade	0.012202
+Mąrcos	0.012201
+Saramago	0.012200
+Jetri	0.012196
+Schwaller	0.012195
+Sachaliam	0.012189
+Hyacine	0.012187
+Kevin Johan	0.012184
+Karrasqueiira	0.012182
+Nancel	0.012182
+Goncalves Jose	0.012181
+Ebbas	0.012180
+Do Rosario	0.012174
+Manuel Sousa	0.012173
+Mandora	0.012172
+Barboni	0.012171
+Piclloalex	0.012170
+Cocou	0.012168
+Aurėlien	0.012167
+Estevesfaustino	0.012166
+Dennis Balog	0.012165
+Paquete	0.012164
+Adalberto Do Rosário	0.012159
+Evd	0.012158
+Thorston	0.012157
+Passwort	0.012155
+Ruizinho	0.012154
+Princepe	0.012151
+Wunk Ki	0.012150
+Pastoret	0.012146
+Vitorcruz	0.012146
+Jusufović	0.012143
+Jorge Sambe	0.012142
+Humberto Filipe	0.012140
+Ki Sum	0.012137
+Jš	0.012136
+Cards Da Silva	0.012135
+Osvaldo Hilario	0.012134
+Germanomaior	0.012133
+Aroca	0.012132
+Benjm	0.012130
+Syrius	0.012126
+Joel Lopes	0.012125
+Xianguo	0.012124
+Si Abderrahmane	0.012123
+Cardoso Manuel	0.012122
+Maurantonio	0.012121
+Neissen	0.012121
+Joaquimdasilvamartins	0.012120
+Brito Lopes	0.012119
+Rui André	0.012118
+Jeorgio	0.012117
+Edlux	0.012116
+Pomar Coimbra	0.012115
+J Pinto	0.012114
+Ricardo Ribeiro	0.012111
+Tarpon	0.012108
+Claude Alexandre	0.012105
+Zhanyuan	0.012102
+Anto Io	0.012100
+Laurentno	0.012098
+Pascal Jean Dominic	0.012095
+Trisolini	0.012094
+Carlos Fernando Gonçalves	0.012091
+Donder	0.012090
+Xenoblade	0.012089
+Da Silva Capelo	0.012088
+Józio	0.012087
+Kohner	0.012086
+Vaz Almeida	0.012084
+Thiennes	0.012082
+Bruno Rosa	0.012078
+Pauloalexandre	0.012077
+Husting	0.012076
+Guy Nicolas Dirk	0.012075
+Hommel	0.012073
+Vitor Barbosa	0.012072
+Thomasl	0.012070
+Joseph Maria	0.012069
+Carvalho Pinto	0.012064
+Cencioni	0.012062
+Marques Cantante	0.012060
+Norbertofaria	0.012060
+Max Lmt	0.012059
+Bucco	0.012057
+Koon Leung	0.012056
+Qiangqiang	0.012054
+Hemsi	0.012053
+Marquart	0.012053
+Fidelino Jesus	0.012052
+Vilas Boas	0.012050
+Mirascic	0.012049
+Soares Costa	0.012048
+Kkeyoo	0.012047
+Giuseppe Rossana	0.012046
+Mihai Flaviu	0.012046
+Adalberto Acurcio	0.012045
+Imbai	0.012043
+Ferreira Pais	0.012041
+Leytem	0.012040
+Karrenberg	0.012039
+Jeppe Franch	0.012038
+Wilkin Herrera	0.012037
+Quintino Matos	0.012036
+Almeida Campos	0.012033
+Martns Cabral	0.012032
+António Almeida	0.012032
+Kletche	0.012031
+Nunorony	0.012030
+Mario Da Silva	0.012029
+Xianfei	0.012027
+Gnambode	0.012026
+Leches	0.012017
+Toquim	0.012014
+Tennis Club	0.012012
+Bopy	0.012012
+Krayzbreaker	0.012011
+Rui Carvalho	0.012010
+Henrique Ferreira	0.012009
+Schmincke	0.012007
+Lorber	0.012006
+Bestgames	0.012005
+Clinclin	0.012003
+Wei Min	0.012002
+Bolog	0.011999
+Sergio Rosa	0.011996
+Marcellin Francis	0.011995
+Wémi	0.011994
+Qazim-Hajrije	0.011993
+Gielow	0.011993
+Yvnfeng	0.011989
+Eduardo Marques	0.011988
+Abilio Amorim	0.011987
+Crocoletten	0.011986
+Alcindo José	0.011984
+Colapietro	0.011981
+Vinito	0.011980
+Paulo Moura	0.011979
+Bassaro Sila	0.011978
+Pereira Silva	0.011972
+Kecap	0.011970
+Antonio Araujo	0.011969
+Pinheiro Gonçalves	0.011969
+Leo Francisco	0.011968
+José Duarte	0.011966
+Gian-Vito	0.011965
+Elvir Zehra	0.011964
+Mgkensil	0.011958
+Mohammed Hedi	0.011957
+Platre	0.011956
+Cassi John	0.011955
+Penalti	0.011954
+Irmaosvskis	0.011953
+Luis Arestides	0.011951
+Tiggii	0.011950
+Cimbrea	0.011949
+Azibo	0.011948
+Djeimes	0.011947
+Ferreira Lourenço	0.011946
+Mehanovic	0.011944
+Zé Pedro	0.011943
+Zenzola	0.011941
+Dvniel	0.011934
+Cargo Transport Djon	0.011934
+Nsele	0.011932
+Ticotico	0.011930
+Angelo Tiago	0.011928
+Tsheten Dorjee	0.011928
+Gonçalvescarvalho	0.011927
+Joseph Bienvenu	0.011926
+José Almeida	0.011925
+Risokg	0.011920
+Hyonas	0.011917
+Demuth	0.011917
+Amaral Jose	0.011914
+Elauterio	0.011913
+Rushank	0.011912
+Opfer	0.011912
+Stefán Ingi	0.011910
+Gaspar Ferreira	0.011908
+El Manuche	0.011906
+Sanpaio	0.011904
+Feerbandes	0.011903
+Novamok	0.011899
+Qatqout	0.011897
+Claude Jf	0.011896
+N-Drei	0.011895
+Caceiro	0.011895
+Breyd	0.011894
+Carlos Manuel Pestana	0.011893
+Raimundo Gomes	0.011892
+Lucio Joao	0.011891
+Yongsen	0.011889
+Fortbite	0.011888
+Nailik	0.011887
+Verheecke	0.011886
+Diogo Costa	0.011885
+Prabhjyot	0.011885
+Amandodinis	0.011884
+Ãlex	0.011883
+Costa Leite	0.011882
+Daniel E Claudia	0.011881
+Antonio Barroso	0.011878
+Djundo	0.011877
+Linkury	0.011872
+Lima Arlindo	0.011871
+Pro Gameur	0.011870
+Elmir Ema	0.011868
+Jose Silva Rodrigues	0.011867
+Fraccalvieri	0.011866
+Pixelphoto	0.011865
+Pinto Leal	0.011864
+Xingzheng	0.011862
+Nelocunha	0.011860
+Xenako	0.011859
+Jacinto-Céu	0.011858
+Doru Danut	0.011857
+Glisovic	0.011854
+Ascani	0.011852
+Luxb	0.011849
+Yanhu	0.011846
+Henrion	0.011845
+Zée	0.011844
+Eric Denolf	0.011844
+Omikron	0.011842
+Maman Niang	0.011841
+Pereirahelder	0.011840
+Lullingen	0.011839
+Robifrank	0.011838
+Sntoss	0.011836
+Yves Selina	0.011835
+Hadji Fine	0.011835
+Zederka	0.011833
+Alcides Santos Nunes	0.011832
+Dušo	0.011831
+Vincent Epinger	0.011830
+Montebello	0.011826
+O Tal Marko	0.011825
+Kurbardovic	0.011821
+Monteiro Pinto	0.011820
+Sergioteresa	0.011818
+Joaquim Nuno	0.011817
+Tavares Oliveira	0.011816
+Bassaro	0.011815
+Déni	0.011811
+Rui Ramalho	0.011811
+Carlosfreitas	0.011810
+Balbeau	0.011809
+Surajeet	0.011802
+Marcelo Filipe	0.011801
+Fanfan Faël	0.011800
+Gaudinosemedo	0.011799
+Danielmelanie	0.011797
+Serge Marcel	0.011797
+Almams	0.011793
+Piperis Tum	0.011792
+Ramona Puta	0.011791
+Kleiton Dos	0.011790
+Manuel Goncalves	0.011789
+Bemnyonge	0.011787
+Fernandes De Sà	0.011785
+Pereira Alves	0.011784
+Komix	0.011783
+Fereira	0.011782
+Dani Rafael	0.011780
+Christian Domingues	0.011779
+To Zé	0.011779
+Lexowitsch	0.011776
+Pires Lopes	0.011775
+Gherardi	0.011774
+Sreerangpur	0.011774
+De Jesus Ferreira	0.011772
+Alberto-Vania	0.011771
+Réau	0.011769
+Santos Tavares	0.011768
+Jipp	0.011767
+Bertmes	0.011766
+Bfth	0.011766
+Feijao Joao	0.011763
+Kemostene	0.011762
+Ukonnant	0.011761
+Komes	0.011760
+Silajdzic	0.011759
+Skrobacz	0.011758
+Ferreira Tigx	0.011755
+Yannick Felix Rene	0.011753
+Gluhic	0.011753
+Pereira De Sa	0.011751
+Ganelesh	0.011750
+Motoqueiro	0.011748
+Cabeças	0.011747
+Trasforini	0.011746
+Mounti	0.011745
+Ɣı Ƥǝƞg	0.011744
+Goodfriend	0.011743
+Karpinski	0.011740
+Ozeau	0.011739
+Rafael Matchon	0.011738
+Helton Gorge	0.011736
+Helton Jorge	0.011735
+Luis Herminio	0.011732
+Biai	0.011731
+Luis Carina	0.011730
+Lil-Will	0.011727
+Chander Bahadur	0.011727
+June-Hin	0.011725
+Barretolousada	0.011724
+Elyzion	0.011722
+Euclides Fortes Ramos	0.011721
+Sousa Silva	0.011720
+Hilmir Mar	0.011719
+Dias De Faria	0.011715
+Rffiki Vinkey	0.011715
+Sariph	0.011714
+Ninaïv Nick	0.011712
+Neronzon Halder	0.011709
+Strakan	0.011707
+Joaquim Ferreira	0.011707
+Arciszewski	0.011703
+Ussin	0.011702
+Fáábïø	0.011700
+Vaz Diniz	0.011699
+Guimovic	0.011695
+Ferreiro	0.011695
+Ze Rocha	0.011694
+Ranio	0.011693
+Huris	0.011691
+Amilove	0.011691
+Jnblack	0.011689
+Lsidro	0.011687
+Henrique Brandao	0.011686
+Frechling	0.011684
+Filipelopes	0.011683
+Lucianzu	0.011683
+Alberto Victor	0.011679
+Yaxon Jose	0.011678
+Oingbing	0.011677
+Ägy	0.011676
+Schoup	0.011675
+Tarapati	0.011675
+Krieps	0.011672
+Iancuba	0.011671
+Augusto E	0.011669
+Djonlove	0.011667
+Caude	0.011666
+Mamilov	0.011665
+Fernandes Do Vale	0.011662
+Marco Et Rosalina	0.011661
+Marinho Pires	0.011659
+Plete N	0.011655
+Enzo Jonas	0.011654
+Abel Barreiro	0.011652
+Vereș	0.011651
+Ouroboros	0.011648
+Jorge Teixeiro	0.011648
+Marques Coimbra	0.011647
+Evaristo Saraiva	0.011646
+Do Amaral	0.011645
+Os Da	0.011641
+Fernando E Fatima	0.011637
+Jose Antonio Costa	0.011636
+Trole	0.011635
+G-Tec	0.011634
+Krakow	0.011633
+Tnerual	0.011633
+Paul-Marc	0.011632
+Resende Pereira	0.011631
+Manuel Silva Oliveira	0.011629
+Cast-Point	0.011629
+Marques Dan	0.011627
+Minduca	0.011625
+Dàny	0.011623
+Kama Sywor	0.011622
+Ribeiro Moreira	0.011622
+Servelux	0.011621
+Samuel Ks	0.011618
+Pereira Costa	0.011617
+Tripeiros	0.011616
+Carlos Freitas	0.011615
+Gning	0.011614
+João Coelho	0.011612
+Moreira Cardoso	0.011611
+Patrick-Petz	0.011611
+Sunning	0.011609
+Hénok	0.011608
+Denba	0.011608
+Melvindj	0.011607
+Jose Corraeia	0.011606
+E-Mag	0.011605
+Daniel Sd	0.011604
+Janming	0.011601
+Gonçalves Da Silva	0.011600
+Carmilito	0.011597
+Olidio	0.011593
+Nunitoh	0.011593
+Mucciolo	0.011589
+Teixeira Gomes	0.011587
+Michel Marques	0.011586
+Fávio	0.011585
+Surapol	0.011584
+Noardo	0.011583
+Rodrigues Sd	0.011583
+Poivreetsel	0.011579
+Joselealgomes	0.011579
+Anna U Ruben	0.011577
+Dasilvamiguel	0.011576
+Paulo Sousa	0.011575
+Tenveer	0.011574
+José Eduino	0.011573
+Valente Moura	0.011571
+Alex Teresa	0.011570
+Antunes Rodrigues	0.011569
+Sammystone	0.011563
+Wallstuff	0.011562
+Jean-Gilbert	0.011562
+Cowey	0.011558
+Manu Dfefa	0.011557
+A.Kerem	0.011556
+Fuhan	0.011555
+Boesen	0.011555
+Wenzen	0.011554
+Nassoro Changani	0.011549
+Jose Barreira	0.011547
+Tondela	0.011546
+Queixinhas	0.011545
+Tetio	0.011544
+Tiago Rafael	0.011542
+Vincenzo Assunta	0.011541
+Rogerio Nuno Fernandes	0.011539
+Venanzi	0.011539
+Foral	0.011537
+Antonio Ramos	0.011536
+Santos Cordeiro	0.011535
+Lupco	0.011531
+Zeecaty	0.011529
+Toffazal	0.011528
+Leroyal	0.011523
+Thurmes	0.011522
+Hufer	0.011522
+Fx Diffusion	0.011521
+Wichean	0.011520
+De Stefano	0.011519
+Apom	0.011518
+Taximario	0.011517
+Andrade Paris	0.011516
+Carlos Goncalves Luis	0.011516
+Lokombe	0.011514
+René An Lara	0.011513
+Preira Batista	0.011511
+Kwstantis	0.011510
+Mukkes	0.011509
+Zukanovic	0.011508
+Antonio Gomes Dos Santos	0.011506
+Helpy	0.011505
+Olomani	0.011504
+Beckrich	0.011503
+Lenain	0.011503
+Oprisan	0.011502
+Golfinholux	0.011499
+Rajica	0.011498
+Abdourahimi	0.011497
+Rafael Filipe	0.011497
+Manuel Serifo	0.011496
+Endoni	0.011494
+Andreas U. Diana	0.011493
+Raymond Junior	0.011493
+Branchini	0.011491
+Matlas	0.011490
+Adelino Adamasceno	0.011489
+António Monteiro Guilherme	0.011488
+Brizidavaldemar	0.011487
+José Adelino	0.011486
+Yan Andrea	0.011485
+Sylvia Pascal	0.011483
+Lumia Assurances	0.011481
+Cmota Mota	0.011481
+Amaro Junior	0.011480
+Falang	0.011478
+Pawlu	0.011476
+Jose-Manuel	0.011475
+Ramalho Gonçalves	0.011471
+Lucky-Luc	0.011469
+Luikass	0.011469
+Wei Ping	0.011467
+Carlos Machado	0.011466
+Fsfs	0.011466
+Daniel Eumel	0.011465
+Guigosgas	0.011464
+Joao Morgado	0.011460
+Daveiga	0.011456
+Lismont	0.011456
+Toneca	0.011454
+António Jesus Ferreira	0.011453
+Soares De Oliveira	0.011452
+Dominium	0.011450
+Zaïn	0.011448
+Nandoafonso	0.011447
+Novello Lux	0.011446
+Gabriel Skater	0.011444
+Matos Marques	0.011441
+Mcfisto	0.011441
+Rocha Alves	0.011440
+Frkatovic	0.011439
+Haikang	0.011438
+Daniel Saebra	0.011438
+Mandeep Pawan	0.011437
+Yibioa	0.011433
+Macr	0.011432
+Aberrahman	0.011431
+Shengzhong	0.011428
+Ekki_Hd	0.011427
+Piazzi	0.011425
+Jardivan	0.011421
+Bigshaq	0.011421
+Hongkonggarden	0.011417
+Abdoul Carim	0.011415
+Thoss	0.011415
+Cruzio Ferreira	0.011414
+Bruno Rocha	0.011412
+Edin Frki	0.011411
+Jean Francois Antoine	0.011409
+Ocj	0.011408
+Noling	0.011406
+Orioli	0.011406
+Lébénis	0.011405
+Pape Mohmed	0.011404
+Paulo Teixeira	0.011403
+Pecheco	0.011401
+Toupi	0.011399
+Seabra Mendes	0.011398
+Taiky	0.011396
+Snsl	0.011395
+Hatiam	0.011395
+Jaime Filipe	0.011393
+Adelino Inacio	0.011392
+Lunghitano	0.011391
+Joao Andre	0.011390
+Giyasetin	0.011389
+Dan Sky	0.011389
+Bunes	0.011388
+Dadario	0.011387
+Fortunaso	0.011384
+Leners	0.011383
+Massinon	0.011381
+Altenhoven	0.011378
+Pierre-Maurice	0.011376
+Chen Lvting	0.011375
+Amaro Francisco	0.011375
+Karuzo	0.011372
+Sfrappa	0.011371
+Cativo	0.011370
+Meldedeus	0.011367
+Walsdorff	0.011367
+J Marques	0.011364
+Soroge	0.011361
+Pedrosilva	0.011359
+Laminé	0.011353
+Rayme Torros	0.011351
+Tocarlos	0.011348
+Sannyas	0.011348
+Villa Dasie	0.011347
+Piheiro Anibal	0.011344
+Lenine Várzea	0.011342
+Acli	0.011341
+Philippe Pierre	0.011340
+Abokarar	0.011340
+Castro Fangueiro	0.011337
+Dos Santos Prior	0.011337
+Dos Sntos Goncalves	0.011336
+Kims Chcolat	0.011335
+Joao Morais	0.011334
+Nayloche	0.011333
+Ruben Younow	0.011328
+Sendre Rene	0.011327
+Cristove	0.011326
+Kremetter	0.011323
+Nonamedee	0.011323
+Priism	0.011322
+Britotavares	0.011321
+Dreiling	0.011321
+Sebàstian	0.011319
+Cinno	0.011318
+Tóze	0.011318
+Devaquet	0.011317
+Joao Vaz	0.011316
+Eduardo Cabreiros	0.011314
+Muredi	0.011313
+Béiwener	0.011312
+Ferreira Silvano	0.011311
+Capurso	0.011310
+Maeldino	0.011310
+Packes	0.011309
+Ly-Adelya	0.011308
+Fernandocosta	0.011305
+Tocante	0.011305
+Tt-Shop	0.011301
+Gomes Couto	0.011300
+Brito Correia	0.011299
+Gruno	0.011298
+Rësch	0.011297
+Morisco	0.011296
+Lopes De Sousa	0.011292
+Martinspedro	0.011290
+Ech Hunn Keen	0.011288
+Manuel Amadeu	0.011286
+Strefan	0.011284
+Ldk	0.011282
+Knud Vibholm	0.011281
+Favio Miguel	0.011280
+Niamkey Louis	0.011279
+Pereira Pereira	0.011277
+Recktenwald	0.011277
+Rauen	0.011276
+Dafonsecadias	0.011275
+Madimba	0.011274
+Ameixa Pedrosa	0.011273
+Beelener	0.011272
+Tshipamba	0.011271
+De Serge	0.011270
+Lamkhanet	0.011269
+Kerroumi	0.011269
+Antonio Domingues	0.011268
+Franck Cristina	0.011267
+Hatto	0.011266
+De Petzi	0.011265
+Anibal Manuel	0.011264
+Tzärch	0.011263
+Cannels	0.011262
+Ribeiro Das Neves	0.011262
+Naijiang	0.011261
+Cesar De Almeida	0.011260
+Loess	0.011259
+Juse Alberto	0.011259
+Bucete	0.011258
+Akangay	0.011256
+Joao Pedro Kovata	0.011255
+Rodrigues Dos Samtos	0.011254
+Snobuä	0.011249
+Famelux	0.011248
+Semedeo Tavares	0.011247
+Bingjue	0.011244
+Luis Wagner	0.011242
+Balija	0.011241
+Gouran	0.011240
+Tonecas Gomes	0.011240
+Carlosalbertodebarrosmatos	0.011238
+Jose Fonseca	0.011237
+Dkfl	0.011237
+Duarte Marco	0.011236
+Mehrabkhani	0.011234
+Pereira Antonio	0.011232
+Eve A Marc	0.011231
+Quim-Mario	0.011228
+Hemmen	0.011227
+Trigo Jose	0.011225
+Yaleskondes	0.011225
+Dos Santos Maia	0.011223
+Donnylson	0.011220
+Gingmuth	0.011219
+Araneae	0.011218
+Gtdfhgzjhfgj	0.011218
+Joao Nogueira	0.011217
+Jean-Marie A Denise	0.011216
+Nilza Elson	0.011213
+Zacharis	0.011213
+Marinoni	0.011212
+Graziano Elia	0.011211
+Pensiunea Varsatorii	0.011211
+Vitor Fernando	0.011210
+Filipe Miguel Reis	0.011209
+Ebu Emin Cupi	0.011207
+Fabio Emanuel	0.011206
+Barrib	0.011203
+Amaral Nunes Gaspar	0.011202
+Alyssa Zezey	0.011201
+Mandernach	0.011200
+Deblog	0.011199
+Josemariamarques	0.011199
+Xianhe	0.011198
+Deotoni	0.011196
+Reydumb	0.011195
+Letes	0.011194
+Gorginpour	0.011194
+Fenjun	0.011193
+Djôpro	0.011192
+Arnaud Sylvestre	0.011191
+Carlos Mota	0.011190
+Ben Chjha	0.011189
+Hao Jie	0.011188
+Kristtian	0.011187
+Xano Luciano	0.011186
+Gariso	0.011185
+Schong	0.011185
+Zedmamay	0.011184
+Wilwers	0.011182
+Mesquíta	0.011182
+Giannilivigni	0.011180
+Pregal Araujo	0.011180
+Pedro Rg	0.011178
+Maische	0.011177
+José Teixeira	0.011176
+Stambolov	0.011175
+Kui Chung	0.011175
+Amineadam	0.011173
+Jorge Ramos	0.011172
+Nunes Dos Santos	0.011171
+Redminers	0.011171
+Abusada	0.011170
+Eckes	0.011169
+Freitas Cruz	0.011168
+Sa Araujo	0.011168
+Zzim	0.011166
+Ferreira Dos Santos	0.011164
+Gaart An Heem	0.011162
+Pnis	0.011162
+Isabel Ramiro	0.011160
+Hakij	0.011159
+Rosa Gineto	0.011159
+Edu Paty	0.011157
+Gressani	0.011156
+Sanel Almira	0.011155
+Sixto Alberto	0.011155
+Otalino Silva	0.011154
+Luis Fátima Abreu	0.011153
+Jean-Carl	0.011152
+Gioggio	0.011152
+Miomir Miki	0.011150
+Ruifilipe	0.011149
+Tavares Da Costa	0.011146
+Mouklin	0.011146
+Vicente Catuque	0.011145
+Esgaio	0.011143
+Kafunda	0.011141
+Mohamed Owaiss	0.011140
+Gomes Pinto	0.011139
+Lux Escaliers	0.011137
+Pauloececilia	0.011133
+Diniz Gomes	0.011132
+Piexoto	0.011130
+Isidro Liliana	0.011129
+Domenico-Angelo	0.011128
+Francois Guillaume	0.011126
+Upá	0.011126
+Antonio Rocha	0.011122
+Yannich	0.011121
+Raygee	0.011121
+Allegrucci	0.011120
+Rosinus	0.011117
+Paulo Morais	0.011117
+Hatlantis	0.011116
+Ernan Adrian	0.011115
+Nadana	0.011115
+Dragos-Dan	0.011112
+Gouren	0.011112
+Den Zenner	0.011111
+Carmelitavaz	0.011110
+Moita	0.011109
+Nelson-Mila	0.011104
+Yves-Henri	0.011102
+Poecker	0.011101
+Jan Coveliers	0.011100
+Giianni	0.011099
+Truca	0.011097
+Melaba	0.011096
+Afacd	0.011095
+Chai Karmon	0.011093
+Modzand	0.011093
+Silvamarques	0.011092
+Hucklebery	0.011091
+Frankely	0.011089
+Lucianzi	0.011089
+Jose Nogueira	0.011088
+Frkatovič	0.011086
+Vieira Almeida	0.011082
+Sandet	0.011081
+Ricardocarmen	0.011080
+Rodrigues Abrantes	0.011078
+Maets	0.011078
+Perdigao	0.011077
+Da Rocha Rodrigues	0.011076
+Othavio	0.011075
+Abdelgaffar	0.011074
+Rush Lex	0.011072
+Kaipu	0.011070
+Antekupo	0.011069
+Szxcia	0.011068
+Tallarico	0.011067
+Lepcha	0.011066
+Joige	0.011065
+Serge Lucien	0.011065
+Andre Ferreira	0.011063
+Blackmom	0.011063
+Antony Orochimaru	0.011062
+Veloster	0.011061
+Fernandez Faria	0.011060
+Odju	0.011057
+Dino Minimal	0.011057
+Gonçalves Ribeiro	0.011055
+Ybor	0.011055
+Rui Correia	0.011054
+Aarøn	0.011053
+Corsair	0.011051
+Coelho Pereira	0.011049
+Miguel Joana	0.011048
+Artzene	0.011047
+Kirj	0.011047
+Alija Almedina	0.011044
+Escher Fleih	0.011042
+Lima Mota	0.011042
+Qiaoyong	0.011041
+Thanakon	0.011040
+Stephant	0.011039
+Quitadamo	0.011038
+El Jahid	0.011038
+Ermurazor	0.011037
+Scheilz	0.011035
+Raimundo Vaz Landymloy	0.011034
+Beuch	0.011034
+Schli	0.011033
+Derymes	0.011032
+Nico R	0.011030
+Entblock	0.011027
+Correia Costa	0.011026
+Authen	0.011025
+Jerome Ciné	0.011024
+Michel Dit Mike	0.011021
+Alickovic	0.011017
+Teixeirinha	0.011015
+Burgen	0.011014
+Eugenio Francisco	0.011014
+Ka-Yeung	0.011012
+Mingano	0.011012
+Youngmind	0.011011
+Chambourdon	0.011010
+Nasroullah	0.011009
+Paul Bogdan	0.011006
+Di Donato	0.011005
+Julien-Matteo	0.011004
+Simoisrenato	0.011004
+Selzam	0.011003
+Sponnge	0.011002
+Zhen Jieh	0.011001
+Correia De Bastos	0.011000
+Orteil	0.011000
+Julian Fatmi	0.010995
+Rodriguez Arifi	0.010994
+Donsimon	0.010994
+Nelsommoreira	0.010993
+Michalac	0.010990
+Oilid	0.010990
+Darconso	0.010989
+Jahree	0.010988
+Trand	0.010988
+Luis Silvas	0.010987
+Hnr-Project	0.010986
+Yanoubi	0.010984
+Lingguang	0.010984

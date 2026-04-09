@@ -1,3 +1,6 @@
 build/
 coverage/
 doc/api/
+.vscode/
+scripts/
+*.exe

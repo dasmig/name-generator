@@ -1,0 +1,502 @@
+is
+male
+Jón	1.000000
+Gunnar	0.707107
+Sigurður	0.577350
+Guðmundur	0.447214
+Einar	0.408248
+Ólafur	0.301511
+Kristján	0.288675
+Arnar	0.277350
+Magnús	0.267261
+Stefán	0.258199
+Kristinn	0.250000
+Jóhann	0.242536
+Árni	0.235702
+Bjarni	0.218218
+Pétur	0.213201
+Helgi	0.208514
+Ragnar	0.204124
+Björn	0.200000
+Halldór	0.188982
+Birgir	0.185695
+Daníel	0.182574
+Davíð	0.176777
+Gísli	0.169031
+Sveinn	0.166667
+Haukur	0.164399
+Atli	0.158114
+Bjarki	0.145865
+Guðjón	0.144338
+Haraldur	0.138675
+Brynjar	0.137361
+Snorri	0.136083
+Ásgeir	0.131306
+Ágúst	0.129099
+Þorsteinn	0.128037
+Óskar	0.127000
+Páll	0.125988
+Kjartan	0.121268
+Egill	0.120386
+Hlynur	0.118678
+Jóhannes	0.117851
+Rúnar	0.117041
+Friðrik	0.113228
+Benedikt	0.112509
+Hilmar	0.111803
+Baldur	0.111111
+Ingvar	0.107833
+Gudmundur	0.107211
+Kári	0.106600
+Garðar	0.106000
+Sverrir	0.105409
+Sigurdur	0.104828
+Róbert	0.104257
+Sindri	0.103695
+Hörður	0.103142
+Sævar	0.102062
+Sigurjón	0.101015
+Hafsteinn	0.100504
+Steinar	0.098533
+Þórður	0.097129
+Björgvin	0.096674
+Tryggvi	0.096225
+Jónas	0.095783
+Hjalti	0.094916
+Valdimar	0.094072
+Tómas	0.093659
+Reynir	0.093250
+Ómar	0.090909
+Eiríkur	0.090167
+Eyþór	0.088045
+Guðni	0.087706
+Ívar	0.087370
+Birkir	0.086387
+Finnur	0.086066
+Þór	0.085749
+Hjörtur	0.085126
+Þórir	0.084215
+Geir	0.083918
+Daði	0.083333
+Kristjan	0.082761
+Kristófer	0.082479
+Örn	0.082199
+Ingólfur	0.081650
+Elvar	0.081379
+Arnór	0.081111
+Óli	0.080845
+Oddur	0.080582
+Heimir	0.080322
+Baldvin	0.080064
+Gunnlaugur	0.079809
+Fannar	0.079556
+Vilhjálmur	0.079057
+Sveinbjörn	0.077850
+Þorvaldur	0.077152
+Valur	0.076696
+Olafur	0.076249
+Þórarinn	0.076029
+Vala	0.073922
+Aðalsteinn	0.073521
+Svavar	0.073324
+Hafþór	0.073127
+Matthías	0.072932
+Viðar	0.072548
+Siggi	0.072357
+Agnar	0.072169
+Sölvi	0.071796
+Dagur	0.071611
+Bragi	0.071247
+Hákon	0.071067
+Þórhallur	0.070711
+Heiðar	0.070535
+Leifur	0.070186
+Lárus	0.070014
+Valgeir	0.069843
+Orri	0.069505
+Vignir	0.068843
+Kolbeinn	0.068519
+Bergur	0.068199
+Pálmi	0.068041
+Skúli	0.067884
+Eggert	0.067574
+Hrafnkell	0.067116
+Ægir	0.066667
+Ísak	0.066372
+Grétar	0.066227
+Finnbogi	0.065795
+Halldor	0.065653
+Júlíus	0.065512
+Gisli	0.065233
+Þröstur	0.064957
+Rafn	0.064685
+Gylfi	0.064416
+Hrafn	0.064282
+Petur	0.063628
+Hallur	0.063500
+Gudjon	0.063372
+Jökull	0.063246
+Eyjólfur	0.063119
+Erlingur	0.062994
+Hinrik	0.062869
+Pall	0.062622
+Ásmundur	0.061780
+Þorkell	0.061430
+Ellert	0.061314
+Marteinn	0.060746
+Ævar	0.060523
+Guðlaugur	0.060412
+Freyr	0.060193
+Örvar	0.060084
+Markús	0.059976
+Hallgrímur	0.059868
+Víðir	0.059761
+Sigurbjörn	0.059655
+Trausti	0.059549
+Palli	0.059235
+Ingimundur	0.058824
+Smári	0.058722
+Sigþór	0.058621
+Eirikur	0.058521
+Steingrímur	0.058124
+Óðinn	0.058026
+Asgeir	0.057831
+Arnþór	0.057639
+Thordur	0.057544
+Steinþór	0.057448
+Unnar	0.057354
+Úlfar	0.057260
+Sæmundur	0.057166
+Eiður	0.057073
+Bergþór	0.056796
+Sturla	0.056705
+Hjálmar	0.056523
+Sigmundur	0.056254
+Böðvar	0.056166
+Ingvi	0.056077
+Gústaf	0.055989
+Ingimar	0.055902
+Sigurgeir	0.055815
+Lúðvík	0.055728
+Gretar	0.055556
+Símon	0.055385
+Óttar	0.055048
+Sigurjon	0.054882
+Arnor	0.054718
+Erling	0.054636
+Grímur	0.054473
+Hafliði	0.054074
+Högni	0.053995
+Ármann	0.053916
+Erlendur	0.053838
+Sigmar	0.053452
+Teitur	0.053225
+Vigfús	0.053149
+Sigfús	0.053074
+Gabríel	0.053000
+Höskuldur	0.052926
+Hrannar	0.052705
+Alfreð	0.052632
+Hilmir	0.052559
+Svanur	0.052486
+Þorgeir	0.052342
+Thorarinn	0.052058
+Friðjón	0.051988
+Hjörleifur	0.051917
+Rögnvaldur	0.051709
+Marín	0.051640
+Þráinn	0.051571
+Torfi	0.051434
+Styrmir	0.051299
+Brynjólfur	0.051232
+Samúel	0.051098
+Steinn	0.050767
+Gudni	0.050702
+Eysteinn	0.050379
+Steindór	0.050315
+Yngvi	0.050252
+Sighvatur	0.050189
+Guðbjartur	0.050000
+Hugi	0.049875
+Jónatan	0.049568
+Hordur	0.049507
+Hreinn	0.049386
+Valtýr	0.049326
+Marinó	0.049266
+Guðbjörn	0.049207
+Thorsteinn	0.049088
+Ríkharður	0.048970
+Sigtryggur	0.048912
+Héðinn	0.048795
+Ingolfur	0.048737
+Frímann	0.048564
+Hallgrimur	0.048450
+Jósef	0.048393
+Knútur	0.048280
+Elfar	0.048168
+Bárður	0.047946
+Gestur	0.047836
+Gauti	0.047619
+Bjartur	0.047565
+Skarphéðinn	0.047458
+Loftur	0.047351
+Gunnsteinn	0.047298
+Snæbjörn	0.047246
+Vilhjalmur	0.047193
+Ingþór	0.047036
+Konráð	0.046932
+Flosi	0.046881
+Frosti	0.046829
+Friðbjörn	0.046778
+Sigursteinn	0.046575
+Bergsteinn	0.046524
+Víkingur	0.046424
+Guðbrandur	0.046374
+Jón Þór	0.046324
+Eythor	0.046274
+Steini	0.046078
+Gardar	0.045932
+Larus	0.045739
+Ottó	0.045691
+Theodór	0.045596
+Níels	0.045455
+Sæþór	0.045361
+Sigvaldi	0.045314
+Þorleifur	0.045268
+Margeir	0.045222
+Hrólfur	0.045129
+Patrekur	0.045083
+Börkur	0.044992
+Jóel	0.044947
+Pálmar	0.044901
+Eðvarð	0.044856
+Úlfur	0.044811
+Indriði	0.044766
+Ársæll	0.044677
+Þóroddur	0.044588
+Breki	0.044455
+Leó	0.044281
+Klemens	0.044237
+Runar	0.044194
+Vilhelm	0.044108
+Sigfus	0.043980
+Fridrik	0.043895
+Flóki	0.043811
+Hreiðar	0.043769
+Sigurvin	0.043727
+Arinbjörn	0.043644
+Þórólfur	0.043602
+Gunnar Þór	0.043561
+Skuli	0.043478
+Hjortur	0.043355
+Ýmir	0.043274
+Friðgeir	0.043234
+Beggi	0.043113
+Hjörvar	0.043033
+Sturlaugur	0.042993
+Veigar	0.042954
+Auðunn	0.042875
+Máni	0.042835
+Ástþór	0.042796
+Davíð Þór	0.042757
+Grimur	0.042718
+Nikulás	0.042679
+Ásbjörn	0.042601
+Vilmundur	0.042524
+Arngrímur	0.042486
+Gummi	0.042295
+Bjorgvin	0.042145
+Nonni	0.042108
+Thorvaldur	0.042070
+Brandur	0.042033
+Vikar	0.041996
+Óliver	0.041959
+Barði	0.041776
+Jón Stefán	0.041703
+Gudlaugur	0.041667
+Guttormur	0.041595
+Arnaldur	0.041487
+Dagbjartur	0.041380
+Ásgrímur	0.041030
+Fjölnir	0.040996
+Ketill	0.040962
+Jón Páll	0.040893
+Steingrimur	0.040859
+Sigurþór	0.040791
+Andri Már	0.040723
+Kiddi	0.040589
+Ingibergur	0.040522
+Njáll	0.040489
+Þórbergur	0.040423
+Einar Örn	0.040357
+Darri	0.040258
+Þorgils	0.040193
+Ingi Þór	0.040129
+Elvar Örn	0.039968
+Viggó	0.039936
+Unnsteinn	0.039904
+Kristmann	0.039873
+Sveinbjorn	0.039841
+Thorir	0.039809
+Borgar	0.039778
+Sindri Snær	0.039746
+Runólfur	0.039684
+Sindri Freyr	0.039498
+Kristmundur	0.039467
+Bergsveinn	0.039406
+Hakon	0.039253
+Halfdan	0.039223
+Vitalijus	0.039163
+Adalsteinn	0.039133
+Thorkell	0.039043
+Ögmundur	0.039014
+Jón Kristinn	0.038925
+Broddi	0.038837
+Hólmar	0.038808
+Örnólfur	0.038778
+Björn Ingi	0.038720
+Arnar Gauti	0.038691
+Birkir Már	0.038662
+Sigurður Þór	0.038576
+Jói	0.038519
+Skapti	0.038490
+Þorgrímur	0.038433
+Huginn	0.038405
+Ívan	0.038348
+Guðmundur Þór	0.038292
+Kristján Örn	0.038264
+Þorlákur	0.038208
+Svanberg	0.038180
+Ottar	0.038152
+Vésteinn	0.038125
+Ísleifur	0.038097
+Jóhann Þór	0.038069
+Njörður	0.038042
+Engilbert	0.038014
+Gaukur	0.037987
+Grettir	0.037932
+Oddgeir	0.037878
+Baldur Þór	0.037851
+Borgþór	0.037796
+Friðfinnur	0.037769
+Einar Þór	0.037743
+Óskar Þór	0.037689
+Þormóður	0.037662
+Hlöðver	0.037635
+Jón Einar	0.037609
+Sólon	0.037477
+Eyjolfur	0.037424
+Sigurbjorn	0.037372
+Gústi	0.037346
+Kormákur	0.037268
+Þorbjörn	0.037165
+Guðmundur Björgvin	0.037113
+Gissur	0.037088
+Thorgeir	0.037012
+Bjartmar	0.036986
+Sigurdór	0.036886
+Valþór	0.036860
+Rafnar	0.036786
+Magnús Ingi	0.036761
+Hólmgeir	0.036662
+Rökkvi	0.036637
+Guðfinnur	0.036613
+Búi	0.036539
+Rognvaldur	0.036515
+Gunnar Örn	0.036466
+Vidir	0.036418
+Guðmann	0.036394
+Stefán Þór	0.036370
+Hreidar	0.036322
+Jón Viðar	0.036274
+Árni Björn	0.036250
+Þorfinnur	0.036226
+Tjörvi	0.036202
+Snævar	0.036179
+Örlygur	0.036155
+Hróðmar	0.036131
+Dofri	0.036108
+Þorri	0.036084
+Guðgeir	0.036061
+Askur	0.036037
+Saemundur	0.036014
+Dagfinnur	0.035968
+Ómar Örn	0.035944
+Hálfdán	0.035921
+Ernir	0.035852
+Hergeir	0.035829
+Hafthor	0.035806
+Vigfus	0.035783
+Andri Þór	0.035760
+Ulfar	0.035692
+Thorhallur	0.035669
+Eðvald	0.035578
+Sævar Þór	0.035511
+Kristvin	0.035489
+Angjelin	0.035466
+Gurra	0.035400
+Eymar	0.035355
+Fróði	0.035311
+Áki	0.035289
+Artūrs	0.035245
+Rólant	0.035180
+Illugi	0.035158
+Guntis	0.035093
+Svajunas	0.035072
+Edvins	0.035007
+Genadijs	0.034964
+Bjarni Rúnar	0.034943
+Gísli Valur	0.034922
+Sveinn Ingi	0.034816
+Elliði	0.034794
+Jón Ágúst	0.034669
+Kristjón	0.034648
+Atli Þór	0.034627
+Hallmar	0.034586
+Kristleifur	0.034565
+Daníel Ingi	0.034544
+Ísak Þór	0.034524
+Ingólfur Kr	0.034503
+Guðmundur Smári	0.034421
+Maríus	0.034381
+Birgir Örn	0.034360
+Hákon Arnar	0.034320
+Burkni	0.034300
+Arnar Þór	0.034280
+Nökkvi	0.034259
+Gylfi Már	0.034239
+Sigurhans	0.034120
+Andri Björn	0.034100
+Friðleifur	0.034060
+Jóakim	0.034040
+Arngrimur	0.034001
+Svabbi	0.033962
+Viktor Orri	0.033942
+Samúel Ingi	0.033923
+Jón Óli	0.033903
+Móses	0.033884
+Brjánn	0.033826
+Friðþjófur	0.033806
+Andri Geir	0.033768
+Einar Páll	0.033710
+Þorvarður	0.033691
+Knutur	0.033672
+Skafti	0.033653
+Guðmundur Karl	0.033615
+Gottskálk	0.033596
+Ástvaldur	0.033501
+Gunnar Ingi	0.033482
+Bergthor	0.033426
+Bernharð	0.033315
+Jón Birgir	0.033296
+Jón Ólafur	0.033278
+Bjarni Þór	0.033241
+Jón Ingi	0.033186
+Vilberg	0.033168
+Ragnar Páll	0.033150
+Valgarður	0.033059
+Steinólfur	0.033005
+Tómas Ingi	0.032987
+Hlynur Þór	0.032969
+Aron Gabríel	0.032951
+Thoroddur	0.032933

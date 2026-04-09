@@ -1,0 +1,8465 @@
+cl
+male
+Juan	1.000000
+Luis	0.707107
+Carlos	0.577350
+Jose	0.447214
+Jorge	0.408248
+Cristian	0.377964
+Francisco	0.353553
+Rodrigo	0.333333
+Felipe	0.316228
+Manuel	0.288675
+Diego	0.277350
+Alejandro	0.258199
+Patricio	0.242536
+Daniel	0.235702
+Pablo	0.229416
+Victor	0.223607
+Eduardo	0.213201
+Claudio	0.208514
+Miguel	0.204124
+Sebastian	0.200000
+Andrea	0.196116
+Sergio	0.192450
+Javier	0.188982
+Matias	0.185695
+Pedro	0.176777
+Marcelo	0.174078
+Ricardo	0.171499
+Mauricio	0.166667
+Fernando	0.162221
+Andres	0.160128
+Ignacio	0.150756
+Mario	0.145865
+Nicolas	0.144338
+Roberto	0.142857
+Jaime	0.140028
+Benjamin	0.136083
+Hector	0.134840
+Oscar	0.129099
+Gabriel	0.128037
+Juan Carlos	0.125988
+Marco	0.125000
+Gonzalo	0.121268
+Vicente	0.119523
+Esteban	0.117041
+Guillermo	0.116248
+Antonio	0.115470
+Cesar	0.114708
+José	0.112509
+Alexis	0.110432
+Julio	0.109764
+Martin	0.109109
+Raul	0.108465
+Nelson	0.107211
+Hugo	0.104257
+Fabian	0.103142
+Ivan	0.101535
+Jonathan	0.101015
+Alvaro	0.100504
+Camilo	0.098533
+Bastian	0.096674
+Cristobal	0.096225
+Leonardo	0.092848
+Christian	0.092057
+Gustavo	0.091670
+Joaquin	0.091287
+Enrique	0.090167
+Franco	0.089803
+Hernan	0.089087
+Nicolás	0.087706
+Marcos	0.087039
+Sebastián	0.086711
+Alberto	0.086387
+Angel	0.085749
+Tomas	0.084819
+Ariel	0.084215
+Jose Luis	0.082479
+Rafael	0.081923
+Maximiliano	0.080064
+Ruben	0.079809
+Richard	0.079556
+Alfredo	0.079305
+Andrés	0.078567
+Alexander	0.078326
+Fran	0.077850
+Juan Pablo	0.077615
+Lucas	0.077382
+Alonso	0.075810
+Gerardo	0.075378
+Rene	0.075165
+Osvaldo	0.074744
+Seba	0.074125
+Arturo	0.073922
+Jesus	0.073721
+Benja	0.073324
+Emilio	0.072932
+Miguel Angel	0.072739
+Rodolfo	0.072548
+Matías	0.071982
+Ramon	0.071611
+Cristopher	0.071429
+German	0.070711
+Elias	0.069843
+Danilo	0.069673
+Alfonso	0.069505
+Agustin	0.069338
+Nico	0.069171
+Javi	0.068519
+Jean	0.067729
+Angelo	0.067574
+Luis Alberto	0.067267
+Bernardo	0.066815
+Orlando	0.066519
+Bryan	0.065938
+Renato	0.065653
+Ernesto	0.064685
+Santiago	0.064550
+Luciano	0.064416
+Benjamín	0.063888
+Freddy	0.063758
+Brayan	0.063628
+Erick	0.062994
+Moises	0.062869
+Dani	0.062500
+Marco Antonio	0.062378
+Rolando	0.062257
+Francisco Javier	0.061780
+Nacho	0.061663
+Leandro	0.061430
+Humberto	0.061199
+Wilson	0.060971
+Héctor	0.060858
+Víctor	0.059976
+Boris	0.059868
+Edgardo	0.059131
+Armando	0.059028
+Cristóbal	0.058421
+Tomás	0.058222
+Mauro	0.057831
+Leonel	0.057448
+Ronald	0.057073
+Jhon	0.056888
+Paulo	0.056796
+Adolfo	0.056705
+Christopher	0.056523
+Jordan	0.056344
+Abraham	0.056166
+Robinson	0.056077
+Cristián	0.055902
+Ismael	0.055728
+Raúl	0.055470
+Isaac	0.055385
+Joaquín	0.055216
+Aldo	0.055132
+Jose Miguel	0.054718
+Cristofer	0.054636
+Martín	0.053995
+César	0.053838
+Segundo	0.053683
+Maxi	0.053376
+Fabián	0.053225
+Damian	0.053149
+Anibal	0.053074
+Eugenio	0.052632
+Domingo	0.052559
+Yerko	0.052271
+Hans	0.052200
+Enzo	0.052129
+Erwin	0.051848
+Reinaldo	0.051640
+Giovanni	0.051503
+Johan	0.051367
+Guido	0.051232
+Carlos Alberto	0.051031
+Axel	0.050965
+Lorenzo	0.050899
+Iván	0.050637
+Dany	0.050572
+Brandon	0.050508
+Pancho	0.050443
+Krishna	0.050379
+Fredy	0.050252
+Maximo	0.050125
+Israel	0.050063
+Victor Hugo	0.049814
+Jose Manuel	0.049629
+Jairo	0.049568
+Dario	0.049386
+Victor Manuel	0.049326
+Gaston	0.049207
+Edgar	0.049147
+Octavio	0.048853
+Tito	0.048795
+Mateo	0.048679
+Josue	0.048450
+Abel	0.048224
+Juan Antonio	0.048168
+Williams	0.048002
+Mati	0.047891
+Waldo	0.047782
+Hernán	0.047727
+Lukas	0.047673
+Jose Antonio	0.047565
+Nestor	0.047405
+Pato	0.047193
+Isaias	0.047140
+Juan Manuel	0.046881
+Ian	0.046829
+Amaro	0.046778
+Pipe	0.046727
+Juanito	0.046676
+Pepe	0.046625
+Dante	0.046524
+Wladimir	0.046274
+Luis Antonio	0.046127
+Italo	0.046078
+Edison	0.046029
+Braulio	0.045691
+Juan Luis	0.045644
+Jano	0.045549
+Salvador	0.045502
+Milton	0.045222
+Jorge Luis	0.045129
+Fer	0.045083
+Paolo	0.044992
+Exequiel	0.044901
+José Luis	0.044811
+Luis Alejandro	0.044632
+Bayron	0.044588
+Darwin	0.044499
+Byron	0.044151
+Jesús	0.044108
+Álvaro	0.043895
+Rigoberto	0.043853
+Ramiro	0.043811
+Sandro	0.043561
+Rubén	0.043519
+Mariano	0.043396
+Juan Francisco	0.043315
+Bastián	0.043274
+Emanuel	0.043193
+Agustín	0.043153
+Carlo	0.043073
+Manuel Alejandro	0.043033
+Juan Jose	0.042954
+Lucho	0.042875
+Ramón	0.042718
+Niko	0.042640
+Mathias	0.042486
+Maicol	0.042448
+Carlitos	0.042409
+Jhonny	0.042295
+René	0.042220
+Ulises	0.042145
+Germán	0.042108
+Augusto	0.041996
+Gaspar	0.041922
+Edu	0.041849
+Flavio	0.041812
+Horacio	0.041776
+Cristhian	0.041559
+Jose Ignacio	0.041523
+Luis Eduardo	0.041451
+Pablo Andres	0.041204
+Jorge Antonio	0.041169
+Dilan	0.041135
+Lalo	0.041100
+Claudio Andres	0.041030
+Benito	0.040859
+Cristian Andres	0.040689
+Felipe Andres	0.040656
+Gerald	0.040589
+Javii	0.040522
+Dagoberto	0.040423
+Gerson	0.040291
+Yonathan	0.040258
+Juan Andres	0.040096
+Herman	0.040064
+Gino	0.040032
+Emiliano	0.040000
+Misael	0.039873
+Heriberto	0.039841
+Franklin	0.039778
+Familia	0.039715
+Adan	0.039653
+Nikolas	0.039528
+Manuel Antonio	0.039498
+Mauri	0.039436
+Carlos Andres	0.039406
+Raimundo	0.039344
+Fidel	0.039223
+Maikol	0.039193
+Nibaldo	0.039163
+Emerson	0.039133
+Luis Enrique	0.039103
+Jorge Andres	0.038895
+Rayen	0.038866
+Pascal	0.038837
+Luis Felipe	0.038778
+Jonatan	0.038749
+Marcial	0.038691
+Luis Fernando	0.038605
+Julio Cesar	0.038519
+Eliseo	0.038490
+Beto	0.038462
+Roberto Carlos	0.038433
+Rodrigo Andres	0.038376
+Saul	0.038348
+Juan Ignacio	0.038320
+Toño	0.038236
+Vicho	0.038208
+Rogelio	0.038069
+Edmundo	0.037987
+Aquiles	0.037932
+Federico	0.037823
+Pedro Antonio	0.037796
+Pedro Pablo	0.037689
+Arnaldo	0.037662
+Juan Alberto	0.037503
+Alexi	0.037450
+Gabo	0.037372
+Cesar Antonio	0.037320
+Simón	0.037268
+Juancarlos	0.037165
+Juan Eduardo	0.037139
+Cristian Alejandro	0.037088
+Wilfredo	0.037012
+Jeremias	0.036986
+Eladio	0.036886
+Leopoldo	0.036860
+Flo	0.036835
+Piero	0.036736
+Gilberto	0.036711
+Gregorio	0.036588
+Marcelino	0.036564
+Efrain	0.036322
+Luis Hernan	0.036274
+Moisés	0.036179
+Felipe Ignacio	0.036131
+José Miguel	0.035944
+Maikel	0.035921
+Ricardo Antonio	0.035898
+Mane	0.035829
+Clemente	0.035783
+Jhonatan	0.035760
+Arnoldo	0.035737
+Luis Humberto	0.035624
+Manolo	0.035533
+Manuel Jesus	0.035489
+Harold	0.035466
+Jona	0.035444
+Guille	0.035422
+Patricio Alejandro	0.035355
+Rafa	0.035333
+Jorge Eduardo	0.035311
+Jp	0.035223
+Luis Alfredo	0.035158
+Pascual	0.035136
+Carlos Enrique	0.035072
+Anderson	0.034943
+Carlos Antonio	0.034900
+Jose Alejandro	0.034858
+Rodrigo Alejandro	0.034837
+Daniel Alejandro	0.034773
+Juvenal	0.034711
+Juan Guillermo	0.034627
+Javier Ignacio	0.034606
+Renzo	0.034503
+Genaro	0.034483
+Mirko	0.034421
+Yuri	0.034381
+Edgard	0.034340
+Mauricio Alejandro	0.034280
+Sergio Antonio	0.034199
+Elías	0.034080
+Karem	0.034021
+Eduardo Antonio	0.033981
+Luis Andres	0.033942
+Jean Pierre	0.033864
+Ángel	0.033806
+Jorge Alejandro	0.033768
+Berny	0.033615
+Edson	0.033501
+Karlos	0.033482
+Matias Ignacio	0.033389
+Franko	0.033296
+Bairon	0.033260
+Diego Ignacio	0.033241
+Celso	0.033204
+Rigo	0.033150
+Juan Enrique	0.033059
+Kike	0.032951
+Carlos Eduardo	0.032915
+Marcelo Alejandro	0.032898
+Aliro	0.032862
+Miguel Ángel	0.032669
+Eduardo Andres	0.032616
+Jose Eduardo	0.032564
+Jose Tomas	0.032547
+Elia	0.032513
+Demian	0.032496
+José Manuel	0.032461
+Luis Miguel	0.032444
+Yeison	0.032410
+Sebastian Andres	0.032393
+Yordan	0.032376
+Rodrigo Antonio	0.032359
+Aurelio	0.032325
+Gastón	0.032309
+Jerson	0.032208
+Lautaro	0.032174
+Luis Armando	0.032125
+Edinson	0.032092
+Wilmer	0.032026
+Joaco	0.032009
+Mauricio Andres	0.031976
+Jose Francisco	0.031944
+Yonatan	0.031879
+Joseluis	0.031863
+Jeison	0.031846
+Carlos Patricio	0.031814
+Patricio Andres	0.031798
+Pola	0.031734
+Americo	0.031718
+Nolberto	0.031702
+Titi	0.031623
+Adrián	0.031575
+Marcos Antonio	0.031528
+José Antonio	0.031435
+Juaquin	0.031404
+Fermin	0.031388
+Juan Esteban	0.031357
+Jesu	0.031281
+Juan Alejandro	0.031204
+Bladimir	0.031189
+Erasmo	0.031159
+Cabañas	0.031144
+José Ignacio	0.031114
+Benedicto	0.031099
+Sergio Andres	0.031083
+Aron	0.031054
+Jean Paul	0.031009
+Marcelo Andres	0.030964
+Patricio Antonio	0.030949
+Armin	0.030934
+Coke	0.030905
+Giovanny	0.030890
+Nicko	0.030861
+Jorge Enrique	0.030831
+Leonidas	0.030817
+Eliecer	0.030787
+Reynaldo	0.030773
+Alejo	0.030715
+Julián	0.030700
+Checho	0.030686
+Washington	0.030657
+Victor Alejandro	0.030643
+Abelardo	0.030571
+Juanpablo	0.030528
+Berni	0.030443
+Heraldo	0.030429
+Facundo	0.030387
+Juanjo	0.030373
+Cristian Marcelo	0.030317
+Ricardo Andres	0.030303
+Rosamel	0.030289
+Francisco Antonio	0.030206
+Claudio Antonio	0.030192
+Ronal	0.030165
+Diego Andres	0.030124
+Cristian Eduardo	0.030110
+Maykol	0.030096
+Luis Alfonso	0.030056
+Jaime Antonio	0.030042
+Jaime Andres	0.030029
+Luis Patricio	0.030015
+Jhony	0.029975
+Percy	0.029961
+Lucio	0.029934
+Yoel	0.029907
+Juan José	0.029881
+Sixto	0.029854
+Juan David	0.029841
+Sebastian Ignacio	0.029827
+Jose Patricio	0.029801
+Fabricio	0.029761
+Mario Antonio	0.029722
+Salomon	0.029709
+Joako	0.029683
+Luchito	0.029643
+Johann	0.029617
+Polo	0.029604
+Jair	0.029579
+Maury	0.029540
+Fco	0.029463
+Basti	0.029399
+Jose Alberto	0.029374
+Eloy	0.029361
+Jose Daniel	0.029336
+Damián	0.029298
+Juan Ramon	0.029285
+Máximo	0.029273
+Javier Alejandro	0.029260
+Claudio Alejandro	0.029248
+Abner	0.029210
+Fabrizio	0.029161
+Pablito	0.029148
+Miguel Antonio	0.029111
+Jose Andres	0.029037
+Cristian Rodrigo	0.029025
+Ciro	0.028976
+Richar	0.028964
+David Alejandro	0.028952
+Marcelo Antonio	0.028940
+Juan Patricio	0.028916
+Alejandro Antonio	0.028904
+Hardy	0.028868
+Yerson	0.028831
+Ignacio Andres	0.028796
+Tomy	0.028784
+Óscar	0.028760
+Roberto Antonio	0.028724
+Mauricio Antonio	0.028677
+Anselmo	0.028642
+Jota	0.028630
+Jose Alfredo	0.028595
+Pablo Antonio	0.028548
+Victor Andres	0.028537
+Jean Carlos	0.028513
+Pelao	0.028502
+Yohan	0.028490
+Josué	0.028467
+Amador	0.028456
+Darío	0.028444
+Juan Fernando	0.028410
+Luis Guillermo	0.028398
+Pablo Cesar	0.028387
+Félix	0.028318
+Juan Miguel	0.028273
+Luis Marcelo	0.028250
+Maycol	0.028239
+Giorgio	0.028172
+Kako	0.028161
+Lisandro	0.028105
+Giancarlo	0.028094
+Baltazar	0.028083
+Javier Andres	0.027984
+Anyelo	0.027973
+Guillermo Antonio	0.027962
+Lenin	0.027875
+Franz	0.027864
+Néstor	0.027799
+Miguel Alejandro	0.027767
+Luis Orlando	0.027735
+Basty	0.027714
+Nicolas Ignacio	0.027692
+Gian	0.027671
+Agus	0.027661
+Fernando Antonio	0.027639
+Yamil	0.027618
+Mario Andres	0.027587
+Eduardo Enrique	0.027576
+Mario Enrique	0.027566
+Dago	0.027545
+Lito	0.027482
+Antoni	0.027431
+Eusebio	0.027410
+Bernabe	0.027379
+Amaru	0.027369
+Gonza	0.027349
+Juan Pedro	0.027328
+Gianfranco	0.027308
+Nachito	0.027287
+Pablo Ignacio	0.027277
+Cristian Antonio	0.027247
+Rorro	0.027217
+Kamilo	0.027206
+Naxo	0.027196
+Daniel Antonio	0.027136
+Remigio	0.027126
+Enrrique	0.027116
+Nose	0.027096
+Ruperto	0.027047
+Jorge Ignacio	0.027037
+Jhoan	0.027027
+Luis Ignacio	0.027017
+Alejandro Andres	0.027007
+Christofer	0.026997
+Frantz	0.026988
+Cristhofer	0.026978
+Johans	0.026968
+Oswaldo	0.026909
+Florencio	0.026900
+Migue	0.026880
+Juan Carlo	0.026851
+Luis Ernesto	0.026841
+Carlos Alejandro	0.026832
+Hector Manuel	0.026803
+Sergio Enrique	0.026784
+Constructora	0.026774
+Benjamin Ignacio	0.026745
+Aníbal	0.026669
+Branco	0.026660
+Eleazar	0.026631
+Sergio Alejandro	0.026603
+Diego Alejandro	0.026593
+Fernando Andres	0.026575
+Sebastian Alejandro	0.026556
+Luis Arturo	0.026537
+Gonzalo Andres	0.026519
+Bernardino	0.026491
+Fransisco	0.026472
+Carlos Javier	0.026444
+Víctor Hugo	0.026435
+Nicanor	0.026417
+Jose Ricardo	0.026389
+Raul Antonio	0.026380
+Sebita	0.026361
+Luis Esteban	0.026352
+Pedro Enrique	0.026343
+Roberto Andres	0.026334
+Neftali	0.026316
+Jorge Patricio	0.026298
+Valentino	0.026243
+Jose Carlos	0.026198
+Luis Manuel	0.026189
+Favio	0.026180
+Gabriel Alejandro	0.026171
+Mario Alejandro	0.026162
+Manuel Enrique	0.026126
+Cristian Mauricio	0.026100
+Francisco Andres	0.026091
+Hermes	0.026055
+Vito	0.026047
+Luiz	0.026038
+Matia	0.026029
+Piter	0.026020
+Caca	0.026011
+Isidro	0.025994
+Jose Fernando	0.025985
+Tulio	0.025967
+Joce	0.025959
+Gonzalez	0.025950
+Marty	0.025924
+Luis Ricardo	0.025898
+Hector Alejandro	0.025889
+Victor Eduardo	0.025880
+Fabian Andres	0.025837
+Milovan	0.025820
+Davis	0.025768
+Ever	0.025760
+Justo	0.025743
+David Antonio	0.025709
+Jorgito	0.025683
+Gustavo Adolfo	0.025658
+Oscar Andres	0.025641
+Jose Pablo	0.025633
+Juako	0.025624
+Nicolas Andres	0.025616
+Nasho	0.025540
+Blas	0.025482
+Evaristo	0.025474
+Teodoro	0.025466
+Carlos Manuel	0.025458
+Homero	0.025449
+Jorge Alberto	0.025441
+Juanka	0.025392
+Víctor Manuel	0.025359
+Luis Osvaldo	0.025351
+Javier Antonio	0.025335
+Pedro Alejandro	0.025327
+Luis Rodrigo	0.025270
+Renan	0.025238
+Edo	0.025230
+Jovi	0.025222
+Cristi	0.025214
+Oriel	0.025206
+Dionisio	0.025198
+Peterson	0.025182
+Luis Carlos	0.025166
+Luis Francisco	0.025158
+José Tomás	0.025142
+Matii	0.025118
+Fletes	0.025094
+Daniel Andres	0.025071
+Muñoz	0.025055
+Jordano	0.025039
+Evens	0.025016
+Francisco Alejandro	0.025008
+Angelito	0.024984
+Elian	0.024961
+Eder	0.024953
+Fito	0.024945
+Basilio	0.024938
+Wilner	0.024915
+Carlos Roberto	0.024907
+Leito	0.024899
+Juan Bautista	0.024891
+Luis Roberto	0.024884
+Jose Enrique	0.024876
+Eduar	0.024861
+Joshe	0.024853
+Nickolas	0.024830
+Victor Alfonso	0.024807
+Panxo	0.024776
+Patricio Eduardo	0.024761
+Adonis	0.024754
+Migel	0.024731
+Willian	0.024701
+Jose David	0.024693
+Rober	0.024678
+Juan Marcelo	0.024671
+Carlos Alfredo	0.024656
+Caco	0.024648
+Felipe Antonio	0.024633
+Jaime Enrique	0.024626
+Klaudio	0.024574
+Stiven	0.024566
+Casa	0.024544
+Paulino	0.024537
+Negro	0.024522
+Manuel Eduardo	0.024507
+Gabriel Antonio	0.024500
+Rolo	0.024470
+Hector Enrique	0.024405
+Henrry	0.024383
+Claudio Enrique	0.024361
+Carlos Felipe	0.024340
+Alamiro	0.024325
+Vitoko	0.024318
+Rodrigo Ignacio	0.024304
+Camilo Andres	0.024296
+Elson	0.024275
+Deivid	0.024261
+Maciel	0.024225
+Jorje	0.024211
+Hector Eduardo	0.024183
+León	0.024175
+Juan Daniel	0.024154
+Juank	0.024147
+Raul Alejandro	0.024133
+Sergio Eduardo	0.024126
+Cesar Andres	0.024098
+Pedro Andres	0.024091
+Carlos Mauricio	0.024084
+Benjita	0.024077
+Patricio Enrique	0.024056
+Galvarino	0.024049
+Froilan	0.024015
+Keno	0.023980
+Giovani	0.023973
+Atilio	0.023959
+Pedrito	0.023946
+Yury	0.023939
+Moise	0.023932
+Aladino	0.023925
+Wilder	0.023905
+Carlos Daniel	0.023898
+Matiias	0.023884
+Joselo	0.023877
+Sebaa	0.023870
+Galo	0.023864
+Rojas	0.023843
+Matias Nicolas	0.023837
+Daniel Esteban	0.023816
+Sergio Hernan	0.023810
+Carlos Humberto	0.023803
+Matias Alejandro	0.023796
+Jose Guillermo	0.023789
+Jorge Ivan	0.023769
+Milenko	0.023762
+Jaime Eduardo	0.023742
+Robenson	0.023729
+Michelet	0.023722
+Felipe Alejandro	0.023716
+Cristian Alexis	0.023702
+Pepito	0.023676
+Gianni	0.023656
+Pipo	0.023649
+Nivaldo	0.023629
+Josè	0.023616
+Nahuel	0.023590
+Luis Daniel	0.023583
+Jose Roberto	0.023577
+Rosendo	0.023570
+Oscar Alejandro	0.023557
+Leoncio	0.023551
+Carlos Ignacio	0.023518
+Jorge Hernan	0.023512
+Ivan Alejandro	0.023505
+Julio Andres	0.023486
+Mitchel	0.023479
+Diego Alonso	0.023447
+Patricio Hernan	0.023440
+Jonathan Andres	0.023434
+Mackenson	0.023427
+Job	0.023408
+Krisna	0.023402
+Mono	0.023389
+Roque	0.023383
+Poli	0.023370
+Nilson	0.023363
+Egon	0.023338
+Feliciano	0.023332
+Amaral	0.023325
+Jeferson	0.023313
+Victor Antonio	0.023306
+Yayo	0.023300
+Daniel Eduardo	0.023294
+Luis David	0.023287
+Favian	0.023262
+Joakin	0.023256
+Aarón	0.023237
+Alonzo	0.023212
+Wildo	0.023206
+Jose Mauricio	0.023193
+Eleodoro	0.023181
+Maickol	0.023156
+Felipe Eduardo	0.023137
+Joaquin Ignacio	0.023119
+Felipe Andrés	0.023113
+Dixon	0.023100
+Romulo	0.023094
+Ervin	0.023088
+Mattias	0.023076
+Anuel	0.023069
+Belarmino	0.023051
+Florentino	0.023045
+Hipolito	0.023033
+Mario Alberto	0.023014
+Pablo Alejandro	0.023002
+Oscar Eduardo	0.022996
+Miguelangel	0.022990
+Tavo	0.022984
+Demetrio	0.022972
+Hector Antonio	0.022960
+Claro	0.022954
+Cesar Alejandro	0.022942
+Juan Mauricio	0.022911
+Luis Mauricio	0.022899
+Marco Andres	0.022869
+Yeremy	0.022863
+Hector Patricio	0.022828
+Jaime Patricio	0.022810
+Vitoco	0.022804
+Xavi	0.022780
+Hernando	0.022774
+Isaías	0.022768
+Pedro Luis	0.022751
+Jose Gabriel	0.022745
+Miguelito	0.022733
+Lobo	0.022721
+Valentín	0.022692
+Heber	0.022686
+Juan Gabriel	0.022680
+Luis Omar	0.022663
+Juan Sebastian	0.022657
+Jose Raul	0.022651
+Juaco	0.022640
+Estefano	0.022628
+Julio Enrique	0.022622
+Hector Andres	0.022617
+Juan Andrés	0.022611
+Andres Alejandro	0.022599
+Juan Claudio	0.022593
+Guillermo Andres	0.022588
+Leonardo Andres	0.022576
+Matias Andres	0.022565
+Danko	0.022547
+Tatan	0.022542
+Rodrigo Alexis	0.022507
+Rod	0.022479
+Cruz	0.022468
+Giuliano	0.022462
+Moreno	0.022456
+Alexandro	0.022451
+Luís	0.022439
+Vidal	0.022428
+Eliezer	0.022422
+Geronimo	0.022406
+Ruben Dario	0.022383
+Yair	0.022372
+Luis Angel	0.022366
+Iñaki	0.022361
+Diiego	0.022355
+Roberto Alejandro	0.022350
+Muebles	0.022338
+Haroldo	0.022333
+Diego Antonio	0.022316
+Ricardo Enrique	0.022311
+Axl	0.022305
+Ivan Andres	0.022299
+Jhon Jairo	0.022294
+Andres Felipe	0.022283
+Yanko	0.022261
+Jaime Alejandro	0.022244
+Angello	0.022239
+Delfin	0.022195
+Chino	0.022184
+Mau	0.022178
+Klaus	0.022162
+Santino	0.022151
+Hermann	0.022140
+Lazaro	0.022135
+Diaz	0.022119
+Maykel	0.022097
+Keviin	0.022081
+Yony	0.022076
+Claudio Marcelo	0.022070
+Moncho	0.022065
+Iglesia	0.022059
+Jorge Esteban	0.022043
+Jose Domingo	0.022038
+Pablo Andrés	0.022033
+Fabrizzio	0.022027
+Miguel Andres	0.022017
+Juan Segundo	0.022001
+Patricio Javier	0.021985
+Leonardo Antonio	0.021974
+Carlos Ivan	0.021969
+Daniel Ignacio	0.021963
+Yordy	0.021953
+Jose Rodrigo	0.021942
+Jonnathan	0.021937
+Manuel Ignacio	0.021932
+Hernaldo	0.021926
+Alexis Andres	0.021895
+Wlady	0.021884
+Basthian	0.021879
+Darien	0.021874
+Maestro	0.021863
+Geovanni	0.021848
+Germain	0.021837
+Rodri	0.021827
+Maxii	0.021822
+Dieguito	0.021806
+Javy	0.021786
+Oscar Antonio	0.021780
+Artemio	0.021770
+Juan Roberto	0.021765
+Jose Marcelo	0.021760
+Miguel Eduardo	0.021755
+Luis Javier	0.021749
+Juan Ricardo	0.021739
+Nicolas Alejandro	0.021734
+Jose Gregorio	0.021729
+Erich	0.021713
+Claudio Esteban	0.021698
+Hector Hernan	0.021693
+Claudy	0.021688
+Mauricio Esteban	0.021683
+Juan Rodrigo	0.021678
+Carlos Rodrigo	0.021673
+Yerco	0.021642
+Hostal	0.021627
+Ivan Antonio	0.021617
+Francisco Ignacio	0.021602
+Rodrigo Esteban	0.021597
+Reyes	0.021582
+Albo	0.021572
+Cristo	0.021567
+Natanael	0.021562
+Jeronimo	0.021552
+Arsenio	0.021547
+Carlos Fernando	0.021537
+Enoc	0.021532
+Carlos Francisco	0.021527
+Manuel Alberto	0.021522
+Jorge Fernando	0.021507
+Roly	0.021502
+Jose Ramon	0.021487
+Victor Daniel	0.021482
+Pachi	0.021477
+Cristian Javier	0.021472
+Zapatillas	0.021462
+Wilber	0.021457
+Marcelo Eduardo	0.021452
+Jacobo	0.021447
+Daniel Enrique	0.021442
+Cristian Alberto	0.021437
+Luis Emilio	0.021432
+Javier Eduardo	0.021427
+Abdon	0.021403
+Pedro Juan	0.021398
+Iker	0.021393
+Guillermo Enrique	0.021388
+Marcelo Enrique	0.021369
+Rafael Antonio	0.021364
+Belisario	0.021359
+Confiesate	0.021344
+Patrcio	0.021330
+Helmuth	0.021325
+Yeremi	0.021310
+Patricio Alberto	0.021296
+Luxo	0.021257
+Corral	0.021243
+Janito	0.021238
+Zacarias	0.021224
+Manuel Francisco	0.021219
+Torres	0.021214
+Juancho	0.021205
+Raul Eduardo	0.021190
+Matty	0.021186
+Castillo	0.021176
+Diegoo	0.021171
+Wenceslao	0.021162
+Juano	0.021157
+Juan Emilio	0.021152
+Pablo Esteban	0.021148
+Carlos Arturo	0.021134
+Luchin	0.021129
+Martin Ignacio	0.021119
+Alejandro Enrique	0.021105
+Jose Arturo	0.021091
+Jeyson	0.021087
+Esteban Andres	0.021082
+Gabriel Ignacio	0.021077
+Renel	0.021063
+Luis Ivan	0.021054
+David Andres	0.021049
+Donde	0.021021
+Katta	0.021012
+Carlito	0.021007
+Wilbert	0.020993
+Mayo	0.020989
+Naldo	0.020975
+Waldemar	0.020961
+Gael	0.020952
+Marito	0.020947
+Perez	0.020943
+Fede	0.020934
+Saúl	0.020929
+Agu	0.020911
+Jeremías	0.020897
+Diego Armando	0.020879
+Jorgue	0.020870
+Mario Eduardo	0.020861
+Fabian Alejandro	0.020851
+Keko	0.020842
+Punto	0.020838
+Jhonathan	0.020829
+Hugo Antonio	0.020824
+Adán	0.020820
+Eduardo Alejandro	0.020815
+Pablo Enrique	0.020811
+Rodrigo Javier	0.020806
+Panchito	0.020802
+Roberth	0.020797
+Gabriel Andres	0.020793
+Carlos Hernan	0.020788
+Alejandro Esteban	0.020770
+Fernando Enrique	0.020757
+Jonathan Alejandro	0.020743
+Duvan	0.020739
+Dennys	0.020735
+Magdiel	0.020730
+Marco Aurelio	0.020726
+Edwards	0.020717
+Jaime Alberto	0.020712
+Benjamin Andres	0.020690
+Claudio Patricio	0.020681
+Jonathan Alexis	0.020672
+Vicente Ignacio	0.020668
+Bastian Ignacio	0.020655
+Camilo Ignacio	0.020650
+Eduardo Patricio	0.020646
+Deivi	0.020624
+Beno	0.020620
+Giordano	0.020607
+Nilton	0.020602
+Lizandro	0.020580
+Modesto	0.020576
+Gamaliel	0.020550
+Agua	0.020541
+Julio Alberto	0.020515
+Ricardo Alberto	0.020511
+Igna	0.020502
+Fernando Javier	0.020498
+Elver	0.020494
+Jose Angel	0.020485
+Wily	0.020481
+Patto	0.020447
+Benjaa	0.020442
+Inti	0.020434
+Javiier	0.020421
+Javier Enrique	0.020417
+Raul Enrique	0.020412
+Luis Gerardo	0.020408
+Estampados	0.020400
+Servando	0.020395
+Cristian Manuel	0.020387
+Sergio Ivan	0.020374
+Gerardo Antonio	0.020370
+Jordán	0.020357
+Elizardo	0.020353
+Jose Ivan	0.020345
+Alex Rodrigo	0.020290
+Mayito	0.020282
+Ignaciio	0.020265
+Rodrigo Eduardo	0.020249
+Luis Alexis	0.020244
+Geraldo	0.020224
+Rikardo	0.020215
+Markos	0.020207
+Gera	0.020199
+Dariel	0.020195
+Juliano	0.020191
+Antuan	0.020187
+Branko	0.020182
+Erico	0.020174
+Agusto	0.020170
+Jimy	0.020166
+José Francisco	0.020162
+Jorge Manuel	0.020154
+Manuel Fernando	0.020150
+Nelson Antonio	0.020146
+Luis Mario	0.020137
+Yoan	0.020129
+Paulo Cesar	0.020125
+Jose Bernardo	0.020121
+Carlos Luis	0.020117
+Nehemias	0.020085
+Alejandro Javier	0.020080
+Eulogio	0.020072
+Carlos Marcelo	0.020068
+Abrahan	0.020064
+Claudio Alberto	0.020048
+Juan Diego	0.020044
+Morales	0.020036
+Oscar Enrique	0.020032
+Jose Armando	0.020024
+Ygnacio	0.020016
+Jose Javier	0.020012
+Carlos Esteban	0.020008
+Oscar Manuel	0.020000
+Hugo Enrique	0.019988
+Guillermo Alejandro	0.019984
+Jose Hernan	0.019976
+Luckas	0.019972
+José Alejandro	0.019960
+Juan Humberto	0.019956
+Empresa	0.019952
+Yvan	0.019948
+Roberto Enrique	0.019944
+Esteban Alejandro	0.019940
+Raul Andres	0.019920
+Willians	0.019917
+Andres Antonio	0.019913
+Claudio Andrés	0.019909
+Yanis	0.019901
+Manuel Andres	0.019889
+Lizardo	0.019861
+Gruas	0.019846
+Manuel Jesús	0.019838
+Cristian Enrique	0.019830
+Felipee	0.019826
+Desarmaduria	0.019822
+Alexis Antonio	0.019811
+Botilleria	0.019807
+Maverick	0.019780
+Taxi	0.019772
+Los	0.019768
+Chriss	0.019764
+Isai	0.019757
+Fernado	0.019753
+Richi	0.019749
+Beny	0.019745
+Cláudio	0.019741
+Keny	0.019733
+Apolo	0.019718
+Diogenes	0.019714
+Gato	0.019710
+Daniiel	0.019707
+Luis Gabriel	0.019695
+Cesar Augusto	0.019691
+Iver	0.019684
+Ademir	0.019680
+Juanma	0.019672
+Rodo	0.019665
+Ramon Antonio	0.019661
+Diego Fernando	0.019646
+Matyas	0.019642
+Ariel Alejandro	0.019638
+Ricardo Javier	0.019634
+Estevan	0.019630
+Eduardo Javier	0.019612
+Cesar Eduardo	0.019604
+Jose Orlando	0.019597
+Jerman	0.019585
+Jhonn	0.019582
+Markito	0.019578
+Jose Esteban	0.019574
+Jorge Armando	0.019570
+Chalo	0.019555
+Andres Eduardo	0.019548
+Andresito	0.019544
+Marcos Andres	0.019540
+Huevos	0.019533
+Carlos Andrés	0.019529
+David Esteban	0.019518
+Yovani	0.019511
+Marcelo Ignacio	0.019507
+Christian Alejandro	0.019503
+Cristian Esteban	0.019499
+Carlos Alfonso	0.019492
+Jorge Mauricio	0.019488
+Cristian Andrés	0.019481
+Contreras	0.019477
+Milko	0.019474
+Jameson	0.019462
+Yeferson	0.019451
+Alex Mauricio	0.019448
+Jorge Rodrigo	0.019444
+Richard Antonio	0.019437
+Carlos Alexis	0.019433
+Christian Andres	0.019429
+Fabian Ignacio	0.019426
+Rodrigo Andrés	0.019422
+Kmilo	0.019418
+Cristobal Andres	0.019415
+Nelson Enrique	0.019404
+Ignacio Antonio	0.019396
+Cristian Ignacio	0.019393
+Benjamin Alejandro	0.019389
+Ociel	0.019375
+Mauricio Eduardo	0.019371
+Mauricio Enrique	0.019367
+Martin Alonso	0.019360
+Cristian Patricio	0.019353
+Hector Mauricio	0.019349
+Augustin	0.019346
+Evans	0.019342
+Yordi	0.019338
+Conrado	0.019335
+Castro	0.019331
+Ender	0.019328
+Deny	0.019324
+Enrike	0.019317
+Soto	0.019313
+Alexsander	0.019306
+Sabino	0.019302
+Victorino	0.019299
+Isidoro	0.019295
+Jose Pedro	0.019292
+Herminio	0.019288
+Desiderio	0.019284
+Eleuterio	0.019281
+Vice	0.019277
+Pedro Jose	0.019270
+Nelson Eduardo	0.019259
+Luiis	0.019245
+Martinez	0.019238
+Yvon	0.019234
+Pedro Eduardo	0.019231
+Josep	0.019227
+Sergio Fernando	0.019220
+Julio Antonio	0.019213
+Jere	0.019209
+Daniel Alberto	0.019206
+Juan Domingo	0.019202
+Juanca	0.019199
+Yiyo	0.019192
+Ramirez	0.019188
+Juan C	0.019185
+Juan Alfredo	0.019178
+Vargas	0.019174
+Hugo Alejandro	0.019171
+Javo	0.019160
+Gabriel Eduardo	0.019153
+Yamir	0.019149
+Cristian Fernando	0.019146
+Jose Osvaldo	0.019132
+Coto	0.019118
+Sergio Esteban	0.019114
+Juan Paulo	0.019108
+Yonny	0.019094
+Ivar	0.019083
+Nicolas Antonio	0.019066
+Emilio Jose	0.019062
+Aroldo	0.019059
+Juan Arturo	0.019055
+Krlos	0.019045
+David Eduardo	0.019038
+Victor Hernan	0.019031
+Pedro Ignacio	0.019021
+Rene Antonio	0.019014
+Rodrigo Alberto	0.019007
+Wilfrid	0.019004
+Araya	0.019000
+Joche	0.018997
+Josemiguel	0.018976
+Cristofher	0.018969
+Wisly	0.018963
+Manuel Patricio	0.018949
+Patricio Esteban	0.018942
+Sebastian Antonio	0.018929
+David Ignacio	0.018919
+Ignacio Alejandro	0.018905
+Jonel	0.018895
+Antu	0.018891
+Reginald	0.018888
+Deivis	0.018875
+Eco	0.018855
+Vasco	0.018844
+Josias	0.018841
+Ambrosio	0.018838
+Geovanny	0.018834
+Cornelio	0.018831
+José Eduardo	0.018828
+Francisco Jose	0.018824
+Jose Mario	0.018821
+Sergio Luis	0.018811
+Jovino	0.018808
+Placido	0.018801
+Carlos Jose	0.018798
+Julito	0.018791
+Cambios	0.018785
+Román	0.018781
+Juanjose	0.018778
+Ferreteria	0.018768
+Juan Javier	0.018761
+Carlos David	0.018758
+Mecanica	0.018755
+Trabajos	0.018748
+Albaro	0.018745
+Rincon	0.018742
+Luis Gustavo	0.018738
+Jesus Alberto	0.018728
+Osvaldo Antonio	0.018725
+Jaimito	0.018722
+Jose Humberto	0.018719
+Ricardo Esteban	0.018715
+Franchesco	0.018709
+Juanpa	0.018705
+Pier	0.018699
+Hebert	0.018696
+Juan Felipe	0.018692
+Jose Leonardo	0.018689
+Hugo Andres	0.018686
+Miguel Enrique	0.018679
+Arcadio	0.018676
+Juan Orlando	0.018673
+Ibar	0.018670
+Victor Javier	0.018666
+Jorge Arturo	0.018660
+Teobaldo	0.018653
+Gerardo Andres	0.018650
+Yulian	0.018644
+Juan Camilo	0.018637
+Leodan	0.018634
+Mario Hernan	0.018627
+Jorge Andrés	0.018621
+Sebastian Eduardo	0.018618
+Fuentes	0.018589
+Hector Ivan	0.018586
+Juan Alfonso	0.018576
+Miguel Ignacio	0.018573
+Jans	0.018560
+Wladi	0.018544
+Juan Cristobal	0.018515
+Alvaro Andres	0.018506
+Alex Antonio	0.018503
+Dangelo	0.018499
+Sergio Patricio	0.018484
+Tomas Ignacio	0.018474
+Alex Patricio	0.018471
+Cristobal Ignacio	0.018465
+Alexis Alejandro	0.018462
+Bastiian	0.018446
+Manuel Segundo	0.018430
+Nixon	0.018427
+Toti	0.018421
+Davidson	0.018418
+Rogers	0.018411
+Il	0.018402
+Braian	0.018399
+Villa	0.018393
+Aldair	0.018390
+Romualdo	0.018374
+Talo	0.018371
+Elvio	0.018368
+Colo	0.018365
+Adiel	0.018359
+Cam	0.018356
+Kano	0.018352
+Nataniel	0.018346
+Cosme	0.018337
+José Daniel	0.018325
+Denys	0.018322
+Eber	0.018316
+Josse	0.018312
+Bernardo Antonio	0.018309
+Abdiel	0.018306
+Francisco Eduardo	0.018303
+Samuel Antonio	0.018300
+Jeremi	0.018291
+Elmo	0.018288
+Maxy	0.018282
+Hugo Alberto	0.018279
+Chicho	0.018273
+Raul Alberto	0.018270
+Juanpi	0.018257
+Flaco	0.018254
+Oso	0.018239
+Taller	0.018233
+Alvarez	0.018227
+Carlos Guillermo	0.018221
+Ruben Antonio	0.018218
+Carlos Ernesto	0.018215
+Diego Nicolas	0.018212
+Jhoel	0.018206
+Juan Ernesto	0.018200
+Vittorio	0.018197
+Cuenta	0.018194
+Juan Jesus	0.018191
+Ricardo Alejandro	0.018188
+Gillermo	0.018176
+Camping	0.018173
+Juan Osvaldo	0.018170
+Luis Sebastian	0.018137
+Mauricio Javier	0.018134
+Borja	0.018119
+Jose Elias	0.018116
+Hector Fernando	0.018113
+Cesar Enrique	0.018110
+Claudio Hernan	0.018092
+Yuliano	0.018086
+Edwar	0.018083
+Diego Esteban	0.018078
+Cheo	0.018072
+Victor Enrique	0.018069
+Eduardo Ignacio	0.018066
+Demis	0.018054
+Rodrigo Fernando	0.018048
+Luis Gonzalo	0.018045
+Enmanuel	0.018030
+Pedro Alfonso	0.018028
+Yimmy	0.018025
+Helmut	0.018022
+Yovanny	0.018007
+Jostin	0.018004
+Javivi	0.017995
+Paulo Andres	0.017990
+Cristhoper	0.017987
+Alex Eduardo	0.017984
+Kenson	0.017972
+Osciel	0.017969
+Patricio Fernando	0.017963
+Pedro Segundo	0.017955
+Bastian Andres	0.017949
+Lucciano	0.017935
+Felipe Esteban	0.017929
+Lxis	0.017926
+Esteban Ignacio	0.017920
+Jxan	0.017917
+Minimarket	0.017900
+Ivan Patricio	0.017894
+Nelson Andres	0.017889
+Christián	0.017886
+Claudio Alexis	0.017883
+Leña	0.017880
+César Antonio	0.017871
+Nilo	0.017869
+Ven	0.017857
+Jhan	0.017854
+Sabor	0.017849
+Nato	0.017829
+Gas	0.017823
+Miller	0.017815
+Alberto Antonio	0.017809
+Carlos Miguel	0.017806
+Benigno	0.017803
+Jovanny	0.017800
+Jeanpierre	0.017798
+Urbano	0.017795
+Marck	0.017789
+Julio César	0.017778
+Nicoo	0.017764
+Hector Hugo	0.017756
+Pablo Javier	0.017750
+Riky	0.017747
+Eduardo Alberto	0.017739
+Hector Luis	0.017736
+Claudio Javier	0.017728
+Grover	0.017725
+Negrito	0.017719
+Marcelito	0.017716
+Zenon	0.017714
+Serguio	0.017711
+Jose Omar	0.017705
+Alfonzo	0.017694
+Ruben Alejandro	0.017689
+Cristian Fabian	0.017686
+Hector Javier	0.017680
+Danielito	0.017678
+Cristian Hernan	0.017661
+Jose Sebastian	0.017650
+Nemesio	0.017647
+Eventos	0.017645
+Efraín	0.017639
+Raul Fernando	0.017636
+Andress	0.017634
+Mario Esteban	0.017631
+Sergio Manuel	0.017628
+Ferna	0.017623
+Ramon Luis	0.017620
+Jóse	0.017617
+Directv	0.017612
+Eduardo Esteban	0.017609
+Jesus Antonio	0.017601
+Fabian Esteban	0.017595
+Domingo Antonio	0.017590
+Sergio Ignacio	0.017584
+Juan Raul	0.017582
+Rivera	0.017571
+Fabian Antonio	0.017568
+Andry	0.017563
+Jhordan	0.017560
+Salomón	0.017555
+Rodrigo Hernan	0.017552
+Deiby	0.017538
+Juan Bernardo	0.017536
+Sepulveda	0.017530
+Oscar Patricio	0.017525
+Chiko	0.017517
+Kristopher	0.017509
+Harol	0.017504
+José Pablo	0.017485
+Estructuras	0.017477
+Feliipe	0.017474
+Elier	0.017471
+Romilio	0.017466
+Andres Ignacio	0.017463
+Juan Alexis	0.017455
+Maximiliano Andres	0.017453
+Bastian Alejandro	0.017440
+Diego Alexis	0.017434
+Oscar Ignacio	0.017432
+Benjamin Antonio	0.017429
+Cristian Felipe	0.017418
+Alejandro Ignacio	0.017413
+Joaquin Andres	0.017410
+Vicente Andres	0.017408
+Patricio Ignacio	0.017402
+Victor Patricio	0.017397
+Chito	0.017387
+Brando	0.017384
+Andro	0.017381
+Pilo	0.017379
+Adriel	0.017374
+Club	0.017368
+Cota	0.017366
+Gery	0.017363
+Ander	0.017360
+Constantino	0.017355
+Aristides	0.017350
+Teofilo	0.017340
+Victoriano	0.017337
+Eliel	0.017329
+Fracisco	0.017327
+Pedro Alberto	0.017324
+Carlos Gabriel	0.017319
+Alvarito	0.017316
+Hernandez	0.017314
+Jose Ernesto	0.017311
+Jean Louis	0.017306
+Oscar Alberto	0.017303
+Ceferino	0.017298
+Hector Daniel	0.017295
+Dionicio	0.017290
+Javito	0.017288
+Jorge Alfredo	0.017272
+Sergio Alberto	0.017264
+Jorge Marcelo	0.017262
+Julio Eduardo	0.017254
+Gustavo Andres	0.017252
+Julio Alejandro	0.017241
+Jorge Orlando	0.017231
+González	0.017226
+Jose Rafael	0.017223
+Yon	0.017221
+Luis Edgardo	0.017218
+Omar Antonio	0.017216
+Jose Emilio	0.017213
+Omar Alejandro	0.017206
+Juakin	0.017203
+Casas	0.017195
+Jose Agustin	0.017188
+Rodolfo Antonio	0.017180
+Hugo Hernan	0.017175
+Yosi	0.017170
+Marcelo Esteban	0.017168
+Roberto Ignacio	0.017160
+J Carlos	0.017155
+Milen	0.017152
+Ignacio Javier	0.017145
+Claudito	0.017137
+Nelson Alejandro	0.017130
+Jean Franco	0.017127
+Valenzuela	0.017125
+Frutos	0.017120
+Luis Eugenio	0.017117
+Vicente Antonio	0.017112
+Eduardo Andrés	0.017097
+Marcelin	0.017092
+Yovany	0.017087
+Eidan	0.017077
+Jaime Luis	0.017072
+Luis Bernardo	0.017070
+Jose Joaquin	0.017067
+Jose Alfonso	0.017060
+Luis Octavio	0.017055
+Raul Hernan	0.017050
+Gonzalo Antonio	0.017047
+Luckson	0.017042
+Fono	0.017040
+Maxito	0.017037
+Fritznel	0.017035
+Javier Alonso	0.017030
+Luis Segundo	0.017025
+Nicolás Ignacio	0.017020
+Carlos Segundo	0.017018
+Ricardo Alexis	0.017015
+Camilo Enrique	0.017010
+Daniel Alexis	0.017003
+José Patricio	0.016998
+Danilo Andres	0.016993
+Alexis Rodrigo	0.016981
+Hernan Patricio	0.016976
+Jung	0.016966
+Andru	0.016961
+Fernan	0.016956
+Jhonson	0.016954
+Pali	0.016952
+Salo	0.016949
+Marselo	0.016947
+Rubens	0.016944
+Gregori	0.016932
+Fenix	0.016930
+Claus	0.016927
+Francisko	0.016925
+Charli	0.016922
+Outlet	0.016920
+Wesly	0.016918
+Cipriano	0.016915
+Cirilo	0.016910
+Custodio	0.016908
+Manuel Jose	0.016906
+Feliz	0.016903
+Chano	0.016901
+Watson	0.016898
+Jorge Daniel	0.016896
+Josemanuel	0.016891
+Pico	0.016889
+Jose Vicente	0.016886
+Luis Jose	0.016884
+Gorge	0.016881
+Jorge Francisco	0.016879
+Onofre	0.016877
+Romero	0.016872
+Sanchez	0.016867
+Quique	0.016857
+Juan Angel	0.016855
+Rulo	0.016848
+Alverto	0.016845
+Gustabo	0.016841
+Carlos Omar	0.016838
+Pepo	0.016833
+Hector Raul	0.016831
+Juan Ramón	0.016824
+Jorge Ricardo	0.016822
+Gonsalo	0.016819
+Alegandro	0.016817
+Jorge Osvaldo	0.016814
+Pabloo	0.016812
+Vivero	0.016807
+Luis Jorge	0.016805
+Nachi	0.016803
+Alejando	0.016798
+Escuela	0.016795
+Juan Marcos	0.016793
+Jorgee	0.016791
+Jorge David	0.016784
+Luis A	0.016779
+Walther	0.016777
+Almacen	0.016774
+Eliceo	0.016772
+Guillermo Eduardo	0.016769
+Luis Raul	0.016762
+Royer	0.016760
+Jungkook	0.016758
+Juan De La Cruz	0.016753
+Mario Fernando	0.016746
+Juan De Dios	0.016739
+Paly	0.016737
+Victor Raul	0.016734
+Osvaldo Enrique	0.016732
+Daniels	0.016730
+Rafael Alejandro	0.016723
+Espinoza	0.016718
+Reimundo	0.016715
+Maderas	0.016713
+Impresiones	0.016706
+Akiles	0.016697
+Jorge Humberto	0.016692
+Sergio Orlando	0.016690
+Gabriel Enrique	0.016685
+Bryant	0.016683
+Yisus	0.016674
+Antonio Alejandro	0.016669
+Marchelo	0.016667
+Cristian Gonzalo	0.016655
+Franco Antonio	0.016648
+Confes	0.016646
+Newen	0.016644
+Franco Andres	0.016641
+Jose Rene	0.016637
+Manuel Esteban	0.016634
+Jorge Alexis	0.016632
+Rene Alejandro	0.016627
+Gunther	0.016621
+Francky	0.016614
+Stevens	0.016611
+Jean Baptiste	0.016609
+Maickel	0.016607
+Marcoantonio	0.016602
+Yohany	0.016595
+Yerald	0.016591
+Juan Hernan	0.016586
+Johany	0.016584
+Jeisson	0.016577
+German Antonio	0.016575
+Yorman	0.016573
+Frandy	0.016570
+Osiel	0.016568
+Wadson	0.016566
+Fenel	0.016563
+Fritzner	0.016561
+Luckner	0.016559
+Jeshu	0.016557
+Copete	0.016550
+Sebastian Alexis	0.016543
+Makenson	0.016539
+Gonzalo Ignacio	0.016532
+Matías Ignacio	0.016529
+Berthony	0.016527
+Kesnel	0.016523
+Nelson Patricio	0.016520
+Alejandro Patricio	0.016514
+Jaime Ignacio	0.016511
+Patricio Ivan	0.016509
+Ivan Enrique	0.016505
+Sebastian Felipe	0.016500
+Automotriz	0.016498
+Oscar Hernan	0.016496
+Vixo	0.016491
+Gonzalo Alejandro	0.016485
+Fabian Alexis	0.016482
+Mackendy	0.016480
+Francisco Esteban	0.016476
+Fernando Patricio	0.016473
+Pedro Hernan	0.016469
+Alexis Eduardo	0.016458
+Mauricio Hernan	0.016453
+Sonel	0.016444
+Victor Ignacio	0.016442
+Salva	0.016433
+Mull	0.016422
+Eros	0.016420
+Paskal	0.016416
+Drago	0.016411
+Kelo	0.016409
+Dy	0.016404
+Toro	0.016400
+Kendall	0.016398
+Dionel	0.016396
+Enel	0.016387
+Lalito	0.016380
+Américo	0.016378
+José Alberto	0.016371
+Adelmo	0.016369
+José Alfredo	0.016363
+Jose Santos	0.016360
+Ives	0.016356
+Calos	0.016347
+Wili	0.016345
+Thony	0.016341
+Damy	0.016339
+Wilian	0.016336
+Miguel Alberto	0.016332
+Jose Victor	0.016330
+Yordano	0.016321
+Nazario	0.016317
+Daviid	0.016315
+Gustavo Alejandro	0.016302
+Mario Luis	0.016300
+Hector Fabian	0.016297
+Carlos Raul	0.016293
+Cristian David	0.016289
+Chiki	0.016284
+Hector Ricardo	0.016282
+Jua	0.016276
+Nachoo	0.016271
+Ortiz	0.016269
+Herrera	0.016267
+Oscar Luis	0.016263
+Molina	0.016261
+Luis Ramon	0.016259
+Raulito	0.016256
+Hugo Eduardo	0.016254
+Limpieza	0.016252
+Beltran	0.016250
+Yahir	0.016248
+Jose Ruben	0.016241
+Victor Jose	0.016239
+Sebatian	0.016231
+Pedro Javier	0.016220
+Ferni	0.016214
+Osito	0.016211
+Luis Adolfo	0.016207
+Yimi	0.016201
+Diego Eduardo	0.016197
+Fabiian	0.016192
+Construcciones	0.016190
+Enrique Alejandro	0.016186
+Enrique Antonio	0.016180
+Alejandro Alberto	0.016178
+Mario Francisco	0.016175
+Karlitos	0.016173
+Gatito	0.016161
+Martin Andres	0.016158
+Cortes	0.016150
+Carlos Rene	0.016148
+Pelayo	0.016137
+Rodolfo Andres	0.016133
+Bejamin	0.016131
+Victor Miguel	0.016127
+Luis German	0.016123
+Jose Rolando	0.016121
+Dustin	0.016119
+Hermogenes	0.016116
+Vasquez	0.016114
+Jenaro	0.016112
+Estiven	0.016108
+Ivan Eduardo	0.016104
+Matias Eduardo	0.016102
+Orlando Antonio	0.016100
+Nikoo	0.016098
+Victor Fernando	0.016096
+Andrees	0.016085
+Jose Octavio	0.016077
+Roberto Hernan	0.016073
+Heinz	0.016064
+Ernst	0.016062
+Dinko	0.016060
+Engel	0.016058
+Herold	0.016056
+Maxo	0.016048
+Baul	0.016044
+Yoshua	0.016038
+Desir	0.016035
+Yery	0.016033
+Jarol	0.016031
+Jadiel	0.016029
+Eydan	0.016027
+Rene Eduardo	0.016021
+Oscar Mauricio	0.016019
+Andriu	0.016015
+Sergio Rodrigo	0.016013
+Kevin Andres	0.016011
+Estefan	0.016009
+David Enrique	0.016005
+Mario Alfonso	0.016003
+Marcelo Rodrigo	0.016001
+Jonattan	0.015986
+Mario Alexis	0.015982
+Onel	0.015976
+Arturo Alejandro	0.015970
+Gesner	0.015968
+Faralas	0.015960
+Lusho	0.015958
+Eduardo Alexis	0.015956
+Chago	0.015954
+Sigifredo	0.015950
+Fernando Alexis	0.015948
+Detergentes	0.015945
+Fdo	0.015939
+Claudio Mauricio	0.015937
+Bastyan	0.015933
+Abastible	0.015931
+Tobal	0.015925
+Ignacio Andrés	0.015921
+Shelo	0.015917
+Luxito	0.015911
+Ricardo Ignacio	0.015909
+Hernan Antonio	0.015907
+Huaso	0.015905
+Matias Felipe	0.015903
+Eduardo Hernan	0.015901
+Franco Ignacio	0.015897
+Javier Alexis	0.015895
+Jaime Esteban	0.015893
+Claudio Ignacio	0.015891
+Pansho	0.015889
+Camilo Antonio	0.015887
+Manuel Humberto	0.015879
+Aguas	0.015877
+Johao	0.015869
+Rodrigo Enrique	0.015867
+Ruben Marcos	0.015865
+Alvaro Ignacio	0.015863
+Gonzalo Esteban	0.015861
+Marcelo Alexis	0.015857
+Ricardo Patricio	0.015849
+Noriel	0.015845
+Enock	0.015841
+Bravo	0.015839
+Mito	0.015837
+Eliot	0.015835
+Sandrino	0.015829
+Jor	0.015827
+Amigo	0.015825
+Ragnar	0.015823
+Maurisio	0.015817
+Manos	0.015813
+Reginaldo	0.015811
+Pedro Francisco	0.015805
+Toussaint	0.015803
+Ananias	0.015802
+Laureano	0.015800
+Deivy	0.015796
+Cadet	0.015794
+Chile	0.015790
+Eliazar	0.015788
+Edner	0.015786
+Alfredo Antonio	0.015776
+Serjio	0.015774
+Carrasco	0.015772
+Maurii	0.015749
+Cristian Daniel	0.015745
+Gabino	0.015743
+Marcelo Javier	0.015741
+Carlos Fabian	0.015739
+Alexiis	0.015737
+Martin Alejandro	0.015735
+Osbaldo	0.015727
+Diego Alberto	0.015719
+Angel Gabriel	0.015713
+Luisalberto	0.015710
+Jorge Ernesto	0.015708
+Jose Nicolas	0.015704
+Jonhy	0.015700
+Chato	0.015698
+Tapiceria	0.015692
+Cabaña	0.015690
+Ramon Alejandro	0.015684
+Gutierrez	0.015679
+Josesito	0.015677
+Ysmael	0.015675
+Pinturas	0.015673
+Ricardo Alfredo	0.015669
+Kaneki	0.015667
+Critian	0.015665
+Carlos Sebastian	0.015663
+Olegario	0.015661
+Robertito	0.015659
+Alexx	0.015654
+Mijael	0.015650
+Contrucciones	0.015648
+Juan Agustin	0.015646
+Oscar Fernando	0.015644
+Abelino	0.015642
+Omar Enrique	0.015638
+Local	0.015636
+Claudio Fernando	0.015635
+Hector Miguel	0.015627
+Cortinas	0.015623
+Andrez	0.015617
+Juan Armando	0.015615
+Matias Sebastian	0.015612
+Piscinas	0.015608
+Crist	0.015606
+Miguelo	0.015596
+Javier Esteban	0.015595
+Nicolàs	0.015587
+Tapia	0.015581
+Lolito	0.015579
+Sebastiian	0.015576
+Hector Rene	0.015568
+Manolito	0.015566
+Leonides	0.015564
+Steban	0.015555
+Nicolas Eduardo	0.015551
+Christian Marcelo	0.015547
+Christian Eduardo	0.015542
+Vergara	0.015540
+German Andres	0.015534
+Felo	0.015532
+Diego Andrés	0.015527
+Marcelo Ivan	0.015525
+Richards	0.015517
+Isrrael	0.015514
+Sebastian Nicolas	0.015506
+Luis Andrés	0.015504
+Luis Rolando	0.015502
+Daniel Elias	0.015499
+Hospedaje	0.015497
+Yonel	0.015493
+José Andrés	0.015491
+Francisco Enrique	0.015489
+Juan Elias	0.015488
+Pedro Esteban	0.015486
+Leonardo Enrique	0.015484
+Stephano	0.015478
+Rene Orlando	0.015475
+Luis Rene	0.015473
+Bastii	0.015467
+Kevyn	0.015464
+Jean Robert	0.015458
+Sanon	0.015454
+Nancho	0.015452
+Arley	0.015449
+Gamalier	0.015447
+Stevenson	0.015445
+Luis Enrrique	0.015438
+Yojan	0.015434
+Nabor	0.015432
+Yostin	0.015428
+Absalon	0.015427
+Jerardo	0.015425
+Dayron	0.015419
+Mayckol	0.015414
+Alex Marcelo	0.015412
+Richard Alejandro	0.015408
+Luis Vicente	0.015407
+Yampier	0.015403
+Cesar Rodrigo	0.015396
+Ferney	0.015388
+Richard Andres	0.015385
+Alvaro Antonio	0.015383
+Confe	0.015381
+Juanluis	0.015379
+Duban	0.015377
+Richardson	0.015374
+Clodomiro	0.015372
+Mauricio Alberto	0.015368
+Francko	0.015365
+Benjamín Ignacio	0.015357
+Cristopher Andres	0.015356
+Floridor	0.015350
+Mauricio Andrés	0.015345
+Belfor	0.015343
+Rodrigo Alonso	0.015339
+Sigisfredo	0.015332
+Sebastián Ignacio	0.015330
+Camilo Alejandro	0.015328
+Guillermo Patricio	0.015327
+Jaime Rodrigo	0.015321
+Diego Alfonso	0.015316
+Colo Colo	0.015312
+Jaime Hernan	0.015307
+Matias Antonio	0.015296
+Iñigo	0.015294
+Manuel Alfonso	0.015291
+Rodrigo Alfonso	0.015289
+Mario Patricio	0.015287
+Wilguens	0.015285
+Luis Hernán	0.015284
+Jose Alexis	0.015282
+Pedro Ivan	0.015278
+Gasco	0.015277
+Cristian Alfredo	0.015271
+Fedner	0.015269
+Buses	0.015262
+Hector Rodrigo	0.015261
+Ricardo Alfonso	0.015257
+Cristobal Alejandro	0.015253
+Michael Andres	0.015248
+Patricio Andrés	0.015246
+Manuel Hernan	0.015243
+Nain	0.015234
+Papo	0.015230
+Karlo	0.015229
+Pio	0.015225
+Para	0.015216
+Palo	0.015213
+Kristofer	0.015209
+Jimin	0.015204
+Egidio	0.015202
+Cano	0.015197
+Tadeo	0.015192
+Vega	0.015190
+Radiotaxi	0.015188
+Benjamim	0.015186
+Pedro Manuel	0.015185
+Jovani	0.015183
+Magno	0.015179
+Bernabé	0.015172
+Alirio	0.015171
+Riquelme	0.015169
+Pedro Fernando	0.015164
+Eduardo Francisco	0.015160
+Roddy	0.015155
+Francklin	0.015153
+Duval	0.015152
+Vicent	0.015146
+Rodrigue	0.015145
+Francisco Daniel	0.015143
+Jeanpaul	0.015139
+Pedro Daniel	0.015138
+Daniel Fernando	0.015136
+Jaime Francisco	0.015129
+Franciisco	0.015120
+Manuel Ricardo	0.015119
+Jilberto	0.015117
+Salazar	0.015115
+Carlos Armando	0.015113
+Carlos Ariel	0.015106
+Betto	0.015101
+Hernesto	0.015100
+Facu	0.015098
+Jorge Omar	0.015096
+Juampi	0.015094
+Juancito	0.015093
+Huguito	0.015086
+Jorge Raul	0.015081
+Natalio	0.015079
+Oscar Daniel	0.015074
+Alfre	0.015070
+Hector Jose	0.015069
+Sergio Omar	0.015067
+Ruiz	0.015065
+Eduardo Jose	0.015062
+Jorge Mario	0.015060
+Patoo	0.015058
+Limber	0.015057
+Pizzas	0.015050
+Jorge Javier	0.015047
+Jabier	0.015045
+Roberto Eduardo	0.015043
+Nuñez	0.015041
+Barberia	0.015038
+Gabito	0.015036
+Pablo Nicolas	0.015035
+Pablo Alberto	0.015031
+Mario Alfredo	0.015030
+Luis Hector	0.015026
+Jorge Nicolas	0.015023
+Hector Orlando	0.015019
+Hector David	0.015018
+Bicho	0.015014
+Eduardo Alfredo	0.015013
+Perico	0.015008
+Figueroa	0.015006
+Luis Adrian	0.015004
+Miguel Anguel	0.015002
+Pollo	0.014997
+Ferny	0.014994
+Alguien	0.014991
+Luis Leonardo	0.014982
+Jose Anibal	0.014981
+Pablo Eduardo	0.014979
+Gumercindo	0.014974
+Nahum	0.014972
+Monito	0.014970
+Romer	0.014967
+Ilan	0.014965
+Luis Fabian	0.014964
+Manuel Angel	0.014962
+Tae	0.014959
+Rodrigo Sebastian	0.014957
+Juan Omar	0.014955
+Floo	0.014954
+Gabriel Esteban	0.014952
+Gustavo Antonio	0.014950
+Ricardito	0.014947
+Marcos Alejandro	0.014945
+Alfredo Alejandro	0.014944
+Oscar Fabian	0.014942
+Damaso	0.014937
+Yeyo	0.014935
+Baldomero	0.014934
+Gonzalo Javier	0.014925
+Javier Francisco	0.014924
+Rafael Eduardo	0.014919
+Jose Abel	0.014915
+Andrès	0.014914
+Trabajo	0.014910
+Cristian Ivan	0.014909
+Ariel Andres	0.014904
+Luis Sergio	0.014897
+Yhon	0.014896
+Haru	0.014886
+Patrico	0.014882
+Luigui	0.014879
+Albeiro	0.014877
+Alberto Andres	0.014876
+José Ricardo	0.014871
+Omar Andres	0.014868
+Jcarlos	0.014866
+Luis Alverto	0.014864
+Olivares	0.014861
+Daniel Jesus	0.014859
+Osvaldo Andres	0.014853
+Julian Andres	0.014851
+Raúl Antonio	0.014849
+Raul Ignacio	0.014848
+Ricardo Hernan	0.014845
+Humberto Antonio	0.014843
+Samuel Alejandro	0.014841
+Ostin	0.014833
+Nicolas Esteban	0.014828
+Maximilian	0.014827
+Sergo	0.014825
+Marcelo Patricio	0.014823
+Manuel Arturo	0.014820
+Davor	0.014817
+Wood	0.014815
+Woody	0.014812
+Nikito	0.014801
+Oscarito	0.014789
+Jhonattan	0.014788
+Ivan Marcelo	0.014778
+Lokillo	0.014775
+Oscar Ivan	0.014773
+Ivan Mauricio	0.014768
+Funeraria	0.014760
+Ihan	0.014754
+Alex Andres	0.014752
+Giancarlos	0.014751
+Wilson Antonio	0.014744
+Nelson Ivan	0.014741
+Cristoffer	0.014733
+Kervens	0.014730
+Marvens	0.014727
+Cuentas	0.014725
+Matias Alonso	0.014722
+Julio Hernan	0.014720
+Fernando Ignacio	0.014717
+Hojalateria	0.014715
+Danilo Alejandro	0.014714
+Hernan Enrique	0.014711
+Vistor	0.014709
+Comite	0.014706
+Jocsan	0.014703
+Hernan Alejandro	0.014700
+Claudio Rodrigo	0.014696
+Felipe Nicolas	0.014693
+Jaime Andrés	0.014690
+Jaime Mauricio	0.014688
+Pablo Alexis	0.014684
+Hernan Andres	0.014679
+Ignacio Esteban	0.014676
+Tomas Andres	0.014674
+Nicolas Matias	0.014669
+Luis Alonso	0.014665
+Naxito	0.014663
+Jorge Segundo	0.014662
+Automotora	0.014660
+Angel Custodio	0.014657
+Ernso	0.014655
+Lavado	0.014654
+Cfs	0.014652
+Xino	0.014651
+Jose Segundo	0.014649
+Maglio	0.014647
+Benjamin Alonso	0.014646
+Jaime Alfonso	0.014643
+Rusio	0.014641
+Lucson	0.014640
+Guerrier	0.014638
+Poto	0.014636
+Victor Mauricio	0.014633
+Joel Antonio	0.014629
+Jechu	0.014625
+David Alexis	0.014624
+Jeanty	0.014622
+Mauricio Ignacio	0.014621
+Juanin	0.014619
+Victor Alexis	0.014618
+Wilgens	0.014615
+Dieunel	0.014613
+Matias Alexis	0.014604
+Mauricio Alexis	0.014599
+Eduardo Alfonso	0.014593
+Jhona	0.014591
+Erickson	0.014588
+Joo	0.014586
+Clash	0.014580
+Renald	0.014577
+Amadeo	0.014576
+Tano	0.014574
+Moto	0.014571
+Zeta	0.014563
+Tonino	0.014559
+Fransua	0.014554
+Loko	0.014552
+Kito	0.014551
+Arnol	0.014546
+Anonimo	0.014545
+Escobar	0.014543
+Ignasio	0.014542
+Scar	0.014539
+Renold	0.014537
+Todo	0.014536
+Mingo	0.014532
+Darian	0.014529
+Dalton	0.014528
+Francisco Manuel	0.014526
+Jovany	0.014525
+José Pedro	0.014522
+Geremias	0.014519
+Campos	0.014517
+Wilton	0.014516
+José Fernando	0.014514
+Pedro Miguel	0.014513
+Petit	0.014511
+Brunel	0.014510
+Memes	0.014508
+Gualberto	0.014506
+Grupo	0.014505
+Garrido	0.014500
+Jorge Miguel	0.014491
+Calu	0.014490
+Mundo	0.014487
+Alberth	0.014484
+Daniel Francisco	0.014482
+Manuel Alfredo	0.014479
+Papito	0.014478
+Centro	0.014476
+Elieser	0.014473
+Jose M	0.014471
+Carloss	0.014470
+Carlos Mario	0.014467
+Bartolo	0.014465
+Tirso	0.014462
+Fernando Alberto	0.014461
+Auguste	0.014459
+Yunior	0.014458
+Ladislao	0.014455
+Nerio	0.014453
+Carlos A	0.014450
+Segio	0.014449
+Sandoval	0.014446
+Briian	0.014435
+Carlos Ruben	0.014429
+Estanislao	0.014426
+Martiin	0.014425
+Thomy	0.014422
+Mercado	0.014413
+Distribuidora	0.014411
+Jorge Roberto	0.014404
+Bartolome	0.014399
+Navarro	0.014398
+Miguel A	0.014396
+Ramon Eduardo	0.014395
+Roverto	0.014392
+Gustavo Enrique	0.014389
+Viejo	0.014387
+Jorge Guillermo	0.014381
+Sergio Ricardo	0.014380
+Oreste	0.014377
+Hector Gabriel	0.014374
+Juan Mario	0.014370
+Fermín	0.014364
+Nelson Javier	0.014359
+Alberto Alejandro	0.014358
+Juan Victor	0.014355
+Rodríguez	0.014347
+Remberto	0.014341
+Cristan	0.014340
+Victor Marcelo	0.014338
+Cristian Leonardo	0.014337
+Vitto	0.014330
+Victor Gabriel	0.014328
+Vidrieria	0.014327
+Raul Esteban	0.014325
+Pedro Angel	0.014319
+Oscar David	0.014316
+David Alberto	0.014315
+Repuestos	0.014313
+Carlos Jesus	0.014312
+Hector Francisco	0.014309
+Sergio Roberto	0.014308
+Maco	0.014306
+Oskr	0.014305
+Luis Rafael	0.014303
+Fiesta	0.014302
+Ariel Antonio	0.014299
+Fernando Esteban	0.014290
+Alejandro Eduardo	0.014289
+Cristiam	0.014283
+Miguel Esteban	0.014281
+Juancarlo	0.014280
+Victor Fabian	0.014278
+Hector Guillermo	0.014277
+Jose Ismael	0.014276
+Oscar Javier	0.014271
+José Enrique	0.014270
+Crhistian	0.014267
+Gohan	0.014260
+Cesar Ivan	0.014257
+Aramis	0.014255
+Victor Ricardo	0.014254
+Ruben Andres	0.014249
+Mario Orlando	0.014248
+Sergio Alfredo	0.014247
+Juan Adolfo	0.014245
+Jose Matias	0.014241
+Guerrero	0.014236
+Héctor Manuel	0.014235
+Aguilera	0.014234
+Andes	0.014232
+Wiliams	0.014231
+Sebastían	0.014223
+Chistian	0.014218
+Orellana	0.014216
+Carlos Eugenio	0.014213
+Jose Gerardo	0.014212
+Marcelo Hernan	0.014211
+Juan Rafael	0.014209
+Aridos	0.014208
+Jose Pepe	0.014206
+Imperio	0.014205
+Copito	0.014203
+Nolasco	0.014195
+Martin Antonio	0.014192
+Rolando Antonio	0.014190
+Sergio Andrés	0.014186
+Alejandro Mauricio	0.014182
+Jhojan	0.014180
+Ignacioo	0.014178
+Leonardo Esteban	0.014176
+Alexs	0.014175
+Jose Felipe	0.014169
+Sebastiàn	0.014166
+Joshep	0.014165
+Patho	0.014163
+Luis Reinaldo	0.014162
+Julio Fernando	0.014159
+Luis Matias	0.014158
+Abdias	0.014156
+Javieer	0.014155
+Ivan Alexis	0.014152
+J Pablo	0.014146
+Juan Rene	0.014142
+Manuel Orlando	0.014139
+Rafael Enrique	0.014138
+Ariel Ignacio	0.014136
+Gallardo	0.014134
+Antonio Andres	0.014132
+Pablo Rodrigo	0.014131
+Reiner	0.014129
+Sandor	0.014128
+Hanz	0.014127
+Edouard	0.014118
+Steeve	0.014117
+Mayron	0.014115
+Greco	0.014111
+Johnatan	0.014107
+Jasson	0.014104
+Jean Carlo	0.014103
+Kenold	0.014101
+Romelio	0.014090
+Toñito	0.014086
+Ivan Rodrigo	0.014085
+Nector	0.014083
+Yeiko	0.014082
+Alvaro Rodrigo	0.014079
+Alex Alejandro	0.014073
+Yeisson	0.014068
+Jesus Andres	0.014066
+Oscar Rodrigo	0.014058
+Jose Samuel	0.014057
+Gardy	0.014055
+Luis Cristian	0.014052
+Marco Alejandro	0.014051
+Edixon	0.014047
+Sagitario	0.014046
+Cesar Mauricio	0.014041
+Luis Jaime	0.014033
+Jose Reinaldo	0.014030
+Alex Enrique	0.014026
+Ilich	0.014022
+Jorel	0.014018
+Jhon Fredy	0.014017
+Mathyas	0.014015
+Yovanni	0.014014
+Victor Rodrigo	0.014012
+Mario Ignacio	0.014011
+Andres Mauricio	0.014008
+Venta	0.014004
+Ítalo	0.014003
+Diego Felipe	0.013996
+Posta	0.013995
+Victormanuel	0.013988
+Gonzalo Eduardo	0.013986
+Gasfiteria	0.013984
+Manolete	0.013982
+Migxel	0.013981
+Mauricio Fernando	0.013980
+Marcelo Andrés	0.013977
+Ivan Ignacio	0.013975
+Frisnel	0.013974
+Joaquin Antonio	0.013970
+Felipe Alberto	0.013967
+Fernando Alejandro	0.013966
+Hugo Patricio	0.013959
+Daniel Alfonso	0.013958
+Eliacer	0.013956
+Benjamiin	0.013951
+Cristian Alfonso	0.013948
+J Ignacio	0.013945
+Patrisio	0.013937
+Patricio Marcelo	0.013933
+Wilkens	0.013932
+Mixel	0.013929
+Hector Ignacio	0.013927
+Orlando Enrique	0.013916
+Patricio Alexis	0.013904
+Guaton	0.013902
+Herode	0.013900
+Benjamin Eduardo	0.013898
+Paltas	0.013896
+Claudio Ivan	0.013894
+Amadiel	0.013893
+Luciano Andres	0.013890
+Gmo	0.013888
+Samuel Andres	0.013886
+Yastin	0.013885
+Pipee	0.013884
+Rodrigo Marcelo	0.013882
+Frutos Secos	0.013880
+Emilio Antonio	0.013877
+Roberto Patricio	0.013872
+Sergio Arturo	0.013870
+Claudio Eduardo	0.013869
+Sebastian Enrique	0.013866
+Lucas Ignacio	0.013865
+Aravena	0.013864
+Benjamin Nicolas	0.013858
+Pouchon	0.013857
+Jeanpier	0.013856
+Christian Rodrigo	0.013854
+Lincoyan	0.013853
+Emilio Andres	0.013849
+Choche	0.013845
+Agustin Ignacio	0.013838
+Matias Benjamin	0.013836
+Joaquin Alonso	0.013833
+Palta	0.013832
+Sebastián Andrés	0.013828
+Guillermo Hernan	0.013817
+Beño	0.013814
+Angelo Andres	0.013809
+Sebastián Alejandro	0.013807
+Juan Fco	0.013803
+Tomás Ignacio	0.013796
+Kato	0.013793
+Java	0.013788
+Enri	0.013784
+Sergi	0.013783
+Jako	0.013779
+Pantera	0.013778
+Enso	0.013776
+Servi	0.013775
+Barber	0.013774
+Dental	0.013772
+Bianco	0.013771
+Luiss	0.013769
+Rata	0.013763
+Hansel	0.013762
+Tono	0.013758
+Johnn	0.013757
+Titan	0.013756
+Jannis	0.013753
+Sevastian	0.013749
+Vitorio	0.013748
+Jerónimo	0.013745
+Florindo	0.013744
+Gervasio	0.013743
+Gedeon	0.013741
+Nelson Manuel	0.013740
+Gilmar	0.013739
+Antonio Jose	0.013737
+Pacheco	0.013736
+Saturnino	0.013735
+Thomás	0.013733
+Benicio	0.013732
+Dieudonne	0.013727
+Antho	0.013726
+Giovany	0.013724
+Manuel Ernesto	0.013722
+Miguel Luis	0.013721
+Celestin	0.013719
+Ernesto Antonio	0.013718
+Rubio	0.013714
+Osita	0.013712
+Maximino	0.013710
+Jesus Manuel	0.013709
+Marquito	0.013708
+Danniel	0.013702
+Esau	0.013700
+Carlos Matias	0.013696
+Maiga	0.013695
+Alto	0.013693
+José David	0.013692
+Gianny	0.013690
+Jose Jose	0.013687
+Hidalgo	0.013686
+Fernando Jose	0.013683
+Deyvid	0.013679
+Saavedra	0.013677
+Asdrubal	0.013673
+Berty	0.013670
+Malcom	0.013669
+Camil	0.013668
+Kerby	0.013665
+Luis Cesar	0.013664
+Claudiio	0.013663
+Pablo Daniel	0.013656
+Matu	0.013655
+Pitu	0.013654
+Cristian Ariel	0.013646
+Jorge Ariel	0.013644
+Frankito	0.013641
+Diego Sebastian	0.013640
+Carlos Hugo	0.013637
+Carlos Gustavo	0.013635
+Jorge Gabriel	0.013634
+Jorge Gustavo	0.013632
+Sergio Javier	0.013628
+Hugo Orlando	0.013625
+Daniel Alfredo	0.013623
+Juanmanuel	0.013622
+Toribio	0.013617
+Calixto	0.013615
+Marcelo Alberto	0.013613
+Rodriigo	0.013612
+Ulices	0.013611
+Cristian Gabriel	0.013607
+Jonás	0.013604
+Luis Ariel	0.013602
+Higinio	0.013599
+Juaan	0.013594
+Ector	0.013591
+Tecno	0.013589
+Victorhugo	0.013584
+Quete	0.013583
+Juam	0.013582
+Juan Ariel	0.013581
+Javier Alberto	0.013579
+Ivaan	0.013578
+Niicolas	0.013577
+Godoy	0.013573
+Abran	0.013569
+Luis Ruben	0.013568
+Oscar Armando	0.013566
+Nelso	0.013564
+Gabriel Fernando	0.013563
+Carlos Emilio	0.013562
+Juan Jorge	0.013559
+Joseantonio	0.013558
+Guzman	0.013557
+Pablo Hernan	0.013556
+Baltasar	0.013549
+Cato	0.013547
+Fernandito	0.013543
+Victor David	0.013539
+Anival	0.013538
+Josr	0.013536
+Carlos Adolfo	0.013533
+Luis Rodolfo	0.013531
+Victor Alfredo	0.013530
+Enry	0.013528
+Luiggi	0.013527
+Limbert	0.013526
+Roberto Javier	0.013521
+Roberto Fernando	0.013518
+Jorge Sebastian	0.013517
+Juan A	0.013516
+Yaco	0.013514
+Alejandro Manuel	0.013512
+Jorge Leonardo	0.013511
+Arnaldo Andres	0.013510
+Angel Antonio	0.013509
+Juan Vicente	0.013506
+Luis Mariano	0.013505
+Juampa	0.013504
+Luis Anibal	0.013502
+Garage	0.013499
+Jose Hugo	0.013498
+Cerveza	0.013496
+Juan Ruben	0.013495
+Antolin	0.013494
+Evert	0.013493
+Kirito	0.013491
+Rayo	0.013490
+José Roberto	0.013488
+Javier Hernan	0.013484
+Giova	0.013478
+Supermercado	0.013477
+Carloncho	0.013474
+Ricardo Marcelo	0.013473
+Angel Miguel	0.013472
+Leiva	0.013471
+Ramon Enrique	0.013467
+Joose	0.013466
+Gervacio	0.013464
+Cristian Jesus	0.013463
+Hugo Fernando	0.013462
+Oscar Marcelo	0.013461
+Toledo	0.013458
+Alberto Enrique	0.013453
+German Alejandro	0.013451
+Cristian Jose	0.013450
+Walterio	0.013449
+Adonay	0.013447
+Hector Marcelo	0.013446
+Movistar	0.013445
+Lubricentro	0.013441
+Juan Leonardo	0.013440
+Jav	0.013438
+José Domingo	0.013436
+Oscar Guillermo	0.013435
+Raúl Alejandro	0.013433
+Oscar Humberto	0.013428
+Sans	0.013427
+Daniel Hernan	0.013426
+Rafita	0.013423
+Esteban Eduardo	0.013419
+Visente	0.013418
+Angel Andres	0.013411
+Planes	0.013409
+Ricardo Francisco	0.013406
+Maurico	0.013405
+David Fernando	0.013399
+Rene Alberto	0.013398
+Meliodas	0.013395
+Francisco Gabriel	0.013394
+Nicolas Sebastian	0.013391
+Alexito	0.013386
+Daniel Andrés	0.013383
+Cristian Orlando	0.013382
+Brayam	0.013380
+Quesos	0.013374
+Medardo	0.013373
+Jesus Alejandro	0.013370
+Sergio Mauricio	0.013369
+Blady	0.013368
+Ysaac	0.013365
+Gonzalo Andrés	0.013363
+Fabian Enrique	0.013362
+Nolo	0.013361
+Alejandro Hernan	0.013356
+Alexis Javier	0.013355
+Sociedad	0.013352
+Gean	0.013349
+Tauro	0.013344
+Marthin	0.013343
+Edgardo Antonio	0.013336
+Sergio Francisco	0.013333
+Alejandro Ivan	0.013332
+Cesar Hernan	0.013329
+Jhosep	0.013327
+Deyvi	0.013326
+Mathías	0.013325
+Nanito	0.013323
+Turismo	0.013321
+Manuelito	0.013320
+Luis Claudio	0.013319
+Manuel Osvaldo	0.013314
+Victor Guillermo	0.013311
+Matias Fernando	0.013310
+Hernan Eduardo	0.013307
+Luis Alexander	0.013306
+Engelbert	0.013305
+Marcell	0.013303
+Jerko	0.013298
+Kuro	0.013297
+Fabo	0.013294
+Shiko	0.013290
+Baptiste	0.013287
+Gustave	0.013285
+Reinier	0.013284
+Blanc	0.013281
+Fanel	0.013277
+Charro	0.013274
+Jeanbaptiste	0.013273
+Peyo	0.013272
+Dvj	0.013271
+Yhonny	0.013269
+Anghelo	0.013267
+Galindo	0.013259
+Jhon Alexander	0.013256
+Jpablo	0.013253
+Bryam	0.013252
+Darkiel	0.013251
+John Jairo	0.013250
+Darell	0.013248
+Freddy Antonio	0.013246
+Jose Cristian	0.013244
+Cristian Alex	0.013242
+Sebasthian	0.013238
+Jaime Fernando	0.013235
+Alvaro Alejandro	0.013230
+Yefferson	0.013228
+Tuto	0.013227
+Luid	0.013226
+Axcel	0.013224
+Brallan	0.013222
+Jorge Alex	0.013221
+Nelson Fernando	0.013220
+Javier Alexander	0.013219
+Luis Nelson	0.013218
+Jacson	0.013214
+Ricardo Mauricio	0.013213
+Joel Andres	0.013211
+Manuel Rodrigo	0.013209
+Sadrac	0.013208
+Jaime Alfredo	0.013206
+Wilo	0.013205
+Dastin	0.013203
+Mario Humberto	0.013201
+Mauricio Rodrigo	0.013199
+Jesus Ignacio	0.013197
+Pizarro	0.013196
+Chileno	0.013191
+Rafael Andres	0.013190
+Nelson Rodrigo	0.013185
+Yohn	0.013184
+Sebastian Rodrigo	0.013180
+Jaime Marcelo	0.013178
+Condominio	0.013177
+Papas	0.013176
+Mario Rodrigo	0.013174
+Cristhopher	0.013173
+Dairon	0.013170
+Maiquel	0.013168
+Lupercio	0.013165
+Wilky	0.013164
+Pierre Richard	0.013161
+Wesner	0.013159
+Víctor Alejandro	0.013153
+Nicolás Andrés	0.013152
+Jaime Arturo	0.013150
+Dieuseul	0.013149
+Kenol	0.013148
+Maxene	0.013145
+Liceo	0.013144
+Alejandro Alexis	0.013140
+Jaime Ivan	0.013137
+Jovanni	0.013135
+Lipigas	0.013134
+Daniel Isaias	0.013133
+Venel	0.013126
+Camilo Esteban	0.013124
+Javier Andrés	0.013123
+Kristobal	0.013122
+Esteban Antonio	0.013120
+Steevenson	0.013118
+Luis Arnoldo	0.013115
+Sebastian Alonso	0.013114
+Patricio Rodrigo	0.013111
+Joseto	0.013110
+Patricio Eugenio	0.013104
+Danilo Antonio	0.013101
+Exequel	0.013100
+Hector Alfonso	0.013099
+Felipe Sebastian	0.013095
+Felipe Javier	0.013093
+Manuel Alexis	0.013092
+Agua Purificada	0.013091
+Felipe Alonso	0.013090
+Remates	0.013089
+Jeremmy	0.013087
+Masas	0.013086
+Jose Eugenio	0.013084
+Patricio Osvaldo	0.013081
+Joaquin Alejandro	0.013078
+Camilo Andrés	0.013077
+Yahel	0.013076
+Claudio Francisco	0.013074
+Pedro Arturo	0.013071
+Marcko	0.013070
+Amable	0.013067
+Daniel Patricio	0.013062
+Freddy Andres	0.013058
+Cesar Patricio	0.013048
+Francisco Hernan	0.013045
+Alfonso Enrique	0.013041
+Mantencion	0.013040
+Julio Ignacio	0.013037
+Patricio Alfredo	0.013035
+Nicolas Felipe	0.013034
+La Pica	0.013033
+German Eduardo	0.013032
+Sergio Alexis	0.013030
+Vtr	0.013029
+Armando Antonio	0.013028
+Hector Alexis	0.013027
+Marckenson	0.013023
+Feño	0.013022
+Richard Eduardo	0.013021
+Edxardo	0.013020
+Hugo Ignacio	0.013019
+Alexis Esteban	0.013018
+Victor Ivan	0.013017
+Luis Aurelio	0.013013
+Vicente Javier	0.013009
+Cristian Alonso	0.013006
+Dieubon	0.013002
+Jonathan Eduardo	0.013000
+Bryan Andres	0.012999
+Josetomas	0.012998
+Ricardo Ivan	0.012996
+Wislet	0.012995
+Christian Alberto	0.012988
+Bernardo Enrique	0.012985
+Joxe	0.012983
+Daniel Segundo	0.012982
+Bajon	0.012980
+Manuel Guillermo	0.012978
+Christian Mauricio	0.012977
+Juanitho	0.012976
+Patricio Orlando	0.012973
+Manuel Ivan	0.012970
+Solan	0.012967
+Reinaldo Antonio	0.012964
+Jonathan Antonio	0.012959
+Leonardo Patricio	0.012955
+Caupolican	0.012954
+Claudio Alfonso	0.012952
+Moises Alejandro	0.012946
+Michu	0.012943
+Eraldo	0.012940
+Makina	0.012939
+Juve	0.012936
+Dioni	0.012935
+Ennio	0.012934
+Gabri	0.012933
+Andoni	0.012932
+Leoo	0.012930
+Lulo	0.012927
+Agro	0.012926
+Lindor	0.012925
+Piti	0.012922
+Serafin	0.012921
+Eduin	0.012915
+Mirco	0.012914
+Nito	0.012913
+Uri	0.012912
+Mariio	0.012910
+Freefire	0.012909
+Enderson	0.012907
+Edisson	0.012905
+Matheo	0.012903
+Kratos	0.012902
+Jeans	0.012901
+Nardo	0.012900
+Bernado	0.012896
+Lázaro	0.012895
+Honorio	0.012894
+Francisco Miguel	0.012892
+Esdras	0.012890
+Mendez	0.012888
+Sadrack	0.012887
+Ildefonso	0.012883
+Hermano	0.012882
+Ortega	0.012881
+Jose Jaime	0.012880
+Jeannot	0.012879
+Djimy	0.012878
+Micho	0.012877
+Jaime Manuel	0.012871
+Faustin	0.012866
+Diony	0.012865
+Norton	0.012864
+Hipólito	0.012862
+York	0.012859
+Rómulo	0.012858
+Salas	0.012855
+Lander	0.012851
+Farias	0.012848
+Efra	0.012847
+Ángelo	0.012845
+Manuel David	0.012844
+Eliu	0.012841
+Geremy	0.012838
+Jordany	0.012837
+Francisco Alberto	0.012836
+Wisner	0.012831
+Tomas Antonio	0.012829
+Fabri	0.012824
+Sergio Daniel	0.012823
+Marcelo Fabian	0.012817
+Pocho	0.012816
+Lukitas	0.012814
+Rodry	0.012813
+Niico	0.012812
+Brahian	0.012809
+Roberto Luis	0.012808
+Jorge Carlos	0.012807
+Juliocesar	0.012806
+Jose Martin	0.012804
+Hector Ruben	0.012802
+Ricardo Luis	0.012799
+Hector Mario	0.012796
+Mario Roberto	0.012795
+Juann	0.012794
+Ruben Eduardo	0.012792
+Walter Alejandro	0.012791
+Ricardo Jose	0.012790
+Leonardo Javier	0.012789
+Jorge A	0.012788
+Jose Ariel	0.012782
+Daniel Angel	0.012775
+Roco	0.012774
+Carlos Rodolfo	0.012773
+Eduu	0.012771
+Fernández	0.012767
+Cesar Alberto	0.012764
+Sergiio	0.012763
+Cristian Sebastian	0.012761
+Enrique Alberto	0.012760
+Angel David	0.012758
+Gimnasio	0.012757
+Gabriel Alberto	0.012756
+Como	0.012755
+Carniceria	0.012752
+Marcelo Fernando	0.012749
+Sergio Raul	0.012748
+Raul Ernesto	0.012747
+Angel Eduardo	0.012745
+Ernan	0.012744
+Ariel Eduardo	0.012742
+Jose Gustavo	0.012740
+Jose A	0.012737
+Hombre	0.012736
+Compra	0.012735
+Claudio Cesar	0.012731
+Jose Adrian	0.012730
+Alejandroo	0.012729
+Macelo	0.012728
+Victor Luis	0.012727
+Carlos Julio	0.012726
+Angel Luis	0.012725
+Iban	0.012722
+Martyn	0.012721
+Jose Felix	0.012720
+Guillermo Alberto	0.012717
+Franco Nicolas	0.012716
+Mario Ernesto	0.012715
+Juan Hector	0.012714
+Ricardo Manuel	0.012712
+Alfredo Enrique	0.012711
+Carlis	0.012710
+Mijail	0.012709
+Gerar	0.012708
+Enrique Eduardo	0.012706
+Nelson David	0.012705
+Héctor Eduardo	0.012704
+Luis Pablo	0.012702
+Jorge Emilio	0.012699
+Jose Rodolfo	0.012694
+Oscar Francisco	0.012690
+Fabito	0.012689
+Arcangel	0.012687
+Cristian Omar	0.012686
+Solano	0.012685
+Fransico	0.012684
+Instalaciones	0.012683
+Mecánica	0.012682
+Roberto Francisco	0.012679
+Peña	0.012677
+David Daniel	0.012676
+Maldonado	0.012674
+Hogar	0.012673
+Chucho	0.012672
+Insumos	0.012671
+Fabian Eduardo	0.012669
+Cludio	0.012667
+Matias Javier	0.012666
+Yoongi	0.012662
+Carnes	0.012660
+Programa	0.012657
+Roberto Carlo	0.012654
+Jonhatan	0.012653
+Pintura	0.012650
+Ariel Esteban	0.012646
+Lius	0.012644
+Diego Enrique	0.012643
+Estaban	0.012640
+Álex	0.012638
+Rancho	0.012635
+Ramon Andres	0.012634
+Claudio Alfredo	0.012633
+Francico	0.012632
+Johel	0.012629
+Gabriel Hernan	0.012628
+Cristian Luis	0.012627
+Daniel Humberto	0.012626
+Criatian	0.012624
+David Marcelo	0.012619
+Sergio Osvaldo	0.012618
+Raùl	0.012616
+Miguelon	0.012611
+Jose Benito	0.012609
+Gonzo	0.012608
+Eithan	0.012605
+Juanfra	0.012604
+Ernesto Alejandro	0.012603
+Hector Rolando	0.012601
+Alejandrito	0.012600
+Oscar Miguel	0.012596
+Eduardito	0.012594
+Celedonio	0.012593
+Emilio Alejandro	0.012589
+Rivas	0.012586
+Cristian Roberto	0.012585
+Juan Gerardo	0.012584
+Alimentos	0.012582
+Gavino	0.012581
+Abel Antonio	0.012580
+Julio Esteban	0.012577
+Shiro	0.012575
+Ignacio Nicolas	0.012574
+Cesar Manuel	0.012573
+Nicolás Alejandro	0.012571
+Ricardo Arturo	0.012570
+Cristian Ricardo	0.012569
+Cristian Pablo	0.012567
+Prueba	0.012566
+Jonathan David	0.012565
+José Marcelo	0.012563
+Andres Esteban	0.012562
+Gilmer	0.012561
+Victor Orlando	0.012558
+Gonzalo Rodrigo	0.012556
+Antonio Enrique	0.012555
+Mario Armando	0.012552
+Miguel Hernan	0.012551
+Luis Santiago	0.012550
+Francisco Nicolas	0.012549
+Matiaas	0.012547
+Wilman	0.012544
+Martínez	0.012543
+Wuilson	0.012542
+Francisco J	0.012541
+David Hernan	0.012540
+Baudilio	0.012539
+Jose Claudio	0.012537
+Perrito	0.012534
+Carlos Cristian	0.012533
+Skere	0.012532
+Csar	0.012530
+Mario Arturo	0.012527
+Sebástian	0.012525
+Sánchez	0.012524
+Jose Benjamin	0.012523
+Pollos	0.012520
+Jesùs	0.012518
+Alvarado	0.012517
+Milthon	0.012516
+Franciscoo	0.012515
+Victor Esteban	0.012511
+Jardines	0.012510
+Cesar Ignacio	0.012505
+Edilio	0.012501
+Dieego	0.012499
+Cristiancito	0.012498
+Yimy	0.012497
+Ivan Alberto	0.012496
+Luis H	0.012495
+Jose Lorenzo	0.012494
+Alexy	0.012492
+Alejandro Rodrigo	0.012490
+José Guillermo	0.012488
+Erardo	0.012485
+Quincho	0.012484
+Manuel Armando	0.012483
+Cristian Nicolas	0.012482
+Pescaderia	0.012481
+Rodrigo Ivan	0.012481
+Isaak	0.012479
+Sylvio	0.012478
+Ryu	0.012477
+Aner	0.012476
+Jastin	0.012474
+Kriz	0.012471
+Renaud	0.012470
+Jean Michel	0.012469
+Alysson	0.012468
+Amory	0.012467
+Ulysse	0.012466
+Moïse	0.012465
+Pierre Louis	0.012461
+Anthonny	0.012460
+Parra	0.012459
+Walo	0.012458
+Otec	0.012454
+Poncho	0.012453
+Jhair	0.012444
+Alex Fernando	0.012441
+Yesid	0.012439
+Ysrael	0.012438
+Siul	0.012434
+Rodny	0.012433
+Freddy Alejandro	0.012431
+Brayhan	0.012429
+Arancibia	0.012427
+Luis Alex	0.012425
+Yorch	0.012422
+Felipito	0.012421
+Alex Javier	0.012419
+Irenio	0.012418
+Jaime Javier	0.012416
+Acuario	0.012415
+Juan Jaime	0.012413
+Luis Jesus	0.012408
+Alvaro Javier	0.012407
+Jorge Gonzalo	0.012406
+Erick Alejandro	0.012405
+Jose Alexander	0.012403
+Diego Alexander	0.012401
+Kevin Alexander	0.012399
+Neftaly	0.012398
+Juan Cristian	0.012395
+Jeancarlos	0.012393
+Mairon	0.012388
+Erix	0.012383
+Alianza	0.012381
+Holma	0.012379
+Juan Karlos	0.012376
+Boris Alejandro	0.012374
+J Andres	0.012372
+Victor Samuel	0.012368
+Fernando Rodrigo	0.012367
+Anthuan	0.012366
+José Esteban	0.012364
+Roberson	0.012363
+Roosevelt	0.012362
+Eduardo Felipe	0.012357
+Jose Sergio	0.012356
+Daniel Felipe	0.012355
+Ricot	0.012348
+Voltaire	0.012347
+Christobal	0.012345
+Enrique Alfonso	0.012343
+Patricio Ernesto	0.012341
+Victor Segundo	0.012340
+Evenson	0.012337
+Rodemil	0.012336
+Polilla	0.012333
+Jean Pier	0.012333
+Daniel Alonso	0.012329
+Nelson Hernan	0.012328
+Roberto Mauricio	0.012327
+Ricardo Andrés	0.012323
+Hector Fabio	0.012321
+Jaime Humberto	0.012319
+Francisco Segundo	0.012318
+Carlos Alonso	0.012318
+Bulla	0.012315
+Gonzalo Enrique	0.012312
+Jean Piere	0.012311
+Jampier	0.012308
+Lavados	0.012307
+Bastian Alexis	0.012305
+Proyectos	0.012304
+Bernardo Andres	0.012302
+Agricola	0.012299
+Orlando Andres	0.012297
+Bastian Nicolas	0.012294
+Leonel Antonio	0.012293
+Osnel	0.012291
+Daniel Isaac	0.012290
+Franco Esteban	0.012289
+Danilo Enrique	0.012287
+Claudio Felipe	0.012286
+Patricio Alfonso	0.012284
+Adolfo Antonio	0.012282
+Jorge Alfonso	0.012281
+Pablo Felipe	0.012280
+Wadner	0.012279
+Andrés Felipe	0.012278
+Rodrigo Nicolas	0.012274
+Carpas	0.012273
+Gonzalo Alexis	0.012272
+Francisco Alexis	0.012271
+Shesho	0.012270
+Patricio Humberto	0.012269
+Vicente Tomas	0.012268
+Mickenson	0.012260
+Cristobal Alonso	0.012254
+Victor Alonso	0.012254
+Jorge Felipe	0.012253
+Yerko Andres	0.012251
+Bullanguero	0.012250
+Queno	0.012246
+Jose Heriberto	0.012244
+Gasfiter	0.012243
+Esteban Alexis	0.012236
+Pedro Patricio	0.012235
+Martín Ignacio	0.012233
+Alonso Ignacio	0.012232
+Guillermo Ignacio	0.012231
+Tomas Alejandro	0.012229
+Parcelas	0.012227
+Rosalindo	0.012226
+Juan Alonso	0.012224
+Rodolfo Enrique	0.012223
+Pancito	0.012222
+Nibaldo Antonio	0.012222
+Cristofer Andres	0.012220
+Luis Heriberto	0.012218
+Ejecutivo	0.012217
+Samuel Enrique	0.012214
+Francisco Andrés	0.012213
+Segundo Antonio	0.012212
+Wisler	0.012206
+Yvener	0.012204
+Louissaint	0.012203
+Cristian Guillermo	0.012201
+Raul Patricio	0.012200
+Boris Andres	0.012199
+Steffano	0.012198
+Michael Alejandro	0.012197
+Rodrigo Felipe	0.012196
+Sanhueza	0.012194
+Vicente Alonso	0.012193
+Samuel Esteban	0.012185
+Xexo	0.012184
+Cristian Osvaldo	0.012183
+Fernando Mauricio	0.012182
+Joaquín Ignacio	0.012181
+Bastian Eduardo	0.012179
+Hector Tito	0.012178
+Rafael Ignacio	0.012177
+Jonathan Esteban	0.012171
+Mario Segundo	0.012170
+Julio Humberto	0.012167
+Benjamin Alexis	0.012164
+Jeanrobert	0.012163
+Jean Rony	0.012162
+Cristofer Alejandro	0.012160
+Gustavo Alonso	0.012156
+Angel Patricio	0.012155
+Eduardo Mauricio	0.012154
+Bastian Alexander	0.012152
+Arturo Enrique	0.012140
+German Enrique	0.012137
+Alvaro Felipe	0.012132
+Jorge Enrrique	0.012124
+Jaime Alexis	0.012123
+Jaime Ernesto	0.012122
+Fresnel	0.012121
+Matias Alexander	0.012120
+Benjamin Esteban	0.012119
+Lucner	0.012114
+Christian Antonio	0.012112
+Guillermo Esteban	0.012110
+Fernando Eduardo	0.012109
+Miguel Patricio	0.012108
+Louinel	0.012105
+Junta	0.012104
+Wilson Alejandro	0.012100
+Andres Rodrigo	0.012098
+Rodrigo Patricio	0.012097
+Gabriel Alfonso	0.012096
+Manxel	0.012095
+Yvenson	0.012093
+Rodrigo Alex	0.012091
+Cristopher Alejandro	0.012090
+Rene Mauricio	0.012089
+Oscar Alfonso	0.012087
+Shino	0.012086
+John Michael	0.012085
+Nickson	0.012083
+Mota	0.012081
+Valy	0.012080
+Tabo	0.012079
+Enio	0.012075
+Ig	0.012069
+Euro	0.012067
+Livio	0.012066
+Itan	0.012065
+Kaco	0.012061
+Aniel	0.012060
+Astro	0.012060
+Arold	0.012059
+Adison	0.012056
+Lorenso	0.012054
+Denni	0.012053
+Kylian	0.012053
+Adler	0.012052
+Cako	0.012051
+Peka	0.012050
+Valdo	0.012047
+Ezio	0.012046
+Agar	0.012046
+Tefa	0.012044
+Hery	0.012042
+Flabio	0.012039
+Mirson	0.012034
+Tio	0.012033
+Artes	0.012032
+Euclides	0.012032
+Andrade	0.012031
+Valeriano	0.012028
+Conde	0.012027
+Miguel Francisco	0.012024
+Francisco José	0.012023
+Guerra	0.012021
+Carlos Jorge	0.012020
+José Gabriel	0.012019
+Edú	0.012017
+Itamar	0.012015
+Amaury	0.012012
+Osorio	0.012012
+Vendedor	0.012009
+Miguel Fernando	0.012008
+Elber	0.012006
+Massy	0.012006
+Nazareno	0.012005
+Hilaire	0.011998
+Destin	0.011997
+Vlady	0.011995
+Francisco Fernando	0.011993
+Mario Jose	0.011993
+Luis Pedro	0.011992
+Victo	0.011991
+Carlos Augusto	0.011990
+Lobito	0.011988
+Pape	0.011987
+Dadou	0.011987
+Cid	0.011985
+Julio Francisco	0.011984
+Lhomme	0.011983
+Carlos Vicente	0.011982
+Lider	0.011981
+Gadiel	0.011979
+Indio	0.011978
+Jose Nelson	0.011977
+Eustaquio	0.011976
+Jaime Orlando	0.011975
+Gaspard	0.011974
+Arcenio	0.011973
+Pedro David	0.011972
+Viictor	0.011970
+Alberto Luis	0.011967
+Valdes	0.011966
+Plinio	0.011964
+Miler	0.011963
+Otoniel	0.011962
+Jose Adolfo	0.011959
+Eriberto	0.011957
+Jorman	0.011957
+Edurdo	0.011956
+Fel	0.011955
+Exe	0.011951
+Juan Martin	0.011949
+Ricardo Daniel	0.011945
+Oscar Alfredo	0.011945
+Miqueas	0.011944
+Jero	0.011943
+José María	0.011942
+Roberto Daniel	0.011941
+Sergio Ariel	0.011940
+Diego Hernan	0.011939
+Pablo Sebastian	0.011938
+Gordo	0.011937
+Gustavo Alberto	0.011935
+Cuervo	0.011934
+Jose Oscar	0.011933
+Hector Omar	0.011932
+Jorge Rafael	0.011928
+Algo	0.011928
+Cesar Daniel	0.011926
+Gonzalito	0.011925
+Jorge Adrian	0.011924
+Mario Cesar	0.011923
+Eduardo Luis	0.011923
+Daniel Osvaldo	0.011922
+Mario Javier	0.011918
+Hector Osvaldo	0.011917
+Carlos Cesar	0.011917
+Josemaria	0.011914
+Josecito	0.011912
+Jorgeluis	0.011912
+Pablo Marcelo	0.011911
+Aguirre	0.011910
+Gustavo Eduardo	0.011909
+Raul Alfredo	0.011907
+Goyo	0.011906
+Cerrajeria	0.011906
+Danyy	0.011904
+Jhoni	0.011903
+Criistian	0.011901
+Victor Alberto	0.011901
+Hector Ramon	0.011899
+Jose Fabian	0.011898
+Chavez	0.011895
+Raul Osvaldo	0.011894
+Cesar Javier	0.011893
+Gabriel Angel	0.011891
+Carlos Juan	0.011890
+Aleex	0.011890
+Pablo Fernando	0.011887
+Alejandro David	0.011885
+Alejandro Marcelo	0.011884
+Cucho	0.011883
+Caceres	0.011880
+Jose Hector	0.011878
+José Ramón	0.011876
+Juan Nicolas	0.011875
+Matiass	0.011873
+Gian Franco	0.011870
+López	0.011869
+Rodrigoo	0.011869
+Juan M	0.011868
+Oscar Raul	0.011867
+Carlos Osvaldo	0.011866
+Ozuna	0.011865
+Alej	0.011864
+Martin Eduardo	0.011863
+Ivancito	0.011862
+Alito	0.011861
+Leonardo Fabian	0.011860
+Sergio Miguel	0.011858
+Walter Antonio	0.011857
+Eitan	0.011856
+Rube	0.011855
+Bustos	0.011854
+Carlos Nicolas	0.011854
+Jose Dario	0.011853
+Ricardo David	0.011852
+Aguilar	0.011849
+Hilarion	0.011847
+Alberto Eduardo	0.011844
+Fabian Marcelo	0.011843
+Guti	0.011841
+Puro	0.011840
+Victor Omar	0.011839
+Ponce	0.011837
+Justiniano	0.011836
+Jose L	0.011835
+Miguel Alfredo	0.011834
+Javier Fernando	0.011831
+Raul Orlando	0.011830
+Javier Orlando	0.011828
+Fercho	0.011827
+Barto	0.011826
+Mamani	0.011824
+Alejandro Jose	0.011821
+Ricardo Ernesto	0.011820
+Alejandro Nicolas	0.011819
+Andres Alberto	0.011818
+Raúl Eduardo	0.011817
+Angell	0.011816
+Pedroo	0.011815
+Gines	0.011814
+Mario Osvaldo	0.011813
+Buen	0.011812
+Javier Nicolas	0.011809
+Conti	0.011808
+Lomas	0.011807
+Richart	0.011806
+Jese	0.011804
+Guilermo	0.011803
+Oscar Ricardo	0.011802
+Héctor Alejandro	0.011802
+Pedro Raul	0.011800
+Hugo Esteban	0.011797
+Ruben Enrique	0.011795
+Julio Ernesto	0.011794
+Roberto Esteban	0.011790
+Oscar Orlando	0.011789
+Cristiann	0.011788
+Raul Marcelo	0.011787
+Gutiérrez	0.011786
+Franco Javier	0.011785
+Mudanzas	0.011784
+Perro	0.011782
+Eduardo Marcelo	0.011781
+Daniel David	0.011780
+Juanantonio	0.011779
+José Raúl	0.011779
+Victor Mario	0.011778
+Paredes	0.011775
+Fanor	0.011772
+San Martin	0.011770
+Briam	0.011770
+Migel Angel	0.011769
+Miguel Anjel	0.011765
+Juan Gustavo	0.011764
+Crstian	0.011761
+Jorge Rene	0.011760
+Aguila	0.011759
+Taehyung	0.011758
+Adalid	0.011757
+Emeterio	0.011757
+Bustamante	0.011756
+Nicolas Alberto	0.011755
+Jose Santiago	0.011754
+Mario Guillermo	0.011753
+Eduardo Ernesto	0.011752
+Deyvis	0.011750
+Yuyo	0.011748
+Obras	0.011748
+Victor Emilio	0.011747
+Luia	0.011745
+Jorg	0.011744
+Salinas	0.011744
+Hertor	0.011743
+Nathi	0.011742
+Axell	0.011741
+Fernando Marcelo	0.011740
+Diegito	0.011740
+Hector Leonardo	0.011739
+Roberts	0.011737
+Carlod	0.011736
+Pedro Orlando	0.011736
+Jheyson	0.011733
+Hector Emilio	0.011731
+Zapata	0.011730
+Yino	0.011728
+Raul Humberto	0.011726
+Juan Rolando	0.011725
+Gullermo	0.011724
+Luis Elias	0.011723
+Mathii	0.011719
+Martincito	0.011717
+Burgos	0.011716
+Nelson Omar	0.011715
+Godofredo	0.011713
+Cayo	0.011711
+Vive	0.011710
+Marceloo	0.011708
+Jesus Daniel	0.011707
+Sebastian Alberto	0.011704
+Victor Osvaldo	0.011703
+Sergio Guillermo	0.011700
+Alfredo Eduardo	0.011699
+Aldo Antonio	0.011698
+Tercero	0.011696
+Fernando Andrés	0.011695
+Rodolfo Alejandro	0.011694
+Yonni	0.011691
+Kendo	0.011691
+Sacarias	0.011690
+Nickoo	0.011688
+David Alfredo	0.011687
+Oscar Rene	0.011686
+Jesus Eduardo	0.011685
+Yasmani	0.011683
+Rocko	0.011681
+Jose Jesus	0.011679
+Daniel Nicolas	0.011679
+Leonel Alejandro	0.011678
+Joan Manuel	0.011677
+Parque	0.011675
+Miguel Arturo	0.011674
+Rodrigo Ariel	0.011673
+Primero	0.011671
+Daniel Mauricio	0.011671
+Hugo Francisco	0.011669
+Garra	0.011667
+Oscar Esteban	0.011664
+Eduardo Nicolas	0.011663
+Daniel Ivan	0.011662
+Cuarto	0.011661
+Bendy	0.011655
+Sergio Humberto	0.011653
+Cg	0.011652
+Nicolas Francisco	0.011652
+Juan Sergio	0.011651
+Pablo Emilio	0.011648
+Milán	0.011648
+Schneider	0.011647
+Hiram	0.011646
+Sebastian Esteban	0.011644
+Gerardo Enrique	0.011644
+Hector Armando	0.011643
+Jorge Cristian	0.011641
+Juan Eugenio	0.011640
+Maximiliano Alejandro	0.011639
+Victor Leonardo	0.011638
+Yei	0.011637
+Edgardo Andres	0.011636
+Sigfrido	0.011635
+Felix Antonio	0.011633
+Christhian	0.011632
+Guillermo Arturo	0.011631
+Parabrisas	0.011629
+Airon	0.011628
+Patricio Daniel	0.011626
+Sergio Ernesto	0.011626
+Jose Salvador	0.011625
+Estiben	0.011624
+Hèctor	0.011623
+Víctor Eduardo	0.011622
+Ivan Esteban	0.011622
+Eduardo Ivan	0.011619
+Günther	0.011611
+Vinko	0.011611
+Herby	0.011610
+Manne	0.011608
+Igal	0.011606
+Manes	0.011604
+Elkin	0.011604
+Elwin	0.011602
+Senen	0.011601
+Junel	0.011600
+Walton	0.011599
+Jean Marc	0.011598
+Casimir	0.011595
+Gilian	0.011594
+Janvier	0.011593
+Jean Charles	0.011591
+Jeanlouis	0.011590
+Keevin	0.011590
+Jaen	0.011589
+Calixte	0.011587
+Borys	0.011586
+Ezechiel	0.011585
+Mathurin	0.011584
+Manno	0.011583
+Ivor	0.011580
+Jeshua	0.011579
+Janson	0.011576
+Jhonnatan	0.011568
+Edwing	0.011566
+Luis Diego	0.011564
+Hermo	0.011562
+Bolivar	0.011562
+Juanes	0.011561
+Jhons	0.011557
+Renán	0.011555
+Eliberto	0.011555
+Eider	0.011554
+Jose Alex	0.011551
+Yadiel	0.011550
+Yeico	0.011548
+Juan Alex	0.011547
+Carvajal	0.011542
+Davicho	0.011541
+Jose Gonzalo	0.011539
+Ayuwoki	0.011539
+Jose Migel	0.011537
+Joel Alejandro	0.011536
+Kristhian	0.011535
+Daniel Rodrigo	0.011535
+Carlos Enrrique	0.011532
+Gume	0.011529
+Marko Antonio	0.011529
+Edder	0.011528
+Robertho	0.011526
+José Mauricio	0.011525
+José Andres	0.011524
+Alex Ivan	0.011522
+Ivan Fernando	0.011522
+Kevin Alejandro	0.011520
+Ithan	0.011519
+Jorge Alexander	0.011519
+Maurcio	0.011516
+Importadora	0.011516
+Alex David	0.011514
+David Elias	0.011513
+Xabier	0.011509
+Jose Adan	0.011509
+Jose Abraham	0.011507
+Jaime Daniel	0.011506
+Daniel Arturo	0.011505
+Yeray	0.011504
+Victor Rene	0.011503
+Kervin	0.011503
+Alvaro Enrique	0.011500
+Juan Moises	0.011499
+Huberto	0.011498
+Luis Abraham	0.011497
+Alex Alberto	0.011496
+Victot	0.011495
+Sergio Armando	0.011494
+Jesus Enrique	0.011493
+Regulo	0.011490
+Alvaro Marcelo	0.011489
+José Arturo	0.011488
+Cristian Alexander	0.011487
+Pedro Jesus	0.011486
+Yercko	0.011482
+Marco Esteban	0.011481
+Karloz	0.011480
+Renatto	0.011478
+Rogger	0.011476
+Pedro Emilio	0.011474
+Villalobos	0.011472
+Cristhián	0.011472
+Kevin Alexis	0.011470
+Mario Ivan	0.011469
+Jose Danilo	0.011468
+Libardo	0.011467
+Jose Leonel	0.011465
+Piña	0.011461
+Carlos Elias	0.011460
+Ivan Luis	0.011459
+Luis Moises	0.011454
+Electronica	0.011452
+Ciber	0.011451
+Pedro Felipe	0.011450
+Feelipe	0.011447
+Carlos Sergio	0.011446
+Yvens	0.011445
+Lagos	0.011444
+Tello	0.011444
+Derwin	0.011441
+Rigaud	0.011441
+Yunier	0.011440
+Jean Daniel	0.011438
+Juan-Pablo	0.011437
+Pedro Nolasco	0.011435
+Diegho	0.011435
+Jairo Andres	0.011433
+Hernández	0.011432
+Rene Patricio	0.011428
+Hector Jaime	0.011427
+Moises Antonio	0.011426
+Esteban Rodrigo	0.011420
+Robens	0.011419
+Miguel Alfonso	0.011415
+Gabriel Alexis	0.011414
+Alex Francisco	0.011413
+Diego Francisco	0.011412
+Bryaan	0.011411
+Fernando Arturo	0.011409
+Arriagada	0.011407
+Gabriel Alonso	0.011406
+Luis Gaston	0.011404
+Jonathan Patricio	0.011403
+Alvaro Patricio	0.011401
+Radomiro	0.011400
+Alonso Andres	0.011396
+Axa	0.011395
+Laguerre	0.011395
+Alexis Patricio	0.011394
+Vicente Alejandro	0.011393
+Giovanni Andres	0.011392
+Marcos Enrique	0.011391
+Oscar Alexis	0.011390
+Hector Segundo	0.011389
+Dukens	0.011388
+Mercidieu	0.011387
+Jahaziel	0.011386
+Belizaire	0.011386
+Juan Cristóbal	0.011384
+Cristobal Nicolas	0.011383
+Francisco Jesus	0.011381
+Hector Gonzalo	0.011378
+Frantzso	0.011377
+Khristian	0.011376
+Audilio	0.011375
+Conjunto	0.011372
+Troncoso	0.011371
+Patricio Leonardo	0.011368
+Bryan Alejandro	0.011366
+Eric Alejandro	0.011365
+Alejandro Andrés	0.011361
+Sandro Antonio	0.011361
+Mauricio Ivan	0.011359
+Jonathan Rodrigo	0.011355
+Sergio Alfonso	0.011354
+Aluminios	0.011353
+David Patricio	0.011353
+Belony	0.011352
+Cristian Francisco	0.011348
+Bryan Alexander	0.011347
+Alexis Enrique	0.011346
+Kevin Ignacio	0.011345
+Fabriciano	0.011343
+Arturo Andres	0.011342
+Eduardo Segundo	0.011342
+Luckenson	0.011341
+Guillermo Segundo	0.011339
+Nikolás	0.011337
+Cristoper	0.011337
+Rodrigo Gonzalo	0.011335
+Leonardo Alexis	0.011334
+Brayan Andres	0.011334
+Hector Jesus	0.011330
+José Joaquín	0.011328
+Propiedades	0.011326
+Venegas	0.011326
+Esteban Nicolas	0.011322
+Jean Mary	0.011320
+Ruben Hernan	0.011319
+Claxdio	0.011318
+Ricardo Sebastian	0.011312
+Matìas	0.011310
+Guerson	0.011309
+Weon	0.011308
+José Tomas	0.011308
+Gerardo Esteban	0.011307
+Yerall	0.011305
+Alejandro Francisco	0.011303
+Vicente Nicolas	0.011303
+Erwin Alejandro	0.011301
+Omar Patricio	0.011297
+Cesar Alexis	0.011297
+Detergente	0.011296
+Roberto Andrés	0.011295
+Rodrigo Alfredo	0.011292
+Pedro Andrés	0.011291
+Robinson Alejandro	0.011290
+Markenson	0.011289
+Andres Patricio	0.011285
+Enyel	0.011284
+Makendy	0.011283
+Dieujuste	0.011282
+John Alejandro	0.011281
+Joaquin Eduardo	0.011279
+Haiti	0.011279
+Eduardo Arturo	0.011277
+Tumama	0.011277
+Donoso	0.011276
+Mario Andrés	0.011275
+Bastian Antonio	0.011274
+Robinson Eduardo	0.011272
+Nelson Esteban	0.011270
+Guayo	0.011269
+Hugo Alexis	0.011268
+Johanns	0.011267
+Boris Alexis	0.011267
+Saintil	0.011265
+Christian Ignacio	0.011263
+Wilson Andres	0.011261
+Renato Antonio	0.011260
+Obenson	0.011259
+Tomas Alonso	0.011259
+Hernan Felipe	0.011258
+Inostroza	0.011257
+Gamadiel	0.011255
+Alvaro Esteban	0.011254
+Nelson Ricardo	0.011254
+Datos	0.011252
+Kenel	0.011247
+Cristobal Antonio	0.011246
+Leandro Andres	0.011244
+Alexis Fernando	0.011243
+Luxon	0.011241
+Renato Andres	0.011240
+Yañez	0.011234
+Alexis Mauricio	0.011232
+Patolin	0.011228
+Leonel Eduardo	0.011227
+Jose Del Carmen	0.011227
+Xalo	0.011226
+Ariel Alexis	0.011225
+Pedro Mauricio	0.011220
+Rodrigo A	0.011215
+Ismael Antonio	0.011213
+Rodrigo Fabian	0.011212
+Raul Ivan	0.011211
+Igancio	0.011204
+Kesner	0.011203
+Nicolas Alexander	0.011201
+Luis Camilo	0.011201
+Monel	0.011200
+Jonathan Alexander	0.011197
+Elias Andres	0.011196
+Crescente	0.011194
+Mariscos	0.011193
+Lobos	0.011192
+Barbero	0.011191
+Berson	0.011190
+Jonnhy	0.011189
+Ignacio Eduardo	0.011188
+Wisnel	0.011187
+Esteban Alonso	0.011185
+Alonsito	0.011184
+Humberto Alejandro	0.011182
+Fco Javier	0.011180
+Victor Arturo	0.011180
+Cabro	0.011178
+Brayan Alexis	0.011177
+Williamson	0.011175
+Cèsar	0.011173
+Sergio Felipe	0.011172
+Deportivo	0.011168
+Jose Isaias	0.011168
+Vibrados	0.011164
+Raul Alfonso	0.011162
+Papouche	0.011160
+Desabolladura	0.011158
+Agustin Alonso	0.011157
+Alexis Fabian	0.011156
+Esteban Enrique	0.011155
+Quezada	0.011154
+Ricardo Elias	0.011153
+Oscar Segundo	0.011152
+Andres Enrique	0.011148
+Guerby	0.011146
+Esteban Patricio	0.011145
+Fruteria	0.011143
+Marcos Esteban	0.011142
+Criistopher	0.011141
+Sebitha	0.011139
+Alex Fabian	0.011138
+Milord	0.011136
+Matias Esteban	0.011135
+Guliano	0.011134
+Giovanni Francisco	0.011133
+Giussepe	0.011131
+Jorge Eliecer	0.011130
+Fernando Alonso	0.011130
+Andrés Ignacio	0.011129
+Luis Danilo	0.011128
+Franciscojavier	0.011128
+Casseus	0.011127
+Fernando Ivan	0.011123
+Felix Eduardo	0.011123
+Javier Patricio	0.011122
+Alfonso Andres	0.011119
+Guito	0.011119
+Rolando Enrique	0.011116
+Alfredo Ignacio	0.011114
+Cristian Humberto	0.011113
+Mario Alonso	0.011112
+Poleras	0.011110
+Gustavo Alexis	0.011106
+Christhoper	0.011106
+Juan Octavio	0.011104
+Biomagnetismo	0.011102
+Camilo Eduardo	0.011102
+Uribe	0.011100
+Fredy Alejandro	0.011099
+Nazho	0.011098
+Jaime Roberto	0.011097
+Joaquin Esteban	0.011096
+Cristián Alejandro	0.011095
+Robinson Andres	0.011095
+Jotape	0.011093
+Hugo Alfonso	0.011091
+Chepo	0.011090
+Jabi	0.011087
+Reynold	0.011087
+Pacha	0.011086
+Adres	0.011085
+Naldi	0.011084
+Fortnite	0.011082
+Pupi	0.011081
+Zalo	0.011078
+Entel	0.011078
+Ermin	0.011076
+Muri	0.011076
+Pelo	0.011074
+Oriol	0.011074
+Kelvis	0.011073
+Iber	0.011072
+Adelin	0.011070
+Evaldo	0.011068
+Cone	0.011067
+Liber	0.011065
+Socrates	0.011064
+Enson	0.011063
+Edio	0.011063
+Alexsi	0.011060
+Divino	0.011059
+Rios	0.011057
+Evandro	0.011057
+Portal	0.011056
+Milson	0.011055
+Evangelista	0.011055
+Fernando Manuel	0.011054
+Mario Jorge	0.011053
+Judson	0.011051
+Pitter	0.011048
+Gerónimo	0.011047
+Daniell	0.011047
+Paulo Antonio	0.011045
+Eduardo Manuel	0.011044
+Paulito	0.011044
+Nelson Francisco	0.011043
+Pedro José	0.011042
+Joël	0.011042
+Azael	0.011040
+Rosalino	0.011037
+Uziel	0.011036
+Otilio	0.011035
+Chriis	0.011034
+Vinicio	0.011032
+Fele	0.011032
+Leal	0.011031
+Ricas	0.011030
+Jose Jorge	0.011030
+Claudio Manuel	0.011029
+Elysee	0.011028
+Rosas	0.011027
+Jeanclaude	0.011026
+Antonio Eduardo	0.011026
+Damas	0.011025
+Khris	0.011024
+Carmona	0.011024
+Noël	0.011022
+Koto	0.011021
+Pedro Ernesto	0.011020
+Oracio	0.011020
+Nelson Alberto	0.011019
+Marcelo Francisco	0.011018
+Raul Francisco	0.011017
+José Mario	0.011016
+José Armando	0.011015
+Antenor	0.011014
+Nelson Daniel	0.011013
+Wiston	0.011012
+Aldemar	0.011012
+Jose Marcos	0.011011
+Comercio	0.011010
+Fernando Luis	0.011010
+Jephte	0.011008
+Eliud	0.011006
+Orestes	0.011005
+Claudio Jose	0.011004
+Walner	0.011004
+Michelson	0.011002
+Carlos Nelson	0.011002
+Agapito	0.011000
+Fami	0.011000
+José Orlando	0.010999
+Ancelmo	0.010998
+Josafat	0.010997
+Miguiel	0.010996
+Eduardo Daniel	0.010995
+Klauss	0.010993
+Yoani	0.010992
+Patricio Manuel	0.010991
+Pedro Alfredo	0.010990
+Tomii	0.010987
+Marcelo Daniel	0.010985
+Claudio Daniel	0.010984
+Ruben Alberto	0.010983
+Polaco	0.010980
+Sergio Gabriel	0.010979
+Ramon Alberto	0.010978
+Duilio	0.010978
+Fernando Ariel	0.010977
+Pity	0.010976
+Lucas Matias	0.010975
+Sergio David	0.010974
+Wualter	0.010970
+Barrio	0.010967
+Hugo Marcelo	0.010967
+Lucaas	0.010966
+Juampy	0.010965
+Topo	0.010963
+Carlos Ramon	0.010963
+Ojeda	0.010962
+Wilfrido	0.010961
+Chili	0.010960
+Granja	0.010959
+Cesar Luis	0.010959
+Gabriiel	0.010958
+Axeel	0.010957
+Juan Oscar	0.010956
+Monchi	0.010953
+Roberto Jose	0.010953
+Alaan	0.010951
+Marcos Javier	0.010951
+Arielito	0.010950
+Pacho	0.010949
+Omar Eduardo	0.010947
+Jorge Pablo	0.010946
+Sergio Marcelo	0.010945
+Hector Alfredo	0.010945
+Victor Ariel	0.010944
+Verduleria	0.010944
+Severo	0.010942
+Hugo Javier	0.010941
+Chapa	0.010940
+Pablo David	0.010938
+Yoryi	0.010938
+Mario Gabriel	0.010936
+Alcide	0.010935
+Ramon Angel	0.010934
+Nego	0.010932
+Roberto Alfredo	0.010931
+Roberto Marcelo	0.010930
+Criistiian	0.010930
+Ricardo Fabian	0.010929
+Piri	0.010927
+Guillermo Luis	0.010926
+Correa	0.010923
+Sabastian	0.010921
+Pajaro	0.010921
+Angeel	0.010920
+Virginio	0.010919
+Rojelio	0.010918
+Adrian Alejandro	0.010917
+Cesar Omar	0.010915
+Pablo Jose	0.010915
+Alejandro Luis	0.010913
+Hector Ariel	0.010912
+Compro	0.010910
+Grabriel	0.010908
+Veterinaria	0.010907
+Daniel Orlando	0.010906
+Seferino	0.010905
+Julio Alfredo	0.010901
+Carlos Rafael	0.010900
+Matias Daniel	0.010894
+Renso	0.010893
+Reymundo	0.010893
+Palito	0.010892
+Cesar David	0.010890
+Juan Dario	0.010890
+Leonardo David	0.010888
+Mario David	0.010888
+Alejadro	0.010886
+Jose Juan	0.010885
+Pablo Luis	0.010884
+Guillermo Javier	0.010883
+Ruben Orlando	0.010882
+Nelzon	0.010881
+Ramon Esteban	0.010879
+Gaston Alejandro	0.010877
+Raul Armando	0.010877
+Andres Fabian	0.010875
+Jorge E	0.010874
+Cristia	0.010873
+Diego Matias	0.010872
+Angel Manuel	0.010871
+Jorge Rolando	0.010871
+Caballero	0.010870
+Walter Andres	0.010870
+Hugo Ernesto	0.010869
+Grabiel	0.010868
+Momos	0.010867
+Acevedo	0.010866
+Claudio Sebastian	0.010866
+Claudio Roberto	0.010865
+Sergio Jose	0.010862
+Pedro Omar	0.010861
+Kebin	0.010860
+Sergio Nicolas	0.010859
+Jose Edgardo	0.010858
+Ministerio	0.010857
+Monchito	0.010855
+Alann	0.010854
+Matis	0.010852
+Departamento	0.010851
+Juan Anibal	0.010849
+Victor Ruben	0.010848
+Miiguel	0.010847
+Carlos Ricardo	0.010846
+Nicolass	0.010844
+Ernesto Javier	0.010843
+Oscar Gabriel	0.010842
+Luis Nicolas	0.010841
+Quiroz	0.010840
+Hecto	0.010836
+Aitor	0.010836
+Pedro Roberto	0.010835
+Orlando Javier	0.010834
+Balta	0.010834
+Jorge Jesus	0.010833
+Pablo A	0.010831
+Hugo Manuel	0.010829
+Multi	0.010829
+Pedro Ricardo	0.010828
+Barrera	0.010826
+Ferretería	0.010826
+Acuña	0.010824
+Pajarito	0.010822
+Claud	0.010822
+Luis Abel	0.010820
+Juan Sebastián	0.010819
+Juanpy	0.010819
+Claudio Nicolas	0.010817
+Universo	0.010817
+Juan Cesar	0.010815
+Solis	0.010814
+Cristian Miguel	0.010813
+Lisardo	0.010812
+Juan Edgardo	0.010812
+Guzmán	0.010811
+Sergito	0.010810
+Prudencio	0.010809
+Gabrielito	0.010808
+Alejandro Sebastian	0.010807
+Soporte	0.010807
+Leonardo Jose	0.010806
+Chancho	0.010805
+Alexiz	0.010804
+Jusn	0.010802
+Kory	0.010801
+Guga	0.010800
+Luiyi	0.010800
+Emilo	0.010799
+Checha	0.010798
+Hector Juan	0.010797
+Tomasito	0.010796
+Piedra	0.010796
+Dario Antonio	0.010795
+Mauricio Ariel	0.010794
+Perros	0.010793
+Potro	0.010792
+Juan Santiago	0.010791
+Cristian A	0.010790
+Tapicería	0.010790
+Peliculas	0.010789
+Busco	0.010788
+Sebastia	0.010788
+Tus	0.010787
+Héctor Antonio	0.010786
+Juanignacio	0.010784
+Jose R	0.010783
+Hunberto	0.010781
+Diego Pablo	0.010780
+Juan Salvador	0.010779
+Eduardo Sebastian	0.010778
+Abel Alejandro	0.010777
+Joaquiin	0.010776
+Roberto Manuel	0.010775
+Cancha	0.010773
+Navarrete	0.010772
+Hever	0.010771
+Baldo	0.010769
+Pablo Ivan	0.010768
+Egardo	0.010766
+Hache	0.010766
+Claudioo	0.010765
+Martin Nicolas	0.010765
+Csrlos	0.010763
+Alexiss	0.010763
+Nome	0.010762
+Marcelo Sebastian	0.010761
+Retro	0.010759
+Cesar Fernando	0.010757
+Victor Armando	0.010756
+Luis Domingo	0.010756
+Fernando Nicolas	0.010755
+Comunidad	0.010754
+Palomo	0.010753
+Oro	0.010750
+Ariel Enrique	0.010750
+Cesar Marcelo	0.010749
+Meliton	0.010748
+Nelson Gabriel	0.010747
+Alejndro	0.010746
+Luis Hugo	0.010745
+Fabyan	0.010744
+Marcelo Cristian	0.010743
+Alexis Daniel	0.010743
+Hernan Alberto	0.010742
+Carloz	0.010740
+Jhunior	0.010740
+Alez	0.010739
+Deporte	0.010737
+Arturito	0.010736
+Davo	0.010735
+Juandavid	0.010734
+Mandala	0.010733
+Pedro Osvaldo	0.010732
+Danieel	0.010731
+Eduardo Jesus	0.010730
+Juan P	0.010728
+Guillermo Alfredo	0.010726
+Pérez	0.010725
+Soldaduras	0.010724
+Fher	0.010724
+Refugio	0.010723
+Ridrigo	0.010722
+Alarcon	0.010721
+Franciso	0.010721
+Paablo	0.010720
+Ramírez	0.010719
+Díaz	0.010717
+Tayron	0.010715
+Francisco Fabian	0.010714
+Chispa	0.010714
+Plaza	0.010713
+Templo	0.010712
+Guiller	0.010711
+Diomedes	0.010711
+Solitario	0.010710
+Salgado	0.010709
+Matí	0.010708
+Mecanico	0.010708
+Hector Elias	0.010707
+J Luis	0.010706
+Pedro Marcelo	0.010703
+Franco Alejandro	0.010701
+Choro	0.010699
+Fumigaciones	0.010698
+Fredd	0.010698
+Ricardo Felipe	0.010697
+Héctor Enrique	0.010695
+Gabriel Orlando	0.010695
+Andres Leonardo	0.010694
+Matiaa	0.010693
+Criz	0.010692
+Jheison	0.010692
+Camiloo	0.010690
+Iann	0.010690
+Andres Fernando	0.010689
+Nicolaas	0.010688
+Yonattan	0.010687
+José Ernesto	0.010686
+Matias Rodrigo	0.010684
+Cristian Edgardo	0.010683
+Julio Andrés	0.010683
+Cesar Esteban	0.010682
+Andrés Alejandro	0.010680
+Ivàn	0.010679
+Josito	0.010678
+Profe	0.010678
+Antonii	0.010677
+Benjami	0.010676
+Luisfernando	0.010676
+Luis Benjamin	0.010674
+Verduras	0.010673
+Matias Jesus	0.010672
+Pedro Guillermo	0.010671
+Victor Julio	0.010670
+Adolfo Enrique	0.010670
+Samuel David	0.010669
+Coche	0.010669
+Gaboo	0.010667
+Bruno Andres	0.010665
+Eduardoo	0.010664
+Cristiaan	0.010662
+Cristian Adolfo	0.010662
+Chimuelo	0.010661
+Osvaldo Alejandro	0.010660
+Renè	0.010659
+Zarko	0.010658
+Milot	0.010657
+Marcellus	0.010656
+Mickel	0.010656
+Phillipe	0.010654
+Niiko	0.010653
+After	0.010652
+Jean Philippe	0.010650
+Herwin	0.010647
+Ayron	0.010646
+Ulrick	0.010644
+Philips	0.010643
+Bartolomeo	0.010642
+Leyton	0.010641
+Comité	0.010641
+Jean Bernard	0.010640
+Orel	0.010639
+Brutus	0.010638
+Ebert	0.010638
+Rainier	0.010636
+Nach	0.010636
+Kyo	0.010633
+Robinzon	0.010630
+Vector	0.010629
+Makis	0.010628
+Nazaire	0.010627
+Yohani	0.010625
+Fit	0.010624
+Carwash	0.010623
+Harmin	0.010621
+Mikal	0.010621
+Herlan	0.010620
+Jhostin	0.010619
+Jhon Alex	0.010618
+Ludwing	0.010617
+Jhose	0.010617
+Jafet	0.010614
+Rolin	0.010613
+Merardo	0.010613
+Luis Alvaro	0.010612
+Yosmar	0.010611
+Cupertino	0.010611
+Oscarin	0.010610
+Villarroel	0.010608
+Juandedios	0.010607
+Cristoval	0.010607
+Andrecito	0.010606
+Yobani	0.010605
+Jhoon	0.010604
+Velasquez	0.010604
+Juan Marco	0.010603
+Yimmi	0.010602
+Yohnny	0.010601
+Juan Gonzalo	0.010601
+Beltrán	0.010599
+Jose Israel	0.010598
+Jaider	0.010596
+Jhans	0.010596
+Ysaias	0.010595
+Bertho	0.010594
+Nauj	0.010593
+Movil	0.010592
+J Manuel	0.010592
+Yustin	0.010590
+Cordova	0.010589
+Jaime David	0.010588
+Farruko	0.010587
+Cardenas	0.010586
+Gatto	0.010585
+Javier Rodrigo	0.010584
+Juan Ivan	0.010583
+Yohny	0.010583
+Juan Reinaldo	0.010582
+Daniel Alexander	0.010580
+Alexsis	0.010580
+Jose German	0.010579
+Jotita	0.010578
+Kakaroto	0.010577
+Helbert	0.010576
+Juan Nelson	0.010575
+Darwing	0.010574
+Cáceres	0.010574
+Mancilla	0.010572
+Raziel	0.010570
+John Alex	0.010566
+Ozkar	0.010565
+Carlos Samuel	0.010564
+Halcon	0.010563
+Jaime Ricardo	0.010561
+Moises Elias	0.010560
+Gabriel Rodrigo	0.010560
+Jose Aurelio	0.010559
+Edwars	0.010559
+Adner	0.010556
+José Rodrigo	0.010556
+David Orlando	0.010555
+Capricornio	0.010554
+Vichito	0.010553
+Pedro Julio	0.010552
+David Rodrigo	0.010551
+Luis E	0.010550
+Alfaro	0.010548
+Andreu	0.010547
+Jose E	0.010546
+Guido Antonio	0.010545
+Yoyito	0.010544
+David Ernesto	0.010544
+Jaime Gabriel	0.010541
+Yojhan	0.010540
+Rodrigo Alexander	0.010539
+Alvaro Gonzalo	0.010536
+Jaime Raul	0.010536
+Alex Ricardo	0.010534
+Carlangas	0.010534
+Fancisco	0.010532
+Camilito	0.010531
+David Alexander	0.010530
+Enyer	0.010530
+Polar	0.010529
+Dixson	0.010527
+Oscar Felipe	0.010526
+Carlos Benjamin	0.010526
+Yohel	0.010524
+Joc	0.010523
+Dairo	0.010522
+Zuñiga	0.010519
+Ivan Arturo	0.010518
+John Alexander	0.010518
+Ivan Francisco	0.010517
+Marcos Aurelio	0.010515
+Jairon	0.010512
+Jeam	0.010512
+Felip	0.010511
+Danton	0.010511
+Joubert	0.010509
+Jose Luciano	0.010508
+José Rafael	0.010507
+Luisfelipe	0.010507
+Tebo	0.010505
+Peo	0.010504
+Lister	0.010504
+Cliford	0.010503
+Kidd	0.010502
+Frantzy	0.010499
+Yohans	0.010497
+Edrice	0.010495
+Eugenio Antonio	0.010494
+Jordan Andres	0.010494
+David Alonso	0.010493
+Cristopher Alexander	0.010493
+Donkan	0.010492
+Jonathan Jesus	0.010491
+José Gregorio	0.010489
+Sergio Segundo	0.010489
+Wislin	0.010488
+Benjax	0.010487
+Yerko Alejandro	0.010486
+Benjamin Elias	0.010485
+Sebastián Andres	0.010484
+Cristian Armando	0.010483
+Criistobal	0.010482
+Benjamin Alexander	0.010480
+Rene Enrique	0.010479
+German Patricio	0.010477
+Hernan Rodrigo	0.010477
+Gustavo Ignacio	0.010476
+Reciclaje	0.010475
+Luis Edmundo	0.010474
+Francisco Arturo	0.010473
+Alexis Sebastian	0.010471
+Grúas	0.010470
+Roberto Alexis	0.010468
+Empresas	0.010467
+Cristiàn	0.010466
+Vilsaint	0.010465
+Chenet	0.010464
+Panxito	0.010464
+Danilo Esteban	0.010463
+Maxricio	0.010462
+Patricio Arturo	0.010462
+Bodega	0.010460
+Rodrigo Arturo	0.010459
+Andres Ivan	0.010458
+Enrique Andres	0.010457
+Victor Claudio	0.010456
+Andres Alexis	0.010455
+Ivan Manuel	0.010455
+Hugo Rodrigo	0.010454
+Jaime Alonso	0.010453
+Juan K	0.010452
+Rolando Andres	0.010451
+Jaby	0.010451
+Gonzalo Alberto	0.010448
+Alejandro Jesus	0.010446
+Alex Hernan	0.010444
+Patricio Omar	0.010443
+Comercial	0.010443
+Francisco Ivan	0.010442
+Pablo Patricio	0.010439
+Nashito	0.010438
+Leonardo Alfredo	0.010437
+Luis Aquiles	0.010437
+Yochua	0.010436
+Jotha	0.010435
+Wladimir Antonio	0.010434
+Neftalí	0.010434
+Jamesly	0.010433
+Jonathan Andrés	0.010432
+Matiah	0.010431
+Ricardo Humberto	0.010430
+Temuco	0.010428
+Hernan Mauricio	0.010426
+Bryan Alexis	0.010425
+Frutas	0.010425
+Zenen	0.010424
+David Mauricio	0.010423
+Richemond	0.010422
+Elias Antonio	0.010421
+Jose Abelardo	0.010420
+Mikenson	0.010419
+Dorvil	0.010417
+Cruzado	0.010416
+Uve	0.010413
+Vichoo	0.010412
+Jose Aliro	0.010411
+Patricio Gabriel	0.010410
+Kevin Nicolas	0.010409
+Brayatan	0.010409
+Martín Alonso	0.010408
+Felix Andres	0.010408
+Relojes	0.010407
+Juan Leonel	0.010407
+Maxon	0.010406
+Christoper	0.010405
+Arturo Eduardo	0.010404
+Gilberto Antonio	0.010403
+Victor Eugenio	0.010402
+Fernando Alfonso	0.010399
+Jaime Omar	0.010399
+Patricio Ricardo	0.010398
+Manuel Emilio	0.010397
+Leandro Antonio	0.010395
+Sergio Elias	0.010394
+Humberto Enrique	0.010392
+Pello	0.010391
+Juan Lorenzo	0.010390
+Meny	0.010389
+Michel Alejandro	0.010388
+Julio Patricio	0.010387
+Tomas Eduardo	0.010386
+Mario Felipe	0.010385
+Jorge Hernán	0.010383
+Bernadin	0.010381
+Michael Antonio	0.010381
+Scanner	0.010378
+Andres Jesus	0.010378
+Hector Leonel	0.010377
+Sebax	0.010377
+Luxin	0.010376
+Franckel	0.010376
+Israel Antonio	0.010375
+Ventanas	0.010375
+Genel	0.010374
+Cristòbal	0.010373
+Isaac Antonio	0.010372
+Michel Antonio	0.010372
+Eric Andres	0.010371
+Luciano Antonio	0.010368
+Kevin Antonio	0.010367
+Ismael Alejandro	0.010366
+Samuel Ignacio	0.010365
+Rixard	0.010363
+Getro	0.010363
+Mauricio Orlando	0.010362
+Alexis Hernan	0.010361
+Iván Alejandro	0.010361
+Manuel Mauricio	0.010359
+Christian Alexis	0.010359
+Fabián Andrés	0.010358
+Yampi	0.010358
+Cacique	0.010357
+Roberto Alfonso	0.010357
+Ruben Ignacio	0.010356
+Jorge Eugenio	0.010356
+Ricardo Alex	0.010355
+Sondy	0.010354
+Guillermo Alexis	0.010353
+Thomas Ignacio	0.010352
+Nelson Mauricio	0.010350
+Piscina	0.010349
+Ernesto Enrique	0.010348
+Roberto Segundo	0.010346
+Restobar	0.010346
+Andres Sebastian	0.010345
+Alex Ignacio	0.010345
+Ginno	0.010342
+Yito	0.010342
+Mauricio Alfredo	0.010341
+Patricio David	0.010338
+Damian Andres	0.010338
+Luis Renato	0.010337
+Eduardo Rodrigo	0.010336
+Jose Alonso	0.010335
+Nicolas Enrique	0.010335
+Ruben Patricio	0.010334
+Waldo Antonio	0.010333
+Pedro Elias	0.010333
+Rudecindo	0.010332
+Wuilliams	0.010330
+Pedropablo	0.010329
+Jean Renel	0.010328
+Excequiel	0.010327
+Mantenciones	0.010326
+Patriciio	0.010325
+Alexander Antonio	0.010323
+Benel	0.010322
+Christhopher	0.010321
+Duber	0.010320
+Camiilo	0.010319
+Mayckel	0.010319
+Yerko Antonio	0.010318
+Barraza	0.010317
+Elias Alejandro	0.010315
+Ricardo Fernando	0.010313
+Agustin Alejandro	0.010311
+Eduardo Enrrique	0.010310
+Waldo Enrique	0.010309
+Felipe Alexis	0.010309
+Carlanga	0.010308
+Angelo Antonio	0.010302
+Flan	0.010302
+Camilo Fernando	0.010301
+Robinsón	0.010300
+Patricio Nicolas	0.010299
+Edgardo Enrique	0.010299
+Gonzalo Patricio	0.010298
+Ignacio Enrique	0.010298
+Francisco Omar	0.010297
+Osner	0.010296
+Nicolas Patricio	0.010295
+Richard Alexis	0.010295
+Manuel Elias	0.010294
+Bazelais	0.010292
+Yanco	0.010291
+Carlitros	0.010291
+Marco Enrique	0.010290
+Astudillo	0.010289
+Daglas	0.010287
+Osorno	0.010285
+Nicolás Antonio	0.010284
+Pedro Humberto	0.010284
+Naslo	0.010283
+Piipe	0.010282
+Octavio Andres	0.010281
+Sebastian Alexander	0.010281
+Esteban Mauricio	0.010280
+Felipe Arturo	0.010279
+Marcos Patricio	0.010279
+Simon Andres	0.010278
+Vilches	0.010277
+Diego Patricio	0.010276
+Jaime Osvaldo	0.010274
+Joseignacio	0.010274
+Sebastian Patricio	0.010273
+Henriquez	0.010273
+Petion	0.010267
+Wildor	0.010266
+Jexu	0.010266
+Araneda	0.010265
+Victor Sebastian	0.010265
+Chechito	0.010261
+Cristobal Felipe	0.010261
+Octavo	0.010260
+Comunicaciones	0.010259
+Altidor	0.010259
+Richard Alberto	0.010258
+Josnel	0.010257
+Alexis Ivan	0.010256
+Ignacio Alberto	0.010255
+Jajaj	0.010255
+Jordan Alexis	0.010254
+Jeune	0.010253
+Eugenio Enrique	0.010252
+Guillermo Andrés	0.010251
+Lubin	0.010251
+Jose Thomas	0.010250
+Loubens	0.010250
+Angelot	0.010249
+Richard Anthony	0.010248
+Raul Alexis	0.010247
+Ovalle	0.010246
+Jose Rigoberto	0.010246
+Braulio Andres	0.010245
+Adolfo Andres	0.010244
+Rigoberto Antonio	0.010243
+Cardenio	0.010241
+Francisco Alonso	0.010241
+Eric Alexis	0.010240
+Mamuel	0.010239
+Mapache	0.010239
+Nicolas Fernando	0.010238
+Alejandro Alfonso	0.010235
+Avisos	0.010234
+Nicolas Javier	0.010233
+Hernan Luis	0.010232
+Humberto Andres	0.010232
+Panchoo	0.010231
+Matías Alejandro	0.010231
+Saez	0.010230
+Manuel Eugenio	0.010229
+Manuel Leonardo	0.010228
+Visho	0.010226
+Manuel Roberto	0.010225
+Víctor Andrés	0.010225
+Patricio Armando	0.010224
+Alan Andres	0.010223
+Rockdrigo	0.010222
+Luis Ismael	0.010222
+Manuel Andrés	0.010221
+Ricardo Alonso	0.010218
+Victor Gonzalo	0.010217
+Gabriel Patricio	0.010214
+Marcelo Mauricio	0.010211
+Fernando Segundo	0.010210
+Pedro Alexis	0.010209
+Moises Eduardo	0.010208
+Benjamin Patricio	0.010206
+Reginal	0.010206
+Javier Mauricio	0.010205
+Nashoo	0.010205
+Yvenel	0.010203
+Christopher Alejandro	0.010202
+Galgos	0.010201
+Jandro	0.010200
+Juan Enrrique	0.010198
+Ignacio Alonso	0.010198
+Alvaro Francisco	0.010197
+Bryan Ignacio	0.010196
+Rene Francisco	0.010195
+Retamal	0.010194
+Mauricio Alfonso	0.010193
+Cifuentes	0.010191
+Christian Manuel	0.010191
+Willio	0.010190
+Marckendy	0.010187
+Claudio Humberto	0.010187
+Aukan	0.010186
+Giusseppe	0.010184
+Nayo	0.010184
+Claudio Armando	0.010182
+Leandro Ignacio	0.010181
+Erold	0.010180
+Maicol Andres	0.010180
+Sebastian Mauricio	0.010179
+Rupe	0.010178
+Arturo Hernan	0.010178
+Christian Patricio	0.010174
+Raxl	0.010174
+Felidor	0.010173
+Jorge Alonso	0.010173
+Rodrigo Francisco	0.010172
+Mario Sebastian	0.010172
+Carrito	0.010171
+Javier Alfonso	0.010170
+Opticas	0.010169
+Patricio Octavio	0.010169
+Jorge Leonel	0.010168
+John Alexis	0.010167
+Rosny	0.010167
+Omar Alexis	0.010166
+Albito	0.010164
+Charlemagne	0.010164
+Dimy	0.010163
+Maximiliano Ignacio	0.010162
+Cotelo	0.010162
+Cristian Arturo	0.010161
+Poblete	0.010160
+Antofagasta	0.010160
+Elicer	0.010159
+Wilkenson	0.010158
+Volcy	0.010158
+Cecinas	0.010154
+Gemy	0.010152
+Compañia	0.010151
+Samuel Eduardo	0.010151
+Ignacio Alfonso	0.010150
+Alvaro Sebastian	0.010149
+Victor Domingo	0.010146
+Lennin	0.010146
+Ismael Andres	0.010145
+Transportes	0.010144
+Riicardo	0.010141
+Ricardo Rodrigo	0.010140
+Miguel Segundo	0.010139
+Nicolas Alexis	0.010137
+Oscar Leonardo	0.010136
+Víctor Alfonso	0.010134
+Cristopher Alexis	0.010133
+Reynald	0.010132
+Rogel	0.010131
+Leomar	0.010130
+Samay	0.010129
+Comando	0.010129
+Pubg	0.010128
+Capitan	0.010127
+Alehandro	0.010126
+Erikson	0.010125
+Cani	0.010124
+Ermes	0.010123
+Bori	0.010121
+Ernaldo	0.010120
+Vil	0.010120
+Telo	0.010119
+Stivens	0.010118
+Alesandro	0.010117
+Lusiano	0.010115
+Nefi	0.010114
+Olson	0.010113
+Paci	0.010112
+Airton	0.010112
+Oferta	0.010111
+Vari	0.010111
+Tayson	0.010110
+Marioo	0.010109
+Kein	0.010108
+Adelson	0.010105
+Duki	0.010105
+Jonaa	0.010104
+Maurito	0.010104
+Peca	0.010103
+Naxho	0.010100
+Cars	0.010100
+Peli	0.010099
+Lony	0.010099
+Carbon	0.010098
+Clima	0.010097
+Maluma	0.010097
+Alv	0.010096
+Anndy	0.010094
+Brunno	0.010093
+Tallo	0.010092
+Aires	0.010091
+Fils	0.010090
+Helton	0.010090
+Filomeno	0.010089
+Manuel José	0.010089
+Diógenes	0.010087
+Onesimo	0.010086
+Agente	0.010086
+Jorginho	0.010085
+Poeta	0.010084
+Adonai	0.010083
+Fernando Francisco	0.010083
+Waldir	0.010082
+Jofre	0.010081
+Manuel Bernardo	0.010081
+Antonio Fernando	0.010080
+Manuel Vicente	0.010080
+Manuel Luis	0.010079
+Jose Augusto	0.010078
+Cesario	0.010078
+Prospero	0.010077
+Josmar	0.010076
+Pedro Vicente	0.010075
+Fernando Miguel	0.010074
+Osmany	0.010073
+Salatiel	0.010073
+Delgado	0.010072
+Plácido	0.010070
+José Bernardo	0.010068
+Aparicio	0.010067
+Herick	0.010067
+Bendito	0.010066
+Diomar	0.010066
+Coronel	0.010065
+Daniel Jose	0.010064
+Miguel Jose	0.010063
+Mente	0.010062
+Pedro Armando	0.010061
+Maick	0.010061
+Macho	0.010060
+Filemon	0.010059
+Ederson	0.010057
+Francisco David	0.010056
+Fray	0.010056
+Joseth	0.010054
+Eduardo Fernando	0.010054
+Luis Salvador	0.010053
+Solar	0.010052
+Klever	0.010051
+Raul Manuel	0.010051
+Pedro Tomas	0.010050
+Isauro	0.010049
+Enriques	0.010049
+David Francisco	0.010048
+Dread	0.010048
+Daniel Ernesto	0.010047
+Rafael Alberto	0.010047
+Francisco Elias	0.010046
+Chilo	0.010046
+Alipio	0.010045
+Rodrigo Manuel	0.010045
+Leinad	0.010044
+José Claudio	0.010043
+Lebron	0.010042
+Alberto Jose	0.010041
+José Elias	0.010040
+Antonio Jesus	0.010040
+David Jose	0.010039
+Mauel	0.010037
+Fernando Daniel	0.010037
+Quinto	0.010035
+Matias Francisco	0.010035
+Francisci	0.010034
+Manuel Gustavo	0.010033
+Solrac	0.010032
+Michaell	0.010031
+Phillippe	0.010031
+Joorge	0.010030
+Sadoc	0.010029
+Doble	0.010027
+Alcibiades	0.010027
+Ednel	0.010025
+Ercio	0.010025
+Andersson	0.010023
+Luisantonio	0.010023
+Eduado	0.010022
+Gabriel Francisco	0.010021
+Dalmiro	0.010020
+Peedro	0.010020
+Antoniio	0.010019
+Jose Mariano	0.010019
+Marquez	0.010018
+Legna	0.010018
+Manul	0.010017
+Gorje	0.010017
+Cacho	0.010014
+Tincho	0.010014
+Derlis	0.010011
+Hugo Daniel	0.010010
+Agustiin	0.010008
+Mario Daniel	0.010008
+Luis Oscar	0.010007
+Matute	0.010006
+Turco	0.010005
+Alejandro Daniel	0.010004
+Milciades	0.010003
+Claudio Fabian	0.010001
+Sergio Fabian	0.010001
+Pablo Ariel	0.010000
+Diego Javier	0.009999
+Cachito	0.009998
+Jorge Ruben	0.009998
+Chicha	0.009997
+Carlos Adrian	0.009995
+Tobías	0.009994
+Ariiel	0.009994
+Micka	0.009992
+Omar Alberto	0.009991
+Hugo Cesar	0.009991
+Markitos	0.009990
+Rubén Darío	0.009989
+Raúl Alberto	0.009989
+Chacho	0.009988
+Luis Horacio	0.009988
+Francoo	0.009987
+Chuky	0.009987
+Hugo Omar	0.009986
+Manuu	0.009985
+Lucass	0.009984
+Guty	0.009984
+Angel Daniel	0.009983
+Negri	0.009983
+Claudio Ariel	0.009981
+Oscar Roberto	0.009981
+Chapu	0.009980
+Jorge Fabian	0.009979
+Carlosalberto	0.009978
+Complejo	0.009978
+Rubén Dario	0.009976
+Jorge Ramon	0.009975
+Damiian	0.009974
+Oscar Ruben	0.009973
+Cabrera	0.009973
+Marcos David	0.009972
+Gómez	0.009970
+Dario Alejandro	0.009970
+Héctor Daniel	0.009969
+Julio Ricardo	0.009967
+Ramón Antonio	0.009967
+Fabian Alberto	0.009965
+Claudio Omar	0.009964
+Daniel Marcelo	0.009964
+Chavo	0.009963
+Leonardo Gabriel	0.009963
+Brunito	0.009962
+Marcos Daniel	0.009961
+Ricardo Omar	0.009961
+Carlos Anibal	0.009960
+Eliias	0.009959
+Marcelo Luis	0.009958
+Mario Raul	0.009958
+Julio Roberto	0.009957
+Ruly	0.009955
+Gustavito	0.009954
+Ricardo Gabriel	0.009952
+Eduardo Fabian	0.009952
+Sandwicheria	0.009951
+Cristiian	0.009951
+Chulo	0.009948
+Ferr	0.009948
+Antonio Alberto	0.009947
+Sesar	0.009945
+Quiroga	0.009944
+Walter Eduardo	0.009943
+Luis Dario	0.009942
+Avila	0.009942
+Angel Jose	0.009941
+Jorge Hugo	0.009940
+Gabriel Omar	0.009939
+Mario Ricardo	0.009939
+Jorge Anibal	0.009938
+Marcelo David	0.009937
+Arias	0.009936
+Pablino	0.009935
+Oscar Hugo	0.009935
+Cesar Fabian	0.009934
+Oscar Osvaldo	0.009933
+Claudio David	0.009933
+Hugo Alfredo	0.009930
+Angel Ariel	0.009929
+Daniel Armando	0.009928
+Criadero	0.009927
+Beymar	0.009925
+Porfin	0.009924
+Javier Marcelo	0.009924
+Albertito	0.009923
+Anguel	0.009922
+Mario Marcelo	0.009921
+Héctor Hugo	0.009919
+Gabrie	0.009918
+Carlos Orlando	0.009917
+Yoe	0.009916
+Julio C	0.009916
+Oscar Ariel	0.009915
+Ricardo Miguel	0.009915
+Hugo Armando	0.009913
+Cuatro	0.009913
+Grillo	0.009912
+Mario Angel	0.009912
+Cristian Matias	0.009911
+Jorge Victor	0.009909
+Pulga	0.009907
+Marcelo Ricardo	0.009906
+Oscar Omar	0.009904
+Herramientas	0.009903
+Antoñio	0.009902
+Omarcito	0.009901
+Monchy	0.009901
+Hugo Osvaldo	0.009900
+Matias Gabriel	0.009900
+Bueno	0.009899
+Marto	0.009898
+Carlos Victor	0.009896
+Luismiguel	0.009895
+Juanc	0.009893
+Jaun	0.009893
+Sergio Leonardo	0.009892
+Hector Julio	0.009891
+Segu	0.009891
+Tachi	0.009890
+Alejandro Miguel	0.009888
+Cesar Raul	0.009888
+Marcelo Pablo	0.009887
+Sergioo	0.009887
+Huevo	0.009886
+Nemecio	0.009885
+Neumaticos	0.009885
+Ruben Marcelo	0.009882
+Mansilla	0.009882
+Stylo	0.009881
+Carlos Agustin	0.009880
+Eduardo David	0.009878
+Whatsapp	0.009877
+Pablo Manuel	0.009876
+Horacio Antonio	0.009876
+Gaspi	0.009874
+Jose Damian	0.009873
+Mauricio Daniel	0.009873
+Pablo Matias	0.009872
+Robles	0.009871
+Emanuel Alejandro	0.009870
+Maximilano	0.009870
+Pablo Roberto	0.009869
+Guillemo	0.009868
+Jose Julian	0.009867
+Ivan Dario	0.009867
+Angel Jesus	0.009866
+Joege	0.009865
+Víctor Daniel	0.009865
+Panaderia	0.009864
+Jorge Edgardo	0.009862
+Victor Ramon	0.009862
+Diego A	0.009860
+Yandel	0.009860
+Matiad	0.009860
+Gitano	0.009859
+Fenando	0.009859
+Juane	0.009858
+Matias Ariel	0.009856
+Carlos Gerardo	0.009855
+Justicia	0.009854
+Mauro Andres	0.009852
+Delivery	0.009851
+José Javier	0.009850
+Diego Mauricio	0.009850
+Vidrios	0.009849
+Zoilo	0.009849
+Jesus David	0.009848
+Josu	0.009847
+Mascotas	0.009846
+Carlos J	0.009846
+Gumer	0.009845
+Torito	0.009844
+Wuilian	0.009843
+Campo	0.009843
+Juan R	0.009841
+Muguel	0.009841
+Luis Juan	0.009840
+Tiempo	0.009839
+Roberto Osvaldo	0.009839
+Roberto Orlando	0.009838
+Ricado	0.009838
+Camisetas	0.009837
+Diego Jesus	0.009835
+Buenas	0.009835
+Cesar Ricardo	0.009834
+Walter Enrique	0.009833
+Caballo	0.009832
+Parroquia	0.009831
+Sergio A	0.009830
+Yoi	0.009830
+Palu	0.009829
+Oscar Ernesto	0.009828
+Alfredito	0.009828
+Judas	0.009827
+Pabli	0.009826
+Siete	0.009824
+Alejandrino	0.009822
+Carlo Alberto	0.009820
+Kikin	0.009820
+Entrenamiento	0.009820
+Jesucristo	0.009819
+Reparacion	0.009816
+Carlos Leonardo	0.009814
+Castor	0.009813
+Marcos Alberto	0.009812
+Verde	0.009811
+Marcelo Nicolas	0.009809
+Cristian German	0.009808
+Gaston Eduardo	0.009808
+José Omar	0.009806
+Juan Rodolfo	0.009805
+Bismar	0.009804
+Claudii	0.009803
+Marcos Eduardo	0.009803
+Elverga	0.009802
+Diego Orlando	0.009802
+Lucas Andres	0.009801
+Asael	0.009801
+Reparación	0.009800
+Cortez	0.009800
+Carlos Ismael	0.009799
+Titoo	0.009798
+Kevinn	0.009798
+German Alberto	0.009797
+Gerardo Alberto	0.009796
+Sergio Anibal	0.009796
+Rodrigo Daniel	0.009795
+Pesca	0.009795
+Pepino	0.009794
+Planeta	0.009793
+Danito	0.009793
+Josè Luis	0.009792
+Cesar Gabriel	0.009791
+David Sebastian	0.009790
+Departamentos	0.009789
+Rubèn	0.009789
+Esteban Javier	0.009788
+Aldo Enrique	0.009788
+Emilio Eduardo	0.009787
+Oscar Jesus	0.009787
+Teby	0.009786
+David Nicolas	0.009785
+Nicoolas	0.009784
+Victor Jesus	0.009783
+David Omar	0.009782
+Toreto	0.009782
+Alejandri	0.009781
+Jardineria	0.009780
+Duende	0.009779
+Maatias	0.009779
+Jorge Claudio	0.009778
+Rubén Alejandro	0.009778
+Fernandoo	0.009777
+Julio Javier	0.009777
+Rosales	0.009776
+Elián	0.009776
+Julio Manuel	0.009775
+Bacilio	0.009775
+Benancio	0.009774
+Reimon	0.009773
+José Vicente	0.009773
+Lucas Alejandro	0.009772
+Ulise	0.009771
+Calito	0.009770
+Alexio	0.009769
+Hector Gerardo	0.009768
+Wilver	0.009767
+Hugo Leonardo	0.009766
+Hector Edgardo	0.009765
+Hector Adolfo	0.009765
+Osvaldo Javier	0.009764
+Omar Francisco	0.009763
+Feder	0.009762
+Francisco Sebastian	0.009762
+Pancracio	0.009761
+Claudio Ernesto	0.009761
+Sergio Rolando	0.009759
+Fantasma	0.009759
+Gemas	0.009758
+Raices	0.009757
+Horacio Andres	0.009757
+Juan Juan	0.009756
+Mangel	0.009756
+Pedro Fabian	0.009755
+Carlos E	0.009754
+Anoni	0.009753
+Christian Javier	0.009753
+Carlos Rolando	0.009752
+Albornoz	0.009750
+Luis José	0.009750
+Pablo Jesus	0.009749
+Jorge Vicente	0.009746
+Frenando	0.009746
+Rolando Javier	0.009746
+Juan Hugo	0.009745
+Enrique Javier	0.009745
+Diseño	0.009744
+Mauricio Fabian	0.009743
+Raul Guillermo	0.009742
+Angel Enrique	0.009740
+Muricio	0.009739
+Andres Javier	0.009739
+Ernesto Eduardo	0.009738
+Manfredo	0.009738
+José Angel	0.009737
+Diego Alfredo	0.009737
+Piedras	0.009735
+Rafael Angel	0.009734
+Ricardo Nicolas	0.009733
+Optica	0.009733
+Juan Ismael	0.009732
+Julio Marcelo	0.009731
+Sebiita	0.009730
+Armandito	0.009729
+Misterio	0.009728
+Montero	0.009728
+Joge	0.009727
+Rodrgo	0.009726
+Eliam	0.009725
+Sergio Emilio	0.009725
+Jorge Nelson	0.009724
+Ruben David	0.009724
+Juan Felix	0.009722
+Freddi	0.009721
+Serapio	0.009720
+Jorge Matias	0.009720
+Hernan Gabriel	0.009718
+Alberto Ignacio	0.009717
+Kaito	0.009716
+Jorge Augusto	0.009715
+Aldo Andres	0.009714
+Leonardo Alberto	0.009714
+Andres Francisco	0.009713
+Loncho	0.009712
+Gabbo	0.009712
+Amdres	0.009711
+Pollito	0.009710
+Fabiaan	0.009710
+Pablo Ernesto	0.009709
+Pinta	0.009706
+Ricardo Jesus	0.009706
+Jose Emiliano	0.009706
+Mauricio Nicolas	0.009704
+Luis Arnaldo	0.009703
+Andres Nicolas	0.009703
+Manuel Omar	0.009702
+Hijo	0.009702
+Ruben Fernando	0.009701
+Yhony	0.009701
+Carlos Leonel	0.009701
+Gabriel Nicolas	0.009698
+Fernando Matias	0.009696
+Benito Antonio	0.009695
+Tavi	0.009693
+Angel Marcelo	0.009693
+Matiaz	0.009692
+Jose Julio	0.009692
+Javier Ernesto	0.009691
+Carloos	0.009690
+Cono	0.009690
+Oscar Rolando	0.009688
+Rolando Alberto	0.009687
+David Leonardo	0.009687
+Meza	0.009686
+Electromecanica	0.009686
+César Andrés	0.009685
+Firulais	0.009685
+Jose Leandro	0.009685
+Tomàs	0.009684
+German Luis	0.009684
+Cultura	0.009683
+Fernando Sebastian	0.009682
+Ivan Gabriel	0.009681
+Miguel David	0.009681
+Yosoy	0.009680
+Nelsito	0.009679
+Hector German	0.009679
+Luis Augusto	0.009678
+Paúl	0.009677
+Betho	0.009677
+Linder	0.009676
+Jorge Bernardo	0.009676
+Ricardoo	0.009676
+Miguel Orlando	0.009675
+Máx	0.009675
+Francisco Ernesto	0.009674
+Sopa	0.009672
+Cristian Raul	0.009672
+Luis Agustin	0.009671
+Omar Esteban	0.009670
+Sebastian Javier	0.009670
+Emilio Enrique	0.009669
+Leonardo Alejandro	0.009668
+Marcos Ivan	0.009667
+Mario A	0.009667
+Miguel Osvaldo	0.009666
+Riveros	0.009665
+Alejandro Alfredo	0.009664
+Gigio	0.009664
+Pedro Pascual	0.009663
+Crisrian	0.009663
+Daniel Sebastian	0.009662
+Adhemar	0.009662
+Barrientos	0.009661
+Ramón Eduardo	0.009661
+Diego Ivan	0.009659
+Fernando Jesus	0.009659
+Einer	0.009658
+Andres David	0.009657
+Benyi	0.009656
+Pedro Hugo	0.009655
+Cornejo	0.009655
+Calderon	0.009654
+Guillermo Fernando	0.009654
+Yosimar	0.009652
+Angel Alejandro	0.009652
+Eclipse	0.009651
+Tristán	0.009650
+Eduardo A	0.009649
+Rodolfo Esteban	0.009648
+Rustico	0.009648
+Yhan	0.009647
+Muebleria	0.009646
+Polarizados	0.009646
+Pedro Sebastian	0.009645
+Juventud	0.009645
+Matias Jose	0.009644
+Victoor	0.009644
+Oscar Arturo	0.009644
+José M	0.009643
+Alfo	0.009642
+Joacko	0.009642
+Nelson Fabian	0.009641
+Conty	0.009641
+Victor Francisco	0.009640
+Mauricio Sebastian	0.009640
+Alexis Gabriel	0.009639
+Javier Ivan	0.009638
+Jorge Ismael	0.009638
+Leones	0.009636
+Roberto Sebastian	0.009634
+Jose Luiz	0.009634
+Claudioandres	0.009633
+Alcon	0.009633
+Jorge Reinaldo	0.009631
+Andrés Eduardo	0.009631
+Energy	0.009630
+César Alejandro	0.009630
+Anibal Andres	0.009629
+Chiry	0.009628
+Joshue	0.009627
+Leonado	0.009627
+Loquillo	0.009626
+Carrillo	0.009625
+Jesús Alberto	0.009624
+Gianmarco	0.009623
+Pitufo	0.009622
+Matias Alberto	0.009621
+Héctor Andrés	0.009619
+Adrian Antonio	0.009619
+Hernan Francisco	0.009618
+Ivan Carlos	0.009616
+Hugo Humberto	0.009615
+Carlos Moises	0.009615
+Felipe Santiago	0.009614
+Condor	0.009614
+Jose Eliseo	0.009614
+Alex Ariel	0.009612
+Nativo	0.009612
+Veliz	0.009611
+Juvencio	0.009611
+Luisin	0.009609
+Migueel	0.009607
+Dojo	0.009607
+Juanpedro	0.009606
+Francisco Orlando	0.009606
+Pablo Mauricio	0.009604
+Esteban Manuel	0.009603
+Vent	0.009603
+Cesar Francisco	0.009601
+Tomate	0.009601
+Fabián Alejandro	0.009599
+Luis Gilberto	0.009599
+Roller	0.009598
+Chaly	0.009597
+Cheito	0.009596
+Cesar Miguel	0.009594
+Esteban Alberto	0.009594
+Nicolas Marcelo	0.009593
+Raul Arturo	0.009593
+Aire	0.009592
+Hernan Alfredo	0.009591
+Ruben Francisco	0.009591
+Fram	0.009590
+Mario Jesus	0.009589
+Andres Marcelo	0.009588
+José Humberto	0.009588
+Derian	0.009587
+Estebaan	0.009587
+Adrian Enrique	0.009586
+Camionero	0.009585
+Nicolas Jesus	0.009584
+Pez	0.009583
+Hanns	0.009582
+Christoffer	0.009580
+Matus	0.009580
+Yvo	0.009579
+Chava	0.009577
+Sebastiaan	0.009576
+Brat	0.009574
+Michael Alexander	0.009573
+Lener	0.009572
+Kain	0.009572
+Chiri	0.009571
+Varo	0.009570
+Tengo	0.009570
+Enduro	0.009569
+Gianpiero	0.009569
+Persona	0.009568
+Nayib	0.009567
+Nahin	0.009566
+Bastien	0.009564
+Jean Francois	0.009562
+Lillo	0.009562
+Bastiaan	0.009561
+Yohann	0.009560
+Engels	0.009559
+Balthazar	0.009559
+Becker	0.009556
+Anakin	0.009555
+Cine	0.009555
+Colas	0.009553
+Jary	0.009553
+Jordaan	0.009550
+Mathia	0.009549
+Guiliano	0.009548
+Riche	0.009547
+Josephe	0.009547
+Barthelemy	0.009546
+Faber	0.009546
+Chendo	0.009545
+Esaie	0.009544
+Piere	0.009544
+Janer	0.009543
+Yako	0.009542
+Yova	0.009541
+Yovan	0.009540
+Licho	0.009539
+Vìctor	0.009539
+Jakson	0.009537
+Jhean	0.009536
+Julbert	0.009536
+Josaphat	0.009535
+Jefri	0.009535
+Subaru	0.009534
+Deadpool	0.009534
+Yosep	0.009533
+Raynold	0.009532
+John Peter	0.009532
+Innova	0.009531
+Aves	0.009529
+Jhimy	0.009529
+Jhimmy	0.009528
+Jherson	0.009527
+Deybi	0.009527
+Rojer	0.009526
+Yhonatan	0.009525
+Mamerto	0.009524
+Yasmany	0.009524
+Yomar	0.009523
+Jheremy	0.009523
+Marquiño	0.009522
+Luisiño	0.009521
+Jhoncito	0.009521
+Marco A	0.009520
+Rosauro	0.009518
+Yeyson	0.009517
+Javierito	0.009516
+Baldemar	0.009515
+Markiño	0.009514
+Fabio Andres	0.009513
+Winder	0.009513
+Yilmar	0.009512
+Jhan Carlos	0.009511
+Juán	0.009510
+Jose Enrrique	0.009509
+Jairito	0.009507
+Alex Daniel	0.009507
+Deibi	0.009506
+Henrri	0.009505
+Froilán	0.009503
+Juan Calos	0.009503
+Rene Fernando	0.009501
+Yeraldo	0.009501
+Dussan	0.009500
+Neythan	0.009497
+Snaider	0.009497
+Wason	0.009496
+Yobany	0.009495
+Villegas	0.009495
+Antonny	0.009494
+Jayro	0.009492
+Racso	0.009492
+Emerzon	0.009491
+Kenyi	0.009489
+Juan Alvaro	0.009489
+J Antonio	0.009487
+Jeffer	0.009486
+Yulio	0.009486
+Alvaro Jose	0.009486
+Guapo	0.009485
+Luis Marcos	0.009485
+Alvaro Fernando	0.009484
+Angel Rodrigo	0.009483
+Yamal	0.009483
+Jose Feliciano	0.009482
+Critobal	0.009482
+Rusbel	0.009481
+Dyland	0.009481
+Carlos Gonzalo	0.009480
+Nayer	0.009479
+Jersson	0.009479
+Edyson	0.009478
+Luis G	0.009478
+Yefri	0.009478
+Chalito	0.009477
+David Gonzalo	0.009476
+Oliverio	0.009474
+Jose Efrain	0.009474
+Becerra	0.009473
+Rene Alfredo	0.009472
+Draco	0.009471
+Vicentico	0.009470
+Jiménez	0.009470
+Alvaro Mauricio	0.009469
+Fenelon	0.009469
+Jose Fidel	0.009467
+Antonhy	0.009465
+Marcó	0.009464
+Pardo	0.009463
+Jader	0.009462
+Yuber	0.009461
+Ingenieria	0.009461
+Samuel Elias	0.009461
+Vairon	0.009460
+Jaime Ruben	0.009460
+Jaime Jose	0.009459
+Carlithos	0.009458
+Chamo	0.009457
+Nelson Luis	0.009456
+Yan Carlos	0.009455
+Dámaso	0.009454
+Jorge Elias	0.009454
+Memito	0.009452
+Yehison	0.009451
+Simon Pedro	0.009450
+Richard Alex	0.009450
+Yer	0.009450
+Yersson	0.009449
+Jose Moises	0.009448
+Chemo	0.009447
+Acxel	0.009447
+Nacor	0.009446
+Rene Andres	0.009446
+Miguel Jesus	0.009445
+Bady	0.009444
+Angel Mauricio	0.009442
+Alessander	0.009442
+Felix Alejandro	0.009442
+Enriqe	0.009441
+Brayan Alejandro	0.009440
+Patrix	0.009439
+Jose Isaac	0.009438
+Sergio Alex	0.009438
+Freddy Eduardo	0.009437
+Milton Cesar	0.009437
+Brigada	0.009436
+Carlos Alexander	0.009436
+Ivan Gonzalo	0.009435
+Duck	0.009434
+Gabriel Jesus	0.009434
+Josehp	0.009433
+Jorge Jaime	0.009432
+Jeancarlo	0.009432
+Andred	0.009431
+Rafael Fernando	0.009431
+Feo	0.009430
+Gabriel Alexander	0.009430
+Fernando Elias	0.009428
+Victor Jaime	0.009428
+Santander	0.009426
+Luis Henry	0.009424
+Carlos Alex	0.009424
+Julio Armando	0.009422
+Lorenzo Antonio	0.009422
+Jorge Isaac	0.009420
+Santiago Andres	0.009419
+Alvaro Eduardo	0.009419
+Boris Antonio	0.009418
+Robertt	0.009417
+Isaí	0.009417
+Brayann	0.009416
+Carlos Alverto	0.009416
+Andreus	0.009415
+Daniel Gonzalo	0.009414
+Escorpio	0.009413
+Iuis	0.009412
+Cristian Hugo	0.009412
+Melquisedec	0.009411
+Bemjamin	0.009410
+Javier Arturo	0.009410
+Jesús Antonio	0.009408
+Ivan Jose	0.009408
+Richard Marcelo	0.009407
+Galvez	0.009406
+Arenas	0.009405
+Ytalo	0.009405
+Duberly	0.009404
+Erwin Rodrigo	0.009403
+David Moises	0.009402
+David Arturo	0.009401
+Isack	0.009401
+David Armando	0.009399
+Miguel Humberto	0.009398
+Antinio	0.009398
+Andhy	0.009396
+Wualdo	0.009396
+José Leonardo	0.009395
+Rodrigo Luis	0.009394
+Jose Camilo	0.009394
+Capacitaciones	0.009393
+Alexánder	0.009393
+Rene Manuel	0.009391
+Guido Alejandro	0.009391
+Raul Mauricio	0.009390
+Bernando	0.009390
+Arturo Fernando	0.009389
+Geison	0.009388
+Hugo Ivan	0.009387
+Ronald Andres	0.009387
+Caminante	0.009386
+Alex Manuel	0.009385
+Jaime Jesus	0.009385
+Rodrigo Jesus	0.009384
+Madera	0.009384
+Brahyan	0.009383
+Menor	0.009382
+Nícolas	0.009381
+Feliphe	0.009379
+Jefe	0.009377
+Elso	0.009377
+Victtor	0.009376
+Jose Renato	0.009376
+Halan	0.009374
+Carros	0.009373
+José Felipe	0.009373
+Neomar	0.009372
+Dieggo	0.009367
+Daany	0.009366
+Widson	0.009365
+Temistocles	0.009365
+Wilken	0.009364
+Nilsson	0.009363
+Killua	0.009363
+Phillips	0.009362
+Dillan	0.009362
+Amante	0.009361
+Walala	0.009361
+Sterling	0.009360
+Claudel	0.009359
+Jermain	0.009359
+Dyllan	0.009358
+Kenley	0.009356
+Jean Eddy	0.009355
+Jimmy Alejandro	0.009354
+Rodrigo Mauricio	0.009354
+Dhylan	0.009353
+Estime	0.009353
+Johani	0.009352
+Agustin Andres	0.009352
+Saintilus	0.009351
+Alexis Jesus	0.009351
+Raúl Ignacio	0.009350
+Joel Enrique	0.009349
+Ricardo Segundo	0.009348
+Completos	0.009347
+Felipe Matias	0.009347
+Soldador	0.009346
+Matias Vicente	0.009345
+Emilio Ignacio	0.009343
+Piterson	0.009343
+Alexis David	0.009342
+Gonzalo Alonso	0.009342
+Pablo Alonso	0.009341
+Yonathan Andres	0.009340
+Vicente Andrés	0.009340
+Viicente	0.009339
+Sergio Octavio	0.009339
+Fernando Alfredo	0.009338
+Luis Rigoberto	0.009337
+Bastian Alonso	0.009336
+Marxelo	0.009336
+Claudio Arturo	0.009336
+Lushito	0.009335
+Alvaroo	0.009334
+Cristopher Antonio	0.009334
+Manuel Alonso	0.009333
+Feguens	0.009332
+Wido	0.009332
+Marcos Alexis	0.009331
+Robinson Antonio	0.009329
+Chechin	0.009327
+Chundo	0.009327
+Pavez	0.009325
+Biron	0.009325
+Michel Andres	0.009324
+Joshee	0.009324
+Isaac Andres	0.009322
+Joel Eduardo	0.009319
+Matix	0.009318
+Alexander Andres	0.009317
+Bastian Esteban	0.009315
+Exavier	0.009315
+Caarlos	0.009314
+Fono Copete	0.009314
+Edicson	0.009313
+Cristian Emilio	0.009311
+Victor Elias	0.009310
+Rochenel	0.009308
+Gonzalo Sebastian	0.009308
+Miguel Alexis	0.009307
+Cristián Andrés	0.009306
+Juan Danilo	0.009306
+Pablosky	0.009305
+Polerones	0.009303
+Maquina	0.009302
+Patio	0.009299
+Guillermo Alfonso	0.009298
+Viterbo	0.009296
+Juanfrancisco	0.009296
+Niicko	0.009295
+Christian Enrique	0.009295
+Paulo Ignacio	0.009294
+Eduardo Alex	0.009294
+Jonathan Javier	0.009294
+Jonathan Mauricio	0.009293
+Roberto Alex	0.009293
+Guillermo Humberto	0.009292
+Patricio Alex	0.009291
+Francisco Alfonso	0.009290
+Claudio Enrrique	0.009289
+Confiezate	0.009288
+Xunxo	0.009286
+Jeanpool	0.009286
+Domingo Andres	0.009285
+Todoventas	0.009284
+Wladimir Alejandro	0.009284
+Pablo Elias	0.009283
+Erwin Andres	0.009283
+Mauricio Arturo	0.009282
+Jean Rene	0.009282
+Benjamìn	0.009281
+Arturo Segundo	0.009280
+Angel Ignacio	0.009279
+Fednel	0.009278
+David Alfonso	0.009278
+Marcelo Alonso	0.009277
+Leger	0.009277
+Ruben Alexis	0.009276
+Leonel Andres	0.009276
+Alejandro Humberto	0.009275
+Lifaite	0.009274
+Carlos Danilo	0.009274
+Canchas	0.009273
+Gabriel Ivan	0.009272
+Sebastián Alexis	0.009272
+Varas	0.009271
+Contabilidad	0.009271
+Brian Andres	0.009270
+Chilet	0.009269
+Fabian Rodrigo	0.009268
+Axel Andres	0.009266
+Rodolfo Ignacio	0.009266
+Ceviches	0.009265
+Ricardo Eduardo	0.009264
+Cristian Rafael	0.009264
+Benjamín Alejandro	0.009261
+Esteban Fernando	0.009261
+Johanan	0.009260
+Maquinarias	0.009260
+Nicolás Esteban	0.009259
+Vulcanizacion	0.009259
+Matías Nicolás	0.009258
+Yio	0.009258
+Mondesir	0.009257
+Ariki	0.009256
+Clarens	0.009256
+Pancrasio	0.009255
+Renato Ignacio	0.009255
+German Ignacio	0.009253
+Claudio A	0.009253
+Rene Alfonso	0.009252
+Hernan Esteban	0.009251
+Alexis Alberto	0.009249
+Freddy Alexis	0.009249
+David Humberto	0.009248
+Fedson	0.009247
+Baruc	0.009247
+Alesander	0.009247
+Fredy Antonio	0.009245
+Raul Segundo	0.009244
+Bryan Antonio	0.009243
+Leonel Enrique	0.009243
+Juan Heriberto	0.009243
+Johnattan	0.009242
+Camilo Alexis	0.009241
+Giovanni Alejandro	0.009241
+Matías Andrés	0.009240
+Venta De	0.009240
+José Alfonso	0.009238
+Alvaro Alexis	0.009238
+Jorquera	0.009237
+David Isaac	0.009236
+Pablitho	0.009236
+Urrutia	0.009235
+Nelson Alexis	0.009234
+Hector Felipe	0.009234
+Marcelo Alfonso	0.009234
+Antonio Segundo	0.009233
+Patricio Renan	0.009230
+Claudio Alex	0.009230
+Esteban Felipe	0.009229
+Floro	0.009229
+Pedro Cristian	0.009228
+Roberto Ivan	0.009227
+Miguel Alonso	0.009227
+Ulloa	0.009226
+Richard Esteban	0.009225
+Mauricio Ricardo	0.009225
+Osvaldo Patricio	0.009224
+Alejandro Elias	0.009223
+Raúl Enrique	0.009219
+Alexis Ariel	0.009218
+Basttian	0.009217
+Adan Antonio	0.009216
+Rucio	0.009215
+Jorge Octavio	0.009214
+Brayaan	0.009214
+Antonio Ignacio	0.009213
+Frenos	0.009213
+Gabriel Elias	0.009212
+Reynier	0.009211
+Luis Joel	0.009210
+Lorenzo Andres	0.009209
+Philistin	0.009209
+Patricio Jose	0.009208
+Nicolás Andres	0.009208
+Mauricio Humberto	0.009207
+Manuel Felipe	0.009207
+Michelin	0.009206
+Ahumada	0.009206
+Niikolas	0.009205
+Exantus	0.009205
+Héctor Patricio	0.009204
+Litha	0.009204
+Patricio Jesus	0.009203
+Lientur	0.009203
+Catalan	0.009203
+Fabian Alexander	0.009200
+Oscar Andrés	0.009200
+Angelo Patricio	0.009200
+Arbey	0.009199
+Patricio Rene	0.009198
+Esnel	0.009198
+Talabarteria	0.009197
+Rene Hernan	0.009197
+Patricio Segundo	0.009196
+Vendias	0.009195
+Maincra	0.009194
+Patricio Guillermo	0.009194
+Wom	0.009193
+Widner	0.009193
+Braulio Antonio	0.009192
+Alexis Francisco	0.009191
+David Felipe	0.009191
+Remodelaciones	0.009190
+Julio Ivan	0.009190
+Marcos Elias	0.009189
+Yorky	0.009187
+Renato Alonso	0.009187
+Daaniel	0.009186
+Cristian Jorge	0.009186
+Erick Alexander	0.009185
+Linares	0.009184
+Luis Adan	0.009184
+Sebastian Jesus	0.009183
+Sergio Enrrique	0.009182
+Copo	0.009182
+Jesxs	0.009180
+Lacteos	0.009180
+Rodrigo Humberto	0.009179
+Jean Junior	0.009178
+Gonzalo Felipe	0.009177
+Jorsh	0.009177
+Francisco Patricio	0.009176
+Luis Luis	0.009174
+Franco Alexis	0.009174
+Gardo	0.009171
+Pablo Alfonso	0.009170
+Pedro A	0.009170
+Casas Prefabricadas	0.009169
+Luis Amador	0.009169
+Derilus	0.009167
+Chrisnel	0.009167
+Jeanrony	0.009166
+Alonso Javier	0.009165
+Orlando Patricio	0.009164
+Chunchito	0.009164
+Ricardo Eugenio	0.009163
+Civil	0.009163
+Cristian Ernesto	0.009162
+Diegö	0.009162
+Mauricio Alonso	0.009161
+Juan Isaac	0.009158
+Ramon Segundo	0.009158
+Pedro Rodrigo	0.009157
+Marcelo Alex	0.009156
+Elias Eduardo	0.009155
+Gerardo Patricio	0.009154
+Hernan Alexis	0.009152
+Mario Eugenio	0.009152
+Luis Benito	0.009151
+Cristobal Eduardo	0.009151
+Hector Esteban	0.009149
+Juaneduardo	0.009147
+Alonso Enrique	0.009147
+Rene Ignacio	0.009146
+Jaime Sebastian	0.009145
+Francisco Humberto	0.009145
+Alfredo Segundo	0.009144
+Jorgeantonio	0.009143
+Patricio Edgardo	0.009142
+Tatito	0.009141
+Jose Eladio	0.009141
+Guido Hernan	0.009141
+Juan Baustista	0.009139
+Diegox	0.009138
+Ramon Arturo	0.009138
+Atacama	0.009137
+Orosman	0.009137
+Pablete	0.009136
+Jaime Segundo	0.009135
+Alberto Patricio	0.009135
+Chumi	0.009132
+Vicentee	0.009131
+Enriquez	0.009131
+Cristofer Antonio	0.009129
+Javie	0.009129
+Benjamon	0.009128
+Macken	0.009127
+Tens	0.009126
+Rodolfo Javier	0.009126
+Juan Isaias	0.009125
+Louidor	0.009125
+Renand	0.009124
+Sushis	0.009124
+Jonathan Alberto	0.009122
+Victor Felipe	0.009121
+Víctor Antonio	0.009120
+Abarca	0.009120
+Eric Antonio	0.009118
+Andrés Antonio	0.009116
+Sauveur	0.009115
+Opazo	0.009114
+Johan Manuel	0.009114
+Lennyn	0.009112
+Naxoo	0.009112
+Manueljesus	0.009111
+Emiro	0.009110
+Esteban Jesus	0.009109
+Cristian Alexi	0.009109
+Sofanor	0.009109
+Danilo Eduardo	0.009106
+Rodelin	0.009105
+Jhorman	0.009104
+Alex Sebastian	0.009104
+Bernardo Javier	0.009104
+Erick Andres	0.009103
+Demmis	0.009102
+Moraga	0.009102
+Ariel Alonso	0.009100
+Eterno	0.009098
+Christopher Andres	0.009098
+J Andrés	0.009097
+Rodrigo Orlando	0.009095
+Ignacio Sebastian	0.009094
+Pabloandres	0.009094
+Walson	0.009093
+Gajardo	0.009092
+Saurel	0.009091
+Rodrigo Elias	0.009091
+Yarko	0.009089
+Julio Alfonso	0.009088
+Jose Robinson	0.009088
+David Guillermo	0.009086
+Manuel Octavio	0.009086
+Luis Anselmo	0.009083
+Shago	0.009083
+Erwin Patricio	0.009082
+Hector Danilo	0.009082
+Victor Gerardo	0.009082
+Jimmy Andres	0.009081
+Canales	0.009081
+Luciano Alejandro	0.009080
+Sergio Alonso	0.009079
+Mervil	0.009078
+Jean Ronald	0.009077
+Jorgeandres	0.009076
+Italo Andres	0.009074
+Reinaldo Andres	0.009074
+Chamelo	0.009073
+Alonso Antonio	0.009073
+Rodrogo	0.009071
+Hector Sebastian	0.009071
+Ivan Alexander	0.009070
+Rodolfo Fernando	0.009069
+Manuel Gonzalo	0.009069
+Kanito	0.009068
+Impch	0.009067
+Nicolas Benjamin	0.009065
+Payaso	0.009064
+Leopoldo Antonio	0.009064
+Roberto Felipe	0.009062
+Marcelo Arturo	0.009062
+Rodrigo Ernesto	0.009062
+Sergio Edgardo	0.009061
+Jaime Alex	0.009060
+Moises Abraham	0.009058
+Armando Enrique	0.009052
+Daslav	0.009051
+Eduardo Alonso	0.009051
+Robert Alejandro	0.009049
+Kender	0.009045
+Jonathan Nicolas	0.009045
+Sebastian Alfonso	0.009045
+Wladimir Alexis	0.009044
+Lxcho	0.009043
+Wilson Eduardo	0.009043
+Juan Arnoldo	0.009042
+Patricioo	0.009040
+Sergio Leonel	0.009039
+Hyppolite	0.009038
+Bahiron	0.009038
+Vicentito	0.009038
+Jonathan Enrique	0.009037
+Victor Leonel	0.009037
+Frisner	0.009034
+Phito	0.009034
+Oscar Alexander	0.009034
+Asnel	0.009033
+Nicolas Alfonso	0.009032
+Eduards	0.009032
+Vanel	0.009032
+Lamarre	0.009031
+Gladiador	0.009030
+Ramón Luis	0.009030
+Dieufort	0.009029
+Pedro Edgardo	0.009029
+Moliere	0.009028
+Avicola	0.009028
+Seguridad	0.009027
+Richard Manuel	0.009027
+Victor Danilo	0.009026
+Chilote	0.009026
+Angol	0.009026
+Jonathan Felipe	0.009025
+Foncho	0.009024
+Kensley	0.009024
+Enzo Antonio	0.009023
+Nelson Osvaldo	0.009023
+Cartes	0.009023
+Jose Arnoldo	0.009022
+Milenco	0.009022
+Marco Ignacio	0.009021
+Deylan	0.009021
+Jovenel	0.009020
+Jaime Nicolas	0.009019
+Jose Benedicto	0.009019
+Manueel	0.009018
+Jose Marcial	0.009017
+Vicente Rodrigo	0.009017
+Pedro Alex	0.009017
+Rene Osvaldo	0.009016
+Hernan Segundo	0.009016
+Jose Misael	0.009014
+Alexis Andrés	0.009013
+Jxlio	0.009012
+Toys	0.009012
+Jose Cristobal	0.009010
+Bazile	0.009010
+Leñas	0.009010
+Amarito	0.009009
+Cristóbal Andrés	0.009009
+Extintores	0.009008
+Carlos Octavio	0.009008
+Bernny	0.009007
+Fuente	0.009006
+Peyuco	0.009005
+Alexis Marcelo	0.009005
+Andres Octavio	0.009004
+Canito	0.009003
+Fanes	0.009003
+Pstricio	0.009002
+Crhistopher	0.009002
+Ramon Hernan	0.009001
+Paisajismo	0.009000
+Erre	0.009000
+Danor	0.009000
+Sangucheria	0.008999
+Alfonso Antonio	0.008999
+Cesar Alfonso	0.008998
+Sergot	0.008998
+Manuel Adrian	0.008997
+Alejandro Felipe	0.008997
+Carlens	0.008996
+Johnny Alejandro	0.008996
+Breiner	0.008995
+Tonijua	0.008994
+David Segundo	0.008994
+Hielo	0.008993
+Yetro	0.008992
+Cristobal Javier	0.008992
+Marcas	0.008990
+Tusca	0.008990
+Rolando Patricio	0.008989
+Vernet	0.008987
+Jonthan	0.008986
+Edison Alejandro	0.008985
+Alex Esteban	0.008984
+David Andrés	0.008983
+Alex Leonardo	0.008981
+Jeudy	0.008980
+Hector Alonso	0.008980
+Rafael Hernan	0.008978
+Luis Erasmo	0.008978
+Reinaldo Enrique	0.008977
+Jonathan Francisco	0.008976
+Jonathan Fernando	0.008976
+Patricio Bernardo	0.008974
+Enrique Fernando	0.008973
+Esteban Fabian	0.008971
+Jaavii	0.008971
+Martin Vicente	0.008970
+Nicolas Rodrigo	0.008968
+Julio Arturo	0.008968
+Fabián Antonio	0.008967
+Joel Esteban	0.008967
+Rene Arturo	0.008965
+José Emilio	0.008965
+Rolando Esteban	0.008964
+Cristian Rodolfo	0.008963
+Alvaro Matias	0.008963
+Ivan Alfonso	0.008962
+Claudiño	0.008960
+Rene Humberto	0.008959
+Victor Rolando	0.008958
+Chiloe	0.008957
+Benjamin Matias	0.008957
+Luis Robinson	0.008955
+Contratista	0.008954
+Jaime Guillermo	0.008954
+Apicola	0.008954
+Mauricio Eugenio	0.008952
+Manuel Gerardo	0.008951
+Ramiro Andres	0.008950
+Manuel Santiago	0.008950
+Sergio Iván	0.008947
+Enrique Segundo	0.008946
+Osvaldo Mauricio	0.008946
+Calama	0.008944
+Ckamilo	0.008943
+Patricii	0.008942
+Cocke	0.008942
+Alvaro Nicolas	0.008942
+Rapido	0.008941
+Frantzdy	0.008940
+Wildy	0.008940
+Nickolás	0.008940
+Esteban Andrés	0.008939
+Yender	0.008939
+José Hernan	0.008938
+Jorge Leandro	0.008938
+Seba Ignacio	0.008937
+Joanel	0.008937
+Jonathan Ignacio	0.008936
+Mesidor	0.008935
+Makiman	0.008935
+Astrel	0.008934
+Jean Luis	0.008933
+Juanguillermo	0.008933
+Eduardo Orlando	0.008932
+Nicolas Alonso	0.008932
+Serviteca	0.008931
+Joquin	0.008930
+Leonardo Mauricio	0.008930
+Milien	0.008930
+Nibaldo Andres	0.008929
+Botillería	0.008928
+Pulento	0.008927
+Patricio A	0.008926
+Patricio Fabian	0.008926
+Dylhan	0.008925
+Gxstavo	0.008925
+Rubén Antonio	0.008924
+Manuel A	0.008923
+Hernan Arturo	0.008922
+Fernando Guillermo	0.008921
+Juanxo	0.008920
+Héctor Fernando	0.008919
+Maraca	0.008919
+Manuel Edgardo	0.008919
+Grua	0.008917
+Elias Moises	0.008916
+Carlos Hernán	0.008915
+Diversiones	0.008914
+Cristopher Ignacio	0.008913
+Drope	0.008913
+Cristopher Eduardo	0.008913
+Fuentealba	0.008910
+Eugenio Alejandro	0.008909
+Gustavo Alfonso	0.008909
+Dylann	0.008908
+Jamesley	0.008907
+Getho	0.008906
+Rafael Segundo	0.008904
+Wilibaldo	0.008904
+Vikthor	0.008903
+Eliaser	0.008903
+Agustín Ignacio	0.008902
+Jonathan A	0.008902
+Edecio	0.008901
+Forestal	0.008901
+Alexis Wladimir	0.008900
+Cancino	0.008899
+Edier	0.008899
+Austral	0.008898
+Pesadilla	0.008896
+Antonioo	0.008896
+Maiker	0.008896
+Angelo Rodrigo	0.008895
+Fredy Andres	0.008894
+John Patricio	0.008894
+Jordan Alejandro	0.008894
+Diego Benjamin	0.008893
+Felipe Daniel	0.008892
+Nicolas Mauricio	0.008891
+Christofher	0.008891
+Edgar Alexander	0.008890
+Ramon Patricio	0.008889
+Cba	0.008888
+Brayitan	0.008888
+Ehl	0.008886
+Salamanca	0.008886
+Brayan Ignacio	0.008885
+Jeanpiere	0.008885
+Jaime Cristian	0.008884
+Ignacio Felipe	0.008884
+Gerardo Ignacio	0.008883
+Jordan Alexander	0.008882
+Moises Esteban	0.008881
+Mauricio Guillermo	0.008881
+Daniel Moises	0.008880
+Pedro Alonso	0.008879
+Critofer	0.008878
+Jonahtan	0.008878
+Hernán Patricio	0.008877
+Mario Alex	0.008877
+Víctor Javier	0.008877
+Jairo Antonio	0.008876
+Erwin Alexis	0.008876
+Joaquin Alberto	0.008875
+Juan Aurelio	0.008875
+Martin Alexis	0.008875
+Javier A	0.008874
+Fabian Nicolas	0.008874
+Claudio Orlando	0.008873
+Alvaro Hernan	0.008872
+Walter Alexis	0.008869
+Luis Leonel	0.008869
+Maykoll	0.008869
+Josepablo	0.008868
+Guillermo Ivan	0.008867
+Boris Eduardo	0.008867
+Katari	0.008866
+Omar Ignacio	0.008866
+Francisco Gerardo	0.008866
+Ricardo Armando	0.008865
+Benjamin Enrique	0.008864
+Mauricio Gonzalo	0.008862
+Mauricio Alex	0.008861
+Yerar	0.008860
+Emilio José	0.008860
+Baeza	0.008860
+Benjmin	0.008859
+Alejandro Arturo	0.008858
+Enrry	0.008857
+Isaac Alejandro	0.008856
+Hernán Alejandro	0.008856
+Segundo Enrique	0.008853
+Rodrigo Jose	0.008853
+Eric Eduardo	0.008853
+Christian Fernando	0.008851
+Tomas Pablo	0.008850
+Alfonso Eduardo	0.008850
+Erode	0.008849
+Wilnes	0.008849
+Jostyn	0.008848
+Sebastian Elias	0.008847
+Claudio Jesus	0.008847
+Woodson	0.008846
+Jean Denis	0.008845
+Wensley	0.008845
+Zambrano	0.008844
+Patricio Sebastian	0.008844
+Pablo Andre	0.008844
+Woodly	0.008843
+Patrio	0.008841
+Vixho	0.008841
+Philogene	0.008839
+Veniel	0.008839
+Miguel Sebastian	0.008838
+Adolfo Alejandro	0.008837
+Vitito	0.008837
+Felipe Gonzalo	0.008836
+Hector Domingo	0.008833
+Héctor Mauricio	0.008832
+Francisco Felipe	0.008831
+Thelusma	0.008830
+Jeanrene	0.008829
+Yester	0.008828
+Prospere	0.008828
+Bdo	0.008827
+Hector Rafael	0.008825
+Sergio Danilo	0.008825
+Juan Eladio	0.008824
+Paolo Andres	0.008823
+Gredy	0.008822
+Cristian Ismael	0.008822
+Pobre	0.008822
+Sebastiann	0.008821
+Victor Edgardo	0.008821
+Pablo César	0.008820
+Angelo Paolo	0.008820
+Ulises Antonio	0.008819
+Rienzi	0.008819
+Erwin Hernan	0.008818
+Alejandro Ernesto	0.008818
+William Antonio	0.008817
+Claudio Elias	0.008816
+Aconcagua	0.008816
+Ernesto Andres	0.008813
+Eltio	0.008813
+Walter Patricio	0.008813
+Paticio	0.008812
+Jose Leonidas	0.008812
+Sergio Bernardo	0.008812
+Íl	0.008810
+Jonathan Marcelo	0.008809
+Cristian Bernardo	0.008809
+Colmenares	0.008807
+Marcelo Humberto	0.008807
+Felipe Andre	0.008806
+Fabián Ignacio	0.008805
+Importaciones	0.008804
+Dort	0.008803
+Claudin	0.008803
+Maycoll	0.008802
+Bastian Felipe	0.008802
+Cristian Segundo	0.008802
+Maximo Antonio	0.008801
+Felipe Hernan	0.008801
+Dieumaitre	0.008799
+Bender	0.008798
+Bertony	0.008798
+Juan Alverto	0.008797
+Camilo Francisco	0.008797
+La Picada	0.008797
+Tomas Benjamin	0.008796
+Maximiliano Andrés	0.008794
+José Raul	0.008793
+Galleta	0.008792
+Frito	0.008790
+Barria	0.008790
+Julio Mauricio	0.008790
+Andres Elias	0.008789
+Guillermo Francisco	0.008789
+Abraham Isaac	0.008788
+Michael Alexis	0.008788
+Eliacin	0.008787
+Frenel	0.008787
+Nelson Humberto	0.008787
+Cristian Elias	0.008786
+Juan Edmundo	0.008786
+Valericio	0.008785
+Lentes	0.008785
+Lucas Antonio	0.008784
+Gildardo	0.008784
+Luis Hunberto	0.008782
+Jando	0.008782
+Hector Claudio	0.008782
+Longanizas	0.008780
+Mauricio Edgardo	0.008780
+José Agustín	0.008779
+Guido Andres	0.008778
+Bástian	0.008778
+Teru	0.008777
+Pedro Gerardo	0.008777
+Rodrigo Armando	0.008776
+Felipe Ariel	0.008776
+Julio Segundo	0.008776
+Luis Artemio	0.008775
+Cristóbal Ignacio	0.008775
+Felipe Rodrigo	0.008775
+Adonys	0.008774
+Segundo Alejandro	0.008773
+Adolfo Eduardo	0.008773
+Manuel Javier	0.008773
+Carlos Abraham	0.008772
+Lorenzo Enrique	0.008771
+Gonzalo Hernan	0.008771
+Aldo Patricio	0.008771
+Beenja	0.008770
+Erwin Eduardo	0.008770
+Ipechi	0.008769
+Bastián Ignacio	0.008767
+Leonardo Alfonso	0.008765
+Marcelo Ernesto	0.008765
+Viejito	0.008764
+Marco Eduardo	0.008762
+Patrich	0.008761
+Mauricio Leonardo	0.008760
+Robertoo	0.008760
+Cristian Danilo	0.008759
+Jaime Felipe	0.008759
+Edgardo Alexis	0.008759
+Eduardo Elias	0.008758
+Benjamín Antonio	0.008756
+Erick Alexis	0.008755
+Andrus	0.008753
+Vicencio	0.008751
+Cristian Camilo	0.008751
+Rodrigo Osvaldo	0.008750
+Humberto Patricio	0.008749
+Marioantonio	0.008748
+Cesar Guillermo	0.008748
+Alexis Manuel	0.008747
+Leonardo Andrés	0.008747
+Rodolfo Hernan	0.008746
+Ismael Eduardo	0.008745
+Brayan Antonio	0.008745
+Dagoberto Antonio	0.008744
+Ricardo Cristian	0.008744
+Nathu	0.008743
+Mitho	0.008743
+Shofi	0.008743
+Michael Angelo	0.008742
+Tolo	0.008742
+Gasper	0.008741
+Coli	0.008741
+Kuka	0.008740
+Noc	0.008740
+Topi	0.008740
+Uka	0.008739
+Oraldo	0.008739
+Hito	0.008738
+Ernes	0.008738
+Eriks	0.008737
+Armado	0.008737
+Barbershop	0.008735
+Bernaldo	0.008735
+Elius	0.008734
+Eneas	0.008734
+Agust	0.008733
+Faze	0.008733
+Asdasd	0.008732
+Pica	0.008731
+Delvis	0.008731
+Juvenil	0.008730
+Arol	0.008730
+Berardo	0.008729
+Iptv	0.008729
+Ketu	0.008729
+Ermo	0.008728
+Anold	0.008728
+Falco	0.008727
+Delson	0.008726
+Apolinario	0.008725
+Julinho	0.008725
+Nildo	0.008725
+José Luís	0.008724
+Varela	0.008724
+Fernando José	0.008723
+Sombra	0.008722
+Hermen	0.008722
+Miguell	0.008722
+Genito	0.008721
+Ruca	0.008721
+Elisee	0.008720
+Carlos José	0.008720
+Tuca	0.008720
+Aristoteles	0.008719
+Jonatha	0.008719
+Antonio Luis	0.008718
+Nelson Jose	0.008718
+Janio	0.008717
+Maximiano	0.008717
+Gamboa	0.008717
+Alberto Carlos	0.008716
+Manuel Carlos	0.008716
+Vicente Francisco	0.008715
+Zacharie	0.008715
+Herson	0.008714
+Jetro	0.008713
+Paulo César	0.008713
+Pena	0.008712
+José Osvaldo	0.008711
+Francisco Alfredo	0.008711
+Paraiso	0.008710
+Samuel Francisco	0.008710
+Mario Manuel	0.008710
+Nelson Miguel	0.008709
+Wilson Alfredo	0.008709
+Elias Fernando	0.008708
+Jaiime	0.008707
+Luís Alberto	0.008707
+Prophete	0.008705
+Pedroantonio	0.008704
+Pdro	0.008704
+Freedy	0.008703
+Jefte	0.008703
+Jodel	0.008702
+José Santos	0.008702
+Iverson	0.008701
+José Abel	0.008701
+Manual	0.008701
+Kimba	0.008700
+Meneses	0.008700
+Leónidas	0.008699
+Manuel Adolfo	0.008699
+Armando Jose	0.008698
+Mauro Antonio	0.008698
+Orlando Jose	0.008697
+Claudio Osvaldo	0.008696
+Elias Alberto	0.008696
+Josė	0.008695
+Welder	0.008694
+Minino	0.008694
+Miguel Ernesto	0.008694
+Julio Jose	0.008693
+Herberth	0.008693
+Wilfride	0.008692
+Àlvaro	0.008692
+Jorge Jose	0.008692
+Fernando Gabriel	0.008691
+Motta	0.008691
+Zamorano	0.008691
+García	0.008690
+Checo	0.008689
+Chuma	0.008689
+Quintana	0.008688
+Pelado	0.008685
+Sergio Gustavo	0.008685
+Eel	0.008684
+Daniel Omar	0.008684
+Pichi	0.008683
+Mayco	0.008683
+Cayetano	0.008683
+Damii	0.008682
+Enano	0.008681
+Pablo Gabriel	0.008681
+Estudio	0.008680
+Flia	0.008679
+Guillermo Daniel	0.008679
+Enzoo	0.008678
+Hugo Ricardo	0.008677
+Diego Gabriel	0.008677
+Angel Alberto	0.008676
+Carlos Martin	0.008676
+Chuki	0.008675
+Morocho	0.008675
+Ricardo Ariel	0.008674
+Hugo Roberto	0.008674
+Alejandro Gabriel	0.008673
+Coki	0.008672
+Martincho	0.008672
+Hugo Luis	0.008670
+Pichu	0.008670
+Juanramon	0.008669
+Delfor	0.008668
+Cabeza	0.008668
+Luchoo	0.008668
+Eduardo Gabriel	0.008667
+Chipi	0.008667
+Julio Daniel	0.008666
+Alejandro Fabian	0.008665
+Claudio Gabriel	0.008664
+Roberto Fabian	0.008662
+Carlos Damian	0.008660
+Eduardo Miguel	0.008659
+Hugo Jose	0.008658
+Luis Martin	0.008657
+Emigdio	0.008657
+Carlos Hector	0.008656
+Diego Luis	0.008656
+Frankoo	0.008656
+Eduardo Ariel	0.008655
+Oscar Jose	0.008654
+Casiano	0.008652
+Eduardo Raul	0.008651
+Armando Esteban	0.008651
+Mario Omar	0.008651
+Hector Jorge	0.008650
+Jose Horacio	0.008649
+Jeremia	0.008649
+Leandro Javier	0.008648
+Hector Adrian	0.008648
+Oscar Mario	0.008648
+Claudio Luis	0.008647
+Cesar Hugo	0.008647
+Ariel Hernan	0.008646
+Diego Jose	0.008646
+Fernando Fabian	0.008645
+Jorge Abel	0.008645
+Cesar Gustavo	0.008645
+Primitivo	0.008644
+Un Tal	0.008644
+Ramon Alfredo	0.008644
+Domingo Alberto	0.008643
+Diego Maximiliano	0.008642
+Alfredo Jose	0.008642
+Eliodoro	0.008641
+Hector Gustavo	0.008640
+Mario Miguel	0.008640
+Alejandro Ariel	0.008640
+Betoo	0.008639
+Poroto	0.008639
+Hugo Victor	0.008639
+Venito	0.008638
+Neyen	0.008638
+Edgardo Javier	0.008637
+Alejandro Omar	0.008636
+Raul Jose	0.008636
+Javier Omar	0.008635
+Hector Rodolfo	0.008635
+Gabriel Marcelo	0.008634
+Alfredo Luis	0.008634
+Flaminio	0.008633
+Ernesto Jose	0.008633
+Compraventa	0.008632
+Coky	0.008631
+Apolinar	0.008631
+Damian Alejandro	0.008631
+Héctor Luis	0.008630
+Rodolfo Eduardo	0.008630
+Vallejos	0.008629
+Claudio Miguel	0.008629
+Carliitos	0.008629
+Juan Matias	0.008628
+Carlos Edgardo	0.008628
+Marcelo A	0.008627
+Leitho	0.008627
+Fabrisio	0.008627
+Fulanito	0.008626
+Guillermo Jose	0.008625
+Pedro Gabriel	0.008625
+Leandroo	0.008625
+Nelson Ariel	0.008624
+Peto	0.008623
+Alexii	0.008623
+Victor Gustavo	0.008622
+Sebastian Ariel	0.008621
+Marcos Sebastian	0.008621
+Eduardo Adrian	0.008620
+Cergio	0.008619
+Roberto David	0.008619
+Migue Angel	0.008619
+Rodolfo Alberto	0.008618
+Avalos	0.008618
+Gonzaloo	0.008617
+Sergio Hernán	0.008617
+Eduardo Emilio	0.008617
+Digno	0.008616
+Diegi	0.008616
+Sergio Hugo	0.008616
+Mario Ariel	0.008615
+Ramon Ernesto	0.008614
+Sentimiento	0.008613
+Secundino	0.008613
+Libre	0.008612
+Ramon Orlando	0.008612
+Exekiel	0.008612
+Julioo	0.008611
+Amalio	0.008610
+Ramòn	0.008610
+Ramom	0.008609
+Melanio	0.008609
+Hetor	0.008609
+Beimar	0.008608
+Máximiliano	0.008607
+Jorge Agustin	0.008606
+Sergio Mario	0.008606
+Oscar Rafael	0.008605
+Cesar Orlando	0.008605
+Victor Angel	0.008605
+Inmobiliaria	0.008604
+Cesar Alfredo	0.008603
+Nestor Alejandro	0.008603
+Noche	0.008602
+Enrique Jose	0.008602
+Pedro Gustavo	0.008602
+Martín Alejandro	0.008602
+Esteban David	0.008601
+Javir	0.008600
+Demián	0.008600
+Cabezon	0.008599
+Gordito	0.008599
+Copa	0.008597
+Pedro Eugenio	0.008597
+Alberto Javier	0.008596
+Luis M	0.008596
+Hector Nicolas	0.008596
+Alejandro Roberto	0.008595
+Carlos Tomas	0.008595
+Juanki	0.008594
+Aldo Javier	0.008594
+Mariano Andres	0.008593
+Payo	0.008593
+Enrique Osvaldo	0.008593
+Abel Eduardo	0.008592
+Julio Luis	0.008592
+Johe	0.008591
+Osva	0.008590
+Marcelo Anibal	0.008590
+Gonzalo Nicolas	0.008589
+Hugito	0.008589
+Fredyy	0.008588
+Rodigo	0.008588
+Dario Andres	0.008587
+Palermo	0.008587
+Ciudad	0.008585
+Gustavo Andrés	0.008585
+Juan Augusto	0.008585
+Martí	0.008584
+David Ariel	0.008584
+Mario Agustin	0.008583
+Pedro Anibal	0.008583
+Jose Diego	0.008583
+Arieel	0.008582
+Ramon Francisco	0.008582
+Eliaz	0.008581
+Pablo Juan	0.008580
+Juan Adrian	0.008579
+Mauricio Gabriel	0.008578
+Juan E	0.008578
+Selso	0.008577
+Juanky	0.008577
+Mario Rafael	0.008577
+Namaste	0.008576
+Gestion	0.008576
+David Javier	0.008575
+Nuestro	0.008575
+Dabid	0.008575
+Jaim	0.008574
+Grober	0.008574
+Palacio	0.008573
+Gerardo Javier	0.008572
+Mauricio Jose	0.008572
+Gille	0.008571
+Redes	0.008571
+Telas	0.008571
+Carloa	0.008571
+Maquinas	0.008570
+Juan F	0.008570
+Herctor	0.008569
+Zenón	0.008569
+Jonathan Ariel	0.008568
+Gonzalo Daniel	0.008567
+Esteban Gabriel	0.008567
+Sergio Sebastian	0.008566
+Carlos Raúl	0.008566
+Emprendimiento	0.008566
+Fraanco	0.008565
+Antonio Javier	0.008565
+Ramon Humberto	0.008565
+Berno	0.008564
+Felix Alberto	0.008563
+Pedri	0.008562
+Jose Cesar	0.008562
+Medicina	0.008561
+Escuelita	0.008561
+Carnicería	0.008561
+Jorge Luciano	0.008560
+Oscar Emilio	0.008560
+Jonathan Daniel	0.008559
+Cholito	0.008559
+Mauro Alejandro	0.008559
+Franco Sebastian	0.008557
+Juuan	0.008557
+Vikingo	0.008557
+Montoya	0.008556
+Álvarez	0.008556
+Marton	0.008555
+Nicolas Ariel	0.008554
+Angel Francisco	0.008554
+Zenobio	0.008554
+David Exequiel	0.008553
+Juan Simon	0.008553
+Nyko	0.008552
+Manantial	0.008552
+Lagarto	0.008552
+Luus	0.008551
+Armando Javier	0.008551
+Samael	0.008550
+Ponciano	0.008549
+Claudio Guillermo	0.008548
+Alejandro Rafael	0.008547
+Naacho	0.008547
+Hosteria	0.008547
+Matias Ivan	0.008546
+Alver	0.008546
+Sergio Jesus	0.008545
+Tomas Alberto	0.008545
+Nelson Gustavo	0.008545
+Elias Daniel	0.008544
+Xavii	0.008544
+Rafael Jose	0.008544
+Gabriel Jose	0.008543
+Nachiito	0.008543
+Bigote	0.008543
+Gabriel David	0.008542
+José Ramon	0.008542
+Sebastian Matias	0.008541
+San Juan	0.008540
+Roberto Nicolas	0.008540
+Contruccion	0.008539
+Julio Rene	0.008539
+Elmata	0.008538
+Alarmas	0.008537
+Yhoel	0.008536
+Peluche	0.008536
+Barbería	0.008536
+Brandom	0.008535
+Nicomedes	0.008535
+Eriick	0.008535
+Marcos Fabian	0.008535
+Alexis Nicolas	0.008533
+Sergio Rene	0.008532
+Javier Gonzalo	0.008532
+Jorge Washington	0.008532
+Hernàn	0.008531
+Sexto	0.008531
+Jehova	0.008531
+Cyc	0.008531
+Yop	0.008529
+Pierino	0.008529
+Pedro Nicolas	0.008528
+Luccas	0.008528
+Jse	0.008527
+Miguel Armando	0.008526
+Gustavo Hernan	0.008526
+Diego Gonzalo	0.008526
+Hernan David	0.008525
+Enrique Alfredo	0.008525
+Anibal Alejandro	0.008524
+Buscando	0.008523
+Cocho	0.008523
+Totito	0.008522
+Cesar Armando	0.008522
+Julio David	0.008521
+Espinosa	0.008521
+Pedro Adrian	0.008520
+Abdón	0.008520
+Clsudio	0.008519
+Victor Roberto	0.008519
+Joaqin	0.008517
+Unidad	0.008516
+Lluis	0.008516
+Guillermo Ernesto	0.008515
+Fuego	0.008515
+Fornite	0.008513
+Iaan	0.008513
+Cordero	0.008513
+Septimo	0.008512
+Nicolad	0.008512
+La Esquina	0.008512
+Victor Ernesto	0.008511
+Gaston Andres	0.008511
+Mesias	0.008510
+Luiscarlos	0.008510
+Vecinos	0.008509
+Kairos	0.008509
+Perci	0.008508
+Montes	0.008508
+Agustino	0.008508
+Luis Victor	0.008507
+Huerta	0.008507
+Mayko	0.008506
+Manuel Raul	0.008505
+Santiago Eduardo	0.008505
+Ingeniero	0.008505
+Mario Rene	0.008505
+Francisco Ricardo	0.008504
+Ivan Nicolas	0.008504
+Museo	0.008504
+Pedro Cesar	0.008503
+Drako	0.008502
+Jose Maximiliano	0.008502
+Maio	0.008502
+Joseeduardo	0.008501
+Chapo	0.008501
+Fermando	0.008500
+Ricardo Adolfo	0.008500
+Diiegoo	0.008500
+Javierr	0.008499
+Miguel Omar	0.008498
+Kenai	0.008497
+Cachorro	0.008497
+Emilio Javier	0.008497
+Lalin	0.008496
+Jorge Gerardo	0.008496
+Santiago Alejandro	0.008496
+Carlos M	0.008495
+Francisco Guillermo	0.008494
+Valo	0.008494
+Fabían	0.008494
+Coaching	0.008493
+Suplementos	0.008493
+Jesus Miguel	0.008492
+Fierro	0.008491
+Esteban Ariel	0.008490
+Ivan David	0.008490
+Fuerza	0.008489
+Francisco Raul	0.008488
+Oscar Carlos	0.008488
+Maxis	0.008487
+Luis Maximiliano	0.008487
+Cesar Gonzalo	0.008486
+David Osvaldo	0.008486
+Oscar Sebastian	0.008485
+Angel Fernando	0.008485
+Luis Americo	0.008484
+Nelson Sebastian	0.008483
+Alfredo Andres	0.008483
+Rimber	0.008483
+Daniel Eugenio	0.008482
+Encuentros	0.008482
+Nicolas Daniel	0.008481
+Pastores	0.008481
+Sebastiam	0.008479
+Joel David	0.008479
+Merino	0.008478
+Luisalejandro	0.008478
+Julio Guillermo	0.008478
+Aventura	0.008477
+Arevalo	0.008477
+Oscar Vicente	0.008476
+Victor H	0.008476
+Javier Alfredo	0.008475
+Blass	0.008475
+Víctor Miguel	0.008474
+Carreras	0.008473
+Jorge Americo	0.008473
+Raul David	0.008473
+Ian Franco	0.008472
+Marcelo Jesus	0.008472
+Alejandro Cristian	0.008471
+Jonatán	0.008470
+Daniel Matias	0.008470
+Antonio Juan	0.008470
+Héctor Javier	0.008469
+Artu	0.008469
+Andres Pablo	0.008469
+Emilio Alberto	0.008468
+Willan	0.008468
+Juan Benjamin	0.008468
+Altamirano	0.008468
+Miguel Leonardo	0.008467
+Pablo Alfredo	0.008467
+Bruno Antonio	0.008466
+Alveiro	0.008466
+Jise	0.008466
+Jesus Rafael	0.008465
+Juan Eliseo	0.008465
+Reinerio	0.008464
+Paoli	0.008463
+Csr	0.008463
+Jirge	0.008463
+Fabian Alfredo	0.008462
+Raul Luis	0.008462
+Enrique Manuel	0.008462
+Juan Maximiliano	0.008461
+Fabiann	0.008461
+Martin Esteban	0.008461
+Gabriel Ernesto	0.008460
+Ramon Ignacio	0.008460
+Rumualdo	0.008459
+Fernando Emilio	0.008457
+Gerardo Jose	0.008457
+Aldo Alejandro	0.008456
+Hernan Marcelo	0.008455
+Ignacio Matias	0.008455
+Luis Valentin	0.008455
+Renne	0.008454
+Osvaldito	0.008453
+Esteven	0.008452
+Luis Raúl	0.008452
+Ricardo Emilio	0.008452
+Cueros	0.008452
+Alejamdro	0.008451
+Pedro Ariel	0.008451
+Pedro Benjamin	0.008450
+Luuis	0.008450
+Mauricio David	0.008449
+Humberto Eduardo	0.008449
+Zvonimir	0.008448
+Senel	0.008448
+Heiner	0.008447
+Pension	0.008447
+Senat	0.008447
+Patrizio	0.008446
+Joci	0.008446
+Christiaan	0.008445
+Akito	0.008443
+Mario Alexander	0.008443
+Marcoo	0.008442
+Ignazio	0.008441
+Joes	0.008441
+Wille	0.008440
+Hanss	0.008440
+Eynar	0.008439
+Rafel	0.008439
+Elviz	0.008439
+Hoseok	0.008438
+Aros	0.008437
+Jean-Baptiste	0.008436
+Jean François	0.008436
+Eliott	0.008435
+Roderik	0.008434
+Rousseau	0.008433
+Karlito	0.008433
+Nitro	0.008431
+Sylvestre	0.008430
+Koala	0.008430
+Guilian	0.008429
+Jeanjean	0.008428
+Alexys	0.008428
+Jonathann	0.008427
+Badir	0.008427
+Janno	0.008426
+Franchesko	0.008425
+Lvan	0.008425
+Gumball	0.008424
+Christiam	0.008424
+Antares	0.008423
+Jovel	0.008423
+Nayen	0.008422
+Eustache	0.008422
+Angelus	0.008422
+Jean Poul	0.008421
+Nolbert	0.008420
+Romo	0.008419
+Anddy	0.008419
+Domo	0.008418
+Yans	0.008418
+Tazmania	0.008417
+Raptor	0.008417
+Carls	0.008416
+Zamora	0.008416
+Endry	0.008416
+Bryann	0.008415
+Erlan	0.008415
+Jhordy	0.008413
+Jhovani	0.008411
+Pacifico	0.008411
+Jhon Carlos	0.008411
+Rodriguito	0.008410
+Jenrry	0.008409
+J Daniel	0.008408
+Ronaldiño	0.008408
+Eberth	0.008408
+Jhosua	0.008407
+Jhovanny	0.008407
+Heberto	0.008407
+Jose Ramiro	0.008406
+Reyner	0.008406
+Delfín	0.008405
+Dilmer	0.008404
+Luis F	0.008402
+Luis Ramiro	0.008400
+Jossue	0.008400
+Cesarito	0.008400
+Eddu	0.008399
+Yhoan	0.008399
+Raciel	0.008397
+Josecarlos	0.008396
+J Miguel	0.008395
+Deiner	0.008394
+Adolfito	0.008393
+Cesarin	0.008393
+Erick Daniel	0.008392
+Richad	0.008392
+Jamer	0.008392
+Eudis	0.008392
+Neptali	0.008391
+Jassiel	0.008391
+Jhon Henry	0.008390
+Nielsen	0.008389
+Luis Albert	0.008389
+Alvaro Daniel	0.008388
+Yoset	0.008388
+Rene Luis	0.008387
+Gerzon	0.008387
+Heraclio	0.008386
+Elíseo	0.008386
+Jose Marco	0.008386
+Juan Jesús	0.008385
+Reivaj	0.008385
+Jhon Anderson	0.008385
+Missael	0.008384
+Atiliano	0.008383
+Fabiancito	0.008381
+Paul Andres	0.008381
+Jose Richard	0.008381
+Jaciel	0.008381
+Keiner	0.008380
+Raulin	0.008380
+Yerry	0.008380
+Jhostyn	0.008379
+Abraam	0.008379
+Jeziel	0.008378
+Alexader	0.008377
+Darck	0.008377
+Alvaro David	0.008377
+Jorge L	0.008376
+Edgar Antonio	0.008376
+Jesus Alfredo	0.008376
+Jhonjairo	0.008375
+Rompe	0.008375
+Freddy Alberto	0.008374
+Elvys	0.008374
+Luisao	0.008374
+Juan Benito	0.008374
+Nolber	0.008373
+Luigy	0.008373
+Alex Omar	0.008373
+David Israel	0.008372
+Perdro	0.008371
+Yoany	0.008371
+Erwing	0.008371
+Imprenta	0.008371
+M Antonio	0.008370
+Luis J	0.008370
+Crhis	0.008369
+Pabliño	0.008369
+Antonio Marco	0.008369
+Alex Gabriel	0.008368
+Leoncito	0.008368
+Gersson	0.008367
+Rosmer	0.008367
+Yerman	0.008367
+Milito	0.008365
+Nilsen	0.008365
+Jaiver	0.008364
+Manases	0.008364
+Alvaro Gabriel	0.008363
+Yancarlos	0.008362
+Icaro	0.008362
+Sotero	0.008362
+Corona	0.008362
+Sneider	0.008361
+Bartolomé	0.008361
+Octabio	0.008360
+Chelin	0.008360
+Giomar	0.008359
+Jaret	0.008359
+Yoshiro	0.008358
+Thedonato	0.008358
+Arthuro	0.008357
+J Eduardo	0.008355
+Benavides	0.008355
+Odracir	0.008355
+J Alejandro	0.008354
+Gladimir	0.008353
+Carlos Joaquin	0.008353
+Sharim	0.008352
+Miguel Rodrigo	0.008352
+Arlex	0.008351
+Esneider	0.008351
+Fernanado	0.008350
+Alex Alfredo	0.008350
+Deibis	0.008349
+Edw	0.008348
+Alex Cristian	0.008348
+Kenay	0.008347
+Ivan Orlando	0.008347
+Felipe Luis	0.008346
+Yayito	0.008346
+Yerkito	0.008345
+Jose Edmundo	0.008345
+Vásquez	0.008344
+Elisardo	0.008344
+Jesus Alexander	0.008344
+Wilso	0.008343
+Adonias	0.008342
+Harly	0.008342
+Morenito	0.008341
+Trebol	0.008341
+Jose Joel	0.008341
+Wuilfredo	0.008340
+Alvaro Jesus	0.008340
+Sicario	0.008339
+Pelon	0.008339
+David Manuel	0.008339
+Javier Armando	0.008339
+Vctor	0.008338
+Isais	0.008338
+Jeyko	0.008337
+Eddison	0.008336
+Khriz	0.008335
+Pedro Gonzalo	0.008335
+Leider	0.008335
+Victhor	0.008334
+Chamaquito	0.008333
+Eythan	0.008332
+Yordin	0.008332
+José Ivan	0.008332
+Darwuin	0.008330
+Alexanders	0.008329
+Dalessandro	0.008328
+Desbloqueame	0.008328
+Victor Joel	0.008327
+J C	0.008327
+Xavy	0.008327
+Miguel Alexander	0.008326
+Cristhian Andres	0.008326
+Jhonny Alejandro	0.008325
+Boris Fernando	0.008325
+Alvar	0.008324
+Rodrigo Miguel	0.008324
+Nelsón	0.008324
+Jose Valentin	0.008324
+Jaime Rene	0.008322
+Carlos Jaime	0.008322
+Andronico	0.008321
+Victor Juan	0.008321
+Jaime Rafael	0.008321
+Jose Santo	0.008321
+Terrenos	0.008320
+Const	0.008320
+Juan Samuel	0.008319
+Brayan Alexander	0.008319
+Nelson Marcelo	0.008319
+Joae	0.008318
+Osmin	0.008317
+Jean Lucas	0.008317
+Pablo Arturo	0.008316
+Pasto	0.008316
+Angel Hernan	0.008315
+Piolin	0.008314
+Ivan Javier	0.008314
+Omero	0.008314
+Maurio	0.008313
+Leche	0.008313
+Nelson Raul	0.008312
+Jose Ygnacio	0.008312
+Tenis	0.008312
+Moroni	0.008311
+Freddy Enrique	0.008311
+Victir	0.008311
+Arellano	0.008310
+Khriss	0.008309
+Edgar Alejandro	0.008309
+Abimelec	0.008308
+Reinel	0.008307
+Dannys	0.008306
+Bryans	0.008306
+Rotceh	0.008305
+Agenor	0.008305
+Welinton	0.008305
+Joab	0.008304
+Robison	0.008304
+Jaisson	0.008303
+Franscisco	0.008302
+Osny	0.008301
+Marcos Felipe	0.008301
+Emersson	0.008299
+Gian Carlos	0.008299
+Marcos Rodrigo	0.008298
+Janier	0.008297
+Jefer	0.008295
+José Reinaldo	0.008294
+Reinado	0.008294
+Wilderson	0.008293
+Polako	0.008293
+Marcelus	0.008291
+Erasmo Carlos	0.008291
+Jeean	0.008290
+Jullian	0.008290
+Francisco Rafael	0.008290
+Joseh	0.008289
+Naiko	0.008289
+Rude	0.008289
+Willington	0.008288
+Dios	0.008288
+Justyn	0.008287
+Daylan	0.008286
+Mirto	0.008284
+Giglio	0.008283
+Leunam	0.008283
+Manlio	0.008283
+Faniel	0.008282
+Perkin	0.008281
+Patricio Miguel	0.008280
+Luis Abelardo	0.008280
+Alonso Esteban	0.008279
+Julian Ignacio	0.008279
+Sergioantonio	0.008278
+Hellmuth	0.008278
+Felipe Tomas	0.008277
+Keiber	0.008277
+Pipex	0.008276
+Valcin	0.008276
+Nixo	0.008276
+Vicente Benjamin	0.008275
+Dantte	0.008275
+Kabro	0.008274
+Jodelin	0.008274
+Mardones	0.008274
+Juacko	0.008273
+Vulca	0.008272
+Patricio Del Carmen	0.008272
+Nickenson	0.008271
+Claudio Rene	0.008270
+Cantave	0.008270
+Salnave	0.008269
+Riggo	0.008269
+Cajuste	0.008269
+Domini	0.008268
+Fredy Hernan	0.008267
+Hector Arturo	0.008267
+Jose Aladino	0.008267
+Duckenson	0.008266
+Clandestino	0.008266
+Eduardo Armando	0.008265
+Cesar Leonardo	0.008265
+Seleccion	0.008264
+Cristobal Alexis	0.008264
+Kevin Matias	0.008263
+Cristián Andres	0.008262
+Sebitaa	0.008262
+Wilnick	0.008262
+Estiverne	0.008261
+Sebastian Marcelo	0.008261
+Postas	0.008260
+Ckarlos	0.008259
+Mauricio A	0.008259
+Janitho	0.008259
+Andres Guillermo	0.008258
+Tomas Enrique	0.008258
+Cerda	0.008257
+Sainvil	0.008256
+Wilson Hernan	0.008256
+Janoo	0.008256
+Angelo Alejandro	0.008254
+Hector Bernardo	0.008254
+Cristoobal	0.008253
+Rodrigo Adolfo	0.008253
+Jaavier	0.008252
+Anibal Antonio	0.008252
+Bryan Esteban	0.008252
+Roosvelt	0.008251
+Alexander Javier	0.008250
+Bastían	0.008250
+Jonathan Jose	0.008249
+Cesar Emilio	0.008249
+Inversiones	0.008249
+Isaul	0.008248
+Erick Eduardo	0.008247
+Luis Isaac	0.008246
+Claudio Alonso	0.008246
+Danilo Alberto	0.008246
+Cristian Leandro	0.008245
+Camion	0.008244
+Luis Angelo	0.008243
+Richard Fabian	0.008243
+Jaime Miguel	0.008242
+Johan Andres	0.008241
+Míchel	0.008241
+Constructor	0.008240
+Hector Samuel	0.008240
+Andres Segundo	0.008239
+Sergio Domingo	0.008239
+Paulo Alejandro	0.008239
+Senatus	0.008238
+Johandry	0.008238
+Amaroo	0.008238
+Jose Amador	0.008235
+Joaking	0.008234
+Cotito	0.008234
+Oxiel	0.008234
+Andres Claudio	0.008233
+Rood	0.008233
+Wence	0.008233
+Alcius	0.008232
+Duckens	0.008232
+Otro	0.008232
+Atricio	0.008231
+Joaquìn	0.008231
+Shicko	0.008230
+Salvador Enrique	0.008229
+Hernan Guillermo	0.008228
+Ramiro Antonio	0.008227
+Benjamín Andres	0.008227
+Ferran	0.008226
+Patagon	0.008226
+Cristian Rene	0.008226
+Luccene	0.008224
+Bodeguita	0.008223
+Danyelo	0.008223
+Matias Ricardo	0.008222
+Camilo Sebastian	0.008222
+Mario Elias	0.008221
+Cerro	0.008221
+Nikenson	0.008220
+Hector Vicente	0.008220
+Magallanes	0.008219
+Jaramillo	0.008219
+Waton	0.008219
+Lovensky	0.008218
+Francique	0.008218
+Ís	0.008218
+Osvaldo Alexis	0.008217
+Brayan Nicolas	0.008217
+Richard Alexander	0.008216
+Alex Matias	0.008215
+Ardilla	0.008213
+Manuel Sebastian	0.008212
+Diego Nicolás	0.008211
+Leonel Patricio	0.008211
+Matias Cristobal	0.008211
+Estteban	0.008210
+Patricio Elias	0.008209
+Ismael Esteban	0.008209
+Carlos Carlos	0.008209
+Ignacio Jose	0.008208
+Cristián Eduardo	0.008207
+Heriberto Antonio	0.008207
+Gabriel Humberto	0.008206
+Pedro Isaac	0.008206
+Felipe Maximiliano	0.008206
+Victor Alex	0.008205
+Damian Antonio	0.008204
+Moises Alberto	0.008204
+Blopa	0.008203
+Tomacho	0.008203
+Exzequiel	0.008202
+Yariel	0.008201
+Humberto Segundo	0.008200
+Luis Jonathan	0.008200
+Maximiliano Enrique	0.008200
+Cristian Samuel	0.008199
+Fernando Alex	0.008199
+Angelo Marcelo	0.008198
+Robert Alexis	0.008198
+Hernan Fernando	0.008197
+Patricio Ariel	0.008197
+Luis Eladio	0.008196
+Sebastian Alfredo	0.008196
+Wilson Enrique	0.008196
+Eugenio Andres	0.008195
+Christopher Alexander	0.008195
+Concejal	0.008195
+Ismael Enrique	0.008195
+Juan Rigoberto	0.008194
+Andres Alfredo	0.008194
+Leonel Alberto	0.008194
+Mauricio Alexander	0.008193
+Ignacio A	0.008193
+Taxis	0.008192
+Fernando Humberto	0.008192
+Nibaldo Enrique	0.008191
+Carlos Iván	0.008191
+Mario Enrrique	0.008190
+Baldovino	0.008190
+Jose Marcelino	0.008189
+Jonathan Luis	0.008189
+Esteban Marcelo	0.008189
+Agustin Antonio	0.008188
+Leonardo Ignacio	0.008188
+Francisco Rodrigo	0.008187
+Agustin Eduardo	0.008187
+Ruben Elias	0.008185
+Ronald Alejandro	0.008185
+Rene Ivan	0.008184
+Carlos Enriques	0.008184
+Jose Gaston	0.008183
+Anglade	0.008182
+Eliphete	0.008182
+Rafael Orlando	0.008182
+Waldo Andres	0.008182
+Cristopher Nicolas	0.008181
+Alex Nicolas	0.008181
+Patricio Alexander	0.008180
+Jeiko	0.008180
+Epilef	0.008179
+Talca	0.008179
+John Mauricio	0.008178
+Jeaan	0.008178
+Raúl Esteban	0.008177
+Louima	0.008177
+Brian Alexander	0.008177
+Iván Antonio	0.008176
+Mario Jaime	0.008176
+Clash Royale	0.008175
+Jonathan Sebastian	0.008175
+Ceviche	0.008174
+Riffo	0.008174
+Isaias Alejandro	0.008172
+Manuel Marcelo	0.008172
+Laguna	0.008171
+Nelson Orlando	0.008171
+Erwuin	0.008169
+Danilo Alexis	0.008169
+Jean Ronel	0.008168
+Davinson	0.008168
+Wilhem	0.008167
+Junito	0.008167
+Jeiner	0.008166
+Entretenimientos	0.008166
+Atis	0.008166
+Guillermo Mauricio	0.008165
+Ruben Marco	0.008165
+Jorge Koke	0.008165
+Osvaldo Segundo	0.008164
+Metellus	0.008164
+Boris Rodrigo	0.008164
+Manuel Rene	0.008163
+Williams Andres	0.008163
+Erick Antonio	0.008163
+Fransisco Javier	0.008162
+Rosnel	0.008162
+Daniel Octavio	0.008161
+Benjamín Andrés	0.008161
+Vicentte	0.008161
+Benjamin Vicente	0.008161
+Vitalicio	0.008160
+Yiordano	0.008160
+Mikelson	0.008160
+Dukenson	0.008159
+Sandier	0.008158
+Bandido	0.008158
+Nelson Alfredo	0.008158
+Luis Aberto	0.008157
+Gabriel Ricardo	0.008157
+Ruben Esteban	0.008157
+Joel Ignacio	0.008156
+Raúl Andrés	0.008156
+Tofer	0.008156
+Lorvens	0.008155
+Yoandry	0.008155
+Jochua	0.008155
+Mallas	0.008155
+Leo Andres	0.008154
+Leftraru	0.008154
+Oscar Matias	0.008154
+Luis Nibaldo	0.008153
+Edens	0.008153
+Hoka	0.008152
+Norbey	0.008152
+San Pedro	0.008151
+Rene Marcelo	0.008151
+Norambuena	0.008151
+Luis Samuel	0.008151
+Hans Alexis	0.008150
+Freddy Mauricio	0.008149
+Aduardo	0.008149
+Lesther	0.008148
+Héctor Rodrigo	0.008147
+Alejandro Emilio	0.008146
+Victor M	0.008146
+Vinilos	0.008145
+Jonnatan	0.008145
+Espartano	0.008145
+Oyarzun	0.008144
+Jonatan Andres	0.008144
+Leandro Alexis	0.008144
+Encargos	0.008142
+Etiel	0.008142
+Abraham Antonio	0.008141
+Gerardo Alexis	0.008140
+Dagoberto Enrique	0.008139
+Julner	0.008139
+Eduardo Lalo	0.008138
+Matias Alfonso	0.008138
+Mauricio Roberto	0.008137
+Arepas	0.008137
+Cheno	0.008136
+Christhofer	0.008136
+Hernan Humberto	0.008135
+Kevin Eduardo	0.008135
+Eric Fernando	0.008134
+Esteban Francisco	0.008134
+Xeo	0.008134
+Ulises Alejandro	0.008133
+Energia	0.008132
+Jjuan	0.008131
+Isaac Jacob	0.008131
+Juan Abelardo	0.008131
+Abel Enrique	0.008130
+Duver	0.008130
+Cristobal Francisco	0.008130
+Dieusibon	0.008129
+Jesus Esteban	0.008128
+Phanel	0.008128
+Crustian	0.008127
+Normil	0.008127
+Jeanrenel	0.008127
+Judelin	0.008126
+Estimable	0.008125
+Anllelo	0.008125
+Vilner	0.008125
+Khristopher	0.008124
+Verdieu	0.008123
+Huguens	0.008123
+Roberto Arturo	0.008122
+Osses	0.008121
+Brayans	0.008121
+Bruno Ignacio	0.008121
+Kco	0.008120
+Chame	0.008120
+Moises Enrique	0.008120
+Marcial Antonio	0.008119
+Marambio	0.008118
+Mahicol	0.008118
+Samuel Segundo	0.008117
+Sca	0.008117
+Pablo Alexander	0.008117
+Denin	0.008116
+Fonocopete	0.008115
+Camilo Javier	0.008115
+Balter	0.008115
+Elias Esteban	0.008114
+Williams Antonio	0.008114
+Yoryo	0.008114
+Matatan	0.008113
+Jampi	0.008113
+Macca	0.008113
+Felipe Alexander	0.008112
+Germán Antonio	0.008112
+Mario Hernán	0.008111
+Fidel Antonio	0.008111
+Fernando Hernan	0.008110
+Sergio Ismael	0.008110
+Tucapel	0.008109
+Manuel Agustin	0.008109
+Fabian Mauricio	0.008109
+César Enrique	0.008108
+Ernesto Segundo	0.008108
+Alejandro Octavio	0.008107
+Herney	0.008106
+Victor Nicolas	0.008105
+Juankarlos	0.008105
+Jose Rogelio	0.008105
+Eduardoantonio	0.008105
+Luis Alfonzo	0.008104
+Leonardo Felipe	0.008104
+Paul Alexander	0.008103
+Teniente	0.008103
+José Octavio	0.008102
+Cristofer Ignacio	0.008102
+Impresos	0.008101
+German Esteban	0.008100
+Jorge Danilo	0.008100
+Petero	0.008099
+Armando Andres	0.008098
+Claudio Cristian	0.008098
+Pozos	0.008098
+Sergio Cristian	0.008097
+Yarka	0.008097
+Jesus Francisco	0.008097
+Ricardo Orlando	0.008096
+Arturo Javier	0.008096
+Carreño	0.008095
+Cristian M	0.008095
+Felipe Alfonso	0.008095
+Exclusivo	0.008093
+Patricio Hernán	0.008092
+Franchescoli	0.008091
+Ivan Ernesto	0.008090
+Marco Rodrigo	0.008090
+Camilin	0.008088
+Rene Segundo	0.008088
+Arturo Antonio	0.008088
+Ivan Alfredo	0.008087
+Hermosilla	0.008087
+Bastias	0.008086
+Esteeban	0.008085
+Exequiel Alejandro	0.008085
+Pedro Agustin	0.008083
+Roberto Claudio	0.008082
+Eduardo Cristian	0.008081
+Patricio Gerardo	0.008081
+Diego Arturo	0.008080
+Alex Felipe	0.008079
+Mario Adolfo	0.008079
+Eddio	0.008078
+Edgardo Patricio	0.008077
+Alberto Segundo	0.008075
+Luis Nolberto	0.008075
+Reynel	0.008074
+Dylan Alexander	0.008074
+Wilson Alexis	0.008074
+Sebitta	0.008073
+Angelo Javier	0.008072
+Daniel Abraham	0.008072
+Petit Frere	0.008071
+Jodany	0.008071
+Uzziel	0.008071
+Gabriel Arturo	0.008071
+Paulo Andrés	0.008070
+Loveson	0.008070
+Marc Arthur	0.008069
+Chilean	0.008068
+Christian Alexander	0.008067
+Josmer	0.008066
+Aire Acondicionado	0.008066
+Volantines	0.008065
+Cangri	0.008065
+Wesnel	0.008064
+Marcelo Orlando	0.008063
+Farmacias	0.008063
+Tatán	0.008062
+Jose Leopoldo	0.008062
+Ignacio Alexander	0.008061
+Alexis Alfredo	0.008061
+Anibal Ignacio	0.008060
+Rafael Arturo	0.008060
+Gatos	0.008059
+Angelitho	0.008059
+Jxanito	0.008057
+Luis Sebastián	0.008057
+Victor Alexander	0.008056
+Sebastian A	0.008055
+Feliipee	0.008055
+Jean Wilson	0.008055
+Basthy	0.008054
+Belfort	0.008054
+Pablo Segundo	0.008053
+Alan Antonio	0.008053
+Sebaastian	0.008052
+Yonnathan	0.008051
+Felix Mauricio	0.008051
+Jesú	0.008049
+Alan Ignacio	0.008049
+Giraldo	0.008046
+Osvaldo Hernan	0.008046
+Cristtian	0.008045
+Cesar Alexander	0.008045
+Cerveceria	0.008044
+Ivan Alonso	0.008044
+Salvador Antonio	0.008043
+Saitam	0.008042
+Jsjs	0.008042
+Juan Emiliano	0.008041
+Fonchi	0.008041
+Edras	0.008040
+Hernan Jose	0.008038
+Maureira	0.008037
+Osvaldo Francisco	0.008037
+Victor A	0.008037
+Cetoute	0.008037
+Alexis Jonathan	0.008036
+Hielos	0.008036
+Carlos Jonathan	0.008036
+Exequiel Andres	0.008035
+Mauriicio	0.008034
+Honorino	0.008034
+Juan Perez	0.008033
+Foodtruck	0.008032
+Enlace	0.008032
+Martin Jesus	0.008031
+Licores	0.008030
+Aliro Antonio	0.008030
+Jebus	0.008030
+Linco	0.008030
+Bestia	0.008029
+Aero	0.008028
+Louines	0.008028
+Joassaint	0.008027
+Patricio Carlos	0.008027
+Ckristian	0.008026
+Luiseduardo	0.008026
+David Salomon	0.008025
+Ignacio Jesus	0.008025
+Educación	0.008024
+Sëbä	0.008024
+Bendjy	0.008024
+Wilio	0.008023
+Bernardo Alejandro	0.008022
+Luis Gonzalez	0.008021
+Framcisco	0.008021
+Bernardo Hernan	0.008020
+Repuesto	0.008020
+Rayeen	0.008020
+Pekeño	0.008020
+Edgardo Alejandro	0.008018
+Nomade	0.008017
+Bnja	0.008017
+Luis Isaias	0.008017
+Yasiel	0.008017
+Andrex	0.008016
+Cristian Eugenio	0.008016
+Enzo Andres	0.008016
+Maestros	0.008015
+Gioco	0.008015
+Mitzio	0.008015
+M Ignacio	0.008014
+Cristoball	0.008014
+Angelo Alexis	0.008013
+Alexis Ricardo	0.008013
+Nelson Hugo	0.008013
+Jeampier	0.008012
+Fundo	0.008012
+Hornos	0.008011
+Hugo Mauricio	0.008010
+Maximiliano Antonio	0.008010
+Gps	0.008009
+Yanpier	0.008009
+Jhon Andres	0.008007
+Segismundo	0.008006
+Anggelo	0.008006
+Luishumberto	0.008005
+Alonsoo	0.008004
+Carlos Arnoldo	0.008004
+Paski	0.008003
+Alexis Leonardo	0.008003
+Brandon Andres	0.008002
+Cristobal Sebastian	0.008002
+Benjamin Rodrigo	0.008001
+Euguenio	0.008001
+Briones	0.008000
+Francisco Emilio	0.008000
+Michael Eduardo	0.008000
+Marco Andrés	0.007999
+Benjamin Isaac	0.007999
+Jesús Alejandro	0.007998
+Dubal	0.007997
+Obras Menores	0.007997
+Ethian	0.007997
+Ascencion	0.007997
+Placer	0.007996
+Benjamin Jesus	0.007996
+Patricio Roberto	0.007995
+Alex Orlando	0.007995
+J P	0.007995
+Ivan Elias	0.007994
+Patricio Francisco	0.007993
+Raúl Hernán	0.007993
+Richard Enrique	0.007992
+Cesaar	0.007991
+Robert Antonio	0.007991
+Puente	0.007990
+Bicicletas	0.007990
+John Eduardo	0.007989
+Jose G	0.007989
+Alonso Alejandro	0.007988
+Hectot	0.007988
+Jose Belarmino	0.007987
+Cofre	0.007987
+Nonito	0.007987
+Oscar Elias	0.007984
+Leandro Esteban	0.007984
+Elvis Antonio	0.007983
+Vladimir Alejandro	0.007983
+Octavio Alejandro	0.007982
+Nasslo	0.007982
+Nayar	0.007981
+Patricio Ismael	0.007980
+Tabaqueria	0.007979
+Patricio Luis	0.007979
+Manuel Salvador	0.007978
+J Francisco	0.007978
+Jpatricio	0.007978
+Christian Ivan	0.007977
+Juan Ulises	0.007977
+Audito	0.007976
+Victor Vicente	0.007975
+Elyan	0.007975
+Roberto Emilio	0.007974
+Jaime Eugenio	0.007973
+Joaquin Enrique	0.007972
+Enzo Enrique	0.007972
+Danix	0.007971
+Eduardo Humberto	0.007971
+Hector Ulises	0.007970
+Andrés Esteban	0.007970
+Santis	0.007970
+Chistopher	0.007969
+Alexis Ignacio	0.007968
+Rodrigo Alexi	0.007968
+J Patricio	0.007967
+Juan Gaston	0.007967
+Jhano	0.007967
+Marcos Andrés	0.007966
+Julio Orlando	0.007965
+Dumas	0.007965
+Arnaldo Antonio	0.007964
+Rafael Esteban	0.007964
+Andres Alonso	0.007964
+Ignacio Patricio	0.007963
+John Andres	0.007962
+Abraham Andres	0.007961
+Vicente Maximiliano	0.007960
+Aldo Mauricio	0.007959
+Fredy Alexis	0.007958
+Erwin Javier	0.007958
+Enzo Eduardo	0.007957
+Rafael Rodrigo	0.007957
+Andres Alexander	0.007955
+Cárdenas	0.007954
+John Alberto	0.007954
+Felipe Enrique	0.007954
+Jaime Armando	0.007953
+Eduardo Gonzalo	0.007953
+Miguel Eugenio	0.007952
+Hector Eugenio	0.007952
+Flavio Antonio	0.007951
+Exequiel Antonio	0.007951
+Marcelo Enrrique	0.007950
+Hugo Andrés	0.007948
+Maicol Antonio	0.007948
+Nunca	0.007947
+Victor German	0.007947
+Vicente Enrique	0.007945
+Robinson Marcelo	0.007944
+Osvaldo Esteban	0.007943
+Jorge Ulises	0.007942
+Delinx	0.007941
+Allende	0.007940
+Jorge Christian	0.007940
+Guitho	0.007939
+Jores	0.007939
+Vendidas	0.007938
+Jean Pool	0.007938
+Jose Avelino	0.007938
+Iván Andrés	0.007937
+Danilo Javier	0.007936
+Deninson	0.007936
+Sejour	0.007936
+Nicolas David	0.007935
+Guenson	0.007935
+Tomas Francisco	0.007934
+Gabriel Segundo	0.007933
+Dejavu	0.007933
+Jonathan Manuel	0.007932
+Cesar Felipe	0.007932
+Guerlin	0.007931
+Jorge Iván	0.007930
+Cherilus	0.007930
+Jamson	0.007929
+Vixtor	0.007929
+Dieunet	0.007928
+Hestor	0.007927
+Iván Ignacio	0.007927
+Franyer	0.007927
+Clervil	0.007926
+Sandino	0.007926
+Cristofer Alexander	0.007926
+Juansho	0.007926
+Davixo	0.007925
+Luis Lorenzo	0.007925
+Mauricio Rene	0.007924
+Cenel	0.007923
+Figuras	0.007923
+Lyonel	0.007923
+Freddy Alexander	0.007922
+Jean Evens	0.007921
+Hugo Segundo	0.007921
+Bernardo Patricio	0.007921
+Dieuner	0.007920
+Juan H	0.007920
+Adony	0.007920
+Hugo Nicolas	0.007919
+Manuelantonio	0.007919
+Brian Alexis	0.007919
+Jignacio	0.007918
+Aristil	0.007917
+Carlitoos	0.007917
+Odner	0.007916
+Animales	0.007916
+Jose Nolberto	0.007915
+Juan Fransisco	0.007915
+Ignacio Francisco	0.007915
+Sebaatian	0.007914
+Eliseo Antonio	0.007913
+Absalón	0.007913
+Vicente Esteban	0.007912
+Benjamin Maximiliano	0.007912
+Cajas	0.007912
+Josthin	0.007911
+Gualo	0.007910
+Lxchito	0.007910
+Joctan	0.007910
+Valito	0.007910
+Tablas	0.007909
+Franco Alonso	0.007909
+Victor Adolfo	0.007908
+Bastiàn	0.007908
+Mistral	0.007907
+Carlos Adan	0.007907
+Pechy	0.007907
+Jhoiner	0.007906
+Wilson Alberto	0.007906
+Damian Ignacio	0.007906
+Rodolfo Alexis	0.007905
+Elias Mauricio	0.007905
+José Segundo	0.007904
+Andres Humberto	0.007904
+C Andres	0.007904
+Olando	0.007903
+Pancho Javier	0.007903
+Abel Esteban	0.007902
+Pablo Abraham	0.007901
+Felipe A	0.007901
+Christian Gonzalo	0.007901
+Enrique Ignacio	0.007901
+Mateo Ignacio	0.007900
+Felipe Benjamin	0.007900
+Gemi	0.007899
+Víctor Enrique	0.007899
+Annuel	0.007899
+Markendy	0.007898
+Wilkin	0.007898
+Galaz	0.007897
+Daavid	0.007897
+Cesar Octavio	0.007897
+Nelson Cristian	0.007897
+Richard Jose	0.007896
+Fernando Eugenio	0.007896
+Alex Humberto	0.007895
+Ohiggins	0.007895
+Juanfran	0.007895
+Claudio Matias	0.007894
+Jose Exequiel	0.007893
+Yosmer	0.007892
+Curso	0.007891
+Juega	0.007891
+Patricio Gonzalo	0.007891
+Ignacho	0.007889
+Gesnel	0.007888
+Clebert	0.007888
+Pulidos	0.007888
+Bënjämïn	0.007887
+Jairo Esteban	0.007887
+Shalo	0.007886
+Tfue	0.007886
+Dieusel	0.007886
+Oscar Alonso	0.007885
+Lindorfo	0.007885
+Rafael Patricio	0.007884
+Acupuntura	0.007884
+Etzer	0.007884
+Pitit	0.007883
+Dawens	0.007883
+Cristían	0.007882
+Andral	0.007882
+Antonio Esteban	0.007881
+Pedro Joaquin	0.007880
+Rancagua	0.007880
+Sucursal	0.007879
+Monsalve	0.007879
+Sebastián Eduardo	0.007879
+Victor Andrés	0.007879
+Mario Cristian	0.007878
+Mellado	0.007878
+Camilo Hernan	0.007878
+Cesar A	0.007877
+John Luis	0.007877
+José Iván	0.007876
+Andres Orlando	0.007875
+Bastty	0.007875
+Jahzeel	0.007874
+Ginel	0.007874
+Manuel Alexander	0.007874
+Javier Enrrique	0.007874
+Vladimy	0.007873
+Retiro	0.007873
+Felipe Alfredo	0.007873
+Grone	0.007872
+Astorga	0.007872
+Bastián Andrés	0.007872
+Mirador	0.007871
+Preuniversitario	0.007871
+Haïti	0.007871
+Widly	0.007868
+Cristóbal Antonio	0.007868
+Feernando	0.007867
+Carlos Bastian	0.007867
+Gonzalo Ivan	0.007866
+Rodomiro	0.007865
+Cristian Gerardo	0.007865
+Jvr	0.007865
+Mathias Ignacio	0.007865
+Ignaci	0.007864
+Cocinas	0.007864
+Erick Patricio	0.007864
+Patricioantonio	0.007863
+Milton Andres	0.007863
+Romelus	0.007862
+Amner	0.007862
+Jorge Benito	0.007862
+Aldo Esteban	0.007861
+Christian Hernan	0.007861
+Planta	0.007860
+Maximiliano Alonso	0.007860
+Miguel Andrés	0.007859
+Felipe Octavio	0.007859
+Rodrigo Edgardo	0.007859
+Defensa	0.007859
+Ign	0.007858
+Wuilly	0.007858
+Eugenio Segundo	0.007858
+Dylan Alejandro	0.007857
+Miguel Marcelo	0.007857
+Chumingo	0.007856
+Leonel Esteban	0.007856
+Flavio Andres	0.007856
+Operaciones	0.007855
+Felix Enrique	0.007855
+David Jonathan	0.007854
+Esteban Ricardo	0.007853
+Santiago Enrique	0.007853
+Fabian Patricio	0.007853
+Edgardo Mauricio	0.007852
+Leonardo Jesus	0.007851
+Nepe	0.007851
+Serv	0.007851
+Moises Ignacio	0.007850
+Rishard	0.007850
+Maicra	0.007849
+Robinson Enrique	0.007849
+Archivaldo	0.007849
+Jose Eusebio	0.007848
+Francisco Armando	0.007848
+Danilo Andrés	0.007847
+Baastian	0.007846
+Ariel Alexander	0.007846
+Ivan Felipe	0.007844
+Solercio	0.007843
+Mathiias	0.007843
+Nicolas Manuel	0.007842
+Pablo Humberto	0.007842
+Ariel Francisco	0.007841
+La Casona	0.007840
+Honorindo	0.007840
+Anouce	0.007840
+Javier Elias	0.007839
+Nosoy	0.007838
+Francisco Tomas	0.007838
+Mario Leonel	0.007838
+Lorenzo Eduardo	0.007837
+Paolo Alejandro	0.007836
+Maxs	0.007836
+Fabian Alonso	0.007836
+Jorge Eladio	0.007835
+Christian Felipe	0.007835
+Juanjosé	0.007835
+Cabalgatas	0.007834
+Christian Miguel	0.007834
+Nicolás Felipe	0.007832
+Erinson	0.007832
+Andrés Patricio	0.007831
+Hippie	0.007831
+Enrique Hernan	0.007830
+Octavio Enrique	0.007830
+Cristhoffer	0.007830
+Roble	0.007829
+Vitelio	0.007829
+Grineldo	0.007829
+Henríquez	0.007828
+Jorge Coke	0.007828
+Jaime Gustavo	0.007827
+Conjunto Folclorico	0.007826
+San Martín	0.007826
+Gaston Antonio	0.007826
+William Alejandro	0.007825
+Alfonso Ignacio	0.007824
+Cristian E	0.007823
+Eugenio Eduardo	0.007823
+Darwins	0.007822
+Franco Alexander	0.007820
+Adinson	0.007820
+Danhy	0.007820
+Ricos	0.007819
+Seguel	0.007819
+Sindicato	0.007818
+Rene Esteban	0.007818
+Marchello	0.007817
+Bernardo Alberto	0.007817
+Santiago Antonio	0.007817
+Asistencia	0.007817
+Mauricio Segundo	0.007815
+Alejandro Alex	0.007815
+Dylan Andres	0.007814
+Benjamin Alberto	0.007814
+José Eugenio	0.007813
+Felipe Jesus	0.007813
+Nelson Andrés	0.007812
+Camaras	0.007812
+San Antonio	0.007811
+Julio Alexis	0.007810
+Rodrigoandres	0.007809
+Abraham Enrique	0.007809
+Luis Arberto	0.007809
+Bryan Matias	0.007807
+Robert Andres	0.007806
+Edito	0.007806
+Gabriel Mauricio	0.007805
+Danilo Fernando	0.007805
+Marco Alexis	0.007804
+Francisco Ruben	0.007803
+Mumo	0.007803
+Nelson Guillermo	0.007802
+Msnuel	0.007802
+Alejandro Segundo	0.007801
+José Gerardo	0.007801
+Delicio	0.007800
+Cesar Alonso	0.007800
+Christian Andrés	0.007799
+Maikol Andres	0.007799
+Angelo Nicolas	0.007798
+Esai	0.007798
+Lorca	0.007798
+Isaias Eduardo	0.007797
+Luciano Esteban	0.007797
+Jampy	0.007797
+Wilnor	0.007797
+Jose Ulises	0.007796
+Fegens	0.007796
+Jorch	0.007796
+Octavio Antonio	0.007796
+Ramón Enrique	0.007795
+Rosier	0.007795
+Enrique Arturo	0.007795
+Manuel Benito	0.007794
+Freddy Rodrigo	0.007794
+Batian	0.007793
+Abercio	0.007793
+Wladimir Andres	0.007793
+Sheo	0.007792
+Amaro Andres	0.007792
+Joseba	0.007792
+Geanfranco	0.007791
+Heins	0.007790
+Nelson Arturo	0.007790
+Bermane	0.007790
+Elias Patricio	0.007789
+Jordan Antonio	0.007789
+Gerardo Hernan	0.007789
+Izuku	0.007789
+Gedeón	0.007788
+Gabriel Gonzalo	0.007787
+Max Eduardo	0.007787
+Panzer	0.007787
+Dallan	0.007786
+Kotelo	0.007786
+Wuilliam	0.007786
+Emilio Esteban	0.007785

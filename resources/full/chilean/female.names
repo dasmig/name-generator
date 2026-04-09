@@ -1,0 +1,8035 @@
+cl
+female
+Maria	0.500000
+Carolina	0.301511
+Claudia	0.267261
+Patricia	0.250000
+Camila	0.218218
+Alejandra	0.182574
+Rosa	0.179605
+Daniela	0.169031
+Ana	0.164399
+Marcela	0.158114
+Carmen	0.156174
+Javiera	0.154303
+Catalina	0.152499
+Sandra	0.149071
+Francisca	0.147442
+Cecilia	0.141421
+Valentina	0.138675
+Paola	0.137361
+Constanza	0.133631
+Elizabeth	0.132453
+Veronica	0.131306
+Fernanda	0.130189
+Margarita	0.127000
+Pamela	0.124035
+Isabel	0.123091
+Paula	0.122169
+Monica	0.120386
+Lorena	0.118678
+Gloria	0.117851
+Paulina	0.113961
+Ximena	0.113228
+Jessica	0.111803
+Natalia	0.111111
+Viviana	0.107833
+Marisol	0.106600
+Angelica	0.106000
+Karen	0.105409
+María	0.104828
+Carla	0.103695
+Sofia	0.102598
+Nicole	0.102062
+Gabriela	0.100000
+Jacqueline	0.099504
+Cristina	0.099015
+Nancy	0.098058
+Katherine	0.097590
+Susana	0.097129
+Marta	0.095783
+Antonia	0.095346
+Teresa	0.094916
+Silvia	0.094491
+Karina	0.094072
+Macarena	0.093659
+Alicia	0.093250
+Gladys	0.092450
+Soledad	0.090909
+Sonia	0.090536
+Fabiola	0.089443
+Barbara	0.088736
+Juana	0.088388
+Valeria	0.088045
+Pilar	0.087370
+Evelyn	0.086066
+Martina	0.085436
+Victoria	0.085126
+Tamara	0.084515
+Erika	0.083918
+Ingrid	0.083624
+Angela	0.083333
+Luisa	0.083045
+Ana Maria	0.082761
+Eliana	0.082199
+Elena	0.081650
+Ruth	0.081379
+Roxana	0.081111
+Romina	0.080845
+Maritza	0.080582
+Miriam	0.080322
+Isidora	0.079057
+Karla	0.078811
+Mariela	0.078087
+Edith	0.077152
+Anita	0.076923
+Beatriz	0.076696
+Adriana	0.076472
+Mariana	0.076249
+Olga	0.076029
+Luz	0.075593
+Loreto	0.074953
+Ignacia	0.074536
+Belen	0.074329
+Marcia	0.073521
+Magdalena	0.073127
+Josefa	0.072357
+Jeannette	0.072169
+Maria Jose	0.071796
+Norma	0.071247
+Cata	0.071067
+Yasna	0.070888
+Vale	0.070535
+Verónica	0.070360
+Rocio	0.070186
+Ale	0.070014
+Lidia	0.069007
+Maribel	0.068843
+Blanca	0.068680
+Graciela	0.068359
+Lucia	0.068199
+Myriam	0.068041
+Bárbara	0.067884
+Solange	0.067420
+Raquel	0.067116
+Antonella	0.066965
+Florencia	0.066667
+Ines	0.066372
+Liliana	0.066227
+Carola	0.066082
+Maria Angelica	0.065795
+Nelly	0.065512
+Ivonne	0.065372
+Jocelyn	0.065233
+Nicol	0.065094
+Bernardita	0.064957
+Rosario	0.064820
+Cami	0.064282
+Magaly	0.064150
+Paz	0.064018
+Emilia	0.063500
+Flor	0.063372
+Johanna	0.063246
+Yolanda	0.063119
+Nataly	0.062746
+Valeska	0.062622
+Elsa	0.062137
+Marianela	0.062017
+Denisse	0.061898
+Rosita	0.061546
+Mercedes	0.061314
+Doris	0.061085
+Josefina	0.060746
+Carol	0.060634
+Amanda	0.060523
+Lilian	0.060412
+Belén	0.060302
+Iris	0.060193
+Pia	0.060084
+Maria Isabel	0.059761
+Maria Teresa	0.059655
+Tatiana	0.059549
+Irma	0.059444
+Silvana	0.059339
+Jimena	0.059235
+Mónica	0.058926
+Elisa	0.058824
+Hilda	0.058722
+Maria Elena	0.058621
+Ester	0.058521
+Carmen Gloria	0.058321
+Eugenia	0.058124
+Anais	0.058026
+Tania	0.057928
+Lucy	0.057735
+Paloma	0.057639
+Consuelo	0.057544
+Maria Eugenia	0.057354
+Berta	0.057260
+Bernarda	0.057166
+Clara	0.056980
+Cynthia	0.056614
+Marlene	0.056433
+Mireya	0.056254
+Judith	0.055989
+Mabel	0.055815
+Sofía	0.055641
+Maite	0.055556
+Violeta	0.055300
+Anto	0.055048
+Mirta	0.054965
+Juanita	0.054882
+Caro	0.054800
+Estefania	0.054554
+Yessica	0.054473
+Catherine	0.054393
+Leslie	0.054313
+Angélica	0.054233
+Virginia	0.054153
+Agustina	0.054074
+Fresia	0.053916
+Monserrat	0.053760
+Rossana	0.053606
+Cony	0.053529
+Johana	0.053452
+Trinidad	0.053300
+Marjorie	0.053000
+Aurora	0.052926
+Leticia	0.052852
+Scarlett	0.052778
+Millaray	0.052705
+María José	0.052486
+Genesis	0.052414
+Yesenia	0.052342
+Elba	0.052058
+Kathy	0.051988
+Maca	0.051917
+Noemi	0.051778
+Jaqueline	0.051709
+Karin	0.051571
+Erica	0.051434
+Priscila	0.051299
+Leonor	0.051164
+Patty	0.051098
+Fanny	0.050833
+Ema	0.050767
+Rebeca	0.050702
+Clau	0.050315
+Lissette	0.050189
+Sylvia	0.050000
+Oriana	0.049938
+Coni	0.049875
+Priscilla	0.049752
+Maria Ines	0.049690
+Feña	0.049507
+Cris	0.049447
+Maria Cristina	0.049266
+Jeanette	0.049088
+Vania	0.049029
+Angelina	0.048970
+Geraldine	0.048912
+Sol	0.048737
+Noelia	0.048622
+Ely	0.048564
+Pame	0.048507
+Maria Paz	0.048393
+Amelia	0.048337
+Dayana	0.048280
+Yessenia	0.048113
+Estrella	0.048057
+Danitza	0.047946
+Rocío	0.047836
+Marce	0.047619
+Katalina	0.047511
+Yenny	0.047458
+Renata	0.047351
+Yanet	0.047298
+Paty	0.047246
+Carito	0.047088
+Tiare	0.047036
+Gina	0.046984
+Adela	0.046932
+Alondra	0.046575
+Georgina	0.046474
+Jazmin	0.046424
+Maria Soledad	0.046374
+Vilma	0.046324
+Katty	0.046225
+Claudia Andrea	0.046176
+Damaris	0.045980
+Mery	0.045932
+Giovanna	0.045883
+Sole	0.045835
+Naty	0.045787
+Sofi	0.045739
+Amalia	0.045596
+Isabella	0.045455
+Vivi	0.045408
+Olivia	0.045361
+Katy	0.045314
+Yohana	0.045268
+Esperanza	0.045175
+Matilde	0.045038
+Eli	0.044947
+Francesca	0.044856
+Aracely	0.044766
+Danae	0.044721
+Joselyn	0.044677
+Cote	0.044544
+Luna	0.044455
+Isi	0.044412
+Ana María	0.044368
+Makarena	0.044324
+Delia	0.044281
+Margot	0.044237
+Almendra	0.044194
+Abigail	0.044065
+Elvira	0.044023
+Celia	0.043980
+Lore	0.043937
+Guillermina	0.043769
+Julieta	0.043727
+Gisela	0.043685
+Vero	0.043644
+Thiare	0.043602
+Paola Andrea	0.043478
+Maricel	0.043437
+Dominique	0.043355
+Scarlet	0.043234
+Carolina Andrea	0.043113
+Maria Luisa	0.042993
+Yaritza	0.042914
+Haydee	0.042835
+Marlen	0.042796
+Cinthia	0.042757
+Mirtha	0.042679
+Mayra	0.042601
+Franchesca	0.042563
+Natalie	0.042524
+Karol	0.042371
+Kimberly	0.042333
+Estela	0.042258
+Mirian	0.042182
+Ninoska	0.042070
+Marilyn	0.042033
+Alison	0.041959
+Vanesa	0.041885
+Pauli	0.041739
+Nathaly	0.041703
+Gilda	0.041667
+Maria Cecilia	0.041631
+Yoselin	0.041595
+Guadalupe	0.041487
+Kamila	0.041416
+Teresita	0.041380
+Debora	0.041345
+Ana Luisa	0.041310
+Daisy	0.041274
+Any	0.041239
+Pía	0.041065
+Ambar	0.040996
+Pau	0.040962
+Tere	0.040927
+Kiara	0.040893
+Carlita	0.040825
+Dafne	0.040791
+Antonieta	0.040757
+Yenifer	0.040723
+Vane	0.040622
+Nathalie	0.040555
+Scarleth	0.040489
+Yanina	0.040456
+Jenifer	0.040390
+Marion	0.040357
+Lucila	0.040324
+Monse	0.040226
+Estefany	0.040193
+Corina	0.040161
+Verito	0.040129
+Maria Fernanda	0.039968
+Aylin	0.039936
+Ivette	0.039904
+Maricela	0.039809
+Evelin	0.039746
+Mirna	0.039684
+Pauly	0.039621
+Ayleen	0.039590
+Maira	0.039559
+Juany	0.039467
+Mariluz	0.039375
+Leyla	0.039314
+Jovita	0.039284
+Giselle	0.039253
+Francia	0.039073
+Ropita	0.039043
+Nano	0.039014
+Esmeralda	0.038984
+Yanira	0.038954
+Araceli	0.038925
+Soraya	0.038808
+Maty	0.038720
+Alba	0.038662
+Maura	0.038633
+Pao	0.038576
+Nidia	0.038547
+Camii	0.038405
+Gladis	0.038292
+Marisel	0.038264
+Nayareth	0.038180
+Tiendita	0.038152
+Darling	0.038125
+Marisa	0.038097
+Dulce	0.038042
+Fabiana	0.038014
+Lisette	0.037959
+Andreita	0.037905
+Nilda	0.037878
+Daniella	0.037851
+Cinthya	0.037769
+Gema	0.037743
+Yanett	0.037716
+Natacha	0.037635
+Perla	0.037609
+Lesly	0.037582
+Luz Maria	0.037556
+Nury	0.037529
+Katherin	0.037477
+Rossy	0.037424
+Maria Alejandra	0.037398
+Maria Jesus	0.037346
+Lucía	0.037294
+Rosy	0.037242
+Yocelyn	0.037216
+Yesica	0.037190
+Pabla	0.037113
+Katherinne	0.037062
+Sarita	0.037037
+Yohanna	0.036961
+Edita	0.036936
+Magali	0.036911
+Xime	0.036811
+Maria Magdalena	0.036786
+Conny	0.036761
+Allison	0.036686
+Joselin	0.036662
+María Paz	0.036637
+Maria Ignacia	0.036613
+Zulema	0.036539
+Amparo	0.036515
+María Teresa	0.036491
+Genoveva	0.036466
+Génesis	0.036442
+Montserrat	0.036418
+Romy	0.036394
+Eve	0.036370
+Deisy	0.036346
+María Angélica	0.036298
+Yamilet	0.036250
+Rosana	0.036226
+Kata	0.036202
+María Eugenia	0.036155
+Tamy	0.036108
+Rosalia	0.036084
+Estefanía	0.036061
+María Isabel	0.036037
+Gisselle	0.036014
+Deyanira	0.035991
+Ceci	0.035968
+Colomba	0.035875
+Erna	0.035852
+Filomena	0.035806
+Melisa	0.035714
+Marita	0.035692
+Jeniffer	0.035669
+Inés	0.035646
+Jenniffer	0.035601
+Tabita	0.035578
+Cintia	0.035556
+Catita	0.035511
+Danii	0.035400
+Rosa Ester	0.035377
+Ysabel	0.035289
+Joyas	0.035267
+Paula Andrea	0.035245
+Anny	0.035202
+Ariela	0.035180
+Dominga	0.035115
+Angeles	0.035093
+Wilma	0.035050
+Yuliana	0.035028
+Maria Ester	0.035007
+Muriel	0.034986
+Nena	0.034964
+Alexia	0.034922
+Kary	0.034879
+Romi	0.034816
+Kari	0.034794
+Karito	0.034752
+Nieves	0.034731
+Trini	0.034690
+Estefani	0.034669
+Karlita	0.034648
+Massiel	0.034586
+Maria Eliana	0.034565
+Flavia	0.034544
+Ursula	0.034524
+Zunilda	0.034462
+Mariel	0.034442
+Melany	0.034401
+Eloisa	0.034360
+María Elena	0.034320
+Katerine	0.034300
+Susy	0.034259
+Stefany	0.034239
+Rosa Elena	0.034219
+Lila	0.034179
+Milagros	0.034159
+Fabi	0.034139
+Ivon	0.034120
+Mariajose	0.034100
+Delicias	0.034060
+Hortensia	0.034040
+Rosa Maria	0.034001
+America	0.033962
+Ventas	0.033923
+Rafaela	0.033903
+Nikol	0.033884
+Cecy	0.033845
+Maria Victoria	0.033826
+Nelida	0.033787
+Koke	0.033748
+Matilda	0.033729
+Claudina	0.033710
+Fiorella	0.033691
+Yennifer	0.033672
+Jael	0.033653
+Yanara	0.033634
+Camila Andrea	0.033596
+Jesica	0.033577
+Kote	0.033558
+Criss	0.033539
+Amada	0.033520
+Paulette	0.033464
+Faby	0.033445
+Pili	0.033426
+Zoila	0.033408
+Anahis	0.033370
+Tita	0.033352
+Nati	0.033333
+Adelina	0.033315
+Celinda	0.033278
+Scarlette	0.033223
+Stefania	0.033186
+Marisela	0.033168
+Janett	0.033131
+Yazmin	0.033113
+Claudia Alejandra	0.033095
+Valee	0.033077
+Antonela	0.033041
+Leidy	0.033023
+Miryam	0.033005
+Yoselyn	0.032987
+Nayaret	0.032969
+Ivania	0.032933
+Maria Veronica	0.032880
+Maka	0.032844
+Ana Rosa	0.032827
+Mirella	0.032809
+Marcela Alejandra	0.032791
+Confecciones	0.032774
+July	0.032756
+Maria José	0.032739
+Herminia	0.032721
+Yaneth	0.032703
+Negrita	0.032686
+Yeny	0.032651
+Maggi	0.032634
+Uberlinda	0.032599
+Luz Eliana	0.032582
+Marti	0.032530
+Ernestina	0.032478
+Deysi	0.032427
+Glenda	0.032342
+Patricia Alejandra	0.032292
+Maggy	0.032275
+María Jesús	0.032258
+Luzmira	0.032241
+Yuli	0.032225
+Moira	0.032191
+Xiomara	0.032158
+Jacquelin	0.032141
+Claudita	0.032108
+Arlette	0.032075
+Hortencia	0.032059
+Nacha	0.032042
+Jaquelin	0.031993
+Katerin	0.031960
+Odette	0.031928
+Elcira	0.031911
+Aracelly	0.031895
+Pamela Andrea	0.031830
+Bea	0.031782
+Yeni	0.031766
+Hellen	0.031750
+Juani	0.031686
+Digna	0.031670
+Maria Antonieta	0.031654
+Makita	0.031639
+Laly	0.031607
+Salome	0.031591
+Lucero	0.031560
+María Fernanda	0.031544
+Milenka	0.031513
+Orietta	0.031497
+Mitzi	0.031481
+Dayan	0.031466
+Lucrecia	0.031450
+Valery	0.031419
+Martita	0.031373
+Isolina	0.031342
+Katita	0.031327
+Mackarena	0.031311
+Nany	0.031296
+Anamaria	0.031265
+Clementina	0.031250
+Gisella	0.031235
+Nathalia	0.031220
+Janette	0.031174
+Mayte	0.031129
+Damary	0.031068
+Pepa	0.031039
+Leontina	0.031024
+Alejandrina	0.030994
+Carmencita	0.030979
+Ange	0.030920
+Valesca	0.030875
+Gricelda	0.030846
+Luz Marina	0.030802
+Janeth	0.030758
+Tami	0.030744
+Mely	0.030729
+Camy	0.030671
+Conii	0.030628
+Daniza	0.030614
+Escarlet	0.030600
+Jocelin	0.030585
+María Cristina	0.030557
+Rosalba	0.030542
+Giannina	0.030514
+Marioly	0.030500
+Saray	0.030486
+Isabel Margarita	0.030471
+Domi	0.030457
+Taty	0.030415
+Sarai	0.030401
+Chelo	0.030359
+Marite	0.030345
+Yuly	0.030331
+Flor Maria	0.030275
+Camila Fernanda	0.030261
+Zaida	0.030248
+Orieta	0.030234
+Fany	0.030220
+Lupe	0.030179
+Ángela	0.030151
+Paola Alejandra	0.030137
+Herminda	0.030083
+Marcelita	0.030069
+María Ignacia	0.030002
+Cristy	0.029988
+Analia	0.029948
+Elizabet	0.029921
+Nicolle	0.029894
+Dulces	0.029867
+Anita Maria	0.029814
+Minerva	0.029788
+Jany	0.029775
+Andreina	0.029748
+Anahi	0.029735
+Clarisa	0.029696
+Carmen Rosa	0.029670
+Sandrita	0.029656
+Guisela	0.029630
+Kena	0.029591
+Isis	0.029566
+Noemí	0.029553
+Pascuala	0.029527
+Marcela Andrea	0.029514
+Closet	0.029501
+Jessenia	0.029488
+Waleska	0.029476
+Ailyn	0.029450
+Tammy	0.029437
+Milla	0.029424
+Nelda	0.029412
+Delfina	0.029386
+Maria Elizabeth	0.029348
+Kassandra	0.029323
+Mily	0.029311
+Betzabe	0.029235
+Yocelin	0.029223
+Janis	0.029198
+Marcelina	0.029185
+Kika	0.029173
+Emelina	0.029136
+Isadora	0.029123
+Stephany	0.029099
+Maria Del Carmen	0.029086
+Fraan	0.029074
+Pily	0.029062
+Alanis	0.029050
+Poly	0.029013
+Eileen	0.029001
+Helia	0.028989
+Sussy	0.028928
+Nata	0.028892
+Giuliana	0.028880
+Ilse	0.028855
+Jazmín	0.028843
+Darlyn	0.028820
+Angelica Maria	0.028808
+Clarita	0.028772
+Nathy	0.028748
+Maria Luz	0.028736
+Patricia Andrea	0.028712
+Sigrid	0.028701
+Daniela Andrea	0.028689
+Olaya	0.028665
+Amaya	0.028653
+Nery	0.028618
+Marly	0.028606
+Yael	0.028583
+Natty	0.028571
+Daniela Alejandra	0.028560
+Carla Andrea	0.028525
+Jessi	0.028479
+María Soledad	0.028433
+Tienda	0.028421
+Aracelli	0.028375
+Isamar	0.028364
+Yorka	0.028352
+Adelaida	0.028341
+Maida	0.028330
+Yovana	0.028307
+Alisson	0.028296
+María Inés	0.028284
+Marianella	0.028262
+Betsabe	0.028228
+La Tiendita	0.028217
+Polet	0.028205
+Vannia	0.028194
+Maryorie	0.028183
+Elda	0.028149
+Samanta	0.028138
+Helga	0.028127
+Sindy	0.028116
+Marilu	0.028072
+Joseline	0.028061
+Cristal	0.028050
+Stephania	0.028039
+Madelaine	0.028028
+Ivanna	0.028017
+Angy	0.028006
+Maria Alicia	0.027995
+Patricia Del Carmen	0.027951
+Margoth	0.027940
+Contanza	0.027929
+Darinka	0.027918
+Mitzy	0.027907
+Paulina Andrea	0.027896
+Javiiera	0.027886
+Betsy	0.027853
+Pancha	0.027842
+Pati	0.027832
+Maria Francisca	0.027821
+Annais	0.027810
+Tortas	0.027789
+Paulita	0.027778
+Miguelina	0.027756
+Yessy	0.027746
+Consu	0.027724
+Tabata	0.027703
+Aileen	0.027682
+Francy	0.027650
+Nubia	0.027629
+Alisados	0.027608
+Patito	0.027597
+Rommy	0.027555
+Damari	0.027535
+Carolina Alejandra	0.027524
+Anyela	0.027514
+Savka	0.027503
+Nayadeth	0.027493
+Jeny	0.027472
+Jasna	0.027462
+Alee	0.027451
+Isabela	0.027441
+Elita	0.027420
+Otilia	0.027400
+Rous	0.027390
+Yoana	0.027359
+Aurelia	0.027338
+María Cecilia	0.027318
+Rosmery	0.027298
+Morelia	0.027267
+Aranza	0.027257
+Pamela Alejandra	0.027237
+Alejandra Andrea	0.027227
+Angelita	0.027186
+Roxy	0.027176
+Malvina	0.027166
+Keila	0.027156
+Ana Isabel	0.027146
+Camiila	0.027106
+Cositas	0.027086
+Maria Carolina	0.027077
+Barbarita	0.027067
+Camilita	0.027057
+Nayade	0.026958
+Yarela	0.026948
+Pascale	0.026939
+Ornella	0.026929
+Maria Rosa	0.026919
+Ayelen	0.026890
+Marilin	0.026870
+Stefy	0.026861
+Paolita	0.026822
+Danielita	0.026812
+Liset	0.026793
+Nolfa	0.026764
+Carmen Luz	0.026755
+Kenita	0.026736
+Rena	0.026726
+Naya	0.026717
+Pam	0.026707
+Ita	0.026698
+Jacinta	0.026688
+Melania	0.026679
+Keyla	0.026650
+Ginette	0.026641
+Laurita	0.026622
+Yaquelin	0.026612
+María Luisa	0.026584
+Gissela	0.026565
+Pamelita	0.026547
+Patita	0.026528
+Fabiola Andrea	0.026509
+Michell	0.026500
+Flores	0.026481
+Felisa	0.026463
+Maria Graciela	0.026454
+Danisa	0.026426
+Casandra	0.026407
+Maricarmen	0.026398
+María Jose	0.026371
+Karime	0.026325
+Gemita	0.026307
+Purisima	0.026288
+Polett	0.026279
+Javiera Paz	0.026270
+Cecilia Del Carmen	0.026261
+Caren	0.026252
+Danna	0.026234
+Albertina	0.026225
+Brigida	0.026216
+Brisa	0.026207
+Thalia	0.026153
+Lizbeth	0.026144
+Maria Patricia	0.026135
+Karencita	0.026118
+Cataa	0.026109
+Aura	0.026082
+Benita	0.026073
+Lis	0.026064
+Nikole	0.026003
+Lupita	0.025976
+Lorenza	0.025941
+Karo	0.025933
+Karina Andrea	0.025915
+Katherina	0.025906
+Rosa Del Carmen	0.025872
+Mariella	0.025863
+María Angelica	0.025854
+Sandra Paola	0.025846
+Kathia	0.025828
+Ayline	0.025811
+Masiel	0.025803
+Palmenia	0.025794
+Maria Loreto	0.025786
+Karen Andrea	0.025777
+Ketty	0.025751
+Caty	0.025734
+Nely	0.025726
+Pricila	0.025717
+Sofii	0.025700
+Maria De Los Angeles	0.025692
+Cyntia	0.025675
+Yamile	0.025666
+Maria Angélica	0.025649
+Yngrid	0.025607
+Kony	0.025599
+Guacolda	0.025591
+Coté	0.025582
+Rubi	0.025574
+Bety	0.025565
+Maru	0.025557
+Franci	0.025549
+Milka	0.025532
+Feli	0.025524
+Keka	0.025516
+Marii	0.025507
+Gisel	0.025499
+Giovana	0.025491
+Allyson	0.025433
+Barby	0.025425
+Yessi	0.025416
+Natividad	0.025408
+Olguita	0.025400
+Pablina	0.025384
+Tejidos	0.025375
+Daysi	0.025367
+Camilaa	0.025343
+Gianina	0.025318
+Lisset	0.025310
+Yari	0.025302
+Katiuska	0.025294
+Vitalia	0.025286
+Yanette	0.025278
+Catalina Andrea	0.025262
+Anaís	0.025254
+Loretto	0.025246
+Débora	0.025190
+Anastacia	0.025174
+Dayanna	0.025150
+Carolaine	0.025134
+Janita	0.025126
+Coty	0.025110
+Rut	0.025102
+Gianella	0.025086
+Yudith	0.025078
+Gricel	0.025063
+Edilia	0.025047
+Carolita	0.025031
+Yamileth	0.025023
+Sayen	0.025000
+Javiera Ignacia	0.024992
+Amara	0.024977
+Brunilda	0.024969
+Berenice	0.024930
+Maria Gabriela	0.024922
+Maruja	0.024868
+Mariapaz	0.024845
+Yajaira	0.024838
+Gloria Del Carmen	0.024822
+Maryori	0.024815
+Nicole Andrea	0.024799
+Dannae	0.024792
+Feñita	0.024784
+Orfelina	0.024769
+Carolyn	0.024746
+Albina	0.024739
+Elva	0.024723
+Florentina	0.024716
+Liss	0.024708
+Jordana	0.024686
+Yoly	0.024663
+Lorena Andrea	0.024641
+Jannette	0.024618
+Kathalina	0.024611
+Maríajosé	0.024603
+Vaitiare	0.024596
+Ca	0.024589
+Viky	0.024581
+Klau	0.024559
+Darlin	0.024551
+Emporio	0.024529
+Ligia	0.024515
+Geral	0.024492
+Yoli	0.024485
+Ailin	0.024478
+Maria Mercedes	0.024463
+Ninfa	0.024456
+Jaque	0.024448
+Grecia	0.024441
+Nayeli	0.024434
+Gissel	0.024427
+Edelmira	0.024419
+Viviana Andrea	0.024412
+Juana Maria	0.024398
+Faviola	0.024390
+Yulissa	0.024376
+Camila Alejandra	0.024369
+Natita	0.024354
+Nevenka	0.024347
+Katherine Andrea	0.024332
+Monserratt	0.024311
+Lita	0.024289
+Majo	0.024282
+Morena	0.024268
+Coca	0.024254
+Ana Patricia	0.024246
+Evita	0.024239
+Siomara	0.024232
+Cintya	0.024218
+Jessika	0.024204
+Aylen	0.024197
+Maria Elisa	0.024190
+Josee	0.024168
+Marta Elena	0.024161
+Prisila	0.024140
+Mariangel	0.024119
+Yenni	0.024112
+Rosa Amelia	0.024105
+Vinka	0.024070
+Rose Marie	0.024063
+Junta De Vecinos	0.024042
+Conita	0.024035
+Jessica Andrea	0.024028
+Mony	0.024022
+Emely	0.024008
+Madeline	0.024001
+Jacque	0.023994
+Alda	0.023987
+Caterina	0.023966
+Marleny	0.023953
+Daniiela	0.023918
+Petronila	0.023911
+Myrian	0.023891
+Enriqueta	0.023857
+Carlina	0.023850
+Estrellita	0.023830
+Vanne	0.023823
+Anyelina	0.023783
+Danita	0.023776
+Conni	0.023756
+Piera	0.023749
+Dennisse	0.023736
+Belgica	0.023709
+Francisca Javiera	0.023696
+Ashly	0.023689
+Agatha	0.023682
+Kasandra	0.023669
+Stefani	0.023662
+Cataleya	0.023643
+Elisabet	0.023636
+Lizeth	0.023623
+Anabella	0.023610
+Yamila	0.023603
+Thais	0.023596
+Rosio	0.023564
+Ercilia	0.023544
+Maria Olga	0.023538
+Alicia Del Carmen	0.023531
+Lha	0.023525
+Roperito	0.023499
+Nivia	0.023492
+Jacquelinne	0.023473
+Escarlett	0.023466
+Nolvia	0.023460
+Javieraa	0.023453
+Ropero	0.023421
+Javita	0.023415
+Malu	0.023395
+Lindsay	0.023376
+Angi	0.023357
+Malena	0.023351
+Mariia	0.023344
+Salomé	0.023319
+Abril	0.023281
+Yesi	0.023275
+Lety	0.023268
+Ámbar	0.023250
+Ynes	0.023243
+Canela	0.023231
+Juana Rosa	0.023224
+Natalia Andrea	0.023218
+Alejandrita	0.023199
+Julissa	0.023187
+Margarita Del Carmen	0.023174
+Enedina	0.023168
+Yeral	0.023162
+Betzabeth	0.023150
+Yeniffer	0.023143
+Guerline	0.023131
+Marisol Del Carmen	0.023125
+Polette	0.023106
+Mariza	0.023082
+Margareth	0.023063
+Mafalda	0.023057
+Yami	0.023039
+Delicia	0.023027
+Rosa Isabel	0.023020
+María Alejandra	0.023008
+Maria Del Pilar	0.022978
+Maria Raquel	0.022966
+Comida	0.022948
+Amapola	0.022936
+Geraldin	0.022930
+Cecilia Andrea	0.022923
+Rosa Elvira	0.022917
+Margarita Isabel	0.022905
+Jessica Alejandra	0.022893
+Dennise	0.022887
+Darline	0.022881
+Francheska	0.022875
+Lissett	0.022858
+Danixa	0.022852
+Yerka	0.022846
+Polita	0.022840
+Konstanza	0.022834
+Valentina Paz	0.022822
+Marión	0.022816
+Leonora	0.022798
+Mile	0.022792
+Grisel	0.022786
+Nilsa	0.022763
+Janny	0.022757
+Jocelyne	0.022739
+Kamy	0.022727
+Liseth	0.022716
+Rafaella	0.022710
+Ismenia	0.022704
+Azucena	0.022698
+Estefy	0.022675
+Maria Pia	0.022669
+Andrea Alejandra	0.022646
+Empanadas	0.022634
+Caterin	0.022605
+Monita	0.022582
+Claudia Paola	0.022570
+Arantxa	0.022559
+Begoña	0.022553
+Varinia	0.022536
+Lastenia	0.022530
+Jesenia	0.022525
+Camila Paz	0.022519
+Daniela Paz	0.022513
+Ximena Andrea	0.022502
+Paulina Alejandra	0.022496
+Veronica Del Carmen	0.022490
+Kami	0.022485
+Sary	0.022473
+Karola	0.022445
+Carlota	0.022434
+Nazareth	0.022417
+Joceline	0.022411
+Cristel	0.022400
+Lizette	0.022394
+Damarys	0.022389
+Estefi	0.022377
+Yaqueline	0.022344
+Danni	0.022327
+Rosa Ines	0.022322
+Isabel Del Carmen	0.022288
+Marlenne	0.022277
+Fernandita	0.022272
+Katha	0.022266
+Ghislaine	0.022255
+Nuvia	0.022250
+Nayadet	0.022233
+Sujey	0.022228
+Camila Ignacia	0.022222
+Elizabeth Del Carmen	0.022217
+Charito	0.022211
+Sofy	0.022206
+Lenka	0.022200
+Kareen	0.022189
+Marietta	0.022173
+Kriss	0.022168
+Leandra	0.022157
+Emiliana	0.022146
+Isaura	0.022130
+Evangelina	0.022124
+Sady	0.022113
+Panchita	0.022108
+Yadira	0.022102
+Cielo	0.022092
+Tamii	0.022086
+Claudia Patricia	0.022054
+Jeon	0.022049
+Verena	0.022022
+Luz María	0.022011
+América	0.022006
+Caterine	0.021995
+Emperatriz	0.021990
+Sonia Del Carmen	0.021979
+Konny	0.021958
+Kattia	0.021948
+Gioconda	0.021921
+Carolain	0.021916
+Rosa Eliana	0.021911
+Jocy	0.021905
+María Francisca	0.021900
+Marcela Paz	0.021890
+Penelope	0.021869
+Jéssica	0.021858
+Mathy	0.021853
+Macka	0.021843
+Jennyfer	0.021832
+Jime	0.021817
+Roxi	0.021811
+Gregoria	0.021801
+Pelusa	0.021796
+María Victoria	0.021791
+Sandra Patricia	0.021775
+Roxanna	0.021744
+Lorenita	0.021724
+Maria Pilar	0.021719
+Ana Del Carmen	0.021708
+Yovi	0.021703
+Lisett	0.021668
+Belencita	0.021662
+Eduvina	0.021657
+Maitte	0.021652
+Maria Ximena	0.021647
+Josselyn	0.021637
+Yubitza	0.021632
+Jessica Paola	0.021622
+Yarella	0.021612
+Arriendo	0.021607
+Banqueteria	0.021592
+Patricia Angelica	0.021587
+Florinda	0.021577
+Ivone	0.021557
+Maria Antonia	0.021542
+Ariadna	0.021517
+Ana Karina	0.021512
+Euge	0.021497
+Nanci	0.021492
+Frann	0.021467
+Pierina	0.021423
+Cesia	0.021418
+Pepita	0.021413
+Blanquita	0.021408
+Leydi	0.021383
+Patricia Isabel	0.021378
+Floreria	0.021374
+Angely	0.021354
+Carolay	0.021349
+Yoya	0.021339
+Arelis	0.021335
+Roseline	0.021320
+Esika	0.021315
+Guiselle	0.021306
+Militza	0.021301
+Ivannia	0.021291
+Elizabeth Andrea	0.021286
+Gianinna	0.021281
+Colaciones	0.021277
+Catta	0.021272
+Nancy Del Carmen	0.021267
+Macarena Andrea	0.021262
+Anays	0.021253
+Francisca Andrea	0.021248
+Jaja	0.021233
+Letty	0.021229
+Azul	0.021209
+Cosas	0.021200
+Sandra Elizabeth	0.021195
+Andree	0.021181
+Ana Cecilia	0.021167
+Lorena Alejandra	0.021143
+Fransisca	0.021138
+Gloria Isabel	0.021124
+Valentiina	0.021115
+Gladys Del Carmen	0.021110
+Montse	0.021101
+Sylvana	0.021096
+Vivianne	0.021072
+Alyson	0.021068
+Pacita	0.021058
+Texia	0.021044
+Inelia	0.021040
+Francisca Alejandra	0.021035
+Nicole Alejandra	0.021031
+Cathalina	0.021026
+Tiara	0.021017
+Josy	0.021003
+Carly	0.020998
+Melita	0.020984
+Pri	0.020980
+Olimpia	0.020970
+Rossi	0.020966
+Nadege	0.020956
+Maria Gloria	0.020938
+Romii	0.020924
+Milagro	0.020920
+Anyi	0.020915
+Pelu	0.020906
+Claudia Marcela	0.020901
+Maria Lorena	0.020892
+Norita	0.020888
+Zuny	0.020883
+Florcita	0.020874
+Devora	0.020865
+Veronica Andrea	0.020856
+Yoyi	0.020847
+Sandra Isabel	0.020833
+Thania	0.020784
+Carolin	0.020779
+Yulisa	0.020775
+Sandra Del Carmen	0.020766
+Valita	0.020761
+Clinica	0.020752
+Luz Elena	0.020748
+Yeimy	0.020721
+Arantza	0.020708
+Danissa	0.020703
+Mariajosé	0.020699
+Tihare	0.020695
+Javiera Andrea	0.020686
+Valentina Ignacia	0.020677
+Feñaa	0.020664
+Crishna	0.020659
+Javiera Alejandra	0.020642
+Rody	0.020637
+Chichi	0.020633
+Toty	0.020628
+Lesli	0.020615
+Malva	0.020611
+Joaquina	0.020598
+Yola	0.020593
+Etelvina	0.020589
+Pathy	0.020585
+Yane	0.020572
+Mayi	0.020567
+Chela	0.020563
+Dorita	0.020559
+Estilo	0.020554
+Eufemia	0.020546
+Alexsandra	0.020537
+Gise	0.020533
+Maria Belen	0.020528
+Selene	0.020524
+Luisana	0.020520
+Mariaelena	0.020507
+Yrma	0.020489
+Monica Alejandra	0.020477
+Libertad	0.020472
+Hayde	0.020468
+María Ines	0.020464
+Paulii	0.020459
+Aleja	0.020455
+Claudia Lorena	0.020451
+Dámaris	0.020438
+Maria Margarita	0.020429
+Patrcia	0.020425
+Silvia Del Carmen	0.020404
+Argenis	0.020391
+Maylin	0.020383
+Kathya	0.020378
+Isabelita	0.020366
+Domitila	0.020362
+Susana Andrea	0.020349
+Palomita	0.020341
+Catherin	0.020336
+Nicolee	0.020332
+Felicinda	0.020328
+Domenica	0.020324
+Doraliza	0.020319
+Nachita	0.020315
+Leslye	0.020311
+Escarleth	0.020307
+Jeanett	0.020303
+Katterine	0.020299
+Karla Andrea	0.020294
+Betzabet	0.020286
+Fabiola Alejandra	0.020278
+Javierita	0.020274
+Guisella	0.020269
+Constanza Belen	0.020261
+Eliana Del Carmen	0.020257
+Rayén	0.020253
+Nayarett	0.020240
+Mica	0.020236
+Mey	0.020232
+Cherie	0.020228
+Bianka	0.020220
+Emili	0.020211
+Stefi	0.020203
+Cari	0.020178
+Marla	0.020158
+Ana Carolina	0.020141
+Isabel Cristina	0.020133
+Kendy	0.020113
+Gabii	0.020109
+Candelaria	0.020105
+Antoo	0.020101
+Ángeles	0.020097
+Mía	0.020093
+Yanela	0.020089
+Luzmila	0.020076
+Glady	0.020060
+Yiyi	0.020056
+Lunita	0.020052
+Karina Alejandra	0.020040
+Sabores	0.020028
+Gladyz	0.020020
+Magnolia	0.020004
+Julita	0.019996
+Marìa	0.019992
+Marylin	0.019980
+Veronica Alejandra	0.019968
+Teresa Del Carmen	0.019964
+Cecilia Alejandra	0.019936
+Maria Adriana	0.019932
+Chio	0.019928
+Patricia Soledad	0.019924
+Thamara	0.019905
+Jovina	0.019897
+Lya	0.019893
+Carline	0.019885
+Stefanny	0.019881
+Xaviera	0.019877
+Yordana	0.019873
+Ana Karen	0.019869
+Yovanna	0.019865
+Mayerling	0.019858
+Skarlet	0.019854
+Jeimy	0.019850
+Romanet	0.019842
+Carolayn	0.019834
+Yasnita	0.019819
+Constanzaa	0.019815
+Kathyta	0.019803
+Monica Del Carmen	0.019799
+Katyta	0.019795
+Jacqueline Andrea	0.019791
+Thu	0.019787
+Meliza	0.019784
+Edit	0.019776
+Italia	0.019760
+Celmira	0.019737
+Ana Cristina	0.019730
+Yona	0.019726
+Eme	0.019722
+Fidelina	0.019703
+Agueda	0.019699
+Maria Beatriz	0.019687
+Gimena	0.019676
+Fabii	0.019668
+Maria Virginia	0.019657
+Gladiz	0.019653
+Claribel	0.019649
+Felicita	0.019627
+Marysol	0.019623
+Zoraida	0.019619
+Mariposa	0.019615
+Blanca Rosa	0.019608
+Yrene	0.019600
+Lía	0.019593
+Maria Irene	0.019589
+Patricia Veronica	0.019567
+Viviana Alejandra	0.019563
+Yacqueline	0.019559
+Analy	0.019552
+Madelein	0.019537
+Paula Alejandra	0.019525
+Tannia	0.019522
+Gissella	0.019514
+Chery	0.019496
+Mayerlin	0.019485
+Dorka	0.019470
+Anaiis	0.019466
+Jeka	0.019459
+Arely	0.019455
+Glorita	0.019440
+Catalina Ignacia	0.019411
+Jocelyn Andrea	0.019407
+Martina Ignacia	0.019400
+Franciisca	0.019386
+Valezka	0.019382
+Fernandaa	0.019378
+Jacquelines	0.019364
+Ximena Alejandra	0.019356
+Loredana	0.019320
+Edda	0.019309
+Clemencia	0.019274
+Domy	0.019266
+Geovanna	0.019263
+Siria	0.019256
+Chany	0.019252
+Valen	0.019249
+Maria Laura	0.019241
+Bernardina	0.019224
+Karly	0.019217
+María Ester	0.019195
+Marta Isabel	0.019181
+Antito	0.019167
+María Magdalena	0.019164
+Morenita	0.019157
+Elizabeht	0.019142
+Beleen	0.019139
+Jhoana	0.019135
+María Verónica	0.019128
+Monica Andrea	0.019125
+Ruthy	0.019121
+Yessika	0.019111
+Vannesa	0.019104
+Panchi	0.019101
+Benedicta	0.019097
+Chelita	0.019090
+Maria Ysabel	0.019087
+Steffy	0.019080
+Wilda	0.019076
+Romina Andrea	0.019073
+Daniela Fernanda	0.019069
+Jakeline	0.019052
+Lisbet	0.019048
+Mical	0.019042
+Ulda	0.019035
+Marcela Del Carmen	0.019028
+Lisseth	0.019024
+Jeanet	0.019017
+Johanna Andrea	0.019011
+Lyan	0.018993
+Vianka	0.018990
+Dayanne	0.018987
+Monserrath	0.018983
+María Antonieta	0.018980
+Tiendas	0.018973
+Andreitha	0.018966
+Morin	0.018959
+Marlys	0.018956
+Skarlett	0.018952
+Laura Rosa	0.018946
+Kotte	0.018939
+Paz Belen	0.018935
+Constanza Andrea	0.018932
+Darlyng	0.018925
+Jacqueline Del Carmen	0.018922
+Pazita	0.018915
+Catalinaa	0.018912
+Catalina Paz	0.018908
+Ventitas	0.018902
+Jossy	0.018898
+Jannet	0.018885
+Nory	0.018881
+Tete	0.018878
+Leonela	0.018871
+Marlis	0.018868
+Cati	0.018865
+Glo	0.018861
+Areli	0.018858
+Carli	0.018851
+Greys	0.018848
+Deby	0.018818
+Tais	0.018814
+Aide	0.018804
+Vicenta	0.018794
+Maria Esther	0.018788
+Maria Andrea	0.018775
+Normita	0.018771
+Silvita	0.018765
+Kely	0.018751
+Meche	0.018735
+Maria Yolanda	0.018732
+Chely	0.018712
+Liliam	0.018702
+Myrtha	0.018683
+Susana Del Carmen	0.018663
+Ofertas	0.018657
+Elena Del Carmen	0.018647
+Cristina Alejandra	0.018640
+Transito	0.018631
+Herna	0.018624
+Vianca	0.018615
+Omaira	0.018611
+Yeimi	0.018608
+Sandra Andrea	0.018605
+Juana Del Carmen	0.018602
+Terapias	0.018598
+Maripi	0.018595
+Arlet	0.018592
+Elizabeth Alejandra	0.018582
+Valentinaa	0.018579
+Ivett	0.018570
+Isii	0.018566
+Charlot	0.018563
+Maithe	0.018557
+Caroll	0.018554
+Danay	0.018550
+Johanny	0.018547
+Ximenita	0.018541
+Jovanna	0.018538
+Maria Consuelo	0.018534
+Gigliola	0.018531
+Karen Alejandra	0.018528
+Constansa	0.018525
+Carmen Cecilia	0.018522
+Arlett	0.018519
+Jeannete	0.018512
+Urzula	0.018509
+Mirlande	0.018496
+María Eliana	0.018493
+Entretenciones	0.018490
+Yasna Paola	0.018487
+Nallely	0.018481
+Catalina Alejandra	0.018477
+Yamilett	0.018468
+Lissete	0.018458
+Yerty	0.018455
+Javiera Constanza	0.018452
+Gloria Angelica	0.018449
+Catherinne	0.018443
+Yazna	0.018440
+Arriendos	0.018437
+Doralisa	0.018433
+Gracia	0.018424
+Elenita	0.018415
+Leda	0.018408
+Barbi	0.018405
+Deniss	0.018396
+Katina	0.018387
+Arte	0.018383
+Virna	0.018380
+Slime	0.018377
+Alita	0.018362
+Olinda	0.018349
+Avelina	0.018343
+Silvina	0.018340
+Micheline	0.018334
+Milca	0.018331
+Marleni	0.018328
+Yany	0.018319
+Maria Paulina	0.018297
+Julieth	0.018294
+Luly	0.018285
+Maria Susana	0.018276
+Feer	0.018267
+Daira	0.018264
+Anahí	0.018260
+Yesy	0.018251
+Dorys	0.018248
+Sofiia	0.018245
+Rebe	0.018242
+Ana Luz	0.018236
+Yisel	0.018230
+Peluqueria	0.018224
+Amelie	0.018209
+Pachy	0.018203
+Aída	0.018185
+Triny	0.018182
+Ana Elizabeth	0.018179
+Ruth Elizabeth	0.018167
+Rouse	0.018164
+Yasmín	0.018161
+Kathe	0.018158
+Monik	0.018155
+Patricia Elena	0.018152
+Mariela Andrea	0.018149
+Andrea Carolina	0.018146
+Rouss	0.018143
+Anthonella	0.018140
+Yeya	0.018131
+Norka	0.018128
+Rosa Angelica	0.018125
+Amaranta	0.018122
+Marycarmen	0.018107
+Yina	0.018104
+Madelin	0.018101
+Valeria Andrea	0.018098
+Carolina Elizabeth	0.018095
+Yudy	0.018089
+Maria Nelly	0.018080
+Viviana Del Carmen	0.018075
+Nayely	0.018063
+Lady	0.018060
+Yolita	0.018057
+Ines Del Carmen	0.018051
+Marthina	0.018042
+Betsabé	0.018039
+Veronica Isabel	0.018036
+Katheryn	0.018033
+Isolde	0.018019
+Romane	0.018016
+Yosselin	0.018013
+Amparito	0.018010
+Yovanka	0.018001
+Yanitza	0.017998
+Estephanie	0.017992
+Auristela	0.017981
+Karinna	0.017978
+Karyn	0.017975
+Thyare	0.017966
+Quena	0.017961
+Evelyn Andrea	0.017958
+Jabiera	0.017952
+Carolina Del Carmen	0.017946
+Cattalina	0.017943
+Valentina Andrea	0.017940
+Fernanda Andrea	0.017937
+Carolina Isabel	0.017932
+Cristina Andrea	0.017923
+Simoney	0.017914
+Marcia Andrea	0.017911
+Carolina Paz	0.017909
+Ximena Del Carmen	0.017906
+Javiera Fernanda	0.017903
+Barbara Andrea	0.017897
+Jessica Del Carmen	0.017891
+Dayris	0.017877
+Guisselle	0.017874
+Jovy	0.017866
+Icha	0.017863
+Marieta	0.017860
+Va	0.017851
+Fiorela	0.017846
+Geraldina	0.017843
+Herta	0.017840
+Elii	0.017837
+Dolce	0.017834
+Pata	0.017832
+Drina	0.017826
+Alfonsina	0.017820
+Jemima	0.017817
+Delmira	0.017812
+Ana Victoria	0.017792
+Ruty	0.017786
+Jova	0.017784
+Maria Leonor	0.017781
+Pastora	0.017775
+Eladia	0.017772
+Darly	0.017770
+Joha	0.017767
+Natii	0.017761
+Maria Del Rosario	0.017758
+María Belén	0.017753
+Coti	0.017744
+Gabriela Alejandra	0.017742
+Creaciones	0.017733
+Martii	0.017730
+Monica Patricia	0.017722
+Marianita	0.017708
+Prisci	0.017703
+Silvia Elena	0.017700
+Maria Elsa	0.017697
+Gabriela Andrea	0.017691
+Claudia Elizabeth	0.017683
+Yesika	0.017675
+Valeria Alejandra	0.017672
+Maria Inés	0.017669
+Sandra Veronica	0.017667
+Rosa María	0.017664
+Carlaa	0.017658
+Lizet	0.017656
+Marilen	0.017653
+Yanny	0.017642
+Nicoll	0.017625
+Orfilia	0.017614
+Alejandra Paola	0.017606
+Emita	0.017604
+Camila Belen	0.017598
+Monica Cecilia	0.017593
+Elyzabeth	0.017587
+Veronica Cecilia	0.017579
+Yoanna	0.017576
+Yris	0.017574
+Britany	0.017565
+Dianita	0.017557
+Cecilia Isabel	0.017549
+Ruth Noemi	0.017547
+Luisa Del Carmen	0.017544
+Gloria Patricia	0.017541
+Olga Del Carmen	0.017533
+Edith Del Carmen	0.017528
+Catherina	0.017522
+Dinka	0.017520
+Joselyne	0.017514
+Josselin	0.017512
+Marioli	0.017506
+Skarleth	0.017501
+Maria Jesús	0.017498
+Nanita	0.017495
+Vivita	0.017493
+Yoyita	0.017490
+Carmen Luisa	0.017487
+Nicol Andrea	0.017482
+Eyleen	0.017479
+Sofia Antonia	0.017469
+María Loreto	0.017461
+Ercira	0.017458
+Camila Francisca	0.017450
+Katherine Alejandra	0.017447
+Carmengloria	0.017445
+Valeska Andrea	0.017442
+Tamara Andrea	0.017437
+Francisca Ignacia	0.017426
+Catalina Belen	0.017424
+Cotee	0.017421
+Ube	0.017416
+Sofia Ignacia	0.017405
+Carola Andrea	0.017400
+Editha	0.017395
+Titin	0.017392
+Madelyn	0.017389
+Mirsa	0.017376
+Anel	0.017371
+Andreaa	0.017358
+Arleth	0.017353
+Iveth	0.017347
+Dorca	0.017345
+Negra	0.017342
+Diva	0.017334
+Francys	0.017332
+Laury	0.017321
+Clary	0.017308
+Solcito	0.017301
+Kuky	0.017293
+Maria Dolores	0.017285
+Gisell	0.017283
+Maria Angela	0.017280
+Karii	0.017277
+Viole	0.017275
+Mariela Alejandra	0.017270
+Ana Belen	0.017267
+Susanita	0.017259
+María Gabriela	0.017257
+Elsita	0.017249
+Mariateresa	0.017247
+Thiara	0.017244
+Maryta	0.017239
+Gabita	0.017236
+Nieve	0.017234
+Marizol	0.017229
+Chechi	0.017211
+Ropitas	0.017208
+Sandra Lorena	0.017201
+Blanca Ester	0.017198
+Gertrudis	0.017193
+Rosa Margarita	0.017190
+Danielaa	0.017185
+Maria Gladys	0.017183
+Patricia Elizabeth	0.017178
+Gabyta	0.017173
+Catty	0.017165
+Maria Sonia	0.017162
+Rincón	0.017157
+Yeraldin	0.017150
+Yeri	0.017147
+Stephy	0.017142
+Chocolates	0.017140
+Nayi	0.017135
+Sandra Cecilia	0.017132
+Moyra	0.017122
+Yissel	0.017115
+Mirla	0.017110
+Dilia	0.017107
+Cleme	0.017105
+Karinita	0.017102
+Lorena Del Carmen	0.017100
+Josseline	0.017095
+Rosse	0.017090
+Kattya	0.017085
+Frecia	0.017082
+Estefanny	0.017080
+Eimy	0.017075
+Anyel	0.017065
+Deissy	0.017062
+Esmerita	0.017057
+Estefanie	0.017052
+Patricia Ximena	0.017045
+Pasteles	0.017033
+Amasanderia	0.017028
+Solange Andrea	0.017023
+Macarena Alejandra	0.017013
+Franciscaa	0.017008
+Danahe	0.017005
+Aylinne	0.017001
+Erika Del Carmen	0.016996
+Kothe	0.016991
+Cocteleria	0.016988
+Jesula	0.016986
+Luzmenia	0.016983
+Ventass	0.016978
+Vanessa Andrea	0.016974
+Oriele	0.016971
+Leonila	0.016969
+Chika	0.016964
+Jara	0.016959
+Rakel	0.016942
+Elga	0.016939
+Liria	0.016937
+Danila	0.016935
+Balbina	0.016913
+Espe	0.016893
+Mariely	0.016874
+Belkis	0.016869
+Yayi	0.016865
+Lilita	0.016862
+Natu	0.016860
+Maria Estela	0.016853
+Aymara	0.016850
+Dahiana	0.016843
+Vanee	0.016836
+Kamii	0.016829
+Aniita	0.016826
+Doña	0.016810
+Beatríz	0.016800
+Maquillaje	0.016788
+Ana Alicia	0.016786
+Claudiia	0.016781
+Monica Isabel	0.016767
+Entre	0.016765
+Joscelyn	0.016755
+Natalia Alejandra	0.016751
+María Carolina	0.016748
+Anai	0.016744
+Nazaret	0.016741
+Amaia	0.016727
+Dary	0.016725
+Mariangela	0.016720
+Mary Luz	0.016711
+Mafe	0.016708
+Lidia Del Carmen	0.016704
+Marta Cecilia	0.016701
+Priscy	0.016699
+Cecila	0.016695
+Clara Luz	0.016688
+Miriam Del Carmen	0.016681
+Gloria Elizabeth	0.016678
+Andrea Del Carmen	0.016676
+Roxana Andrea	0.016671
+Rosa Emilia	0.016664
+Marta Del Carmen	0.016662
+Katerinne	0.016660
+Sonnia	0.016657
+Adelita	0.016653
+Fefi	0.016650
+Rossanna	0.016639
+Camyla	0.016630
+Yelitza	0.016625
+Ingeborg	0.016623
+Franciska	0.016618
+Nicolette	0.016616
+Carmen Julia	0.016605
+Nickol	0.016600
+Jeannett	0.016598
+Melanny	0.016593
+Jazmine	0.016589
+Kathita	0.016582
+Betzabé	0.016579
+Marcia Alejandra	0.016554
+Krishnna	0.016552
+Yarii	0.016548
+Maria Bernardita	0.016545
+Tegualda	0.016541
+Javiera Belen	0.016536
+Kmila	0.016534
+Myriam Luz	0.016525
+Maryory	0.016518
+Maria Bernarda	0.016516
+Poleth	0.016507
+Nataly Andrea	0.016502
+Luzvenia	0.016493
+Antonia Belen	0.016489
+Javiera Antonia	0.016487
+Bruny	0.016478
+Bristela	0.016471
+Maria Jacqueline	0.016467
+Moraima	0.016464
+Cataliina	0.016462
+Gloria Alejandra	0.016460
+Camila Constanza	0.016455
+Josefa Antonia	0.016451
+Comida Rapida	0.016449
+Victoria Alejandra	0.016447
+Isabel Alejandra	0.016440
+Babi	0.016438
+Perlita	0.016435
+Carmina	0.016431
+Deya	0.016429
+Hand	0.016427
+Rox	0.016424
+Geno	0.016418
+Bruni	0.016413
+Oriela	0.016407
+Bertina	0.016402
+Lisandra	0.016393
+Koni	0.016391
+Genny	0.016389
+Narda	0.016385
+Joa	0.016382
+Nilza	0.016376
+Dayane	0.016374
+Maria Emilia	0.016367
+Kataleya	0.016365
+Maria Josefina	0.016358
+Mayda	0.016354
+Raiza	0.016352
+Betania	0.016350
+Teresa De Jesus	0.016343
+Nahir	0.016334
+Jacke	0.016328
+Dely	0.016326
+Maxima	0.016323
+Christell	0.016319
+Belu	0.016313
+Analía	0.016310
+Aixa	0.016308
+Tomasa	0.016306
+Maria Silvia	0.016304
+Zapatos	0.016295
+Rosalía	0.016291
+Marisabel	0.016287
+Yisela	0.016280
+Detodo	0.016278
+María De Los Ángeles	0.016274
+Andrea Soledad	0.016265
+Mago	0.016246
+Marielita	0.016244
+Yaque	0.016237
+Libia	0.016235
+Ana Ester	0.016233
+Mariaeugenia	0.016229
+Maria Constanza	0.016226
+Martiina	0.016224
+Rosmary	0.016222
+Ana Margarita	0.016218
+Fidelia	0.016216
+Maria Edith	0.016209
+Romina Alejandra	0.016205
+Patricia Lorena	0.016203
+Marcela Patricia	0.016199
+Taly	0.016194
+Graciela Del Carmen	0.016188
+Sofiaa	0.016184
+Alejandraa	0.016182
+Gloria Ester	0.016171
+Adriana Del Carmen	0.016169
+Gata	0.016167
+Cotty	0.016165
+Mariaangelica	0.016163
+Mafer	0.016156
+Rosa Elizabeth	0.016154
+Zenobia	0.016152
+Yannina	0.016146
+Julia Del Carmen	0.016144
+Maria Trinidad	0.016142
+Cecilia Veronica	0.016140
+Nathali	0.016135
+Claudia Carolina	0.016129
+Alaniz	0.016125
+Támara	0.016110
+Tamarita	0.016106
+Soledad Andrea	0.016093
+Rosa Irene	0.016091
+Milene	0.016089
+Holi	0.016087
+Rosa Andrea	0.016083
+Tía	0.016081
+Yahaira	0.016079
+Natyta	0.016075
+Maquita	0.016071
+Patricia Eugenia	0.016069
+Mary Carmen	0.016066
+Tonka	0.016054
+Inger	0.016052
+Ruth Maria	0.016050
+Sonson	0.016046
+Johanne	0.016042
+Liline	0.016040
+Betzy	0.016025
+Conzuelo	0.016023
+Bertita	0.016017
+Margott	0.016007
+Rositha	0.015998
+Kimberlyn	0.015996
+Mariajesus	0.015994
+Lorena Isabel	0.015992
+Sandra Ximena	0.015990
+Ruth Ester	0.015988
+Luz Angelica	0.015984
+Siboney	0.015980
+Cleria	0.015978
+Rosemond	0.015974
+Nesly	0.015972
+Sara Del Carmen	0.015966
+Manicure	0.015964
+Miriam Luz	0.015962
+Catalina Antonia	0.015952
+Krichna	0.015943
+Prosperina	0.015941
+Joyas De Plata	0.015935
+Anaiss	0.015929
+Estephania	0.015927
+Pichangas	0.015923
+Antonia Paz	0.015919
+Yeannette	0.015915
+Gloria Andrea	0.015913
+Ckamila	0.015899
+Sandra Angelica	0.015885
+Maritza Andrea	0.015883
+Constanza Javiera	0.015881
+Isabel Andrea	0.015875
+Ejecutiva	0.015873
+Kattalina	0.015871
+Andrea Paz	0.015859
+Marisol Andrea	0.015855
+Cotte	0.015853
+Anita María	0.015851
+Nenita	0.015847
+Eleonor	0.015843
+Mercedez	0.015833
+Mirka	0.015831
+Bele	0.015821
+Pepi	0.015819
+Ailen	0.015815
+Orlanda	0.015809
+Benilde	0.015807
+Maly	0.015798
+Ana Teresa	0.015792
+Kyara	0.015784
+Kety	0.015782
+Danyela	0.015780
+Feliza	0.015778
+Gloria Maria	0.015770
+Berline	0.015768
+Nélida	0.015766
+Dayna	0.015764
+Clari	0.015762
+Fernanda Antonia	0.015760
+Mariaisabel	0.015758
+Mailen	0.015756
+María Del Carmen	0.015754
+Rociio	0.015752
+Roci	0.015750
+Miryan	0.015747
+Mabe	0.015733
+Gretel	0.015731
+Petty	0.015729
+Chabela	0.015725
+María De Los Angeles	0.015723
+Rocio Belen	0.015721
+Cotillon	0.015717
+Mariaa	0.015715
+Laura Andrea	0.015712
+Magy	0.015706
+Gisse	0.015702
+Nydia	0.015696
+Claudia Veronica	0.015694
+Anali	0.015688
+Yeye	0.015686
+Carme	0.015683
+Rosa Ana	0.015681
+Jaky	0.015671
+Queti	0.015658
+Paola Soledad	0.015656
+Ediht	0.015652
+Ana Delia	0.015640
+Atenea	0.015633
+Bordados	0.015631
+Yobana	0.015629
+Clorinda	0.015625
+Cesilia	0.015621
+María Pía	0.015619
+María Alicia	0.015614
+Dayra	0.015610
+Omnilife	0.015604
+Alejandra Isabel	0.015602
+Rosa Alejandra	0.015600
+María Elizabeth	0.015598
+Inesita	0.015593
+Ana Veronica	0.015591
+Annabella	0.015589
+Miel	0.015585
+Mariafernanda	0.015583
+Maria Esperanza	0.015578
+Kathi	0.015574
+Juana Isabel	0.015572
+Zafiro	0.015570
+Cristina Del Carmen	0.015562
+Maryte	0.015561
+Soffia	0.015559
+Sofia Belen	0.015557
+Patricia Cecilia	0.015553
+Patricia Ines	0.015549
+Alizon	0.015546
+Anjelica	0.015544
+Piedad	0.015538
+Zulay	0.015536
+Costuras	0.015530
+Damariz	0.015529
+Deidamia	0.015523
+Disfraces	0.015521
+Carla Alejandra	0.015519
+Mané	0.015516
+Maryuri	0.015512
+Congelados	0.015510
+Gloria Ines	0.015508
+Ana Gloria	0.015501
+Chabe	0.015495
+Karolay	0.015482
+Irene Del Carmen	0.015480
+Pury	0.015476
+Gipsy	0.015471
+Anastassia	0.015469
+Tahia	0.015465
+Less	0.015462
+Kristell	0.015460
+Poulette	0.015456
+Mailyn	0.015451
+Rose Mary	0.015443
+Yuliza	0.015441
+Betza	0.015440
+Fabita	0.015436
+Yosselyn	0.015430
+Madeleyn	0.015423
+Maria Olivia	0.015421
+Maritha	0.015417
+Luisa Fernanda	0.015416
+Milady	0.015410
+Veronica Patricia	0.015405
+Sussan	0.015401
+Danniela	0.015399
+Karlitha	0.015397
+Geraldinne	0.015394
+Clínica	0.015392
+Tavita	0.015390
+Yeisy	0.015386
+Jeanete	0.015376
+Armandina	0.015370
+Fefa	0.015366
+Yenniffer	0.015363
+Camila Antonia	0.015361
+Valentina Alejandra	0.015359
+Jaaviera	0.015354
+Podologia	0.015352
+Sugey	0.015348
+Hermosina	0.015347
+Carol Andrea	0.015341
+Jennifer Andrea	0.015337
+Karlaa	0.015336
+Margarita Elena	0.015334
+Antonia Ignacia	0.015325
+Marcela Isabel	0.015323
+Charlott	0.015319
+Javiera Valentina	0.015318
+Carmen Paz	0.015314
+Jacqueline Alejandra	0.015311
+Naldy	0.015309
+Antoniia	0.015305
+Anaiz	0.015303
+Nayita	0.015302
+Dafnne	0.015300
+Lucerina	0.015298
+Victoria Andrea	0.015293
+Taby	0.015280
+Valentina Antonia	0.015275
+Soledad Del Carmen	0.015273
+Sandra Pamela	0.015268
+Raquel Del Carmen	0.015266
+Maríapaz	0.015264
+Alejandra Del Carmen	0.015259
+Sandra Milena	0.015255
+Geraldy	0.015252
+Martina Isidora	0.015250
+Margarita Andrea	0.015245
+Marcela Paola	0.015241
+Ronel	0.015239
+Emelyn	0.015237
+Alme	0.015236
+Sonita	0.015232
+Koky	0.015227
+Angeli	0.015223
+Isaa	0.015222
+Ivi	0.015220
+Anii	0.015218
+Leonarda	0.015215
+Deisi	0.015211
+Florita	0.015207
+Kenna	0.015206
+Nardy	0.015200
+Armario	0.015199
+Irlanda	0.015195
+Marigen	0.015193
+Victorina	0.015181
+Ondina	0.015178
+Sebastiana	0.015176
+Geovana	0.015174
+Marilú	0.015167
+Cely	0.015165
+Bazar	0.015162
+Angela Maria	0.015158
+Rode	0.015157
+Valencia	0.015150
+Tany	0.015148
+Ana Julia	0.015141
+Germania	0.015134
+Gislaine	0.015132
+Fernada	0.015131
+Tity	0.015127
+Cary	0.015125
+Humilde	0.015124
+Beatris	0.015122
+Merce	0.015112
+Yary	0.015110
+Claudia Isabel	0.015108
+Airam	0.015105
+Celin	0.015103
+María Rosa	0.015091
+Maylen	0.015089
+Zuni	0.015088
+Yulii	0.015084
+Comidas	0.015082
+Lelia	0.015077
+Marta Ines	0.015076
+Pamee	0.015072
+María Luz	0.015064
+Anahy	0.015055
+Aidee	0.015053
+Andrea Paola	0.015052
+Lulú	0.015048
+Licha	0.015040
+Rosmeri	0.015033
+Romiina	0.015028
+Karyna	0.015024
+Haydée	0.015021
+María Graciela	0.015016
+Maria Catalina	0.015011
+Nahomi	0.015009
+Faviana	0.015001
+Maria Rosario	0.014999
+Maria Haydee	0.014996
+Rominita	0.014992
+Oliva	0.014989
+Kariina	0.014987
+Zona	0.014986
+Clara Rosa	0.014984
+Aynara	0.014977
+Gaviota	0.014975
+Luisita	0.014969
+Jakelin	0.014960
+Giovi	0.014949
+Maria Ynes	0.014940
+Claudia Cecilia	0.014939
+Libros	0.014932
+Febe	0.014930
+Gicela	0.014929
+Abelina	0.014927
+Elba Rosa	0.014922
+Jackelin	0.014920
+Del Carmen	0.014917
+Nohelia	0.014912
+Yeka	0.014907
+Lucia Del Carmen	0.014905
+Elicia	0.014902
+Gumercinda	0.014900
+Giulianna	0.014899
+Yazmín	0.014894
+Altagracia	0.014892
+Giss	0.014891
+Rosenda	0.014889
+Viviana Soledad	0.014887
+Manualidades	0.014884
+Joyeria	0.014881
+Anamaría	0.014874
+Elbita	0.014872
+Sara Rosa	0.014869
+Nelcy	0.014863
+Luzma	0.014858
+Paulaa	0.014856
+Ana Paola	0.014854
+Mayerly	0.014846
+Leydy	0.014840
+Juliett	0.014838
+Martinita	0.014836
+Nohemi	0.014835
+Mauren	0.014832
+Ruth Eliana	0.014830
+Yayita	0.014822
+Ljubica	0.014818
+Tabatha	0.014814
+Oriflame	0.014810
+Fanfan	0.014809
+Cyndi	0.014807
+Edeline	0.014805
+Pricilla	0.014804
+Meylin	0.014802
+Rosena	0.014799
+Roody	0.014797
+Yanine	0.014796
+Deicy	0.014794
+Elianita	0.014793
+Bania	0.014791
+Yeraldine	0.014786
+Teolinda	0.014784
+Carmensita	0.014783
+Irenia	0.014781
+Yoseline	0.014780
+Steffany	0.014776
+Nicolet	0.014772
+Karolita	0.014770
+Katterin	0.014767
+Carmen Patricia	0.014765
+Maricielo	0.014763
+Maria Rebeca	0.014762
+Katheryne	0.014759
+Claudia Pamela	0.014757
+Stephanny	0.014755
+Kaina	0.014749
+Karoll	0.014747
+Edulia	0.014746
+Ingrid Paola	0.014743
+Nicol Alejandra	0.014739
+Betsabet	0.014738
+Toña	0.014736
+Magdala	0.014735
+Guerda	0.014731
+Vanessa Alejandra	0.014728
+Vaithiare	0.014723
+Claudia Paz	0.014719
+Isidora Antonia	0.014712
+Pilar Andrea	0.014707
+La Tiendita De	0.014704
+Anlly	0.014701
+Maritza Alejandra	0.014698
+Francisca Belen	0.014695
+Manena	0.014692
+Sandra Carolina	0.014687
+Daniela Francisca	0.014685
+Jaavi	0.014682
+Martina Antonia	0.014681
+Miyaray	0.014677
+Isnelda	0.014673
+Pamela Beatriz	0.014671
+Evelyn Alejandra	0.014668
+Closet De	0.014666
+Mariaignacia	0.014658
+Yare	0.014644
+Modeline	0.014635
+Angelica Del Carmen	0.014632
+Yannette	0.014630
+Baúl	0.014627
+Maribel Andrea	0.014616
+Daissy	0.014611
+Iris Del Carmen	0.014610
+Constanza Alejandra	0.014608
+Karen Elizabeth	0.014607
+Srta	0.014605
+Verónica Del Carmen	0.014602
+Audolia	0.014600
+Karitho	0.014597
+Yarixa	0.014596
+Barbara Alejandra	0.014594
+Niza	0.014590
+Jhenny	0.014585
+Tabi	0.014583
+Jhoanna	0.014582
+Marsela	0.014579
+Arlen	0.014573
+Noris	0.014569
+Darla	0.014568
+Fiore	0.014566
+Miria	0.014565
+Milita	0.014562
+Bts	0.014560
+Isela	0.014557
+Benilda	0.014556
+Ivis	0.014549
+Ingri	0.014548
+Jesy	0.014540
+Octavia	0.014534
+Isolda	0.014531
+Katiana	0.014523
+Nelsa	0.014520
+Darcy	0.014503
+Magna	0.014502
+Úrsula	0.014499
+Janira	0.014497
+Celsa	0.014496
+Pris	0.014494
+Magalie	0.014493
+Iara	0.014488
+Marialuisa	0.014485
+Anitta	0.014481
+Perfumes	0.014475
+Merline	0.014468
+Tirsa	0.014464
+Yose	0.014456
+Analuisa	0.014452
+Polonia	0.014447
+Patri	0.014444
+Dalma	0.014443
+Valle	0.014441
+Solee	0.014440
+Flopy	0.014438
+Zule	0.014437
+Flopi	0.014434
+Lorena Paola	0.014432
+Mariacristina	0.014431
+Ainara	0.014428
+Criis	0.014423
+Maria Ana	0.014420
+Marcee	0.014419
+Artesanias	0.014417
+Dayi	0.014416
+Nimia	0.014414
+Yudit	0.014410
+Marcela Beatriz	0.014408
+Maria Elvira	0.014407
+Macaa	0.014405
+Zuly	0.014402
+Haydeé	0.014401
+Mariana Andrea	0.014393
+Sandry	0.014390
+Mònica	0.014386
+Frases	0.014384
+Taniia	0.014383
+Caami	0.014378
+Maricruz	0.014375
+Marta Rosa	0.014373
+Lorena Soledad	0.014371
+Yanella	0.014368
+Estelvina	0.014367
+Aydee	0.014365
+Niña	0.014362
+Tarot	0.014361
+Rosa Cristina	0.014356
+Yake	0.014353
+Yakelin	0.014352
+Maria Gracia	0.014350
+Patrisia	0.014349
+Claudi	0.014346
+Carolina Soledad	0.014344
+Alejandra Patricia	0.014343
+Tierra	0.014336
+Las Delicias	0.014334
+María Elisa	0.014333
+Adita	0.014331
+María Del Pilar	0.014324
+Cariito	0.014322
+Ysa	0.014321
+Argelia	0.014318
+Tatty	0.014311
+Silvia Rosa	0.014300
+Marivel	0.014297
+Melva	0.014296
+Marité	0.014294
+Rosamaria	0.014293
+Vanesita	0.014292
+Costanza	0.014287
+Marcela Elizabeth	0.014286
+Albita	0.014284
+Sandra Elena	0.014274
+Maryluz	0.014273
+Zunny	0.014268
+Uniformes	0.014265
+Gissell	0.014264
+Paola Elizabeth	0.014262
+Lucerito	0.014261
+Cristina Isabel	0.014258
+Aracelis	0.014252
+Tamaraa	0.014251
+Natha	0.014244
+Beatriz Del Carmen	0.014242
+Susana Alejandra	0.014239
+Patricia Carolina	0.014238
+Renatta	0.014229
+Norma Del Carmen	0.014228
+Maria Ruth	0.014226
+Lucesita	0.014225
+Susana Elizabeth	0.014222
+Clemira	0.014221
+Claudia Elena	0.014219
+Vaale	0.014215
+María Constanza	0.014202
+Tote	0.014200
+Lylian	0.014199
+Thamy	0.014198
+Ginna	0.014196
+Piaa	0.014193
+Ibis	0.014189
+Caritho	0.014188
+Valeriia	0.014185
+Myrta	0.014183
+Eloísa	0.014179
+Caamila	0.014173
+Marta Andrea	0.014172
+Luzmaria	0.014171
+Krito	0.014168
+Marybel	0.014161
+Nahomy	0.014153
+Emerita	0.014151
+Sandra Soledad	0.014149
+Nelly Del Carmen	0.014148
+Yannet	0.014145
+Rosa Veronica	0.014144
+Nelsy	0.014141
+Blanca Elena	0.014135
+Ivet	0.014125
+Josepha	0.014124
+Piia	0.014122
+Faride	0.014121
+Isita	0.014120
+Vannessa	0.014114
+Ninette	0.014113
+Maily	0.014110
+Kimy	0.014108
+Pascalle	0.014106
+Luz Mery	0.014100
+Anggie	0.014098
+Fabiolita	0.014097
+Roxanita	0.014096
+Alecita	0.014094
+Vivianita	0.014093
+Grissel	0.014091
+Guisel	0.014089
+Maria Tereza	0.014087
+Ninosca	0.014080
+Keily	0.014078
+Maythe	0.014076
+Nitza	0.014075
+Orfa	0.014072
+Eduviges	0.014071
+Juanny	0.014069
+Claudia Ximena	0.014065
+Yadhira	0.014064
+Yerly	0.014062
+M Isabel	0.014061
+Solanch	0.014059
+Danielitha	0.014054
+Luz Adriana	0.014050
+Kamilita	0.014048
+Yulieth	0.014044
+Nicolsita	0.014043
+Erika Alejandra	0.014040
+Diana Carolina	0.014039
+Yannett	0.014037
+Paulinita	0.014036
+Guissela	0.014034
+Julia Andrea	0.014032
+Yeraldy	0.014029
+Claudia Angelica	0.014028
+Clinica Dental	0.014025
+Yennyfer	0.014023
+Yilian	0.014021
+Ruth Angelica	0.014019
+Katiusca	0.014010
+M Angelica	0.014007
+Ximena Patricia	0.014006
+Roselene	0.014001
+Kamyla	0.014000
+Valdivia	0.013999
+Feernanda	0.013997
+Bessie	0.013993
+Kerline	0.013992
+Majorie	0.013990
+Mixi	0.013989
+Anasol	0.013985
+Ignaciia	0.013978
+Maggita	0.013973
+Johana Andrea	0.013971
+Javiera Catalina	0.013969
+Loreto Andrea	0.013965
+Sandra Jacqueline	0.013963
+Cherline	0.013962
+Franshesca	0.013960
+Dinelly	0.013955
+Solcita	0.013954
+Melannie	0.013952
+Amandina	0.013950
+Mackarenna	0.013947
+Odett	0.013944
+Krasna	0.013943
+Schlomit	0.013941
+Rosa Eugenia	0.013940
+Audilia	0.013939
+Jessica Lorena	0.013936
+Jeannette Del Carmen	0.013935
+Galicia	0.013931
+Gloria Elena	0.013928
+Mirtza	0.013925
+Jaritza	0.013924
+Camĭla	0.013923
+Isidora Paz	0.013921
+Cumpleaños	0.013920
+Sofia Alejandra	0.013918
+Barbaraa	0.013917
+María Jesus	0.013914
+Isidora Ignacia	0.013913
+Marisol Alejandra	0.013912
+Fresia Del Carmen	0.013910
+Rosa Herminia	0.013909
+Jazmina	0.013908
+Wideline	0.013906
+Javiera Francisca	0.013905
+Yeritza	0.013901
+Ignaciaa	0.013897
+Valenttina	0.013892
+Sofita	0.013889
+Conyta	0.013881
+Yohanny	0.013878
+Paaz	0.013876
+Fernanda Ignacia	0.013874
+Camilitha	0.013873
+Ximena Paola	0.013868
+Maribel Del Carmen	0.013862
+Monsee	0.013861
+Elizabeth Carolina	0.013860
+Jeimmy	0.013852
+Vestuario	0.013850
+Makitha	0.013848
+Jeannette Alejandra	0.013846
+Sandra Del Pilar	0.013844
+Josita	0.013842
+Yazmina	0.013841
+Jubitza	0.013840
+Constanza Belén	0.013837
+Oritia	0.013834
+Carolina Fernanda	0.013830
+Fernanda Catalina	0.013829
+Valentina Belen	0.013826
+Quenita	0.013825
+Martina Paz	0.013824
+Bernarda Del Carmen	0.013822
+Alvarita	0.013821
+Yuyunis	0.013820
+Gabriela Paz	0.013818
+Bélgica	0.013816
+Maria De La Luz	0.013813
+Ailine	0.013812
+Berta Elena	0.013811
+Patyta	0.013808
+Francisca Antonia	0.013805
+Angela Andrea	0.013804
+Nixa	0.013801
+Nayadett	0.013800
+Maribel Alejandra	0.013799
+Loretito	0.013797
+Juna	0.013795
+Wena	0.013792
+Tula	0.013791
+Naida	0.013789
+Ornela	0.013787
+Kela	0.013786
+Emer	0.013782
+Manola	0.013780
+Nirvana	0.013770
+Bessy	0.013767
+Jesika	0.013766
+Leidi	0.013765
+Chica	0.013761
+Graci	0.013759
+Fide	0.013754
+Sophi	0.013752
+Clo	0.013750
+Erminda	0.013746
+Cona	0.013731
+Lary	0.013730
+Malú	0.013728
+Maria Paula	0.013723
+Maria Marta	0.013717
+Chila	0.013715
+Pita	0.013713
+Alinne	0.013706
+Yomara	0.013705
+Tirza	0.013704
+Emii	0.013701
+Landy	0.013699
+Catrina	0.013697
+Milsa	0.013691
+Honoria	0.013688
+Maria Lidia	0.013685
+Basilia	0.013682
+Cons	0.013681
+Ana Marcela	0.013678
+Dariela	0.013676
+Daylin	0.013674
+Mirlene	0.013672
+Maria Claudia	0.013667
+Aldana	0.013662
+Melii	0.013660
+Nazarena	0.013659
+Yanii	0.013658
+Ayelén	0.013653
+Cecii	0.013651
+Eluney	0.013650
+Silvia Alejandra	0.013649
+Loree	0.013648
+Caroo	0.013645
+Marta Alicia	0.013642
+Zully	0.013639
+Clauu	0.013636
+Peque	0.013631
+Tefy	0.013630
+Dionicia	0.013627
+Asuncion	0.013626
+Norma Alicia	0.013621
+Maria Daniela	0.013620
+Norma Isabel	0.013618
+Sandra Beatriz	0.013616
+Noemii	0.013610
+Stefii	0.013608
+Maria Jimena	0.013606
+María Mercedes	0.013603
+Silvia Andrea	0.013601
+Triana	0.013598
+Angii	0.013597
+Marixa	0.013596
+Soleda	0.013593
+Rogelia	0.013592
+Mariaines	0.013588
+Maria Marcela	0.013587
+Nelva	0.013586
+Nancy Elizabeth	0.013576
+Cristin	0.013574
+Lus	0.013572
+Susana Isabel	0.013571
+Osiris	0.013567
+Haidee	0.013561
+Maria Aurora	0.013554
+Roxana Elizabeth	0.013553
+Jezabel	0.013552
+Yess	0.013551
+Veronica Soledad	0.013548
+Monica Elizabeth	0.013546
+Farmacia	0.013544
+Viviana Elizabeth	0.013542
+Vivíana	0.013541
+Eulogia	0.013537
+Stefanía	0.013535
+Silvana Andrea	0.013532
+Laura Isabel	0.013525
+Maria Paola	0.013523
+Marijo	0.013522
+Mechita	0.013520
+Jhoselin	0.013515
+Marielena	0.013507
+Julietta	0.013501
+Ana Soledad	0.013500
+Roxsana	0.013489
+Cosita	0.013486
+Rubí	0.013485
+Cri	0.013483
+Anyta	0.013482
+Caroliina	0.013480
+Luisa Ester	0.013479
+Marcela Veronica	0.013475
+Venecia	0.013469
+Variedades	0.013468
+Vivy	0.013460
+Claudia Soledad	0.013457
+Odila	0.013456
+Raquelita	0.013455
+Saby	0.013452
+Lorena Patricia	0.013444
+Maria Elba	0.013443
+Niicole	0.013439
+Veritho	0.013434
+Amatista	0.013432
+M Cristina	0.013430
+Sara Ester	0.013429
+Sara Isabel	0.013424
+Anay	0.013422
+M Fernanda	0.013421
+Arita	0.013417
+Roxana Alejandra	0.013416
+Carolina Beatriz	0.013415
+Alejandra Elizabeth	0.013413
+Reichel	0.013412
+Olga Elena	0.013410
+Yilda	0.013407
+Ainhoa	0.013404
+Monica Soledad	0.013403
+Aliz	0.013401
+Solita	0.013400
+Rosa Aurora	0.013397
+Irma Del Carmen	0.013393
+Rousse	0.013392
+Kelita	0.013389
+Lavanderia	0.013388
+Maria Nela	0.013387
+Tanita	0.013385
+Guiliana	0.013381
+Marta Angelica	0.013379
+Compras	0.013377
+Carolinaa	0.013376
+Soyla	0.013375
+Balentina	0.013371
+Lizett	0.013367
+Pamela Soledad	0.013364
+Franche	0.013359
+Andrea Isabel	0.013358
+Verònica	0.013357
+Sra	0.013354
+Lilith	0.013351
+Sthefany	0.013350
+Dafna	0.013348
+Madeley	0.013346
+Soila	0.013345
+Patricia Carmen	0.013342
+Patricia Ester	0.013340
+Renacer	0.013339
+Aranzazu	0.013338
+Domii	0.013337
+Kimberli	0.013335
+Sonia Ester	0.013331
+Claudia Del Carmen	0.013330
+Yuliet	0.013324
+Orfelia	0.013318
+Cecilia Elizabeth	0.013317
+Yeli	0.013316
+Maria Violeta	0.013313
+Alejandra Carolina	0.013312
+María Patricia	0.013309
+Rosmarie	0.013304
+Jovanka	0.013301
+Danka	0.013300
+Marinka	0.013299
+Manou	0.013296
+Sendy	0.013293
+Yaris	0.013292
+Safka	0.013291
+Shika	0.013289
+Marie Ange	0.013286
+Carolyne	0.013283
+Maritsa	0.013280
+Junia	0.013279
+Marjory	0.013278
+Anthonia	0.013276
+Sherline	0.013270
+Jannett	0.013266
+Mayita	0.013265
+Vanessita	0.013264
+Blankita	0.013263
+Amandita	0.013262
+Dulia	0.013260
+Yossy	0.013258
+Deysy	0.013257
+Marlencita	0.013255
+Yosy	0.013249
+Carlitha	0.013245
+Johanita	0.013243
+Estephany	0.013241
+Residencial	0.013240
+Giovy	0.013237
+Yulitza	0.013236
+Maytte	0.013234
+Karen Paola	0.013233
+Luzmarina	0.013231
+Coralia	0.013229
+Yamira	0.013223
+Jaquelinne	0.013216
+Dannia	0.013215
+Yese	0.013212
+Ana Andrea	0.013207
+Maria Euguenia	0.013204
+Thalía	0.013200
+Dionila	0.013198
+Menita	0.013194
+Angelik	0.013193
+Lutgarda	0.013192
+Juana Luisa	0.013189
+Arelys	0.013188
+Yesse	0.013186
+Nattaly	0.013183
+Clauditha	0.013182
+Nickole	0.013181
+Dallana	0.013175
+Belencitha	0.013172
+Carolinne	0.013169
+Acsa	0.013167
+Vasti	0.013166
+Margarett	0.013162
+Nerlande	0.013160
+Nahomie	0.013158
+Eliette	0.013157
+Luz Dary	0.013156
+Mireya Del Carmen	0.013154
+Catha	0.013151
+Aranxa	0.013147
+Anahys	0.013143
+Valeska Alejandra	0.013142
+Klaudita	0.013141
+Javitha	0.013139
+Tanza	0.013136
+Flor María	0.013132
+Maritza Isabel	0.013131
+Fernanda Paz	0.013130
+Rosa Adriana	0.013128
+Krishnaa	0.013127
+Kotee	0.013125
+Tamara Alejandra	0.013119
+Catherine Andrea	0.013117
+Florencia Antonia	0.013116
+Josefa Ignacia	0.013113
+Yasna Andrea	0.013109
+Gabriela Del Carmen	0.013108
+Fabiola Del Carmen	0.013107
+Magaly Del Carmen	0.013106
+Elsa Del Carmen	0.013105
+Tyare	0.013102
+M Eugenia	0.013098
+Pilita	0.013097
+Dellanira	0.013096
+Yeanette	0.013088
+Jocelyn Alejandra	0.013083
+Jekita	0.013082
+Marta Eliana	0.013080
+Idilia	0.013079
+Tiendita De	0.013073
+Jossefa	0.013072
+Fernanda Belen	0.013069
+Valentina Javiera	0.013068
+Fraancisca	0.013065
+Aseo	0.013064
+Yolanda Del Carmen	0.013063
+Yolimar	0.013061
+Nicolé	0.013060
+Magdita	0.013059
+Cecilia Ester	0.013057
+Pasteleria	0.013055
+Elianira	0.013054
+Hilda Del Carmen	0.013053
+Patricia Del Pilar	0.013052
+Ximena Soledad	0.013051
+Valeentina	0.013050
+Novelia	0.013049
+Cotita	0.013047
+Angelica Andrea	0.013044
+Ema Rosa	0.013043
+Sandra Ivonne	0.013042
+Antoniaa	0.013039
+Consttanza	0.013038
+Fransheska	0.013031
+Josefaa	0.013026
+Sandra Fabiola	0.013024
+Priscilla Andrea	0.013016
+Telares	0.013014
+Eugenia Del Carmen	0.013012
+Priscila Andrea	0.013011
+Sofia Andrea	0.013010
+Almuerzos	0.013008
+Ingrid Lorena	0.013007
+Xelo	0.013005
+Kichi	0.013003
+Yuyuniz	0.013001
+Detallitos	0.012997
+Marjorie Andrea	0.012994
+Maritza Soledad	0.012992
+Constanza Valentina	0.012991
+Jessica Pamela	0.012990
+Victoria Paz	0.012989
+Ruth Del Carmen	0.012987
+Daniela Carolina	0.012986
+Patricia Ivonne	0.012984
+Constanza Paz	0.012979
+Ventaas	0.012975
+Onesima	0.012974
+Ana Milena	0.012972
+Bernardita Del Carmen	0.012971
+Ximena Isabel	0.012968
+Pamela Del Carmen	0.012966
+Yasuri	0.012965
+Magdalena Del Carmen	0.012963
+Fidelisa	0.012962
+Lovelie	0.012961
+Toyita	0.012960
+Paz Belén	0.012958
+Hand Rolls	0.012956
+Valeskita	0.012953
+Laura Del Carmen	0.012951
+Marcela Del Pilar	0.012950
+Lineda	0.012949
+Gladys Elena	0.012948
+Sara Luisa	0.012947
+Tila	0.012945
+Jesi	0.012942
+Puri	0.012941
+Artemisa	0.012938
+Greis	0.012937
+Pandora	0.012929
+Ene	0.012928
+Nerida	0.012924
+Inelda	0.012923
+Gris	0.012920
+Tefi	0.012919
+Bego	0.012917
+Filo	0.012916
+Lorens	0.012911
+Arii	0.012908
+Ledy	0.012906
+Shishi	0.012899
+Caridad	0.012898
+Odeth	0.012897
+Gemima	0.012893
+Bethy	0.012891
+Carmem	0.012886
+Mauricia	0.012885
+Vaneza	0.012884
+Crisna	0.012876
+Benigna	0.012875
+Ketia	0.012874
+Nelita	0.012872
+Suelen	0.012870
+Junette	0.012869
+Dulce Maria	0.012868
+Olga Maria	0.012867
+Channel	0.012863
+Jenoveva	0.012861
+Adriela	0.012860
+Maria Regina	0.012856
+Elodia	0.012854
+Yaimara	0.012853
+Auro	0.012852
+Maria Angelina	0.012850
+Americana	0.012849
+Paito	0.012846
+Manue	0.012843
+Olga Lidia	0.012842
+Amarilis	0.012840
+Bellas	0.012835
+Carla Daniela	0.012834
+Nayda	0.012833
+Annia	0.012832
+Maigo	0.012830
+Rosa Patricia	0.012828
+Silene	0.012827
+Jaqui	0.012826
+Yamii	0.012825
+Giuli	0.012822
+Susana Beatriz	0.012821
+Maria Eva	0.012819
+Loreley	0.012818
+Chiqui	0.012815
+Estefii	0.012811
+Yaqui	0.012810
+Maria Carmen	0.012805
+Maria Liliana	0.012803
+Rosii	0.012801
+Lidia Ester	0.012798
+Antto	0.012797
+Naara	0.012793
+Felicidad	0.012787
+Pipa	0.012786
+Ceferina	0.012785
+Maria E	0.012784
+Maria Adela	0.012783
+Sandra Viviana	0.012781
+Tuty	0.012780
+Eusebia	0.012779
+Sandra Marcela	0.012778
+Silvia Patricia	0.012776
+Maria Monica	0.012772
+Silvia Ester	0.012770
+Yenii	0.012769
+Alegandra	0.012768
+Casilda	0.012766
+Natalia Carolina	0.012765
+Sulema	0.012762
+Mym	0.012759
+Sixta	0.012754
+Teofila	0.012753
+Marta Ester	0.012750
+Romyna	0.012746
+Morita	0.012743
+Maria Viviana	0.012741
+Peppa	0.012739
+Natti	0.012738
+Velia	0.012734
+Veronica Elizabeth	0.012733
+Lorena Elizabeth	0.012732
+Ayde	0.012724
+Este	0.012723
+Marily	0.012718
+Taina	0.012713
+Depilacion	0.012707
+Patricia Marcela	0.012703
+Mabel Alejandra	0.012701
+Rosa Alicia	0.012700
+Andrea Elizabeth	0.012698
+Kiarita	0.012697
+Ana Elena	0.012696
+Fidela	0.012695
+Buena	0.012693
+Dariana	0.012692
+Lely	0.012691
+Cecilia Beatriz	0.012688
+Laura Elena	0.012681
+Viví	0.012680
+Angiie	0.012678
+March	0.012670
+Gladys Ester	0.012668
+Paolaa	0.012665
+Maria Valentina	0.012664
+Dorila	0.012663
+Mariale	0.012661
+Cla	0.012659
+Mercedes Del Carmen	0.012658
+Liliana Del Carmen	0.012656
+Salud	0.012655
+Ruht	0.012652
+Estefa	0.012651
+Adrianita	0.012649
+Marta Elizabeth	0.012648
+Mariasoledad	0.012647
+Maria Salome	0.012645
+Maria Nancy	0.012642
+Olga Isabel	0.012641
+Cecilia Soledad	0.012639
+Kathii	0.012637
+Jhovana	0.012636
+Martinaa	0.012631
+María Raquel	0.012630
+Marta Alejandra	0.012625
+Plantas	0.012623
+Franccesca	0.012622
+Carmen Maria	0.012621
+Sandra Ines	0.012620
+Ana Lorena	0.012617
+Juana Ester	0.012615
+Margarita Ester	0.012614
+Claudiaa	0.012613
+Lidia Isabel	0.012612
+Arcoiris	0.012610
+Mirta Del Carmen	0.012607
+Beatriz Alejandra	0.012606
+Camen	0.012602
+Trenzas	0.012599
+Alejandra Soledad	0.012598
+Panchy	0.012597
+Paula Carolina	0.012595
+Karli	0.012592
+La Casa	0.012591
+Ory	0.012590
+Masoterapia	0.012588
+Paola Carolina	0.012587
+Andreiita	0.012583
+Gabrielita	0.012579
+Marbella	0.012578
+Aleyda	0.012576
+Peluquería	0.012572
+Betsa	0.012568
+Julisa	0.012564
+Sara Elena	0.012560
+Flaquita	0.012559
+Yeyi	0.012557
+Itzel	0.012554
+Sonia Isabel	0.012553
+Nancy Ester	0.012548
+Maria Hilda	0.012546
+Arianny	0.012545
+Aury	0.012538
+Erikita	0.012536
+Tinita	0.012535
+Ibeth	0.012531
+María Margarita	0.012529
+Ivón	0.012528
+M Cecilia	0.012526
+Marcela Cecilia	0.012524
+Jaquelines	0.012522
+Rosa Lidia	0.012521
+Marina Del Carmen	0.012519
+Galy	0.012514
+Pamela Elizabeth	0.012513
+María Veronica	0.012512
+Peta	0.012509
+Kmy	0.012508
+Olgita	0.012507
+Kren	0.012506
+Rosa Edith	0.012504
+Clara Elena	0.012503
+Roxana Paola	0.012502
+Rosa Cecilia	0.012500
+Chechy	0.012493
+Analis	0.012491
+Mariela Del Carmen	0.012489
+Rosario Del Carmen	0.012487
+Jimenita	0.012486
+Fedora	0.012480
+Chantale	0.012475
+Ayliin	0.012473
+Neira	0.012472
+Vianney	0.012464
+Kine	0.012463
+Madelyne	0.012462
+Clarina	0.012457
+Rossina	0.012456
+Chanita	0.012455
+Keisy	0.012452
+Lucita	0.012451
+Tayra	0.012450
+Yean	0.012450
+Neny	0.012449
+Nuris	0.012448
+Joane	0.012447
+Rossio	0.012446
+Milenca	0.012445
+Luz Mary	0.012443
+Mayerli	0.012442
+Alesita	0.012440
+Monikita	0.012437
+Mileidy	0.012436
+Yecenia	0.012435
+Eveling	0.012432
+Gudelia	0.012430
+Guicela	0.012428
+Yovita	0.012426
+Maclovia	0.012425
+Irmita	0.012424
+Yarely	0.012423
+Gatita	0.012420
+Chabelita	0.012417
+Nirza	0.012414
+Kateryn	0.012412
+Pilarcita	0.012411
+Kerly	0.012410
+Yeyita	0.012409
+Yanin	0.012404
+Kimberlin	0.012403
+Jeannet	0.012402
+Madeleyne	0.012400
+Karla Alejandra	0.012397
+Nicolita	0.012396
+Elizabett	0.012394
+Josefita	0.012392
+Carmen Andrea	0.012391
+Maria Ivonne	0.012390
+Anyeli	0.012389
+Elyta	0.012387
+Lenis	0.012386
+Angélica Maria	0.012385
+Ninita	0.012384
+Ana Alejandra	0.012383
+Ana Angelica	0.012382
+Tahis	0.012380
+Yessica Paola	0.012378
+Martha Lucia	0.012377
+Haylin	0.012375
+Toñita	0.012373
+Ingrid Pamela	0.012371
+Briggitte	0.012370
+María Consuelo	0.012369
+Pamelitha	0.012365
+Joselinne	0.012365
+Holanda	0.012361
+Florisa	0.012360
+Delva	0.012359
+Gissele	0.012358
+Alanys	0.012354
+Jessica Maria	0.012353
+Daphney	0.012352
+Cammy	0.012351
+Ashlie	0.012350
+Yvrose	0.012349
+Mimose	0.012349
+Mitsy	0.012346
+Dieula	0.012344
+Patricia Eliana	0.012342
+Margarita Cecilia	0.012339
+Katherines	0.012338
+Pamela Isabel	0.012335
+Pauliina	0.012334
+Yessica Andrea	0.012332
+Ingrid Andrea	0.012331
+Orielle	0.012330
+Pabla Andrea	0.012326
+Jennifer Alejandra	0.012325
+Claudia Francisca	0.012324
+Makarenna	0.012322
+Paola Del Carmen	0.012320
+Jimena Andrea	0.012317
+Genesiis	0.012316
+Ester Del Carmen	0.012314
+Isidoraa	0.012313
+Audolina	0.012310
+Maritza Del Carmen	0.012309
+Gennesis	0.012306
+Ingrid Del Carmen	0.012304
+Ingrid Alejandra	0.012303
+Helvia	0.012301
+Marisella	0.012300
+Daniela Constanza	0.012298
+Camila Belén	0.012296
+Yoselin Andrea	0.012295
+Annays	0.012292
+Grima	0.012291
+Aminta	0.012288
+Veronica Del Pilar	0.012285
+Yessica Alejandra	0.012283
+Catalella	0.012278
+Eva Del Carmen	0.012277
+Tiiare	0.012276
+Mi Tiendita	0.012275
+Yislen	0.012267
+Ilsia	0.012266
+Olga Patricia	0.012266
+Treicy	0.012265
+Anggy	0.012264
+M Ignacia	0.012263
+Cristina Soledad	0.012262
+Tatiana Andrea	0.012261
+Giannella	0.012259
+Barbaritha	0.012258
+Roxana Del Carmen	0.012257
+Victoria Del Carmen	0.012256
+Ana Paulina	0.012255
+Susana Angelica	0.012252
+Beña	0.012249
+Jenny Andrea	0.012248
+Nataly Alejandra	0.012247
+Kriishna	0.012245
+Carolina Del Pilar	0.012243
+Ingris	0.012242
+Tamita	0.012241
+Carla Francisca	0.012240
+Elizabeth Veronica	0.012239
+Rosemene	0.012238
+Yassna	0.012237
+Maccarena	0.012234
+Yisenia	0.012232
+Betsabeth	0.012230
+Baitiare	0.012228
+Lelita	0.012225
+Vestidos	0.012221
+Yesenia Andrea	0.012219
+Ema Del Carmen	0.012216
+Denisse Alejandra	0.012215
+Sara Elizabeth	0.012211
+Esterlina	0.012211
+Nayarette	0.012210
+Ivonne Andrea	0.012209
+Alicia Andrea	0.012208
+Antonella Paz	0.012207
+Ximena Elizabeth	0.012205
+María Trinidad	0.012202
+Islande	0.012201
+Viviana Carolina	0.012195
+Joseffa	0.012192
+Irelba	0.012191
+Leslita	0.012191
+Kekita	0.012190
+Pia Ignacia	0.012189
+Violeta Del Carmen	0.012188
+Dangela	0.012187
+Yohana Andrea	0.012186
+Mi Closet	0.012182
+Nora Del Carmen	0.012180
+Andrea Del Pilar	0.012176
+Ledda	0.012175
+Virginia Del Carmen	0.012174
+Ventita	0.012173
+Constanza Catalina	0.012173
+Caata	0.012172
+Elizabeth Margarita	0.012169
+Parcela	0.012168
+Hilda Rosa	0.012166
+Teresa Andrea	0.012165
+Diana Marcela	0.012164
+Omara	0.012161
+Sorpresas	0.012159
+Kamiila	0.012158
+Ivonne Del Carmen	0.012157
+Guadalupe Del Carmen	0.012155
+Catalina Fernanda	0.012153
+Viña	0.012151
+Hayleen	0.012150
+Sofia Paz	0.012149
+Yocy	0.012148
+Belen Alejandra	0.012147
+Guliana	0.012146
+Katherinee	0.012146
+Katalyna	0.012145
+Francisca Paz	0.012144
+Suyin	0.012143
+Belen Antonia	0.012142
+Clara Del Carmen	0.012141
+Krischna	0.012139
+Mackita	0.012138
+Fancy	0.012137
+Isidorita	0.012136
+Evelyn Carolina	0.012135
+Mia Pascal	0.012134
+Íngrid	0.012133
+Luisa Andrea	0.012131
+Kta	0.012130
+Ingrid Soledad	0.012129
+Belen Ignacia	0.012129
+Purísima	0.012128
+Johanna Alejandra	0.012127
+Gloria Ximena	0.012126
+Ninozka	0.012125
+Cecilia Del Pilar	0.012121
+Palomaa	0.012118
+Danaee	0.012117
+Elba Del Carmen	0.012116
+Kiomara	0.012115
+Elizabeth Paola	0.012113
+Daaniela	0.012113
+Manise	0.012111
+Pilar Alejandra	0.012107
+Genessis	0.012106
+Carmen Rita	0.012105
+Margarita Soledad	0.012103
+María Pilar	0.012102
+Javiieraa	0.012101
+Kattyta	0.012099
+Tencha	0.012097
+Carcasas	0.012094
+Monica Del Pilar	0.012092
+Gladys Ines	0.012090
+María Olga	0.012088
+Olfa	0.012084
+Janitha	0.012082
+Chary	0.012082
+Yamna	0.012078
+Egla	0.012077
+Albania	0.012076
+Eglantina	0.012075
+Franceska	0.012074
+Silda	0.012073
+Marilda	0.012072
+Elinor	0.012071
+Geraldi	0.012070
+Nea	0.012068
+Delina	0.012067
+Miku	0.012064
+Oti	0.012063
+Isilda	0.012062
+Arinda	0.012058
+Grasiela	0.012057
+Merlina	0.012055
+Dianela	0.012049
+Cuca	0.012048
+Gerty	0.012045
+Afrodita	0.012043
+Diamantina	0.012041
+Atelier	0.012040
+Palma	0.012039
+Titina	0.012038
+Alvara	0.012037
+Alesandra	0.012036
+Gis	0.012035
+Maria Helena	0.012030
+Germana	0.012029
+Efigenia	0.012026
+Fania	0.012026
+Isamara	0.012025
+Marceline	0.012022
+Niria	0.012019
+Bendita	0.012018
+Orquidea	0.012016
+Vanny	0.012014
+Hermelinda	0.012013
+Jaquelina	0.012011
+Sandra Maria	0.012010
+Isy	0.012007
+Ana Francisca	0.012004
+Maria Amelia	0.012003
+Marle	0.012002
+Sefora	0.012001
+Deyse	0.012000
+Arline	0.012000
+Míriam	0.011999
+Milta	0.011996
+Selmira	0.011994
+Viera	0.011989
+Mayela	0.011986
+Milza	0.011981
+Jaira	0.011980
+Maria Lucia	0.011975
+Christela	0.011971
+Elibeth	0.011969
+Nandy	0.011969
+Dayse	0.011968
+Ana Lidia	0.011965
+Emelinda	0.011963
+Gleny	0.011961
+Nicool	0.011960
+Estefaniia	0.011958
+Pety	0.011954
+Vaniia	0.011953
+Zayda	0.011952
+Candela	0.011951
+Abii	0.011950
+Fiama	0.011948
+Monica Beatriz	0.011947
+Yesii	0.011946
+Kuki	0.011940
+Barbii	0.011936
+Maria Angeles	0.011934
+Maqui	0.011931
+Solsito	0.011930
+Ropas	0.011929
+Celene	0.011927
+Katii	0.011921
+Laura Alejandra	0.011920
+Chiky	0.011919
+Fio	0.011916
+Maria De Los Ángeles	0.011915
+Kity	0.011913
+Jenii	0.011908
+Maria Juana	0.011905
+Aromas	0.011902
+Alba Rosa	0.011900
+Gavi	0.011897
+María Beatriz	0.011896
+María Virginia	0.011895
+Lorena Beatriz	0.011892
+Sonia Elizabeth	0.011889
+Olga Ines	0.011888
+Karina Elizabeth	0.011886
+Sirley	0.011885
+Dulcinea	0.011882
+Belkys	0.011881
+Paola Lorena	0.011880
+Zonia	0.011879
+Miriam Elizabeth	0.011877
+Nancy Edith	0.011875
+Karina Paola	0.011874
+Mailin	0.011872
+Rosaa	0.011871
+Niicol	0.011864
+Monona	0.011859
+Cotillón	0.011859
+María Lorena	0.011851
+Sully	0.011850
+Maquillajes	0.011849
+Ana Belén	0.011848
+Chavela	0.011846
+Maria Roxana	0.011845
+Beronica	0.011844
+Favi	0.011842
+María Josefina	0.011840
+Adriana Isabel	0.011838
+Anabell	0.011835
+Desayunos	0.011833
+Karenn	0.011832
+Silvia Veronica	0.011830
+Teffy	0.011829
+Agripina	0.011825
+Daani	0.011825
+Color	0.011823
+Karina Soledad	0.011822
+Liga	0.011820
+Kro	0.011816
+Carliita	0.011811
+Claudia Cristina	0.011811
+Ana Silvia	0.011810
+Cocina	0.011806
+Lidia Rosa	0.011805
+Mónica Alejandra	0.011801
+Mirta Elena	0.011799
+Mariacecilia	0.011798
+Karinaa	0.011797
+Brendita	0.011796
+Jardin	0.011793
+Cynthya	0.011792
+Cecilia Ines	0.011792
+Monica Ester	0.011791
+Piel	0.011788
+Sandra Cristina	0.011783
+Julia Rosa	0.011783
+Encarnacion	0.011777
+Ana Celia	0.011776
+Techy	0.011774
+Natalia Belen	0.011774
+Liliana Andrea	0.011773
+Nataliaa	0.011771
+Nancy Alejandra	0.011768
+Analiz	0.011767
+Paola Cecilia	0.011766
+Andrea Patricia	0.011766
+Nirma	0.011763
+Lhaa	0.011762
+Milagritos	0.011761
+Ana Mercedes	0.011753
+Sofí	0.011751
+Maria Guillermina	0.011749
+Chelito	0.011746
+Maria Sofia	0.011738
+Marcela Soledad	0.011735
+Mayra Alejandra	0.011734
+Mochi	0.011732
+Akemi	0.011731
+Nilvia	0.011729
+Totty	0.011727
+Alejadra	0.011727
+Blanca Ines	0.011723
+Mariita	0.011722
+Irma Rosa	0.011721
+Margarita Rosa	0.011720
+Michy	0.011719
+Jireh	0.011718
+Marbel	0.011715
+Manzana	0.011714
+Claudia Fernanda	0.011712
+Nutricionista	0.011711
+Ruth Alejandra	0.011709
+Camiilaa	0.011707
+Pancracia	0.011706
+Misaki	0.011705
+María Gloria	0.011703
+Daniela Belen	0.011702
+Akane	0.011701
+Maria Sandra	0.011699
+Celia Rosa	0.011697
+Silvanita	0.011695
+Karina Isabel	0.011693
+Silvia Angelica	0.011692
+Estercita	0.011689
+Marta Eugenia	0.011687
+Walkiria	0.011684
+Rossmery	0.011683
+Paulitha	0.011682
+Laura Ester	0.011680
+Crea	0.011676
+Nancy Patricia	0.011675
+Margarita Maria	0.011672
+Dominica	0.011670
+Ana Ruth	0.011668
+Cecia	0.011667
+Valeriaa	0.011666
+Mijal	0.011665
+Nancy Elena	0.011663
+Nilse	0.011660
+Karelys	0.011659
+Yacquelin	0.011659
+Alejandra Cecilia	0.011658
+Nuskin	0.011657
+Teresa Isabel	0.011656
+Nayibe	0.011656
+Geminis	0.011654
+Kaori	0.011650
+Yely	0.011649
+Maria Georgina	0.011645
+Terapia	0.011642
+Margarita Ines	0.011641
+Maria Isolina	0.011637
+Sofia Valentina	0.011634
+Madelen	0.011633
+Koty	0.011630
+Sofhia	0.011629
+Hermy	0.011627
+Olga Rosa	0.011621
+Karliita	0.011620
+Alfajores	0.011618
+Maria Iris	0.011618
+Elisa Del Carmen	0.011617
+Mirita	0.011616
+Yoby	0.011615
+Fresita	0.011615
+Kissy	0.011614
+Tentaciones	0.011613
+Claudia Fabiola	0.011612
+Patii	0.011609
+Betzi	0.011608
+Yanka	0.011607
+Stefa	0.011605
+Taira	0.011603
+Polin	0.011600
+Julienne	0.011597
+Coraline	0.011597
+Louna	0.011596
+Fallon	0.011593
+Allisson	0.011592
+Brithany	0.011588
+Dixie	0.011586
+Kendry	0.011583
+Giordana	0.011582
+Yobi	0.011581
+Melinka	0.011579
+Keity	0.011578
+Conie	0.011577
+Sophonie	0.011576
+Arly	0.011575
+Jacquline	0.011574
+Francini	0.011573
+Deyna	0.011572
+Jhoselyn	0.011572
+Dayanita	0.011571
+Heydi	0.011570
+Loyda	0.011569
+Ilsen	0.011569
+Yarita	0.011567
+Nohemy	0.011566
+Eymi	0.011565
+Jahel	0.011563
+Esthefany	0.011560
+Beita	0.011559
+Angela Patricia	0.011559
+Yakeline	0.011558
+Leyda	0.011556
+Darlen	0.011553
+Yalile	0.011552
+Anelis	0.011552
+Solecita	0.011549
+Cecita	0.011549
+Sarela	0.011546
+Zarela	0.011545
+Mishelle	0.011545
+Yosita	0.011544
+Veruska	0.011543
+Dayanara	0.011542
+Verenice	0.011540
+Guissel	0.011538
+Paolitha	0.011534
+Emelin	0.011533
+Ginita	0.011532
+Danitsa	0.011531
+Maria Eujenia	0.011530
+Luchita	0.011527
+Flakita	0.011526
+Elizabhet	0.011523
+Yeraldi	0.011521
+Yuvitza	0.011518
+Yovy	0.011517
+Gricela	0.011515
+Luz Veronica	0.011513
+Mayori	0.011512
+Jeraldine	0.011511
+Marcita	0.011510
+Belensita	0.011508
+Eva Luna	0.011506
+Karelia	0.011502
+Omayra	0.011501
+Rosa Luz	0.011500
+Euguenia	0.011497
+Katthy	0.011493
+Kaory	0.011492
+Yenia	0.011491
+Blanca Flor	0.011490
+Paola Isabel	0.011487
+Nancita	0.011485
+Yaira	0.011484
+Maria Camila	0.011484
+M Teresa	0.011483
+Yarel	0.011481
+Sandra Marisol	0.011479
+Meilyn	0.011478
+Ruth Elena	0.011477
+Gretty	0.011475
+Rosa Nelly	0.011475
+Karen Patricia	0.011473
+Nonita	0.011471
+Joanny	0.011469
+Angélica María	0.011466
+Guarderia	0.011466
+Nicols	0.011464
+Juana Elena	0.011463
+M Alejandra	0.011462
+Corita	0.011462
+Yasmira	0.011459
+Lesslie	0.011458
+Famili	0.011457
+Martha Cecilia	0.011456
+Ysamar	0.011456
+Lina Maria	0.011455
+Maria Hortencia	0.011453
+Maripaz	0.011453
+Marianny	0.011450
+Cledia	0.011449
+Walda	0.011448
+Albany	0.011447
+Elitha	0.011443
+Olenka	0.011442
+Lizabeth	0.011439
+Olga Lucia	0.011438
+Mariuxi	0.011436
+Grimaldina	0.011434
+Patricia Jacqueline	0.011432
+Dafnee	0.011431
+Luz Stella	0.011430
+Ingrid Carolina	0.011430
+Widline	0.011429
+Florencia Ignacia	0.011427
+Millarai	0.011425
+Luisa Alejandra	0.011424
+Cafeteria	0.011424
+Erica Del Carmen	0.011423
+Guerlande	0.011422
+Fernanda Carolina	0.011421
+Karolayn	0.011421
+Berta Del Carmen	0.011418
+Yannira	0.011418
+M Soledad	0.011417
+Martina Belen	0.011416
+Maríafernanda	0.011415
+Alinson	0.011412
+Flor Del Carmen	0.011410
+Paulyna	0.011409
+María Ximena	0.011408
+Dubraska	0.011406
+Ximena Beatriz	0.011405
+Yosseline	0.011403
+Yexica	0.011402
+Monica Angelica	0.011401
+Jessica Carolina	0.011399
+Olivia Del Carmen	0.011398
+Jazna	0.011398
+M Paz	0.011397
+Jessica Fabiola	0.011392
+Konii	0.011389
+Constanza Carolina	0.011385
+Issis	0.011383
+Anitamaria	0.011382
+Cecilia Patricia	0.011381
+Meyling	0.011380
+Lorena Del Pilar	0.011379
+Nancy Angelica	0.011378
+Antü	0.011375
+Jessicca	0.011374
+Marcia Lorena	0.011373
+Karyto	0.011372
+Lina Marcela	0.011370
+Mermeladas	0.011370
+Sandra Margarita	0.011369
+Margarita Elizabeth	0.011367
+Depilaciones	0.011367
+Maríajesús	0.011364
+Paulina Isabel	0.011364
+Ingrid Elizabeth	0.011363
+Riola	0.011362
+Marta Veronica	0.011360
+Pilar Del Carmen	0.011359
+Maria Hortensia	0.011358
+Valentina Constanza	0.011357
+Cecilia Angelica	0.011356
+Soledad Alejandra	0.011356
+Tahina	0.011351
+Catalina Belén	0.011350
+Wislande	0.011350
+Lorena Cecilia	0.011349
+Veronica Ester	0.011348
+Solange Alejandra	0.011345
+Jenny Alejandra	0.011344
+Baytiare	0.011340
+Mayling	0.011340
+Denisse Andrea	0.011338
+Anyara	0.011336
+Yasna Carolina	0.011333
+Zuleima	0.011332
+Constanza Nicole	0.011331
+Daniela Ignacia	0.011331
+Marbelis	0.011329
+Arica	0.011329
+Beatriz Andrea	0.011327
+Emilia Antonia	0.011325
+Romanett	0.011324
+Kishi	0.011323
+Joselyn Andrea	0.011323
+Yeissy	0.011321
+Marcela Cristina	0.011321
+Nicole Fernanda	0.011318
+Maritza Angelica	0.011317
+Angela Del Carmen	0.011316
+Cecilia Carmen	0.011316
+Ignacia Belen	0.011315
+Makarena Andrea	0.011314
+Pamela Carolina	0.011313
+María-José	0.011313
+Pia Belen	0.011311
+Fca	0.011310
+Romanette	0.011306
+Lidice	0.011305
+Valentinita	0.011304
+Fefy	0.011302
+Roselande	0.011300
+Alannis	0.011300
+Jessica Viviana	0.011299
+Margarita Alejandra	0.011298
+Frany	0.011295
+Dannii	0.011294
+Edith Angelica	0.011293
+Cecilia De Las Mercedes	0.011292
+Constaanza	0.011290
+Escarlette	0.011288
+Vickyta	0.011287
+Constanza Antonia	0.011287
+Agustina Ignacia	0.011286
+Natalia Paz	0.011284
+Cynthia Andrea	0.011282
+Kihara	0.011280
+Marcela Carolina	0.011278
+Sofia Isidora	0.011274
+Lucy Del Carmen	0.011273
+Rosa Magdalena	0.011272
+Rocio Del Pilar	0.011271
+Ximena Cecilia	0.011269
+Yissenia	0.011266
+Safiro	0.011264
+Maricel Alejandra	0.011264
+Marcela Ivonne	0.011262
+Imara	0.011262
+Cortinajes	0.011257
+Aurora Del Carmen	0.011256
+Yubiza	0.011253
+Mónica Del Carmen	0.011252
+Mitza	0.011251
+Viviana Paola	0.011250
+Dannay	0.011249
+Viviana Angelica	0.011249
+Catalyna	0.011248
+Yisley	0.011247
+Pedidos	0.011245
+Fernanda Javiera	0.011244
+Jessica Cecilia	0.011242
+Romina Paz	0.011242
+Fabiiola	0.011240
+Gladys Patricia	0.011239
+Estibaliz	0.011238
+Maria Verónica	0.011237
+Camila Javiera	0.011237
+Baldramina	0.011236
+Alexandraa	0.011235
+Jeannette Andrea	0.011235
+Nasly	0.011233
+Mixy	0.011232
+Patricia Margarita	0.011231
+Jamilet	0.011230
+Daniela Isabel	0.011230
+Rosa Iris	0.011229
+Danyta	0.011225
+Danixsa	0.011224
+Patricia Angélica	0.011223
+Catalina Francisca	0.011223
+Macarena Soledad	0.011222
+Nancyta	0.011221
+Thiiare	0.011220
+Jannina	0.011219
+Manitos	0.011218
+Clínica Dental	0.011218
+Teruca	0.011217
+Maricella	0.011216
+Gloria Cecilia	0.011215
+Elizabeth Angelica	0.011214
+Panxita	0.011213
+Teresa Angelica	0.011211
+Bàrbara	0.011210
+Flor Irene	0.011209
+Yelisa	0.011208
+Manoucheka	0.011208
+Judeline	0.011207
+Andrea Belen	0.011206
+Tania Andrea	0.011206
+Tannya	0.011205
+Ignacia Andrea	0.011203
+Ximena Del Pilar	0.011202
+Gloria Soledad	0.011199
+Leslie Andrea	0.011199
+Katherine Nicole	0.011198
+Maritza Elizabeth	0.011196
+Mirtala	0.011195
+Sandra Pilar	0.011194
+Javiera Belén	0.011192
+Chechita	0.011189
+Eilyn	0.011187
+Belen Andrea	0.011186
+Doris Del Carmen	0.011185
+Makiita	0.011183
+Adela Del Carmen	0.011182
+Guissella	0.011181
+Lokilla	0.011179
+Jasmín	0.011178
+Uverlinda	0.011176
+Carolina Patricia	0.011175
+Sushii	0.011174
+Elizabeth Soledad	0.011173
+Carmen Soledad	0.011171
+Carla Antonia	0.011171
+Erika Isabel	0.011170
+Ruth Magdalena	0.011169
+Isabel Veronica	0.011167
+Cecilia Paola	0.011166
+Rosa Amalia	0.011166
+Donatila	0.011165
+Jeanette Alejandra	0.011164
+Nancy Isabel	0.011163
+Macarena Paz	0.011162
+Yerti	0.011161
+Jessica Del Pilar	0.011159
+Rocío Belén	0.011159
+Lissette Andrea	0.011157
+Silvia Eliana	0.011155
+Mabel Andrea	0.011152
+Loreto Alejandra	0.011151
+Náyade	0.011150
+Karín	0.011150
+María Gracia	0.011149
+Viviana Isabel	0.011148
+Ivonne Alejandra	0.011147
+Veronica Carmen	0.011146
+Miyou	0.011144
+Mikerlange	0.011143
+Nancy Andrea	0.011141
+Edline	0.011140
+Sofia Carolina	0.011139
+Karin Andrea	0.011137
+Valentinna	0.011137
+Danitha	0.011135
+Coromoto	0.011132
+Krolina	0.011132
+Jacqueline Elizabeth	0.011126
+Eniger	0.011126
+Gerline	0.011125
+Yannara	0.011124
+Isidora Belen	0.011121
+Sofia Catalina	0.011121
+Katherine Valeska	0.011120
+Skarlette	0.011118
+Nashmia	0.011117
+Mirline	0.011117
+Rubiela	0.011115
+Javieera	0.011115
+Yenis	0.011112
+Anita Luisa	0.011111
+Conyy	0.011110
+Conitha	0.011109
+Rinconcito	0.011108
+Seeba	0.011108
+Veronica Elena	0.011107
+Antonella Ignacia	0.011105
+Dailyn	0.011104
+Mpaz	0.011103
+Florangel	0.011101
+Berta Rosa	0.011099
+Yeca	0.011097
+Valentina Fernanda	0.011094
+Grimanesa	0.011093
+Johanna Paola	0.011092
+Viviana Del Pilar	0.011091
+Leonor Del Carmen	0.011089
+Carola Alejandra	0.011089
+Patricia Jimena	0.011088
+Asly	0.011084
+Erla	0.011083
+Mariol	0.011082
+Nelsi	0.011080
+Anaid	0.011080
+Fla	0.011079
+Frani	0.011077
+Matina	0.011075
+Primavera	0.011072
+Neida	0.011071
+Issi	0.011070
+Nadie	0.011069
+Myri	0.011067
+Flaviana	0.011066
+Sirena	0.011065
+Ruka	0.011062
+Julii	0.011061
+Nalda	0.011061
+Xio	0.011059
+Apolonia	0.011058
+Yolene	0.011053
+Brígida	0.011052
+Mircia	0.011051
+Celita	0.011050
+Osvaldina	0.011049
+Jaci	0.011049
+Isabel Maria	0.011046
+Laurentina	0.011041
+Maria Filomena	0.011040
+Elieth	0.011039
+Elsa Maria	0.011038
+Luisa Maria	0.011038
+Niurka	0.011036
+Jacquelina	0.011034
+Segunda	0.011033
+Idania	0.011028
+Naiara	0.011023
+Jandy	0.011022
+Nadège	0.011018
+Paula Fernanda	0.011016
+Jessica Isabel	0.011014
+Christianne	0.011009
+Lucha	0.011008
+Nathacha	0.011007
+Fransica	0.011006
+Rutty	0.011003
+Emilce	0.011001
+Ana Raquel	0.010998
+Minouche	0.010996
+Penélope	0.010994
+Odalys	0.010994
+Eliana Patricia	0.010992
+Jorgelina	0.010990
+Guada	0.010989
+Patry	0.010988
+María Laura	0.010988
+Maby	0.010986
+Pochi	0.010986
+Tatii	0.010984
+Natalia Soledad	0.010982
+Nicolasa	0.010982
+Claudia Beatriz	0.010981
+Sulma	0.010980
+Andrea Veronica	0.010976
+Rosa Beatriz	0.010974
+Aimara	0.010973
+Pauu	0.010972
+Malen	0.010972
+Silvia Ines	0.010971
+Giuly	0.010970
+Maryy	0.010969
+Maria Agustina	0.010968
+Yamy	0.010968
+Ana Ines	0.010965
+Juanii	0.010964
+Miia	0.010961
+Sueños	0.010957
+Chini	0.010955
+Mariu	0.010955
+Claudia Viviana	0.010954
+Aleli	0.010952
+Pricsila	0.010949
+Norma Ester	0.010948
+Ana Graciela	0.010947
+Espacio	0.010943
+Anyii	0.010942
+Mavel	0.010940
+Amancay	0.010939
+Olgui	0.010937
+Patricia Beatriz	0.010936
+Claudia Susana	0.010934
+Maria De Las Mercedes	0.010933
+Alicia Ester	0.010932
+Olga Ester	0.010928
+Maria C	0.010928
+Marialuz	0.010927
+Pochy	0.010925
+Sandra Edith	0.010925
+Laura Patricia	0.010924
+Sonia Alejandra	0.010923
+Cheli	0.010922
+Monica Cristina	0.010919
+María Antonia	0.010917
+Bilma	0.010916
+Reiki	0.010914
+Kaaren	0.010913
+Andrea Cecilia	0.010912
+Daniela Soledad	0.010911
+Anitaa	0.010910
+Trinii	0.010909
+Marta Maria	0.010908
+Lole	0.010906
+Depilación	0.010904
+Peinados	0.010904
+Mariana Alejandra	0.010903
+Gabriela Fernanda	0.010902
+Edhit	0.010902
+Cielito	0.010901
+Alicia Alejandra	0.010899
+Haide	0.010899
+Angela Beatriz	0.010898
+Claudia Daniela	0.010897
+Silvia Isabel	0.010897
+Noly	0.010896
+Viviana Patricia	0.010895
+Elbia	0.010895
+Mickaela	0.010891
+Adriana Maria	0.010891
+Claudia Maria	0.010889
+Mersedes	0.010887
+Carteras	0.010886
+Cocó	0.010884
+Veronica Beatriz	0.010882
+Irma Isabel	0.010880
+Dulzuras	0.010880
+Alicia Isabel	0.010879
+Maria Lucrecia	0.010878
+Critina	0.010876
+Maria Norma	0.010875
+Blanky	0.010873
+Maria Leticia	0.010868
+Belèn	0.010864
+Minina	0.010864
+Claudia Karina	0.010863
+Libreria	0.010863
+Mirtita	0.010861
+Alejandra Marcela	0.010859
+Fulvia	0.010857
+Ana Elisa	0.010856
+Mabelita	0.010855
+Susana Patricia	0.010854
+Rayito	0.010853
+Pinina	0.010852
+Ubaldina	0.010850
+Choly	0.010850
+Marí	0.010848
+Monina	0.010847
+Beatriz Elena	0.010845
+Sibila	0.010845
+Capilla	0.010843
+Ygnacia	0.010841
+Jhanet	0.010840
+Pilchas	0.010839
+Sara Ines	0.010838
+Ortencia	0.010838
+Sonia Andrea	0.010837
+Yoy	0.010833
+Leonella	0.010832
+Britani	0.010831
+Blanca Isabel	0.010830
+Daniela Elizabeth	0.010827
+Carla Lorena	0.010827
+Orianna	0.010825
+Patrica	0.010824
+Edith Alejandra	0.010823
+Carmen Isabel	0.010821
+Coro	0.010820
+Quela	0.010818
+Lucecita	0.010816
+Recuerdos	0.010815
+Carmen Alicia	0.010813
+Paola Beatriz	0.010810
+María Catalina	0.010808
+Maria Irma	0.010805
+Elena Isabel	0.010803
+La Cocina	0.010803
+Rosa Carmen	0.010802
+Clara Ines	0.010798
+Rosa Estela	0.010795
+Susana Margarita	0.010793
+Naye	0.010791
+Ninna	0.010786
+Nube	0.010785
+Giorgina	0.010785
+Marta Irene	0.010783
+Elide	0.010782
+Kariito	0.010781
+Perfumeria	0.010780
+Duendes	0.010778
+Masajes	0.010776
+Claudia Ester	0.010775
+Oty	0.010774
+Prisi	0.010773
+Huerto	0.010771
+Neyda	0.010770
+Zoraya	0.010770
+Angee	0.010768
+Carnen	0.010767
+Rosa Mercedes	0.010764
+Monica Maria	0.010761
+Nancy Veronica	0.010760
+Damariis	0.010760
+Macela	0.010758
+Pilchitas	0.010758
+Silvia Eugenia	0.010755
+Rosalva	0.010753
+Helvecia	0.010752
+Maité	0.010751
+Nattalia	0.010751
+Alejandra Lorena	0.010748
+Gladys Elizabeth	0.010746
+Juana Ines	0.010745
+Herma	0.010742
+Deniis	0.010741
+Jessik	0.010738
+Vivían	0.010738
+Sarahi	0.010737
+Carolina Belen	0.010735
+Maitee	0.010733
+La Negrita	0.010732
+Calzas	0.010730
+Gabriiela	0.010729
+Dahian	0.010729
+Natalia Isabel	0.010727
+Gabrielaa	0.010727
+Belia	0.010725
+Eujenia	0.010722
+Petita	0.010719
+Licet	0.010718
+Juana María	0.010717
+Mariana Isabel	0.010716
+Marifer	0.010716
+Lorenna	0.010713
+Reychel	0.010709
+Patricia Irene	0.010706
+Tendencias	0.010705
+Fabby	0.010705
+Masoterapeuta	0.010704
+María Irene	0.010703
+Kinesiologia	0.010702
+Alicia Veronica	0.010701
+Yohanita	0.010700
+Marta Patricia	0.010700
+Ebelin	0.010697
+Deyci	0.010696
+Margarita Angelica	0.010694
+Natta	0.010691
+Aurorita	0.010689
+Lsabel	0.010687
+Ayalen	0.010686
+Abuelita	0.010685
+Gloria Edith	0.010684
+Ziomara	0.010681
+María Yolanda	0.010681
+Viviana Lorena	0.010679
+Gisela Andrea	0.010675
+Carmen Elena	0.010675
+Paola Marcela	0.010673
+Reposteria	0.010672
+Maria Flor	0.010668
+Mónica Cecilia	0.010667
+Deborath	0.010666
+Artesania	0.010665
+Prisy	0.010664
+De Todo	0.010663
+Isavel	0.010661
+Patricia Paola	0.010659
+Mella	0.010658
+Franny	0.010655
+Yanita	0.010655
+Yulianna	0.010653
+Kaira	0.010652
+Simonne	0.010651
+Sherley	0.010650
+Michou	0.010649
+Linsay	0.010649
+Ninon	0.010648
+Shary	0.010647
+Daphnee	0.010646
+Linette	0.010645
+Barbra	0.010644
+Chachou	0.010643
+Pollet	0.010640
+Nasha	0.010637
+Fabie	0.010635
+Rhode	0.010635
+Aliison	0.010634
+Neve	0.010633
+Johane	0.010632
+Sabka	0.010632
+Yulita	0.010631
+Soley	0.010630
+Sinai	0.010629
+Anggi	0.010627
+Channy	0.010626
+Jeann	0.010626
+Chim	0.010624
+Mally	0.010623
+Kookie	0.010622
+Liceth	0.010620
+Litzy	0.010618
+Mayli	0.010616
+Roselin	0.010615
+Yusara	0.010615
+Ruth Mery	0.010614
+Cristinita	0.010610
+Bebesita	0.010609
+Clarivel	0.010608
+Alexita	0.010605
+Nicolcita	0.010602
+Guilda	0.010600
+Yuyi	0.010599
+Marieli	0.010598
+Alexandrita	0.010597
+Karen Daniela	0.010595
+Rose Mery	0.010593
+Dayhana	0.010591
+Valerita	0.010590
+Greisy	0.010589
+Paola Patricia	0.010587
+Cenia	0.010586
+Ovidia	0.010585
+Pandita	0.010582
+Yareli	0.010581
+Alodia	0.010579
+Grisell	0.010577
+Maria Fabiola	0.010576
+Alejita	0.010573
+Betsi	0.010573
+Alely	0.010572
+Priss	0.010571
+Lilibet	0.010570
+Ruth Veronica	0.010569
+Catari	0.010569
+Beberly	0.010568
+Hilcia	0.010567
+Anguie	0.010567
+Ibania	0.010566
+Luzgarda	0.010564
+Cecilita	0.010563
+Karent	0.010562
+Roxana Isabel	0.010561
+Cristhel	0.010558
+Ruth Isabel	0.010557
+Rocio Alejandra	0.010557
+Coraima	0.010554
+Luz Mireya	0.010553
+Yerika	0.010551
+Luz Irene	0.010550
+Lisbett	0.010549
+Esmirna	0.010549
+Erika Patricia	0.010547
+Ana Miriam	0.010546
+Carmen Victoria	0.010543
+Anakaren	0.010543
+Nathalya	0.010542
+Sonia Elena	0.010542
+Juana Patricia	0.010540
+Yanire	0.010539
+Kharla	0.010538
+Daffne	0.010537
+Karelis	0.010537
+Praxedes	0.010535
+Jeral	0.010533
+Sandra Maribel	0.010533
+Delinda	0.010532
+Krn	0.010529
+Sthefanie	0.010528
+Paola Ximena	0.010527
+Orlinda	0.010525
+Kesia	0.010525
+Karen Viviana	0.010523
+Luz Patricia	0.010522
+Sandritha	0.010521
+Elizabeth Cristina	0.010520
+Yessie	0.010520
+Maria Erika	0.010519
+Sthefania	0.010516
+Thays	0.010516
+Karolaine	0.010515
+Itala	0.010514
+Monise	0.010514
+Fabianna	0.010513
+Samaria	0.010510
+Marjori	0.010509
+Maria Jaqueline	0.010508
+Fernanada	0.010506
+Wilna	0.010505
+Jaimee	0.010502
+Myrlande	0.010501
+Yolette	0.010501
+Anise	0.010500
+Falon	0.010500
+Renette	0.010498
+Carmenza	0.010498
+Venise	0.010497
+Diana Patricia	0.010496
+Chave	0.010496
+Ckatalina	0.010491
+Baúl De	0.010490
+Daritza	0.010490
+Kichy	0.010487
+Catalĭna	0.010486
+Tortas Caseras	0.010485
+Rusia	0.010483
+Florería	0.010482
+Isiidora	0.010481
+Sujei	0.010481
+Yessenia Andrea	0.010479
+Berioska	0.010478
+Millita	0.010478
+Luz Ester	0.010475
+Nayare	0.010474
+Fernanda Valentina	0.010472
+Jessica Patricia	0.010472
+Cecilia Ivonne	0.010471
+Yissela	0.010470
+Margarita Del Pilar	0.010469
+Feñitha	0.010468
+Francisca Belén	0.010467
+Prissila	0.010466
+Yesenia Alejandra	0.010463
+Catiita	0.010461
+Martina Antonella	0.010460
+Rominna	0.010459
+Jeimi	0.010458
+Ahilyn	0.010456
+Carolina Angelica	0.010454
+Marielis	0.010452
+Myriam Del Carmen	0.010450
+Lanas	0.010450
+Ana Ximena	0.010449
+Antonnella	0.010448
+Luisa Elena	0.010447
+Monsita	0.010447
+Jessica Soledad	0.010446
+Isabel Carolina	0.010445
+Dixia	0.010444
+Claudia Macarena	0.010442
+Erika Cecilia	0.010441
+Sandra Ester	0.010440
+Maria Jeannette	0.010440
+Martina Alejandra	0.010439
+Enyger	0.010438
+Fedeline	0.010435
+Flor Marina	0.010433
+Michelle Alejandra	0.010431
+Baythiare	0.010430
+Giarella	0.010429
+Recicla	0.010429
+Nicole Stephanie	0.010427
+Dominike	0.010427
+Remate	0.010426
+Alejandra Paz	0.010423
+Lissette Alejandra	0.010422
+Pia Catalina	0.010421
+Kishy	0.010419
+Eduvigis	0.010418
+Valeria Del Carmen	0.010418
+Javiera Alexandra	0.010417
+Eliizabeth	0.010416
+Emilia Del Carmen	0.010415
+Maudeline	0.010414
+Bernadita	0.010414
+Ana Magaly	0.010413
+Janitza	0.010412
+Paula Francisca	0.010410
+Kettia	0.010405
+Almacén	0.010404
+Valeria Constanza	0.010403
+Tiaren	0.010401
+Griselle	0.010401
+Patricia De Las Mercedes	0.010400
+Aylyn	0.010400
+Katherine Elizabeth	0.010398
+Teresa Jesus	0.010396
+Roxana Angelica	0.010396
+Paloma Andrea	0.010395
+Victoria Eugenia	0.010394
+Jardin Infantil	0.010393
+Carmen Veronica	0.010392
+Yinet	0.010391
+Margarita Carmen	0.010390
+Luisa Veronica	0.010389
+Dilema	0.010387
+Consue	0.010386
+Cynthia Alejandra	0.010385
+Jimena Del Carmen	0.010384
+Ingrid Fabiola	0.010383
+Johana Alejandra	0.010382
+Claudia Loreto	0.010382
+Verioska	0.010380
+Johanna Elizabeth	0.010380
+Miluska	0.010379
+Camila Nicole	0.010373
+Yamilette	0.010371
+Ingrid Cecilia	0.010370
+Baratillo	0.010370
+Lucila Del Carmen	0.010369
+Conztanza	0.010368
+Solsita	0.010367
+Ginett	0.010366
+Valeria Paz	0.010365
+Marisol Carmen	0.010364
+Ignacia Antonia	0.010362
+Renaa	0.010360
+Eskarlet	0.010354
+Juana Andrea	0.010353
+Macarena Del Pilar	0.010352
+Girasol	0.010351
+Danixza	0.010351
+Rosa De Las Mercedes	0.010350
+Yaninna	0.010348
+Angelica Patricia	0.010347
+Ludgarda	0.010347
+Catalina Constanza	0.010344
+Katherine Solange	0.010343
+Nycol	0.010343
+Cecilia Margarita	0.010341
+Elizabeth Carmen	0.010340
+Maria Isidora	0.010340
+Karolain	0.010339
+Evelyn Del Carmen	0.010337
+Jimena Alejandra	0.010336
+Jessica Veronica	0.010332
+Cathita	0.010331
+Yendery	0.010331
+Joyería	0.010330
+Cristell	0.010329
+Joyas De	0.010327
+K-Rito	0.010326
+Yasna Alejandra	0.010325
+Yasna Isabel	0.010324
+Merlande	0.010324
+Claudia Paulina	0.010322
+Elizabeth Jacqueline	0.010321
+Exclusividades	0.010320
+Javĭera	0.010318
+Valentina Isidora	0.010316
+Nerline	0.010316
+Alondraa	0.010315
+Cristobalina	0.010314
+Giglia	0.010314
+Vaalentina	0.010313
+Kattherine	0.010312
+Ignacia Paz	0.010311
+Sonise	0.010310
+Chikitita	0.010308
+Tiaree	0.010307
+Koté	0.010307
+Corretaje	0.010306
+Caamy	0.010305
+Natalia Del Carmen	0.010305
+Marsella	0.010304
+Jeannette Elizabeth	0.010304
+Luisa Angelica	0.010303
+Roxana Maribel	0.010303
+Maritza Elena	0.010301
+Aida Del Carmen	0.010297
+Estefania Andrea	0.010296
+Lovena	0.010293
+Nathaly Andrea	0.010293
+Jessica Ivonne	0.010292
+Dianis	0.010290
+Yessennia	0.010289
+Fabiola Elizabeth	0.010288
+Erika Andrea	0.010287
+Olga Cecilia	0.010286
+Tania Alejandra	0.010286
+Yubisa	0.010285
+Francita	0.010283
+Hailyn	0.010280
+Luz Aurora	0.010278
+Mariajesús	0.010277
+Rosa Ximena	0.010275
+Angela Paola	0.010275
+Rosa Angélica	0.010272
+María De La Luz	0.010272
+Paz Alejandra	0.010271
+Nayii	0.010271
+Carolina Francisca	0.010270
+Carolina Antonia	0.010270
+Kimena	0.010269
+Polyta	0.010268
+Susana Paola	0.010268
+Miriam Angelica	0.010267
+Milaa	0.010264
+Juanita Maria	0.010264
+Erika Elizabeth	0.010263
+Ana Eugenia	0.010262
+Prisilla	0.010262
+Barbara Nicol	0.010260
+Loreto Del Pilar	0.010258
+Martina Andrea	0.010257
+Gladys Eliana	0.010254
+Judith Alejandra	0.010253
+Kristhel	0.010252
+Shlomit	0.010248
+Katheriine	0.010247
+Piare	0.010245
+Viviana Cecilia	0.010244
+Francisca Camila	0.010243
+Thiaren	0.010242
+Yertty	0.010240
+Rosa Flor	0.010238
+Yubi	0.010237
+Yusmary	0.010237
+Pansha	0.010236
+Isidora Catalina	0.010236
+Sandra Alicia	0.010234
+Marcia Elena	0.010233
+Destine	0.010230
+Yessica Del Carmen	0.010229
+Xunxita	0.010228
+Marisol Del Pilar	0.010227
+Anais Belen	0.010226
+Joselyn Alejandra	0.010224
+Dorama	0.010223
+Estefanii	0.010221
+Eliana Isabel	0.010220
+Shio	0.010220
+Jacqueline Isabel	0.010219
+Reineria	0.010218
+Evelyn Patricia	0.010217
+Jessica Marcela	0.010216
+Ruth Magaly	0.010216
+Edita Del Carmen	0.010215
+Paz Valentina	0.010215
+Alejandra Del Pilar	0.010214
+Eliet	0.010213
+Giulliana	0.010213
+Marcela Ximena	0.010212
+Veronica Angelica	0.010212
+Juana Elizabeth	0.010210
+Gladys Andrea	0.010209
+Barbara Nicole	0.010208
+Paola Jacqueline	0.010207
+Yasna Elizabeth	0.010207
+Arelly	0.010204
+Constanza Fernanda	0.010204
+Pricsilla	0.010202
+Chrisna	0.010201
+Andrea Ignacia	0.010200
+Maruzzella	0.010199
+Contansa	0.010199
+Margarita Mercedes	0.010197
+Kataa	0.010196
+Olga Eliana	0.010195
+Daniitza	0.010193
+Coonstanza	0.010192
+Angelly	0.010192
+Francisca Fernanda	0.010190
+Chunchita	0.010189
+Juanitha	0.010189
+Leticia Andrea	0.010188
+Cocineria	0.010188
+Almendrita	0.010186
+Estelia	0.010185
+Aleejandra	0.010183
+Fidelicia	0.010183
+Navidad	0.010182
+Merari	0.010181
+Estefania Alejandra	0.010179
+Anllelina	0.010177
+Francĭsca	0.010177
+Veronica Cristina	0.010176
+Katalina Andrea	0.010176
+Karen Cecilia	0.010175
+Nutri	0.010171
+Pricy	0.010170
+Evaluna	0.010168
+Kathytha	0.010166
+Nathita	0.010165
+Dinely	0.010163
+Idolia	0.010161
+Claudia Margarita	0.010159
+Carolina Ester	0.010157
+Gertha	0.010157
+Latiendita	0.010156
+Konita	0.010156
+Antonella Belen	0.010155
+Francisca Isabel	0.010155
+Emilia Ignacia	0.010153
+Marcela Pilar	0.010153
+Javiera Carolina	0.010152
+Nurys	0.010150
+Yurani	0.010149
+Encintados	0.010148
+Isidora Valentina	0.010148
+Daniela Valentina	0.010147
+Gloria Margarita	0.010147
+Cecilia Carolina	0.010145
+Camila Alexandra	0.010144
+Genesis Belen	0.010143
+Marylen	0.010142
+Diosa	0.010142
+Cristabel	0.010141
+Ignacia Valentina	0.010140
+Miriam Soledad	0.010139
+Patricia Magdalena	0.010138
+Marcela Carmen	0.010138
+Natalia Francisca	0.010137
+Rosita Ester	0.010136
+Alicia De Las Mercedes	0.010135
+Luisa Isabel	0.010135
+Yohanna Andrea	0.010134
+Vanita	0.010133
+Nayomi	0.010132
+Glam	0.010131
+Adrina	0.010128
+Sandia	0.010127
+Nikoll	0.010126
+Vila	0.010125
+Armida	0.010124
+Geralda	0.010123
+Glori	0.010122
+Glenis	0.010122
+Ingrit	0.010121
+Persida	0.010119
+Grisela	0.010118
+Malvi	0.010117
+Cala	0.010116
+Enilda	0.010115
+Gladi	0.010114
+Emila	0.010113
+Esilda	0.010110
+Mirlanda	0.010109
+Xixi	0.010108
+Miren	0.010107
+Europa	0.010107
+Emeli	0.010106
+Edia	0.010106
+Gloris	0.010103
+Valetina	0.010102
+Banesa	0.010102
+Delis	0.010101
+Marila	0.010098
+Ismelda	0.010096
+Lerida	0.010095
+Monce	0.010095
+Urania	0.010094
+Neris	0.010093
+Doriz	0.010092
+Alegria	0.010091
+Maria De	0.010088
+Lizandra	0.010088
+Leonilda	0.010087
+Sayonara	0.010085
+Ludovina	0.010084
+Belarmina	0.010079
+Brigith	0.010077
+Caly	0.010076
+Mariany	0.010075
+Carla Patricia	0.010074
+Caramelo	0.010072
+Mileny	0.010071
+Lisete	0.010071
+Eliseth	0.010070
+Sonia Maria	0.010069
+Laidy	0.010069
+Hely	0.010068
+Tyty	0.010065
+Anapaula	0.010064
+Maria Josefa	0.010063
+Maximina	0.010062
+Rosa Linda	0.010060
+Marie France	0.010059
+Marilinda	0.010058
+Anaisa	0.010057
+Hulda	0.010055
+Nedy	0.010055
+Maria Natalia	0.010053
+Paquita	0.010052
+Juaquina	0.010050
+Elcy	0.010044
+Nahara	0.010043
+Atalia	0.010042
+Ciria	0.010041
+Briza	0.010039
+Panela	0.010038
+Teté	0.010038
+Nené	0.010036
+Kany	0.010036
+Jinette	0.010034
+Conce	0.010033
+Diiana	0.010032
+Nicoleth	0.010030
+Elizabeth Maria	0.010029
+Julia Maria	0.010028
+Joslin	0.010028
+Joany	0.010026
+Sonia Patricia	0.010026
+Marline	0.010024
+Israelita	0.010024
+Maria Judith	0.010022
+Esperansa	0.010021
+Kiare	0.010016
+Lujan	0.010016
+Martu	0.010015
+Nahiara	0.010015
+Aguss	0.010013
+Emilse	0.010013
+Rochi	0.010012
+Luchi	0.010012
+Sool	0.010011
+Noee	0.010010
+Mariangeles	0.010009
+Valu	0.010009
+Rochy	0.010007
+Rocii	0.010006
+Evee	0.010005
+Normi	0.010004
+Maria Celia	0.010003
+Silvia Cristina	0.010002
+Gringa	0.010002
+Pocha	0.010000
+Yoa	0.009999
+Mariadelcarmen	0.009997
+Roxii	0.009996
+Maria Delia	0.009996
+Monii	0.009995
+Nancy Beatriz	0.009993
+Daian	0.009993
+Aitana	0.009992
+Natyy	0.009990
+María Emilia	0.009986
+Chachi	0.009985
+Julia Elena	0.009982
+Maria Belén	0.009982
+Silvia Adriana	0.009980
+Del Valle	0.009979
+Maiten	0.009977
+Monica Viviana	0.009977
+Alicia Maria	0.009976
+Brunella	0.009975
+Jazmiin	0.009974
+Mariaester	0.009972
+Suyai	0.009971
+Mariiana	0.009971
+Arce	0.009969
+Yaquelina	0.009968
+Joaqui	0.009968
+Normy	0.009966
+Alicia Cristina	0.009966
+Mercede	0.009965
+Aneley	0.009962
+Gloria Beatriz	0.009960
+Andrea Viviana	0.009959
+Sunilda	0.009957
+Yessii	0.009956
+Viqui	0.009956
+Mi Dulce	0.009955
+Mariela Soledad	0.009954
+Santusa	0.009953
+Genara	0.009953
+Maria Julieta	0.009950
+Viviana Beatriz	0.009950
+Quinta	0.009949
+Adriana Elizabeth	0.009949
+Lulita	0.009947
+Miaa	0.009946
+Patricia Viviana	0.009946
+Estetica	0.009945
+Laura Ines	0.009944
+Mauge	0.009943
+Sergia	0.009942
+Patricia Adriana	0.009941
+Yaky	0.009940
+Patricia Susana	0.009938
+Nelba	0.009937
+Marcela Viviana	0.009936
+Silveria	0.009934
+Adara	0.009932
+Aracelii	0.009932
+Silvia Lorena	0.009931
+Graciela Isabel	0.009931
+Maria A	0.009930
+Vivii	0.009929
+María Estela	0.009928
+Blanca Estela	0.009927
+Chivi	0.009926
+Ximee	0.009926
+Dahyana	0.009925
+Rosa Esther	0.009923
+Silvia Elizabeth	0.009922
+Makaa	0.009921
+Andrea Lorena	0.009920
+Maria Sara	0.009920
+Valería	0.009919
+Silvia Edith	0.009919
+Katyy	0.009918
+Yiya	0.009917
+Rosa Liliana	0.009914
+Maria Zulema	0.009914
+Ideas	0.009911
+Tendencia	0.009910
+Techi	0.009910
+Majito	0.009909
+Carita	0.009908
+Liliana Patricia	0.009908
+Rosmari	0.009907
+Audelina	0.009906
+Alba Luz	0.009905
+Ampi	0.009905
+Marta Edith	0.009904
+Sara Maria	0.009903
+Elena Maria	0.009902
+Laura Maria	0.009901
+Mirta Isabel	0.009899
+Mónica Patricia	0.009898
+Valentína	0.009897
+Gabriela Elizabeth	0.009897
+Alejandra Maria	0.009896
+Sivia	0.009895
+Ana Sol	0.009894
+Noely	0.009894
+Veritoo	0.009892
+María Andrea	0.009890
+Asunción	0.009889
+Adriana Alejandra	0.009889
+Liduvina	0.009886
+Lauraa	0.009885
+Kiiara	0.009884
+Limpia	0.009884
+Balvina	0.009883
+Claudia Ines	0.009883
+Cesi	0.009881
+Tutty	0.009880
+Cecilia Maria	0.009879
+Mariela Elizabeth	0.009879
+Raque	0.009878
+Caritoo	0.009877
+Sandraa	0.009875
+Marias	0.009875
+Julia Isabel	0.009874
+Nathii	0.009872
+Alicia Elena	0.009872
+Loba	0.009871
+Primitiva	0.009869
+Liliana Alejandra	0.009868
+Miriam Alejandra	0.009866
+Clases	0.009864
+Mimí	0.009863
+Soffi	0.009863
+Cristina Elizabeth	0.009861
+Elena Rosa	0.009861
+Solang	0.009858
+Novedades	0.009857
+Gladys Rosa	0.009857
+Meraki	0.009856
+Patricia Maria	0.009855
+Naaty	0.009854
+Electra	0.009853
+Nancy Lorena	0.009853
+Silvia Teresa	0.009852
+Maary	0.009851
+Alisado	0.009849
+Ana Emilia	0.009848
+Maria Lucila	0.009847
+Clariza	0.009845
+Amdrea	0.009844
+Norma Elena	0.009842
+Paula Lorena	0.009842
+Candia	0.009840
+Nachy	0.009838
+Benicia	0.009837
+Alejndra	0.009836
+Angelica Beatriz	0.009836
+Ana M	0.009834
+Gianela	0.009833
+María Leonor	0.009832
+Mercadito	0.009831
+María Dolores	0.009829
+La Negra	0.009829
+Marcela Fernanda	0.009827
+Postres	0.009826
+Flor De	0.009825
+Vicen	0.009825
+Diana Maria	0.009824
+Anghy	0.009823
+Gladys Isabel	0.009823
+Cludia	0.009822
+Maria Nieves	0.009821
+Lidia Ines	0.009821
+Liliana Isabel	0.009819
+Fortunata	0.009818
+Tratamientos	0.009818
+Ojos	0.009817
+Soffy	0.009817
+Patricia Cristina	0.009816
+Mariana Elizabeth	0.009815
+Lilians	0.009815
+Monica Marcela	0.009814
+Marcela Ines	0.009813
+Monica Elena	0.009812
+Luzmi	0.009811
+Gladys Maria	0.009811
+Yazz	0.009810
+Norma Ines	0.009810
+Olga Alicia	0.009809
+Maria Cruz	0.009807
+Lucresia	0.009807
+Aida Rosa	0.009806
+Daniela Beatriz	0.009805
+Yanina Andrea	0.009804
+Miriam Isabel	0.009803
+Magia	0.009799
+Angiee	0.009797
+Maria L	0.009795
+Maria Delfina	0.009794
+Delia Rosa	0.009792
+Derly	0.009791
+Ines Maria	0.009790
+Norma Elizabeth	0.009787
+Gracias	0.009786
+Romina Belen	0.009785
+Cammi	0.009784
+Mari Luz	0.009783
+Atenas	0.009781
+Toly	0.009780
+Rosa Elisa	0.009780
+Zamara	0.009774
+Silvia Carolina	0.009773
+Verónica Alejandra	0.009772
+Gillermina	0.009771
+María Pia	0.009770
+Ruti	0.009769
+Gladys Cristina	0.009768
+Maria Noemi	0.009767
+Gitana	0.009766
+Veronica Marcela	0.009766
+Marylu	0.009764
+Terecita	0.009763
+Elsa Elena	0.009760
+Marta Gloria	0.009760
+Katu	0.009759
+María Elsa	0.009758
+Amely	0.009755
+Ysolina	0.009754
+Rossemary	0.009753
+Flor De Maria	0.009752
+Bolsas	0.009751
+Julia Ester	0.009751
+Marialejandra	0.009749
+Nutricion	0.009748
+Flabia	0.009748
+Ivanita	0.009747
+Hilda Ester	0.009747
+Encanto	0.009744
+Creando	0.009743
+La Reina	0.009742
+Aniitha	0.009741
+Marivi	0.009741
+Zingara	0.009740
+Ana Mariela	0.009740
+Claau	0.009736
+Julia Ines	0.009736
+Pahola	0.009735
+Patriciaa	0.009734
+Nancy Carolina	0.009734
+Nancy Paola	0.009732
+Andrea Fernanda	0.009731
+Chispita	0.009730
+Ma Eugenia	0.009729
+Belenn	0.009728
+Valeria Fernanda	0.009727
+Gabriela Isabel	0.009726
+Carmiña	0.009723
+Graciela Andrea	0.009723
+Productos	0.009722
+Veronica Susana	0.009722
+Gaaby	0.009721
+Hermana	0.009719
+Globos	0.009719
+Maximiliana	0.009718
+Rosa Marina	0.009717
+Mary Isabel	0.009717
+Maria Aida	0.009716
+Minimercado	0.009715
+Mariapia	0.009713
+Lichy	0.009711
+Brijida	0.009711
+Maria Ema	0.009709
+Divinas	0.009708
+Irma Ines	0.009708
+Yasmiin	0.009707
+Alicia Margarita	0.009707
+Karitoo	0.009705
+Maria Ernestina	0.009705
+Campanita	0.009704
+Cecilia Lorena	0.009700
+Piñatas	0.009700
+Carolina Paola	0.009699
+Divas	0.009699
+Elvira Del Carmen	0.009698
+Silvana Alejandra	0.009697
+Ester Maria	0.009697
+Mónica Andrea	0.009696
+Maira Alejandra	0.009695
+Viviana Ester	0.009695
+Sonia Ines	0.009694
+Krla	0.009694
+Carmen Elizabeth	0.009691
+Ana Marina	0.009690
+Silvia Margarita	0.009689
+Vinos	0.009689
+Patricia Mercedes	0.009688
+Rosaester	0.009683
+Stephi	0.009682
+Jhaneth	0.009680
+Maria Genoveva	0.009680
+Carmen Alejandra	0.009678
+Bethania	0.009674
+Yda	0.009673
+Miriam Cecilia	0.009673
+Julia Alejandra	0.009671
+Ana Edith	0.009671
+Elsa Rosa	0.009669
+Marta Luisa	0.009668
+Trapitos	0.009666
+Eimi	0.009666
+Amiga	0.009665
+Solangel	0.009661
+Maria Macarena	0.009660
+Maria Eloisa	0.009660
+Maaria	0.009658
+Gladys Alejandra	0.009657
+Lorena Mabel	0.009657
+Teodolinda	0.009656
+Psicóloga	0.009653
+Rosa Carolina	0.009653
+Angelaa	0.009652
+Frutillita	0.009651
+Monica Lorena	0.009650
+Maria Angel	0.009649
+Marcela Lorena	0.009648
+Patricia Fernanda	0.009647
+Miriam Rosa	0.009643
+Marcelaa	0.009639
+Xiomy	0.009639
+Ysidora	0.009637
+Monica Paola	0.009637
+Itziar	0.009636
+Rominaa	0.009635
+Veronik	0.009635
+Patrici	0.009635
+Manzanita	0.009632
+Luz Mariela	0.009632
+Lizbet	0.009631
+Pstricia	0.009629
+Sara Patricia	0.009628
+Paaula	0.009627
+Kmi	0.009626
+Merida	0.009625
+Katt	0.009624
+Sandra Victoria	0.009623
+Carolina Cecilia	0.009623
+Antonietta	0.009622
+Vernica	0.009621
+Maria Estrella	0.009620
+Vanesa Andrea	0.009620
+Jasmiin	0.009618
+Nora Elena	0.009618
+Mylena	0.009617
+Kty	0.009617
+M Elena	0.009616
+Mariela Isabel	0.009613
+Sussana	0.009613
+Asunta	0.009610
+Gerarda	0.009610
+Esteffy	0.009610
+Tersa	0.009609
+Silvia Irene	0.009608
+Vivana	0.009608
+Teresa Alejandra	0.009607
+Verónica Andrea	0.009605
+Delsy	0.009605
+Isabel Carmen	0.009604
+Irma Elena	0.009603
+Avigail	0.009602
+Carminia	0.009602
+Marta Magdalena	0.009600
+Anarosa	0.009600
+Robertina	0.009599
+Deborita	0.009598
+Krmen	0.009597
+Lauritha	0.009596
+Hermanas	0.009595
+Dulzura	0.009595
+Marta Soledad	0.009595
+Carla Belen	0.009592
+Maria Berta	0.009591
+Cuidados	0.009590
+Patricia Verónica	0.009589
+Paola Fernanda	0.009588
+Gloriia	0.009586
+Gabriela Belen	0.009585
+Helem	0.009584
+Silvia Paola	0.009584
+Katica	0.009583
+Michii	0.009582
+Cathi	0.009581
+Pazi	0.009581
+Darleen	0.009580
+Margaritha	0.009579
+Annelore	0.009578
+Enise	0.009578
+Miau	0.009577
+Ariella	0.009577
+Maria Elisabeth	0.009576
+Jeca	0.009575
+Kerima	0.009575
+Turna	0.009574
+Connii	0.009573
+Barb	0.009573
+Margarette	0.009571
+Bernii	0.009569
+Famila	0.009568
+Gelin	0.009567
+Vary	0.009566
+Fea	0.009566
+Ropa	0.009565
+Raysa	0.009565
+Jania	0.009564
+Maude	0.009563
+Raymonde	0.009563
+Fernande	0.009562
+Linsey	0.009561
+Didine	0.009560
+Lauryn	0.009559
+Yveline	0.009558
+Rosemie	0.009558
+Luigina	0.009557
+Jacoba	0.009557
+Emmily	0.009556
+Christella	0.009555
+Alexie	0.009554
+Nadou	0.009554
+Phara	0.009552
+Adline	0.009552
+Michaelle	0.009552
+Jenyfer	0.009551
+Alys	0.009551
+Anicia	0.009550
+Camile	0.009549
+Mari Carmen	0.009549
+Begonia	0.009548
+Yaiza	0.009545
+Naika	0.009545
+Jacklin	0.009543
+Eylin	0.009542
+Fanita	0.009542
+Lalisa	0.009541
+Martinna	0.009540
+Usagi	0.009539
+Danika	0.009538
+Yoon	0.009538
+Chinita	0.009537
+Karry	0.009535
+Yulie	0.009533
+Miny	0.009532
+Berly	0.009531
+Perfume	0.009530
+Vivianna	0.009530
+Natsuki	0.009529
+Maricita	0.009528
+Silenia	0.009526
+Purita	0.009526
+Maday	0.009525
+Mayrita	0.009523
+Bebecita	0.009522
+Rosemery	0.009520
+Yandy	0.009519
+Mairim	0.009519
+Hirma	0.009519
+Elisita	0.009518
+Lluvia	0.009517
+Anely	0.009516
+Rayza	0.009516
+Yerlin	0.009515
+Jelen	0.009514
+Elamor	0.009513
+Nilfa	0.009512
+Norca	0.009511
+Marfa	0.009510
+Maria Lucy	0.009510
+Glendy	0.009509
+Ibet	0.009508
+Betsaida	0.009508
+María Rosario	0.009507
+Mireyita	0.009506
+Mildre	0.009505
+Shiomara	0.009504
+Navia	0.009504
+Sarahy	0.009504
+Keysi	0.009502
+Yanely	0.009502
+Karensita	0.009501
+Ylse	0.009500
+Jessikita	0.009499
+Hildita	0.009499
+Leisy	0.009498
+Licett	0.009498
+Angui	0.009498
+Luz Mila	0.009496
+Karen Fabiola	0.009495
+Alicita	0.009494
+Ruth Mary	0.009493
+Ana Fabiola	0.009493
+Yuriko	0.009492
+Janecita	0.009491
+Claudia Jimena	0.009490
+Thamar	0.009490
+Judhit	0.009489
+Luz Andrea	0.009488
+Sadith	0.009488
+Virguinia	0.009487
+Jobita	0.009484
+Deyssi	0.009483
+Princesita	0.009480
+Nohely	0.009480
+Fracisca	0.009477
+Karen Lorena	0.009476
+Gerita	0.009475
+Alondrita	0.009475
+Grethel	0.009475
+Karla Daniela	0.009473
+Chavelita	0.009472
+Guisell	0.009472
+Florecita	0.009471
+Denisita	0.009469
+Sharito	0.009468
+Luz Mariana	0.009468
+Marthy	0.009467
+Exilda	0.009466
+Chayo	0.009466
+Grettel	0.009466
+Irisita	0.009465
+Karen Pamela	0.009464
+Ivoncita	0.009463
+Maleny	0.009463
+Susita	0.009462
+Lizzette	0.009459
+Ana Carmen	0.009458
+Fabyta	0.009458
+Anyely	0.009457
+Maurita	0.009456
+Carmen Sonia	0.009455
+Agusta	0.009455
+Ivonn	0.009453
+Florsita	0.009453
+Eduvijes	0.009452
+Marujita	0.009452
+Luty	0.009451
+Alexsa	0.009449
+Luz Alejandra	0.009448
+Maria Solange	0.009447
+Yesita	0.009445
+Delany	0.009444
+Margara	0.009444
+Yesly	0.009443
+Marialy	0.009443
+Lobita	0.009441
+Keissy	0.009440
+Greicy	0.009439
+Lessly	0.009439
+Magarita	0.009436
+Ainoa	0.009435
+Rossita	0.009434
+Audelia	0.009433
+Solesita	0.009431
+Yarlin	0.009429
+Rousmery	0.009429
+Esthefania	0.009429
+Roxana Patricia	0.009427
+Orianita	0.009427
+Ana Marisol	0.009426
+Harumi	0.009426
+Ana Maritza	0.009425
+Dannya	0.009425
+Sindia	0.009423
+Alejandra Belen	0.009423
+Linita	0.009423
+Charlin	0.009421
+Brillit	0.009421
+Yajahira	0.009421
+Jocabed	0.009420
+Rudith	0.009418
+Ignasia	0.009418
+Rosa Miriam	0.009416
+Fernanditha	0.009415
+Elizabeth Roxana	0.009414
+Pilito	0.009413
+Paulet	0.009413
+Luz Ximena	0.009411
+Jacqueline Patricia	0.009411
+Yaquelyn	0.009409
+Melitza	0.009409
+Vania Andrea	0.009408
+Yuby	0.009407
+Maria Magaly	0.009406
+Adelis	0.009406
+Pablita	0.009404
+Romané	0.009403
+Esteffany	0.009403
+Jenny Elizabeth	0.009402
+Alejandra Pamela	0.009401
+Lichita	0.009400
+Moncerrat	0.009400
+Maria T	0.009399
+Sara Andrea	0.009398
+Pasita	0.009397
+Cupertina	0.009397
+Flormaria	0.009396
+Luzmary	0.009395
+Guissell	0.009394
+Yeliza	0.009392
+Elimar	0.009392
+Yarina	0.009391
+Rurh	0.009389
+Yomaira	0.009389
+Hasly	0.009388
+Cotillones	0.009386
+Danai	0.009386
+Sonia Angelica	0.009384
+Pachita	0.009383
+M Victoria	0.009382
+Suellen	0.009382
+Camily	0.009381
+Thabata	0.009380
+Mikaella	0.009380
+Carolayne	0.009379
+Tathy	0.009379
+Janara	0.009378
+Cristianne	0.009378
+Laleska	0.009377
+Nycole	0.009375
+Jennyffer	0.009375
+Amandaa	0.009374
+Walesca	0.009374
+Jeisy	0.009372
+Pastel	0.009372
+Cristyna	0.009371
+Ecilda	0.009371
+Carolyna	0.009370
+Nathalye	0.009370
+Thanya	0.009370
+Pamela Cristina	0.009369
+Eliana Maria	0.009369
+Naysa	0.009368
+Shelda	0.009368
+Izamar	0.009368
+Rosvita	0.009367
+Mariafrancisca	0.009366
+Gisley	0.009365
+Karolyn	0.009364
+Renise	0.009363
+Nally	0.009361
+Taryn	0.009360
+Glenys	0.009358
+Marie Michelle	0.009358
+Katryna	0.009357
+Lyda	0.009357
+Wisline	0.009356
+Paulett	0.009356
+Guirlene	0.009355
+Kimberling	0.009354
+Nixia	0.009352
+Confess	0.009350
+Moriel	0.009349
+Elizabeth Cecilia	0.009349
+Paulinaa	0.009348
+Maria-Jose	0.009347
+Eillen	0.009346
+Milande	0.009345
+Nayou	0.009345
+Lilian Andrea	0.009344
+Kryshna	0.009344
+Ropita Linda	0.009343
+Katiita	0.009341
+Comida Rápida	0.009340
+Maria Fresia	0.009338
+Negritha	0.009338
+Guilene	0.009337
+Kaathy	0.009335
+Teoma	0.009334
+Rosa Magaly	0.009333
+Varias	0.009332
+Maryorit	0.009331
+Rosita Elena	0.009330
+Jakito	0.009330
+Angelica Isabel	0.009330
+Terapeuta	0.009329
+Rosiita	0.009328
+Marisol Angelica	0.009328
+Guerdy	0.009327
+Margarita De Las Mercedes	0.009326
+Cecilia Del Rosario	0.009326
+Lorena Angelica	0.009325
+Dagna	0.009323
+Fedline	0.009323
+Alejandra Fabiola	0.009323
+Marianela Del Carmen	0.009322
+Marttina	0.009321
+Juana Angelica	0.009321
+Jessica Elizabeth	0.009321
+Ensaladas	0.009320
+Dixiana	0.009320
+Psicopedagoga	0.009319
+Rosaelena	0.009319
+Flor Elena	0.009318
+Francisca Del Carmen	0.009317
+Elena Elizabeth	0.009317
+Marlene Alejandra	0.009316
+Jaqueline Del Carmen	0.009316
+Aurora Isabel	0.009315
+Catalina Javiera	0.009313
+Kotty	0.009313
+Catalina Del Carmen	0.009312
+Jeissy	0.009312
+Sarella	0.009311
+Catalina Victoria	0.009310
+Chrisla	0.009310
+Luz Del Carmen	0.009309
+Marcia Angelica	0.009309
+Marcela Angelica	0.009308
+Yerthy	0.009307
+Nachaa	0.009306
+Scarlett Andrea	0.009305
+Paola Cristina	0.009304
+Iris Alejandra	0.009304
+Lilian Elizabeth	0.009304
+Gladys Cecilia	0.009303
+Danĭela	0.009302
+Marisel Alejandra	0.009302
+Oriana Del Carmen	0.009301
+Patricia Loreto	0.009301
+Paula Javiera	0.009300
+Judith Del Carmen	0.009300
+Alejandra Margarita	0.009300
+Nancy Margarita	0.009299
+Catalina Isidora	0.009298
+Marianela Andrea	0.009298
+Carla Ignacia	0.009297
+Gloria Del Pilar	0.009297
+Edith Elizabeth	0.009296
+Daniela Nicole	0.009292
+Renatita	0.009292
+Lucia Alejandra	0.009291
+Rosa Victoria	0.009290
+Faralitas	0.009290
+Paola Angelica	0.009289
+Kethia	0.009288
+Marcela Jacqueline	0.009288
+Yuraima	0.009287
+Yarixza	0.009287
+Dulceria	0.009286
+Javiita	0.009285
+Rita Del Carmen	0.009284
+Danitza Andrea	0.009282
+Marisol De Las Mercedes	0.009281
+Dairis	0.009280
+Kerty	0.009280
+Janyta	0.009279
+Pamela Patricia	0.009278
+Shelove	0.009276
+Maritxu	0.009275
+Marcelitha	0.009274
+Baithiare	0.009273
+Monzerrat	0.009272
+Katitha	0.009270
+Natalia Fernanda	0.009270
+Yariza	0.009269
+Erline	0.009268
+Yekita	0.009268
+Elizabeth Viviana	0.009267
+Nellys	0.009267
+Karyme	0.009266
+Francisca Catalina	0.009265
+Fernanda Alejandra	0.009264
+Javieritha	0.009263
+Olga Andrea	0.009263
+Smirna	0.009262
+Rosangel	0.009262
+Vaytiare	0.009262
+Danaes	0.009260
+Dayana Andrea	0.009258
+Yarixsa	0.009257
+Milouse	0.009256
+Sandra Jeannette	0.009254
+Carolina Estefania	0.009254
+Marianela Alejandra	0.009254
+Paz Ignacia	0.009253
+Catalinna	0.009252
+Yuvisa	0.009251
+Jeanntte	0.009251
+Pia Fernanda	0.009250
+Valenthina	0.009250
+Daniela Estefania	0.009249
+Danise	0.009248
+Lilianette	0.009246
+Tamara Belen	0.009246
+Jocyta	0.009245
+Elizabeth Lorena	0.009245
+Cecilia Elena	0.009244
+Cami Fernanda	0.009242
+Rosemanie	0.009241
+Tatiana Alejandra	0.009239
+Jamileth	0.009239
+Podología	0.009239
+Analya	0.009238
+Ropero De	0.009237
+Gloria Luz	0.009236
+Yaricza	0.009235
+Camila Isabel	0.009233
+Nathyta	0.009232
+Paola Francisca	0.009232
+Kiimberly	0.009232
+Jocita	0.009231
+La Picá	0.009231
+Gloria Eliana	0.009230
+Karina Paz	0.009228
+Danicsa	0.009228
+Mariana Del Carmen	0.009226
+Milisen	0.009226
+Maria Otilia	0.009225
+M Angeles	0.009224
+Gloria Carmen	0.009223
+Paulina Elizabeth	0.009223
+Odet	0.009222
+Victoria Isabel	0.009222
+Javyera	0.009221
+Karlyta	0.009221
+Magaly Andrea	0.009221
+Brisalia	0.009220
+Elizabeth Del Pilar	0.009220
+Sandra Carmen	0.009219
+Marcela Eugenia	0.009219
+Luz Magaly	0.009218
+Mirentxu	0.009217
+Catalîna	0.009217
+Yoselyn Andrea	0.009216
+Haydee Del Carmen	0.009216
+Adelinda	0.009215
+Francisca Daniela	0.009214
+Sandra Paulina	0.009212
+Dieulene	0.009212
+María Adriana	0.009211
+Crichna	0.009210
+Jenny Paola	0.009210
+Conini	0.009208
+Agustina Paz	0.009207
+Miyarai	0.009205
+Lirayen	0.009202
+Youseline	0.009202
+Yita	0.009201
+Cobertores	0.009201
+Talía	0.009201
+Regala	0.009199
+Luz Amparo	0.009198
+Magalis	0.009196
+Margarita Del Rosario	0.009196
+Anytha	0.009195
+Provisiones	0.009194
+Yéssica	0.009193
+Andrea Pilar	0.009192
+Vanessa Carolina	0.009191
+Connstanza	0.009189
+Zarella	0.009189
+Nicole Alexandra	0.009188
+María De Los	0.009188
+Dairys	0.009187
+Manoucheca	0.009186
+Elizabeth Macarena	0.009185
+Pia Francisca	0.009184
+Jahaira	0.009183
+Emprende	0.009182
+Maríaignacia	0.009181
+Thiaree	0.009181
+Gladys Margarita	0.009180
+Wislene	0.009179
+Aleska	0.009179
+Oriette	0.009178
+Nibia	0.009177
+Hand Roll	0.009176
+Daniela Patricia	0.009175
+Pazz	0.009175
+Guise	0.009175
+Marlene Del Carmen	0.009174
+Liquidadora	0.009173
+Camila Valentina	0.009173
+La Morena	0.009172
+Feñi	0.009172
+Kamilitha	0.009172
+Podologa	0.009171
+Ximena Carolina	0.009170
+Kinesiología	0.009169
+Anggela	0.009168
+Katherine Vanessa	0.009168
+Isabel Angelica	0.009167
+Gabriela Antonia	0.009166
+Dianella	0.009165
+Geraldyne	0.009165
+Sudelia	0.009164
+María Paulina	0.009162
+Rebeca Del Carmen	0.009161
+Fabiola Del Pilar	0.009160
+Teresa Del Pilar	0.009160
+Jessica Pilar	0.009160
+Andrea Catalina	0.009159
+Evelyncita	0.009159
+Johannita	0.009159
+Yolima	0.009157
+Lalyta	0.009157
+Nancy Del Pilar	0.009156
+Chanell	0.009155
+Anita Belen	0.009155
+Norma Eliana	0.009154
+Javi Paz	0.009154
+Marlén	0.009153
+Marjorie Alejandra	0.009153
+Ximena Veronica	0.009152
+Lidia Andrea	0.009150
+Ana Aurora	0.009150
+Karen Soledad	0.009150
+Yasna Karina	0.009149
+Nicolett	0.009149
+Evelyn Soledad	0.009148
+Paulina Del Carmen	0.009148
+Luisa Eugenia	0.009147
+Melissa Andrea	0.009146
+Constanza Daniela	0.009145
+Jacqueline Angelica	0.009144
+Yenny Alejandra	0.009144
+Thannia	0.009143
+Francisca Carolina	0.009142
+Yinett	0.009142
+Arantzazu	0.009140
+Catyta	0.009140
+Karencitha	0.009139
+Yenifer Andrea	0.009139
+Macarenna	0.009137
+Carol Alejandra	0.009136
+Cecilia Eugenia	0.009136
+Gladys Veronica	0.009134
+M. Isabel	0.009134
+Berta Eliana	0.009134
+María Esperanza	0.009133
+Constanza Francisca	0.009133
+Elrincon	0.009133
+Karen Isabel	0.009132
+Evolet	0.009131
+Ma Isabel	0.009130
+Maricel Andrea	0.009130
+Paloma Belen	0.009129
+Marielys	0.009128
+Yaricsa	0.009128
+Katherine Paola	0.009127
+Maria Javiera	0.009126
+Alejandra Antonia	0.009125
+Yuviza	0.009123
+Eliana Elizabeth	0.009123
+Leslie Alejandra	0.009123
+Reychell	0.009122
+Scarletth	0.009121
+Cafetería	0.009121
+Mary Paz	0.009120
+Jennita	0.009119
+Karina Del Carmen	0.009119
+Atención	0.009118
+Licarayen	0.009118
+Yariitza	0.009117
+Meleck	0.009117
+Bárbara Andrea	0.009117
+Pelusita	0.009116
+Kettelie	0.009115
+Jetzabel	0.009115
+Sandra Eliana	0.009114
+Herty	0.009113
+Fanny Andrea	0.009113
+Nicole Estefania	0.009112
+Andrea Angelica	0.009111
+Miriam Elena	0.009111
+Chrismene	0.009110
+Varios	0.009108
+Yasnna	0.009108
+Nayaded	0.009107
+Fernanda Nicole	0.009107
+Francisca Constanza	0.009107
+Krissna	0.009106
+Nixi	0.009106
+Sihomara	0.009105
+Camîla	0.009103
+Nikolsita	0.009103
+Xinita	0.009101
+Paula Ignacia	0.009101
+Maricela Andrea	0.009101
+Pia Andrea	0.009100
+Antonia Catalina	0.009100
+Paula Antonia	0.009099
+Teresa Soledad	0.009099
+Anakarina	0.009098
+Yoce	0.009097
+Nancy Carmen	0.009097
+Thayra	0.009096
+Kotecita	0.009096
+Piita	0.009095
+Jessica Jeannette	0.009095
+Aliwen	0.009094
+Ninibeth	0.009093
+Angelitha	0.009092
+Khrisna	0.009092
+Myrlene	0.009091
+Palomitha	0.009090
+Yoconda	0.009090
+Solangue	0.009089
+Cosmeticos	0.009089
+Nadita	0.009088
+Barbara Catalina	0.009087
+Pia Alejandra	0.009087
+Marta Carolina	0.009086
+Francisca Valentina	0.009085
+Moryn	0.009085
+Calipso	0.009085
+Pekita	0.009084
+Baul De	0.009084
+Cattita	0.009083
+Aschly	0.009080
+Evelyn Macarena	0.009080
+Josefina Del Carmen	0.009079
+Katherinne Andrea	0.009079
+Yislein	0.009078
+Isidora Alejandra	0.009077
+Chorrillanas	0.009077
+Nerys	0.009076
+Pepona	0.009076
+Maleja	0.009075
+Masitas	0.009075
+Daniela Antonia	0.009074
+Priscilla Alejandra	0.009073
+Tenchita	0.009072
+Kattita	0.009072
+Ximena Carmen	0.009071
+Angela Carolina	0.009070
+Patricia Aurora	0.009070
+Ingrid Patricia	0.009068
+Etelinda	0.009068
+Caryto	0.009067
+Orfe	0.009067
+Erika Del Pilar	0.009066
+Katherine Soledad	0.009066
+Erika Soledad	0.009065
+Ckonstanza	0.009065
+Adelicia	0.009064
+Cataalina	0.009063
+Rosa Lorena	0.009063
+Myriam Soledad	0.009061
+Lorena Paz	0.009061
+Jacqueline Carmen	0.009060
+Galleguillos	0.009060
+Sylvita	0.009059
+Ana Magdalena	0.009059
+Patricia Victoria	0.009058
+Fernanda Isabel	0.009058
+Ximena De Las Mercedes	0.009057
+Ruth Viviana	0.009057
+Luisa Adriana	0.009057
+Luz Margarita	0.009056
+Yelica	0.009056
+Danais	0.009055
+Jeanina	0.009055
+Camĭ	0.009055
+Kotita	0.009054
+Victoria Carolina	0.009054
+Angelica Alejandra	0.009054
+Victoriaa	0.009053
+Marthyna	0.009053
+Susana Del Pilar	0.009052
+Pamela Cecilia	0.009052
+Paulina Fernanda	0.009051
+Claudia Pilar	0.009050
+Ingrid Marcela	0.009050
+Lucelly	0.009049
+Jessica Jacqueline	0.009049
+Marcia Del Carmen	0.009048
+Marcia Isabel	0.009048
+Paz Andrea	0.009048
+Georgina Del Carmen	0.009047
+Cothe	0.009047
+Tibisay	0.009047
+Isabel De Las Mercedes	0.009046
+Cristina Angelica	0.009046
+Ingrid Angelica	0.009044
+Fitline	0.009044
+Marcela Rosa	0.009042
+Kotetita	0.009042
+Jeannette Del Pilar	0.009041
+Jacqueline Soledad	0.009041
+Catitaa	0.009041
+Johana Elizabeth	0.009040
+Anahiz	0.009040
+Carla Valentina	0.009039
+Corretajes	0.009037
+Ckarla	0.009036
+Amarilys	0.009036
+Edelin	0.009035
+Paz Carolina	0.009035
+Latienda	0.009035
+Tamara Nicole	0.009033
+Ginet	0.009031
+Jjvv	0.009031
+Scarleet	0.009030
+Barbara Belen	0.009028
+Nerva	0.009027
+Elisa Andrea	0.009025
+Rutita	0.009024
+Marlene Andrea	0.009021
+Lesliee	0.009020
+Alejandra Catalina	0.009020
+Valezca	0.009019
+Natalie Andrea	0.009018
+Chanchita	0.009016
+Martina Fernanda	0.009015
+Lavandería	0.009015
+Natalia Belén	0.009014
+Marcela Fabiola	0.009014
+Lusmira	0.009013
+Tamara Francisca	0.009013
+Bernarda Andrea	0.009012
+Catalina Isabel	0.009011
+Mayleen	0.009011
+Carolina Carmen	0.009009
+Feeña	0.009008
+Fredes	0.009006
+Renata Antonia	0.009006
+Valitha	0.009005
+Josefa Isidora	0.009004
+Jois	0.009004
+Fefita	0.009002
+Stephanie Andrea	0.009001
+Alisados Keratina	0.009001
+Roselaure	0.008998
+Panxa	0.008997
+Fernanda Belén	0.008996
+Iris Elena	0.008995
+Yasnitha	0.008994
+Maria Purisima	0.008993
+Kensy	0.008993
+Roxana Cecilia	0.008992
+Valentĭna	0.008991
+Dorce	0.008991
+Ma José	0.008990
+Maria Nora	0.008989
+Eliana Rosa	0.008989
+Yvena	0.008988
+Barbara Constanza	0.008988
+Blanca Irene	0.008988
+Cotetita	0.008987
+Beatriz Soledad	0.008986
+Sepúlveda	0.008986
+Jocelyn Macarena	0.008985
+Cherlie	0.008985
+Alejandra Francisca	0.008984
+Dayann	0.008984
+Yesseniia	0.008983
+Enide	0.008982
+Juana Alicia	0.008982
+Ailyne	0.008982
+Coony	0.008981
+Margaritaa	0.008981
+Fernanda Isidora	0.008980
+Catina	0.008979
+Maria Margot	0.008979
+Marcia Carolina	0.008978
+María Bernardita	0.008977
+Orita	0.008977
+Carmen Eliana	0.008976
+Nancy Cecilia	0.008975
+Elizabeth Elena	0.008975
+Karitto	0.008974
+Ruth Ximena	0.008974
+Maribel Soledad	0.008973
+Kaarla	0.008973
+Rosa Herminda	0.008972
+Katiza	0.008972
+Cecilia Jeannette	0.008972
+Antonia Alejandra	0.008971
+Yasna Fabiola	0.008970
+Treisy	0.008969
+Maria Mireya	0.008969
+Karla Valentina	0.008969
+Olga Elizabeth	0.008968
+M. Soledad	0.008967
+Jimena Isabel	0.008966
+Ma Fernanda	0.008966
+Jacqueline Paola	0.008965
+Maggyta	0.008964
+Ninoscka	0.008964
+María Jacqueline	0.008963
+Fda	0.008962
+Carmenluz	0.008961
+Allinson	0.008961
+Editta	0.008961
+Daniela Macarena	0.008960
+Glafira	0.008960
+Daisy Andrea	0.008959
+Juana Cecilia	0.008959
+Luisa Elizabeth	0.008958
+Luz Angélica	0.008958
+Junta Vecinos	0.008956
+Nixy	0.008956
+Myriam Isabel	0.008956
+Ema Luisa	0.008955
+Jannys	0.008955
+Flerida	0.008953
+Delicias De	0.008953
+Cotesita	0.008953
+Costuritas	0.008952
+Alejandra Ximena	0.008951
+Viviana Jacqueline	0.008951
+Margarita Magdalena	0.008950
+Valentina Isabel	0.008949
+Yasna Pamela	0.008949
+Lucia Veronica	0.008949
+Floristeria	0.008948
+Cecilia Magdalena	0.008948
+Isabel Patricia	0.008947
+Ingrid Macarena	0.008947
+Elizabeth Magdalena	0.008946
+Dániza	0.008945
+Josmary	0.008945
+Küyen	0.008945
+Lucia Angelica	0.008944
+Katyna	0.008944
+Sorel	0.008943
+Souling	0.008941
+Rosa Del Pilar	0.008941
+Marisol Elena	0.008939
+Closett	0.008937
+Digna Rosa	0.008936
+Yaniira	0.008936
+Nicole Elizabeth	0.008935
+Sofía Antonia	0.008934
+Katary	0.008934
+Millaraay	0.008932
+Susana Carolina	0.008931
+Barbara Javiera	0.008931
+Katterinne	0.008929
+Yeanett	0.008929
+Kathitha	0.008928
+Sandra Eugenia	0.008928
+Carlitta	0.008927
+Lismar	0.008926
+Anahís	0.008925
+Guardería	0.008924
+Marytha	0.008924
+Krlita	0.008923
+Sonia Margarita	0.008923
+Ma Jose	0.008922
+Elizabeth Patricia	0.008921
+Yelissa	0.008921
+Veronics	0.008920
+Achly	0.008920
+Gabriela Del Pilar	0.008918
+Alba Lucia	0.008918
+Maite Ignacia	0.008918
+Jeannette Cecilia	0.008917
+Rosa Adela	0.008916
+Fabiola Isabel	0.008916
+Valesita	0.008915
+Yasni	0.008915
+Juslene	0.008914
+Laura Sofia	0.008914
+Polillita	0.008912
+Camila Estefania	0.008912
+Jennipher	0.008912
+Evelyn Paola	0.008911
+Alicia Marisol	0.008911
+Gladys Carmen	0.008910
+Menche	0.008910
+Antonellaa	0.008909
+Rosenie	0.008908
+Margarita Veronica	0.008908
+Rosa Catalina	0.008907
+Dangely	0.008907
+Eimily	0.008906
+Mariangelica	0.008906
+Catterine	0.008905
+Anakena	0.008905
+Danays	0.008904
+Aillen	0.008903
+Edith Andrea	0.008902
+Mariela Del Pilar	0.008901
+Eliset	0.008900
+Rossana Elizabeth	0.008900
+Sandra Jimena	0.008898
+Karla Francisca	0.008898
+Jenipher	0.008897
+Bethie	0.008897
+Giovanna Paola	0.008897
+Canelita	0.008895
+Coya	0.008895
+Laura Angelica	0.008893
+Norfa	0.008892
+Kesly	0.008892
+Marilita	0.008891
+Priscila Alejandra	0.008890
+Karen Marcela	0.008890
+Joselin Andrea	0.008889
+Romina Fernanda	0.008889
+Kanela	0.008888
+Yenny Andrea	0.008887
+Sara Alejandra	0.008887
+Jhendelyn	0.008887
+Romina Isabel	0.008885
+Kathalyna	0.008884
+Paulina Constanza	0.008883
+Cattleya	0.008883
+Manecita	0.008882
+Claudia Marisol	0.008882
+Gester	0.008881
+Coctelería	0.008880
+Amadora	0.008880
+Nadia Andrea	0.008879
+Mayorie	0.008878
+Ursula Andrea	0.008876
+Patricia Del Rosario	0.008874
+Cecilia Pilar	0.008873
+Cesiah	0.008873
+Gabriela Constanza	0.008872
+Veronica Pilar	0.008871
+Sofia Fernanda	0.008871
+Antonia Isidora	0.008871
+Fabiola Lorena	0.008870
+Patricia Marisol	0.008870
+Maria Erica	0.008870
+Mabel Del Carmen	0.008868
+Alicia Ivonne	0.008868
+Rosa Ivonne	0.008867
+Valentiinaa	0.008865
+Margot Del Carmen	0.008864
+Claudia Jacqueline	0.008864
+Catalina Soledad	0.008863
+Javiera Anais	0.008863
+M Angélica	0.008863
+Yessenia Alejandra	0.008862
+Luzdary	0.008862
+Joyitas	0.008861
+Monica Carmen	0.008861
+Rosa Viviana	0.008859
+Ximena Paz	0.008859
+Paula Belen	0.008858
+Karen Solange	0.008858
+Katterina	0.008857
+Pollita	0.008856
+Jesabel	0.008855
+Berta Isabel	0.008855
+Leslia	0.008855
+Daniela Alexandra	0.008854
+Ernestina Del Carmen	0.008854
+Teresa Elizabeth	0.008854
+Yanet Alejandra	0.008852
+Eliana Margarita	0.008852
+Yois	0.008852
+Claudia Ivonne	0.008851
+Ingrid Solange	0.008851
+Paulina Soledad	0.008850
+Yelika	0.008849
+Evena	0.008848
+Florencia Paz	0.008847
+Valpo	0.008846
+Yeniifer	0.008846
+Aranzazú	0.008845
+Aniuska	0.008843
+Marisole	0.008843
+Dieuna	0.008842
+Alejandra Victoria	0.008842
+Anttonia	0.008842
+Antonia Andrea	0.008841
+Susana Jacqueline	0.008840
+Ketlie	0.008840
+Magly	0.008840
+Cecilia Teresa	0.008838
+Eliana Andrea	0.008838
+Marisol Isabel	0.008837
+Ropita De	0.008836
+Carime	0.008836
+Barbara Francisca	0.008835
+Ruth Marisol	0.008835
+Tiare Andrea	0.008835
+Fuenzalida	0.008834
+Karinitha	0.008834
+Gladys De Las Mercedes	0.008834
+Lorena Fabiola	0.008833
+Cristhy	0.008833
+Mariaeliana	0.008832
+Valentina Francisca	0.008832
+Olvido	0.008831
+Edith Margarita	0.008831
+Pamela Veronica	0.008830
+Alejandra Ivonne	0.008830
+Sivoney	0.008829
+Judette	0.008828
+Carolina Constanza	0.008827
+Delicias Caseras	0.008827
+Marbelys	0.008826
+Marïa	0.008826
+Javîera	0.008826
+Kuyen	0.008825
+María Edith	0.008824
+Veronica De Las Mercedes	0.008824
+Carolitha	0.008823
+Ginnette	0.008823
+Erlande	0.008821
+Maricel Del Carmen	0.008820
+Yocelyn Andrea	0.008819
+Yirlen	0.008818
+Daniela Del Carmen	0.008817
+Jakita	0.008816
+Pamela Ines	0.008815
+Herminia Del Carmen	0.008815
+Maritza Cecilia	0.008815
+Fernanda Constanza	0.008814
+Piscis	0.008814
+Galletas	0.008814
+Yesennia	0.008811
+Camila Daniela	0.008811
+Yoice	0.008811
+Roxana Pamela	0.008810
+Ivonne Angelica	0.008810
+Junta De Vecino	0.008809
+Cecilia Rosa	0.008808
+Silvia De Las Mercedes	0.008808
+Ixa	0.008808
+Lorena Ivonne	0.008807
+Maripa	0.008806
+Libny	0.008806
+Marsol	0.008805
+Manese	0.008805
+Välëntïnä	0.008804
+Blanca Del Carmen	0.008803
+Yasna Patricia	0.008801
+Darliing	0.008800
+La Chika	0.008800
+Maria Anjelica	0.008800
+Zasha	0.008799
+Fabiola Carolina	0.008799
+Loredanna	0.008798
+Valeria Francisca	0.008796
+Gaudy	0.008796
+Jazmin Alejandra	0.008795
+Juana Alejandra	0.008795
+Marîa	0.008795
+Maria Leontina	0.008794
+Cecilia Marisol	0.008794
+Carolina Ivonne	0.008793
+Sonia Rosa	0.008793
+Yaritsa	0.008792
+Angelica Soledad	0.008792
+Nitzy	0.008791
+Cecili	0.008791
+Teresa De Las Mercedes	0.008791
+Jabones	0.008789
+Luzeliana	0.008786
+May-Ling	0.008785
+Lissette Carolina	0.008784
+Gloria Amparo	0.008783
+Yamilec	0.008783
+Nicoole	0.008783
+Jacquita	0.008781
+Juana Veronica	0.008781
+Amelia Del Carmen	0.008781
+Javiera Camila	0.008780
+Pamela Viviana	0.008779
+Carmen Ximena	0.008779
+Luperfina	0.008778
+Blanca Cecilia	0.008777
+La Bodeguita	0.008774
+Raquel Alejandra	0.008774
+Yasmin Alejandra	0.008772
+Bëlën	0.008772
+Rosa Marcela	0.008770
+Vaniaa	0.008769
+Natali Andrea	0.008769
+Grimilda	0.008768
+Pradelia	0.008768
+Myriam Angelica	0.008768
+Rosa Soledad	0.008767
+Angita	0.008767
+Nedda	0.008766
+Roxana Soledad	0.008766
+Alonsa	0.008766
+Catherine Alejandra	0.008765
+Elena Andrea	0.008764
+Victoria Elena	0.008764
+Verónica Isabel	0.008763
+Teresa Margarita	0.008763
+Alejandra Ignacia	0.008762
+Angèlica	0.008762
+Sala Cuna	0.008761
+Gloria Luisa	0.008761
+Judith Andrea	0.008760
+Margarits	0.008758
+Alicia Del Pilar	0.008758
+Carolina Pilar	0.008757
+Yovii	0.008757
+Baleska	0.008757
+Mónica Isabel	0.008756
+Katherine Daniela	0.008756
+Erika Maria	0.008755
+Sonia Del Pilar	0.008755
+Jacqueline De Las Mercedes	0.008754
+Carolina Ignacia	0.008754
+Marcela Loreto	0.008754
+Leontina Del Carmen	0.008753
+Susana Carmen	0.008753
+Yenyfer	0.008752
+Lanita	0.008752
+Maria Alejandrina	0.008752
+Yurisan	0.008751
+Mria	0.008750
+Paola Ester	0.008750
+Sandra Magdalena	0.008749
+Olga Alejandra	0.008749
+Cristina Paola	0.008748
+Lorena Margarita	0.008747
+Gloria Nancy	0.008746
+Elizabeth Marcela	0.008746
+Andrea Pamela	0.008745
+Sandra Elisa	0.008744
+Edra	0.008742
+Eglis	0.008741
+Nikolle	0.008739
+Endrina	0.008738
+Miriana	0.008737
+Blenda	0.008736
+Edlin	0.008736
+Ermelina	0.008736
+Andromeda	0.008735
+Arianita	0.008734
+Denii	0.008733
+Nissi	0.008732
+Luga	0.008732
+Monserat	0.008731
+Danys	0.008730
+Marela	0.008728
+Souvenir	0.008727
+Andina	0.008727
+Ricardina	0.008726
+Adalgisa	0.008726
+Cipriana	0.008724
+Bernada	0.008723
+Silvania	0.008723
+Teresa Maria	0.008721
+Ágata	0.008719
+Herme	0.008718
+Iriana	0.008716
+Lamy	0.008715
+Lunna	0.008714
+Zelma	0.008714
+Zarita	0.008713
+Adalia	0.008712
+Israela	0.008712
+Raphaela	0.008711
+Philomene	0.008709
+Isbel	0.008709
+Galaxia	0.008708
+Larose	0.008708
+Michelly	0.008707
+Mayelin	0.008706
+Thaís	0.008706
+Diany	0.008706
+Estilista	0.008705
+Paula Isabel	0.008705
+Silviana	0.008704
+Calú	0.008703
+Ilde	0.008702
+Grimaneza	0.008700
+Evarista	0.008699
+Luisiana	0.008698
+Momentos	0.008697
+Ana Yolanda	0.008697
+Salito	0.008696
+Miriam Patricia	0.008695
+Strella	0.008695
+Lysette	0.008693
+Dairy	0.008690
+Carla Fernanda	0.008690
+Claudia Vanessa	0.008689
+Stella Maris	0.008688
+Agostina	0.008688
+Mechi	0.008687
+Lucre	0.008687
+Marta Susana	0.008687
+Silvia Beatriz	0.008686
+Prii	0.008686
+Yoha	0.008686
+Marta Beatriz	0.008685
+Olga Beatriz	0.008684
+Ana Lia	0.008684
+María Esther	0.008682
+Gabyy	0.008682
+Laura Beatriz	0.008681
+María Florencia	0.008680
+Giane	0.008680
+Gisee	0.008679
+Sandra Noemi	0.008678
+Melanii	0.008678
+Yésica	0.008677
+Patricia Monica	0.008676
+María Paula	0.008675
+Maiira	0.008674
+Rocioo	0.008673
+Norma Edith	0.008673
+Agustína	0.008672
+Marialaura	0.008671
+Normis	0.008671
+Liliana Elizabeth	0.008671
+Cirila	0.008670
+Yemina	0.008669
+María Del Rosario	0.008669
+Xiomi	0.008668
+Lichi	0.008667
+Pupy	0.008666
+Soofi	0.008666
+Tefii	0.008665
+María Julia	0.008665
+Catu	0.008664
+Morochita	0.008664
+Jessii	0.008663
+Sonia Beatriz	0.008663
+Gabriela Soledad	0.008663
+Sandra Liliana	0.008662
+Calzados	0.008662
+Susana Maria	0.008661
+Miriam Edith	0.008661
+Alejandra Beatriz	0.008661
+Laura Cecilia	0.008660
+Maruca	0.008660
+Susana Ester	0.008659
+Liiz	0.008659
+Aleeh	0.008658
+Chola	0.008658
+Rosarito	0.008657
+Pila	0.008655
+Elsa Ines	0.008655
+Natura	0.008655
+Maria Noelia	0.008654
+Sandra Mabel	0.008654
+Nora Alicia	0.008653
+Vanesa Alejandra	0.008653
+Blanqui	0.008653
+Viicky	0.008652
+Andrea Beatriz	0.008652
+Aranda	0.008650
+Noeliia	0.008650
+Maria Amalia	0.008649
+Amores	0.008647
+Maria Del	0.008646
+Maria Teresita	0.008644
+Alicia Ines	0.008643
+Apoyo	0.008643
+Gabriela Beatriz	0.008642
+Susana Elena	0.008641
+Sandra Monica	0.008641
+Mayraa	0.008638
+Marina Alejandra	0.008637
+Graciela Alejandra	0.008637
+Adriana Soledad	0.008636
+Flaca	0.008635
+Maria Silvana	0.008634
+Arcelia	0.008634
+Mariabelen	0.008633
+Belleza	0.008632
+Morella	0.008632
+Maiite	0.008630
+Solamente	0.008628
+Manuelita	0.008626
+Celica	0.008626
+Casa De	0.008625
+Cnco	0.008624
+Mariiela	0.008624
+Francii	0.008623
+Marta Inés	0.008622
+Lourde	0.008622
+Patricia Gabriela	0.008621
+Maria Matilde	0.008620
+Laura Cristina	0.008620
+Gloria Cristina	0.008618
+Heredia	0.008617
+Patitas	0.008615
+María Daniela	0.008615
+Nora Elizabeth	0.008614
+Suyay	0.008614
+Florensia	0.008613
+Belem	0.008611
+Elsa Margarita	0.008611
+Soledas	0.008610
+Laura Elizabeth	0.008609
+Esmilda	0.008608
+Maria Enriqueta	0.008608
+Virgina	0.008607
+Araseli	0.008607
+Ada Luz	0.008606
+Yae	0.008604
+María Marcela	0.008604
+Rosa Haydee	0.008603
+Marina Isabel	0.008601
+Estela Del Carmen	0.008601
+Marianaa	0.008600
+Vieja	0.008599
+Brissa	0.008598
+Piu	0.008598
+Baleria	0.008598
+Ana Marìa	0.008597
+Alejandra Daniela	0.008595
+Bestriz	0.008595
+Consultora	0.008594
+Patricia Roxana	0.008592
+Susana Edith	0.008591
+Mariamagdalena	0.008591
+Lucianita	0.008590
+Rosa Gladys	0.008589
+Maria De Los	0.008589
+Carmen Lucia	0.008588
+Elsa Isabel	0.008587
+Vichy	0.008586
+Camino	0.008586
+Reveca	0.008586
+Silbana	0.008584
+Delfa	0.008583
+Blanca Lidia	0.008582
+Silvana Paola	0.008581
+Bacilia	0.008581
+Sonia Edith	0.008580
+Lelis	0.008580
+Noelia Alejandra	0.008579
+Maria M	0.008579
+Colores	0.008578
+Gladys Alicia	0.008577
+Teree	0.008576
+Tutti	0.008574
+Vene	0.008573
+Yacky	0.008573
+De Los Angeles	0.008572
+Madre	0.008570
+Sandra Susana	0.008569
+Anye	0.008568
+Kiaraa	0.008568
+Claudia Valeria	0.008567
+Oportunidades	0.008565
+Paula Daniela	0.008564
+Mónica Elizabeth	0.008564
+Maria J	0.008563
+Blanca Maria	0.008563
+Tatita	0.008562
+Viviana Marcela	0.008560
+Menta	0.008560
+Alejandra Veronica	0.008558
+Adrea	0.008558
+Urbana	0.008558
+Irma Ester	0.008556
+Fernanda Soledad	0.008555
+Ana Virginia	0.008555
+Patria	0.008555
+Eva Rosa	0.008553
+Solansh	0.008551
+Virjinia	0.008550
+Malenita	0.008550
+Noelia Andrea	0.008550
+Pañales	0.008549
+Natalia Beatriz	0.008549
+Criiss	0.008548
+Marymar	0.008548
+Mercedita	0.008546
+Martína	0.008545
+Fanii	0.008542
+Ana Catalina	0.008541
+Blanca Nieves	0.008541
+Lucia Ester	0.008540
+Gloria Susana	0.008540
+Taniaa	0.008539
+Ginebra	0.008538
+Ma Cristina	0.008538
+Neisa	0.008537
+Anthonela	0.008537
+Mariiaa	0.008534
+Zafira	0.008534
+Taamy	0.008534
+Blan	0.008533
+Jimena Soledad	0.008533
+Tachy	0.008530
+Teresa Ines	0.008530
+Carla Paola	0.008530
+Rosa Blanca	0.008529
+Peques	0.008528
+Beelen	0.008527
+Amanecer	0.008527
+Blanca Margarita	0.008526
+Yolanda Isabel	0.008525
+Giselita	0.008524
+Rosa Delia	0.008524
+Elvecia	0.008523
+Gloria Alicia	0.008522
+Myriam Elizabeth	0.008522
+Hecho	0.008521
+Gicel	0.008520
+Elba Ines	0.008519
+Nancy Soledad	0.008518
+Carla Soledad	0.008518
+Luisa Elvira	0.008518
+Goya	0.008518
+Sussi	0.008517
+Betita	0.008517
+Rosa Laura	0.008516
+Mary Cruz	0.008515
+Miriam Andrea	0.008514
+Brisas	0.008514
+Marta Elisa	0.008514
+Shole	0.008513
+Claudia Elisa	0.008511
+Giulietta	0.008510
+Sucy	0.008509
+Arreglos	0.008509
+Silvya	0.008507
+María Viviana	0.008506
+Maria Zunilda	0.008506
+Ana Gladys	0.008503
+Norma Luisa	0.008503
+Estilos	0.008501
+Paricia	0.008501
+Margarita Alicia	0.008499
+Isabel Teresa	0.008499
+Kaaty	0.008498
+Cristii	0.008498
+Victoria Soledad	0.008497
+Clara Isabel	0.008495
+Angela Isabel	0.008495
+Carmen Teresa	0.008494
+Caarla	0.008493
+Teffi	0.008492
+Yolanda Ester	0.008492
+Ana Iris	0.008491
+Myryam	0.008491
+Roxio	0.008490
+Thaly	0.008490
+Juana Victoria	0.008489
+Prici	0.008489
+Caudia	0.008488
+Ana Leonor	0.008487
+Rosa Inés	0.008486
+La Tienda	0.008486
+Modas	0.008485
+Alicia Elizabeth	0.008484
+Raquel Maria	0.008484
+Eva Luz	0.008482
+Zulemita	0.008482
+Delcy	0.008481
+Mandalas	0.008480
+Mariagraciela	0.008480
+Maria Albertina	0.008480
+Ysabella	0.008479
+Lethy	0.008479
+Sofia Lorena	0.008477
+Celia Del Carmen	0.008476
+Nativa	0.008475
+Marta Adriana	0.008475
+Norma Angelica	0.008474
+Veronica Ines	0.008474
+Noema	0.008472
+Eliana Alejandra	0.008472
+Yandira	0.008471
+Ingriid	0.008471
+Rosyta	0.008467
+Ihara	0.008465
+María Nelly	0.008465
+Judiht	0.008464
+Memé	0.008464
+Patricis	0.008462
+Noemi Ester	0.008460
+Patricia Edith	0.008459
+Mapi	0.008459
+Maria Josè	0.008458
+Sandrs	0.008458
+Pilaar	0.008458
+Senovia	0.008458
+Mcristina	0.008457
+Alelí	0.008456
+Caritto	0.008456
+Dalcy	0.008455
+Nemesia	0.008454
+Claudia A	0.008454
+Nadia Carolina	0.008453
+Carmen Elisa	0.008453
+Carlitaa	0.008451
+Lidia Elizabeth	0.008450
+Alicia Soledad	0.008449
+Beatriz Elizabeth	0.008449
+Piroska	0.008448
+Miichelle	0.008446
+Rositta	0.008446
+Persa	0.008445
+Yordanka	0.008445
+Yelda	0.008444
+Iskra	0.008444
+Saska	0.008444
+Issy	0.008443
+Mariechen	0.008443
+Linett	0.008442
+Michellee	0.008442
+Senaida	0.008441
+Issabella	0.008440
+Niss	0.008439
+Tey	0.008438
+Antara	0.008438
+Tammi	0.008437
+Zinnia	0.008437
+Anjelina	0.008436
+Marie Rose	0.008436
+Berlinda	0.008435
+Lilianne	0.008435
+Marie Claude	0.008434
+Kiim	0.008434
+Karinne	0.008433
+Delice	0.008433
+Phanie	0.008432
+Aliette	0.008432
+Bettie	0.008432
+Natou	0.008431
+Nehemie	0.008431
+Cecylia	0.008430
+Kaily	0.008430
+Nadeige	0.008429
+Glenny	0.008429
+Fiorenza	0.008428
+Linka	0.008427
+Suan	0.008427
+Yliana	0.008426
+Rossie	0.008426
+Renal	0.008425
+Darka	0.008425
+Shushi	0.008424
+Marielly	0.008423
+Isel	0.008422
+Jacqeline	0.008421
+Yvone	0.008421
+Krol	0.008420
+Ayun	0.008420
+Izumi	0.008419
+Kaoru	0.008419
+Herly	0.008418
+Triz	0.008417
+Heddy	0.008416
+Jhuly	0.008415
+Neiza	0.008414
+Litzi	0.008414
+Madai	0.008414
+Luz Clarita	0.008413
+Senobia	0.008413
+Marisita	0.008413
+Zenovia	0.008412
+Eloina	0.008412
+Jhoseline	0.008412
+Reinita	0.008410
+Marthita	0.008410
+Gelen	0.008410
+Yulianita	0.008409
+Aidita	0.008409
+Yanneth	0.008408
+Marysabel	0.008406
+Claret	0.008405
+Ingrith	0.008405
+Selenia	0.008405
+Yanecita	0.008404
+Mileydi	0.008404
+Areliz	0.008403
+Romaneth	0.008403
+Brianda	0.008403
+Anghela	0.008402
+Eudocia	0.008402
+Valecita	0.008402
+Yasira	0.008401
+Marializ	0.008401
+Ninet	0.008401
+Keyli	0.008400
+Rossmary	0.008399
+Consuelito	0.008398
+Karely	0.008398
+Milenita	0.008398
+Aleinad	0.008397
+Mairita	0.008397
+Enrriqueta	0.008397
+Ana Ysabel	0.008396
+Marinita	0.008396
+Yackeline	0.008395
+Elvirita	0.008395
+Marithza	0.008394
+Ingricita	0.008394
+Favia	0.008394
+Barinia	0.008393
+Yelka	0.008391
+Martitha	0.008390
+Maribella	0.008390
+Moniquita	0.008389
+Khaterine	0.008389
+Karenina	0.008388
+Luz Estrella	0.008387
+Amaly	0.008386
+Ruth Marlene	0.008384
+Giomara	0.008384
+Yanaina	0.008384
+Jerusalen	0.008383
+Neldy	0.008383
+Martha Isabel	0.008382
+Juana Iris	0.008382
+Maria Amparo	0.008382
+Caroly	0.008379
+Jhade	0.008379
+Daysy	0.008378
+Priscilita	0.008378
+Dinita	0.008376
+Nícol	0.008375
+Carla Isabel	0.008372
+Adamaris	0.008372
+Ninoshka	0.008370
+Ysaura	0.008369
+Yuyin	0.008368
+Nerak	0.008367
+Rutt	0.008366
+Yussara	0.008366
+Erika Paola	0.008366
+Jannete	0.008365
+Sthefanny	0.008364
+Tanis	0.008364
+Carmen Silvia	0.008363
+Diana Andrea	0.008363
+Akemy	0.008361
+Crismar	0.008360
+Sandra Luz	0.008359
+Pascualita	0.008359
+Keidy	0.008358
+Yeisi	0.008357
+Yhara	0.008357
+Zamy	0.008357
+Carmen Lorena	0.008356
+Libni	0.008356
+Kennia	0.008356
+Chepa	0.008355
+Yaly	0.008354
+Kerlin	0.008354
+Miriam Ruth	0.008353
+Lucely	0.008352
+Marytza	0.008352
+Valerin	0.008351
+Mistica	0.008350
+Irania	0.008350
+Libeth	0.008349
+Sinia	0.008349
+Filito	0.008348
+Darinca	0.008348
+Yensi	0.008347
+Dailin	0.008346
+Juana Cristina	0.008346
+Maria Doris	0.008345
+Mayerlyn	0.008343
+Rosa Gabriela	0.008343
+Ana Valentina	0.008343
+Yobita	0.008342
+Sthefani	0.008341
+Eudalia	0.008340
+Liis	0.008338
+Morayma	0.008337
+Dagne	0.008337
+Carla Marcela	0.008337
+Yorgelis	0.008336
+Bella Luz	0.008336
+Nenitha	0.008334
+Ilcia	0.008334
+Gislene	0.008334
+Zuley	0.008333
+Khiara	0.008333
+Otty	0.008332
+Ninett	0.008331
+Rosa Virginia	0.008331
+Nolia	0.008331
+Mitsuki	0.008330
+Crespita	0.008330
+Alixon	0.008330
+Ruth Marcela	0.008329
+Haylen	0.008329
+Rosa Marlene	0.008328
+Yicel	0.008328
+Goretty	0.008326
+Dabne	0.008326
+Sarvia	0.008325
+Lucyta	0.008323
+Vannya	0.008323
+Andrea Fabiola	0.008323
+Geomara	0.008322
+Scarly	0.008320
+Marianet	0.008319
+Melian	0.008318
+Karen Vanessa	0.008318
+Alejandritha	0.008317
+Yalitza	0.008317
+Agelica	0.008316
+Ines Veronica	0.008315
+Eluzabeth	0.008315
+Juliza	0.008315
+Eleodora	0.008313
+Adiela	0.008313
+Juana Luz	0.008311
+Maria Jessica	0.008310
+Yisell	0.008310
+Yvania	0.008309
+Darsy	0.008309
+Nayelly	0.008308
+Erika Lorena	0.008308
+Silvia Carmen	0.008307
+Daniita	0.008307
+Maricell	0.008307
+Rosa Albina	0.008306
+Yaima	0.008305
+Roselaine	0.008304
+Aghata	0.008303
+Geisy	0.008303
+Fabiani	0.008303
+Tábata	0.008302
+Priscyla	0.008302
+Helida	0.008301
+Oscarina	0.008301
+Silvanna	0.008300
+Altamira	0.008300
+Francica	0.008300
+Estelina	0.008299
+Oneida	0.008299
+Patthy	0.008298
+Olavia	0.008298
+Nalia	0.008297
+Fancisca	0.008297
+Enilde	0.008297
+Auda	0.008296
+Dulcelina	0.008296
+Keilly	0.008296
+Sara Cristina	0.008295
+Patyy	0.008295
+Elianny	0.008295
+Angelis	0.008294
+Malba	0.008293
+Karita	0.008293
+Carolynne	0.008292
+Jessica Cristina	0.008292
+Hilda Maria	0.008292
+Magally	0.008291
+Estephani	0.008291
+Petunia	0.008289
+Oris	0.008288
+Vasty	0.008287
+Tella	0.008287
+Sigal	0.008287
+Jisoo	0.008286
+Janella	0.008286
+Roudy	0.008285
+Jennette	0.008285
+Cathe	0.008285
+Michelene	0.008285
+Manette	0.008284
+Gerardina	0.008284
+Naxa	0.008283
+Sebah	0.008282
+Yuris	0.008282
+Constanza Camila	0.008281
+Pamela Antonia	0.008281
+Marcela Del Rosario	0.008281
+Angeluca	0.008280
+Janys	0.008279
+Fernaanda	0.008279
+Regalitos	0.008278
+Zaray	0.008277
+Yaresla	0.008277
+Katherine Pamela	0.008275
+Naiomi	0.008275
+Corredora	0.008274
+Elena Del Rosario	0.008273
+Maranatha	0.008273
+Leslie Carol	0.008272
+Mapu	0.008272
+Denniss	0.008271
+Ingrid Beatriz	0.008271
+Fernanda Daniela	0.008270
+Eucaris	0.008270
+Aleexandra	0.008268
+Lusvenia	0.008268
+Elena Soledad	0.008268
+Paxita	0.008266
+Jeraldy	0.008266
+Micheel	0.008265
+Katerine Andrea	0.008264
+Mitsi	0.008264
+Roperito De	0.008263
+María Javiera	0.008263
+Carolina Valeska	0.008262
+Marisol Elizabeth	0.008261
+Pekeña	0.008261
+Kpop	0.008260
+Handrolls	0.008260
+Géne	0.008259
+Cecilia Irene	0.008258
+Manouchka	0.008257
+Dayou	0.008257
+Elsira	0.008257
+Monsserrat	0.008255
+Gladis Del Carmen	0.008255
+Montserratt	0.008255
+Zoila Rosa	0.008255
+Isnelia	0.008254
+Clóset	0.008253
+Anaí	0.008253
+Jessica Angelica	0.008252
+Leticia Alejandra	0.008251
+Constanza Ignacia	0.008251
+Veronica Eugenia	0.008250
+Yoselin Alejandra	0.008250
+Edecia	0.008248
+Medaly	0.008248
+Rossana Del Carmen	0.008248
+Michelle Andrea	0.008247
+Jovita Del Carmen	0.008247
+Sofia Constanza	0.008246
+Golondrina	0.008245
+Jabyera	0.008245
+Maria Pamela	0.008244
+Rositaa	0.008244
+Paullette	0.008244
+María-Paz	0.008243
+Valdebenito	0.008243
+Lissethe	0.008242
+Evelyn Cecilia	0.008242
+Karen Valeska	0.008241
+M Francisca	0.008241
+Ana Elvira	0.008240
+Del Pilar	0.008239
+Santia	0.008238
+Osmary	0.008237
+Emilia Andrea	0.008237
+Olga Irene	0.008237
+Alicia Angelica	0.008236
+Vivians	0.008236
+Gloria Irene	0.008236
+Yulimar	0.008236
+Ariasna	0.008235
+Paula Marcela	0.008235
+Macarena Del Carmen	0.008234
+Walky	0.008232
+Daniielaa	0.008231
+Bárbaraa	0.008231
+Sofía Ignacia	0.008230
+Jeanette Del Carmen	0.008230
+Sthephanie	0.008229
+Konitha	0.008229
+Claudia Del Pilar	0.008229
+Amelia Rosa	0.008228
+Yenny Paola	0.008228
+Anmary	0.008227
+Katherine Francisca	0.008227
+Maravilla	0.008226
+Pasckal	0.008225
+Greissy	0.008225
+Mari Paz	0.008225
+Ayllen	0.008224
+Angelina Andrea	0.008224
+Kataliina	0.008224
+Rulitos	0.008223
+Elcira Del Carmen	0.008222
+Auris	0.008222
+Selomit	0.008221
+Teresa Jacqueline	0.008221
+Martuca	0.008220
+Kamila Andrea	0.008219
+Catheryn	0.008217
+Yohara	0.008217
+Pastelitos	0.008216
+Jaquelyn	0.008216
+Lorena Carmen	0.008216
+Francisca Nicole	0.008215
+Replicas	0.008215
+Angela Cecilia	0.008214
+Ruth Alicia	0.008214
+Colombita	0.008214
+Faloon	0.008214
+Constanza Macarena	0.008213
+Sofia Elena	0.008213
+Gigita	0.008212
+Margarita Irene	0.008212
+Marcia Patricia	0.008212
+Banquetería	0.008211
+Reciclando	0.008210
+Gloria Marisol	0.008210
+Marcia Elizabeth	0.008209
+Maricela Alejandra	0.008208
+Corina Del Carmen	0.008208
+Yunia	0.008207
+Nancy Fabiola	0.008207
+Margarita Ximena	0.008206
+Olga Margarita	0.008205
+Rosario Del Pilar	0.008205
+Jacqueline Ivonne	0.008204
+Karlota	0.008204
+Rosa Rosa	0.008203
+Isabel Soledad	0.008203
+Patricia Emilia	0.008202
+Alejandría	0.008202
+Edith Isabel	0.008201
+Julia Patricia	0.008201
+Karincita	0.008201
+Victoria Elizabeth	0.008199
+Elsa Eliana	0.008199
+Sandra Rosa	0.008198
+Sofía Belén	0.008198
+Ñaña	0.008197
+M. Cristina	0.008196
+Antonia Valentina	0.008193
+Msria	0.008193
+Gladys Mercedes	0.008192
+Constanza Anais	0.008191
+Soledad Del Pilar	0.008191
+Fabiola Soledad	0.008190
+M Loreto	0.008190
+Ochy	0.008188
+Enelia	0.008188
+Blanca Aurora	0.008187
+Cecilia Ximena	0.008187
+Isolina Del Carmen	0.008186
+Anita Isabel	0.008186
+Gloria Ivonne	0.008186
+Anadelia	0.008185
+Anain	0.008185
+Paola Solange	0.008184
+Ruth Cecilia	0.008184
+Angelica Cecilia	0.008183
+Ana Jacqueline	0.008183
+Andrea Nicole	0.008181
+Kothee	0.008181
+Juana Carmen	0.008180
+Marcia Cecilia	0.008179
+Dayaret	0.008179
+C Gloria	0.008178
+Maryury	0.008178
+Pia Javiera	0.008176
+Keratina	0.008176
+Bajones	0.008175
+Isabeel	0.008175
+Patricia Jeannette	0.008174
+Maria Jovita	0.008173
+Giovanna Andrea	0.008173
+Leslii	0.008173
+Vendedora	0.008173
+Carolinaandrea	0.008172
+Marisol Eugenia	0.008171
+Stefanya	0.008170
+Ana Margot	0.008170
+Yobely	0.008170
+Teresita De Jesus	0.008170
+Margorie	0.008169
+Catrala	0.008169
+Solangee	0.008168
+Yslande	0.008167
+Elizabeth Ester	0.008167
+Floripondia	0.008166
+Margariita	0.008164
+Conito	0.008163
+Annay	0.008162
+Yelimar	0.008160
+Sofia Antonella	0.008159
+Ana De Las Mercedes	0.008159
+Maribet	0.008158
+Victoria Belen	0.008157
+Naomí	0.008154
+Yiyita	0.008153
+Paula Cecilia	0.008152
+Inés Del Carmen	0.008152
+Daniela Belén	0.008150
+Paula Del Carmen	0.008150
+Ivonne Elizabeth	0.008149
+Aransa	0.008149
+Nayitha	0.008148
+Natiita	0.008148
+Morenaza	0.008148
+Odeline	0.008147
+Chavi	0.008147
+Yandri	0.008147
+Nikolita	0.008146
+Matita	0.008145
+Yicela	0.008144
+Ahylin	0.008143
+Pamelaa	0.008143
+Kathiuska	0.008143
+Gaete	0.008142
+Laura Antonia	0.008142
+Jaqueline Andrea	0.008141
+Ibette	0.008141
+Dieuline	0.008141
+Mercedes Rosa	0.008140
+Rocio Belén	0.008140
+Danicza	0.008140
+Angela Paz	0.008139
+Mariett	0.008138
+Yosii	0.008138
+Roselie	0.008137
+Monin	0.008137
+Luz Estela	0.008136
+Sandra De Las Mercedes	0.008135
+Rosa Aida	0.008135
+Alejandra Macarena	0.008134
+Myriam Andrea	0.008133
+Iris Angelica	0.008133
+Gatubela	0.008133
+Ckamii	0.008132
+Caatalina	0.008132
+Ana Del Pilar	0.008131
+Solange Del Carmen	0.008130
+Apoderados	0.008129
+Antonita	0.008129
+Eunices	0.008128
+Roselore	0.008128
+Belén Alejandra	0.008127
+Paola Del Pilar	0.008126
+Fanise	0.008126
+Ansay	0.008126
+Amankay	0.008124
+Elisett	0.008124
+Yohana Alejandra	0.008124
+Myriam Cecilia	0.008123
+Donde La	0.008123
+Parfums	0.008122
+Rosemane	0.008122
+Geraldyn	0.008121
+Johanna Carolina	0.008120
+Irma Cecilia	0.008119
+Edith Patricia	0.008119
+Krola	0.008119
+Antonelita	0.008118
+Junta De	0.008117
+Klary	0.008116
+Shicka	0.008116
+Edith Cecilia	0.008116
+Mariliana	0.008115
+Verinica	0.008113
+Ma Angelica	0.008112
+Yasna Lorena	0.008112
+Guillermina Del Carmen	0.008111
+Patricia Pilar	0.008111
+Marcia Veronica	0.008110
+Ingrid Isabel	0.008109
+Pequita	0.008108
+Cinthya Alejandra	0.008108
+Leidys	0.008107
+Doris Elena	0.008107
+Claudia Eugenia	0.008107
+Carmen Eugenia	0.008106
+Chiny	0.008106
+Daniela Catalina	0.008104
+Carolina Vanessa	0.008104
+Monica Ximena	0.008103
+Viviana Rosa	0.008103
+Lesliie	0.008102
+Erika Beatriz	0.008101
+Sandra Catalina	0.008101
+Regina Del Carmen	0.008101
+Marhy	0.008100
+Gloria Veronica	0.008100
+París	0.008099
+Primera	0.008099
+Pattyta	0.008099
+Filomena Del Carmen	0.008097
+Pia Carolina	0.008096
+Medelis	0.008096
+Maríajose	0.008095
+Daniela Pilar	0.008094
+Paulina Angelica	0.008094
+Otilia Del Carmen	0.008094
+Yaritza Andrea	0.008094
+Ana Pamela	0.008093
+Uca	0.008093
+Marioncita	0.008092
+Renata Ignacia	0.008092
+Milenne	0.008092
+Viviana Loreto	0.008091
+Teresa De Jesús	0.008091
+Teresa Veronica	0.008091
+Jessica Karina	0.008090
+Rosa Maribel	0.008090
+Yaret	0.008089
+Genesis Andrea	0.008089
+Cecilia Jacqueline	0.008089
+Catt	0.008088
+Sofia Del Carmen	0.008087
+Angelica Carmen	0.008087
+Patricia Maribel	0.008086
+Kikita	0.008086
+Yenifer Alejandra	0.008086
+Mackaa	0.008085
+Jacqueline Cecilia	0.008085
+Juanita Isabel	0.008084
+Peluqueria Canina	0.008084
+Alejandra Elena	0.008084
+Gloria Angélica	0.008083
+Lilian Alejandra	0.008083
+Rocio Andrea	0.008083
+Sandra Luisa	0.008082
+Elizabeth Del Rosario	0.008082
+Gricell	0.008082
+Maritza Lorena	0.008081
+Ximens	0.008081
+Jessica Beatriz	0.008080
+Rosa Olivia	0.008080
+Yiye	0.008080
+Swissjust	0.008079
+Margarita Eugenia	0.008078
+Elena De Las Mercedes	0.008078
+Ximena Loreto	0.008078
+Elizabth	0.008077
+Ana Del Rosario	0.008077
+Ayling	0.008077
+Raquel Andrea	0.008076
+Teresa Carmen	0.008076
+Respaldos	0.008076
+Maria Oriana	0.008076
+Yorna	0.008075
+Bárbarita	0.008074
+M Jose	0.008073
+Josselyne	0.008073
+Orfelina Del Carmen	0.008073
+Jeannette Ivonne	0.008072
+Chelda	0.008072
+Jenniifer	0.008070
+Konyta	0.008070
+Carolina Elena	0.008069
+Arriendo De	0.008069
+Patriciia	0.008068
+Valeskaa	0.008068
+Yency	0.008068
+Yere	0.008067
+Erica Alejandra	0.008067
+Yoci	0.008067
+Danieela	0.008066
+Francisca Isidora	0.008066
+Cattaa	0.008065
+Abigail Andrea	0.008065
+Mariana Ester	0.008064
+Javiera Elizabeth	0.008064
+Zavka	0.008063
+Aschley	0.008063
+Sthepanie	0.008062
+Diodina	0.008062
+Pastillas	0.008061
+Aranguiz	0.008061
+Andreitaa	0.008060
+Fedna	0.008060
+Danytza	0.008059
+Licette	0.008058
+Lafleur	0.008058
+Belen Paz	0.008058
+Daniela Stephanie	0.008058
+Laady	0.008057
+Mariavictoria	0.008057
+Josefa Paz	0.008056
+Luisa Carolina	0.008056
+Tatiana Del Carmen	0.008056
+Derlinda	0.008055
+Stefanii	0.008054
+Miillaray	0.008054
+Franncisca	0.008053
+Cataluna	0.008052
+Poleet	0.008052
+Carolina Evelyn	0.008052
+Rosa Mariela	0.008051
+Maudelina	0.008051
+Marjoriet	0.008050
+Jenifer Andrea	0.008050
+Katalina Ignacia	0.008050
+Olguine	0.008050
+Javiera Antonella	0.008049
+Emilia Fernanda	0.008049
+Romina Constanza	0.008048
+Dayhan	0.008048
+Patinaje	0.008048
+Sofia Anais	0.008048
+Makyta	0.008047
+Mahina	0.008047
+Genise	0.008047
+Constanza Isidora	0.008046
+Ingrid Susana	0.008046
+Cecilia Raquel	0.008045
+Ventitass	0.008045
+Chedeline	0.008044
+Sterline	0.008044
+Susana Veronica	0.008043
+Blanca Edith	0.008043
+Romina Nicole	0.008043
+Rosa Paulina	0.008042
+Maria Piedad	0.008042
+Claudia Belen	0.008041
+Trancito	0.008040
+Coniita	0.008040
+Tamara Ignacia	0.008040
+Leticia Del Carmen	0.008039
+Teresa Eliana	0.008039
+Yocelin Andrea	0.008039
+Maria Uberlinda	0.008039
+Marycielo	0.008038
+Lindana	0.008038
+Olga Adriana	0.008038
+Patricia Marlene	0.008036
+Perfumería	0.008035
+Macarena Fernanda	0.008035
+Solitaria	0.008035
+Confección	0.008034
+Pimienta	0.008033
+Monica Pilar	0.008033
+Katherinn	0.008033
+Claudia Valeska	0.008032
+Chocolateria	0.008032
+Tamara Elizabeth	0.008031
+Isabel Antonia	0.008031
+Andreiitha	0.008031
+Yinia	0.008029
+Gloria Marina	0.008029
+Rosa Pamela	0.008029
+Hilia	0.008028
+Margarita Teresa	0.008028
+Cristina Paz	0.008027
+Julia Elizabeth	0.008026
+Marisol Soledad	0.008026
+Yalena	0.008025
+Matilde Del Carmen	0.008025
+Katrala	0.008024
+Montecinos	0.008023
+Ivalu	0.008023
+Zunilda Del Carmen	0.008023
+Pia Constanza	0.008022
+Jossette	0.008022
+Jennifer Carolina	0.008022
+Gladys Angelica	0.008021
+Renueva	0.008021
+Yuliett	0.008019
+Traperas	0.008019
+Tabatta	0.008019
+Eva Ester	0.008018
+Nadeska	0.008018
+Fadua	0.008018
+Lucía Del Carmen	0.008016
+Paulina Macarena	0.008015
+Anyolina	0.008014
+Colombina	0.008014
+Paula Constanza	0.008013
+Gissette	0.008012
+Maripy	0.008012
+Carolina A	0.008011
+Sasou	0.008011
+Paxy	0.008011
+Myriam Elena	0.008010
+Roxany	0.008009
+Grice	0.008009
+Carla Estefania	0.008008
+Yasna Angelica	0.008008
+Ana Mireya	0.008008
+Angelina Del Carmen	0.008008
+Andrea Macarena	0.008007
+Marilo	0.008007
+Nancy Eliana	0.008007
+Tyhare	0.008006
+Inscripciones	0.008006
+Mary Angelica	0.008005
+Rayün	0.008005
+Wilmary	0.008005
+Loudy	0.008004
+Bellanira	0.008004
+Alicia Rosa	0.008003
+Mallerly	0.008003
+Leidy Johanna	0.008002
+Ermita	0.008002
+Roxana Carmen	0.008001
+Karen Denisse	0.008001
+Nayira	0.007999
+Vanessa Alexandra	0.007999
+Edith Paola	0.007998
+Angelica Paola	0.007998
+Enamorada	0.007998
+Karen Nicole	0.007996
+Susana Soledad	0.007996
+Yasna Macarena	0.007995
+Lidia Veronica	0.007994
+Flor Ines	0.007994
+Duvi	0.007994
+Atricia	0.007993
+Jacqueline Del Pilar	0.007993
+Singrid	0.007992
+Nancy Del Rosario	0.007992
+Gladys Soledad	0.007992
+Flor Alicia	0.007991
+Marcela Margarita	0.007991
+María Sonia	0.007990
+Claudia Marlene	0.007990
+Alicia Carolina	0.007989
+Valeria Isabel	0.007989
+Viviana Elena	0.007988
+Jarella	0.007987
+Doris Isabel	0.007986
+Gloria De Las Mercedes	0.007986
+Giselle Andrea	0.007986
+Yaremi	0.007986
+Claudia Antonia	0.007985
+Viviana Margarita	0.007985
+Janiis	0.007985
+Sapita	0.007985
+Katherine Fernanda	0.007984
+Alejandra Pilar	0.007984
+Brunny	0.007983
+Sixtina	0.007983
+Casona	0.007982
+Piilar	0.007982
+Barbara Camila	0.007981
+Mury	0.007981
+Vickita	0.007981
+Viarly	0.007980
+Luisa Ines	0.007980
+Erika Susana	0.007980
+Maria Gema	0.007979
+Yocelyne	0.007979
+María Rebeca	0.007978
+Cathyta	0.007977
+Editt	0.007977
+Carolina Denisse	0.007976
+Gladys Del Pilar	0.007976
+Gloria Teresa	0.007976
+Carolina Solange	0.007975
+Cybill	0.007975
+Andrea Francisca	0.007974
+Escuela De Lenguaje	0.007974
+Uberlinda Del Carmen	0.007974
+Nais	0.007973
+Katteryn	0.007973
+Marta Luz	0.007972
+Floridema	0.007972
+Lilian Paola	0.007971
+Claudia Valentina	0.007971
+Titita	0.007970
+Andrehita	0.007969
+Ximena Margarita	0.007969
+Jenifer Alejandra	0.007969
+Ingrid Johanna	0.007968
+Psicologa	0.007968
+Valeeria	0.007967
+Adriana Ester	0.007966
+Elizabeth Victoria	0.007966
+Cecilia Cristina	0.007966
+Yoceline	0.007965
+Ropitaa	0.007965
+Paola Carmen	0.007964
+Maritza Paola	0.007963
+Gloria Mercedes	0.007963
+Anaais	0.007963
+Delfina Del Carmen	0.007962
+Karens	0.007962
+Karlitaa	0.007962
+Fannyta	0.007961
+Juana Del Rosario	0.007961
+Khatalina	0.007961
+Flor Eliana	0.007960
+Patricia Rosa	0.007960
+Margarta	0.007960
+Carmencha	0.007959
+Delia Del Carmen	0.007959
+Karol Andrea	0.007959
+Ashlye	0.007958
+Juanyta	0.007958
+Karen Paulina	0.007957
+Carolina Marcela	0.007957
+Magdalena Andrea	0.007956
+Ana Valeska	0.007956
+Niccole	0.007956
+Marisol Paola	0.007956
+Fonoaudióloga	0.007955
+Alicia Del Rosario	0.007955
+Anita Rosa	0.007955
+Nirsa	0.007954
+Marlene Isabel	0.007953
+Lucia Andrea	0.007953
+Verónica Patricia	0.007952
+Cecilia Mercedes	0.007952
+Lorena Viviana	0.007951
+Margarita Eliana	0.007951
+Karin Paola	0.007950
+Pilar Angelica	0.007950
+Aintzane	0.007950
+Marta Lorena	0.007949
+Susana Maribel	0.007949
+Juana Edith	0.007949
+Violetita	0.007949
+Consuelo Andrea	0.007948
+Verin	0.007948
+Cecilia Loreto	0.007947
+Jacqueline Marisol	0.007947
+Esterlinda	0.007946
+Nicole Ignacia	0.007946
+Myriam Alejandra	0.007946
+Lilian Del Carmen	0.007946
+Katherine Patricia	0.007945
+Marissella	0.007945
+Bexi	0.007945
+Barbara Carolina	0.007944
+Edith Veronica	0.007944
+Pamela Angelica	0.007944
+Ines Angelica	0.007943
+Yuny	0.007943
+Gloria Paola	0.007943
+Ana Flor	0.007942
+Pamela Paz	0.007942
+Luisa Eliana	0.007942
+Sandra Jaqueline	0.007941
+Iris Isabel	0.007941
+Martha Liliana	0.007941
+Ximena Fabiola	0.007940
+Jocelyn Carolina	0.007940
+Genesys	0.007939
+Darynka	0.007939
+Anyelin	0.007938
+Steffania	0.007937
+Luz Edith	0.007937
+Dexy	0.007937
+Yarithza	0.007936
+Kerlande	0.007935
+Ana Irene	0.007935
+Misabel	0.007934
+Dayami	0.007934
+Vntas	0.007934
+Jabii	0.007933
+Yailin	0.007933
+Catitha	0.007932
+Mia Belen	0.007932
+Loudie	0.007931
+Gloria Pilar	0.007931
+Valentïna	0.007931
+Magaly Isabel	0.007930
+Nanami	0.007930
+Yareth	0.007929
+Yoscelyn	0.007929
+Catalina A	0.007928
+Jamilett	0.007928
+Tortitas	0.007928
+Moseline	0.007927
+Roxita	0.007925
+Peumayen	0.007925
+La Gata	0.007924
+Ckote	0.007924
+Juntadevecinos	0.007924
+Sandra Macarena	0.007923
+Anticonceptivos	0.007922
+Yarikza	0.007922
+Solange Elizabeth	0.007922
+Nicole Constanza	0.007921
+Rosa Erika	0.007920
+Carito Andrea	0.007919
+Patricia Macarena	0.007918
+Maria Amanda	0.007918
+Roxana Ximena	0.007918
+Karen Macarena	0.007917
+Mideline	0.007917
+Bexy	0.007916
+Katherine Fabiola	0.007916
+Sara Angelica	0.007915
+Mirian Del Carmen	0.007914
+Jävïërä	0.007914
+Audita	0.007914
+Danyeli	0.007913
+Fernanda Antonella	0.007913
+Tienditas	0.007912
+Kathaleya	0.007911
+Ca Mi	0.007911
+Gilda Del Carmen	0.007911
+Poulett	0.007909
+Anahiis	0.007909
+Janet Alejandra	0.007908
+Keryma	0.007908
+Jadhe	0.007907
+Mariitha	0.007906
+Kerlange	0.007905
+Landie	0.007905
+Lunise	0.007904
+Lidia Margarita	0.007903
+Scarlet Andrea	0.007903
+Alicia Adriana	0.007902
+Ingrid Carmen	0.007902
+Mercado Particular	0.007902
+Margarira	0.007901
+Theare	0.007900
+Paula Valentina	0.007900
+Kamila Fernanda	0.007899
+Guerdie	0.007898
+Damaris Andrea	0.007898
+Sandra Yanet	0.007896
+Nicol Estefania	0.007896
+Fabiola Patricia	0.007895
+Erika Carolina	0.007894
+Cooni	0.007894
+Fresia Ester	0.007894
+Baudilia	0.007893
+Pulseras	0.007893
+Pollette	0.007893
+Vestuarios	0.007892
+Soledina	0.007892
+M José	0.007892
+Hilda De Las Mercedes	0.007891
+Javi Ignacia	0.007890
+Ximena Del Rosario	0.007890
+Andrea Margarita	0.007890
+Pulguita	0.007890
+Stefhanie	0.007889
+Jaaby	0.007889
+Jecka	0.007889
+Katherine Denisse	0.007888
+Paula Macarena	0.007887
+Eva Elizabeth	0.007887
+Belën	0.007886
+Barbara Patricia	0.007886
+Hadasa	0.007885
+Stefhania	0.007885
+Marcela Ester	0.007884
+Hilda Elena	0.007883
+Baarbara	0.007883
+Shica	0.007882
+Venette	0.007882
+Venante	0.007881
+Jovii	0.007881
+Motita	0.007881
+Ebelyn	0.007880
+Fraann	0.007880
+Susan Alejandra	0.007878
+Loty	0.007877
+Yiordana	0.007877
+Maria Clementina	0.007876
+Carolina Alexandra	0.007876
+Barbara Fernanda	0.007876
+Claudiita	0.007875
+Anguelica	0.007875
+Rosamaría	0.007875
+Bajón	0.007873
+Nancy Gloria	0.007872
+Klauditha	0.007871
+Elizabeth Natalia	0.007870
+Keitlyn	0.007870
+Edith Carmen	0.007870
+Nicole Macarena	0.007870
+Juvitza	0.007869
+Sonia De Las Mercedes	0.007869
+Luisa Margarita	0.007869
+Zugey	0.007869
+Danittza	0.007868
+Olga Luisa	0.007867
+Janisse	0.007867
+Alejandra Sofia	0.007866
+Cönstänzä	0.007866
+Doris Margarita	0.007866
+Maria Yanett	0.007865
+Benette	0.007864
+Catalina Monserrat	0.007863
+Aeleen	0.007863
+Lucy Ester	0.007862
+Dasne	0.007861
+Leidy Johana	0.007861
+Ginella	0.007860
+Antonia Fernanda	0.007860
+Yannys	0.007858
+Miriam Ester	0.007857
+Yeraldyn	0.007857
+Noelia Del Carmen	0.007856
+Ingrita	0.007856
+Ida Del Carmen	0.007855
+M. Fernanda	0.007855
+Myriam Patricia	0.007854
+Nancy Ivonne	0.007854
+Juanita Del Carmen	0.007854
+Gloria Jeannette	0.007853
+Olga Angelica	0.007852
+Betzabel	0.007852
+Camila A	0.007852
+Luz Monica	0.007851
+Andrea Antonia	0.007850
+Blanca Iris	0.007850
+Virginia Andrea	0.007849
+Daniitha	0.007849
+Jenny Del Carmen	0.007848
+Yovanina	0.007848
+Edith Margot	0.007847
+Clara Andrea	0.007847
+Paula Elena	0.007847
+Maria Adelaida	0.007846
+Beatriz Angelica	0.007846
+Martina Belén	0.007845
+Loquilla	0.007845
+Elizaberh	0.007845
+Marcela Antonia	0.007845
+Maripoza	0.007844
+Juditza	0.007844
+Margarita Paola	0.007844
+Rosa Marisol	0.007843
+Susana Lorena	0.007843
+Makarena Alejandra	0.007842
+Estefanya	0.007842
+Dioselinda	0.007842
+Lisbette	0.007841
+Ingrid Veronica	0.007841
+Ingrid Jacqueline	0.007841
+Valesk	0.007840
+Lilium	0.007839
+Maite Alejandra	0.007839
+Paulina Beatriz	0.007839
+Magaly Elizabeth	0.007838
+Kristhell	0.007837
+Millaray Andrea	0.007837
+Merahi	0.007837
+Edith Magdalena	0.007836
+Monica Carolina	0.007835
+Annaís	0.007835
+Veronica Jeannette	0.007834
+Andrea Camila	0.007834
+Yamillet	0.007833
+Miriam Carmen	0.007833
+Daniela Ester	0.007833
+Monica Eugenia	0.007833
+Maritza Ximena	0.007832
+Mery Ann	0.007832
+Luz Eugenia	0.007831
+Lucyla	0.007831
+Carmen Angelica	0.007830
+Magaly Soledad	0.007829
+Yta	0.007829
+Marcela Eliana	0.007828
+Karina Valeska	0.007828
+Edicta	0.007827
+Alejandra Carmen	0.007827
+Nelly Alejandra	0.007827
+Barbara Ignacia	0.007826
+Carolina Victoria	0.007825
+María Gladys	0.007825
+Yasmin Andrea	0.007825
+Meiby	0.007824
+Erika Carmen	0.007824
+Lyssette	0.007824
+Tabyta	0.007823
+Johanna Francisca	0.007823
+Loretho	0.007823
+Ruth Patricia	0.007822
+Alejandra Paulina	0.007822
+Yuditza	0.007822
+Doménica	0.007821
+Paoly	0.007821
+María Valentina	0.007821
+Lenina	0.007821
+Andrea Ximena	0.007820
+Ana Sonia	0.007819
+Marcela Victoria	0.007819
+Darioleta	0.007818
+Estrella Del Carmen	0.007818
+Frän	0.007818
+Maritza Jacqueline	0.007816
+Jessica Maribel	0.007816
+Maria Edita	0.007816
+Javiera Nicole	0.007816
+Afterschool	0.007815
+Irma Angelica	0.007815
+Yessica Viviana	0.007814
+Silvana Del Carmen	0.007814
+Marjorie Elizabeth	0.007813
+Evelyn Solange	0.007813
+Berena	0.007812
+Rossana Andrea	0.007812
+Ana Eliana	0.007812
+Carla Paz	0.007811
+Lucia Elizabeth	0.007811
+Horte	0.007811
+Anamari	0.007810
+Sandra Del Rosario	0.007810
+Angélica Del Carmen	0.007810
+Doris Alicia	0.007809
+Luz Bella	0.007808
+Marìa Josè	0.007808
+Sofìa	0.007808
+Adelina Del Carmen	0.007808
+Elsa Veronica	0.007807
+Susana Cecilia	0.007807
+Claudĭa	0.007807
+Marissela	0.007807
+Juana Del Pilar	0.007806
+Verónica Elizabeth	0.007806
+Nancy Pamela	0.007805
+Yolanda Ines	0.007805
+Isabel Magdalena	0.007804
+Yira	0.007804
+Yarna	0.007804
+Ximena Jacqueline	0.007803
+Marisela Alejandra	0.007803
+Martuka	0.007803
+M. Angeles	0.007802
+Vjera	0.007802
+Ines Andrea	0.007801
+Catalina Sofia	0.007801
+Ruth Irene	0.007800
+Arlenne	0.007800
+M. Cecilia	0.007799
+Sofia Isabel	0.007799
+Paula Loreto	0.007798
+Marie Denise	0.007798
+Meibol	0.007795
+Yasna Soledad	0.007794
+Connita	0.007794
+Djoulie	0.007793
+Kolomba	0.007793
+Pia Valentina	0.007792
+Senda	0.007791
+Jeniffer Alejandra	0.007791
+Zacha	0.007791
+Julia Mercedes	0.007790
+Andrea Valeska	0.007789
+Ckamy	0.007788
+Gira	0.007788
+Keilyn	0.007788
+Moca	0.007787
+Pia Antonia	0.007786
+Carolainne	0.007785

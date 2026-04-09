@@ -8,7 +8,12 @@ This guide covers every feature of the name-generator library in detail. For a q
 <ul>
 <li><a href="#quick-start">Quick Start</a></li>
 <li><a href="#installation">Installation</a></li>
-<li><a href="#loading-resources">Loading Resources</a></li>
+<li><a href="#loading-resources">Loading Resources</a>
+  <ul>
+    <li><a href="#dataset-tiers">Dataset Tiers</a></li>
+    <li><a href="#custom-paths">Custom Paths</a></li>
+  </ul>
+</li>
 <li><a href="#generating-names">Generating Names</a></li>
 <li><a href="#cultures-and-genders">Cultures and Genders</a></li>
 <li><a href="#chaining-names-and-surnames">Chaining Names and Surnames</a></li>
@@ -41,12 +46,36 @@ int main()
 ## Installation
 
 1. Copy `dasmig/namegen.hpp` and `dasmig/random.hpp` into your include path.
-2. Copy the `resources/` folder (containing `.names` files) to your working directory.
+2. Copy the `resources/` folder (containing `.names` files) to your working directory. Choose `resources/lite/` (~2 MB) for compact datasets or `resources/full/` (~39 MB) for complete name lists.
 3. Enable C++23: `-std=c++23` (GCC/Clang) or `/std:c++latest` (MSVC).
 
 ## Loading Resources
 
-The singleton `ng::instance()` auto-probes `resources/`, `../resources/`, and `name-generator/resources/` on first access. For custom locations:
+The singleton `ng::instance()` auto-probes `resources/`, `../resources/`, and `name-generator/resources/` on first access, preferring the `lite/` subfolder, then `full/`, then the flat root.
+
+### Dataset Tiers
+
+Two dataset tiers are available:
+
+| Tier | Size | Content |
+|------|------|---------|
+| `dataset::lite` | ~2 MB | Top-500 names per category |
+| `dataset::full` | ~39 MB | Complete name lists |
+
+Load a specific tier:
+
+```cpp
+dasmig::ng gen;
+gen.load(dasmig::dataset::lite);  // compact dataset
+// or
+gen.load(dasmig::dataset::full);  // full dataset
+```
+
+`load(dataset)` probes the same base paths as the singleton and returns `true` if a matching directory was found.
+
+### Custom Paths
+
+For custom locations:
 
 ```cpp
 dasmig::ng::instance().load("/custom/path/to/resources");
@@ -77,23 +106,48 @@ auto last = gen.get_surname();
 
 ## Cultures and Genders
 
-23 cultures are supported:
+105 cultures are supported:
 
-| Culture | Code | Culture | Code |
-|---------|------|---------|------|
-| American | `us` | Mexican | `mx` |
-| Argentinian | `ar` | Norwegian | `no` |
-| Australian | `au` | Polish | `pl` |
-| Brazilian | `br` | Portuguese | `pt` |
-| British | `gb` | Russian | `ru` |
-| Bulgarian | `bg` | Spanish | `es` |
-| Canadian | `ca` | Swedish | `se` |
-| Chinese | `cn` | Turkish | `tr` |
-| Danish | `dk` | Ukrainian | `ua` |
-| Finnish | `fi` | | |
-| French | `fr` | | |
-| German | `de` | | |
-| Kazakh | `kz` | | |
+| Culture | Code | Culture | Code | Culture | Code |
+|---------|------|---------|------|---------|------|
+| Afghan | `af` | Filipino | `ph` | Moldovan | `md` |
+| Albanian | `al` | Finnish | `fi` | Moroccan | `ma` |
+| Algerian | `dz` | French | `fr` | Namibian | `na` |
+| American | `us` | Georgian | `ge` | Nigerian | `ng` |
+| Angolan | `ao` | German | `de` | Norwegian | `no` |
+| Argentinian | `ar` | Ghanaian | `gh` | Omani | `om` |
+| Austrian | `at` | Greek | `gr` | Palestinian | `ps` |
+| Azerbaijani | `az` | Guatemalan | `gt` | Panamanian | `pa` |
+| Bahraini | `bh` | Haitian | `ht` | Peruvian | `pe` |
+| Bangladeshi | `bd` | Honduran | `hn` | Polish | `pl` |
+| Belgian | `be` | Hong Konger | `hk` | Portuguese | `pt` |
+| Bolivian | `bo` | Hungarian | `hu` | Puerto Rican | `pr` |
+| Botswanan | `bw` | Icelandic | `is` | Qatari | `qa` |
+| Brazilian | `br` | Indian | `in` | Russian | `ru` |
+| British | `gb` | Indonesian | `id` | Salvadoran | `sv` |
+| Bruneian | `bn` | Iranian | `ir` | Saudi | `sa` |
+| Bulgarian | `bg` | Iraqi | `iq` | Serbian | `rs` |
+| Burkinabe | `bf` | Irish | `ie` | Singaporean | `sg` |
+| Burundian | `bi` | Israeli | `il` | Slovenian | `si` |
+| Cambodian | `kh` | Italian | `it` | South African | `za` |
+| Cameroonian | `cm` | Jamaican | `jm` | Spanish | `es` |
+| Canadian | `ca` | Japanese | `jp` | Sudanese | `sd` |
+| Chilean | `cl` | Jordanian | `jo` | Swedish | `se` |
+| Chinese | `cn` | Kazakh | `kz` | Swiss | `ch` |
+| Colombian | `co` | Korean | `kr` | Syrian | `sy` |
+| Costa Rican | `cr` | Kuwaiti | `kw` | Taiwanese | `tw` |
+| Croatian | `hr` | Lebanese | `lb` | Tunisian | `tn` |
+| Cypriot | `cy` | Libyan | `ly` | Turkish | `tr` |
+| Czech | `cz` | Lithuanian | `lt` | Turkmen | `tm` |
+| Danish | `dk` | Luxembourgish | `lu` | Uruguayan | `uy` |
+| Djiboutian | `dj` | Macanese | `mo` | Yemeni | `ye` |
+| Dutch | `nl` | Malaysian | `my` | | |
+| Ecuadorian | `ec` | Maldivian | `mv` | | |
+| Egyptian | `eg` | Maltese | `mt` | | |
+| Emirati | `ae` | Mauritian | `mu` | | |
+| Estonian | `ee` | Mexican | `mx` | | |
+| Ethiopian | `et` | | | | |
+| Fijian | `fj` | | | | |
 
 ```cpp
 // Specific culture and gender.
