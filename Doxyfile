@@ -2,9 +2,9 @@
 # Run: doxygen Doxyfile
 
 PROJECT_NAME           = "Name Generator"
-PROJECT_NUMBER         = 1.0.0
+PROJECT_NUMBER         = 2.0.0
 PROJECT_BRIEF          = "Culture-aware name generation for C++23"
-PROJECT_LOGO           =
+PROJECT_LOGO           = doc/name-generator.png
 
 OUTPUT_DIRECTORY       = doc/api
 CREATE_SUBDIRS         = NO

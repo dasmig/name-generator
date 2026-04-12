@@ -111,3 +111,14 @@ std::wstring name2 = my_gen.get_name().append_surname();
 ```
 
 For the complete feature guide — cultures, chaining, thread safety, seeding, and more — see the **[Usage Guide](doc/usage.md)**.
+
+## Related Libraries
+
+| Library | Description |
+|---------|-------------|
+| [nickname-generator](https://github.com/dasmig/nickname-generator) | Gamer-style nicknames |
+| [birth-generator](https://github.com/dasmig/birth-generator) | Demographically plausible birthdays |
+| [biodata-generator](https://github.com/dasmig/biodata-generator) | Procedural human physical characteristics |
+| [city-generator](https://github.com/dasmig/city-generator) | Weighted city selection by population |
+| [country-generator](https://github.com/dasmig/country-generator) | Weighted country selection by population |
+| [entity-generator](https://github.com/dasmig/entity-generator) | ECS-based entity generation |
