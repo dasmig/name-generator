@@ -141,11 +141,14 @@ enum class culture : std::uint8_t
 };
 
 /// @brief Dataset size tier for resource loading.
+#ifndef DASMIG_DATASET_DEFINED
+#define DASMIG_DATASET_DEFINED
 enum class dataset : std::uint8_t
 {
     lite,     ///< Top-500 names per category (~2 MB).
     full      ///< Complete dataset (~39 MB).
 };
+#endif
 
 /// @brief Simple gender enum to distinguish between male and female names.
 enum class gender : std::uint8_t
