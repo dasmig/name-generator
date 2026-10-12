@@ -32,7 +32,7 @@
 /// @author Diego Dasso Migotto (diegomigotto at hotmail dot com)
 /// @see See doc/usage.md for the narrative tutorial.
 
-DASMIG_CORE_REQUIRE(0, 3);
+DASMIG_CORE_REQUIRE(1, 0);
 
 struct ng_test_access;
 

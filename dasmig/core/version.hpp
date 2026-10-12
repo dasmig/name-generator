@@ -11,11 +11,11 @@
 
 /// @brief Major version. Changes when generated output or the API changes
 ///        incompatibly.
-#define DASMIG_CORE_VERSION_MAJOR 0
+#define DASMIG_CORE_VERSION_MAJOR 1
 /// @brief Minor version. Changes when features are added compatibly.
-#define DASMIG_CORE_VERSION_MINOR 3
+#define DASMIG_CORE_VERSION_MINOR 0
 /// @brief Patch version. Changes for fixes that keep output identical.
-#define DASMIG_CORE_VERSION_PATCH 4
+#define DASMIG_CORE_VERSION_PATCH 0
 
 /// @brief Fails compilation unless the core in use is compatible with the
 ///        version a library was built against.
