@@ -23,7 +23,7 @@ This guide covers every feature of the name-generator library in detail. For a q
 <li><a href="#extending-data">Extending Data</a></li>
 <li><a href="#replay-and-json">Replay and JSON</a></li>
 <li><a href="#compiled-in-data">Compiled-in Data</a></li>
-<li><a href="#migrating-from-v1">Migrating from v1</a></li>
+<li><a href="#migrating-from-v2">Migrating from v2</a></li>
 <li><a href="#error-reference">Error Reference</a></li>
 </ul>
 
@@ -361,16 +361,16 @@ Define `DASMIG_NAME_EMBED` before including the header to compile the `lite` tie
 
 `dasmig/namegen_data.hpp` is generated from `resources/lite` by `make embed`; CI checks it is up to date.
 
-## Migrating from v1
+## Migrating from v2
 
-Version 2 moves the library onto [dasmig-core](https://github.com/dasmig/dasmig-core).
+Version 3 moves the library onto [dasmig-core](https://github.com/dasmig/dasmig-core).
 
-- **Every generated name changes.** The engine (xoshiro256\*\*) and the weighted choice are now the core's own, so a seed gives the same name on every compiler, standard library and CPU; `std::discrete_distribution` gave different names with libstdc++, libc++ and MSVC. Seeds saved with v1 do not reproduce their v1 results. The distributions are unchanged (checked against v1 over 20,000 draws per scenario).
-- **Full 64-bit seeds.** v1 folded the seed to 32 bits for its engine, so different seeds could give the same name.
+- **Every generated name changes.** The engine (xoshiro256\*\*) and the weighted choice are now the core's own, so a seed gives the same name on every compiler, standard library and CPU; `std::discrete_distribution` gave different names with libstdc++, libc++ and MSVC. Seeds saved with v2 do not reproduce their v2 results. The distributions are unchanged (checked against v2 over 20,000 draws per scenario).
+- **Full 64-bit seeds.** v2 folded the seed to 32 bits for its engine, so different seeds could give the same name.
 - **Independent draws.** Gender, culture and name each draw from their own stream, so forcing the gender a random draw would have picked gives the same name.
-- **Appended parts replay.** v1 drew them from the generator's engine; v2 draws them from the name's seed and the part's position, and appending no longer advances the engine.
-- **`load(path)` replaces** the names instead of adding to them; use `extend()` to add. A malformed file now throws `dasmig::core::tsv_error` (v1 skipped files with an unknown country code, read any second line other than `male`/`female` as surnames, and dropped invalid UTF-8 bytes). `load(dataset)` is `[[nodiscard]]`.
-- **Data.** `resources/full` lost two folders v1 never loaded (`australian`, `ukranian`). The lists are otherwise unchanged.
+- **Appended parts replay.** v2 drew them from the generator's engine; v3 draws them from the name's seed and the part's position, and appending no longer advances the engine.
+- **`load(path)` replaces** the names instead of adding to them; use `extend()` to add. A malformed file now throws `dasmig::core::tsv_error` (v2 skipped files with an unknown country code, read any second line other than `male`/`female` as surnames, and dropped invalid UTF-8 bytes). `load(dataset)` is `[[nodiscard]]`.
+- **Data.** `resources/full` lost two folders v2 never loaded (`australian`, `ukranian`). The lists are otherwise unchanged.
 - **Files:** replace `random.hpp` with `core.hpp` and the `core/` directory (see Installation).
 - **New:** `extend()`, `extend_from_string()`, `layers()`, `data_hash()`, `culture_code()`, `culture_name()`, `name::signature()`, `name::to_json()`, `DASMIG_NAME_EMBED`, a `disabled` column.
 

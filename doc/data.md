@@ -25,7 +25,7 @@ Ranks are those of the full dataset, before filtering, so a list whose top names
 
 `lite` keeps the names among each country's top 500 (by the source's rank, so a list is shorter when some of them were filtered out); every `lite` list is the start of the `full` one. `lite` has no Korean male list. Every list has a female, male and surname file in `full`.
 
-Version 2 removed two folders that version 1 never loaded (`australian`, `ukranian`: country codes the library has no culture for; the cultures were dropped in v1's 2.0.0 for lack of upstream data).
+Version 3 removed two folders that version 2 never loaded (`australian`, `ukranian`: country codes the library has no culture for; the cultures were dropped in 2.0.0 for lack of upstream data, but their files stayed).
 
 ## File Format
 
