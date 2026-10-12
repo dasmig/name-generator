@@ -1,9 +1,10 @@
 #ifndef DASMIG_NAMEGEN_HPP
 #define DASMIG_NAMEGEN_HPP
 
-#include "random.hpp"
+#include "core.hpp"
 #include <algorithm>
 #include <array>
+#include <cmath>
 #include <cstddef>
 #include <cstdint>
 #include <filesystem>
@@ -11,18 +12,27 @@
 #include <functional>
 #include <iterator>
 #include <map>
+#include <optional>
 #include <ostream>
-#include <random>
+#include <span>
 #include <stdexcept>
 #include <string>
 #include <string_view>
+#include <system_error>
+#include <tuple>
 #include <utility>
 #include <vector>
+
+#ifdef DASMIG_NAME_EMBED
+#include "namegen_data.hpp"
+#endif
 
 /// @file namegen.hpp
 /// @brief Name generator library — culture-aware name generation for C++23.
 /// @author Diego Dasso Migotto (diegomigotto at hotmail dot com)
 /// @see See doc/usage.md for the narrative tutorial.
+
+DASMIG_CORE_REQUIRE(0, 3);
 
 struct ng_test_access;
 
@@ -140,16 +150,6 @@ enum class culture : std::uint8_t
     any
 };
 
-/// @brief Dataset size tier for resource loading.
-#ifndef DASMIG_DATASET_DEFINED
-#define DASMIG_DATASET_DEFINED
-enum class dataset : std::uint8_t
-{
-    lite,     ///< Top-500 names per category (~2 MB).
-    full      ///< Complete dataset (~39 MB).
-};
-#endif
-
 /// @brief Simple gender enum to distinguish between male and female names.
 enum class gender : std::uint8_t
 {
@@ -158,11 +158,13 @@ enum class gender : std::uint8_t
     any
 };
 
+class ng;
+
 /// @brief Return type for name generation, holding both individual parts and
 /// the full composed string.
 ///
 /// Supports implicit conversion to std::wstring, streaming via operator<<,
-/// and chained appending of names and surnames.
+/// chained appending of names and surnames, and JSON output via to_json().
 class name
 {
   public:
@@ -171,7 +173,15 @@ class name
     /// @see ng::get_name(gender, culture, std::uint64_t)
     [[nodiscard]] std::uint64_t seed() const
     {
-        return _seed;
+        return _signature.seed;
+    }
+
+    /// @brief The seed and the data this name was generated from.
+    /// @return The replay signature; `data` is ng::data_hash() at the time
+    ///         of generation.
+    [[nodiscard]] const core::seed_signature& signature() const
+    {
+        return _signature;
     }
 
     /// @brief Return the individual parts (names/surnames) as a vector.
@@ -182,22 +192,48 @@ class name
     }
 
     /// @brief Append a forename to this name, preserving gender and culture.
+    ///
+    /// The part is drawn from this name's seed and its position, so the same
+    /// seed and the same appends give the same full name.
     /// @return `*this` for chaining.
+    /// @throws std::invalid_argument If no names are loaded for the culture
+    ///         and gender.
     name& append_name();
 
     /// @brief Append a forename of a specific culture.
     /// @param c Culture for the appended name.
     /// @return `*this` for chaining.
+    /// @throws std::invalid_argument If no names are loaded for @p c.
     name& append_name(culture c);
 
     /// @brief Append a surname to this name, preserving culture.
     /// @return `*this` for chaining.
+    /// @throws std::invalid_argument If no surnames are loaded for the
+    ///         culture.
     name& append_surname();
 
     /// @brief Append a surname of a specific culture.
     /// @param c Culture for the appended surname.
     /// @return `*this` for chaining.
+    /// @throws std::invalid_argument If no surnames are loaded for @p c.
     name& append_surname(culture c);
+
+    /// @brief Write this name as a JSON object
+    ///        `{"name":…,"parts":[…],"gender":…,"culture":…,"signature":{…}}`.
+    ///
+    /// `gender` is the gender of the forenames (for a surname, the one
+    /// append_name() would use) and `culture` the culture of the first part.
+    /// @param w Writer positioned where a value is allowed.
+    void to_json(core::json_writer& w) const;
+
+    /// @brief This name as a JSON document.
+    /// @return Compact JSON.
+    [[nodiscard]] std::string to_json() const
+    {
+        core::json_writer w;
+        to_json(w);
+        return w.str();
+    }
 
     /// @brief Implicit conversion to std::wstring.
     /// @return The full composed name string.
@@ -224,20 +260,24 @@ class name
 
   private:
     // Private constructor — names are created only by ng.
-    name(std::wstring name_str, gender g, culture c, class ng* owner,
-         std::uint64_t seed = 0)
-        : _full_string(std::move(name_str)), _gender(g), _culture(c),
-          _owner(owner), _seed(seed)
+    name(std::wstring name_str, gender g, culture c, const ng* owner)
+        : _full_string(std::move(name_str)), _gender(g), _culture(c), _owner(owner)
     {
         _parts.push_back(_full_string);
     }
 
-    std::wstring _full_string;            ///< Full composed name.
-    std::vector<std::wstring> _parts;     ///< Individual name parts.
-    gender _gender;                       ///< Gender of the first name.
-    culture _culture;                     ///< Culture of the first name.
-    class ng* _owner;                     ///< Generator that created this name.
-    std::uint64_t _seed{0};               ///< Random seed for replay.
+    void append_part(std::wstring part)
+    {
+        _full_string.append(L" ").append(part);
+        _parts.push_back(std::move(part));
+    }
+
+    std::wstring _full_string;        ///< Full composed name.
+    std::vector<std::wstring> _parts; ///< Individual name parts.
+    gender _gender;                   ///< Gender of the forenames.
+    culture _culture;                 ///< Culture of the first part.
+    const ng* _owner;                 ///< Generator that created this name.
+    core::seed_signature _signature;  ///< Seed and data hash.
 
     friend class ng;
 };
@@ -245,16 +285,19 @@ class name
 /// @brief Name generator that produces culture-aware names and surnames.
 ///
 /// Generates realistic names by picking from popular name databases indexed
-/// by culture and gender. Supports 105 cultures.
+/// by culture and gender, weighted by popularity. Supports 105 cultures.
+///
+/// Output is identical on every compiler and platform (dasmig-core): a seed,
+/// the same request and the same data give the same name everywhere.
 ///
 /// Can be used as a singleton via instance() or constructed independently.
 /// Independent instances own their own name databases and random engine.
 ///
 /// @par Thread safety
 /// Each instance is independent. Concurrent calls to get_name() on
-/// the **same** instance require external synchronization. load() mutates
-/// internal state and must not be called concurrently with get_name()
-/// on the same instance.
+/// the **same** instance require external synchronization. load() and
+/// extend() mutate internal state and must not be called concurrently with
+/// get_name() on the same instance.
 class ng
 {
   public:
@@ -265,13 +308,14 @@ class ng
 
     ng(const ng&) = delete;            ///< Not copyable.
     ng& operator=(const ng&) = delete; ///< Not copyable.
-    ng(ng&&) noexcept = default;                ///< Move constructor.
-    ng& operator=(ng&&) noexcept = default;     ///< Move assignment.
+    ng(ng&&) noexcept = default;            ///< Move constructor.
+    ng& operator=(ng&&) noexcept = default; ///< Move assignment.
     ~ng() = default;                   ///< Default destructor.
 
     /// @brief Access the global singleton instance.
     ///
-    /// The singleton auto-probes common resource paths on first access.
+    /// Loads the `lite` tier on first access (or `full` when `lite` is not
+    /// found), from compiled-in data or an auto-probed `resources/`.
     /// For independent generators, prefer constructing a separate ng instance.
     /// @return Reference to the global ng instance.
     static ng& instance()
@@ -285,66 +329,10 @@ class ng
     /// @return Matching culture, or culture::any if not recognized.
     [[nodiscard]] static culture to_culture(std::wstring_view country_code)
     {
-        static const std::map<std::wstring, culture, std::less<>>
-            country_code_map = {
-            {L"ae", culture::emirati},       {L"af", culture::afghan},
-            {L"al", culture::albanian},      {L"ao", culture::angolan},
-            {L"ar", culture::argentinian},   {L"at", culture::austrian},
-            {L"az", culture::azerbaijani},   {L"bd", culture::bangladeshi},
-            {L"be", culture::belgian},       {L"bf", culture::burkinabe},
-            {L"bg", culture::bulgarian},     {L"bh", culture::bahraini},
-            {L"bi", culture::burundian},     {L"bn", culture::bruneian},
-            {L"bo", culture::bolivian},      {L"br", culture::brazilian},
-            {L"bw", culture::botswanan},     {L"ca", culture::canadian},
-            {L"ch", culture::swiss},         {L"cl", culture::chilean},
-            {L"cm", culture::cameroonian},   {L"cn", culture::chinese},
-            {L"co", culture::colombian},     {L"cr", culture::costarican},
-            {L"cy", culture::cypriot},       {L"cz", culture::czech},
-            {L"de", culture::german},        {L"dj", culture::djiboutian},
-            {L"dk", culture::danish},        {L"dz", culture::algerian},
-            {L"ec", culture::ecuadorian},    {L"ee", culture::estonian},
-            {L"eg", culture::egyptian},      {L"es", culture::spanish},
-            {L"et", culture::ethiopian},     {L"fi", culture::finnish},
-            {L"fj", culture::fijian},        {L"fr", culture::french},
-            {L"gb", culture::british},       {L"ge", culture::georgian},
-            {L"gh", culture::ghanaian},      {L"gr", culture::greek},
-            {L"gt", culture::guatemalan},    {L"hk", culture::hongkonger},
-            {L"hn", culture::honduran},      {L"hr", culture::croatian},
-            {L"ht", culture::haitian},       {L"hu", culture::hungarian},
-            {L"id", culture::indonesian},    {L"ie", culture::irish},
-            {L"il", culture::israeli},       {L"in", culture::indian},
-            {L"iq", culture::iraqi},         {L"ir", culture::iranian},
-            {L"is", culture::icelandic},     {L"it", culture::italian},
-            {L"jm", culture::jamaican},      {L"jo", culture::jordanian},
-            {L"jp", culture::japanese},      {L"kh", culture::cambodian},
-            {L"kr", culture::korean},        {L"kw", culture::kuwaiti},
-            {L"kz", culture::kazakh},        {L"lb", culture::lebanese},
-            {L"lt", culture::lithuanian},    {L"lu", culture::luxembourgish},
-            {L"ly", culture::libyan},        {L"ma", culture::moroccan},
-            {L"md", culture::moldovan},      {L"mo", culture::macanese},
-            {L"mt", culture::maltese},       {L"mu", culture::mauritian},
-            {L"mv", culture::maldivian},     {L"mx", culture::mexican},
-            {L"my", culture::malaysian},     {L"na", culture::namibian},
-            {L"ng", culture::nigerian},      {L"nl", culture::dutch},
-            {L"no", culture::norwegian},     {L"om", culture::omani},
-            {L"pa", culture::panamanian},    {L"pe", culture::peruvian},
-            {L"ph", culture::filipino},      {L"pl", culture::polish},
-            {L"pr", culture::puertorican},   {L"ps", culture::palestinian},
-            {L"pt", culture::portuguese},    {L"qa", culture::qatari},
-            {L"rs", culture::serbian},       {L"ru", culture::russian},
-            {L"sa", culture::saudi},         {L"sd", culture::sudanese},
-            {L"se", culture::swedish},       {L"sg", culture::singaporean},
-            {L"si", culture::slovenian},     {L"sv", culture::salvadoran},
-            {L"sy", culture::syrian},        {L"tm", culture::turkmen},
-            {L"tn", culture::tunisian},      {L"tr", culture::turkish},
-            {L"tw", culture::taiwanese},     {L"us", culture::american},
-            {L"uy", culture::uruguayan},     {L"ye", culture::yemeni},
-            {L"za", culture::southafrican}};
-
-        if (auto it = country_code_map.find(country_code);
-            it != country_code_map.end())
+        const auto code = core::to_utf8(std::wstring{country_code});
+        for (std::size_t i = 0; i < culture_codes_.size(); ++i)
         {
-            return it->second;
+            if (culture_codes_.at(i) == code) return static_cast<culture>(i);
         }
         return culture::any;
     }
@@ -354,71 +342,71 @@ class ng
     /// @return Matching gender, or gender::any if not recognized.
     [[nodiscard]] static gender to_gender(std::wstring_view gender_string)
     {
-        static const std::map<std::wstring, gender, std::less<>> gender_map = {
-            {L"m", gender::m},
-            {L"f", gender::f},
-            {L"male", gender::m},
-            {L"female", gender::f}};
-
-        if (auto it = gender_map.find(gender_string);
-            it != gender_map.end())
-        {
-            return it->second;
-        }
+        if (gender_string == L"m" || gender_string == L"male") return gender::m;
+        if (gender_string == L"f" || gender_string == L"female") return gender::f;
         return gender::any;
+    }
+
+    /// @brief The ISO 3166 2-letter country code of a culture.
+    /// @param c Culture.
+    /// @return Lower-case code such as `"br"`, or `""` for culture::any.
+    [[nodiscard]] static std::string_view culture_code(culture c)
+    {
+        const auto idx = static_cast<std::size_t>(c);
+        return idx < culture_codes_.size() ? culture_codes_.at(idx) : std::string_view{};
+    }
+
+    /// @brief The name of a culture.
+    /// @param c Culture.
+    /// @return Lower-case name such as `"brazilian"`, or `"any"`.
+    [[nodiscard]] static std::string_view culture_name(culture c)
+    {
+        const auto idx = static_cast<std::size_t>(c);
+        return idx < culture_names_.size() ? culture_names_.at(idx) : std::string_view{"any"};
     }
 
     /// @brief Generate a first name.
     /// @param g Gender (default: random).
-    /// @param c Culture (default: random).
+    /// @param c Culture (default: random among the loaded ones).
     /// @return A name object supporting chained appending.
     /// @throws std::invalid_argument If no names loaded for the resolved culture/gender.
     [[nodiscard]] name get_name(gender g = gender::any,
                                 culture c = culture::any)
     {
-        auto call_seed = static_cast<std::uint64_t>(_engine());
-        auto result = solver(true, g, c, call_seed);
-        result._seed = call_seed;
-        return result;
+        return get_name(g, c, _engine());
     }
 
     /// @brief Generate a deterministic first name using a specific seed.
     /// @param g Gender (default: random).
-    /// @param c Culture (default: random).
-    /// @param call_seed Seed for reproducible results.
+    /// @param c Culture (default: random among the loaded ones).
+    /// @param call_seed Seed; the same seed, request and data give the same
+    ///        name on every platform.
     /// @return A name object.
     /// @throws std::invalid_argument If no names loaded for the resolved culture/gender.
     [[nodiscard]] name get_name(gender g, culture c,
-                                std::uint64_t call_seed)
+                                std::uint64_t call_seed) const
     {
-        auto result = solver(true, g, c, call_seed);
-        result._seed = call_seed;
-        return result;
+        return solver(true, g, c, call_seed);
     }
 
     /// @brief Generate a surname.
-    /// @param c Culture (default: random).
+    /// @param c Culture (default: random among the loaded ones).
     /// @return A name object supporting chained appending.
     /// @throws std::invalid_argument If no surnames loaded for the resolved culture.
     [[nodiscard]] name get_surname(culture c = culture::any)
     {
-        auto call_seed = static_cast<std::uint64_t>(_engine());
-        auto result = solver(false, gender::any, c, call_seed);
-        result._seed = call_seed;
-        return result;
+        return get_surname(c, _engine());
     }
 
     /// @brief Generate a deterministic surname using a specific seed.
-    /// @param c Culture (default: random).
+    /// @param c Culture (default: random among the loaded ones).
     /// @param call_seed Seed for reproducible results.
     /// @return A name object.
     /// @throws std::invalid_argument If no surnames loaded for the resolved culture.
     [[nodiscard]] name get_surname(culture c,
-                                   std::uint64_t call_seed)
+                                   std::uint64_t call_seed) const
     {
-        auto result = solver(false, gender::any, c, call_seed);
-        result._seed = call_seed;
-        return result;
+        return solver(false, gender::any, c, call_seed);
     }
 
     /// @name Seeding
@@ -441,196 +429,422 @@ class ng
     /// @return `*this` for chaining.
     ng& unseed()
     {
-        _engine.seed(std::random_device{}());
+        _engine.unseed();
         return *this;
     }
 
     /// @}
 
     /// @brief Check whether any name databases have been loaded.
-    /// @return `true` if at least one name file has been loaded.
+    /// @return `true` if at least one name list is loaded.
     [[nodiscard]] bool has_resources() const
     {
-        return !_m_pool.empty() ||
-               !_f_pool.empty() ||
-               !_sur_pool.empty();
+        return !_m_pool.empty() || !_f_pool.empty() || !_sur_pool.empty();
     }
 
-    /// @brief Load name files from a directory.
+    /// @brief Load name files from a directory, replacing all names and
+    ///        layers loaded before.
     ///
-    /// Recursively scans @p resource_path for `.names` files and indexes them
-    /// by culture and gender. Safe to call multiple times.
+    /// Reads every `.names` file below @p resource_path, in path order (see
+    /// doc/usage.md for the format). A path that is not a directory is
+    /// ignored.
     ///
-    /// @param resource_path Directory containing `.names` files.
+    /// @param resource_path Directory containing `.names` files, such as
+    ///        `resources/lite`.
+    /// @throws core::tsv_error If a file is malformed; the names are then
+    ///         unchanged.
     void load(const std::filesystem::path& resource_path)
     {
-        if (std::filesystem::exists(resource_path) &&
-            std::filesystem::is_directory(resource_path))
-        {
-            for (const auto& entry :
-                 std::filesystem::recursive_directory_iterator(resource_path))
-            {
-                if (entry.is_regular_file() &&
-                    (entry.path().extension() == ".names"))
-                {
-                    parse_file(entry);
-                }
-            }
-        }
+        std::error_code ec;
+        if (!std::filesystem::is_directory(resource_path, ec)) return;
+        apply_(read_directory_(resource_path), core::layer_mode::replace, true);
     }
 
-    /// @brief Load a specific dataset tier from a base resources directory.
+    /// @brief Load a dataset tier, replacing all names and layers loaded
+    ///        before.
     ///
-    /// Probes common base paths ("resources", "../resources",
-    /// "name-generator/resources") and loads from the `lite/` or `full/`
-    /// subfolder according to @p tier.
+    /// `lite` uses the compiled-in copy when built with `DASMIG_NAME_EMBED`.
+    /// Otherwise the tier is read from the first of `resources`,
+    /// `../resources`, `name-generator/resources` and
+    /// `../name-generator/resources` that has it.
     ///
     /// @param tier The dataset size to load (dataset::lite or dataset::full).
-    /// @return `true` if a matching directory was found and loaded.
-    bool load(dataset tier)
+    /// @return `true` if the tier was found and loaded.
+    /// @throws core::tsv_error If a file is malformed.
+    [[nodiscard]] bool load(dataset tier)
     {
-        static constexpr std::array probe_paths = {
-            "resources", "../resources", "name-generator/resources"};
-
-        const char* subfolder =
-            (tier == dataset::full) ? "full" : "lite";
-
-        auto found = std::ranges::find_if(probe_paths, [&](const char* base) {
-            const std::filesystem::path dir =
-                std::filesystem::path{base} / subfolder;
-            return std::filesystem::is_directory(dir);
-        });
-        if (found != probe_paths.end())
+        const std::string tier_dir{core::tier_name(tier)};
+        std::vector<names_file> files;
+        for (const auto& file : embedded_files_())
         {
-            load(std::filesystem::path{*found} / subfolder);
-            return true;
+            if (file.path.starts_with(tier_dir + "/") && file.path.ends_with(".names"))
+            {
+                files.push_back(parse_names_(file.text(), "embedded:" + std::string{file.path}));
+            }
         }
-        return false;
+        if (files.empty())
+        {
+            const auto root = core::find_resources(library_name_, tier_dir + "/" + std::string{marker_file_});
+            if (!root) return false;
+            files = read_directory_(*root / tier_dir);
+        }
+        if (files.empty()) return false;
+        apply_(std::move(files), core::layer_mode::replace, true);
+        return true;
+    }
+
+    /// @brief Add name layers from a `.names` file or a directory of them.
+    ///
+    /// Each file names its culture and gender in its first two lines, so it
+    /// adds to (or changes, or removes from) that list. A directory is
+    /// applied all together, or not at all if any file is invalid.
+    ///
+    /// @param path A `.names` file or a directory.
+    /// @param mode How the layers combine with the names loaded before.
+    /// @throws core::tsv_error If a file cannot be read or is invalid; the
+    ///         names are then unchanged.
+    /// @throws std::invalid_argument If @p path is a file without the
+    ///         `.names` extension.
+    void extend(const std::filesystem::path& path,
+                core::layer_mode mode = core::layer_mode::override)
+    {
+        std::error_code ec;
+        if (std::filesystem::is_directory(path, ec))
+        {
+            apply_(read_directory_(path), mode, false);
+            return;
+        }
+        if (path.extension() != ".names")
+        {
+            throw std::invalid_argument("extend: expected a .names file, got " +
+                                        path.filename().string());
+        }
+        std::vector<names_file> files;
+        files.push_back(read_file_(path));
+        apply_(std::move(files), mode, false);
+    }
+
+    /// @brief Add a name layer from text in the `.names` format.
+    /// @param text The country code, the gender (`male`, `female` or `any`
+    ///        for surnames), then one name per line with an optional weight.
+    /// @param source Name used in errors.
+    /// @param mode How the layer combines with the names loaded before.
+    /// @return What the layer did.
+    /// @throws core::tsv_error If the text is invalid; the names are then
+    ///         unchanged.
+    const core::layer_info& extend_from_string(std::string_view text, std::string source,
+                                               core::layer_mode mode = core::layer_mode::override)
+    {
+        std::vector<names_file> files;
+        files.push_back(parse_names_(std::string{text}, std::move(source)));
+        const auto list = files.front().list;
+        const auto c = files.front().c;
+        apply_(std::move(files), mode, false);
+        return _tables.at(list).at(c).layers().back();
+    }
+
+    /// @brief The layers in effect for one name list.
+    /// @param c Culture.
+    /// @param g gender::m or gender::f for forenames, gender::any for
+    ///        surnames.
+    /// @return The layer records.
+    /// @throws std::out_of_range If that list was never loaded.
+    [[nodiscard]] const std::vector<core::layer_info>& layers(culture c, gender g) const
+    {
+        return _tables.at(list_of_(g)).at(c).layers();
+    }
+
+    /// @brief Hash of the loaded names, recorded in each result's
+    ///        signature().
+    /// @return The hash; 0 when nothing is loaded.
+    [[nodiscard]] std::uint64_t data_hash() const
+    {
+        std::uint64_t h = 0;
+        for (std::size_t list = 0; list < _tables.size(); ++list)
+        {
+            for (const auto& [c, table] : _tables.at(list))
+            {
+                h = core::hash_combine(h, (list << 8U) | static_cast<std::uint64_t>(c));
+                h = core::hash_combine(h, table.data_hash());
+            }
+        }
+        return h;
     }
 
   private:
-    // Container of names paired with their selection weights.
+    static constexpr std::string_view library_name_ = "name-generator";
+    static constexpr std::string_view marker_file_ = "american/male.names";
+
+    // Indexed by culture.
+    static constexpr std::array<std::string_view, 105> culture_codes_{
+        "af", "al", "dz", "us", "ao", "ar", "at", "az", "bh", "bd", "be", "bo", "bw", "br", "gb",
+        "bn", "bg", "bf", "bi", "kh", "cm", "ca", "cl", "cn", "co", "cr", "hr", "cy", "cz", "dk",
+        "dj", "nl", "ec", "eg", "ae", "ee", "et", "fj", "ph", "fi", "fr", "ge", "de", "gh", "gr",
+        "gt", "ht", "hn", "hk", "hu", "is", "in", "id", "ir", "iq", "ie", "il", "it", "jm", "jp",
+        "jo", "kz", "kr", "kw", "lb", "ly", "lt", "lu", "mo", "my", "mv", "mt", "mu", "mx", "md",
+        "ma", "na", "ng", "no", "om", "ps", "pa", "pe", "pl", "pt", "pr", "qa", "ru", "sv", "sa",
+        "rs", "sg", "si", "za", "es", "sd", "se", "ch", "sy", "tw", "tn", "tr", "tm", "uy", "ye"};
+
+    static constexpr std::array<std::string_view, 105> culture_names_{
+        "afghan",       "albanian",     "algerian",    "american",      "angolan",
+        "argentinian",  "austrian",     "azerbaijani", "bahraini",      "bangladeshi",
+        "belgian",      "bolivian",     "botswanan",   "brazilian",     "british",
+        "bruneian",     "bulgarian",    "burkinabe",   "burundian",     "cambodian",
+        "cameroonian",  "canadian",     "chilean",     "chinese",       "colombian",
+        "costarican",   "croatian",     "cypriot",     "czech",         "danish",
+        "djiboutian",   "dutch",        "ecuadorian",  "egyptian",      "emirati",
+        "estonian",     "ethiopian",    "fijian",      "filipino",      "finnish",
+        "french",       "georgian",     "german",      "ghanaian",      "greek",
+        "guatemalan",   "haitian",      "honduran",    "hongkonger",    "hungarian",
+        "icelandic",    "indian",       "indonesian",  "iranian",       "iraqi",
+        "irish",        "israeli",      "italian",     "jamaican",      "japanese",
+        "jordanian",    "kazakh",       "korean",      "kuwaiti",       "lebanese",
+        "libyan",       "lithuanian",   "luxembourgish", "macanese",    "malaysian",
+        "maldivian",    "maltese",      "mauritian",   "mexican",       "moldovan",
+        "moroccan",     "namibian",     "nigerian",    "norwegian",     "omani",
+        "palestinian",  "panamanian",   "peruvian",    "polish",        "portuguese",
+        "puertorican",  "qatari",       "russian",     "salvadoran",    "saudi",
+        "serbian",      "singaporean",  "slovenian",   "southafrican",  "spanish",
+        "sudanese",     "swedish",      "swiss",       "syrian",        "taiwanese",
+        "tunisian",     "turkish",      "turkmen",     "uruguayan",     "yemeni"};
+
+    static_assert(culture_codes_.size() == static_cast<std::size_t>(culture::any));
+    static_assert(culture_names_.size() == static_cast<std::size_t>(culture::any));
+
+    // The three kinds of name list, as indices into _tables.
+    using list_kind = std::size_t;
+    static constexpr list_kind male_list = 0;
+    static constexpr list_kind female_list = 1;
+    static constexpr list_kind surname_list = 2;
+
+    // Names of one list, ready for drawing.
     struct name_pool
     {
         std::vector<std::wstring> names;
         std::vector<double> weights;
-        // Mutable because discrete_distribution::operator() is non-const
-        // (it may update internal generator state), but the distribution
-        // parameters are immutable after construction.
-        mutable std::discrete_distribution<std::size_t> dist;
+        core::discrete dist{1.0};
     };
 
-    // Maps for accessing names through culture.
+    // One parsed .names file.
+    struct names_file
+    {
+        culture c;
+        list_kind list;
+        core::tsv_document doc;
+    };
+
+    // Layered data per list kind and culture, and the pools built from it.
+    std::array<std::map<culture, core::layered_table>, 3> _tables;
     std::map<culture, name_pool> _m_pool;
     std::map<culture, name_pool> _f_pool;
     std::map<culture, name_pool> _sur_pool;
 
     // Per-instance random engine for seed drawing.
-    std::mt19937_64 _engine{std::random_device{}()};
+    core::rng _engine{core::rng::from_entropy()};
 
     // Tag type for the auto-probing singleton constructor.
     struct auto_probe_tag {};
 
-    // Singleton constructor: auto-probes common resource locations.
+    // Singleton constructor: loads lite, or full when lite is not found.
     explicit ng(auto_probe_tag /*tag*/)
     {
-        static constexpr std::array probe_paths = {
-            "resources", "../resources", "name-generator/resources"};
-
-        auto found = std::ranges::find_if(probe_paths, [](const char* p) {
-            return std::filesystem::exists(p) &&
-                   std::filesystem::is_directory(p);
-        });
-        if (found != probe_paths.end())
-        {
-            const std::filesystem::path base{*found};
-            auto lite_dir = base / "lite";
-            auto full_dir = base / "full";
-            if (std::filesystem::is_directory(lite_dir))
-            {
-                load(lite_dir);
-            }
-            else if (std::filesystem::is_directory(full_dir))
-            {
-                load(full_dir);
-            }
-            else
-            {
-                load(base);
-            }
-        }
+        if (!load(dataset::lite)) (void)load(dataset::full);
     }
 
-    // Resolve `any` culture to a random culture from those actually loaded.
-    static culture resolve_culture(culture c,
-                                   const std::map<culture, name_pool>& db,
-                                   effolkronium::random_local& engine)
+    static std::span<const core::embedded_file> embedded_files_()
     {
-        if (c != culture::any) { return c; }
+#ifdef DASMIG_NAME_EMBED
+        return embedded::namegen::files;
+#else
+        return {};
+#endif
+    }
+
+    [[nodiscard]] static constexpr list_kind list_of_(gender g)
+    {
+        switch (g)
+        {
+        case gender::m: return male_list;
+        case gender::f: return female_list;
+        case gender::any: return surname_list;
+        }
+        return surname_list;
+    }
+
+    [[nodiscard]] const std::map<culture, name_pool>& pools_(list_kind list) const
+    {
+        if (list == male_list) return _m_pool;
+        if (list == female_list) return _f_pool;
+        return _sur_pool;
+    }
+
+    // -- Data ---------------------------------------------------------------
+
+    static core::table_schema schema_()
+    {
+        return {.key = {"name"}, .required = {}, .optional = {"weight"}};
+    }
+
+    // A row's weight: 1 when the cell is empty, otherwise a positive number.
+    static double weight_of_(const core::tsv_row& row)
+    {
+        const auto w = row.get_or<double>("weight", 1.0);
+        if (!(w > 0.0)) throw row.error("weight", "must be positive");
+        return w;
+    }
+
+    // Parse the .names format: the country code and the gender on the first
+    // two lines, then `name<TAB>weight` rows. The two header lines are kept
+    // as comments, so errors give the file's own line numbers.
+    static names_file parse_names_(std::string text, std::string source)
+    {
+        if (text.starts_with("\xEF\xBB\xBF")) text.erase(0, 3);
+        // A header line's text and where the next line starts; the gender
+        // line may end the file.
+        auto header_line = [&](std::size_t from, std::size_t line) {
+            auto end = text.find('\n', from);
+            if (end == std::string::npos)
+            {
+                if (line == 1 || from >= text.size())
+                {
+                    throw core::tsv_error{source, line, "", "expected a country code and a gender line"};
+                }
+                end = text.size();
+            }
+            auto value = std::string_view{text}.substr(from, end - from);
+            if (value.ends_with('\r')) value.remove_suffix(1);
+            return std::pair{std::string{value}, std::min(end + 1, text.size())};
+        };
+        const auto [code, after_code] = header_line(0, 1);
+        const auto [gender_text, after_gender] = header_line(after_code, 2);
+        (void)after_gender;
+
+        const auto c = to_culture(core::from_utf8(code));
+        if (c == culture::any)
+        {
+            throw core::tsv_error{source, 1, "", "unknown country code '" + code + "'"};
+        }
+        list_kind list = surname_list;
+        if (gender_text == "male" || gender_text == "m")
+        {
+            list = male_list;
+        }
+        else if (gender_text == "female" || gender_text == "f")
+        {
+            list = female_list;
+        }
+        else if (gender_text != "any")
+        {
+            throw core::tsv_error{source, 2, "",
+                                  "expected male, female or any, got '" + gender_text + "'"};
+        }
+
+        text.insert(after_code, "#");
+        text.insert(0, "#");
+        return {.c = c, .list = list,
+                .doc = core::tsv_document::parse(text, std::move(source), {"name", "weight", "disabled"})};
+    }
+
+    static names_file read_file_(const std::filesystem::path& file)
+    {
+        std::ifstream in{file, std::ios::binary};
+        if (!in) throw core::tsv_error{file.string(), 0, "", "cannot open file"};
+        std::string text{std::istreambuf_iterator<char>{in}, std::istreambuf_iterator<char>{}};
+        return parse_names_(std::move(text), file.string());
+    }
+
+    static std::vector<names_file> read_directory_(const std::filesystem::path& dir)
+    {
+        std::vector<std::filesystem::path> paths;
+        for (const auto& entry : std::filesystem::recursive_directory_iterator(dir))
+        {
+            if (entry.is_regular_file() && entry.path().extension() == ".names")
+            {
+                paths.push_back(entry.path());
+            }
+        }
+        std::ranges::sort(paths); // the iteration order is unspecified
+        std::vector<names_file> files;
+        files.reserve(paths.size());
+        for (const auto& path : paths) files.push_back(read_file_(path));
+        return files;
+    }
+
+    // Apply layers to copies of the affected tables, then commit: all or
+    // nothing. With @p reset (load), every list is replaced.
+    void apply_(std::vector<names_file> files, core::layer_mode mode, bool reset)
+    {
+        auto next = reset ? decltype(_tables){} : _tables;
+        // On reset each list's first file replaces; later files for the same
+        // list extend it.
+        std::array<std::map<culture, bool>, 3> started;
+        std::array<std::map<culture, bool>, 3> touched;
+        for (auto& file : files)
+        {
+            auto& tables = next.at(file.list);
+            auto it = tables.try_emplace(file.c, schema_()).first;
+            auto list_mode = mode;
+            if (reset)
+            {
+                list_mode = started.at(file.list)[file.c] ? core::layer_mode::override
+                                                          : core::layer_mode::replace;
+            }
+            started.at(file.list)[file.c] = true;
+            touched.at(file.list)[file.c] = true;
+            (void)it->second.extend(std::move(file.doc), list_mode,
+                                    [](const core::tsv_row& row) { (void)weight_of_(row); });
+        }
+
+        // Rebuild the pools of the lists that changed.
+        std::array<std::map<culture, name_pool>, 3> pools;
+        for (std::size_t list = 0; list < pools.size(); ++list)
+        {
+            if (!reset) pools.at(list) = pools_(list);
+            for (const auto& [c, changed] : touched.at(list))
+            {
+                const auto& table = next.at(list).at(c);
+                pools.at(list).erase(c);
+                if (table.empty()) continue;
+                name_pool pool;
+                pool.names.reserve(table.size());
+                pool.weights.reserve(table.size());
+                for (const auto& row : table.rows())
+                {
+                    pool.names.push_back(core::from_utf8(row["name"]));
+                    pool.weights.push_back(weight_of_(row));
+                }
+                pool.dist = core::discrete{pool.weights};
+                pools.at(list).emplace(c, std::move(pool));
+            }
+        }
+
+        _tables = std::move(next);
+        _m_pool = std::move(pools.at(male_list));
+        _f_pool = std::move(pools.at(female_list));
+        _sur_pool = std::move(pools.at(surname_list));
+    }
+
+    // -- Generation ---------------------------------------------------------
+
+    // Resolve `any` culture to a random culture from those actually loaded.
+    static culture resolve_culture(culture c, const std::map<culture, name_pool>& db,
+                                   core::rng& engine)
+    {
+        if (c != culture::any) return c;
         if (db.empty())
         {
             throw std::invalid_argument("No names loaded for any culture");
         }
-        auto idx = engine.get<std::size_t>(0, db.size() - 1);
         auto it = db.begin();
-        std::advance(it, static_cast<std::ptrdiff_t>(idx));
+        std::advance(it, static_cast<std::ptrdiff_t>(core::bounded(engine, db.size())));
         return it->first;
     }
 
     // Resolve `any` gender to a concrete random gender.
-    static gender resolve_gender(gender g,
-                                 effolkronium::random_local& engine)
+    static gender resolve_gender(gender g, core::rng& engine)
     {
-        if (g == gender::any)
-        {
-            return static_cast<gender>(engine.get<std::size_t>(0, 1));
-        }
-        return g;
-    }
-
-    // Convert a culture enum to its display name for error messages.
-    [[nodiscard]] static const char* culture_label(culture c)
-    {
-        static constexpr std::array labels = {
-            "afghan",       "albanian",     "algerian",
-            "american",     "angolan",      "argentinian",
-            "austrian",     "azerbaijani",  "bahraini",
-            "bangladeshi",  "belgian",      "bolivian",
-            "botswanan",    "brazilian",    "british",
-            "bruneian",     "bulgarian",    "burkinabe",
-            "burundian",    "cambodian",    "cameroonian",
-            "canadian",     "chilean",      "chinese",
-            "colombian",    "costarican",   "croatian",
-            "cypriot",      "czech",        "danish",
-            "djiboutian",   "dutch",        "ecuadorian",
-            "egyptian",     "emirati",      "estonian",
-            "ethiopian",    "fijian",       "filipino",
-            "finnish",      "french",       "georgian",
-            "german",       "ghanaian",     "greek",
-            "guatemalan",   "haitian",      "honduran",
-            "hongkonger",   "hungarian",    "icelandic",
-            "indian",       "indonesian",   "iranian",
-            "iraqi",        "irish",        "israeli",
-            "italian",      "jamaican",     "japanese",
-            "jordanian",    "kazakh",       "korean",
-            "kuwaiti",      "lebanese",     "libyan",
-            "lithuanian",   "luxembourgish","macanese",
-            "malaysian",    "maldivian",    "maltese",
-            "mauritian",    "mexican",      "moldovan",
-            "moroccan",     "namibian",     "nigerian",
-            "norwegian",    "omani",        "palestinian",
-            "panamanian",   "peruvian",     "polish",
-            "portuguese",   "puertorican",  "qatari",
-            "russian",      "salvadoran",   "saudi",
-            "serbian",      "singaporean",  "slovenian",
-            "southafrican", "spanish",      "sudanese",
-            "swedish",      "swiss",        "syrian",
-            "taiwanese",    "tunisian",     "turkish",
-            "turkmen",      "uruguayan",    "yemeni",
-            "any"};
-        auto idx = static_cast<std::size_t>(c);
-        if (idx < labels.size()) { return labels.at(idx); }
-        return "unknown";
+        if (g != gender::any) return g;
+        return core::bernoulli(engine, 0.5) ? gender::f : gender::m;
     }
 
     // Convert a gender enum to its display name for error messages.
@@ -646,305 +860,75 @@ class ng
     }
 
     // Pick a weighted-random name/surname from the appropriate map.
-    [[nodiscard]] static std::wstring pick(
-        const std::map<culture, name_pool>& db,
-        culture c, gender g, effolkronium::random_local& engine)
+    [[nodiscard]] static std::wstring pick(const std::map<culture, name_pool>& db,
+                                           culture c, gender g, core::rng& engine)
     {
         auto it = db.find(c);
         if (it == db.end() || it->second.names.empty())
         {
             throw std::invalid_argument(
-                std::string("No ") + gender_label(g) +
-                " names loaded for culture '" + culture_label(c) + "'");
+                std::string("No ") + gender_label(g) + " names loaded for culture '" +
+                std::string{culture_name(c)} + "'");
         }
         const auto& pool = it->second;
-        if (!pool.weights.empty())
-        {
-            // Use the pre-built distribution — avoids reconstructing
-            // the prefix-sum table on every call.
-            return pool.names.at(pool.dist(engine.engine()));
-        }
-        return *engine.get(pool.names);
+        return pool.names.at(pool.dist(engine));
     }
 
-    /// @brief Number of bits to shift when XOR-folding a 64-bit seed to 32.
-    static constexpr unsigned seed_fold_shift = 32U;
-
-    // Append a forename part to an existing name.
-    void append_name_impl(name& n, gender g, culture c)
+    // One forename: gender, culture and name from their own streams.
+    [[nodiscard]] std::tuple<std::wstring, gender, culture> draw_forename_(
+        gender g, culture c, const core::rng& r) const
     {
-        auto call_seed = static_cast<std::uint64_t>(_engine());
-        effolkronium::random_local call_engine;
-        call_engine.seed(static_cast<std::mt19937::result_type>(
-            (call_seed ^ (call_seed >> seed_fold_shift))));
-
-        const gender resolved_g = resolve_gender(g, call_engine);
-
-        const auto& db = (resolved_g == gender::f)
-                             ? _f_pool : _m_pool;
-
-        const culture resolved_c = resolve_culture(c, db, call_engine);
-
-        const std::wstring part = pick(db, resolved_c, resolved_g,
-                                       call_engine);
-        n._parts.push_back(part);
-        n._full_string.append(L" ").append(part);
+        auto rg = r.split("gender");
+        const gender resolved_g = resolve_gender(g, rg);
+        const auto& db = resolved_g == gender::f ? _f_pool : _m_pool;
+        auto rc = r.split("culture");
+        const culture resolved_c = resolve_culture(c, db, rc);
+        auto rn = r.split("name");
+        return {pick(db, resolved_c, resolved_g, rn), resolved_g, resolved_c};
     }
 
-    // Append a surname part to an existing name.
-    void append_surname_impl(name& n, culture c)
+    // One surname: culture and name from their own streams.
+    [[nodiscard]] std::pair<std::wstring, culture> draw_surname_(culture c, const core::rng& r) const
     {
-        auto call_seed = static_cast<std::uint64_t>(_engine());
-        effolkronium::random_local call_engine;
-        call_engine.seed(static_cast<std::mt19937::result_type>(
-            (call_seed ^ (call_seed >> seed_fold_shift))));
-
-        const culture resolved_c = resolve_culture(c,
-            _sur_pool, call_engine);
-        const std::wstring part = pick(_sur_pool,
-                                       resolved_c, gender::any, call_engine);
-        n._parts.push_back(part);
-        n._full_string.append(L" ").append(part);
+        auto rc = r.split("culture");
+        const culture resolved_c = resolve_culture(c, _sur_pool, rc);
+        auto rn = r.split("name");
+        return {pick(_sur_pool, resolved_c, gender::any, rn), resolved_c};
     }
 
     // Core generation logic.
     [[nodiscard]] name solver(bool is_name, gender requested_gender,
-                              culture requested_culture,
-                              std::uint64_t call_seed)
+                              culture requested_culture, std::uint64_t call_seed) const
     {
-        effolkronium::random_local call_engine;
-        call_engine.seed(static_cast<std::mt19937::result_type>(
-            (call_seed ^ (call_seed >> seed_fold_shift))));
-
-        const gender resolved_gender = resolve_gender(requested_gender,
-                                                      call_engine);
-
-        if (is_name)
-        {
-            const auto& db = (resolved_gender == gender::f)
-                                 ? _f_pool : _m_pool;
-            const culture resolved_culture = resolve_culture(
-                requested_culture, db, call_engine);
-            return {pick(db, resolved_culture, resolved_gender,
-                         call_engine),
-                    resolved_gender, resolved_culture, this};
-        }
-
-        const culture resolved_culture = resolve_culture(
-            requested_culture, _sur_pool, call_engine);
-        return {pick(_sur_pool,
-                     resolved_culture, gender::any, call_engine),
-                resolved_gender, resolved_culture, this};
-    }
-
-    /// @brief Decode a UTF-8 byte string into a wide string.
-    ///
-    /// Handles 1–4 byte sequences and produces UTF-32 on Linux
-    /// (wchar_t is 4 bytes) or UTF-16 surrogate pairs on Windows
-    /// (wchar_t is 2 bytes). Invalid lead bytes are silently skipped.
-    // NOLINTNEXTLINE(readability-function-cognitive-complexity)
-    static std::wstring utf8_to_wstring(const std::string& utf8)
-    {
-        // UTF-8 prefix masks and value masks for each sequence length.
-        static constexpr unsigned char ascii_max       = 0x80U;
-        static constexpr unsigned char two_byte_mask   = 0xE0U;
-        static constexpr unsigned char two_byte_lead   = 0xC0U;
-        static constexpr unsigned char two_byte_val    = 0x1FU;
-        static constexpr unsigned char three_byte_mask = 0xF0U;
-        static constexpr unsigned char three_byte_lead = 0xE0U;
-        static constexpr unsigned char three_byte_val  = 0x0FU;
-        static constexpr unsigned char four_byte_mask  = 0xF8U;
-        static constexpr unsigned char four_byte_lead  = 0xF0U;
-        static constexpr unsigned char four_byte_val   = 0x07U;
-        static constexpr unsigned char cont_val        = 0x3FU;
-        static constexpr unsigned char cont_check_mask  = 0xC0U;
-        static constexpr unsigned char cont_check_lead  = 0x80U;
-        static constexpr unsigned cont_shift           = 6U;
-        static constexpr char32_t max_codepoint        = 0x10FFFFU;
-        // Surrogate-pair constants (UTF-16, wchar_t == 2 bytes only).
-        static constexpr char32_t surrogate_offset     = 0x10000U;
-        static constexpr char32_t high_surrogate_base  = 0xD800U;
-        static constexpr char32_t low_surrogate_base   = 0xDC00U;
-        static constexpr unsigned surrogate_shift      = 10U;
-        static constexpr char32_t surrogate_mask       = 0x3FFU;
-
-        std::wstring result;
-        result.reserve(utf8.size());
-        std::size_t i = 0;
-
-        while (i < utf8.size())
-        {
-            char32_t codepoint = 0;
-            auto lead = static_cast<unsigned char>(utf8.at(i));
-            std::size_t extra = 0;
-
-            if (lead < ascii_max)
+        const core::rng r{call_seed};
+        name result = [&]() -> name {
+            if (is_name)
             {
-                codepoint = lead;
+                auto [text, g, c] = draw_forename_(requested_gender, requested_culture, r);
+                return {std::move(text), g, c, this};
             }
-            else if ((lead & two_byte_mask) == two_byte_lead)
-            {
-                codepoint = lead & two_byte_val;
-                extra = 1;
-            }
-            else if ((lead & three_byte_mask) == three_byte_lead)
-            {
-                codepoint = lead & three_byte_val;
-                extra = 2;
-            }
-            else if ((lead & four_byte_mask) == four_byte_lead)
-            {
-                codepoint = lead & four_byte_val;
-                extra = 3;
-            }
-            else
-            {
-                ++i;
-                continue; // skip invalid lead byte
-            }
-
-            ++i;
-            bool valid = true;
-            for (std::size_t j = 0; j < extra; ++j, ++i)
-            {
-                if (i >= utf8.size())
-                {
-                    valid = false;
-                    break; // truncated sequence
-                }
-                auto byte = static_cast<unsigned char>(utf8.at(i));
-                if ((byte & cont_check_mask) != cont_check_lead)
-                {
-                    valid = false;
-                    break; // not a valid continuation byte
-                }
-                codepoint = (codepoint << cont_shift) |
-                            (static_cast<char32_t>(byte) &
-                             static_cast<char32_t>(cont_val));
-            }
-
-            if (!valid || codepoint > max_codepoint)
-            {
-                continue; // skip malformed or out-of-range sequence
-            }
-
-            if constexpr (sizeof(wchar_t) >= 4)
-            {
-                result.push_back(static_cast<wchar_t>(codepoint));
-            }
-            else
-            {
-                if (codepoint < surrogate_offset)
-                {
-                    result.push_back(static_cast<wchar_t>(codepoint));
-                }
-                else
-                {
-                    const char32_t shifted = codepoint - surrogate_offset;
-                    result.push_back(static_cast<wchar_t>(
-                        high_surrogate_base + (shifted >> surrogate_shift)));
-                    result.push_back(static_cast<wchar_t>(
-                        low_surrogate_base + (shifted & surrogate_mask)));
-                }
-            }
-        }
+            // A surname still has a gender: the one append_name() uses.
+            auto rg = r.split("gender");
+            const gender g = resolve_gender(requested_gender, rg);
+            auto [text, c] = draw_surname_(requested_culture, r);
+            return {std::move(text), g, c, this};
+        }();
+        result._signature = {.seed = call_seed, .data = data_hash()};
         return result;
     }
 
-    // Parse a .names file and index it into the appropriate map.
-    // Uses std::ifstream (byte-oriented) + utf8_to_wstring so that
-    // non-ASCII names load correctly regardless of the system locale.
-    // NOLINTNEXTLINE(readability-function-cognitive-complexity)
-    void parse_file(const std::filesystem::path& file)
+    // Parts appended to a name draw from the name's seed and the part's
+    // position, so a seed and the same appends replay the whole name.
+    void append_name_impl(name& n, gender g, culture c) const
     {
-        std::ifstream tentative_file{file};
+        const auto r = core::rng{n.seed()}.split("part").split(n._parts.size());
+        n.append_part(std::get<0>(draw_forename_(g, c, r)));
+    }
 
-        if (tentative_file.is_open())
-        {
-            std::string raw_line;
-
-            // Read culture from the first line.
-            if (!std::getline(tentative_file, raw_line))
-            {
-                return;
-            }
-            if (!raw_line.empty() && raw_line.back() == '\r')
-            {
-                raw_line.pop_back();
-            }
-            const culture culture_read =
-                to_culture(utf8_to_wstring(raw_line));
-
-            // We can't continue without a valid culture.
-            if (culture_read == culture::any)
-            {
-                return;
-            }
-
-            // Read gender from the second line.
-            if (!std::getline(tentative_file, raw_line))
-            {
-                return;
-            }
-            if (!raw_line.empty() && raw_line.back() == '\r')
-            {
-                raw_line.pop_back();
-            }
-            const gender gender_read = to_gender(utf8_to_wstring(raw_line));
-
-            // Read all remaining lines as names with optional weights.
-            // Format: "name\tweight" or just "name" (weight defaults to 1.0).
-            name_pool pool;
-            while (std::getline(tentative_file, raw_line))
-            {
-                if (!raw_line.empty() && raw_line.back() == '\r')
-                {
-                    raw_line.pop_back();
-                }
-                if (!raw_line.empty())
-                {
-                    auto tab_pos = raw_line.find('\t');
-                    if (tab_pos != std::string::npos)
-                    {
-                        pool.names.push_back(
-                            utf8_to_wstring(raw_line.substr(0, tab_pos)));
-                        pool.weights.push_back(
-                            std::stod(raw_line.substr(tab_pos + 1)));
-                    }
-                    else
-                    {
-                        pool.names.push_back(utf8_to_wstring(raw_line));
-                        pool.weights.push_back(1.0);
-                    }
-                }
-            }
-
-            if (pool.names.empty())
-            {
-                return;
-            }
-
-            // Pre-build the weighted distribution for O(1) generation.
-            if (!pool.weights.empty())
-            {
-                pool.dist = std::discrete_distribution<std::size_t>(
-                    pool.weights.begin(), pool.weights.end());
-            }
-
-            // Index by gender.
-            switch (gender_read)
-            {
-            case gender::m:
-                _m_pool[culture_read] = std::move(pool);
-                break;
-            case gender::f:
-                _f_pool[culture_read] = std::move(pool);
-                break;
-            default:
-                _sur_pool[culture_read] = std::move(pool);
-                break;
-            }
-        }
+    void append_surname_impl(name& n, culture c) const
+    {
+        const auto r = core::rng{n.seed()}.split("part").split(n._parts.size());
+        n.append_part(draw_surname_(c, r).first);
     }
 
     friend class name;
@@ -974,6 +958,18 @@ inline name& name::append_surname(culture c)
 {
     _owner->append_surname_impl(*this, c);
     return *this;
+}
+
+inline void name::to_json(core::json_writer& w) const
+{
+    w.begin_object().field("name", core::to_utf8(_full_string)).key("parts").begin_array();
+    for (const auto& part : _parts) w.value(core::to_utf8(part));
+    w.end_array()
+        .field("gender", _gender == gender::f ? "female" : "male")
+        .field("culture", ng::culture_name(_culture))
+        .key("signature");
+    _signature.to_json(w);
+    w.end_object();
 }
 
 } // namespace dasmig

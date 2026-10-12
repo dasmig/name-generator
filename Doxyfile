@@ -2,7 +2,7 @@
 # Run: doxygen Doxyfile
 
 PROJECT_NAME           = "Name Generator"
-PROJECT_NUMBER         = 2.0.1
+PROJECT_NUMBER         = 2.0.0
 PROJECT_BRIEF          = "Culture-aware name generation for C++23"
 PROJECT_LOGO           = doc/name-generator.png
 
@@ -11,7 +11,7 @@ CREATE_SUBDIRS         = NO
 
 # --- Input ----------------------------------------------------------------
 
-INPUT                  = dasmig/ doc/usage.md README.md
+INPUT                  = dasmig/ doc/usage.md doc/data.md README.md
 FILE_PATTERNS          = *.hpp
 RECURSIVE              = YES
 USE_MDFILE_AS_MAINPAGE = README.md
@@ -36,7 +36,7 @@ MACRO_EXPANSION        = YES
 PREDEFINED             =
 
 # Exclude vendored random.hpp.
-EXCLUDE                = dasmig/random.hpp
+EXCLUDE                = dasmig/core dasmig/core.hpp dasmig/namegen_data.hpp
 
 # --- Warnings -------------------------------------------------------------
 

@@ -21,6 +21,6 @@ Checks: >
   -readability-math-missing-parentheses,
   -misc-include-cleaner
 WarningsAsErrors: ''
-HeaderFilterRegex: 'dasmig/.*\.hpp'
+HeaderFilterRegex: 'dasmig[/\\].*\.hpp'
 ExtraArgs: ['-std=c++23']
 FormatStyle: file

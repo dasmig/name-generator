@@ -3,6 +3,7 @@
 
 #include <cstdint>
 #include <filesystem>
+#include <fstream>
 #include <map>
 #include <set>
 #include <sstream>
@@ -26,10 +27,6 @@ struct ng_test_access
     {
         return g._sur_pool;
     }
-    static std::wstring utf8_to_wstring(const std::string& s)
-    {
-        return dasmig::ng::utf8_to_wstring(s);
-    }
 };
 
 // ---------------------------------------------------------------------------
@@ -42,9 +39,9 @@ static std::filesystem::path resource_path()
         std::filesystem::path p{candidate};
         if (std::filesystem::exists(p) && std::filesystem::is_directory(p))
         {
-            auto reduced = p / "reduced";
+            auto lite = p / "lite";
             auto full = p / "full";
-            if (std::filesystem::is_directory(reduced)) return reduced;
+            if (std::filesystem::is_directory(lite)) return lite;
             if (std::filesystem::is_directory(full)) return full;
             return p;
         }
@@ -91,7 +88,7 @@ TEST_CASE("name - parts() returns at least one entry", "[name]")
 TEST_CASE("name - seed() returns a non-zero value", "[name]")
 {
     auto n = gen().get_name();
-    // Seed is drawn from mt19937_64, extremely unlikely to be 0.
+    // Seed is drawn from the 64-bit engine, extremely unlikely to be 0.
     REQUIRE(n.seed() != 0);
 }
 
@@ -791,88 +788,38 @@ TEST_CASE("load with non-existent path is a no-op", "[ng][error]")
 }
 
 // ===========================================================================
-// UTF-8 decoder
+// UTF-8 (decoded by dasmig-core; invalid bytes are an error, not skipped)
 // ===========================================================================
-TEST_CASE("utf8_to_wstring decodes ASCII", "[ng][utf8]")
+TEST_CASE("names are decoded from UTF-8", "[ng][utf8]")
 {
-    REQUIRE(ng_test_access::utf8_to_wstring("Hello") == L"Hello");
-    REQUIRE(ng_test_access::utf8_to_wstring("") == L"");
-}
-
-TEST_CASE("utf8_to_wstring decodes 2-byte sequences", "[ng][utf8]")
-{
-    // "ü" = U+00FC = 0xC3 0xBC
-    std::string input{'\xC3', '\xBC'};
-    REQUIRE(ng_test_access::utf8_to_wstring(input) == L"\u00FC");
-}
-
-TEST_CASE("utf8_to_wstring decodes 3-byte sequences", "[ng][utf8]")
-{
-    // "€" = U+20AC = 0xE2 0x82 0xAC
-    std::string input{'\xE2', '\x82', '\xAC'};
-    REQUIRE(ng_test_access::utf8_to_wstring(input) == L"\u20AC");
-}
-
-TEST_CASE("utf8_to_wstring decodes 4-byte sequences", "[ng][utf8]")
-{
-    // U+1F600 (grinning face) = 0xF0 0x9F 0x98 0x80
-    std::string input{'\xF0', '\x9F', '\x98', '\x80'};
-    auto result = ng_test_access::utf8_to_wstring(input);
-    REQUIRE_FALSE(result.empty());
-    // Verify round-trip: on 4-byte wchar_t (Linux) it's one char,
-    // on 2-byte wchar_t (Windows) it's a surrogate pair of 2 chars.
+    dasmig::ng g;
+    g.extend_from_string("de\nany\nM\xC3\xBCller\nJo\xC3\xA3o\n\xF0\x9F\x98\x80\n", "utf8.names");
+    const auto& pool = ng_test_access::surnames(g).at(dasmig::culture::german);
+    REQUIRE(pool.names.size() == 3);
+    REQUIRE(pool.names[0] == L"Müller");
+    REQUIRE(pool.names[1] == L"João");
+    // U+1F600: one wchar_t on Linux, a surrogate pair on Windows.
     if constexpr (sizeof(wchar_t) >= 4)
     {
-        REQUIRE(result.size() == 1);
-        REQUIRE(static_cast<char32_t>(result[0]) == 0x1F600U);
+        REQUIRE(pool.names[2].size() == 1);
+        REQUIRE(static_cast<char32_t>(pool.names[2][0]) == 0x1F600U);
     }
     else
     {
-        REQUIRE(result.size() == 2);
+        REQUIRE(pool.names[2].size() == 2);
     }
+    REQUIRE(dasmig::core::to_utf8(std::wstring{g.get_surname(dasmig::culture::german, 1)}).size() >= 2);
 }
 
-TEST_CASE("utf8_to_wstring skips invalid lead bytes", "[ng][utf8]")
+TEST_CASE("invalid UTF-8 is rejected", "[ng][utf8][errors]")
 {
-    // 0xFF is never valid UTF-8; surrounding ASCII should survive.
-    std::string input{'A', '\xFF', 'B'};
-    REQUIRE(ng_test_access::utf8_to_wstring(input) == L"AB");
-}
-
-TEST_CASE("utf8_to_wstring handles truncated sequence", "[ng][utf8]")
-{
-    // 0xC3 expects one continuation byte but string ends.
-    std::string input{'\xC3'};
-    REQUIRE(ng_test_access::utf8_to_wstring(input) == L"");
-}
-
-TEST_CASE("utf8_to_wstring rejects invalid continuation byte", "[ng][utf8]")
-{
-    // 0xC3 expects continuation (10xxxxxx) but gets 0x41 ('A').
-    std::string input{'\xC3', 'A', 'B'};
-    auto result = ng_test_access::utf8_to_wstring(input);
-    // The malformed 2-byte sequence is skipped; 'A' is consumed as
-    // continuation so only 'B' survives.
-    REQUIRE(result.find(L'B') != std::wstring::npos);
-}
-
-TEST_CASE("utf8_to_wstring rejects overlong codepoint > U+10FFFF",
-          "[ng][utf8]")
-{
-    // Fabricate a 4-byte sequence that decodes to U+110000 (invalid).
-    // F4 90 80 80 = U+110000
-    std::string input{'\xF4', '\x90', '\x80', '\x80'};
-    REQUIRE(ng_test_access::utf8_to_wstring(input) == L"");
-}
-
-TEST_CASE("utf8_to_wstring decodes real name Müller", "[ng][utf8]")
-{
-    REQUIRE(ng_test_access::utf8_to_wstring("M\xC3\xBCller") == L"M\u00FCller");
-}
-
-TEST_CASE("utf8_to_wstring decodes real name João", "[ng][utf8]")
-{
-    REQUIRE(ng_test_access::utf8_to_wstring("Jo\xC3\xA3o") == L"Jo\u00E3o");
+    dasmig::ng g;
+    for (const std::string& bad : {std::string{"de\nany\nA\xFF" "B\n"}, std::string{"de\nany\n\xC3\n"},
+                                  std::string{"de\nany\n\xC3" "AB\n"}, std::string{"de\nany\n\xF4\x90\x80\x80\n"}})
+    {
+        REQUIRE_THROWS_AS(g.extend_from_string(bad, "bad.names"), dasmig::core::tsv_error);
+    }
+    REQUIRE_FALSE(g.has_resources());
 }
 
 // ===========================================================================
@@ -1069,3 +1016,214 @@ TEST_CASE("load(dataset) returns false for missing directory",
     // the return type compiles and the function doesn't crash.
     [[maybe_unused]] bool ok = g.load(dasmig::dataset::lite);
 }
+
+// ---------------------------------------------------------------------------
+// Known answers (rule 2): the same seed, request and data give these exact
+// results on every compiler and platform. A change here is a change of
+// output and needs a major version.
+// ---------------------------------------------------------------------------
+
+namespace
+{
+
+dasmig::ng& lite()
+{
+    static dasmig::ng g = [] {
+        dasmig::ng x;
+        x.load(std::filesystem::path{resource_path()});
+        return x;
+    }();
+    return g;
+}
+
+} // namespace
+
+TEST_CASE("known answers for fixed seeds", "[kat]")
+{
+    using dasmig::culture;
+    using dasmig::gender;
+    auto& g = lite();
+    REQUIRE(g.data_hash() == 0xd7aadf4cfcb4c207ULL);
+
+    REQUIRE(g.get_name(gender::any, culture::any, 1).to_json() ==
+            R"({"name":"Lenroy","parts":["Lenroy"],"gender":"male","culture":"jamaican","signature":{"seed":"0000000000000001","data":"d7aadf4cfcb4c207"}})");
+    REQUIRE(g.get_name(gender::m, culture::brazilian, 2).to_json() ==
+            R"({"name":"Luiz","parts":["Luiz"],"gender":"male","culture":"brazilian","signature":{"seed":"0000000000000002","data":"d7aadf4cfcb4c207"}})");
+    REQUIRE(g.get_surname(culture::japanese, 3).to_json() ==
+            R"({"name":"Takahashi","parts":["Takahashi"],"gender":"male","culture":"japanese","signature":{"seed":"0000000000000003","data":"d7aadf4cfcb4c207"}})");
+    auto n = g.get_name(gender::f, culture::german, 4);
+    n.append_name().append_surname().append_surname(culture::polish);
+    REQUIRE(n.to_json() ==
+            "{\"name\":\"Elfriede Mandy Kr\xC3\xA4mer Duda\",\"parts\":[\"Elfriede\",\"Mandy\",\"Kr\xC3\xA4mer\",\"Duda\"],"
+            "\"gender\":\"female\",\"culture\":\"german\",\"signature\":{\"seed\":\"0000000000000004\",\"data\":\"d7aadf4cfcb4c207\"}}");
+
+    std::uint64_t h = 0xcbf29ce484222325ULL;
+    for (std::uint64_t s = 0; s < 10000; ++s)
+    {
+        auto x = s % 3 == 0 ? g.get_surname(culture::any, s) : g.get_name(gender::any, culture::any, s);
+        if (s % 2 == 0) x.append_surname();
+        for (const char c : x.to_json())
+        {
+            h ^= static_cast<unsigned char>(c);
+            h *= 0x100000001b3ULL;
+        }
+    }
+    REQUIRE(h == 0x5f5cc6a013383981ULL);
+}
+
+// ---------------------------------------------------------------------------
+// Replay, JSON and signatures
+// ---------------------------------------------------------------------------
+
+TEST_CASE("appended parts replay from the seed", "[seeding][chaining]")
+{
+    auto& g = lite();
+    auto a = g.get_name(dasmig::gender::m, dasmig::culture::italian);
+    a.append_name().append_surname();
+    auto b = g.get_name(dasmig::gender::m, dasmig::culture::italian, a.seed());
+    b.append_name().append_surname();
+    REQUIRE(a.parts() == b.parts());
+    REQUIRE(a.to_json() == b.to_json());
+
+    // Each position draws its own part.
+    auto c = g.get_name(dasmig::gender::m, dasmig::culture::italian, a.seed());
+    c.append_surname().append_name();
+    REQUIRE(c.parts()[0] == a.parts()[0]);
+}
+
+TEST_CASE("forcing the gender does not change the culture draw", "[seeding]")
+{
+    auto& g = lite();
+    for (std::uint64_t s = 0; s < 200; ++s)
+    {
+        const auto any = g.get_name(dasmig::gender::any, dasmig::culture::any, s);
+        const auto forced = g.get_name(any.to_json().find("\"female\"") != std::string::npos
+                                           ? dasmig::gender::f
+                                           : dasmig::gender::m,
+                                       dasmig::culture::any, s);
+        REQUIRE(any.to_json() == forced.to_json());
+    }
+}
+
+TEST_CASE("to_json and signature", "[json]")
+{
+    auto& g = lite();
+    const auto n = g.get_surname(dasmig::culture::french, 9);
+    REQUIRE(n.seed() == 9);
+    REQUIRE(n.signature().data == g.data_hash());
+    REQUIRE(n.to_json().find(R"("culture":"french")") != std::string::npos);
+    REQUIRE(n.to_json().find(R"("signature":{"seed":"0000000000000009")") != std::string::npos);
+}
+
+TEST_CASE("culture codes and names", "[ng][utility]")
+{
+    REQUIRE(dasmig::ng::culture_code(dasmig::culture::brazilian) == "br");
+    REQUIRE(dasmig::ng::culture_name(dasmig::culture::brazilian) == "brazilian");
+    REQUIRE(dasmig::ng::culture_code(dasmig::culture::any).empty());
+    REQUIRE(dasmig::ng::culture_name(dasmig::culture::any) == "any");
+    for (int i = 0; i < static_cast<int>(dasmig::culture::any); ++i)
+    {
+        const auto c = static_cast<dasmig::culture>(i);
+        const auto code = dasmig::ng::culture_code(c);
+        REQUIRE(dasmig::ng::to_culture(std::wstring(code.begin(), code.end())) == c);
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Extending data (rule 8)
+// ---------------------------------------------------------------------------
+
+TEST_CASE("extend adds, replaces and removes names", "[extend]")
+{
+    dasmig::ng g;
+    g.load(std::filesystem::path{resource_path()});
+    const auto hash = g.data_hash();
+    const auto before = ng_test_access::m_names(g).at(dasmig::culture::brazilian).names.size();
+
+    // Add two names (the first replaces a loaded one's weight), then remove one.
+    const auto info = g.extend_from_string("br\nmale\nJo\xC3\xA3o\t2.5\nCaetano\t0.1\n", "mod.names");
+    REQUIRE(info.added + info.replaced == 2);
+    REQUIRE(g.layers(dasmig::culture::brazilian, dasmig::gender::m).size() == 2);
+    REQUIRE(g.data_hash() != hash);
+
+    const auto removal = g.extend_from_string("br\nmale\nCaetano\t\t1\n", "cleanup.names");
+    REQUIRE(removal.removed == 1);
+    const auto& pool = ng_test_access::m_names(g).at(dasmig::culture::brazilian);
+    REQUIRE(std::find(pool.names.begin(), pool.names.end(), L"Caetano") == pool.names.end());
+    REQUIRE(pool.names.size() == before + info.added - 1);
+
+    // Removing every name of a list removes the list.
+    dasmig::ng small;
+    small.extend_from_string("is\nany\nJonsson\n", "a.names");
+    REQUIRE(small.has_resources());
+    small.extend_from_string("is\nany\nJonsson\t\t1\n", "b.names");
+    REQUIRE_FALSE(small.has_resources());
+    REQUIRE_THROWS_AS(small.get_surname(dasmig::culture::icelandic, 1), std::invalid_argument);
+
+    // A new culture list; files on disk; reloading drops the layers.
+    const auto dir = std::filesystem::temp_directory_path() / "ng_layer";
+    std::filesystem::remove_all(dir);
+    std::filesystem::create_directories(dir / "fj");
+    {
+        std::ofstream{dir / "fj" / "sur.names"} << "fj\nany\nWaqa\t1\n";
+    }
+    g.extend(dir);
+    REQUIRE(g.layers(dasmig::culture::fijian, dasmig::gender::any).size() == 2);
+    REQUIRE_THROWS_AS(g.extend(dir / "fj" / "missing.txt"), std::invalid_argument);
+    std::filesystem::remove_all(dir);
+
+    g.load(std::filesystem::path{resource_path()});
+    REQUIRE(g.data_hash() == hash);
+}
+
+TEST_CASE("bad layers are rejected and change nothing", "[extend][errors]")
+{
+    dasmig::ng g;
+    g.load(std::filesystem::path{resource_path()});
+    const auto hash = g.data_hash();
+    auto rejected = [&](const std::string& text, const std::string& message) {
+        INFO(text);
+        REQUIRE_THROWS_WITH(g.extend_from_string(text, "x.names"), message);
+        REQUIRE(g.data_hash() == hash);
+    };
+    rejected("xx\nmale\nA\n", "x.names:1: unknown country code 'xx'");
+    rejected("br\nboth\nA\n", "x.names:2: expected male, female or any, got 'both'");
+    rejected("br\n", "x.names:2: expected a country code and a gender line");
+    rejected("br\nmale\nA\t0\n", "x.names:3: column 'weight': must be positive");
+    rejected("br\nmale\nA\theavy\n", "x.names:3: column 'weight': expected a number, got 'heavy'");
+    rejected("br\nmale\nA\t1\nB\t1\nA\t2\n", "x.names:5: key repeated (first on line 3)");
+    REQUIRE_THROWS_AS(g.extend_from_string("br\nmale\nJo\xC3\xA3o\t1\n", "x.names", dasmig::core::layer_mode::add),
+                      dasmig::core::tsv_error);
+
+    // A directory with one bad file applies nothing.
+    const auto dir = std::filesystem::temp_directory_path() / "ng_bad_layer";
+    std::filesystem::remove_all(dir);
+    std::filesystem::create_directories(dir);
+    {
+        std::ofstream{dir / "a.names"} << "br\nmale\nFine\n";
+        std::ofstream{dir / "b.names"} << "br\nfemale\nOops\t-1\n";
+    }
+    REQUIRE_THROWS_AS(g.extend(dir), dasmig::core::tsv_error);
+    REQUIRE(g.data_hash() == hash);
+    REQUIRE_THROWS_AS(g.load(dir), dasmig::core::tsv_error);
+    REQUIRE(g.data_hash() == hash);
+    std::filesystem::remove_all(dir);
+}
+
+TEST_CASE("a file may end after its gender line", "[extend]")
+{
+    dasmig::ng g;
+    REQUIRE_NOTHROW(g.extend_from_string("br\nmale", "empty.names"));
+    REQUIRE_FALSE(g.has_resources());
+}
+
+#ifdef DASMIG_NAME_EMBED
+TEST_CASE("compiled-in data matches the files", "[embed]")
+{
+    dasmig::ng embedded;
+    REQUIRE(embedded.load(dasmig::dataset::lite));
+    REQUIRE(embedded.data_hash() == lite().data_hash());
+    REQUIRE(embedded.get_name(dasmig::gender::any, dasmig::culture::any, 1).to_json() ==
+            lite().get_name(dasmig::gender::any, dasmig::culture::any, 1).to_json());
+}
+#endif

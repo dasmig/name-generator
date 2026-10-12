@@ -26,6 +26,3 @@ Desktop.ini
 __pycache__/
 *.pyc
 .venv/
-
-# Scripts (data preparation, not part of the library)
-scripts/
