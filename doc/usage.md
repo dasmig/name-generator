@@ -39,11 +39,11 @@ int main()
 
     // Random name with a surname, printed as UTF-8 (std::wcout stops at the
     // first non-ASCII letter unless a locale is set).
-    std::wstring name = gen.get_name().append_surname();
+    std::wstring name = gen.get_name({}).append_surname();
     std::cout << dasmig::core::to_utf8(name) << "\n";
 
     // American female name with surname.
-    name = gen.get_name(dasmig::gender::f, dasmig::culture::american).append_surname();
+    name = gen.get_name({.gender = dasmig::gender::f, .culture = dasmig::culture::american}).append_surname();
     std::cout << dasmig::core::to_utf8(name) << "\n";
 }
 ```
@@ -105,10 +105,10 @@ if (!dasmig::ng::instance().has_resources())
 auto& gen = dasmig::ng::instance();
 
 // Random first name (any gender, any culture).
-auto first = gen.get_name();
+auto first = gen.get_name({});
 
 // Random surname (any culture).
-auto last = gen.get_surname();
+auto last = gen.get_surname({});
 ```
 
 ## Cultures and Genders
@@ -158,7 +158,7 @@ auto last = gen.get_surname();
 
 ```cpp
 // Specific culture and gender.
-auto n = gen.get_name(dasmig::gender::m, dasmig::culture::german);
+auto n = gen.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::german});
 
 // Convert from ISO 3166 code, and back.
 auto culture = dasmig::ng::to_culture(L"br"); // culture::brazilian
@@ -175,7 +175,7 @@ The `name` return type supports chained appending:
 
 ```cpp
 // First name + middle name + surname.
-auto full = gen.get_name().append_name().append_surname();
+auto full = gen.get_name({}).append_name().append_surname();
 std::wcout << full << L"\n";
 
 // Access individual parts.
@@ -185,7 +185,7 @@ for (const auto& part : full.parts())
 }
 
 // Append with a different culture.
-auto mixed = gen.get_name(dasmig::gender::f, dasmig::culture::chinese)
+auto mixed = gen.get_name({.gender = dasmig::gender::f, .culture = dasmig::culture::chinese})
                  .append_surname(dasmig::culture::american);
 ```
 
@@ -199,11 +199,11 @@ local static for safe initialization.
 | Operation | Thread-safe? |
 |-----------|-------------|
 | `instance()` | Yes (static local) |
-| `get_name()` / `get_surname()` on **different** instances | Yes |
-| `get_name()` / `get_surname()` on the **same** instance | **No** — requires external synchronization |
+| `get_name(request)` / `get_surname(request)` on **different** instances | Yes |
+| `get_name(request)` / `get_surname(request)` on the **same** instance | **No** — requires external synchronization |
 | `load()`, `extend()` | **No** — must not be called concurrently with generation on the same instance |
 
-For concurrent generation, give each thread its own `ng` instance. The seeded overloads (`get_name(g, c, seed)`, `get_surname(c, seed)`) are `const` and do not touch the engine.
+For concurrent generation, give each thread its own `ng` instance. The seeded overloads (`get_name(request, seed)`, `get_surname(request, seed)`) are `const` and do not touch the internal engine.
 
 ### Lifetime Safety
 
@@ -216,7 +216,7 @@ long as you need to chain appends:
 dasmig::ng gen;
 gen.load("resources");
 
-auto n = gen.get_name();
+auto n = gen.get_name({});
 // gen must remain alive while we append:
 n.append_surname();
 
@@ -231,8 +231,8 @@ std::wstring result = n;
 Pass an explicit seed to produce the same name every time:
 
 ```cpp
-auto n = gen.get_name(dasmig::gender::m, dasmig::culture::american, 42);
-// The same parameters, seed and data give the same name on every compiler,
+auto n = gen.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american}, 42);
+// The same request, seed and data give the same name on every compiler,
 // standard library and CPU.
 ```
 
@@ -241,35 +241,34 @@ auto n = gen.get_name(dasmig::gender::m, dasmig::culture::american, 42);
 Every name records its seed. Retrieve it with `name::seed()`:
 
 ```cpp
-auto original = gen.get_name();
-auto replay = gen.get_name(dasmig::gender::any, dasmig::culture::any,
-                            original.seed());
+auto original = gen.get_name({});
+auto replay = gen.get_name({}, original.seed());
 ```
 
-### Sequence seeding
+### Reproducible sequences
 
-Seed the generator engine for deterministic sequences:
+There is no generator-level seed. For a reproducible sequence, derive each call's seed yourself:
 
 ```cpp
-gen.seed(100);
-auto a = gen.get_name(); // deterministic
-auto b = gen.get_name(); // deterministic
-gen.unseed();             // restore non-deterministic state
+for (std::uint64_t i = 0; i < 3; ++i)
+    auto n = gen.get_name({}, 100 + i); // deterministic
 ```
+
+A call without a seed draws a fresh non-deterministic one, which `name::seed()` reports.
 
 ## Multi-Instance Support
 
-Construct independent `ng` objects with their own name databases and random engine:
+Construct independent `ng` objects with their own name databases:
 
 ```cpp
 dasmig::ng my_gen;
 my_gen.load("path/to/resources");
-std::wcout << my_gen.get_name().append_surname() << L"\n";
+std::wcout << my_gen.get_name({}).append_surname() << L"\n";
 ```
 
-### Separate Seeding
+### Same Seed, Same Name
 
-Each instance maintains its own engine:
+Instances with the same data give the same name for a seed:
 
 ```cpp
 dasmig::ng a;
@@ -277,11 +276,8 @@ dasmig::ng b;
 a.load("resources");
 b.load("resources");
 
-a.seed(42);
-b.seed(99);
-// a and b produce different sequences.
+// a.get_name({}, 42) and b.get_name({}, 42) are the same name.
 ```
-
 ### Move Semantics
 
 Instances can be moved (but not copied):
@@ -326,13 +322,13 @@ gen.extend("mods/new_names.names", dasmig::core::layer_mode::add);
 Every result records the seed and the data it came from:
 
 ```cpp
-auto n = gen.get_name(dasmig::gender::f, dasmig::culture::italian);
+auto n = gen.get_name({.gender = dasmig::gender::f, .culture = dasmig::culture::italian});
 n.append_surname();
 n.seed();                    // the call seed
 n.signature().data;          // gen.data_hash() when it was generated
 
 // Same seed, same appends, same data: the same full name everywhere.
-auto again = gen.get_name(dasmig::gender::f, dasmig::culture::italian, n.seed());
+auto again = gen.get_name({.gender = dasmig::gender::f, .culture = dasmig::culture::italian}, n.seed());
 again.append_surname();
 
 if (n.signature().data != gen.data_hash())
@@ -371,6 +367,7 @@ Version 3 moves the library onto [dasmig-core](https://github.com/dasmig/dasmig-
 - **Appended parts replay.** v2 drew them from the generator's engine; v3 draws them from the name's seed and the part's position, and appending no longer advances the engine.
 - **`load(path)` replaces** the names instead of adding to them; use `extend()` to add. A malformed file now throws `dasmig::core::tsv_error` (v2 skipped files with an unknown country code, read any second line other than `male`/`female` as surnames, and dropped invalid UTF-8 bytes). `load(dataset)` is `[[nodiscard]]`.
 - **Data.** `resources/full` lost two folders v2 never loaded (`australian`, `ukranian`). The lists are otherwise unchanged.
+- **Request-first API.** `get_name(gender, culture[, seed])` and `get_surname(culture[, seed])` become `get_name(name_request[, seed])` and `get_surname(name_request[, seed])`, e.g. `get_name({.gender = gender::f})`. `ng::seed()` and `ng::unseed()` are removed; pass a seed per call.
 - **Files:** replace `random.hpp` with `core.hpp` and the `core/` directory (see Installation).
 - **New:** `extend()`, `extend_from_string()`, `layers()`, `data_hash()`, `culture_code()`, `culture_name()`, `name::signature()`, `name::to_json()`, `DASMIG_NAME_EMBED`, a `disabled` column.
 
@@ -378,7 +375,7 @@ Version 3 moves the library onto [dasmig-core](https://github.com/dasmig/dasmig-
 
 | Exception | Thrown by | Condition |
 |-----------|-----------|----------|
-| `std::invalid_argument` | `get_name()` / `get_surname()` / `append_*()` | No names loaded for the resolved culture/gender |
+| `std::invalid_argument` | `get_name(request)` / `get_surname(request)` / `append_*()` | No names loaded for the resolved culture/gender |
 | `std::invalid_argument` | `extend(path)` | A file without the `.names` extension |
 | `std::out_of_range` | `layers(culture, gender)` | That list was never loaded |
 | `dasmig::core::tsv_error` | `load()`, `extend()`, `extend_from_string()` | A malformed file or layer (message gives file, line and column); the names are unchanged |
