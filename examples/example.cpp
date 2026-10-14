@@ -21,16 +21,16 @@ int main() // NOLINT(bugprone-exception-escape)
     auto& gen = dasmig::ng::instance();
 
     // Random name + surname (any gender, any culture).
-    std::cout << "Random:     " << utf8(gen.get_name().append_surname()) << "\n";
+    std::cout << "Random:     " << utf8(gen.get_name({}).append_surname()) << "\n";
 
     // French female name + surname.
     std::cout << "French (F): "
-              << utf8(gen.get_name(dasmig::gender::f, dasmig::culture::french).append_surname())
+              << utf8(gen.get_name({.gender = dasmig::gender::f, .culture = dasmig::culture::french}).append_surname())
               << "\n";
 
     // American male name + middle name + surname.
     std::cout << "American:   "
-              << utf8(gen.get_name(dasmig::gender::m, dasmig::culture::american)
+              << utf8(              gen.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american})
                           .append_name()
                           .append_surname())
               << "\n";
@@ -38,11 +38,11 @@ int main() // NOLINT(bugprone-exception-escape)
     // Deterministic generation: the same seed gives the same name on every
     // compiler and platform.
     constexpr std::uint64_t seed = 42;
-    auto seeded = gen.get_name(dasmig::gender::m, dasmig::culture::german, seed);
+    auto seeded = gen.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::german}, seed);
     std::cout << "Seeded:     " << utf8(seeded) << "  (seed=" << seeded.seed() << ")\n";
 
     // Appended parts replay too: they draw from the name's seed.
-    auto full = gen.get_name(dasmig::gender::f, dasmig::culture::italian, seed);
+    auto full = gen.get_name({.gender = dasmig::gender::f, .culture = dasmig::culture::italian}, seed);
     full.append_surname();
     std::cout << "JSON:       " << full.to_json() << "\n";
 
@@ -50,14 +50,12 @@ int main() // NOLINT(bugprone-exception-escape)
     // country code, the gender, then one name per line with a weight).
     gen.extend_from_string("br\nfemale\nIracema\t0.5\nJaci\t0.5\n", "example.names");
     std::cout << "Extended:   "
-              << utf8(gen.get_name(dasmig::gender::f, dasmig::culture::brazilian)) << "\n";
+              << utf8(gen.get_name({.gender = dasmig::gender::f, .culture = dasmig::culture::brazilian})) << "\n";
 
-    // Independent instance with its own databases and engine.
-    constexpr std::uint64_t instance_seed = 100;
+    // Independent instance with its own databases.
     dasmig::ng my_gen;
     (void)my_gen.load(dasmig::dataset::lite); // or dataset::full for all names
-    my_gen.seed(instance_seed);
-    std::cout << "Instance:   " << utf8(my_gen.get_name().append_surname()) << "\n";
+    std::cout << "Instance:   " << utf8(my_gen.get_name({}, seed).append_surname()) << "\n";
 
     return 0;
 }

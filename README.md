@@ -31,7 +31,7 @@
 
 - **ISO 2-Letter Codes**. `to_culture()` and `to_gender()` for converting strings to enums.
 
-- **Deterministic Seeding**. Per-call `get_name(gender, culture, seed)` for reproducible results, generator-level `seed()` / `unseed()` for deterministic sequences, and `name::seed()` for replaying a previous generation, appended parts included.
+- **Deterministic Seeding**. Per-call `get_name(name_request, seed)` (the request carries the gender and culture) for reproducible results, and `name::seed()` for replaying a previous generation, appended parts included.
 
 - **Identical Everywhere**. A seed gives the same name on every compiler, standard library and CPU (GCC, Clang, MSVC, Emscripten; x86-64 and ARM64), checked by known-answer tests.
 
@@ -43,7 +43,7 @@
 
 - **Resource Inspection**. `has_resources()` lets you verify databases loaded before generating.
 
-- **Multi-Instance Support**. Construct independent `ng` instances with their own name databases and random engine.
+- **Multi-Instance Support**. Construct independent `ng` instances with their own name databases.
 
 ## Integration
 
@@ -83,30 +83,30 @@ using ng = dasmig::ng;
 // ng::instance().load("path/to/resources");
 
 // Generate a name of any culture and any gender.
-std::wstring name = ng::instance().get_name();
+std::wstring name = ng::instance().get_name({});
 
 // Generate a female name of any culture.
-std::wstring female_name = ng::instance().get_name(dasmig::gender::f);
+std::wstring female_name = ng::instance().get_name({.gender = dasmig::gender::f});
 
 // Generate a male Bulgarian name.
-std::wstring bulgarian = ng::instance().get_name(dasmig::gender::m,
-                                                  dasmig::culture::bulgarian);
+std::wstring bulgarian = ng::instance().get_name({.gender = dasmig::gender::m,
+                                                  .culture = dasmig::culture::bulgarian});
 
 // Generate a full name: first + two surnames.
-std::wstring full = ng::instance().get_name().append_surname().append_surname();
+std::wstring full = ng::instance().get_name({}).append_surname().append_surname();
 
 // Access individual parts.
-auto n = ng::instance().get_name().append_surname();
+auto n = ng::instance().get_name({}).append_surname();
 for (const auto& part : n.parts())
     std::wcout << part << L" ";
 
 // Deterministic generation — same seed always produces the same name.
-auto seeded = ng::instance().get_name(dasmig::gender::m,
-                                       dasmig::culture::american, 42);
+auto seeded = ng::instance().get_name({.gender = dasmig::gender::m,
+                                       .culture = dasmig::culture::american}, 42);
 
 // Replay a previous name using its seed.
-auto replay = ng::instance().get_name(dasmig::gender::m,
-                                       dasmig::culture::american,
+auto replay = ng::instance().get_name({.gender = dasmig::gender::m,
+                                       .culture = dasmig::culture::american},
                                        seeded.seed());
 
 // The result as JSON, with the seed and the data it came from.
@@ -115,15 +115,10 @@ std::string json = seeded.append_surname().to_json();
 // Add names of your own on top of the shipped lists.
 ng::instance().extend("mods/brazilian_female.names");
 
-// Seed the engine for a deterministic sequence.
-ng::instance().seed(100);
-// ... generate names ...
-ng::instance().unseed(); // restore non-deterministic state
-
-// Independent instance with its own databases and engine.
+// Independent instance with its own databases.
 ng my_gen;
 my_gen.load("path/to/resources");
-std::wstring name2 = my_gen.get_name().append_surname();
+std::wstring name2 = my_gen.get_name({}).append_surname();
 ```
 
 For the complete feature guide — cultures, chaining, thread safety, seeding, extending data, compiled-in data, and more — see the **[Usage Guide](doc/usage.md)**. Where the names come from and what they leave out: **[Data and Method](doc/data.md)**.

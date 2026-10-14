@@ -158,6 +158,21 @@ enum class gender : std::uint8_t
     any
 };
 
+/// @brief The per-call choices of a generation: gender and culture.
+///
+/// Passed to ng::get_name() and ng::get_surname(). Both default to `any`
+/// (random). For a surname the gender selects a gendered surname list where
+/// the culture has one.
+///
+/// @code
+/// gen.get_name({.gender = gender::f, .culture = culture::french});
+/// @endcode
+struct name_request
+{
+    dasmig::gender gender = dasmig::gender::any;    ///< Requested gender.
+    dasmig::culture culture = dasmig::culture::any; ///< Requested culture.
+};
+
 class ng;
 
 /// @brief Return type for name generation, holding both individual parts and
@@ -170,7 +185,7 @@ class name
   public:
     /// @brief Retrieve the random seed used to generate this name.
     /// @return The per-call seed for replay.
-    /// @see ng::get_name(gender, culture, std::uint64_t)
+    /// @see ng::get_name(const name_request&, std::uint64_t)
     [[nodiscard]] std::uint64_t seed() const
     {
         return _signature.seed;
@@ -366,74 +381,46 @@ class ng
     }
 
     /// @brief Generate a first name.
-    /// @param g Gender (default: random).
-    /// @param c Culture (default: random among the loaded ones).
+    /// @param request Gender and culture (both default to `any`).
     /// @return A name object supporting chained appending.
     /// @throws std::invalid_argument If no names loaded for the resolved culture/gender.
-    [[nodiscard]] name get_name(gender g = gender::any,
-                                culture c = culture::any)
+    [[nodiscard]] name get_name(const name_request& request)
     {
-        return get_name(g, c, _engine());
+        return get_name(request, _engine());
     }
 
     /// @brief Generate a deterministic first name using a specific seed.
-    /// @param g Gender (default: random).
-    /// @param c Culture (default: random among the loaded ones).
+    /// @param request Gender and culture.
     /// @param call_seed Seed; the same seed, request and data give the same
     ///        name on every platform.
     /// @return A name object.
     /// @throws std::invalid_argument If no names loaded for the resolved culture/gender.
-    [[nodiscard]] name get_name(gender g, culture c,
+    [[nodiscard]] name get_name(const name_request& request,
                                 std::uint64_t call_seed) const
     {
-        return solver(true, g, c, call_seed);
+        return solver(true, request.gender, request.culture, call_seed);
     }
 
     /// @brief Generate a surname.
-    /// @param c Culture (default: random among the loaded ones).
+    /// @param request Culture, and gender for cultures with gendered surnames
+    ///        (both default to `any`).
     /// @return A name object supporting chained appending.
     /// @throws std::invalid_argument If no surnames loaded for the resolved culture.
-    [[nodiscard]] name get_surname(culture c = culture::any)
+    [[nodiscard]] name get_surname(const name_request& request)
     {
-        return get_surname(c, _engine());
+        return get_surname(request, _engine());
     }
 
     /// @brief Generate a deterministic surname using a specific seed.
-    /// @param c Culture (default: random among the loaded ones).
+    /// @param request Culture and gender.
     /// @param call_seed Seed for reproducible results.
     /// @return A name object.
     /// @throws std::invalid_argument If no surnames loaded for the resolved culture.
-    [[nodiscard]] name get_surname(culture c,
+    [[nodiscard]] name get_surname(const name_request& request,
                                    std::uint64_t call_seed) const
     {
-        return solver(false, gender::any, c, call_seed);
+        return solver(false, request.gender, request.culture, call_seed);
     }
-
-    /// @name Seeding
-    /// @{
-
-    /// @brief Seed the internal random engine for deterministic sequences.
-    ///
-    /// Subsequent get_name() / get_surname() calls (without an explicit seed)
-    /// draw per-call seeds from this engine, producing a reproducible sequence.
-    ///
-    /// @param seed_value The seed value.
-    /// @return `*this` for chaining.
-    ng& seed(std::uint64_t seed_value)
-    {
-        _engine.seed(seed_value);
-        return *this;
-    }
-
-    /// @brief Reseed the engine with a non-deterministic source.
-    /// @return `*this` for chaining.
-    ng& unseed()
-    {
-        _engine.unseed();
-        return *this;
-    }
-
-    /// @}
 
     /// @brief Check whether any name databases have been loaded.
     /// @return `true` if at least one name list is loaded.
