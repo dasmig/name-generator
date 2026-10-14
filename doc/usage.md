@@ -367,9 +367,15 @@ Version 3 moves the library onto [dasmig-core](https://github.com/dasmig/dasmig-
 - **Appended parts replay.** v2 drew them from the generator's engine; v3 draws them from the name's seed and the part's position, and appending no longer advances the engine.
 - **`load(path)` replaces** the names instead of adding to them; use `extend()` to add. A malformed file now throws `dasmig::core::tsv_error` (v2 skipped files with an unknown country code, read any second line other than `male`/`female` as surnames, and dropped invalid UTF-8 bytes). `load(dataset)` is `[[nodiscard]]`.
 - **Data.** `resources/full` lost two folders v2 never loaded (`australian`, `ukranian`). The lists are otherwise unchanged.
-- **Request-first API.** `get_name(gender, culture[, seed])` and `get_surname(culture[, seed])` become `get_name(name_request[, seed])` and `get_surname(name_request[, seed])`, e.g. `get_name({.gender = gender::f})`. `ng::seed()` and `ng::unseed()` are removed; pass a seed per call.
 - **Files:** replace `random.hpp` with `core.hpp` and the `core/` directory (see Installation).
 - **New:** `extend()`, `extend_from_string()`, `layers()`, `data_hash()`, `culture_code()`, `culture_name()`, `name::signature()`, `name::to_json()`, `DASMIG_NAME_EMBED`, a `disabled` column.
+
+## Migrating from v3
+
+Version 4 makes a request the only way to call a getter.
+
+- **Request-first API.** `get_name(gender, culture[, seed])` and `get_surname(culture[, seed])` become `get_name(name_request[, seed])` and `get_surname(name_request[, seed])`, e.g. `get_name({.gender = gender::f})`; use `get_name({})` for the defaults. `ng::seed()` and `ng::unseed()` are removed; pass a seed per call.
+- **Gendered surnames.** Azerbaijani, Bulgarian, Czech, Greek, Icelandic, Kazakh, Lithuanian, Polish, Russian and Turkmen now have separate male and female surname lists (`male.sur.names`, `female.sur.names`), so a surname for those cultures follows the requested gender. Seeded results for those cultures differ from v3.
 
 ## Error Reference
 

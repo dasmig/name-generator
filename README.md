@@ -60,7 +60,7 @@ to the files you want to generate names and set the necessary switches to enable
 
 Additionally you must supply the name generator with the [`resources`](https://github.com/dasmig/name-generator/tree/master/resources) folder also available in the [release](https://github.com/dasmig/name-generator/releases), or define `DASMIG_NAME_EMBED` to compile the `lite` tier in.
 
-Version 3 changes every seeded result; see [Migrating from v2](doc/usage.md#migrating-from-v2).
+Version 3 changes every seeded result; see [Migrating from v2](doc/usage.md#migrating-from-v2). Version 4 makes `name_request` the only way to call a getter; see [Migrating from v3](doc/usage.md#migrating-from-v3).
 
 ## Usage
 
