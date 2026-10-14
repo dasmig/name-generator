@@ -36,7 +36,15 @@ Lucas	0.707107
 Marcos	0.500000
 ```
 
-Line 1 is the country code, line 2 the list (`male`, `female`, or `any` for surnames), then one name per line with an optional weight (default 1). Files are UTF-8; a line starting with `#` is a comment. The same format is used for layers, with a third column, `disabled`, to remove a name.
+Line 1 is the country code, line 2 the list (`male`, `female`, or `any` for surnames; `male-surname` and `female-surname` for the surnames of one gender, see below), then one name per line with an optional weight (default 1). Files are UTF-8; a line starting with `#` is a comment. The same format is used for layers, with a third column, `disabled`, to remove a name.
+
+## Gendered Surnames
+
+Most cultures have one surname list (`sur.names`), used for both genders. In some, a surname changes with gender (Ivanov and Ivanova, Kowalski and Kowalska, Jónsson and Jónsdóttir). Those cultures also have `male.sur.names` and `female.sur.names`. A surname is drawn from the list of the name's gender when the culture has one, and from `sur.names` otherwise. Each gendered list is complete: it holds the forms of its gender and the surnames that do not change (Greek Georgiou), so a draw is a single weighted pick.
+
+Ten cultures have them: Czech, Polish, Russian, Bulgarian, Lithuanian, Icelandic, Greek, Kazakh, Azerbaijani and Turkmen. `scripts/split_surnames.py RESOURCES_DIR` writes the files from `sur.names`, using the suffix rules in the script: a form the list lacks (Lithuanian has few feminine forms) is derived from its counterpart with the same weight, and entries under three letters are dropped. `sur.names` is not changed, so adding a culture is a new entry in the script's `RULES`.
+
+A layer for a gendered list uses `male-surname` or `female-surname` on its second line, and `layers()` for it is `surname_layers(culture, gender)`. A layer for `any` changes `sur.names` only: it does not reach a culture that has gendered lists, so change those two lists instead.
 
 ## Generation Model
 
@@ -46,7 +54,7 @@ Every call draws from streams split from the call seed:
 2. **Culture** (`"culture"`): uniform over the cultures that have a list of that kind loaded, in culture order, unless given. Cultures are not weighted by population; the persona pipeline passes the culture of the chosen country.
 3. **Name** (`"name"`): weighted by the list's weights.
 
-A surname draws its gender too (the gender `append_name()` would use). A part appended to a name draws from the stream `"part"`, then the part's position, of the name's seed.
+A surname draws its gender too (the gender `append_name()` would use), and in a culture with gendered surnames the name comes from the list of that gender. A part appended to a name draws from the stream `"part"`, then the part's position, of the name's seed.
 
 ## Known Limitations
 
