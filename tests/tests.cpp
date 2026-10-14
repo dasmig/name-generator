@@ -27,6 +27,14 @@ struct ng_test_access
     {
         return g._sur_pool;
     }
+    static auto& m_surnames(dasmig::ng& g)
+    {
+        return g._m_sur_pool;
+    }
+    static auto& f_surnames(dasmig::ng& g)
+    {
+        return g._f_sur_pool;
+    }
 };
 
 // ---------------------------------------------------------------------------
@@ -176,13 +184,17 @@ TEST_CASE("get_surname produces surnames from loaded resources", "[ng]")
         std::wstring s = n;
         REQUIRE_FALSE(s.empty());
 
+        // A surname is in the shared list or in the list of its gender.
         bool found = false;
-        for (const auto& [culture, pool] : s_db)
+        for (const auto* db : {&s_db, &ng_test_access::m_surnames(g), &ng_test_access::f_surnames(g)})
         {
-            if (std::find(pool.names.begin(), pool.names.end(), s) != pool.names.end())
+            for (const auto& [culture, pool] : *db)
             {
-                found = true;
-                break;
+                if (std::find(pool.names.begin(), pool.names.end(), s) != pool.names.end())
+                {
+                    found = true;
+                    break;
+                }
             }
         }
         REQUIRE(found);
@@ -1043,19 +1055,19 @@ TEST_CASE("known answers for fixed seeds", "[kat]")
     using dasmig::culture;
     using dasmig::gender;
     auto& g = lite();
-    REQUIRE(g.data_hash() == 0xd7aadf4cfcb4c207ULL);
+    REQUIRE(g.data_hash() == 0x07bced2348a8cc4bULL);
 
     REQUIRE(g.get_name(gender::any, culture::any, 1).to_json() ==
-            R"({"name":"Lenroy","parts":["Lenroy"],"gender":"male","culture":"jamaican","signature":{"seed":"0000000000000001","data":"d7aadf4cfcb4c207"}})");
+            R"({"name":"Lenroy","parts":["Lenroy"],"gender":"male","culture":"jamaican","signature":{"seed":"0000000000000001","data":"07bced2348a8cc4b"}})");
     REQUIRE(g.get_name(gender::m, culture::brazilian, 2).to_json() ==
-            R"({"name":"Luiz","parts":["Luiz"],"gender":"male","culture":"brazilian","signature":{"seed":"0000000000000002","data":"d7aadf4cfcb4c207"}})");
+            R"({"name":"Luiz","parts":["Luiz"],"gender":"male","culture":"brazilian","signature":{"seed":"0000000000000002","data":"07bced2348a8cc4b"}})");
     REQUIRE(g.get_surname(culture::japanese, 3).to_json() ==
-            R"({"name":"Takahashi","parts":["Takahashi"],"gender":"male","culture":"japanese","signature":{"seed":"0000000000000003","data":"d7aadf4cfcb4c207"}})");
+            R"({"name":"Takahashi","parts":["Takahashi"],"gender":"male","culture":"japanese","signature":{"seed":"0000000000000003","data":"07bced2348a8cc4b"}})");
     auto n = g.get_name(gender::f, culture::german, 4);
     n.append_name().append_surname().append_surname(culture::polish);
     REQUIRE(n.to_json() ==
-            "{\"name\":\"Elfriede Mandy Kr\xC3\xA4mer Duda\",\"parts\":[\"Elfriede\",\"Mandy\",\"Kr\xC3\xA4mer\",\"Duda\"],"
-            "\"gender\":\"female\",\"culture\":\"german\",\"signature\":{\"seed\":\"0000000000000004\",\"data\":\"d7aadf4cfcb4c207\"}}");
+            "{\"name\":\"Elfriede Mandy Kr\xC3\xA4mer Baran\",\"parts\":[\"Elfriede\",\"Mandy\",\"Kr\xC3\xA4mer\",\"Baran\"],"
+            "\"gender\":\"female\",\"culture\":\"german\",\"signature\":{\"seed\":\"0000000000000004\",\"data\":\"07bced2348a8cc4b\"}}");
 
     std::uint64_t h = 0xcbf29ce484222325ULL;
     for (std::uint64_t s = 0; s < 10000; ++s)
@@ -1068,7 +1080,7 @@ TEST_CASE("known answers for fixed seeds", "[kat]")
             h *= 0x100000001b3ULL;
         }
     }
-    REQUIRE(h == 0x5f5cc6a013383981ULL);
+    REQUIRE(h == 0xf460d7b6aef21a95ULL);
 }
 
 // ---------------------------------------------------------------------------
@@ -1133,6 +1145,83 @@ TEST_CASE("culture codes and names", "[ng][utility]")
 // Extending data (rule 8)
 // ---------------------------------------------------------------------------
 
+TEST_CASE("surnames follow the gender in cultures that have gendered forms", "[ng][surname][gender]")
+{
+    dasmig::ng g;
+    g.load(std::filesystem::path{resource_path()});
+    using dasmig::culture;
+    using dasmig::gender;
+
+    // A surname ends in the feminine or masculine form of its culture.
+    struct form { culture c; std::vector<std::wstring> feminine; std::vector<std::wstring> masculine; };
+    const std::vector<form> forms{
+        {culture::russian, {L"ova", L"eva", L"ina", L"skaya"}, {L"ov", L"ev", L"in", L"sky"}},
+        {culture::czech, {L"ová", L"á"}, {L"ý"}},
+        {culture::polish, {L"ska", L"cka", L"dzka"}, {L"ski", L"cki", L"dzki"}},
+        {culture::icelandic, {L"dóttir"}, {L"son"}},
+    };
+    auto ends_with = [](const std::wstring& s, const std::wstring& e) {
+        return s.size() >= e.size() && s.compare(s.size() - e.size(), e.size(), e) == 0;
+    };
+    auto any_end = [&](const std::wstring& s, const std::vector<std::wstring>& ends) {
+        return std::any_of(ends.begin(), ends.end(), [&](const auto& e) { return ends_with(s, e); });
+    };
+
+    for (const auto& f : forms)
+    {
+        for (std::uint64_t seed = 1; seed <= 300; ++seed)
+        {
+            const auto woman = g.get_name(gender::f, f.c, seed).append_surname();
+            const auto man = g.get_name(gender::m, f.c, seed).append_surname();
+            const auto woman_surname = woman.parts().back();
+            const auto man_surname = man.parts().back();
+            INFO(dasmig::core::to_utf8(woman_surname) << " / " << dasmig::core::to_utf8(man_surname));
+            REQUIRE_FALSE(any_end(woman_surname, f.masculine));
+            REQUIRE_FALSE(any_end(man_surname, f.feminine));
+        }
+    }
+}
+
+TEST_CASE("cultures without gendered surnames share one surname list", "[ng][surname][gender]")
+{
+    dasmig::ng g;
+    g.load(std::filesystem::path{resource_path()});
+    using dasmig::culture;
+    using dasmig::gender;
+    // Japanese has no male.sur.names / female.sur.names: a surname of a given seed
+    // is the same whatever the forename's gender.
+    for (std::uint64_t seed = 1; seed <= 50; ++seed)
+    {
+        const auto woman = g.get_name(gender::f, culture::japanese, seed).append_surname();
+        const auto man = g.get_name(gender::m, culture::japanese, seed).append_surname();
+        REQUIRE(woman.parts().back() == man.parts().back());
+    }
+    REQUIRE_THROWS_AS(g.surname_layers(culture::japanese, gender::f), std::out_of_range);
+    REQUIRE_NOTHROW(g.surname_layers(culture::japanese, gender::any));
+    REQUIRE_NOTHROW(g.surname_layers(culture::czech, gender::f));
+}
+
+TEST_CASE("gendered surname layers load and fall back per gender", "[ng][surname][gender]")
+{
+    dasmig::ng g;
+    using dasmig::culture;
+    using dasmig::gender;
+    g.extend_from_string("cz\nmale\nJan\n", "m.names");
+    g.extend_from_string("cz\nfemale\nEva\n", "w.names");
+    g.extend_from_string("cz\nany\nSvoboda\n", "s.names");
+    // Only the shared list: both genders draw from it.
+    REQUIRE(g.get_name(gender::f, culture::czech, 1).append_surname().parts().back() == L"Svoboda");
+    // A female list: women draw from it, men still use the shared one.
+    g.extend_from_string("cz\nfemale-surname\nSvobodov\xC3\xA1\n", "f.names");
+    for (std::uint64_t seed = 1; seed <= 20; ++seed)
+    {
+        REQUIRE(g.get_name(gender::f, culture::czech, seed).append_surname().parts().back() ==
+                L"Svobodová");
+        REQUIRE(g.get_name(gender::m, culture::czech, seed).append_surname().parts().back() == L"Svoboda");
+    }
+    REQUIRE(g.surname_layers(culture::czech, gender::f).size() == 1);
+}
+
 TEST_CASE("extend adds, replaces and removes names", "[extend]")
 {
     dasmig::ng g;
@@ -1187,7 +1276,8 @@ TEST_CASE("bad layers are rejected and change nothing", "[extend][errors]")
         REQUIRE(g.data_hash() == hash);
     };
     rejected("xx\nmale\nA\n", "x.names:1: unknown country code 'xx'");
-    rejected("br\nboth\nA\n", "x.names:2: expected male, female or any, got 'both'");
+    rejected("br\nboth\nA\n",
+             "x.names:2: expected male, female, any, male-surname or female-surname, got 'both'");
     rejected("br\n", "x.names:2: expected a country code and a gender line");
     rejected("br\nmale\nA\t0\n", "x.names:3: column 'weight': must be positive");
     rejected("br\nmale\nA\theavy\n", "x.names:3: column 'weight': expected a number, got 'heavy'");

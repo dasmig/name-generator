@@ -525,8 +525,10 @@ class ng
     }
 
     /// @brief Add a name layer from text in the `.names` format.
-    /// @param text The country code, the gender (`male`, `female` or `any`
-    ///        for surnames), then one name per line with an optional weight.
+    /// @param text The country code, the list (`male`, `female` or `any`
+    ///        for surnames; `male-surname` or `female-surname` for the
+    ///        surnames of one gender), then one name per line with an
+    ///        optional weight.
     /// @param source Name used in errors.
     /// @param mode How the layer combines with the names loaded before.
     /// @return What the layer did.
@@ -552,6 +554,21 @@ class ng
     [[nodiscard]] const std::vector<core::layer_info>& layers(culture c, gender g) const
     {
         return _tables.at(list_of_(g)).at(c).layers();
+    }
+
+    /// @brief The layers in effect for the surnames of one gender.
+    /// @param c Culture.
+    /// @param g gender::m or gender::f; gender::any is the surname list
+    ///        shared by both.
+    /// @return The layer records.
+    /// @throws std::out_of_range If that list was never loaded (a culture
+    ///         has one only when its surnames change with gender).
+    [[nodiscard]] const std::vector<core::layer_info>& surname_layers(culture c, gender g) const
+    {
+        const auto list = g == gender::m   ? male_surname_list
+                          : g == gender::f ? female_surname_list
+                                           : surname_list;
+        return _tables.at(list).at(c).layers();
     }
 
     /// @brief Hash of the loaded names, recorded in each result's
@@ -611,11 +628,16 @@ class ng
     static_assert(culture_codes_.size() == static_cast<std::size_t>(culture::any));
     static_assert(culture_names_.size() == static_cast<std::size_t>(culture::any));
 
-    // The three kinds of name list, as indices into _tables.
+    // The kinds of name list, as indices into _tables. The gendered surname
+    // lists exist only for cultures whose surnames change with gender; the
+    // others fall back to surname_list.
     using list_kind = std::size_t;
     static constexpr list_kind male_list = 0;
     static constexpr list_kind female_list = 1;
     static constexpr list_kind surname_list = 2;
+    static constexpr list_kind male_surname_list = 3;
+    static constexpr list_kind female_surname_list = 4;
+    static constexpr std::size_t list_count = 5;
 
     // Names of one list, ready for drawing.
     struct name_pool
@@ -634,10 +656,12 @@ class ng
     };
 
     // Layered data per list kind and culture, and the pools built from it.
-    std::array<std::map<culture, core::layered_table>, 3> _tables;
+    std::array<std::map<culture, core::layered_table>, list_count> _tables;
     std::map<culture, name_pool> _m_pool;
     std::map<culture, name_pool> _f_pool;
     std::map<culture, name_pool> _sur_pool;
+    std::map<culture, name_pool> _m_sur_pool;
+    std::map<culture, name_pool> _f_sur_pool;
 
     // Per-instance random engine for seed drawing.
     core::rng _engine{core::rng::from_entropy()};
@@ -675,6 +699,8 @@ class ng
     {
         if (list == male_list) return _m_pool;
         if (list == female_list) return _f_pool;
+        if (list == male_surname_list) return _m_sur_pool;
+        if (list == female_surname_list) return _f_sur_pool;
         return _sur_pool;
     }
 
@@ -733,10 +759,19 @@ class ng
         {
             list = female_list;
         }
+        else if (gender_text == "male-surname")
+        {
+            list = male_surname_list;
+        }
+        else if (gender_text == "female-surname")
+        {
+            list = female_surname_list;
+        }
         else if (gender_text != "any")
         {
             throw core::tsv_error{source, 2, "",
-                                  "expected male, female or any, got '" + gender_text + "'"};
+                                  "expected male, female, any, male-surname or female-surname, got '" +
+                                      gender_text + "'"};
         }
 
         text.insert(after_code, "#");
@@ -777,8 +812,8 @@ class ng
         auto next = reset ? decltype(_tables){} : _tables;
         // On reset each list's first file replaces; later files for the same
         // list extend it.
-        std::array<std::map<culture, bool>, 3> started;
-        std::array<std::map<culture, bool>, 3> touched;
+        std::array<std::map<culture, bool>, list_count> started;
+        std::array<std::map<culture, bool>, list_count> touched;
         for (auto& file : files)
         {
             auto& tables = next.at(file.list);
@@ -796,7 +831,7 @@ class ng
         }
 
         // Rebuild the pools of the lists that changed.
-        std::array<std::map<culture, name_pool>, 3> pools;
+        std::array<std::map<culture, name_pool>, list_count> pools;
         for (std::size_t list = 0; list < pools.size(); ++list)
         {
             if (!reset) pools.at(list) = pools_(list);
@@ -822,6 +857,8 @@ class ng
         _m_pool = std::move(pools.at(male_list));
         _f_pool = std::move(pools.at(female_list));
         _sur_pool = std::move(pools.at(surname_list));
+        _m_sur_pool = std::move(pools.at(male_surname_list));
+        _f_sur_pool = std::move(pools.at(female_surname_list));
     }
 
     // -- Generation ---------------------------------------------------------
@@ -887,13 +924,18 @@ class ng
         return {pick(db, resolved_c, resolved_g, rn), resolved_g, resolved_c};
     }
 
-    // One surname: culture and name from their own streams.
-    [[nodiscard]] std::pair<std::wstring, culture> draw_surname_(culture c, const core::rng& r) const
+    // One surname: culture and name from their own streams. A culture with
+    // a surname list for the gender draws from it, the others from the list
+    // shared by both.
+    [[nodiscard]] std::pair<std::wstring, culture> draw_surname_(gender g, culture c,
+                                                                 const core::rng& r) const
     {
         auto rc = r.split("culture");
         const culture resolved_c = resolve_culture(c, _sur_pool, rc);
         auto rn = r.split("name");
-        return {pick(_sur_pool, resolved_c, gender::any, rn), resolved_c};
+        const auto& gendered = g == gender::f ? _f_sur_pool : _m_sur_pool;
+        const auto& db = gendered.contains(resolved_c) ? gendered : _sur_pool;
+        return {pick(db, resolved_c, gender::any, rn), resolved_c};
     }
 
     // Core generation logic.
@@ -910,7 +952,7 @@ class ng
             // A surname still has a gender: the one append_name() uses.
             auto rg = r.split("gender");
             const gender g = resolve_gender(requested_gender, rg);
-            auto [text, c] = draw_surname_(requested_culture, r);
+            auto [text, c] = draw_surname_(g, requested_culture, r);
             return {std::move(text), g, c, this};
         }();
         result._signature = {.seed = call_seed, .data = data_hash()};
@@ -928,7 +970,7 @@ class ng
     void append_surname_impl(name& n, culture c) const
     {
         const auto r = core::rng{n.seed()}.split("part").split(n._parts.size());
-        n.append_part(draw_surname_(c, r).first);
+        n.append_part(draw_surname_(n._gender, c, r).first);
     }
 
     friend class name;

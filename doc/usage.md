@@ -294,7 +294,7 @@ dasmig::ng dst = std::move(src);
 
 ## Extending Data
 
-The shipped lists are a base layer. Files in the same `.names` format are loaded on top of them to add names, change their weights or remove them, without editing the shipped files. Each file says which list it changes on its first two lines (country code, then `male`, `female` or `any` for surnames); within a list, names are the keys.
+The shipped lists are a base layer. Files in the same `.names` format are loaded on top of them to add names, change their weights or remove them, without editing the shipped files. Each file says which list it changes on its first two lines (country code, then `male`, `female` or `any` for surnames, or `male-surname` or `female-surname` for the cultures with gendered surnames, see [data.md](data.md#gendered-surnames)); within a list, names are the keys.
 
 ```cpp
 auto& gen = dasmig::ng::instance();
