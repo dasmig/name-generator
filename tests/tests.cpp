@@ -77,32 +77,30 @@ static dasmig::ng& gen()
 TEST_CASE("name - implicit conversion to wstring", "[name]")
 {
     auto& g = gen();
-    g.seed(1);
-    auto n = g.get_name(dasmig::gender::m, dasmig::culture::american);
+    auto n = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american});
     std::wstring s = n;
     REQUIRE_FALSE(s.empty());
     // Verify that the string matches what parts() reports.
     REQUIRE(s == n.parts().front());
-    g.unseed();
 }
 
 TEST_CASE("name - parts() returns at least one entry", "[name]")
 {
-    auto n = gen().get_name();
+    auto n = gen().get_name({});
     REQUIRE(n.parts().size() >= 1);
     REQUIRE(n.parts().front() == static_cast<std::wstring>(n));
 }
 
 TEST_CASE("name - seed() returns a non-zero value", "[name]")
 {
-    auto n = gen().get_name();
+    auto n = gen().get_name({});
     // Seed is drawn from the 64-bit engine, extremely unlikely to be 0.
     REQUIRE(n.seed() != 0);
 }
 
 TEST_CASE("name - implicit conversion to vector", "[name]")
 {
-    auto n = gen().get_name();
+    auto n = gen().get_name({});
     n.append_surname();
     std::vector<std::wstring> parts = n;
     REQUIRE(parts.size() == 2);
@@ -114,7 +112,7 @@ TEST_CASE("name - streaming operator", "[name]")
 {
     auto& g = gen();
     constexpr std::uint64_t seed = 777;
-    auto n = g.get_name(dasmig::gender::m, dasmig::culture::american, seed);
+    auto n = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american}, seed);
     std::wostringstream oss;
     oss << n;
     REQUIRE(oss.str() == static_cast<std::wstring>(n));
@@ -122,7 +120,7 @@ TEST_CASE("name - streaming operator", "[name]")
 
 TEST_CASE("name - full string equals space-joined parts", "[name]")
 {
-    auto n = gen().get_name();
+    auto n = gen().get_name({});
     n.append_name().append_surname();
     std::wstring expected;
     for (const auto& part : n.parts())
@@ -144,7 +142,7 @@ TEST_CASE("get_name produces names from loaded resources", "[ng]")
 
     for (int i = 0; i < 50; ++i)
     {
-        auto n = g.get_name();
+        auto n = g.get_name({});
         std::wstring s = n;
         REQUIRE_FALSE(s.empty());
 
@@ -180,7 +178,7 @@ TEST_CASE("get_surname produces surnames from loaded resources", "[ng]")
 
     for (int i = 0; i < 50; ++i)
     {
-        auto n = g.get_surname();
+        auto n = g.get_surname({});
         std::wstring s = n;
         REQUIRE_FALSE(s.empty());
 
@@ -210,7 +208,7 @@ TEST_CASE("get_name with specific gender picks from correct database", "[ng]")
     // Male names — verify against male database for a fixed culture.
     for (int i = 0; i < 20; ++i)
     {
-        auto n = g.get_name(dasmig::gender::m, dasmig::culture::american);
+        auto n = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american});
         std::wstring s = n;
         const auto& american_m = m_db.at(dasmig::culture::american).names;
         REQUIRE(std::find(american_m.begin(), american_m.end(), s) !=
@@ -220,7 +218,7 @@ TEST_CASE("get_name with specific gender picks from correct database", "[ng]")
     // Female names — verify against female database for a fixed culture.
     for (int i = 0; i < 20; ++i)
     {
-        auto n = g.get_name(dasmig::gender::f, dasmig::culture::american);
+        auto n = g.get_name({.gender = dasmig::gender::f, .culture = dasmig::culture::american});
         std::wstring s = n;
         const auto& american_f = f_db.at(dasmig::culture::american).names;
         REQUIRE(std::find(american_f.begin(), american_f.end(), s) !=
@@ -236,7 +234,7 @@ TEST_CASE("get_name with specific culture picks from that culture", "[ng]")
 
     for (int i = 0; i < 20; ++i)
     {
-        auto n = g.get_name(dasmig::gender::any, dasmig::culture::brazilian);
+        auto n = g.get_name({.gender = dasmig::gender::any, .culture = dasmig::culture::brazilian});
         std::wstring s = n;
         const auto& br_m = m_db.at(dasmig::culture::brazilian).names;
         const auto& br_f = f_db.at(dasmig::culture::brazilian).names;
@@ -253,7 +251,7 @@ TEST_CASE("get_surname with specific culture picks from that culture", "[ng]")
 
     for (int i = 0; i < 20; ++i)
     {
-        auto n = g.get_surname(dasmig::culture::german);
+        auto n = g.get_surname({.culture = dasmig::culture::german});
         std::wstring s = n;
         const auto& de_sur = s_db.at(dasmig::culture::german).names;
         REQUIRE(std::find(de_sur.begin(), de_sur.end(), s) != de_sur.end());
@@ -267,7 +265,7 @@ TEST_CASE("get_name with gender and culture", "[ng]")
 
     for (int i = 0; i < 20; ++i)
     {
-        auto n = g.get_name(dasmig::gender::f, dasmig::culture::french);
+        auto n = g.get_name({.gender = dasmig::gender::f, .culture = dasmig::culture::french});
         std::wstring s = n;
         const auto& fr_f = f_db.at(dasmig::culture::french).names;
         REQUIRE(std::find(fr_f.begin(), fr_f.end(), s) != fr_f.end());
@@ -287,17 +285,17 @@ TEST_CASE("every concrete culture produces names", "[ng]")
         INFO("culture index: " << i);
         if (m_db.contains(c) && !m_db.at(c).names.empty())
         {
-            auto male = g.get_name(dasmig::gender::m, c);
+            auto male = g.get_name({.gender = dasmig::gender::m, .culture = c});
             REQUIRE_FALSE(static_cast<std::wstring>(male).empty());
         }
         if (f_db.contains(c) && !f_db.at(c).names.empty())
         {
-            auto female = g.get_name(dasmig::gender::f, c);
+            auto female = g.get_name({.gender = dasmig::gender::f, .culture = c});
             REQUIRE_FALSE(static_cast<std::wstring>(female).empty());
         }
         if (s_db.contains(c) && !s_db.at(c).names.empty())
         {
-            auto sur = g.get_surname(c);
+            auto sur = g.get_surname({.culture = c});
             REQUIRE_FALSE(static_cast<std::wstring>(sur).empty());
         }
     }
@@ -308,7 +306,7 @@ TEST_CASE("every concrete culture produces names", "[ng]")
 // ===========================================================================
 TEST_CASE("append_name adds a second part", "[ng][chaining]")
 {
-    auto n = gen().get_name();
+    auto n = gen().get_name({});
     auto& result = n.append_name();
     REQUIRE(&result == &n); // returns *this
     REQUIRE(n.parts().size() == 2);
@@ -319,21 +317,21 @@ TEST_CASE("append_name adds a second part", "[ng][chaining]")
 
 TEST_CASE("append_surname adds a surname part", "[ng][chaining]")
 {
-    auto n = gen().get_name();
+    auto n = gen().get_name({});
     n.append_surname();
     REQUIRE(n.parts().size() == 2);
 }
 
 TEST_CASE("append_name with specific culture", "[ng][chaining]")
 {
-    auto n = gen().get_name(dasmig::gender::m, dasmig::culture::american);
+    auto n = gen().get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american});
     n.append_name(dasmig::culture::brazilian);
     REQUIRE(n.parts().size() == 2);
 }
 
 TEST_CASE("append_surname with specific culture", "[ng][chaining]")
 {
-    auto n = gen().get_name();
+    auto n = gen().get_name({});
     n.append_surname(dasmig::culture::german);
     REQUIRE(n.parts().size() == 2);
 
@@ -351,7 +349,7 @@ TEST_CASE("append_name with specific culture picks from that culture",
     auto& m_db = ng_test_access::m_names(g);
     auto& f_db = ng_test_access::f_names(g);
 
-    auto n = g.get_name(dasmig::gender::m, dasmig::culture::american);
+    auto n = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american});
     n.append_name(dasmig::culture::brazilian);
     REQUIRE(n.parts().size() == 2);
 
@@ -367,7 +365,7 @@ TEST_CASE("append_name with specific culture picks from that culture",
 
 TEST_CASE("triple chaining works", "[ng][chaining]")
 {
-    auto n = gen().get_name();
+    auto n = gen().get_name({});
     n.append_name().append_surname();
     REQUIRE(n.parts().size() == 3);
 }
@@ -553,11 +551,26 @@ TEST_CASE("seeded get_name is deterministic", "[ng][seeding]")
     auto& g = gen();
     constexpr std::uint64_t seed = 42;
 
-    auto a = g.get_name(dasmig::gender::m, dasmig::culture::american, seed);
-    auto b = g.get_name(dasmig::gender::m, dasmig::culture::american, seed);
+    auto a = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american}, seed);
+    auto b = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american}, seed);
     REQUIRE(static_cast<std::wstring>(a) == static_cast<std::wstring>(b));
     REQUIRE(a.seed() == seed);
     REQUIRE(b.seed() == seed);
+}
+
+TEST_CASE("name_request defaults to any gender and culture", "[ng][request]")
+{
+    constexpr dasmig::name_request r{};
+    REQUIRE(r.gender == dasmig::gender::any);
+    REQUIRE(r.culture == dasmig::culture::any);
+
+    auto& g = gen();
+    const auto a = g.get_name(dasmig::name_request{}, 5);
+    const auto b = g.get_name({}, 5);
+    REQUIRE(a.to_json() == b.to_json());
+
+    const auto s = g.get_surname({.gender = dasmig::gender::f, .culture = dasmig::culture::american}, 5);
+    REQUIRE(s.parts().size() == 1);
 }
 
 TEST_CASE("seeded get_surname is deterministic", "[ng][seeding]")
@@ -565,8 +578,8 @@ TEST_CASE("seeded get_surname is deterministic", "[ng][seeding]")
     auto& g = gen();
     constexpr std::uint64_t seed = 99;
 
-    auto a = g.get_surname(dasmig::culture::brazilian, seed);
-    auto b = g.get_surname(dasmig::culture::brazilian, seed);
+    auto a = g.get_surname({.culture = dasmig::culture::brazilian}, seed);
+    auto b = g.get_surname({.culture = dasmig::culture::brazilian}, seed);
     REQUIRE(static_cast<std::wstring>(a) == static_cast<std::wstring>(b));
     REQUIRE(a.seed() == seed);
     REQUIRE(b.seed() == seed);
@@ -578,7 +591,7 @@ TEST_CASE("seeded name exists in the correct database", "[ng][seeding]")
     auto& m_db = ng_test_access::m_names(g);
     constexpr std::uint64_t seed = 555;
 
-    auto n = g.get_name(dasmig::gender::m, dasmig::culture::german, seed);
+    auto n = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::german}, seed);
     std::wstring s = n;
     const auto& de_m = m_db.at(dasmig::culture::german).names;
     REQUIRE(std::find(de_m.begin(), de_m.end(), s) != de_m.end());
@@ -590,7 +603,7 @@ TEST_CASE("seeded surname exists in the correct database", "[ng][seeding]")
     auto& s_db = ng_test_access::surnames(g);
     constexpr std::uint64_t seed = 666;
 
-    auto n = g.get_surname(dasmig::culture::french, seed);
+    auto n = g.get_surname({.culture = dasmig::culture::french}, seed);
     std::wstring s = n;
     const auto& fr_sur = s_db.at(dasmig::culture::french).names;
     REQUIRE(std::find(fr_sur.begin(), fr_sur.end(), s) != fr_sur.end());
@@ -599,8 +612,8 @@ TEST_CASE("seeded surname exists in the correct database", "[ng][seeding]")
 TEST_CASE("name::seed() replay produces identical name", "[ng][seeding]")
 {
     auto& g = gen();
-    auto original = g.get_name(dasmig::gender::m, dasmig::culture::american);
-    auto replay = g.get_name(dasmig::gender::m, dasmig::culture::american,
+    auto original = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american});
+    auto replay = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american},
                               original.seed());
     REQUIRE(static_cast<std::wstring>(original) ==
             static_cast<std::wstring>(replay));
@@ -609,8 +622,8 @@ TEST_CASE("name::seed() replay produces identical name", "[ng][seeding]")
 TEST_CASE("surname seed() replay produces identical surname", "[ng][seeding]")
 {
     auto& g = gen();
-    auto original = g.get_surname(dasmig::culture::polish);
-    auto replay = g.get_surname(dasmig::culture::polish, original.seed());
+    auto original = g.get_surname({.culture = dasmig::culture::polish});
+    auto replay = g.get_surname({.culture = dasmig::culture::polish}, original.seed());
     REQUIRE(static_cast<std::wstring>(original) ==
             static_cast<std::wstring>(replay));
 }
@@ -621,12 +634,12 @@ TEST_CASE("different seeds produce different results", "[ng][seeding]")
 
     bool found_different = false;
     auto baseline = static_cast<std::wstring>(
-        g.get_name(dasmig::gender::m, dasmig::culture::american, 1));
+        g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american}, 1));
 
     for (std::uint64_t s = 2; s <= 100; ++s)
     {
         auto other = static_cast<std::wstring>(
-            g.get_name(dasmig::gender::m, dasmig::culture::american, s));
+            g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american}, s));
         if (other != baseline)
         {
             found_different = true;
@@ -641,35 +654,18 @@ TEST_CASE("name::seed() returns the seed used", "[ng][seeding]")
     auto& g = gen();
     constexpr std::uint64_t seed = 12345;
 
-    auto n = g.get_name(dasmig::gender::any, dasmig::culture::any, seed);
+    auto n = g.get_name({.gender = dasmig::gender::any, .culture = dasmig::culture::any}, seed);
     REQUIRE(n.seed() == seed);
 }
 
-TEST_CASE("seed() / unseed() produce deterministic sequences", "[ng][seeding]")
+TEST_CASE("unseeded requests draw independent seeds", "[ng][seeding]")
 {
     auto& g = gen();
-
-    g.seed(200);
-    auto a1 = static_cast<std::wstring>(g.get_name());
-    auto a2 = static_cast<std::wstring>(g.get_name());
-
-    g.seed(200);
-    auto b1 = static_cast<std::wstring>(g.get_name());
-    auto b2 = static_cast<std::wstring>(g.get_name());
-
-    REQUIRE(a1 == b1);
-    REQUIRE(a2 == b2);
-
-    g.unseed();
+    const auto a = g.get_name({});
+    const auto b = g.get_name({});
+    REQUIRE(a.seed() != b.seed());
+    REQUIRE(g.get_name({}, a.seed()).to_json() == a.to_json());
 }
-
-TEST_CASE("seed() chaining works", "[ng][seeding]")
-{
-    auto& g = gen();
-    REQUIRE(&g.seed(100) == &g);
-    REQUIRE(&g.unseed() == &g);
-}
-
 // ===========================================================================
 // multi-instance
 // ===========================================================================
@@ -681,7 +677,7 @@ TEST_CASE("independent instance loads and generates", "[ng][multi-instance]")
     g.load(resource_path());
     REQUIRE(g.has_resources());
 
-    auto n = g.get_name();
+    auto n = g.get_name({});
     REQUIRE_FALSE(static_cast<std::wstring>(n).empty());
 }
 
@@ -696,7 +692,7 @@ TEST_CASE("independent instances have separate resources",
     REQUIRE_FALSE(b.has_resources());
 }
 
-TEST_CASE("independent instances have separate seeding",
+TEST_CASE("independent instances generate the same name for a seed",
           "[ng][multi-instance]")
 {
     dasmig::ng a;
@@ -704,40 +700,24 @@ TEST_CASE("independent instances have separate seeding",
     a.load(resource_path());
     b.load(resource_path());
 
-    a.seed(111);
-    b.seed(222);
-
-    auto na = static_cast<std::wstring>(a.get_name());
-    auto nb = static_cast<std::wstring>(b.get_name());
-
-    a.seed(111);
-    b.seed(222);
-
-    auto na2 = static_cast<std::wstring>(a.get_name());
-    auto nb2 = static_cast<std::wstring>(b.get_name());
-
-    REQUIRE(na == na2);
-    REQUIRE(nb == nb2);
+    REQUIRE(a.get_name({}, 111).to_json() == b.get_name({}, 111).to_json());
 }
 
 TEST_CASE("moved instance retains state", "[ng][multi-instance]")
 {
     dasmig::ng src;
     src.load(resource_path());
-    src.seed(42);
-    auto expected = static_cast<std::wstring>(src.get_name());
+    auto expected = static_cast<std::wstring>(src.get_name({}, 42));
 
-    src.seed(42);
     dasmig::ng dst = std::move(src);
-    auto actual = static_cast<std::wstring>(dst.get_name());
+    auto actual = static_cast<std::wstring>(dst.get_name({}, 42));
 
     REQUIRE(expected == actual);
 }
-
 TEST_CASE("singleton still works", "[ng][multi-instance]")
 {
     auto& g = dasmig::ng::instance();
-    auto n = g.get_name();
+    auto n = g.get_name({});
     REQUIRE_FALSE(static_cast<std::wstring>(n).empty());
 }
 
@@ -747,8 +727,7 @@ TEST_CASE("singleton still works", "[ng][multi-instance]")
 TEST_CASE("get_name on empty instance throws", "[ng][error]")
 {
     dasmig::ng empty;
-    REQUIRE_THROWS_AS(empty.get_name(dasmig::gender::m,
-                                      dasmig::culture::american),
+    REQUIRE_THROWS_AS(empty.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american}),
                       std::invalid_argument);
 }
 
@@ -758,7 +737,7 @@ TEST_CASE("get_name error message includes culture and gender", "[ng][error]")
     try
     {
         static_cast<void>(
-            empty.get_name(dasmig::gender::m, dasmig::culture::american));
+            empty.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american}));
         FAIL("expected std::invalid_argument");
     }
     catch (const std::invalid_argument& ex)
@@ -772,7 +751,7 @@ TEST_CASE("get_name error message includes culture and gender", "[ng][error]")
 TEST_CASE("get_surname on empty instance throws", "[ng][error]")
 {
     dasmig::ng empty;
-    REQUIRE_THROWS_AS(empty.get_surname(dasmig::culture::american),
+    REQUIRE_THROWS_AS(empty.get_surname({.culture = dasmig::culture::american}),
                       std::invalid_argument);
 }
 
@@ -782,7 +761,7 @@ TEST_CASE("get_surname error message includes culture", "[ng][error]")
     try
     {
         static_cast<void>(
-            empty.get_surname(dasmig::culture::american));
+            empty.get_surname({.culture = dasmig::culture::american}));
         FAIL("expected std::invalid_argument");
     }
     catch (const std::invalid_argument& ex)
@@ -820,7 +799,7 @@ TEST_CASE("names are decoded from UTF-8", "[ng][utf8]")
     {
         REQUIRE(pool.names[2].size() == 2);
     }
-    REQUIRE(dasmig::core::to_utf8(std::wstring{g.get_surname(dasmig::culture::german, 1)}).size() >= 2);
+    REQUIRE(dasmig::core::to_utf8(std::wstring{g.get_surname({.culture = dasmig::culture::german}, 1)}).size() >= 2);
 }
 
 TEST_CASE("invalid UTF-8 is rejected", "[ng][utf8][errors]")
@@ -846,7 +825,7 @@ TEST_CASE("random culture covers multiple cultures", "[ng][random]")
 
     for (int i = 0; i < 1000; ++i)
     {
-        auto n = g.get_name();
+        auto n = g.get_name({});
         std::wstring s = n;
         // Identify which culture this name belongs to.
         for (const auto& [c, pool] : m_db)
@@ -894,7 +873,7 @@ TEST_CASE("weighted selection biases toward higher-weight names",
     constexpr int trials = 500;
     for (int i = 0; i < trials; ++i)
     {
-        auto n = g.get_name(dasmig::gender::m, dasmig::culture::american);
+        auto n = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american});
         if (static_cast<std::wstring>(n) == L"Heavy") ++heavy_count;
     }
 
@@ -960,7 +939,7 @@ TEST_CASE("get_name any culture on empty throws", "[ng][error]")
 {
     dasmig::ng empty;
     REQUIRE_THROWS_AS(
-        empty.get_name(dasmig::gender::m, dasmig::culture::any),
+        empty.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::any}),
         std::invalid_argument);
 }
 
@@ -968,7 +947,7 @@ TEST_CASE("get_surname any culture on empty throws", "[ng][error]")
 {
     dasmig::ng empty;
     REQUIRE_THROWS_AS(
-        empty.get_surname(dasmig::culture::any),
+        empty.get_surname({.culture = dasmig::culture::any}),
         std::invalid_argument);
 }
 
@@ -981,7 +960,7 @@ TEST_CASE("error message for unknown culture is descriptive", "[ng][error]")
     try
     {
         static_cast<void>(
-            empty.get_name(dasmig::gender::f, dasmig::culture::fijian));
+            empty.get_name({.gender = dasmig::gender::f, .culture = dasmig::culture::fijian}));
         FAIL("expected std::invalid_argument");
     }
     catch (const std::invalid_argument& ex)
@@ -1002,7 +981,7 @@ TEST_CASE("load(dataset::lite) loads the lite dataset", "[ng][dataset]")
     if (ok)
     {
         REQUIRE(g.has_resources());
-        auto n = g.get_name(dasmig::gender::m, dasmig::culture::american);
+        auto n = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american});
         REQUIRE_FALSE(static_cast<std::wstring>(n).empty());
     }
     // If the lite directory doesn't exist in CI, skip gracefully.
@@ -1057,13 +1036,13 @@ TEST_CASE("known answers for fixed seeds", "[kat]")
     auto& g = lite();
     REQUIRE(g.data_hash() == 0x07bced2348a8cc4bULL);
 
-    REQUIRE(g.get_name(gender::any, culture::any, 1).to_json() ==
+    REQUIRE(g.get_name({.gender = gender::any, .culture = culture::any}, 1).to_json() ==
             R"({"name":"Lenroy","parts":["Lenroy"],"gender":"male","culture":"jamaican","signature":{"seed":"0000000000000001","data":"07bced2348a8cc4b"}})");
-    REQUIRE(g.get_name(gender::m, culture::brazilian, 2).to_json() ==
+    REQUIRE(g.get_name({.gender = gender::m, .culture = culture::brazilian}, 2).to_json() ==
             R"({"name":"Luiz","parts":["Luiz"],"gender":"male","culture":"brazilian","signature":{"seed":"0000000000000002","data":"07bced2348a8cc4b"}})");
-    REQUIRE(g.get_surname(culture::japanese, 3).to_json() ==
+    REQUIRE(g.get_surname({.culture = culture::japanese}, 3).to_json() ==
             R"({"name":"Takahashi","parts":["Takahashi"],"gender":"male","culture":"japanese","signature":{"seed":"0000000000000003","data":"07bced2348a8cc4b"}})");
-    auto n = g.get_name(gender::f, culture::german, 4);
+    auto n = g.get_name({.gender = gender::f, .culture = culture::german}, 4);
     n.append_name().append_surname().append_surname(culture::polish);
     REQUIRE(n.to_json() ==
             "{\"name\":\"Elfriede Mandy Kr\xC3\xA4mer Baran\",\"parts\":[\"Elfriede\",\"Mandy\",\"Kr\xC3\xA4mer\",\"Baran\"],"
@@ -1072,7 +1051,7 @@ TEST_CASE("known answers for fixed seeds", "[kat]")
     std::uint64_t h = 0xcbf29ce484222325ULL;
     for (std::uint64_t s = 0; s < 10000; ++s)
     {
-        auto x = s % 3 == 0 ? g.get_surname(culture::any, s) : g.get_name(gender::any, culture::any, s);
+        auto x = s % 3 == 0 ? g.get_surname({.culture = culture::any}, s) : g.get_name({.gender = gender::any, .culture = culture::any}, s);
         if (s % 2 == 0) x.append_surname();
         for (const char c : x.to_json())
         {
@@ -1090,15 +1069,15 @@ TEST_CASE("known answers for fixed seeds", "[kat]")
 TEST_CASE("appended parts replay from the seed", "[seeding][chaining]")
 {
     auto& g = lite();
-    auto a = g.get_name(dasmig::gender::m, dasmig::culture::italian);
+    auto a = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::italian});
     a.append_name().append_surname();
-    auto b = g.get_name(dasmig::gender::m, dasmig::culture::italian, a.seed());
+    auto b = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::italian}, a.seed());
     b.append_name().append_surname();
     REQUIRE(a.parts() == b.parts());
     REQUIRE(a.to_json() == b.to_json());
 
     // Each position draws its own part.
-    auto c = g.get_name(dasmig::gender::m, dasmig::culture::italian, a.seed());
+    auto c = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::italian}, a.seed());
     c.append_surname().append_name();
     REQUIRE(c.parts()[0] == a.parts()[0]);
 }
@@ -1108,11 +1087,11 @@ TEST_CASE("forcing the gender does not change the culture draw", "[seeding]")
     auto& g = lite();
     for (std::uint64_t s = 0; s < 200; ++s)
     {
-        const auto any = g.get_name(dasmig::gender::any, dasmig::culture::any, s);
-        const auto forced = g.get_name(any.to_json().find("\"female\"") != std::string::npos
-                                           ? dasmig::gender::f
-                                           : dasmig::gender::m,
-                                       dasmig::culture::any, s);
+        const auto any = g.get_name({.gender = dasmig::gender::any, .culture = dasmig::culture::any}, s);
+        const auto forced =         g.get_name({.gender = any.to_json().find("\"female\"") != std::string::npos
+                                                          ? dasmig::gender::f
+                                                          : dasmig::gender::m},
+                                               s);
         REQUIRE(any.to_json() == forced.to_json());
     }
 }
@@ -1120,7 +1099,7 @@ TEST_CASE("forcing the gender does not change the culture draw", "[seeding]")
 TEST_CASE("to_json and signature", "[json]")
 {
     auto& g = lite();
-    const auto n = g.get_surname(dasmig::culture::french, 9);
+    const auto n = g.get_surname({.culture = dasmig::culture::french}, 9);
     REQUIRE(n.seed() == 9);
     REQUIRE(n.signature().data == g.data_hash());
     REQUIRE(n.to_json().find(R"("culture":"french")") != std::string::npos);
@@ -1171,8 +1150,8 @@ TEST_CASE("surnames follow the gender in cultures that have gendered forms", "[n
     {
         for (std::uint64_t seed = 1; seed <= 300; ++seed)
         {
-            const auto woman = g.get_name(gender::f, f.c, seed).append_surname();
-            const auto man = g.get_name(gender::m, f.c, seed).append_surname();
+            const auto woman = g.get_name({.gender = gender::f, .culture = f.c}, seed).append_surname();
+            const auto man = g.get_name({.gender = gender::m, .culture = f.c}, seed).append_surname();
             const auto woman_surname = woman.parts().back();
             const auto man_surname = man.parts().back();
             INFO(dasmig::core::to_utf8(woman_surname) << " / " << dasmig::core::to_utf8(man_surname));
@@ -1192,8 +1171,8 @@ TEST_CASE("cultures without gendered surnames share one surname list", "[ng][sur
     // is the same whatever the forename's gender.
     for (std::uint64_t seed = 1; seed <= 50; ++seed)
     {
-        const auto woman = g.get_name(gender::f, culture::japanese, seed).append_surname();
-        const auto man = g.get_name(gender::m, culture::japanese, seed).append_surname();
+        const auto woman = g.get_name({.gender = gender::f, .culture = culture::japanese}, seed).append_surname();
+        const auto man = g.get_name({.gender = gender::m, .culture = culture::japanese}, seed).append_surname();
         REQUIRE(woman.parts().back() == man.parts().back());
     }
     REQUIRE_THROWS_AS(g.surname_layers(culture::japanese, gender::f), std::out_of_range);
@@ -1210,14 +1189,14 @@ TEST_CASE("gendered surname layers load and fall back per gender", "[ng][surname
     g.extend_from_string("cz\nfemale\nEva\n", "w.names");
     g.extend_from_string("cz\nany\nSvoboda\n", "s.names");
     // Only the shared list: both genders draw from it.
-    REQUIRE(g.get_name(gender::f, culture::czech, 1).append_surname().parts().back() == L"Svoboda");
+    REQUIRE(g.get_name({.gender = gender::f, .culture = culture::czech}, 1).append_surname().parts().back() == L"Svoboda");
     // A female list: women draw from it, men still use the shared one.
     g.extend_from_string("cz\nfemale-surname\nSvobodov\xC3\xA1\n", "f.names");
     for (std::uint64_t seed = 1; seed <= 20; ++seed)
     {
-        REQUIRE(g.get_name(gender::f, culture::czech, seed).append_surname().parts().back() ==
+        REQUIRE(g.get_name({.gender = gender::f, .culture = culture::czech}, seed).append_surname().parts().back() ==
                 L"Svobodová");
-        REQUIRE(g.get_name(gender::m, culture::czech, seed).append_surname().parts().back() == L"Svoboda");
+        REQUIRE(g.get_name({.gender = gender::m, .culture = culture::czech}, seed).append_surname().parts().back() == L"Svoboda");
     }
     REQUIRE(g.surname_layers(culture::czech, gender::f).size() == 1);
 }
@@ -1247,7 +1226,7 @@ TEST_CASE("extend adds, replaces and removes names", "[extend]")
     REQUIRE(small.has_resources());
     small.extend_from_string("is\nany\nJonsson\t\t1\n", "b.names");
     REQUIRE_FALSE(small.has_resources());
-    REQUIRE_THROWS_AS(small.get_surname(dasmig::culture::icelandic, 1), std::invalid_argument);
+    REQUIRE_THROWS_AS(small.get_surname({.culture = dasmig::culture::icelandic}, 1), std::invalid_argument);
 
     // A new culture list; files on disk; reloading drops the layers.
     const auto dir = std::filesystem::temp_directory_path() / "ng_layer";
@@ -1313,7 +1292,7 @@ TEST_CASE("compiled-in data matches the files", "[embed]")
     dasmig::ng embedded;
     REQUIRE(embedded.load(dasmig::dataset::lite));
     REQUIRE(embedded.data_hash() == lite().data_hash());
-    REQUIRE(embedded.get_name(dasmig::gender::any, dasmig::culture::any, 1).to_json() ==
-            lite().get_name(dasmig::gender::any, dasmig::culture::any, 1).to_json());
+    REQUIRE(embedded.get_name({.gender = dasmig::gender::any, .culture = dasmig::culture::any}, 1).to_json() ==
+            lite().get_name({.gender = dasmig::gender::any, .culture = dasmig::culture::any}, 1).to_json());
 }
 #endif
