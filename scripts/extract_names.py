@@ -210,6 +210,33 @@ def filter_contaminated_surnames(sur_names, first_names_dict, last_names_dict, c
     return clean, dropped
 
 
+# Countries whose source lists hold another country's names: rows of the
+# second country's data filed under the first. Found by comparing every
+# country's top 100 names with every other's: Iran's lists hold Czech names
+# (70 of the top 100 female names: Jana, Petra, Kateřina...), the only
+# cross-language case among the cultures; the others share a language
+# (US/CA, AR/UY) or a migrant population (the Gulf states).
+CONTAMINATION = {"IR": "CZ"}
+
+
+def filter_contamination(names, raw_dict, cc):
+    """Drop names the contaminating country ranks better than this one.
+
+    A name of both cultures stays when it ranks better here (Sara in Iran).
+    """
+    other = CONTAMINATION.get(cc)
+    if not other:
+        return names, []
+    clean, dropped = [], []
+    for name in names:
+        ranks = raw_dict.get(name, {}).get("rank", {})
+        if other in ranks and (cc not in ranks or ranks[other] < ranks[cc]):
+            dropped.append(name)
+        else:
+            clean.append(name)
+    return clean, dropped
+
+
 def resolve_ranks(names, raw_dict, cc):
     """Look up each name's true per-country rank from the raw pickle dict.
 
@@ -282,6 +309,15 @@ def extract(output_dir, top_n, dry_run):
         )
         if sur_dropped:
             print(f"    {cc} dropped contaminated surnames: {', '.join(sur_dropped)}")
+
+        # Remove another country's names filed under this one.
+        for label, names, table in (("male", male_names, nd.first_names),
+                                    ("female", female_names, nd.first_names),
+                                    ("surname", surname_names, nd.last_names)):
+            names[:], dropped = filter_contamination(names, table, cc)
+            if dropped:
+                print(f"    {cc} dropped {len(dropped)} {label} names of {CONTAMINATION[cc]}: "
+                      f"{', '.join(dropped[:12])}{'...' if len(dropped) > 12 else ''}")
 
         # Resolve true per-country ranks from the raw pickle data.
         male_ranked = resolve_ranks(male_names, nd.first_names, cc)

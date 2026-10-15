@@ -12,7 +12,8 @@ The extraction script is `scripts/extract_names.py` (it needs `pip install names
 
 1. Keeps names written in Latin script only (ASCII and Latin-1 Supplement to Latin Extended-B). The dataset lists the same name in several scripts (محمد beside Mohamed); this keeps the romanised form.
 2. Removes given names that leaked into the surname list: a "surname" is dropped when, as a first name, it is more than 80% one gender and ranks at least twice as high as it does as a surname. Chinese surnames (near 50/50) and patronymic surnames (Mohamed, Ibrahim) stay.
-3. Weights each name by its country rank: `1 / sqrt(rank)`. Real name frequencies fall roughly as `1 / rank^0.5` to `1 / rank^0.7` (the US Census best fit is about 0.64), so plain Zipf (`1 / rank`) would make the top name about twice too likely.
+3. Removes another country's names filed under this one. Comparing every country's top 100 names with every other's found one such case among the cultures: Iran's lists held Czech names (70 of the top 100 female names, from Jana and Petra on, and Czech surnames such as Nováková). Iran's lists drop every name the source ranks better in Czechia than in Iran (129 male, 238 female and 157 surnames among the top 500); a name of both cultures that ranks better in Iran, such as Sara, stays. The other overlaps the comparison found are countries that share a language (the United States and Canada, Argentina and Uruguay) or a migrant population (South Asian names in the Gulf states), and are kept. The pairs are in the script's `CONTAMINATION`.
+4. Weights each name by its country rank: `1 / sqrt(rank)`. Real name frequencies fall roughly as `1 / rank^0.5` to `1 / rank^0.7` (the US Census best fit is about 0.64), so plain Zipf (`1 / rank`) would make the top name about twice too likely.
 
 Ranks are those of the full dataset, before filtering, so a list whose top names were in another script starts below rank 1 (Brazilian male names start at Lucas, rank 2; Korean male names at rank 1,016, which is why `lite` has none).
 
@@ -20,8 +21,8 @@ Ranks are those of the full dataset, before filtering, so a list whose top names
 
 | Tier | Cultures | Names | Per list | Size |
 | --- | --- | --- | --- | --- |
-| `lite` | 105 | 133,009 | at most 500 (median 500 forenames, 463 surnames) | 3 MB |
-| `full` | 105 | 2,273,752 | everything kept (median 5,756 male, 3,741 female, 12,941 surnames) | 41 MB |
+| `lite` | 105 | 132,485 | at most 500 (median 500 forenames, 463 surnames) | 3 MB |
+| `full` | 105 | 2,261,005 | everything kept (median 5,587 male, 3,741 female, 12,821 surnames) | 41 MB |
 
 `lite` keeps the names among each country's top 500 (by the source's rank, so a list is shorter when some of them were filtered out); every `lite` list is the start of the `full` one. `lite` has no Korean male list. Every list has a female, male and surname file in `full`.
 
@@ -60,6 +61,6 @@ A surname draws its gender too (the gender `append_name()` would use), and in a 
 
 - **Romanised names only.** Names in Arabic, Cyrillic, CJK, Hangul and other scripts are dropped, so the lists show how names are written in Latin script, which for some countries (Korea, China, the Gulf) is a minority form.
 - **Social-network users, not populations.** The source counts Facebook accounts around 2019-2021: it over-represents younger, urban and connected people and the names popular among them, and it has no birth-year information (names are not weighted by generation).
-- **Noise.** Account names include nicknames, business names and typos, and the rank filter and Latin filter are heuristics: a list can contain an odd entry (for example a word used as a name on the platform).
+- **Noise.** Account names include nicknames, business names and typos, and the rank filter and Latin filter are heuristics: a list can contain an odd entry (for example a word used as a name on the platform, or initials and abbreviations such as Md, Jp or Sh, which many lists have).
 - **No naming conventions.** A full name is the parts you append, space-separated: no family-name-first order, double surnames or patronymics. These are planned (see the project plan).
 - **The weights are a model** of the rank-frequency curve, not observed frequencies.

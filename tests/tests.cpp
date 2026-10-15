@@ -1029,24 +1029,38 @@ dasmig::ng& lite()
 
 } // namespace
 
+TEST_CASE("Iranian names hold no Czech names", "[data]")
+{
+    // The source filed Czech names under Iran (scripts/extract_names.py,
+    // CONTAMINATION); these were among Iran's most common before the filter.
+    auto& g = lite();
+    const std::set<std::string> czech{"Jana", "Petra", "Lenka", "Petr", "Martin", "Jan", "Nov\xC3\xA1kov\xC3\xA1", "Nov\xC3\xA1k"};
+    for (std::uint64_t s = 0; s < 2000; ++s)
+    {
+        auto n = g.get_name({.gender = dasmig::gender::any, .culture = dasmig::culture::iranian}, s);
+        n.append_surname();
+        for (const auto& part : n.parts()) REQUIRE_FALSE(czech.contains(dasmig::core::to_utf8(part)));
+    }
+}
+
 TEST_CASE("known answers for fixed seeds", "[kat]")
 {
     using dasmig::culture;
     using dasmig::gender;
     auto& g = lite();
-    REQUIRE(g.data_hash() == 0x07bced2348a8cc4bULL);
+    REQUIRE(g.data_hash() == 0xaae5fb7f83a8f3baULL);
 
     REQUIRE(g.get_name({.gender = gender::any, .culture = culture::any}, 1).to_json() ==
-            R"({"name":"Lenroy","parts":["Lenroy"],"gender":"male","culture":"jamaican","signature":{"seed":"0000000000000001","data":"07bced2348a8cc4b"}})");
+            R"({"name":"Lenroy","parts":["Lenroy"],"gender":"male","culture":"jamaican","signature":{"seed":"0000000000000001","data":"aae5fb7f83a8f3ba"}})");
     REQUIRE(g.get_name({.gender = gender::m, .culture = culture::brazilian}, 2).to_json() ==
-            R"({"name":"Luiz","parts":["Luiz"],"gender":"male","culture":"brazilian","signature":{"seed":"0000000000000002","data":"07bced2348a8cc4b"}})");
+            R"({"name":"Luiz","parts":["Luiz"],"gender":"male","culture":"brazilian","signature":{"seed":"0000000000000002","data":"aae5fb7f83a8f3ba"}})");
     REQUIRE(g.get_surname({.culture = culture::japanese}, 3).to_json() ==
-            R"({"name":"Takahashi","parts":["Takahashi"],"gender":"male","culture":"japanese","signature":{"seed":"0000000000000003","data":"07bced2348a8cc4b"}})");
+            R"({"name":"Takahashi","parts":["Takahashi"],"gender":"male","culture":"japanese","signature":{"seed":"0000000000000003","data":"aae5fb7f83a8f3ba"}})");
     auto n = g.get_name({.gender = gender::f, .culture = culture::german}, 4);
     n.append_name().append_surname().append_surname(culture::polish);
     REQUIRE(n.to_json() ==
             "{\"name\":\"Elfriede Mandy Kr\xC3\xA4mer Baran\",\"parts\":[\"Elfriede\",\"Mandy\",\"Kr\xC3\xA4mer\",\"Baran\"],"
-            "\"gender\":\"female\",\"culture\":\"german\",\"signature\":{\"seed\":\"0000000000000004\",\"data\":\"07bced2348a8cc4b\"}}");
+            "\"gender\":\"female\",\"culture\":\"german\",\"signature\":{\"seed\":\"0000000000000004\",\"data\":\"aae5fb7f83a8f3ba\"}}");
 
     std::uint64_t h = 0xcbf29ce484222325ULL;
     for (std::uint64_t s = 0; s < 10000; ++s)
@@ -1059,7 +1073,7 @@ TEST_CASE("known answers for fixed seeds", "[kat]")
             h *= 0x100000001b3ULL;
         }
     }
-    REQUIRE(h == 0xf460d7b6aef21a95ULL);
+    REQUIRE(h == 0x76102b6cd8239e03ULL);
 }
 
 // ---------------------------------------------------------------------------
