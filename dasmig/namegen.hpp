@@ -564,19 +564,7 @@ class ng
     /// @brief Hash of the loaded names, recorded in each result's
     ///        signature().
     /// @return The hash; 0 when nothing is loaded.
-    [[nodiscard]] std::uint64_t data_hash() const
-    {
-        std::uint64_t h = 0;
-        for (std::size_t list = 0; list < _tables.size(); ++list)
-        {
-            for (const auto& [c, table] : _tables.at(list))
-            {
-                h = core::hash_combine(h, (list << 8U) | static_cast<std::uint64_t>(c));
-                h = core::hash_combine(h, table.data_hash());
-            }
-        }
-        return h;
-    }
+    [[nodiscard]] std::uint64_t data_hash() const { return _data_hash; }
 
   private:
     static constexpr std::string_view library_name_ = "name-generator";
@@ -637,6 +625,22 @@ class ng
         core::discrete dist{1.0};
     };
 
+    // The hash data_hash() returns: every table's layers, by list and culture.
+    [[nodiscard]] static std::uint64_t hash_of_(
+        const std::array<std::map<culture, core::layered_table>, list_count>& tables)
+    {
+        std::uint64_t h = 0;
+        for (std::size_t list = 0; list < tables.size(); ++list)
+        {
+            for (const auto& [c, table] : tables.at(list))
+            {
+                h = core::hash_combine(h, (list << 8U) | static_cast<std::uint64_t>(c));
+                h = core::hash_combine(h, table.data_hash());
+            }
+        }
+        return h;
+    }
+
     // One parsed .names file.
     struct names_file
     {
@@ -647,6 +651,7 @@ class ng
 
     // Layered data per list kind and culture, and the pools built from it.
     std::array<std::map<culture, core::layered_table>, list_count> _tables;
+    std::uint64_t _data_hash{0}; // hash_of_(_tables), kept with it: every result needs it
     std::map<culture, name_pool> _m_pool;
     std::map<culture, name_pool> _f_pool;
     std::map<culture, name_pool> _sur_pool;
@@ -844,6 +849,7 @@ class ng
         }
 
         _tables = std::move(next);
+        _data_hash = hash_of_(_tables);
         _m_pool = std::move(pools.at(male_list));
         _f_pool = std::move(pools.at(female_list));
         _sur_pool = std::move(pools.at(surname_list));
