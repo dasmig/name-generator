@@ -15,6 +15,7 @@
 
 #include "core/version.hpp"
 
+#include "core/batch.hpp"
 #include "core/dataset.hpp"
 #include "core/distributions.hpp"
 #include "core/json.hpp"
@@ -22,6 +23,7 @@
 #include "core/resources.hpp"
 #include "core/rng.hpp"
 #include "core/seed_signature.hpp"
+#include "core/sinks.hpp"
 #include "core/table.hpp"
 #include "core/tsv.hpp"
 #include "core/utf8.hpp"

@@ -19,6 +19,8 @@
 
 - **Name Generation**. Randomly generates first names from popular name databases, organized by gender and culture.
 
+- **Batch Generation**. Generate thousands of results from one seed, on several threads with the same output for any thread count, optionally unique by a key, and stream them as JSON Lines or CSV (see the usage guide).
+
 - **Surname Generation**. Randomly generates surnames, organized by culture.
 
 - **Full Name Chaining**. Append one or more names and surnames with an intuitive chainable API.
