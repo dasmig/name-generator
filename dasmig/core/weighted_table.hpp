@@ -7,6 +7,8 @@
 #include "distributions.hpp"
 #include "rng.hpp"
 
+#include <algorithm>
+#include <array>
 #include <cmath>
 #include <concepts>
 #include <cstddef>
@@ -135,8 +137,16 @@ class weighted_table
     template <std::invocable<const T&, double> F>
     [[nodiscard]] std::optional<std::size_t> try_pick_index(rng& r, const F& adjust) const
     {
-        std::vector<double> cumulative;
-        cumulative.reserve(_entries.size());
+        // The sums of a small table stay on the stack: an allocation would
+        // cost more than the pick.
+        std::array<double, inline_sums_> inline_sums; // NOLINT(cppcoreguidelines-pro-type-member-init,hicpp-member-init): written before read
+        std::vector<double> heap_sums;
+        std::span<double> cumulative{inline_sums.data(), std::min(_entries.size(), inline_sums_)};
+        if (_entries.size() > inline_sums_)
+        {
+            heap_sums.resize(_entries.size());
+            cumulative = heap_sums;
+        }
         std::size_t last_positive = 0;
         double total = 0.0;
         for (std::size_t i = 0; i < _entries.size(); ++i)
@@ -145,7 +155,7 @@ class weighted_table
             check_weight(w);
             total += w;
             if (w > 0.0) last_positive = i;
-            cumulative.push_back(total);
+            cumulative[i] = total;
         }
         if (!std::isfinite(total))
         {
@@ -244,6 +254,9 @@ class weighted_table
 
     std::vector<entry> _entries;
     std::vector<double> _cumulative;
+
+    // Entries whose adjusted sums try_pick_index() keeps on the stack.
+    static constexpr std::size_t inline_sums_ = 64;
     std::size_t _last_positive{0};
 };
 

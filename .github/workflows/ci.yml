@@ -181,8 +181,29 @@ jobs:
           name: bench-report
           path: build/bench.tsv
 
+  # The batch tests run worker threads; ThreadSanitizer reports any data race
+  # in the getters they call.
+  tsan:
+    name: ThreadSanitizer (batch tests)
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install LLVM 18
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang-18
+
+      - name: Build and run the batch tests
+        run: |
+          mkdir -p build
+          clang++-18 -std=c++23 -O1 -g -fsanitize=thread -Wall -Wextra -Wpedantic -I. \
+            -o build/test_tsan tests/tests.cpp tests/catch_amalgamated.cpp
+          ./build/test_tsan "[batch]"
+
   deploy-docs:
-    needs: [build-and-test, compat, msvc, wasm]
+    needs: [build-and-test, compat, tsan, msvc, wasm]
     if: github.ref == 'refs/heads/master' && github.event_name == 'push'
     runs-on: ubuntu-24.04
     permissions:

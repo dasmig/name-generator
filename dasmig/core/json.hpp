@@ -48,6 +48,13 @@ namespace dasmig::core
 class json_writer
 {
   public:
+    /// @brief An empty writer, with room for a typical document.
+    json_writer()
+    {
+        _out.reserve(initial_capacity_);
+        _stack.reserve(initial_depth_);
+    }
+
     /// @brief Open an object.
     /// @return `*this`.
     /// @throws std::logic_error Where a value is not allowed.
@@ -227,15 +234,29 @@ class json_writer
     /// @throws std::invalid_argument If @p text is not valid UTF-8.
     static void escape(std::string& out, std::string_view text)
     {
-        if (!is_utf8(text))
+        // Most text is printable ASCII without quotes or backslashes: nothing
+        // to check or escape. An ASCII prefix is valid UTF-8 on its own, so
+        // only the rest needs the check.
+        std::size_t plain = 0;
+        while (plain < text.size() && needs_no_escape(text[plain]) && static_cast<std::uint8_t>(text[plain]) < 0x80U)
+        {
+            ++plain;
+        }
+        if (plain < text.size() && !is_utf8(text.substr(plain)))
         {
             throw std::invalid_argument("json_writer: string is not valid UTF-8");
         }
         constexpr std::string_view hex = "0123456789abcdef";
         out += '"';
-        for (const char c : text)
+        // Bytes that need no escape are appended a run at a time.
+        std::size_t run = 0;
+        for (std::size_t i = plain; i < text.size(); ++i)
         {
+            const char c = text[i];
+            if (needs_no_escape(c)) continue;
             const auto b = static_cast<std::uint8_t>(c);
+            out.append(text.substr(run, i - run));
+            run = i + 1;
             switch (c)
             {
             case '"': out += "\\\""; break;
@@ -246,18 +267,12 @@ class json_writer
             case '\r': out += "\\r"; break;
             case '\t': out += "\\t"; break;
             default:
-                if (b < 0x20U)
-                {
-                    out += "\\u00";
-                    out += hex[b >> 4U];
-                    out += hex[b & 0x0FU];
-                }
-                else
-                {
-                    out += c;
-                }
+                out += "\\u00";
+                out += hex[b >> 4U];
+                out += hex[b & 0x0FU];
             }
         }
+        out.append(text.substr(run));
         out += '"';
     }
 
@@ -267,6 +282,17 @@ class json_writer
         object,
         array
     };
+
+    // Reserved up front: growing a string from empty reallocates it about ten
+    // times on the way to a few kilobytes.
+    static constexpr std::size_t initial_capacity_ = 1024;
+    static constexpr std::size_t initial_depth_ = 8;
+
+    // A byte written as it is: not a control character, quote or backslash.
+    [[nodiscard]] static constexpr bool needs_no_escape(char c) noexcept
+    {
+        return static_cast<std::uint8_t>(c) >= 0x20U && c != '"' && c != '\\';
+    }
 
     struct frame
     {

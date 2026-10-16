@@ -141,7 +141,7 @@ namespace detail
 // whose cumulative weight exceeds uniform01(r) * total. Rounding can make the
 // target reach the total; then the last index with a positive weight.
 [[nodiscard]] inline std::size_t pick_cumulative(rng& r,
-                                                 const std::vector<double>& cumulative,
+                                                 std::span<const double> cumulative,
                                                  std::size_t last_positive)
 {
     const double target = uniform01(r) * cumulative.back();

@@ -190,8 +190,21 @@ class rng
     [[nodiscard]] constexpr std::uint64_t child_seed(
         std::uint64_t index) const noexcept
     {
-        return splitmix64_mix(
-            _seed ^ splitmix64_mix(index ^ 0x6a09e667f3bcc909ULL));
+        return child_seed_of(_seed, index);
+    }
+
+    /// @brief child_seed(index) for a seed, without building an engine.
+    ///
+    /// Building an engine expands the seed into 256 bits of state; callers
+    /// that only need the derived seed (item_seed()) skip that.
+    ///
+    /// @param seed Parent seed.
+    /// @param index Index of the child stream.
+    /// @return The same value as `rng{seed}.child_seed(index)`.
+    [[nodiscard]] static constexpr std::uint64_t child_seed_of(
+        std::uint64_t seed, std::uint64_t index) noexcept
+    {
+        return splitmix64_mix(seed ^ splitmix64_mix(index ^ 0x6a09e667f3bcc909ULL));
     }
 
     /// @brief A child engine for a label, independent of this engine's state.
