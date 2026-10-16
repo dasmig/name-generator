@@ -1,9 +1,14 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2020-2026 Diego Dasso Migotto
+
 #ifndef DASMIG_CORE_TSV_HPP
 #define DASMIG_CORE_TSV_HPP
 
 #include "rng.hpp"
 #include "utf8.hpp"
 
+#include <array>
+#include <cfloat>
 #include <charconv>
 #include <cmath>
 #include <concepts>
@@ -95,6 +100,104 @@ class tsv_error : public std::runtime_error
 namespace detail
 {
 
+// The significand of a plain decimal: its significant digits as an integer,
+// the power of ten that scales them, and where it ends in the text.
+struct decimal_significand
+{
+    std::uint64_t mantissa{0};
+    int exponent{0};
+    std::size_t end{0};
+};
+
+// Reads digits[.digits] (either part may be empty, not both) from text[i].
+// nullopt without digits or past 19 significant digits, the most that always
+// fit in 64 bits.
+[[nodiscard]] inline std::optional<decimal_significand> scan_significand(std::string_view text, std::size_t i)
+{
+    constexpr int max_digits = 19;
+    decimal_significand out;
+    int digits = 0;
+    bool any = false;
+    bool point = false;
+    for (; i < text.size(); ++i)
+    {
+        const char c = text[i];
+        if (c == '.' && !point)
+        {
+            point = true;
+            continue;
+        }
+        if (c < '0' || c > '9') break;
+        any = true;
+        if (point) --out.exponent;
+        if (out.mantissa == 0 && c == '0') continue;
+        if (++digits > max_digits) return std::nullopt;
+        out.mantissa = out.mantissa * 10 + static_cast<std::uint64_t>(c - '0');
+    }
+    if (!any) return std::nullopt;
+    out.end = i;
+    return out;
+}
+
+// Reads the rest of the text from text[i] as an exponent, e[+-]digits with at
+// most 4 digits, or nothing (0). nullopt for anything else.
+[[nodiscard]] inline std::optional<int> scan_exponent(std::string_view text, std::size_t i)
+{
+    if (i == text.size()) return 0;
+    if (text[i] != 'e' && text[i] != 'E') return std::nullopt;
+    ++i;
+    bool negative = false;
+    if (i < text.size() && (text[i] == '+' || text[i] == '-')) negative = text[i++] == '-';
+    if (i == text.size() || text.size() - i > 4) return std::nullopt;
+    int value = 0;
+    for (; i < text.size(); ++i)
+    {
+        if (text[i] < '0' || text[i] > '9') return std::nullopt;
+        value = value * 10 + (text[i] - '0');
+    }
+    return negative ? -value : value;
+}
+
+// Clinger's fast path for a plain decimal ([-]digits[.digits][e[+-]digits]):
+// when its significant digits form an integer m <= 2^53 and its power of ten
+// e is within [-22, 22], both m and 10^|e| are exact doubles, so the value is
+// one IEEE multiplication or division and correctly rounded, the same double
+// a correctly rounded parser gives. Returns nullopt for anything else, which
+// goes to the general parser. Data files are mostly such decimals, and the
+// general parser is slow where it emulates wider arithmetic (Emscripten's
+// strtod works in software 128-bit long double).
+[[nodiscard]] inline std::optional<double> parse_decimal_fast(std::string_view text)
+{
+#if FLT_EVAL_METHOD == 0
+    static constexpr std::array<double, 23> pow10{1e0,  1e1,  1e2,  1e3,  1e4,  1e5,  1e6,  1e7,
+                                                  1e8,  1e9,  1e10, 1e11, 1e12, 1e13, 1e14, 1e15,
+                                                  1e16, 1e17, 1e18, 1e19, 1e20, 1e21, 1e22};
+    constexpr std::uint64_t max_exact = 9007199254740992; // 2^53
+    constexpr int max_power = 22;
+
+    const bool negative = text.starts_with('-');
+    const auto significand = scan_significand(text, negative ? 1 : 0);
+    if (!significand) return std::nullopt;
+    const auto exponent = scan_exponent(text, significand->end);
+    if (!exponent) return std::nullopt;
+
+    double value = 0.0;
+    if (significand->mantissa != 0)
+    {
+        const int power = significand->exponent + *exponent;
+        if (significand->mantissa > max_exact || power < -max_power || power > max_power) return std::nullopt;
+        const auto m = static_cast<double>(significand->mantissa);
+        const double scale = pow10[static_cast<std::size_t>(power < 0 ? -power : power)]; // NOLINT(cppcoreguidelines-pro-bounds-constant-array-index): power is in [-22, 22]
+        value = power < 0 ? m / scale : m * scale;
+    }
+    return negative ? -value : value;
+#else
+    // Excess precision (x87) would round twice.
+    (void)text;
+    return std::nullopt;
+#endif
+}
+
 // Whole-cell number parsing; an optional leading '+' is accepted.
 template <typename T>
 [[nodiscard]] std::optional<T> parse_number(std::string_view text)
@@ -104,6 +207,10 @@ template <typename T>
     T value{};
     if constexpr (std::floating_point<T>)
     {
+        if constexpr (std::same_as<T, double>)
+        {
+            if (const auto fast = parse_decimal_fast(text)) return *fast;
+        }
 #if defined(__cpp_lib_to_chars) && __cpp_lib_to_chars >= 201611L
         const auto res = std::from_chars(std::to_address(text.begin()), std::to_address(text.end()), value);
         if (res.ec != std::errc{} || res.ptr != std::to_address(text.end())) return std::nullopt;
