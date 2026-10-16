@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2020-2026 Diego Dasso Migotto
+
 """Generate a C++ header that compiles a library's data files into the program.
 
 The header defines `dasmig::embedded::<name>::files`, an array of
