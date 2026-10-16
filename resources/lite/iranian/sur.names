@@ -3,9 +3,7 @@ any
 Ahmadi	1.000000
 Mohammadi	0.707107
 Karimi	0.577350
-Sh	0.500000
 Moradi	0.408248
-Gh	0.377964
 Jafari	0.353553
 Rahimi	0.333333
 Hosseini	0.316228
@@ -14,7 +12,6 @@ Amiri	0.288675
 Sadeghi	0.277350
 Rezaei	0.267261
 Ebrahimi	0.258199
-Kh	0.250000
 Ghasemi	0.235702
 Salehi	0.218218
 Akbari	0.208514
@@ -50,7 +47,6 @@ Mosavi	0.131306
 Maleki	0.130189
 Bahrami	0.128037
 Irani	0.125988
-Sa	0.122169
 Nasiri	0.120386
 Khosravi	0.118678
 Fathi	0.117041
@@ -73,7 +69,6 @@ Rajabi	0.103695
 Hamidi	0.103142
 Azimi	0.102598
 Ramezani	0.102062
-Ka	0.101535
 Rashidi	0.101015
 Rezaee	0.099504
 Kiani	0.099015
@@ -97,11 +92,9 @@ Hatami	0.090167
 Tanha	0.089803
 Alavi	0.089443
 Jamali	0.089087
-Ra	0.088736
 Jamshidi	0.088045
 Mahmoudi	0.087706
 Bayat	0.087370
-Mo	0.086066
 Babaei	0.085749
 Keshavarz	0.085126
 Asgari	0.084819
@@ -123,10 +116,8 @@ Shabani	0.078567
 Shirazi	0.078087
 Soleymani	0.077850
 Nemati	0.077615
-Es	0.077382
 Talebi	0.077152
 Eslami	0.076923
-Ab	0.076696
 Rezai	0.075593
 Tajik	0.075378
 Ghaderi	0.075165
@@ -165,8 +156,6 @@ Saberi	0.063888
 Shojaei	0.063758
 Hasanzadeh	0.063500
 Rasouli	0.063246
-Fa	0.062994
-Az	0.062257
 Miri	0.062017
 Izadi	0.061780
 Amani	0.061546
@@ -210,7 +199,6 @@ Shahi	0.052852
 Aghaei	0.052705
 Mortazavi	0.052559
 Zandi	0.052486
-Za	0.052129
 Nik	0.051778
 Rigi	0.051640
 Fatemi	0.051503
@@ -219,7 +207,6 @@ Jokar	0.051164
 Rezvani	0.051098
 Jahangiri	0.050899
 Javid	0.050833
-Mn	0.050767
 Shafiei	0.050702
 Nori	0.050379
 Khodadadi	0.050315
@@ -238,7 +225,6 @@ Danesh	0.049088
 Hemati	0.048970
 Rezazadeh	0.048622
 Mohebi	0.048564
-Rz	0.048280
 Aslani	0.048224
 Rafiee	0.048168
 Ahmadzadeh	0.048057
@@ -246,7 +232,6 @@ Salmani	0.047836
 Rezayi	0.047782
 Hajizadeh	0.047727
 Abedini	0.047673
-Hp	0.047246
 Rasoli	0.047193
 Farahmand	0.047140
 Zakeri	0.047036
@@ -266,13 +251,11 @@ Hosseinzadeh	0.045835
 Afzali	0.045691
 Jabbari	0.045596
 Hakimi	0.045502
-Hz	0.045455
 Sajadi	0.045314
 Heidary	0.045268
 Khaleghi	0.045222
 Nosrati	0.045083
 Far	0.045038
-Ir	0.044947
 Hemmati	0.044901
 Kian	0.044856
 Zolfaghari	0.044721

@@ -1,6 +1,5 @@
 ae
 male
-Md	1.000000
 Muhammad	0.707107
 Mohammed	0.577350
 Abdul	0.500000
@@ -72,7 +71,6 @@ Ghulam	0.118678
 Kumar	0.117851
 Hamad	0.117041
 Rakesh	0.116248
-Ch	0.115470
 Babu	0.114708
 Salman	0.113961
 Salim	0.113228
@@ -142,7 +140,6 @@ Arjun	0.082761
 Muslim - Sunni	0.082199
 Hamid	0.081923
 Sabir	0.081650
-Al	0.081379
 Sayed	0.081111
 Noushad	0.080845
 Farooq	0.080582
@@ -184,7 +181,6 @@ Umesh	0.072357
 Naseer	0.072169
 Waqar	0.071982
 Zakir	0.071611
-Sk	0.071429
 Ansar	0.070535
 Pramod	0.070360
 Abood	0.070186

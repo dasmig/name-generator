@@ -49,7 +49,6 @@ Bah	0.145865
 Wauters	0.144338
 Cools	0.142857
 Smet	0.141421
-Vdb	0.140028
 Thys	0.138675
 Declercq	0.137361
 Renard	0.136083
@@ -117,7 +116,6 @@ Louis	0.093250
 Jacques	0.092848
 Goethals	0.092450
 Vandevelde	0.092057
-Bxl	0.091670
 Collard	0.091287
 Kaya	0.090909
 Verhaeghe	0.090536
@@ -457,7 +455,6 @@ Gillard	0.046274
 Mercier	0.046225
 Dillen	0.046176
 Delcourt	0.046127
-Vh	0.046078
 Chevalier	0.046029
 Rosseel	0.045980
 Seghers	0.045932
@@ -559,7 +556,6 @@ Vinck	0.041812
 Matthijs	0.041776
 Deceuninck	0.041739
 De Bruycker	0.041703
-Dc	0.041667
 Neyens	0.041595
 Jadot	0.041559
 Pirson	0.041523
@@ -644,10 +640,8 @@ Vlaeminck	0.038895
 Ceuppens	0.038866
 De Weerdt	0.038837
 Delporte	0.038808
-Dm	0.038778
 Renier	0.038749
 Godart	0.038720
-Vdv	0.038691
 Praet	0.038662
 Dhaenens	0.038633
 Gilbert	0.038605
@@ -662,7 +656,6 @@ Van Der Veken	0.038376
 De Roover	0.038348
 Van Loock	0.038320
 Schuermans	0.038292
-Ds	0.038264
 Hansen	0.038236
 Standaert	0.038180
 Voet	0.038152
@@ -684,7 +677,6 @@ Collette	0.037743
 Vanacker	0.037716
 Bellens	0.037689
 Demeulemeester	0.037662
-Vb	0.037635
 Malfait	0.037609
 Volders	0.037582
 De Baere	0.037556
@@ -720,7 +712,6 @@ Balde	0.036761
 Maris	0.036736
 Vandevoorde	0.036711
 Van Vaerenbergh	0.036686
-Vds	0.036662
 Van Genechten	0.036637
 Druart	0.036613
 Dumortier	0.036588
@@ -920,7 +911,6 @@ De Geest	0.032427
 Buytaert	0.032410
 Aelbrecht	0.032393
 Minet	0.032376
-Vl	0.032359
 Lens	0.032342
 Nagels	0.032325
 Geers	0.032309
@@ -963,8 +953,6 @@ Matagne	0.031702
 Van Eynde	0.031686
 De Neef	0.031670
 Van Vooren	0.031654
-Vd	0.031639
-Dw	0.031623
 De Maesschalck	0.031607
 Mignon	0.031591
 Geysen	0.031575
@@ -1065,7 +1053,6 @@ Caliskan	0.030151
 Raskin	0.030137
 Motte	0.030124
 Van Geel	0.030110
-Qlf	0.030096
 Dhoore	0.030083
 Closset	0.030069
 Van De Putte	0.030056
@@ -1075,7 +1062,6 @@ Deville	0.030015
 Geldhof	0.030002
 Castermans	0.029988
 Dejonckheere	0.029975
-Dv	0.029961
 Amrani	0.029948
 Guns	0.029934
 Schellekens	0.029921
@@ -1088,7 +1074,6 @@ Taelman	0.029841
 Knapen	0.029827
 Ryckaert	0.029814
 Bakkali	0.029801
-Vdw	0.029788
 Van Hout	0.029775
 Verdoodt	0.029761
 De Troyer	0.029748
@@ -1146,7 +1131,6 @@ Vossen	0.029074
 Persyn	0.029062
 Deckx	0.029050
 Schoonjans	0.029037
-Vdp	0.029025
 Mathys	0.029013
 Cappelle	0.029001
 Dehon	0.028989
@@ -1206,10 +1190,8 @@ Geraerts	0.028330
 Vliegen	0.028318
 Moortgat	0.028307
 Lenaers	0.028296
-Vr	0.028284
 Lie	0.028273
 Lombardo	0.028239
-Vw	0.028205
 Lienard	0.028194
 Dubuisson	0.028183
 De Rouck	0.028172
@@ -1255,7 +1237,6 @@ Kindt	0.027735
 Massin	0.027724
 De Vreese	0.027714
 Messiaen	0.027703
-Vdh	0.027692
 Van Cauwenbergh	0.027682
 Moris	0.027671
 Cakir	0.027661
@@ -1276,7 +1257,6 @@ De Temmerman	0.027514
 Rasschaert	0.027503
 Dooms	0.027493
 Everaerts	0.027482
-Dg	0.027472
 Van Steen	0.027451
 Kellens	0.027441
 Muylaert	0.027431
@@ -1393,7 +1373,6 @@ Beerens	0.026325
 Lagae	0.026316
 Genot	0.026307
 Herbots	0.026298
-Vm	0.026288
 Kamara	0.026270
 Ide	0.026243
 Gallez	0.026234
@@ -1458,7 +1437,6 @@ Marius	0.025717
 Jalloh	0.025709
 Bols	0.025700
 Detry	0.025683
-Sprl	0.025675
 Leloup	0.025666
 Van Peteghem	0.025649
 Dejardin	0.025641
@@ -1487,7 +1465,6 @@ Close	0.025458
 Colle	0.025449
 Cardoen	0.025441
 Malherbe	0.025433
-Dp	0.025425
 Amg	0.025416
 Acar	0.025400
 Vancoppenolle	0.025384
@@ -1518,7 +1495,6 @@ Crabbé	0.025190
 Dussart	0.025182
 Maroc	0.025174
 Eloy	0.025158
-Sch	0.025150
 Altintas	0.025142
 Borms	0.025134
 Jansens	0.025126
@@ -1777,7 +1753,6 @@ Meire	0.023250
 Hubin	0.023243
 Stockmans	0.023237
 Degueldre	0.023231
-Vg	0.023224
 Brion	0.023218
 Latour	0.023212
 Radu	0.023206
@@ -1842,7 +1817,6 @@ Keersmaekers	0.022852
 Rifton	0.022846
 Corman	0.022840
 Soens	0.022834
-Vdk	0.022828
 De Baerdemaeker	0.022822
 Dhaeseleer	0.022816
 Corthouts	0.022810
@@ -2601,7 +2575,6 @@ Berton	0.019181
 Leveque	0.019178
 Molle	0.019174
 Kucuk	0.019167
-Vdm	0.019164
 Celen	0.019160
 Husson	0.019157
 Bonny	0.019153
@@ -2725,7 +2698,6 @@ Grymonprez	0.018738
 Stoops	0.018735
 Hillaert	0.018732
 Simoen	0.018728
-Vdc	0.018725
 De Voorde	0.018722
 De Bakker	0.018719
 Neels	0.018715
@@ -2991,7 +2963,6 @@ Wintgens	0.017891
 Lammertyn	0.017889
 Van Der Aa	0.017886
 Namur	0.017883
-Vdd	0.017880
 Vergucht	0.017877
 Bourdon	0.017874
 Crijns	0.017871
@@ -3018,7 +2989,6 @@ Cloes	0.017815
 Colmant	0.017812
 De Meulder	0.017809
 Van Hal	0.017806
-Dbs	0.017803
 El Idrissi	0.017800
 De Kesel	0.017798
 Godts	0.017795
@@ -3069,7 +3039,6 @@ Alin	0.017667
 Roux	0.017664
 Palit	0.017661
 Korkmaz	0.017658
-Mrt	0.017653
 Stock	0.017645
 Volpe	0.017636
 Buscemi	0.017634
@@ -3082,7 +3051,6 @@ Albayrak	0.017614
 Karaman	0.017612
 Coessens	0.017609
 Adriaensens	0.017606
-Brs	0.017604
 Leyman	0.017598
 Temsamani	0.017595
 Flamme	0.017593
@@ -3166,7 +3134,6 @@ Bernier	0.017384
 Smessaert	0.017381
 Van Woensel	0.017379
 Ahmadzai	0.017376
-Vn	0.017374
 Sahan	0.017371
 Gharbi	0.017368
 Dolma	0.017366
@@ -3214,11 +3181,9 @@ Istace	0.017249
 Laval	0.017247
 Lousberg	0.017244
 Van Broekhoven	0.017241
-Cls	0.017239
 Nihoul	0.017236
 Hosselet	0.017234
 Decaluwe	0.017231
-Vdl	0.017229
 Deckmyn	0.017226
 Vanden Broeck	0.017223
 De Swaef	0.017221
@@ -3378,12 +3343,9 @@ Arys	0.016831
 Wybo	0.016829
 De Loor	0.016826
 Boateng	0.016824
-Dn	0.016822
 Faye	0.016819
 Kir	0.016812
-Bx	0.016810
 Mancini	0.016807
-Dt	0.016805
 Merveille	0.016803
 Amato	0.016798
 Siciliano	0.016795
@@ -3817,7 +3779,6 @@ Jehaes	0.015825
 Chartier	0.015823
 Hamal	0.015821
 Sandu	0.015819
-Hmd	0.015815
 Des	0.015813
 Simar	0.015811
 Ayadi	0.015809
@@ -4082,7 +4043,6 @@ De Sloover	0.015285
 Nottebaert	0.015284
 Lamrani	0.015282
 Soupart	0.015280
-Bns	0.015278
 Defourny	0.015277
 Wertz	0.015275
 Claeskens	0.015273
@@ -4151,7 +4111,6 @@ Bollens	0.015153
 Goens	0.015152
 Stitou	0.015150
 Gurbuz	0.015148
-Lkn	0.015146
 Lecompte	0.015145
 Wallaert	0.015143
 Tollenaere	0.015141
@@ -4508,7 +4467,6 @@ Masuy	0.014528
 Rase	0.014526
 Vandeurzen	0.014525
 Bossu	0.014523
-Blk	0.014522
 Atmani	0.014519
 Buyst	0.014517
 Defossez	0.014516
@@ -4683,7 +4641,6 @@ Kesteleyn	0.014262
 Belarbi	0.014260
 Ingabire	0.014258
 Tanjawi	0.014257
-Vdg	0.014255
 Achahbar	0.014254
 Clabots	0.014252
 Deschuyteneer	0.014251
@@ -4869,7 +4826,6 @@ Baeckelandt	0.013981
 Weets	0.013980
 Droesbeke	0.013978
 Cardinal	0.013977
-Vdr	0.013975
 Kunnen	0.013974
 Empain	0.013973
 Eysermans	0.013971
@@ -5508,7 +5464,6 @@ Goudeseune	0.013141
 Verheggen	0.013140
 Hanse	0.013139
 Derwa	0.013137
-Bgs	0.013136
 Van Bruyssel	0.013135
 Vloemans	0.013134
 Aktepe	0.013133
@@ -5587,7 +5542,6 @@ Arquin	0.013048
 Hulsbosch	0.013047
 Robbrecht	0.013045
 Bonneux	0.013044
-Blh	0.013043
 Frunza	0.013042
 Belg	0.013041
 Elg	0.013040
@@ -5733,14 +5687,12 @@ Debay	0.012883
 Meo	0.012882
 Ghotra	0.012880
 Daman	0.012879
-Wz	0.012878
 Yass	0.012877
 Hyseni	0.012875
 Imeri	0.012874
 Kina	0.012872
 Kada	0.012871
 Genc	0.012870
-Stt	0.012868
 Caty	0.012865
 Melanie	0.012864
 Dolce	0.012863
@@ -5754,7 +5706,6 @@ Rau	0.012854
 Pecoraro	0.012853
 Urso	0.012852
 Rossel	0.012851
-Dst	0.012850
 Sarikaya	0.012849
 Kilinc	0.012847
 Keser	0.012846
@@ -5872,7 +5823,6 @@ Spillebeen	0.012726
 Van Cotthem	0.012725
 Delperdange	0.012724
 Gultekin	0.012723
-Dmt	0.012722
 Van Bastelaere	0.012721
 Forier	0.012720
 Briquet	0.012718
@@ -5896,10 +5846,8 @@ Sleven	0.012701
 Grootjans	0.012700
 Labar	0.012698
 Coster	0.012697
-Blt	0.012696
 De Meulenaer	0.012695
 Ruysen	0.012693
-Bch	0.012692
 Fiasse	0.012691
 Dherde	0.012690
 Piedboeuf	0.012689
@@ -5985,10 +5933,8 @@ Steph	0.012609
 Baiwir	0.012608
 Ben Haddou	0.012607
 Vandereyken	0.012606
-Dvl	0.012605
 Badaoui	0.012604
 Bouras	0.012602
-Mrn	0.012601
 Roothooft	0.012600
 Schepmans	0.012599
 Ouriaghli	0.012598
@@ -6022,7 +5968,6 @@ Osaer	0.012570
 Remue	0.012569
 Dhaeyere	0.012568
 Creyf	0.012567
-Dns	0.012566
 Stael	0.012565
 Witdouck	0.012564
 Dauw	0.012563
@@ -6094,7 +6039,6 @@ Natale	0.012492
 Irina	0.012491
 Sion	0.012490
 Dep	0.012489
-Mlm	0.012488
 Napolitano	0.012487
 Joao	0.012486
 Fortunato	0.012485
@@ -6172,7 +6116,6 @@ De Bosschere	0.012405
 Mayné	0.012404
 Dargent	0.012403
 Toye	0.012403
-Dbr	0.012402
 Boriau	0.012401
 Cortens	0.012400
 Lorand	0.012399
@@ -6249,7 +6192,6 @@ Taton	0.012333
 Mesbahi	0.012332
 Michez	0.012331
 Vandecauter	0.012330
-Thr	0.012329
 Detraux	0.012328
 Cormann	0.012327
 Meulebrouck	0.012326
@@ -6329,7 +6271,6 @@ Fadeur	0.012254
 Vandepaer	0.012254
 Costers	0.012253
 De Cloedt	0.012252
-Vdn	0.012251
 Canters	0.012250
 Finfe	0.012249
 Backaert	0.012248
@@ -6343,7 +6284,6 @@ Degive	0.012242
 Jaspar	0.012241
 Nélis	0.012240
 Mys	0.012239
-Grd	0.012238
 Pilate	0.012237
 Bruggen	0.012236
 Lariviere	0.012235
@@ -6715,7 +6655,6 @@ Courtin	0.011899
 Dignef	0.011898
 Dermul	0.011897
 Beauté	0.011896
-Bnl	0.011895
 Herion	0.011895
 Migeotte	0.011894
 Demierbe	0.011893
@@ -6965,9 +6904,6 @@ Tshimanga	0.011686
 Nicky	0.011684
 Riche	0.011681
 Capon	0.011679
-Tms	0.011678
-Lms	0.011677
-Jwz	0.011676
 Adamo	0.011675
 Savu	0.011673
 Rizzi	0.011672
@@ -6981,7 +6917,6 @@ Castiglione	0.011667
 Militello	0.011666
 Paye	0.011665
 Tomasi	0.011664
-Dls	0.011663
 Sciortino	0.011663
 Jardin	0.011662
 Bois	0.011661
@@ -7005,7 +6940,6 @@ Bucur	0.011646
 Lampe	0.011645
 Adamczyk	0.011644
 Tenzin	0.011644
-Dvs	0.011643
 Derous	0.011641
 Vrints	0.011641
 Van De Winckel	0.011640
@@ -7084,7 +7018,6 @@ De Bois	0.011582
 Guldemont	0.011581
 Clerx	0.011580
 Bullen	0.011579
-Dpt	0.011579
 Cherpion	0.011578
 Matthyssens	0.011577
 Van Hijfte	0.011576
@@ -7131,10 +7064,8 @@ Blondel	0.011545
 Yacoubi	0.011545
 Joie	0.011544
 Bouziane	0.011543
-Lbt	0.011542
 Van Leeuw	0.011542
 Akgun	0.011541
-Brg	0.011540
 Palmeri	0.011539
 Deprins	0.011539
 Mot	0.011538
@@ -7248,7 +7179,6 @@ Vandam	0.011454
 Benomar	0.011453
 Kouassi	0.011453
 Quick	0.011451
-Chr	0.011450
 Troquet	0.011450
 Wielfaert	0.011449
 Ruwet	0.011448
@@ -7348,13 +7278,11 @@ Vanschoonbeek	0.011378
 Clarys	0.011378
 Minner	0.011377
 Merlier	0.011376
-Prt	0.011375
 Van Pee	0.011375
 Dermaut	0.011374
 Appermont	0.011373
 Baugniet	0.011372
 Moumni	0.011372
-Mth	0.011371
 Cavaleri	0.011370
 Bleyaert	0.011370
 Gofflot	0.011369
@@ -7365,7 +7293,6 @@ Atlas	0.011366
 Ars	0.011365
 Mugisha	0.011364
 Reale	0.011362
-Stn	0.011361
 Emini	0.011360
 Selen	0.011359
 Abazi	0.011359
@@ -7565,7 +7492,6 @@ Weuts	0.011209
 Chadli	0.011208
 Ishimwe	0.011207
 Meziane	0.011206
-Bld	0.011206
 Galant	0.011205
 Seye	0.011204
 El Alami	0.011203
@@ -7582,7 +7508,6 @@ Van Meerhaeghe	0.011196
 Huybrecht	0.011196
 Burggraeve	0.011195
 Botty	0.011194
-Bst	0.011194
 Laitem	0.011193
 Vanpeteghem	0.011192
 Jouck	0.011192
@@ -7714,8 +7639,6 @@ Houbart	0.011104
 El Yousfi	0.011104
 Dehaye	0.011102
 Bouali	0.011101
-Bkr	0.011100
-Brn	0.011099
 Speliers	0.011099
 Marchouh	0.011098
 Van Wymeersch	0.011097
@@ -8035,7 +7958,6 @@ Odemis	0.010879
 Van Den Wouwer	0.010879
 Lauvaux	0.010878
 Hebrant	0.010877
-Lmr	0.010877
 Van Den Broeke	0.010876
 Balthazart	0.010875
 Flemal	0.010875
@@ -8087,13 +8009,11 @@ Velkeneers	0.010845
 Champenois	0.010845
 Kinsabil	0.010844
 El Asri	0.010843
-Plt	0.010843
 Chaabane	0.010842
 Oujdia	0.010840
 Bekkaoui	0.010840
 Aoulad	0.010839
 Deer	0.010838
-Mbk	0.010838
 Panepinto	0.010837
 Thewis	0.010836
 Zouaoui	0.010836
@@ -8107,7 +8027,6 @@ Barzin	0.010831
 Van Den Vonder	0.010830
 Coiffure	0.010829
 Danse	0.010829
-Ptrs	0.010828
 Mechelen	0.010827
 Keldermans	0.010827
 Goeyvaerts	0.010826
@@ -8168,7 +8087,6 @@ Desterbecq	0.010791
 Renwart	0.010790
 Cajot	0.010790
 Coquelet	0.010789
-Mrl	0.010788
 Hubeaux	0.010788
 Defraeye	0.010787
 Rouard	0.010786
@@ -8392,7 +8310,6 @@ Tempelaere	0.010650
 Van Cauwenberg	0.010649
 Serry	0.010649
 Koycu	0.010648
-Rscl	0.010647
 Hamaide	0.010647
 Widart	0.010646
 Deneffe	0.010646
@@ -8408,7 +8325,6 @@ Manea	0.010639
 Bero	0.010638
 Arb	0.010638
 Güneş	0.010637
-Mtn	0.010636
 Bary	0.010636
 Dery	0.010635
 Isufi	0.010635
@@ -8451,8 +8367,6 @@ Valenti	0.010610
 Eke	0.010609
 Fabre	0.010608
 Sier	0.010608
-Drx	0.010607
-Blg	0.010606
 Pagano	0.010605
 Benedetti	0.010605
 Vaccaro	0.010604
@@ -8526,15 +8440,12 @@ Demars	0.010559
 Bouz	0.010559
 Ryckbosch	0.010558
 Munsters	0.010557
-Bzn	0.010557
 Pirrera	0.010556
 Oksuz	0.010556
 Mitrik	0.010555
 Hadj	0.010554
 Bouw	0.010554
 Zitouni	0.010553
-Bln	0.010553
-Brd	0.010552
 Grobben	0.010551
 Bachy	0.010551
 Vanderheiden	0.010550
@@ -8699,23 +8610,18 @@ Poumay	0.010455
 Despriet	0.010455
 Totté	0.010454
 Van Steenlandt	0.010453
-Drt	0.010452
 Zanders	0.010452
 Sefiani	0.010451
-Mrc	0.010450
 Zimbru	0.010450
 Fotso	0.010449
 El Azzouzi	0.010448
 Lahdo	0.010448
 Boul	0.010447
 Badea	0.010447
-Bkl	0.010446
 Addo	0.010446
 Moret	0.010445
 Agadir	0.010444
 Mannens	0.010444
-Rbt	0.010443
-Mts	0.010443
 Bounja	0.010442
 Franchimont	0.010441
 Rondou	0.010440
@@ -8842,7 +8748,6 @@ Leekens	0.010372
 Kulesza	0.010371
 Orlans	0.010371
 Wiliquet	0.010370
-Jns	0.010370
 Viskens	0.010369
 Kempinaire	0.010368
 Wins	0.010368
@@ -8884,7 +8789,6 @@ Daffe	0.010348
 Hakizimana	0.010348
 Boitte	0.010347
 Lazaar	0.010347
-Brk	0.010346
 Gillissen	0.010346
 Monstrey	0.010345
 Hammouti	0.010345
@@ -8958,7 +8862,6 @@ Meir	0.010305
 Van Der Goten	0.010305
 Millecam	0.010304
 Spinoy	0.010304
-Vnh	0.010303
 Cologne	0.010303
 Germonprez	0.010302
 Huskens	0.010302
@@ -9067,7 +8970,6 @@ Verviers	0.010245
 Colompar	0.010244
 Chourak	0.010244
 Nsengiyumva	0.010243
-Lbn	0.010242
 Ngom	0.010241
 Amezian	0.010241
 Badou	0.010240
@@ -9093,10 +8995,8 @@ Berquin	0.010230
 Labidi	0.010229
 Houba	0.010228
 Chergui	0.010228
-Hrt	0.010227
 Goderniaux	0.010226
 Thomsin	0.010226
-Dck	0.010225
 Renneboog	0.010225
 Rongé	0.010224
 Haems	0.010224
@@ -9267,7 +9167,6 @@ Bayar	0.010137
 Manche	0.010137
 Sayar	0.010136
 Güzel	0.010135
-Trk	0.010134
 Hoxhaj	0.010133
 Ahmetaj	0.010133
 Dalipi	0.010132
@@ -9285,7 +9184,6 @@ Nzuzi	0.010124
 Mbemba	0.010123
 Ngoy	0.010123
 Rayane	0.010122
-Dms	0.010121
 Di Maria	0.010121
 Nitu	0.010120
 Wey	0.010120
@@ -9310,7 +9208,6 @@ Piccolo	0.010109
 Curto	0.010108
 Orsini	0.010108
 Gras	0.010107
-Dlt	0.010107
 Buono	0.010106
 Carlino	0.010106
 Modica	0.010105
@@ -9444,7 +9341,6 @@ Goorickx	0.010036
 Thibert	0.010036
 Papier	0.010035
 Mouffe	0.010035
-Cln	0.010034
 Flamey	0.010034
 Tomsin	0.010033
 Derweduwen	0.010033
@@ -9458,7 +9354,6 @@ Wielockx	0.010029
 Cauchies	0.010029
 Dupas	0.010028
 Van Schuylenbergh	0.010028
-Sbs	0.010027
 Rammeloo	0.010027
 Stiennon	0.010026
 Schonkeren	0.010025
@@ -9532,7 +9427,6 @@ Lambinet	0.009992
 Chantrenne	0.009991
 Tkint	0.009991
 Dock	0.009990
-Rcsc	0.009990
 Impe	0.009989
 Van Den Spiegel	0.009989
 Baton	0.009988
@@ -9541,7 +9435,6 @@ Tyteca	0.009987
 Kouadio	0.009987
 Oslm	0.009986
 Kargbo	0.009986
-Brx	0.009985
 Berkania	0.009984
 Bouzian	0.009983
 Zerrouki	0.009983
@@ -9554,7 +9447,6 @@ El Bachiri	0.009980
 Jouhri	0.009979
 Ben Ahmed	0.009979
 Vandevandel	0.009978
-Lrt	0.009978
 Arakelyan	0.009977
 Heuschen	0.009977
 Keyser	0.009976
@@ -9743,7 +9635,6 @@ Van Hoef	0.009886
 Wallemme	0.009886
 Rahir	0.009885
 Merenne	0.009885
-Lcq	0.009885
 Haquenne	0.009884
 De Preester	0.009884
 Margaryan	0.009883
@@ -9758,7 +9649,6 @@ Jankowski	0.009879
 Grosu	0.009879
 Locquet	0.009878
 Verbuyst	0.009878
-Brh	0.009877
 Van Gent	0.009877
 Ben Omar	0.009876
 Achalhi	0.009876
@@ -9891,7 +9781,6 @@ Wanlin	0.009813
 Schoolaert	0.009813
 Lavrysen	0.009812
 Joskin	0.009812
-Gln	0.009811
 Dequeker	0.009811
 Vander Putten	0.009811
 Ronvaux	0.009810
@@ -9974,7 +9863,6 @@ Laduron	0.009774
 Bundervoet	0.009773
 Plu	0.009773
 Lumia	0.009773
-Chb	0.009772
 Tihange	0.009772
 Chefneux	0.009771
 Guilleaume	0.009771
@@ -9983,8 +9871,6 @@ Dellamaria	0.009770
 Ustun	0.009769
 Mengal	0.009769
 Sail	0.009768
-Mks	0.009768
-Klm	0.009767
 Buta	0.009767
 Fes	0.009766
 Libin	0.009766
@@ -10023,7 +9909,6 @@ Baio	0.009746
 Okito	0.009745
 Deby	0.009744
 Cadet	0.009743
-Tns	0.009743
 Koroma	0.009742
 Babou	0.009742
 Lega	0.009741
@@ -10118,7 +10003,6 @@ Poskin	0.009696
 Saddiki	0.009696
 Gaudi	0.009695
 Benhammou	0.009695
-Bks	0.009695
 Hammou	0.009694
 Jebari	0.009694
 Aberkan	0.009693
@@ -10141,7 +10025,6 @@ Avagyan	0.009684
 Fou	0.009683
 Spanu	0.009683
 Suray	0.009682
-Hrd	0.009682
 Arbaoui	0.009681
 Bartholome	0.009681
 Dupré	0.009680
@@ -10210,7 +10093,6 @@ Doye	0.009652
 Hallot	0.009652
 Piton	0.009651
 Renuart	0.009651
-Dhr	0.009650
 Doudelet	0.009650
 Mignot	0.009649
 Duwez	0.009649
@@ -10590,7 +10472,6 @@ Bakhat	0.009481
 Greuse	0.009481
 Mazouz	0.009480
 Bouzerda	0.009480
-Lmb	0.009480
 België	0.009479
 Schipor	0.009479
 El Morabet	0.009478
@@ -10607,7 +10488,6 @@ El Hamdaoui	0.009474
 Larock	0.009474
 Mouha	0.009473
 Alix	0.009473
-Bls	0.009472
 Mcheik	0.009472
 Beyne	0.009472
 Debus	0.009471
@@ -10680,7 +10560,6 @@ Vriends	0.009442
 De Klerk	0.009442
 Rentmeister	0.009442
 Gaillez	0.009441
-Ctt	0.009441
 Ancart	0.009440
 Clarembaux	0.009440
 Bellot	0.009439
@@ -10704,7 +10583,6 @@ Vanhuffel	0.009432
 Debrauwer	0.009431
 Coone	0.009431
 Cokelaere	0.009431
-Bnd	0.009430
 Latet	0.009430
 De Cloet	0.009429
 Spiteri	0.009429
@@ -10740,8 +10618,6 @@ Ghysen	0.009417
 Dinneweth	0.009416
 Seront	0.009416
 Dejager	0.009416
-Mcl	0.009415
-Vzw	0.009415
 Marnette	0.009414
 Delanoy	0.009414
 Swannet	0.009413
@@ -10940,7 +10816,6 @@ Modz	0.009325
 Mitric	0.009325
 Sertkaya	0.009325
 Yordanova	0.009323
-Dmr	0.009323
 Madeleine	0.009323
 Küçük	0.009322
 Theis	0.009321
@@ -10993,7 +10868,6 @@ Carlisi	0.009301
 Vansever	0.009300
 Peigneur	0.009300
 Syuleyman	0.009299
-Smn	0.009299
 Mavie	0.009298
 Bouarfa	0.009298
 Termonia	0.009298
@@ -11003,12 +10877,10 @@ Mohimont	0.009296
 Beukelaers	0.009296
 Campione	0.009296
 Maury	0.009295
-Bsk	0.009295
 Helleputte	0.009294
 Genk	0.009294
 Ouazzani	0.009294
 Freuville	0.009293
-Bck	0.009293
 Van Ballaert	0.009292
 Lignier	0.009292
 Vandenboer	0.009292
@@ -11154,7 +11026,6 @@ Walrave	0.009235
 Coppers	0.009234
 Ricquier	0.009234
 Leeten	0.009234
-Dlh	0.009233
 Solbreux	0.009233
 Peirlinck	0.009232
 Blanchaert	0.009232
@@ -11193,14 +11064,12 @@ Wauquier	0.009219
 De Pré	0.009218
 Marrella	0.009218
 Van Sanden	0.009217
-Bdn	0.009217
 Lodomez	0.009217
 Deblire	0.009216
 Linet	0.009216
 Nonneman	0.009216
 Maloir	0.009215
 Garreyn	0.009215
-Glt	0.009214
 Sutera	0.009214
 Akbel	0.009214
 Dijkstra	0.009213
@@ -11241,17 +11110,14 @@ Achab	0.009198
 Chams	0.009198
 Otmani	0.009197
 Harchi	0.009197
-Dbxl	0.009196
 Ammour	0.009196
 Ahrika	0.009196
 Kinoo	0.009195
 Ekmen	0.009195
-Bdt	0.009194
 Loop	0.009194
 Raemen	0.009194
 Delrée	0.009193
 Hajjaji	0.009193
-Dml	0.009193
 Furnemont	0.009192
 Meuldermans	0.009192
 Pollicino	0.009191
@@ -11332,7 +11198,6 @@ Termolle	0.009163
 Destercq	0.009162
 Hembise	0.009162
 Lanotte	0.009162
-Wtrs	0.009161
 Caryn	0.009161
 Van Der Meer	0.009160
 Dehez	0.009160
@@ -11354,7 +11219,6 @@ Luytens	0.009154
 Vanstalle	0.009154
 Kesteman	0.009153
 Becquevort	0.009153
-Mgn	0.009152
 Kockx	0.009152
 Demain	0.009152
 Mathieux	0.009151
@@ -11494,7 +11358,6 @@ Bauden	0.009100
 Andelhofs	0.009100
 Lisabeth	0.009100
 Poulaert	0.009099
-Prs	0.009099
 Hoslet	0.009098
 Wintein	0.009098
 Senelle	0.009098
@@ -11512,7 +11375,6 @@ Lerusse	0.009093
 Kameni	0.009092
 Demestre	0.009092
 Yaakoubi	0.009092
-Ths	0.009091
 Ndayishimiye	0.009091
 Elkaddouri	0.009091
 Harrak	0.009090
@@ -11521,7 +11383,6 @@ Bentaleb	0.009089
 Georgescu	0.009089
 Manise	0.009089
 Pietrzak	0.009088
-Frs	0.009088
 Lecroart	0.009088
 Theissen	0.009087
 Defeche	0.009087
@@ -11530,7 +11391,6 @@ Belgica	0.009086
 Rutkowski	0.009086
 Surkyn	0.009085
 Sabriev	0.009085
-Crs	0.009085
 El Ayadi	0.009084
 Kadouri	0.009084
 Haddouch	0.009083
@@ -11554,7 +11414,6 @@ Devilers	0.009077
 Gevenois	0.009076
 Chanteux	0.009076
 El Moukhtari	0.009076
-Mln	0.009075
 Spaens	0.009075
 Van Briel	0.009074
 Quequin	0.009074
@@ -11626,7 +11485,6 @@ Achtergael	0.009050
 Richel	0.009049
 Rausin	0.009049
 Duterne	0.009049
-Bgn	0.009048
 Jeuniaux	0.009048
 Caspers	0.009048
 Lévêque	0.009047
@@ -11797,7 +11655,6 @@ Kongo	0.008986
 Mejri	0.008986
 Monier	0.008986
 Akr	0.008985
-Rmd	0.008985
 Anaz	0.008985
 Barlas	0.008984
 Ral	0.008984
@@ -11850,7 +11707,6 @@ Le Roi	0.008964
 Nicoli	0.008963
 Cabu	0.008963
 Bahati	0.008963
-Nls	0.008962
 Canale	0.008962
 Dandrea	0.008961
 Corso	0.008961
@@ -11877,12 +11733,10 @@ Ianni	0.008954
 Cardillo	0.008954
 Schiavone	0.008953
 Colella	0.008953
-Dlm	0.008953
 Guglielmi	0.008952
 Ferla	0.008951
 Bertozzi	0.008951
 Giuliana	0.008951
-Dlv	0.008950
 Fumagalli	0.008950
 Mannino	0.008950
 Coiffeur	0.008949
@@ -11948,7 +11802,6 @@ Ibragimov	0.008926
 Turkoglu	0.008926
 Sunay	0.008925
 Agro	0.008925
-Chk	0.008925
 Brien	0.008924
 Havenith	0.008923
 Vanderbist	0.008923
@@ -12001,13 +11854,10 @@ Akbayir	0.008905
 Delagrange	0.008904
 Dehaspe	0.008904
 Boulahtari	0.008904
-Gnt	0.008903
 Trinon	0.008903
 Smis	0.008903
 Vizzini	0.008902
-Dht	0.008902
 Elaerts	0.008902
-Mnt	0.008901
 Maziers	0.008901
 Villé	0.008901
 Schul	0.008900
@@ -12019,7 +11869,6 @@ Vroom	0.008898
 Vanbel	0.008898
 Malmendier	0.008897
 Liemans	0.008897
-Bnh	0.008897
 Vanpachtenbeke	0.008896
 Eeraerts	0.008896
 Tyvaert	0.008896
@@ -12173,7 +12022,6 @@ Blondé	0.008843
 Lucq	0.008843
 Van Bellegem	0.008842
 Hontoir	0.008842
-Grs	0.008842
 Seuntjens	0.008841
 Pernet	0.008841
 Ghijselinck	0.008841
@@ -12225,7 +12073,6 @@ Wellemans	0.008825
 Destiné	0.008825
 Denoz	0.008824
 Peperstraete	0.008824
-Crt	0.008824
 Ortmans	0.008823
 Coupez	0.008823
 Hoogewys	0.008823
@@ -12254,7 +12101,6 @@ Lo Manto	0.008815
 Wintmolders	0.008815
 Claisse	0.008814
 Kalender	0.008814
-Clk	0.008814
 Devits	0.008813
 Altinkaya	0.008813
 Andris	0.008813
@@ -12290,7 +12136,6 @@ El Mourabit	0.008801
 Lahssini	0.008801
 Zakaryan	0.008801
 Bivol	0.008800
-Dbz	0.008800
 Bayindir	0.008799
 Caucheteux	0.008798
 Ongenaert	0.008798
@@ -12309,7 +12154,6 @@ Galland	0.008794
 Kazankaya	0.008793
 Thomé	0.008793
 Latinis	0.008793
-Gns	0.008792
 Tapmaz	0.008792
 Dubar	0.008792
 Ben Salem	0.008791
@@ -12393,7 +12237,6 @@ Flaba	0.008763
 Renquet	0.008762
 Borbouse	0.008762
 Tournier	0.008762
-Vls	0.008761
 Flasse	0.008761
 Thaon	0.008761
 Van Holle	0.008760
@@ -12449,7 +12292,6 @@ Monfils	0.008743
 Trembloy	0.008743
 Van Eemeren	0.008743
 De Reys	0.008742
-Prd	0.008742
 Meulenyzer	0.008742
 Maginet	0.008741
 Baume	0.008741
@@ -12480,7 +12322,6 @@ De Medts	0.008733
 Labeau	0.008733
 Hove	0.008732
 Spiga	0.008732
-Hnt	0.008732
 Van Heymbeeck	0.008731
 Depetter	0.008731
 Horions	0.008731
@@ -12606,7 +12447,6 @@ Bresmal	0.008691
 Buekens	0.008691
 Cassaro	0.008691
 Belgianu	0.008690
-Lgd	0.008690
 Thevelein	0.008690
 Dilien	0.008689
 Nemery	0.008689
@@ -12623,7 +12463,6 @@ Maitre	0.008685
 Oufkir	0.008685
 Soumoy	0.008685
 Ngono	0.008684
-Swb	0.008684
 Nasca	0.008684
 Boudraa	0.008684
 Dahmane	0.008683
@@ -12643,7 +12482,6 @@ Herin	0.008678
 Elmorabit	0.008677
 Debout	0.008677
 Russello	0.008677
-Rnd	0.008676
 Loforte	0.008676
 Velleman	0.008675
 Pillen	0.008675
@@ -12654,7 +12492,6 @@ Celiker	0.008673
 Menier	0.008673
 Lachkar	0.008672
 Debakker	0.008672
-Dhn	0.008672
 Giambarresi	0.008671
 Hamrouni	0.008671
 Wauty	0.008670
@@ -12744,14 +12581,12 @@ Codron	0.008643
 Spiroux	0.008643
 Lepretre	0.008642
 Pennequin	0.008642
-Dbk	0.008642
 Mottiaux	0.008641
 Ramackers	0.008641
 Dechesne	0.008641
 Guislain	0.008640
 Deglas	0.008640
 Moës	0.008640
-Hbt	0.008639
 Berteau	0.008639
 Van Watermeulen	0.008639
 Dermience	0.008638
@@ -12814,7 +12649,6 @@ Dierinck	0.008620
 Slos	0.008619
 Halloin	0.008619
 Larsimont	0.008619
-Dps	0.008618
 Pasteleurs	0.008618
 Cruyt	0.008618
 Vanderdonck	0.008617
@@ -12953,7 +12787,6 @@ Chanet	0.008575
 Volant	0.008575
 Walrant	0.008575
 Hrickova	0.008574
-Mkd	0.008574
 Dahri	0.008574
 Mahla	0.008573
 Meel	0.008573
@@ -12962,7 +12795,6 @@ Sarraj	0.008572
 Aps	0.008572
 Salme	0.008572
 Guli	0.008571
-Mnr	0.008571
 Bakhti	0.008571
 Agh	0.008571
 Amk	0.008570
@@ -12981,7 +12813,6 @@ Gabriele	0.008565
 Pascucci	0.008565
 Pucci	0.008565
 Gia	0.008564
-Bkt	0.008563
 Nzau	0.008563
 Mayala	0.008563
 Sacko	0.008562
@@ -13052,7 +12883,6 @@ Ilardo	0.008539
 Cavaliere	0.008539
 Rotolo	0.008539
 La Porta	0.008538
-Dlr	0.008538
 Castrogiovanni	0.008538
 Renda	0.008537
 Di Blasi	0.008537
@@ -13065,7 +12895,6 @@ Cannizzaro	0.008535
 Morana	0.008535
 Romaniuk	0.008535
 Gerlach	0.008534
-Dbl	0.008534
 Mergen	0.008534
 Rizza	0.008533
 Bellante	0.008533
@@ -13123,7 +12952,6 @@ Moyen	0.008513
 Nihon	0.008513
 Ibn	0.008513
 Farcy	0.008513
-Bds	0.008512
 Avril	0.008512
 Tintin	0.008512
 Schaefs	0.008511
@@ -13146,16 +12974,13 @@ Koylu	0.008506
 Kallah	0.008506
 Mebarki	0.008505
 Benhadi	0.008505
-Bhn	0.008505
 Lefebre	0.008505
 Sarpong	0.008504
 Toulouse	0.008504
 Niyonzima	0.008503
 Belguim	0.008503
-Blm	0.008503
 Tems	0.008502
 Olszewski	0.008502
-Bhm	0.008502
 Gyaltsen	0.008501
 Adahchour	0.008501
 Onya	0.008501
@@ -13169,12 +12994,10 @@ Laaraj	0.008498
 Lahraoui	0.008498
 Boeitni	0.008498
 Berrag	0.008497
-Lbr	0.008497
 Chiriac	0.008497
 Ameryckx	0.008496
 Umuhoza	0.008496
 Khelifi	0.008496
-Hms	0.008495
 Croitor	0.008495
 Abrahamyan	0.008494
 Selek	0.008494
@@ -13515,7 +13338,6 @@ Seremet	0.008392
 Mottoulle	0.008392
 Josten	0.008392
 Stouffs	0.008391
-Brl	0.008391
 Dangreau	0.008391
 Lutin	0.008390
 Rosart	0.008390
@@ -13524,13 +13346,11 @@ Van Den Cruyce	0.008389
 Janssenswillen	0.008389
 Karoui	0.008389
 Hanard	0.008389
-Frn	0.008388
 Serroukh	0.008388
 Donkor	0.008388
 Djomo	0.008387
 El Maimouni	0.008387
 Zaxo	0.008387
-Pnl	0.008386
 Gheorghita	0.008386
 Oua	0.008386
 Bizimana	0.008386
@@ -13552,7 +13372,6 @@ Laghzaoui	0.008380
 Agovic	0.008380
 Natus	0.008380
 Reichling	0.008379
-Ltn	0.008379
 Gumustekin	0.008379
 Verryt	0.008379
 Loutfi	0.008378
@@ -13560,7 +13379,6 @@ Gherdaoui	0.008378
 Addou	0.008378
 Mastour	0.008377
 Premier	0.008377
-Lmt	0.008377
 Dabrowska	0.008376
 Persian	0.008376
 Delys	0.008376
@@ -13568,7 +13386,6 @@ Croche	0.008376
 Maaroufi	0.008375
 Louviaux	0.008375
 Hachemi	0.008375
-Grn	0.008374
 Ben Brahim	0.008374
 Saciri	0.008374
 Geris	0.008373
@@ -13580,14 +13397,10 @@ Cricri	0.008372
 Ymcmb	0.008371
 Ftouh	0.008371
 Lalou	0.008371
-Btr	0.008370
 Tabti	0.008370
 Di Pietrantonio	0.008369
 Clerebaut	0.008369
 Zalewska	0.008369
-Lrs	0.008369
-Btn	0.008368
-Stg	0.008368
 Troost	0.008368
 Fallay	0.008367
 Borgonjon	0.008367
@@ -13668,7 +13481,6 @@ Serwy	0.008345
 Bellaire	0.008344
 Delferriere	0.008344
 Igot	0.008344
-Crn	0.008343
 Pilato	0.008343
 Boutefeu	0.008343
 Deleenheer	0.008342
@@ -13746,7 +13558,6 @@ Brohet	0.008322
 Van Malderghem	0.008321
 Camby	0.008321
 De Patoul	0.008321
-Vld	0.008321
 Van Bruggen	0.008320
 Kasprzak	0.008320
 Monbailliu	0.008320
@@ -13805,7 +13616,6 @@ Lazam	0.008305
 Mirguet	0.008305
 Mommaert	0.008304
 Watillon	0.008304
-Cdr	0.008304
 Buls	0.008303
 Schumacker	0.008303
 Fumal	0.008303
@@ -13869,7 +13679,6 @@ Zinzen	0.008286
 Bohets	0.008286
 Verween	0.008286
 Hupin	0.008285
-Bzk	0.008285
 Delbare	0.008285
 Merchie	0.008285
 Roekaerts	0.008284
@@ -13899,7 +13708,6 @@ Henskens	0.008277
 Kisir	0.008277
 Slagmolen	0.008277
 Campforts	0.008277
-Bhd	0.008276
 Royez	0.008276
 Baghdasaryan	0.008276
 Grandfils	0.008275
@@ -13918,7 +13726,6 @@ Elfilali	0.008272
 Abidar	0.008272
 El Aissaoui	0.008271
 Alptekin	0.008270
-Shn	0.008270
 Elomari	0.008270
 Amzil	0.008270
 Boukhatem	0.008269
@@ -13932,7 +13739,6 @@ Augustus	0.008266
 Kiel	0.008266
 Esthétique	0.008266
 Benben	0.008266
-Mns	0.008265
 Bennardo	0.008265
 Auman	0.008264
 Makhloufi	0.008264
@@ -14034,7 +13840,6 @@ Waerniers	0.008236
 Geladé	0.008236
 Dhauwer	0.008236
 Delesie	0.008236
-Lmn	0.008235
 Vanderzeypen	0.008235
 Van Der Vurst	0.008235
 Truwant	0.008234
@@ -14069,7 +13874,6 @@ Herbage	0.008226
 Nart	0.008226
 Putmans	0.008226
 Feltz	0.008226
-Drk	0.008225
 Musette	0.008225
 Dutilleux	0.008225
 Closon	0.008224
@@ -14080,7 +13884,6 @@ Di Fazio	0.008223
 Senechal	0.008223
 Brosse	0.008223
 Delzenne	0.008222
-Bkn	0.008222
 Ripet	0.008222
 Penning	0.008222
 Feuillien	0.008221
@@ -14115,7 +13918,6 @@ Leijnen	0.008213
 Dutranoit	0.008213
 Dumonceaux	0.008213
 Verlaeckt	0.008212
-Ftn	0.008212
 Vandenhoeke	0.008212
 Heijlen	0.008212
 Miclotte	0.008211
@@ -14152,7 +13954,6 @@ Bauvir	0.008203
 De Deckers	0.008203
 Bedert	0.008202
 Van Steenwinckel	0.008202
-Mgt	0.008202
 Wendrickx	0.008201
 Reinartz	0.008201
 Baudewijns	0.008201
@@ -14196,7 +13997,6 @@ Dôme	0.008190
 Counard	0.008190
 Quintijn	0.008190
 Bobbaers	0.008190
-Mrtns	0.008189
 Ertveldt	0.008189
 Verkimpe	0.008189
 Ceraulo	0.008188
@@ -14288,7 +14088,6 @@ Vast	0.008164
 Dissenbergen	0.008164
 El Yazidi	0.008163
 Gavray	0.008163
-Kls	0.008163
 Stryckers	0.008163
 Wambeke	0.008162
 Loxhay	0.008162
@@ -14310,20 +14109,17 @@ Delsupexhe	0.008158
 Benabdellah	0.008157
 Qarolli	0.008157
 Okmen	0.008157
-Bnv	0.008157
 Bakkovens	0.008156
 Sonam	0.008156
 Makhoul	0.008156
 Naam	0.008155
 Ibragimova	0.008155
 Alazzawi	0.008155
-Bdk	0.008155
 Houssin	0.008154
 Bennis	0.008154
 El Khoury	0.008154
 Hotak	0.008154
 Valy	0.008153
-Sbr	0.008153
 Kamari	0.008152
 Talibi	0.008152
 Marku	0.008152
@@ -14380,7 +14176,6 @@ Weyne	0.008137
 Picco	0.008136
 Carrara	0.008136
 Mazzei	0.008135
-Dlp	0.008135
 Di Santo	0.008135
 Beltrame	0.008134
 Gabrielli	0.008134
@@ -14424,7 +14219,6 @@ Furnari	0.008124
 Passarello	0.008124
 Belfiore	0.008123
 Morabito	0.008123
-Dlb	0.008123
 Petta	0.008122
 Vinet	0.008122
 Welsch	0.008121
@@ -14484,11 +14278,8 @@ Asta	0.008106
 Ozalp	0.008106
 Sakalli	0.008105
 Nessa	0.008105
-Brz	0.008104
-Cht	0.008104
 Bonni	0.008104
 Lizon	0.008104
-Drz	0.008103
 Baj	0.008103
 Mean	0.008103
 Katar	0.008102
@@ -14543,8 +14334,6 @@ Bensalem	0.008088
 Calisir	0.008088
 Vanderheijden	0.008088
 Braat	0.008087
-Dlg	0.008087
-Drn	0.008087
 Benbrahim	0.008086
 Stanev	0.008086
 Mahdaoui	0.008086
@@ -14574,11 +14363,9 @@ Gieskes	0.008080
 El Aissati	0.008079
 Mahboub	0.008079
 Ben Mohamed	0.008079
-Fth	0.008078
 Bouya	0.008078
 Ezer	0.008078
 Doré	0.008077
-Lgs	0.008077
 Laby	0.008077
 Ayachi	0.008077
 El Kadiri	0.008076
@@ -14593,9 +14380,7 @@ Ryckebusch	0.008074
 Aberkane	0.008074
 Bauthier	0.008073
 Clinquart	0.008073
-Dfr	0.008073
 Bourich	0.008073
-Mng	0.008072
 Lemarchand	0.008072
 Sools	0.008072
 Esselens	0.008072
@@ -14624,7 +14409,6 @@ Yasarlar	0.008066
 Van Poeck	0.008065
 De Picker	0.008065
 Van Opdorp	0.008065
-Smt	0.008065
 De Couvreur	0.008064
 Geerolf	0.008064
 Bekkar	0.008064
@@ -14636,7 +14420,6 @@ Schoonheyt	0.008062
 Heyneman	0.008062
 Roelans	0.008062
 Haeyaert	0.008062
-Vcb	0.008061
 Leeuwerck	0.008061
 Cammu	0.008061
 Van Alsenoy	0.008061
@@ -14696,7 +14479,6 @@ Poivre	0.008047
 Plum	0.008046
 Meyfroyd	0.008046
 Mendolia	0.008046
-Plv	0.008046
 Wasterlain	0.008045
 Van Calsteren	0.008045
 Labasse	0.008045
@@ -14858,7 +14640,6 @@ Karremans	0.008004
 Helsens	0.008004
 Pouliart	0.008004
 De B	0.008003
-Rst	0.008003
 Seronval	0.008003
 Avermaete	0.008003
 Boulvin	0.008002
@@ -14957,7 +14738,6 @@ Bugdayci	0.007978
 Eryigit	0.007978
 Yurtay	0.007978
 Denne	0.007978
-Bdl	0.007977
 Ferret	0.007977
 De Deurwaerder	0.007977
 Walgraffe	0.007976
@@ -14988,7 +14768,6 @@ Dilen	0.007970
 Sambou	0.007969
 Dhondup	0.007969
 Haddouti	0.007969
-Dzz	0.007969
 Neusy	0.007968
 Rukundo	0.007968
 Ben Ammar	0.007967
@@ -15000,7 +14779,6 @@ Aouad	0.007966
 Yaagoubi	0.007966
 Draghici	0.007965
 Rocma	0.007965
-Bsn	0.007965
 Miloudi	0.007965
 Mazibas	0.007964
 Aleksiev	0.007964
@@ -15035,7 +14813,6 @@ Lamoot	0.007956
 Dziri	0.007956
 Dassen	0.007956
 Inconito	0.007956
-Clr	0.007955
 Sehan	0.007955
 Di Bari	0.007955
 Tange	0.007955
@@ -15216,7 +14993,6 @@ Pietrons	0.007911
 Loonen	0.007910
 Guilmin	0.007910
 Lauwerijs	0.007910
-Bsh	0.007910
 Decocq	0.007909
 Rouckhout	0.007909
 Vancoppernolle	0.007909
@@ -15294,7 +15070,6 @@ Calicis	0.007891
 Hoeck	0.007891
 Mullender	0.007890
 Delcuve	0.007890
-Rsn	0.007890
 Buis	0.007890
 Trossaert	0.007889
 Op T Eynde	0.007889
@@ -15331,7 +15106,6 @@ Riské	0.007882
 Demil	0.007882
 Jaumot	0.007881
 Dillis	0.007881
-Hdg	0.007881
 Van Baekel	0.007881
 Van De Paar	0.007880
 Chavet	0.007880
@@ -15395,7 +15169,6 @@ De Boelpaep	0.007866
 Schellaert	0.007866
 Kemland	0.007866
 Van Wilderode	0.007865
-Vlb	0.007865
 De Wel	0.007865
 Aldemir	0.007865
 Devacht	0.007865
@@ -15434,7 +15207,6 @@ Van Caillie	0.007856
 Gresse	0.007856
 Magnier	0.007856
 Vanantwerpen	0.007856
-Krc	0.007856
 Meulenberg	0.007855
 Egels	0.007855
 Derouich	0.007855
@@ -15470,7 +15242,6 @@ Blondia	0.007848
 Palsterman	0.007847
 Grobet	0.007847
 Agharbi	0.007847
-Lct	0.007847
 Fakiri	0.007846
 Simeonova	0.007846
 Maryns	0.007846
@@ -15498,11 +15269,9 @@ Elamrani	0.007840
 Hamdane	0.007840
 Haloui	0.007839
 Rabhioui	0.007839
-Brxl	0.007839
 Amakran	0.007838
 Niyonkuru	0.007838
 Cattin	0.007838
-Drs	0.007838
 Van Loey	0.007837
 Nhari	0.007837
 Colen	0.007837
@@ -15514,7 +15283,6 @@ Leuris	0.007836
 Luparello	0.007835
 Rots	0.007835
 Croisier	0.007835
-Zhr	0.007835
 Elouahabi	0.007834
 Marescaux	0.007834
 Kuren	0.007834
@@ -15529,7 +15297,6 @@ Defechereux	0.007832
 Smesman	0.007831
 Brasco	0.007831
 Rosez	0.007831
-Dbt	0.007831
 Dubruille	0.007830
 Vanleene	0.007830
 Oueslati	0.007830
@@ -15573,7 +15340,6 @@ Vriesacker	0.007820
 Houdmeyers	0.007820
 Van Den Stock	0.007819
 Van Gaeveren	0.007819
-Pts	0.007819
 Scholten	0.007819
 Sturtewagen	0.007818
 Pelletier	0.007818
@@ -15663,7 +15429,6 @@ Massar	0.007798
 Laudelout	0.007798
 Baugnee	0.007798
 Sartiaux	0.007798
-Cnt	0.007797
 Tordoor	0.007797
 Hobin	0.007797
 Gouvart	0.007797
@@ -15684,7 +15449,6 @@ Wart	0.007793
 Lardenoit	0.007793
 Geutjens	0.007793
 Van Wezemael	0.007792
-Vdt	0.007792
 Nibus	0.007792
 Horward	0.007792
 Visse	0.007791
@@ -15730,7 +15494,6 @@ Asrih	0.007782
 Kessen	0.007782
 Bigaré	0.007782
 Niesen	0.007781
-Bht	0.007781
 Josson	0.007781
 Van Gele	0.007781
 Vlasselaerts	0.007781
@@ -15769,7 +15532,6 @@ Heggerick	0.007773
 Dejeneffe	0.007773
 Thioux	0.007772
 Boclinville	0.007772
-Ljn	0.007772
 Debuyst	0.007772
 Hermesse	0.007771
 Bellanca	0.007771
@@ -15780,7 +15542,6 @@ Donni	0.007770
 Steppé	0.007770
 Werquin	0.007770
 Zagers	0.007769
-Vrs	0.007769
 Bossiroy	0.007769
 Vanden Bemden	0.007769
 Geubels	0.007769
@@ -15852,7 +15613,6 @@ Spillier	0.007753
 Dekerf	0.007753
 Urbanczyk	0.007753
 Decaesstecker	0.007752
-Bsr	0.007752
 Verhooghe	0.007752
 Carpiaux	0.007752
 Malbrancke	0.007751
@@ -15884,7 +15644,6 @@ Dehert	0.007746
 Sferlazza	0.007745
 Van Poelvoorde	0.007745
 Opdebeek	0.007745
-Wts	0.007745
 Vande Vyvere	0.007744
 Stievenard	0.007744
 Schwind	0.007744
@@ -15915,7 +15674,6 @@ Crappe	0.007738
 Brohée	0.007738
 De Laminne	0.007738
 Cartenstadt	0.007738
-Cld	0.007738
 Klepper	0.007737
 Godon	0.007737
 De Leebeeck	0.007737

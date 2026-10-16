@@ -1,11 +1,9 @@
 bd
 male
-Md	1.000000
 Mohammad	0.707107
 Abdul	0.577350
 Sumon	0.500000
 Abu	0.447214
-Sk	0.408248
 Saiful	0.377964
 Hasan	0.353553
 Kazi	0.333333
@@ -23,7 +21,6 @@ Rubel	0.218218
 Tanvir	0.208514
 Mehedi	0.204124
 Abul	0.200000
-Al	0.196116
 Syed	0.192450
 Prince	0.188982
 Nazmul	0.185695
@@ -40,7 +37,6 @@ Ripon	0.152499
 Akash	0.149071
 Raju	0.145865
 Fahim	0.144338
-Rj	0.142857
 Masum	0.140028
 Abir	0.138675
 Faruk	0.137361
@@ -89,7 +85,6 @@ Salman	0.099504
 Rashed	0.099015
 Arman	0.098533
 Rifat	0.097590
-Mh	0.097129
 Mahmud	0.096674
 Ruhul	0.095783
 Shahadat	0.095346
@@ -98,10 +93,8 @@ Mahmudul	0.094491
 Rafiqul	0.094072
 Jewel	0.093659
 Habibur	0.092450
-Ar	0.092057
 Sajib	0.091670
 Kawsar	0.090909
-Hm	0.090536
 Shahidul	0.090167
 Milon	0.089803
 Manik	0.089443
@@ -115,8 +108,6 @@ Babul	0.087039
 Biplob	0.086387
 Ashik	0.086066
 Rakibul	0.085749
-S M	0.084215
-Ak	0.083918
 Harun	0.083624
 Zahid	0.082761
 Ahsan	0.082479
@@ -151,7 +142,6 @@ Amit	0.073721
 Shariful	0.073521
 Yousuf	0.073324
 Mahabub	0.073127
-Ab	0.072932
 Sohag	0.072548
 Engr	0.072357
 Sazzad	0.072169
@@ -177,7 +167,6 @@ Munna	0.068199
 Monirul	0.068041
 Saidul	0.067884
 Bijoy	0.067729
-Rs	0.067574
 Abid	0.067420
 Alam	0.067267
 Shahid	0.067116
@@ -187,7 +176,6 @@ Ridoy	0.066667
 Jabed	0.066519
 Selim	0.066372
 Farhad	0.066227
-Cr	0.066082
 Anowar	0.065795
 Siam	0.065512
 Suman	0.065372
@@ -217,7 +205,6 @@ Tonmoy	0.061663
 Shanto	0.061430
 Md Sohel	0.061314
 Akter	0.060971
-Mb	0.060858
 Jasim	0.060523
 Nayan	0.060412
 Delwar	0.060084
@@ -226,7 +213,6 @@ Nayem	0.059868
 Rahim	0.059761
 Jahed	0.059549
 Al Amin	0.059444
-Rk	0.059339
 Mahfuz	0.059235
 Murad	0.059028
 Azizul	0.058926
@@ -254,7 +240,6 @@ Tanha	0.056344
 Bappy	0.056254
 Md Masud	0.055989
 Sadman	0.055902
-Sd	0.055815
 Shipon	0.055728
 Saiful Islam	0.055641
 Obuj	0.055556
@@ -263,7 +248,6 @@ Imtiaz	0.055300
 Mahin	0.055132
 Md Hasan	0.055048
 Mohammod	0.054965
-Ah	0.054882
 Asaduzzaman	0.054800
 Mehedi Hasan	0.054718
 Morshed	0.054636
@@ -274,7 +258,6 @@ Apu	0.054153
 Sayem	0.053995
 Alomgir	0.053916
 Nadim	0.053760
-Ra	0.053683
 Mohsin	0.053606
 Tipu	0.053529
 Riyad	0.053452
@@ -288,17 +271,13 @@ Saidur	0.052705
 Hanif	0.052559
 Bablu	0.052486
 Roni	0.052414
-Km	0.052342
 Mamunur	0.052271
-As	0.052058
 Anis	0.051988
 Imam	0.051917
 Rajon	0.051778
 Lucky	0.051709
-Mk	0.051571
 Salauddin	0.051503
 Ataur	0.051434
-Gm	0.051367
 Md Arif	0.051299
 Arfin	0.051232
 Al-Amin	0.051164
@@ -337,14 +316,12 @@ Sahin	0.048450
 Amran	0.048393
 Apon	0.048280
 Sagar	0.048057
-Si	0.048002
 Limon	0.047946
 Rafsan	0.047891
 Kobir	0.047836
 Nasim	0.047727
 Md Alamin	0.047673
 Sajid	0.047511
-Aj	0.047458
 Sakil	0.047405
 Khokon	0.047298
 Amirul	0.047246
@@ -401,7 +378,6 @@ Shaheen	0.043811
 Sahadat	0.043769
 Md Ali	0.043727
 Iftekhar	0.043685
-Sb	0.043602
 Lokman	0.043561
 Titu	0.043519
 Kalam	0.043437
@@ -448,9 +424,7 @@ Mijan	0.041345
 Anup	0.041310
 Azim	0.041274
 Borhan	0.041239
-Hr	0.041204
 Badsha	0.041169
-Pk	0.041135
 Mahfuzur	0.041100
 Didar	0.041065
 Ziaul	0.041030
@@ -463,7 +437,6 @@ Md Abdur	0.040791
 Redwan	0.040757
 Jisan	0.040723
 Sopno	0.040689
-Rh	0.040656
 Naeem	0.040622
 Ayub	0.040589
 Alom	0.040555
@@ -483,7 +456,6 @@ Md Ripon	0.039904
 Shahinur	0.039873
 Azizur	0.039746
 Md Nazmul	0.039715
-Bm	0.039653
 Minhaj	0.039590
 Sadik	0.039528
 Robel	0.039498
@@ -523,7 +495,6 @@ Ruhel	0.038069
 Tutul	0.038042
 Amzad	0.037987
 Md Shakil	0.037878
-Sp	0.037823
 Mukul	0.037796
 Santo	0.037769
 Masudur	0.037743
@@ -555,10 +526,8 @@ Tahsan	0.036761
 Shorif	0.036736
 Mominul	0.036711
 Partho	0.036637
-Rm	0.036613
 Saimon	0.036564
 Afran	0.036515
-H M	0.036491
 Bidhan	0.036418
 Mahfuj	0.036394
 Mizanur Rahman	0.036370
@@ -576,11 +545,9 @@ Dipok	0.035991
 Shovon	0.035968
 Durjoy	0.035944
 Shaikh	0.035921
-Kh	0.035898
 Fuad	0.035852
 Jerin	0.035829
 Forid	0.035806
-Sn	0.035760
 Ahasan	0.035737
 Tarikul	0.035714
 Tanmoy	0.035692
@@ -596,14 +563,12 @@ Solaiman	0.035466
 Monjurul	0.035444
 Shopnil	0.035400
 Tanjim	0.035311
-Bd	0.035245
 Md Sujon	0.035223
 Aminul Islam	0.035202
 Zahir	0.035093
 Md Alamgir	0.035028
 Md Helal	0.034986
 Salahuddin	0.034900
-Hi	0.034879
 Md Rana	0.034858
 Shafi	0.034837
 Atif	0.034816
@@ -628,7 +593,6 @@ Shams	0.034320
 Abdur Rahman	0.034280
 Numan	0.034239
 Showkat	0.034219
-Ri	0.034199
 Muntasir	0.034179
 Dipto	0.034139
 Biswajit	0.034100
@@ -643,7 +607,6 @@ Miraz	0.033903
 Rezwan	0.033884
 Aftab	0.033864
 Shekh	0.033845
-Fa	0.033826
 Nafis	0.033806
 Mahbubul	0.033787
 Araf	0.033768
@@ -693,12 +656,9 @@ Joshim	0.032686
 Badrul	0.032669
 Md Harun	0.032651
 Mosharof	0.032634
-Js	0.032616
-Hd	0.032599
 Arup	0.032582
 Reaz	0.032564
 Md Milon	0.032530
-Nh	0.032513
 Khandaker	0.032496
 Ayon	0.032461
 Sanjit	0.032444
@@ -758,7 +718,6 @@ Shadman	0.030964
 Md Saddam	0.030890
 Mohon	0.030875
 Md Sohag	0.030861
-M D	0.030831
 Mishu	0.030817
 Shabbir	0.030744
 Afsar	0.030729
@@ -768,7 +727,6 @@ Dreamless	0.030643
 Niaz	0.030628
 Alok	0.030614
 Arfat	0.030600
-Mn	0.030585
 Faruque	0.030571
 Jahedul	0.030557
 Md Omar	0.030514
@@ -789,7 +747,6 @@ Rofiqul	0.030192
 Md Shohel	0.030179
 Redoy	0.030165
 Adib	0.030151
-Jh	0.030137
 Kamrul Hasan	0.030110
 Tufayel	0.030096
 Ahsanul	0.030069
@@ -798,7 +755,6 @@ Ashiq	0.030042
 Saha	0.030015
 Md Yousuf	0.029988
 Raton	0.029975
-Hk	0.029961
 Md Rashed	0.029934
 Md Nahid	0.029907
 Himu	0.029867
@@ -848,14 +804,12 @@ Jaman	0.029123
 Obaidul	0.029111
 Md Rajib	0.029074
 Sojol	0.029062
-M S	0.029050
 Ornob	0.029025
 Jahidul Islam	0.029013
 Saifuddin	0.029001
 Nurul Islam	0.028989
 Md Shahidul	0.028976
 Antu	0.028952
-M R	0.028928
 All	0.028916
 Tazul	0.028904
 Shawkat	0.028892
@@ -866,7 +820,6 @@ Shifat	0.028784
 Sumit	0.028760
 Sohidul	0.028736
 Joynul	0.028724
-Dx	0.028712
 Jayed	0.028701
 Suvo	0.028689
 Md Sojib	0.028630
@@ -898,7 +851,6 @@ S A	0.028250
 Md Shohag	0.028228
 Amdad	0.028194
 Akas	0.028172
-Dm	0.028161
 Sopon	0.028149
 Alo	0.028138
 Tapash	0.028127
@@ -919,14 +871,12 @@ Arju	0.027940
 Suhag	0.027929
 Torikul	0.027918
 Kibria	0.027907
-Mv	0.027886
 Tusar	0.027875
 Sadikur	0.027864
 Ruhan	0.027842
 Md Tanvir	0.027821
 Minhajul	0.027799
 Hero	0.027778
-Dk	0.027767
 Shahabuddin	0.027746
 Taslim	0.027735
 Akbor	0.027724
@@ -974,9 +924,7 @@ Koster	0.027126
 Towhidul	0.027116
 Md Sobuj	0.027096
 Touhidul	0.027086
-M M	0.027047
 Md Al Amin	0.027017
-Mg	0.027007
 Md Dulal	0.026997
 Md Selim	0.026968
 Shajib	0.026958
@@ -1017,7 +965,6 @@ Sani	0.026528
 Abdur Rahim	0.026519
 Hamidul	0.026500
 Rafiul	0.026472
-S K	0.026454
 Razzak	0.026435
 Muktar	0.026426
 Repon	0.026417
@@ -1045,14 +992,10 @@ Shehab	0.026091
 Zahed	0.026082
 Chanchal	0.026073
 Md Hanif	0.026064
-Rd	0.026055
 Md Zakir	0.026047
 Rup	0.026038
 Abm	0.026029
-Bp	0.026011
-Hf	0.025994
 Zihad	0.025967
-M H	0.025959
 Talukder	0.025933
 Robiul Islam	0.025924
 Saymon	0.025906
@@ -1083,7 +1026,6 @@ Sadi	0.025599
 Manna	0.025591
 Delower	0.025582
 Rofik	0.025565
-Rb	0.025557
 Tohidul	0.025549
 Md Alauddin	0.025540
 Shahan	0.025532
@@ -1092,13 +1034,11 @@ Md Saidul	0.025516
 Kayes	0.025499
 Layek	0.025491
 Shovo	0.025474
-Rx	0.025449
 Rajkumar	0.025441
 Das	0.025433
 Jitu	0.025425
 Anupam	0.025408
 Sorif	0.025400
-Sj	0.025392
 Debasish	0.025384
 Md Kabir	0.025375
 Subir	0.025367
@@ -1112,7 +1052,6 @@ Yamin	0.025262
 Kaiser	0.025254
 Jahangir Alam	0.025246
 Komol	0.025230
-Sf	0.025222
 Wahidul	0.025214
 Md Anamul	0.025206
 Shiplu	0.025198
@@ -1120,7 +1059,6 @@ Tanzil	0.025190
 Md Abdus	0.025134
 Md Ridoy	0.025126
 Pranta	0.025118
-S R	0.025110
 Shibu	0.025102
 Almas	0.025094
 Rafat	0.025078
@@ -1190,7 +1128,6 @@ Sudipto	0.024434
 Md Alomgir	0.024419
 Juma	0.024412
 Jamir	0.024405
-Nk	0.024398
 Rafikul	0.024390
 Biswas	0.024383
 Nojrul	0.024376
@@ -1246,7 +1183,6 @@ Majharul	0.023870
 Nazmul Hasan	0.023857
 Tanjib	0.023843
 Khondokar	0.023837
-K M	0.023830
 Pronoy	0.023816
 Tomal	0.023810
 Nesar	0.023789
@@ -1254,7 +1190,6 @@ Minto	0.023783
 Nozrul	0.023776
 Md Akram	0.023756
 Singer	0.023749
-Rt	0.023736
 Mushfiq	0.023729
 Minhazul	0.023722
 Abdulla Al	0.023716
@@ -1306,7 +1241,6 @@ Minar	0.023281
 Shahidur	0.023275
 Topon	0.023268
 Nerob	0.023262
-Gsm	0.023256
 Piash	0.023250
 Shohanur	0.023243
 Md Rabiul	0.023237
@@ -1321,10 +1255,8 @@ Hazrat	0.023131
 Ayaan	0.023125
 Shadat	0.023113
 Nuruddin	0.023106
-Ji	0.023100
 Rofikul	0.023088
 Sihab	0.023082
-Nm	0.023076
 Humaun	0.023069
 Suzon	0.023063
 Live	0.023057
@@ -1401,12 +1333,10 @@ Ashad	0.022434
 Rupan	0.022428
 Suriya	0.022422
 Ainul	0.022417
-Hs	0.022411
 Hossen	0.022406
 Mohidul	0.022400
 Shapon	0.022394
 Rajaul	0.022389
-Rn	0.022383
 Md Robel	0.022377
 Ahm	0.022372
 Md Suhel	0.022361
@@ -1417,7 +1347,6 @@ Mostakim	0.022322
 Osthir	0.022299
 Abu Sayed	0.022294
 Kakon	0.022277
-Lx	0.022272
 Mynul	0.022266
 Shaikat	0.022261
 A K	0.022255
@@ -1427,14 +1356,12 @@ Rabin	0.022228
 Faiyaz	0.022222
 Muhib	0.022217
 Arafath	0.022211
-Mu	0.022206
 Ohidul	0.022189
 Rofiq	0.022178
 Habibul	0.022173
 Babor	0.022168
 Md Amran	0.022157
 Jillur	0.022151
-Jr	0.022146
 Monzur	0.022140
 Shahedul	0.022135
 Md Samim	0.022130
@@ -1442,16 +1369,13 @@ Md Farhad	0.022124
 Masudul	0.022113
 Sei	0.022097
 Shourov	0.022086
-Mđ	0.022070
 Sanjid	0.022065
 Arifuzzaman	0.022059
 Shuva	0.022054
-Rdx	0.022043
 Joyanta	0.022033
 Mostafijur	0.022027
 Bimal	0.022011
 Bakul	0.022006
-Mt	0.022001
 Saydul	0.021995
 Md Lokman	0.021990
 Mahid	0.021969
@@ -1540,7 +1464,6 @@ Nir	0.021315
 Sobuz	0.021310
 Md Delowar	0.021306
 Afif	0.021301
-Ru	0.021286
 Zafor	0.021281
 Imdadul	0.021277
 Muhit	0.021257
@@ -1566,7 +1489,6 @@ Hafizul	0.021115
 Tarif	0.021110
 Shofikul	0.021105
 Md Momin	0.021096
-Tr	0.021091
 Haque	0.021087
 Md Mijan	0.021082
 Md Khokon	0.021077
@@ -1591,11 +1513,9 @@ Kayum	0.020929
 Arham	0.020924
 Miah	0.020920
 Ekbal	0.020915
-Ds	0.020911
 Liakat	0.020906
 Md Kalam	0.020901
 Biplop	0.020897
-Is	0.020892
 Rizvi	0.020888
 Anwar Hossain	0.020879
 Md Salauddin	0.020874
@@ -1617,7 +1537,6 @@ Shain	0.020739
 Jone	0.020735
 Julhas	0.020730
 Ananta	0.020726
-Ap	0.020721
 Tohid	0.020717
 Boshir	0.020708
 Taufiq	0.020703
@@ -1626,14 +1545,12 @@ Md Amin	0.020690
 Md Farid	0.020686
 Nahim	0.020681
 Shirajul	0.020677
-Fs	0.020668
 Md Sultan	0.020664
 Pulak	0.020659
 Md Shahed	0.020655
 Mitul	0.020650
 Tarequl	0.020637
 Fahmid	0.020628
-Ih	0.020615
 Bhuiyan	0.020611
 Hosne	0.020607
 Md Tamim	0.020602
@@ -1654,7 +1571,6 @@ Ripan	0.020533
 Hiron	0.020524
 Shofiq	0.020515
 Mohosin	0.020507
-Nj	0.020502
 Abs	0.020498
 Uzzol	0.020489
 Afjol	0.020485
@@ -1689,7 +1605,6 @@ Md Alom	0.020315
 Joydeb	0.020303
 Jahirul Islam	0.020299
 Atia	0.020294
-Fh	0.020286
 Ragib	0.020282
 Modhu	0.020274
 Mirajul	0.020265
@@ -1705,7 +1620,6 @@ Ishtiak	0.020182
 Md Jahirul	0.020178
 Azmain	0.020174
 Anirban	0.020166
-Rtr	0.020158
 Rehman	0.020141
 Sarfaraz	0.020137
 Afroz	0.020133
@@ -1719,7 +1633,6 @@ Nihar	0.020101
 Rupak	0.020097
 Md Noor	0.020093
 Asit	0.020089
-Af	0.020085
 Anuwar	0.020080
 Safiul	0.020076
 Md Bablu	0.020072
@@ -1758,7 +1671,6 @@ Polas	0.019842
 Abdus Salam	0.019838
 Bazlur	0.019834
 Shamsur	0.019830
-Dh	0.019826
 Nakib	0.019822
 Md Mohiuddin	0.019819
 Eyasin	0.019815
@@ -1779,11 +1691,9 @@ Farhan Ahmed	0.019695
 Md Shohidul	0.019676
 Sarif	0.019672
 Shaha	0.019668
-Ks	0.019665
 Dilwar	0.019661
 Mofiz	0.019657
 Anarul	0.019649
-Gk	0.019646
 Abdul Mannan	0.019642
 Sadhan	0.019638
 Kowsar	0.019634
@@ -1900,7 +1810,6 @@ Hasnain	0.018980
 Bahadur	0.018976
 Ashique	0.018969
 Pinto	0.018963
-Cm	0.018956
 Md Arshad	0.018949
 Sahan	0.018942
 Sofikul	0.018939
@@ -1914,7 +1823,6 @@ Roshid	0.018915
 Luthfur	0.018912
 Nafi	0.018908
 Omur	0.018905
-Ctg	0.018898
 Prashanta	0.018895
 Roki	0.018891
 Md Asad	0.018881
@@ -1955,17 +1863,14 @@ Md Hafizur	0.018699
 Asadullah	0.018696
 Rubal	0.018692
 Shamal	0.018689
-Mp	0.018683
 Sanwar	0.018679
 Kaji	0.018676
 Anan	0.018670
 Ohid	0.018666
-Kr	0.018660
 Iftakhar	0.018657
 Itz	0.018650
 Shaidul	0.018647
 Kalo	0.018644
-At	0.018637
 Tanmay	0.018634
 Ajijul	0.018631
 Sabit	0.018624
@@ -1991,7 +1896,6 @@ Md Nayeem	0.018493
 Md Atik	0.018490
 Rashedul Islam	0.018484
 Proshanta	0.018477
-S H	0.018474
 Sushanto	0.018462
 Mukit	0.018455
 Aktaruzzaman	0.018449
@@ -2003,7 +1907,6 @@ Altab	0.018424
 Nannu	0.018418
 Manzur	0.018411
 Prabir	0.018408
-Hb	0.018405
 Log	0.018402
 Arabi	0.018399
 Tani	0.018396
@@ -2030,8 +1933,6 @@ Samsu	0.018270
 Tinku	0.018267
 Mosaraf	0.018260
 Wahed	0.018257
-Ek	0.018251
-Pm	0.018248
 Nashir	0.018239
 Hosain	0.018236
 Mozammal	0.018233
@@ -2044,10 +1945,8 @@ Jahurul	0.018212
 Md Anis	0.018209
 Sadikul	0.018200
 Iqbal Hossain	0.018188
-Fk	0.018185
 Shahriyar	0.018182
 Misu	0.018179
-Mx	0.018176
 Istiaq	0.018164
 Anamul Haque	0.018158
 Md Rafi	0.018152
@@ -2074,7 +1973,6 @@ Sazib	0.018048
 Riyaz	0.018045
 Shayan	0.018042
 Ziauddin	0.018030
-Ps	0.018028
 Barun	0.018025
 Mubin	0.018019
 Abdul Hamid	0.018016
@@ -2103,7 +2001,6 @@ Montasir	0.017943
 Mawlana	0.017937
 Azizur Rahman	0.017923
 Akaki	0.017920
-S S	0.017917
 Sazal	0.017914
 Rezaur	0.017911
 Marzan	0.017903
@@ -2162,7 +2059,6 @@ Md Samsul	0.017686
 Rassel	0.017680
 Towfiq	0.017678
 Oni	0.017675
-Ft	0.017672
 Khandokar	0.017661
 Muhtasim	0.017658
 Polok	0.017656
@@ -2243,8 +2139,6 @@ Ishrak	0.017358
 Md Ziaur	0.017347
 Mirazul	0.017342
 Md Shorif	0.017337
-Cr Cr	0.017334
-R S	0.017329
 Asraful Islam	0.017327
 Barua	0.017316
 Salehin	0.017314
@@ -2268,7 +2162,6 @@ Md Rejaul	0.017247
 Sakir	0.017244
 Pervez	0.017241
 Nepal	0.017239
-Gs	0.017236
 Ashfak	0.017234
 Abdal	0.017229
 Matin	0.017226
@@ -2283,7 +2176,6 @@ Nizam Uddin	0.017198
 Nurnobi	0.017195
 Rupam	0.017193
 Titon	0.017190
-Rf	0.017183
 Ziaur Rahman	0.017178
 Ananto	0.017173
 Shamiul	0.017170
@@ -2311,16 +2203,13 @@ Oronno	0.017077
 Royel	0.017075
 Jesan	0.017070
 Ontor	0.017055
-Oc	0.017052
 Imran Khan	0.017050
 Babo	0.017042
 Sufi	0.017040
 Full	0.017037
 Nasiruddin	0.017035
 Mahe	0.017033
-Tk	0.017030
 Ful	0.017028
-Kd	0.017023
 Ali Ahmed	0.017020
 Debu	0.017018
 Bishu	0.017015
@@ -2339,13 +2228,10 @@ Md Halim	0.016976
 Basudeb	0.016974
 Akmol	0.016964
 Motiar	0.016961
-Msh	0.016959
 Cricket	0.016956
 Raian	0.016949
-Jf	0.016947
 Fazla	0.016944
 Md Jowel	0.016942
-Sm	0.016937
 Moklesur	0.016932
 Khairul Islam	0.016930
 Mrinmoy	0.016927
@@ -2354,13 +2240,11 @@ Susanto	0.016920
 Foyej	0.016918
 Sudeb	0.016915
 Amirul Islam	0.016913
-Rtn	0.016910
 Mow	0.016906
 Md Juned	0.016903
 Matir	0.016896
 Md Arfat	0.016893
 Pias	0.016889
-M K	0.016886
 Engr Md	0.016881
 Kazol	0.016879
 Sazzad Hossain	0.016874
@@ -2418,7 +2302,6 @@ Sojon	0.016674
 Razon	0.016671
 Safat	0.016669
 Muhin	0.016667
-Jn	0.016664
 Md Mizanur Rahman	0.016660
 Himadri	0.016648
 Hasibul Hasan	0.016646
@@ -2479,11 +2362,9 @@ Nuralam	0.016458
 Shamir	0.016455
 Danger	0.016453
 Sabur	0.016451
-Srk	0.016449
 Sapon	0.016444
 Bijan	0.016442
 Shahdat	0.016440
-Ik	0.016438
 Zohir	0.016435
 Heron	0.016433
 Md Khan	0.016431
@@ -2506,7 +2387,6 @@ Raisul Islam	0.016382
 Sadiqur	0.016371
 Tarikul Islam	0.016365
 Md Khorshed	0.016358
-Mď	0.016354
 Kazi Md	0.016352
 Kamrujjaman	0.016350
 Mazedul	0.016347
@@ -2526,7 +2406,6 @@ Md Arifur	0.016302
 Rofiqul Islam	0.016300
 Md Mahbubur	0.016297
 Md Jahedul	0.016293
-R J	0.016289
 Mong	0.016280
 Showrov	0.016278
 Rafsun	0.016276
@@ -2574,7 +2453,6 @@ Banglar	0.016161
 Md Abdullah Al	0.016154
 Shamrat	0.016152
 Nayim	0.016150
-R K	0.016144
 Shojol	0.016142
 Md Burhan	0.016140
 Md Aminul Islam	0.016137
@@ -2587,7 +2465,6 @@ Md Shagor	0.016110
 Md Shanto	0.016108
 Emamul	0.016106
 Md Sahed	0.016102
-G M	0.016096
 Ponkoj	0.016085
 Mithon	0.016066
 Md Shaiful	0.016064
@@ -2686,7 +2563,6 @@ Shaki	0.015770
 Kurshed	0.015768
 Abdul Kadir	0.015766
 Fardeen	0.015764
-Nb	0.015762
 Minarul	0.015760
 Parbes	0.015758
 Nimai	0.015754
@@ -2694,7 +2570,6 @@ Sayan	0.015752
 Umor	0.015750
 Shahalom	0.015749
 Nawshad	0.015747
-Hp	0.015745
 Samol	0.015739
 Sakawat	0.015737
 Sheak	0.015735
@@ -2704,7 +2579,6 @@ Mustofa	0.015729
 Arshadul	0.015725
 Munim	0.015723
 Jwel	0.015721
-Fj	0.015719
 Bahauddin	0.015717
 Md Zia	0.015715
 Tanju	0.015710
@@ -2793,7 +2667,6 @@ Arosh	0.015456
 Soyful	0.015454
 Md Mintu	0.015452
 Md Hassan	0.015451
-Eh	0.015447
 Nile	0.015443
 Ruhin	0.015436
 Md Hasibul	0.015434
@@ -2886,7 +2759,6 @@ Aksh	0.015190
 Md Kashem	0.015188
 Md Altaf	0.015186
 Mull	0.015185
-Ls	0.015183
 Jonaid	0.015181
 Abedin	0.015179
 Elius	0.015176
@@ -2977,7 +2849,6 @@ Sunam	0.014935
 Mejan	0.014934
 Aung	0.014930
 Jahad	0.014929
-Gr	0.014927
 Gouranga	0.014925
 Baten	0.014924
 Md Anam	0.014922
@@ -2995,7 +2866,6 @@ Md Forkan	0.014902
 Nuralom	0.014900
 Saraf	0.014894
 Blu	0.014892
-Zh	0.014891
 Dinar	0.014887
 Sajjadur	0.014884
 Maniruzzaman	0.014882
@@ -3037,7 +2907,6 @@ Tanzid	0.014784
 Fairuz	0.014783
 Fazlay	0.014778
 Liker	0.014773
-Md S	0.014770
 Baizid	0.014768
 Ovijit	0.014765
 Sonar	0.014763
@@ -3055,19 +2924,16 @@ Tashrif	0.014725
 Amitav	0.014723
 Ibnul	0.014722
 Proloy	0.014719
-Sc	0.014714
 Abu Bokkor	0.014711
 A A	0.014707
 Md. Abu	0.014706
 Khademul	0.014704
 Nur Uddin	0.014701
-B M	0.014700
 Porag	0.014696
 Md Muktar	0.014693
 Md Samir	0.014692
 Imran Ahmed	0.014688
 Shezan	0.014685
-Mrh	0.014684
 Md Abdulla	0.014682
 Md Shahab	0.014681
 Shahnawaz	0.014677
@@ -3117,12 +2983,10 @@ Rakibur	0.014599
 Provash	0.014597
 Soikat	0.014590
 Muzibur	0.014586
-Mmr	0.014585
 Imam Hossain	0.014583
 Abdur Rob	0.014582
 Md Shohid	0.014580
 Md Bulbul	0.014579
-H Md	0.014574
 Toslim	0.014569
 Md Jamir	0.014568
 Digonto	0.014566
@@ -3142,7 +3006,6 @@ Abdur Rashid	0.014536
 Saruar	0.014531
 Md Mainuddin	0.014522
 Md Sofikul	0.014519
-Msr	0.014517
 Sadhin	0.014516
 Md Akbor	0.014514
 Mahfujul	0.014513
@@ -3161,7 +3024,6 @@ Sakib Al	0.014478
 Novel	0.014470
 Mollik	0.014467
 Ranjon	0.014465
-D J	0.014462
 Md Sohel Rana	0.014455
 Nabin	0.014450
 Khaja	0.014449
@@ -3183,7 +3045,6 @@ Jainal	0.014423
 Rajin	0.014422
 Sadak	0.014420
 Khorsed	0.014419
-Vp	0.014417
 Sadab	0.014416
 Shidul	0.014414
 Mdabdul	0.014413
@@ -3191,10 +3052,8 @@ Mdsohel	0.014411
 Romio	0.014410
 Regan	0.014408
 Zabir	0.014407
-Aq	0.014405
 Mdhasan	0.014402
 Deba	0.014401
-Mrr	0.014398
 Nobir	0.014396
 Tufan	0.014395
 Md Siraj	0.014393
@@ -3204,14 +3063,11 @@ Mojibul	0.014389
 Pool	0.014387
 Delwer	0.014383
 Nurullah	0.014378
-Mrk	0.014375
 Aktarul	0.014374
-Ht	0.014368
 Pot	0.014367
 Abdul Awal	0.014365
 Albi	0.014364
 Efti	0.014362
-Dn	0.014361
 Razin	0.014358
 Akasher	0.014352
 Sopnohin	0.014350
@@ -3245,7 +3101,6 @@ Hasan Ahmed	0.014287
 Sadiqul	0.014286
 Jubayer Ahmed	0.014281
 Shohrab	0.014278
-Gf	0.014277
 Shomrat	0.014276
 Shitol	0.014274
 Riadul	0.014273
@@ -3284,10 +3139,8 @@ Shahiduzzaman	0.014198
 Shohel Rana	0.014196
 Lavlu	0.014190
 Md Sifat	0.014188
-Mg Mg	0.014182
 Borno	0.014180
 Joyonto	0.014179
-M N	0.014178
 Shamimul	0.014173
 Magh	0.014172
 Shamsul Alam	0.014171
@@ -3316,7 +3169,6 @@ Dedar	0.014121
 Mezan	0.014120
 Azgar	0.014117
 Mdali	0.014115
-Db	0.014114
 Mohid	0.014113
 Ajmir	0.014111
 Giyas	0.014110
@@ -3330,7 +3182,6 @@ Bachchu	0.014098
 Abdul Jalil	0.014097
 Rashik	0.014096
 Shafat	0.014094
-Sg	0.014093
 Mohin Uddin	0.014091
 Tipo	0.014090
 Jiaul	0.014089
@@ -3340,12 +3191,10 @@ Arob	0.014085
 Tahidul	0.014083
 Oliullah	0.014082
 Abdul Hai	0.014080
-Lk	0.014079
 Sijan	0.014078
 Shobuz	0.014076
 Ohidur	0.014075
 Jora	0.014073
-Mhr	0.014072
 Shahab Uddin	0.014071
 Sabid	0.014069
 Sujat	0.014068
@@ -3356,13 +3205,9 @@ Mafizur	0.014059
 Abul Khair	0.014058
 Reshad	0.014057
 Sadid	0.014055
-Rz	0.014054
-Zr	0.014052
 Asib	0.014050
 Back	0.014047
-Lr	0.014043
 Indro	0.014040
-Rl	0.014039
 Ses	0.014037
 Md Shariful Islam	0.014034
 Ashfaqur	0.014033
@@ -3398,7 +3243,6 @@ Iftekher	0.013955
 Shaidur	0.013954
 Waliur	0.013951
 Mehadi Hasan	0.013948
-F M	0.013947
 Md Amdadul	0.013945
 Mushfique	0.013943
 Shuvon	0.013940
@@ -3487,7 +3331,6 @@ Adhir	0.013754
 Monnan	0.013753
 Moznu	0.013752
 Sahjahan	0.013750
-Kl	0.013749
 Tafazzal	0.013748
 Tahid	0.013746
 Md Sahid	0.013745
@@ -3555,7 +3398,6 @@ Loveless	0.013617
 Tambir	0.013616
 Sayon	0.013612
 Ajharul	0.013611
-Sk Md	0.013607
 Azadur	0.013606
 Mujakkir	0.013597
 Md Jahid Hasan	0.013596
@@ -3644,7 +3486,6 @@ Mohammud	0.013439
 Dur	0.013438
 Mdsalim	0.013435
 Suhal	0.013434
-Lb	0.013433
 Mdmonir	0.013432
 Mdrubel	0.013430
 Sahalom	0.013429
@@ -3679,7 +3520,6 @@ Rodro	0.013385
 Susmoy	0.013382
 Prothom	0.013380
 Poros	0.013377
-Kz	0.013375
 Emran Hossain	0.013370
 Md Shahriar	0.013368
 Tasnimul	0.013367
@@ -3729,7 +3569,6 @@ Sanur	0.013278
 Tumar	0.013277
 Fokir	0.013276
 Mukhlesur	0.013274
-Md M	0.013272
 Enamul Haque	0.013271
 Prience	0.013267
 N A	0.013265
@@ -3745,7 +3584,6 @@ Mosarraf	0.013249
 Utsha	0.013248
 Jafrul	0.013245
 Diganta	0.013243
-S T	0.013240
 Turzo	0.013238
 Mashrafi	0.013236
 Shakhawat Hossain	0.013235
@@ -3763,7 +3601,6 @@ Ridwanul	0.013215
 Aiyan	0.013214
 Excellent	0.013212
 Md Malek	0.013211
-Tpg	0.013209
 Didarul Alam	0.013206
 Md Masuk	0.013205
 Shironamhin	0.013201
@@ -3799,7 +3636,6 @@ Bitu	0.013156
 Allu	0.013154
 Aman Ullah	0.013153
 Sharuk	0.013151
-Sms	0.013149
 Nurol	0.013148
 Md Bilal	0.013147
 Open	0.013145
@@ -3821,7 +3657,6 @@ Joney	0.013125
 Arindam	0.013124
 Sobahan	0.013123
 Mosharef	0.013122
-Hn	0.013119
 Surman	0.013118
 Md Halal	0.013117
 Hason	0.013116
@@ -3831,7 +3666,6 @@ Sate	0.013113
 Homaun	0.013111
 Amanul	0.013110
 Zaw	0.013109
-Ir	0.013108
 Muhid	0.013107
 Eftekhar	0.013105
 Rube	0.013098
@@ -3904,7 +3738,6 @@ Abul Hasan	0.012951
 Adity	0.012950
 Golam Kibria	0.012949
 Imran Hasan	0.012948
-R H	0.012945
 Sozib	0.012943
 Abul Hasnat	0.012939
 Rat Jaga	0.012938
@@ -4002,7 +3835,6 @@ Mohinuddin	0.012776
 Juman	0.012774
 Bulet	0.012773
 Fast	0.012772
-Ex	0.012771
 Desh	0.012770
 Mdarif	0.012769
 Mdjamal	0.012768
@@ -4010,7 +3842,6 @@ Ehtesham	0.012766
 Asir	0.012765
 Younos	0.012764
 Nisan	0.012763
-Msk	0.012762
 Sontosh	0.012761
 Mdmasud	0.012760
 Bidan	0.012759
@@ -4030,7 +3861,6 @@ Lotif	0.012741
 Mujammil	0.012740
 Shohal	0.012738
 November	0.012737
-Smd	0.012735
 Rahmot	0.012733
 Mezanur	0.012732
 Md Raja	0.012731
@@ -4041,9 +3871,7 @@ Musleh	0.012726
 Jane Alam	0.012725
 Marup	0.012724
 M Hasan	0.012723
-Zm	0.012722
 Tah	0.012721
-Nt	0.012720
 Riku	0.012718
 Tui	0.012716
 Robbi	0.012712
@@ -4137,7 +3965,6 @@ Md Saleh	0.012574
 Rujel	0.012572
 Torikul Islam	0.012569
 Md. Mizanur	0.012566
-H R	0.012565
 Zobaer	0.012563
 Hasibul Islam	0.012562
 Md Akas	0.012556
@@ -4162,7 +3989,6 @@ Ruhit	0.012522
 Turjoy	0.012521
 Md Tazul	0.012520
 Sejan	0.012519
-Jcd	0.012518
 Md Tufayel	0.012516
 Md Yakub	0.012513
 Tofazzol	0.012512
@@ -4192,7 +4018,6 @@ Mredul	0.012472
 Achinto	0.012470
 Suvas	0.012468
 Sonkor	0.012465
-S D	0.012463
 Ocina	0.012462
 Sheakh	0.012459
 Askor	0.012455
@@ -4259,7 +4084,6 @@ Imraan	0.012383
 Siddhartha	0.012383
 Mostufa	0.012382
 Ajhar	0.012379
-Us	0.012377
 Mustaque	0.012376
 Jilu	0.012375
 Ahil	0.012374
@@ -4295,13 +4119,11 @@ Jabul	0.012344
 Saife	0.012343
 Sojal	0.012342
 Modu	0.012341
-Fz	0.012340
 Arean	0.012337
 Kefayet	0.012335
 Tik	0.012334
 Eron	0.012333
 Rik	0.012333
-Nc	0.012332
 Cor	0.012331
 Lalin	0.012329
 Raduan	0.012328
@@ -4313,7 +4135,6 @@ Saifuzzaman	0.012313
 Raquib	0.012310
 Md Tofazzal	0.012304
 Md Palash	0.012304
-Srs	0.012301
 S Islam	0.012297
 Uzzwal	0.012295
 Emranul	0.012294
@@ -4323,7 +4144,6 @@ Shahajalal	0.012290
 Zillur Rahman	0.012289
 Junayet	0.012288
 Oliur Rahman	0.012287
-Mð	0.012286
 Sharier	0.012284
 Mohammad Saiful	0.012282
 Robiul Hasan	0.012281
@@ -4342,7 +4162,6 @@ Md Ekbal	0.012266
 Iftakher	0.012265
 Rowson	0.012264
 Md Kajol	0.012262
-Bsl	0.012261
 Rishat	0.012256
 Hasibur Rahman	0.012255
 Md Sayful	0.012254
@@ -4375,8 +4194,6 @@ Riyadul	0.012216
 Md Idris	0.012215
 Monzu	0.012213
 Dipo	0.012210
-Kgf	0.012208
-M J	0.012204
 Md Hasem	0.012203
 Jihadul	0.012202
 Tuhel	0.012200
@@ -4419,7 +4236,6 @@ Sabab	0.012148
 Raktim	0.012147
 Sakibur	0.012146
 Zilani	0.012145
-S B	0.012144
 Rono	0.012143
 Daiyan	0.012142
 Md Giash	0.012140
@@ -4480,7 +4296,6 @@ Sultan Ahmed	0.012049
 Md Anisur Rahman	0.012048
 Md Solim	0.012047
 Hrithik	0.012046
-Md R	0.012045
 Fojol	0.012043
 Billah	0.012042
 Tarek Ahmed	0.012041
@@ -4498,10 +4313,8 @@ Md Rofiq	0.012027
 Dosto	0.012025
 Sawpan	0.012024
 Md Ratan	0.012023
-R M	0.012022
 Totul	0.012021
 Fokrul Islam	0.012019
-Skm	0.012019
 Keshob	0.012017
 Najmol	0.012015
 Md Ekram	0.012013
@@ -4548,7 +4361,6 @@ Bakkar	0.011970
 Sujal	0.011969
 Lakhi	0.011969
 Robal	0.011968
-Rv	0.011967
 Akhlak	0.011966
 Taufik	0.011965
 Md Rashid	0.011964
@@ -4572,7 +4384,6 @@ Mind	0.011942
 Md Javed	0.011941
 Ars	0.011940
 Faishal	0.011940
-Mds	0.011938
 Md Kausar	0.011937
 Sukdeb	0.011935
 Moheuddin	0.011934
@@ -4600,7 +4411,6 @@ Neon	0.011909
 Cadet	0.011908
 Kobi	0.011906
 Arik	0.011904
-Sz	0.011903
 Boka	0.011901
 Wrong	0.011900
 Fozle	0.011898
@@ -4669,14 +4479,12 @@ Rifat Ahmed	0.011806
 Md. Abdullah	0.011805
 Lutfor Rahman	0.011804
 Abu Raihan	0.011803
-Kbd	0.011802
 Jajabor	0.011800
 Aulad	0.011798
 Tahim	0.011796
 Nazimul	0.011794
 Munjurul	0.011793
 Risan	0.011792
-T M	0.011792
 Mofijur	0.011790
 Nuruz	0.011788
 Sahadat Hossain	0.011786
@@ -4687,7 +4495,6 @@ Sifatul	0.011780
 Amdadur	0.011779
 Nitay	0.011778
 Tasfiq	0.011776
-N S	0.011774
 Md Prince	0.011773
 Md. Sohel	0.011771
 Benzir	0.011770
@@ -4697,7 +4504,6 @@ Hazi Md	0.011766
 Maidul Islam	0.011761
 Sherajul	0.011759
 Nurul Absar	0.011758
-Fx	0.011757
 Md Mustakim	0.011756
 Tarok	0.011755
 Md Ovi	0.011753
@@ -4772,7 +4578,6 @@ Arafatul	0.011658
 Musharof	0.011657
 Md Rocky	0.011656
 Md Misbah	0.011655
-F R	0.011654
 Sojeeb	0.011652
 Md Layek	0.011652
 Md Rafikul	0.011650
@@ -4873,7 +4678,6 @@ Ainal	0.011525
 Shopan	0.011524
 Mdharun	0.011523
 Monjil	0.011522
-Kn	0.011522
 Payer	0.011521
 Dipan	0.011520
 Arabinda	0.011519
@@ -4892,9 +4696,6 @@ Shah Mohammad	0.011510
 Hasanat	0.011509
 English	0.011508
 Islami	0.011506
-Mkh	0.011504
-Mrm	0.011503
-Msd	0.011503
 Shaim	0.011501
 Surja	0.011500
 Arm	0.011500
@@ -5016,9 +4817,7 @@ Altafur	0.011341
 Nahid Ahmed	0.011339
 Kolil	0.011338
 Jubayel	0.011337
-N H	0.011337
 Alamin Hossain	0.011335
-Zx	0.011334
 Azmul	0.011334
 Tasfin	0.011333
 Md Sobuz	0.011332
@@ -5050,7 +4849,6 @@ Jaynul	0.011301
 Sylheti	0.011300
 Rojob	0.011298
 Sharifuzzaman	0.011297
-T H	0.011297
 Akash Ahmed	0.011296
 Athik	0.011295
 Afsor	0.011294
@@ -5076,7 +4874,6 @@ Saifan	0.011266
 Momenul	0.011265
 Asgor	0.011264
 Mazba	0.011263
-Nx	0.011261
 Sajibul	0.011260
 Shopnomoy	0.011259
 Md Hafijul	0.011258
@@ -5113,7 +4910,6 @@ Supon	0.011230
 Md Mustafa	0.011227
 Sovon	0.011227
 Abu Hasan	0.011226
-Md Sk	0.011224
 Md Raton	0.011223
 Amzad Hossain	0.011223
 Arifen	0.011222
@@ -5168,7 +4964,6 @@ Hare	0.011175
 Rajeeb	0.011174
 Jamsed	0.011173
 Saj	0.011173
-Mmd	0.011172
 Ikhtiar	0.011171
 Aahil	0.011171
 Sahalam	0.011170
@@ -5183,7 +4978,6 @@ Madhusudan	0.011164
 Mdnasir	0.011164
 Datta	0.011163
 Hazrat Ali	0.011162
-Np	0.011162
 Gabbar	0.011161
 Taraq	0.011160
 Babur	0.011159
@@ -5202,7 +4996,6 @@ Matab	0.011150
 Ullah	0.011150
 Sahim	0.011149
 Jashimuddin	0.011148
-Ur	0.011148
 Joher	0.011146
 Mukbul	0.011146
 Palas	0.011145
@@ -5211,14 +5004,12 @@ Mdismail	0.011143
 Netai	0.011142
 Mdliton	0.011141
 Unus	0.011141
-Pd	0.011139
 Omarfaruk	0.011139
 Md Aftab	0.011138
 Solman	0.011137
 Ruhol	0.011136
 Musha	0.011135
 Soheb	0.011134
-Mms	0.011133
 Sahen	0.011132
 Mohashin	0.011131
 Shahadad	0.011130
@@ -5234,15 +5025,12 @@ Tilok	0.011123
 Munjur	0.011123
 Johur	0.011121
 Mobasher	0.011121
-Zs	0.011119
 Abdul Momin	0.011119
 Shok	0.011118
 Mohaimen	0.011115
 Tamin	0.011115
 Mahib	0.011114
-Fn	0.011113
 Zalal	0.011112
-Nz	0.011112
 Neshat	0.011111
 Aroni	0.011110
 Tuku	0.011110
@@ -5251,14 +5039,11 @@ Pigeon	0.011108
 Brazil	0.011107
 Toki	0.011106
 Zim	0.011106
-Fd	0.011105
 Nion	0.011104
 Dab	0.011104
 Hart	0.011103
 Papel	0.011102
 Sidul	0.011101
-Bf	0.011100
-Tn	0.011099
 Adian	0.011098
 Nilay	0.011097
 Solyman	0.011095
@@ -5288,7 +5073,6 @@ Marufur	0.011065
 Md Ashiqur	0.011061
 Bokkor	0.011061
 Shimahin	0.011060
-N R	0.011059
 Khadimul	0.011058
 Mahidul Islam	0.011057
 Md Shahalam	0.011056
@@ -5343,7 +5127,6 @@ Kutub Uddin	0.011002
 Md Nejam	0.011002
 Md Dalowar	0.011001
 Biton	0.011000
-S N	0.011000
 Shohidur	0.010999
 Sohelrana	0.010998
 Ashoke	0.010998
@@ -5400,7 +5183,6 @@ Md Riajul	0.010939
 Injamamul	0.010938
 Nirab	0.010936
 Md Basir	0.010936
-Mdh	0.010934
 Diner	0.010932
 Mahamudur	0.010930
 Md. Rasel	0.010929
@@ -5469,7 +5251,6 @@ Badiuzzaman	0.010861
 Bodiul	0.010860
 Monowarul	0.010859
 Md Sohrab	0.010858
-Mgmg	0.010857
 Alvy	0.010855
 Samz	0.010854
 Cader	0.010854
@@ -5727,10 +5508,8 @@ Wares	0.010615
 Abdul Matin	0.010615
 Sayed Mohammad	0.010614
 Millad	0.010614
-Zk	0.010613
 Mohammad Hasan	0.010612
 Barna	0.010611
-Ef	0.010610
 Dabir	0.010609
 Noore	0.010608
 Diti	0.010608
@@ -5744,10 +5523,8 @@ Himi	0.010603
 Arfi	0.010602
 Band	0.010602
 Nikson	0.010601
-Pb	0.010601
 Bangali	0.010600
 Pope	0.010598
-Lh	0.010598
 Almin	0.010597
 Ural	0.010596
 Chip	0.010595
@@ -5791,7 +5568,6 @@ Nill Akaser	0.010555
 Shemol	0.010554
 Nirbak	0.010554
 Md Edris	0.010550
-J S	0.010550
 Xunayed	0.010549
 Md Reyad	0.010546
 Kafayet	0.010545
@@ -5815,7 +5591,6 @@ A S M	0.010527
 Rafayat	0.010526
 Nippon	0.010525
 Sakel	0.010524
-Skr	0.010522
 Somen	0.010520
 Asikur Rahman	0.010520
 Sajibur	0.010519
@@ -5872,7 +5647,6 @@ Munem	0.010471
 Sahanur	0.010470
 Aditta	0.010468
 Md. Imran	0.010467
-D M	0.010466
 Tashdid	0.010464
 Zillu	0.010463
 Moshiour	0.010463
@@ -6007,7 +5781,6 @@ Asuk	0.010344
 Bornil	0.010342
 Md Mostakim	0.010342
 Poronto	0.010341
-Mhs	0.010340
 Lincon	0.010340
 Shujan	0.010339
 Pole	0.010337
@@ -6022,7 +5795,6 @@ Arafat Rahman	0.010332
 Nowab	0.010332
 Dabu	0.010331
 Abul Kasem	0.010330
-Drz	0.010330
 Nayemur	0.010329
 Shafiul Islam	0.010329
 Mdemon	0.010327
@@ -6074,7 +5846,6 @@ Md Jakir Hossain	0.010295
 Sovo	0.010294
 Md Sipon	0.010293
 Alokito	0.010292
-Srm	0.010292
 Abu Jafar	0.010291
 Mosheur	0.010291
 S Rahman	0.010290
@@ -6089,7 +5860,6 @@ M Abdul	0.010284
 Thasan	0.010283
 Monne	0.010283
 Joblu	0.010282
-H K	0.010281
 Md Moinuddin	0.010281
 Jamrul	0.010280
 Sumon Kumar	0.010280
@@ -6142,7 +5912,6 @@ Md Shirajul	0.010228
 Md Dilwar	0.010226
 Jatan	0.010225
 Md Awlad	0.010224
-N M	0.010224
 Depok	0.010222
 Faravi	0.010222
 Salamot	0.010221
@@ -6154,7 +5923,6 @@ Tmi	0.010216
 Sreebas	0.010216
 Taibur	0.010215
 Ajmul	0.010215
-K H	0.010214
 Tajwar	0.010213
 Md Mahmudur	0.010212
 Jaber Ahmed	0.010212
@@ -6185,7 +5953,6 @@ Mahbub Hasan	0.010191
 Md Mojib	0.010190
 Md Shafiqur	0.010190
 Md Najam	0.010188
-Kq	0.010187
 Misbah Uddin	0.010184
 Luthfor	0.010184
 Md Nesar	0.010183
@@ -6265,7 +6032,6 @@ Bichitra	0.010138
 Kokan	0.010138
 Shakel	0.010137
 Surab	0.010137
-Shk	0.010136
 Sahabul	0.010136
 Sukhen	0.010135
 Jahangiralam	0.010135
@@ -6288,7 +6054,6 @@ Ali Hussain	0.010123
 Ebad	0.010122
 Right	0.010122
 Shamem	0.010121
-Msm	0.010121
 Ishaan	0.010120
 Bashir Ahmed	0.010120
 Anamol	0.010119
@@ -6343,7 +6108,6 @@ Sime	0.010088
 Call	0.010088
 Soto	0.010087
 Darl	0.010087
-Pl	0.010086
 Cryptic	0.010086
 True	0.010084
 Abran	0.010083
@@ -6354,7 +6118,6 @@ Nisad	0.010077
 Monti	0.010077
 Rip	0.010076
 Nazrin	0.010076
-Ov	0.010074
 Nuhan	0.010074
 Rubayed	0.010073
 Rowsan	0.010071
@@ -6422,7 +6185,6 @@ Md Sukkur	0.010012
 Azrin	0.010011
 Md Iqbal Hossain	0.010011
 Shahporan	0.010010
-Snk	0.010009
 Rakib Ahmed	0.010009
 Md Amanullah	0.010007
 Mahbubul Alam	0.010007
@@ -6451,7 +6213,6 @@ Tafsirul	0.009984
 Juwel Rana	0.009981
 Mesbah Uddin	0.009981
 Nibas	0.009980
-Skb	0.009980
 Bolai	0.009979
 Shadhon	0.009979
 Aftab Uddin	0.009978
@@ -6522,7 +6283,6 @@ Avir	0.009935
 Mesba	0.009934
 Rafiu	0.009933
 Asheque	0.009933
-T S	0.009932
 Chowdury	0.009931
 Neyamot	0.009929
 Md Shahidur	0.009928
@@ -6540,8 +6300,6 @@ Rajob	0.009918
 Raziur	0.009917
 Kingkor	0.009916
 Ondhokar	0.009915
-J K	0.009915
-S P	0.009914
 Al-Imran	0.009913
 Meskat	0.009911
 Muhim	0.009910
@@ -6617,7 +6375,6 @@ Mizanurrahman	0.009852
 Rotan	0.009852
 Mir Hossain	0.009851
 Shahenur	0.009851
-Ssm	0.009850
 Supriyo	0.009850
 Md Morshad	0.009849
 Shimol	0.009849
@@ -6688,7 +6445,6 @@ Afsin	0.009796
 Pollab	0.009793
 Kashfi	0.009792
 Tofajjol	0.009791
-Dr-Md	0.009791
 Mushfiqul	0.009790
 Fahad Bin	0.009789
 Md Nurislam	0.009787
@@ -6705,7 +6461,6 @@ Md Ramim	0.009777
 Shakawath	0.009777
 Shafiqul Alam	0.009776
 Sk Shamim	0.009775
-Bcs	0.009774
 Ashikul Islam	0.009774
 Refresh	0.009773
 Md Mosaraf	0.009773
@@ -6721,7 +6476,6 @@ Amir Hamja	0.009766
 Abdush	0.009765
 Md Ashad	0.009765
 Abjal	0.009764
-Nl	0.009764
 Mahmodul Hasan	0.009763
 Ahia	0.009763
 Md Mumin	0.009762
@@ -6731,7 +6485,6 @@ Sofiqul Islam	0.009758
 Radoan	0.009757
 Ab De	0.009757
 Jonaeid	0.009756
-J H	0.009756
 Mdyousuf	0.009755
 Md Naimur	0.009754
 Ratan Kumar	0.009753
@@ -6745,7 +6498,6 @@ Jubaier	0.009749
 Mirdha	0.009747
 Masud Khan	0.009746
 Sumir	0.009745
-K G F	0.009742
 Md Sawon	0.009740
 Md Deluar	0.009740
 Laden	0.009739
@@ -6759,7 +6511,6 @@ Md Esmail	0.009733
 Md Mahabul	0.009732
 Hartless	0.009731
 Md Milton	0.009730
-Hf Md	0.009730
 Md. Faruk	0.009729
 Titul	0.009729
 Md Emamul	0.009727
@@ -6827,8 +6578,6 @@ Airtel	0.009682
 Mozib	0.009681
 Md Imdadul	0.009680
 Md Nizam Uddin	0.009679
-S L	0.009679
-Xr	0.009676
 Md Dider	0.009676
 Md Suleman	0.009676
 Md Saifullah	0.009675
@@ -7049,13 +6798,11 @@ Abu Abdullah	0.009539
 Talash	0.009539
 Asru	0.009539
 Mdnur	0.009538
-Up	0.009537
 Mohammad Imran	0.009537
 Sarup	0.009536
 Mdbelal	0.009536
 Visa	0.009535
 Reyas	0.009535
-Mks	0.009534
 Jafur	0.009534
 Helaluddin	0.009533
 Safran	0.009533
@@ -7069,7 +6816,6 @@ Marof	0.009530
 Mohammad Ismail	0.009529
 Mohammad Iqbal	0.009529
 Shahid Ullah	0.009529
-Mq	0.009527
 Mihan	0.009527
 Poor	0.009526
 A Rahim	0.009525
@@ -7078,7 +6824,6 @@ Borhanuddin	0.009524
 Neyamat	0.009523
 Modasser	0.009523
 Tawrat	0.009523
-Kf	0.009522
 Tur	0.009521
 Arvi	0.009521
 Kanto	0.009519
@@ -7094,12 +6839,8 @@ Tule	0.009513
 Dollar	0.009512
 South	0.009512
 Rapper	0.009511
-Td	0.009511
 Babel	0.009510
-Yr	0.009510
 Xenon	0.009510
-Tf	0.009509
-Smm	0.009508
 Vanu	0.009507
 Local	0.009507
 Loss	0.009505
@@ -7129,7 +6870,6 @@ Saeem	0.009490
 Mahidi	0.009489
 Eusha	0.009489
 Md Shifat	0.009489
-Smh	0.009488
 Uronto	0.009487
 Saem	0.009486
 Srijan	0.009485
@@ -7166,11 +6906,8 @@ Md Shahajan	0.009463
 Md Badhon	0.009463
 Arib	0.009462
 Arobindu	0.009462
-Smn	0.009461
 Ratin	0.009461
 Majarul	0.009461
-S J	0.009460
-Md N	0.009458
 Zzaman	0.009457
 Shadek	0.009457
 Monoronjon	0.009456
@@ -7243,7 +6980,6 @@ Akq	0.009406
 Monjur Ahmed	0.009404
 Ebne	0.009403
 Mdrakib	0.009403
-P K	0.009402
 Minuddin	0.009402
 Md Dinislam	0.009401
 Md Abu Bakkar	0.009399
@@ -7289,11 +7025,9 @@ Rijbi	0.009368
 Parijat	0.009368
 Shakirul	0.009367
 Nurur	0.009366
-Ms	0.009365
 Ajwad	0.009365
 Nafeez	0.009364
 Risalat	0.009364
-Mbh	0.009363
 Zibran	0.009362
 Md Shorab	0.009361
 Aneek	0.009360
@@ -7381,12 +7115,10 @@ Razu Ahmed	0.009295
 Rifat Islam	0.009295
 D Jay	0.009294
 Tomake	0.009294
-Mdr	0.009292
 Monpura	0.009292
 Mustafij	0.009291
 Md Mubarok	0.009290
 Monjor	0.009290
-M B	0.009289
 Junaied	0.009289
 Ashraful Alom	0.009288
 Sk Sabbir	0.009288
@@ -7402,7 +7134,6 @@ Md Shapon	0.009282
 Md Kiron	0.009281
 Osena	0.009280
 Md Nuru	0.009279
-J M	0.009278
 Osman Gani	0.009278
 Saif Ahmed	0.009277
 Rohul Amin	0.009276
@@ -7432,7 +7163,6 @@ Maraz	0.009261
 Sarjil	0.009260
 Md Najir	0.009259
 Alomger	0.009258
-Mnh	0.009258
 Wahedul	0.009257
 Fayej	0.009257
 Noru	0.009256
@@ -7481,7 +7211,6 @@ Shamsuddoha	0.009233
 Rifatul Islam	0.009232
 Tultul	0.009232
 Jamshedul	0.009231
-B K	0.009231
 Sayeedur	0.009230
 Rounok	0.009230
 Shatil	0.009230
@@ -7610,7 +7339,6 @@ Pinaki	0.009140
 Majedul Islam	0.009139
 Orun	0.009139
 Md Tajul Islam	0.009136
-Jx	0.009136
 Debraj	0.009135
 Saju Ahmed	0.009135
 Paran	0.009134
@@ -7691,7 +7419,6 @@ A B M	0.009097
 Abusaleh	0.009097
 Rabbir	0.009097
 Ko Ko	0.009094
-B H	0.009094
 Taohidul	0.009092
 Shamsuzzoha	0.009091
 Md Ajgor	0.009091
@@ -7717,10 +7444,8 @@ Rahian	0.009077
 Mofassel	0.009077
 Pinik	0.009076
 Babun	0.009075
-Shm	0.009075
 Md. Anwar	0.009074
 Faruqul	0.009074
-Drmd	0.009073
 Mahdin	0.009073
 Md Motiar	0.009073
 Kuntal	0.009072
@@ -7733,7 +7458,6 @@ Abu Kalam	0.009068
 Tazuddin	0.009068
 Shithil	0.009067
 Mhamud	0.009066
-Sbs	0.009066
 Johurul Islam	0.009064
 Mdrafiqul	0.009064
 Sh A	0.009063
@@ -7756,7 +7480,6 @@ Md Asraful Islam	0.009052
 Soroar	0.009051
 Md Abdul Hamid	0.009050
 Balobasar	0.009049
-Md J	0.009047
 Rahatul Islam	0.009047
 Zooel	0.009047
 Hazi Mohammad	0.009046
@@ -7835,7 +7558,6 @@ Rajib Khan	0.008998
 Md Mozammal	0.008998
 Arif Hossen	0.008998
 Lucky Boy	0.008996
-Rks	0.008995
 N Alam	0.008995
 Jomsed	0.008994
 Sunmoon	0.008994
@@ -7872,8 +7594,6 @@ Naim Uddin	0.008977
 Md Salem	0.008976
 Johor	0.008975
 Md Nasar	0.008973
-Md K	0.008973
-Mts	0.008972
 Md Golap	0.008971
 Md Mansur	0.008970
 Salim Uddin	0.008969
@@ -8003,7 +7723,6 @@ Rapi	0.008912
 Ris	0.008911
 Priam	0.008910
 Arush	0.008910
-Tz	0.008909
 Match	0.008909
 Razo	0.008909
 Samen	0.008908
@@ -8045,8 +7764,6 @@ Rafidul	0.008889
 Sonchoy	0.008889
 Dibosh	0.008888
 Md Emrul	0.008888
-Md M H	0.008888
-Mhk	0.008887
 Dwip	0.008885
 Mohammad Jahangir	0.008885
 Gorib	0.008884
@@ -8113,7 +7830,6 @@ Lelin	0.008849
 Saruwar	0.008849
 Fardin Islam	0.008848
 Navil	0.008847
-S F	0.008847
 Nirob Ahmed	0.008847
 Sadikul Islam	0.008846
 Rothi	0.008846
@@ -8171,7 +7887,6 @@ Debbrata	0.008815
 Shakhar	0.008815
 Md Tasin	0.008814
 Abir Mahmud	0.008814
-Md Rk	0.008814
 Abusufian	0.008813
 Taijul Islam	0.008813
 Aian	0.008811
@@ -8194,7 +7909,6 @@ Moksadul	0.008799
 Anower Hossain	0.008799
 Md Kukon	0.008798
 Mamun Islam	0.008797
-T R	0.008797
 Mome	0.008797
 Sk Khan	0.008796
 X Man	0.008795
@@ -8249,7 +7963,6 @@ Sanuwar	0.008765
 Emam Hossain	0.008764
 Wasir	0.008764
 Kingkar	0.008763
-Mf	0.008761
 Md Anamul Haque	0.008760
 M U	0.008760
 Rafiquel	0.008759
@@ -8386,7 +8099,6 @@ Md Naime	0.008688
 Ifteker	0.008687
 Muqtadir	0.008687
 Md Haidar	0.008686
-Msb	0.008686
 Amjat	0.008686
 Romim	0.008685
 Sajeb	0.008685
@@ -8399,7 +8111,6 @@ Imteaj	0.008683
 Debobrata	0.008682
 Nurul Kabir	0.008682
 Md Dedar	0.008681
-K K	0.008681
 Sribash	0.008680
 Ripon Khan	0.008680
 Grameen	0.008679
@@ -8411,14 +8122,12 @@ Md Labu	0.008676
 Moslam	0.008675
 Bul Bul	0.008675
 Shaurav	0.008674
-M F	0.008673
 Rubyat	0.008673
 Obscure	0.008672
 Hafez Md	0.008672
 Rajib Hossain	0.008672
 Alamen	0.008671
 Aswad	0.008671
-Njr	0.008670
 Anikul	0.008669
 Mongol	0.008669
 Mehdi Hasan	0.008669
@@ -8459,11 +8168,9 @@ Kawsir	0.008645
 Sujon Khan	0.008645
 Ariyn	0.008644
 Rakib Hassan	0.008644
-Mbbs	0.008643
 Xayan	0.008643
 Abrar Ahmed	0.008643
 Shokot	0.008642
-M G	0.008642
 Mdamir	0.008641
 Hashibul	0.008641
 Md Minhazul	0.008637
@@ -8479,7 +8186,6 @@ Sreekanto	0.008629
 Sofikul Islam	0.008628
 Prodeep	0.008627
 Thohidul	0.008627
-Crcr	0.008626
 Agm	0.008625
 Jibon Mane	0.008625
 Morsad	0.008624
@@ -8596,7 +8302,6 @@ Hoq	0.008571
 Fuyad	0.008570
 Iftiar	0.008569
 Neuton	0.008569
-H S	0.008568
 Quamruzzaman	0.008568
 Fahmidul	0.008567
 Tripura	0.008567
@@ -8668,12 +8373,9 @@ Babul Hossain	0.008529
 Tufajjol	0.008528
 Md Jabad	0.008527
 Masumul	0.008526
-S.M	0.008526
 Deshi	0.008526
 Nura Alam	0.008526
-Md S H	0.008525
 Mashrafee	0.008524
-Lrb	0.008523
 Md Joynal Abedin	0.008523
 Shahidulislam	0.008522
 Shykat	0.008522
@@ -8711,8 +8413,6 @@ Tarek Aziz	0.008506
 Shanto Islam	0.008504
 Ochin Purer	0.008503
 Abdul Khaleque	0.008502
-Rsm	0.008502
-R R	0.008502
 Akikur	0.008501
 Md Sahedul	0.008501
 Muzib	0.008500
@@ -8732,7 +8432,6 @@ Sykat	0.008495
 Niyamul	0.008494
 Anwoar	0.008494
 Rahiyan	0.008493
-S. M	0.008493
 Missing	0.008492
 Bappo	0.008492
 Polton	0.008491
@@ -8752,11 +8451,9 @@ Al Islam	0.008483
 Md Malak	0.008483
 Koyrul	0.008482
 Mdmizan	0.008481
-Cr Cr Cr	0.008480
 Md Safiul	0.008480
 Rabindranath	0.008479
 Md Rahan	0.008478
-Md H	0.008477
 Mongur	0.008477
 Swopno	0.008476
 Totol	0.008476
@@ -8796,7 +8493,6 @@ Shofikur	0.008462
 Titumir	0.008461
 Abulhossain	0.008461
 Shyed	0.008460
-Skf	0.008459
 Omur Faruk	0.008459
 Toyob	0.008458
 Nurun Nabi	0.008458
@@ -8828,7 +8524,6 @@ Mohammad Arman	0.008448
 Md. Amir	0.008447
 Foruk	0.008446
 Md Ziaur Rahman	0.008446
-Rds	0.008446
 Aktaruz	0.008445
 Fojul	0.008445
 Premhin	0.008445
@@ -8852,7 +8547,6 @@ Somsu	0.008436
 Joy Das	0.008436
 Jagonnath	0.008435
 Projit	0.008435
-M T	0.008434
 Md Suzan	0.008434
 Bepari	0.008434
 Mosobbir	0.008433
@@ -8975,7 +8669,6 @@ Narottam	0.008392
 Dhon	0.008392
 Morshid	0.008391
 Ansary	0.008391
-Kms	0.008390
 Zulfiquar	0.008390
 Tajir	0.008390
 Riaz Ahmed	0.008389
@@ -9001,10 +8694,8 @@ Rahamatullah	0.008383
 Fardin Khan	0.008383
 Maheer	0.008382
 Prienc	0.008382
-Zn	0.008382
 Farzin	0.008381
 Mawla	0.008381
-Sq	0.008380
 Abdul Quddus	0.008380
 Noor A	0.008379
 Bisha	0.008379
@@ -9015,7 +8706,6 @@ Gilman	0.008377
 Tuki	0.008377
 Freefire	0.008376
 Allahu	0.008376
-Djj	0.008376
 Jamai	0.008375
 Jaha	0.008375
 Seller	0.008374
@@ -9128,7 +8818,6 @@ Aadnan	0.008322
 Md Moznu	0.008320
 Md Sofiq	0.008319
 Sk Rasel	0.008319
-Rkb	0.008318
 Md Johorul	0.008317
 Md Mohim	0.008316
 Md Sanaul	0.008316
@@ -9187,7 +8876,6 @@ Afraj	0.008293
 Gonash	0.008293
 Abirul	0.008292
 Jakaria Ahmed	0.008291
-Mkr	0.008291
 Kutta	0.008290
 Md Najmol	0.008289
 Humaun Kabir	0.008289
@@ -9216,7 +8904,6 @@ Adhuri	0.008278
 Shoreful	0.008277
 Jubaed	0.008277
 Shazu	0.008276
-Sps	0.008275
 Shumel	0.008275
 Ibrahim Ahmed	0.008275
 Md Shazzad	0.008274
@@ -9241,14 +8928,12 @@ Kafil Uddin	0.008265
 Aryean	0.008265
 Bashed	0.008264
 Sarfin	0.008264
-Md Md	0.008264
 Suk Pakhi	0.008263
 Jhulan	0.008263
 Xohan	0.008262
 Md Hashim	0.008262
 Md Mustofa	0.008262
 Tomi Amar	0.008261
-Khm	0.008261
 Md. Manik	0.008260
 Shoaibul	0.008259
 Arthohin	0.008259
@@ -9260,14 +8945,11 @@ Maynuddin	0.008257
 Muhamod	0.008257
 Mahin Ahmed	0.008256
 Naive	0.008256
-Mjh	0.008256
 Rupkother	0.008255
 Romman	0.008255
 Romjan Ali	0.008255
 Md Atiqur Rahman	0.008254
 Shohail	0.008253
-F H	0.008253
-R D	0.008252
 Saoun	0.008252
 Jahied	0.008252
 Kouser	0.008251
@@ -9275,7 +8957,6 @@ Kopal	0.008250
 Rasme	0.008250
 Rko	0.008249
 Md Tarik	0.008249
-M Md	0.008248
 Akahs	0.008248
 Md Hridoy Khan	0.008248
 Shozol	0.008248
@@ -9403,7 +9084,6 @@ Md Zubayer	0.008193
 Chamak	0.008193
 Jahidul Hasan	0.008192
 Mohaiminul Islam	0.008192
-Sr	0.008192
 Md Aman Ullah	0.008191
 Md Golam Kibria	0.008190
 Shoumen	0.008190
@@ -9449,7 +9129,6 @@ Tangil	0.008171
 Md Shepon	0.008171
 Khoniker	0.008170
 Rohis	0.008170
-Md S M	0.008169
 Md Dolal	0.008169
 Painful	0.008169
 Zulhas	0.008168
@@ -9473,9 +9152,7 @@ Md Asadur	0.008158
 Soreful	0.008158
 Md Shahan	0.008157
 Jiba	0.008157
-Spr	0.008157
 Md Bachu	0.008155
-Rts	0.008155
 Arian Islam	0.008154
 Md Lavlu	0.008154
 Debit	0.008153
@@ -9510,7 +9187,6 @@ Md Tanjir	0.008138
 Md Sahajalal	0.008138
 Jiad	0.008137
 Dehan	0.008137
-Str	0.008135
 Md Simon	0.008135
 Painless	0.008134
 Kayesh	0.008134
@@ -9520,7 +9196,6 @@ Tanvir Mahmud	0.008133
 Tarar	0.008132
 Jivon	0.008132
 Rj Ridoy	0.008132
-If	0.008131
 Md. Al-Amin	0.008130
 Md Mazedul	0.008130
 Mahfuzul Islam	0.008130
@@ -9534,7 +9209,6 @@ Ziyaur	0.008127
 Tarafder	0.008126
 Xihad	0.008126
 Mdsaddam	0.008126
-Kkr	0.008126
 Tahmim	0.008125
 Tanbhir	0.008124
 Vagabond	0.008123
@@ -9543,10 +9217,8 @@ Korno	0.008122
 Mdjashim	0.008121
 Bosonto	0.008121
 Nipesh	0.008120
-S Md	0.008120
 Imtiaz Hossain	0.008120
 Ahmedz	0.008119
-Llb	0.008119
 Abdur Rohman	0.008118
 Joydab	0.008117
 Aftabul	0.008117
@@ -9554,7 +9226,6 @@ Abadur Rahman	0.008116
 Toufikul	0.008116
 Bappe	0.008116
 Sk Sakib	0.008115
-Rsk	0.008115
 Abu Bakker	0.008115
 Md Belal Uddin	0.008114
 Refatul	0.008113
@@ -9578,7 +9249,6 @@ Md Anowar Hossain	0.008107
 Oviraj	0.008106
 Aminur Rashid	0.008106
 Abu Nayem	0.008105
-Mv Md	0.008105
 Eashan	0.008104
 Shoidul	0.008104
 Md Billal Hossain	0.008103
@@ -9589,7 +9259,6 @@ A F	0.008102
 Jalis	0.008102
 Mishan	0.008101
 Shariful Haque	0.008100
-Rst	0.008100
 Kayem	0.008099
 Shuhin	0.008099
 Safikul Islam	0.008099
@@ -9792,7 +9461,6 @@ Md Rumman	0.008015
 Mozammel Hossain	0.008014
 Arfin Ahmed	0.008013
 Juhan	0.008013
-Smk	0.008013
 Jummo	0.008013
 Incomplete	0.008012
 Moner Manus	0.008012
@@ -9804,7 +9472,6 @@ Anabil	0.008009
 Md Foyej	0.008009
 Prachurjo	0.008009
 Sharfaraj	0.008009
-Mht	0.008008
 Shakik	0.008006
 Zohirul Islam	0.008006
 Hemonta	0.008006
@@ -9838,13 +9505,11 @@ Md Jia	0.007991
 Saiyan	0.007991
 Md Hriday	0.007990
 Rj Raj	0.007990
-R P	0.007990
 Pipul	0.007990
 Md Jwel	0.007989
 Pince	0.007989
 Balobasa	0.007988
 Khayrul Islam	0.007987
-Rî	0.007987
 Fuad Hasan	0.007986
 Tenpatti	0.007986
 Akash Islam	0.007986
@@ -9893,7 +9558,6 @@ Shagur	0.007969
 Wasek	0.007969
 Rudel	0.007969
 Rahit	0.007968
-Dbbl	0.007967
 Md Shidul	0.007967
 Md Zabed	0.007966
 Napur	0.007966
@@ -9913,7 +9577,6 @@ Zaynal	0.007961
 Faizur Rahman	0.007961
 Rahat Islam	0.007960
 Tusif	0.007960
-J R	0.007959
 Khurshedul	0.007958
 Ishraque	0.007958
 Mozahedul	0.007958
@@ -9921,15 +9584,12 @@ Rj Hridoy	0.007957
 Rj Rana	0.007957
 Nerov	0.007957
 Mohedul	0.007957
-Rhr	0.007956
 Deepok	0.007956
-Mbs	0.007956
 Nazat	0.007955
 Jubayer Hossain	0.007955
 Saleh Uddin	0.007955
 Samso	0.007955
 Sohell	0.007954
-Md F	0.007953
 Ziadul	0.007952
 Zulker	0.007952
 Khaled Bin	0.007952
@@ -9942,7 +9602,6 @@ Mithil	0.007949
 Alamghir	0.007949
 Jumel	0.007949
 Foysel	0.007948
-Tmr	0.007947
 Md Sawkat	0.007947
 M E	0.007947
 Md Emdad	0.007946
@@ -9958,9 +9617,7 @@ Mofajjol	0.007941
 Nirjoy	0.007941
 Niil	0.007941
 Lijon	0.007941
-Md Sh	0.007940
 Subuj	0.007940
-Msc	0.007939
 Dukkho	0.007939
 Md Asadujjaman	0.007938
 Iftaker	0.007938
@@ -10019,7 +9676,6 @@ Durbar	0.007914
 Nepu	0.007913
 Akij	0.007913
 Anik Islam	0.007913
-R N	0.007912
 Md Japor	0.007912
 Md Nowshad	0.007911
 Md Sabbir Ahmed	0.007911
@@ -10037,7 +9693,6 @@ Tajol	0.007906
 Norul Islam	0.007905
 Khulna	0.007905
 Mahabubar	0.007905
-Mrj	0.007904
 Serious	0.007904
 Anarul Islam	0.007903
 Rabiul Hossain	0.007903
@@ -10104,7 +9759,6 @@ Mdrobel	0.007880
 Shiblo	0.007879
 Md Shahin Alam	0.007879
 Sapa	0.007879
-Chcp	0.007879
 Aklus	0.007878
 Md Eakub	0.007878
 Md. Helal	0.007878
@@ -10174,14 +9828,12 @@ Kolilur	0.007855
 Md Rayhan Ahmed	0.007855
 Mid	0.007855
 Singel	0.007855
-Šk	0.007854
 Lekhon	0.007854
 Prohlad	0.007854
 Md Dudu	0.007853
 Sahadul	0.007853
 Zamirul	0.007853
 Manun	0.007853
-Srb	0.007852
 Md Roke	0.007852
 S U	0.007852
 Lovlu	0.007851
@@ -10256,7 +9908,6 @@ Bholanath	0.007824
 Soukhin	0.007824
 Md Mahfuzur Rahman	0.007823
 Tasbi	0.007822
-Smg	0.007822
 Saleheen	0.007821
 Projesh	0.007821
 A D	0.007820
@@ -10285,7 +9936,6 @@ Arafat Ahmed	0.007811
 Israf	0.007810
 Sk Sojib	0.007810
 S M Kamrul	0.007809
-Msp	0.007808
 Sarzil	0.007808
 Md Azom	0.007807
 Akla Jibon	0.007807
@@ -10344,7 +9994,6 @@ Hossain Md	0.007788
 Md S A	0.007788
 Samsuddoha	0.007787
 Fact	0.007787
-Smb	0.007787
 Md Sajjadul	0.007786
 Mon Pura	0.007786
 Taharat	0.007785
@@ -10356,7 +10005,6 @@ Mdjahed	0.007784
 Md. Al	0.007784
 Tuheen	0.007783
 Meton	0.007783
-Dmc	0.007783
 Rahat Hossain	0.007782
 Abujh	0.007782
 Ripon Kumar	0.007782
@@ -10392,7 +10040,6 @@ Taybur	0.007772
 Shojan	0.007771
 Muhitul	0.007771
 Ripon Hossain	0.007771
-Hq	0.007770
 Md Aminur Rahman	0.007770
 Barshan	0.007770
 Sayed Bin	0.007769
@@ -10401,7 +10048,6 @@ Rahul Roy	0.007768
 Md Muktadir	0.007767
 Golper	0.007767
 Arick	0.007767
-Rsd	0.007766
 Sopner Raj	0.007766
 Habibun	0.007766
 Md Rajo	0.007766
@@ -10426,7 +10072,6 @@ Md Arob	0.007758
 Md Safikul	0.007758
 Md Riadul	0.007758
 Md Romzan	0.007757
-Skd	0.007756
 Orbin	0.007756
 Ramjan Ali	0.007756
 Shakib Khan	0.007756
@@ -10476,7 +10121,6 @@ Lonley	0.007737
 Md Mahatab	0.007736
 Subrata Kumar	0.007736
 Aranno	0.007735
-Dsp	0.007734
 Shobbir	0.007734
 Joydul	0.007734
 Mohammad Mamun	0.007733
@@ -10497,12 +10141,10 @@ Kalon	0.007726
 Nobiul	0.007725
 Sake	0.007723
 Emtiyaz	0.007723
-N K	0.007723
 Hanif Ahmed	0.007722
 Sheful	0.007722
 Tutan	0.007722
 Chuye	0.007722
-R B	0.007721
 Md Abdus Samad	0.007720
 Sazim	0.007720
 Md Shaidur	0.007720
@@ -10542,7 +10184,6 @@ Madbor	0.007708
 Harun Rashid	0.007707
 Humayun Ahmed	0.007707
 Abu Syed	0.007707
-Mrb	0.007707
 Md Khorshed Alam	0.007706
 Asikuzzaman	0.007706
 Tanjidul	0.007706
@@ -10617,7 +10258,6 @@ Foysal Hossain	0.007681
 Kausar Ahmed	0.007681
 Govindo	0.007680
 Mofasser	0.007680
-Md Mh	0.007680
 Nurul Azim	0.007679
 Imran Hosen	0.007678
 Mojaher	0.007678
@@ -10645,7 +10285,6 @@ S M Abu	0.007672
 Mowla	0.007672
 Mosha	0.007672
 Ahsun	0.007671
-Mdd	0.007671
 Babrul	0.007671
 Md Anowarul	0.007671
 Tahshin	0.007670
@@ -10667,7 +10306,6 @@ Md Shahabul	0.007664
 Rumon Ahmed	0.007664
 Md Abdu	0.007663
 Md All	0.007663
-Šh	0.007662
 Nabil Ahmed	0.007662
 Monindro	0.007661
 Jahidulislam	0.007661
@@ -10691,7 +10329,6 @@ Muflis	0.007656
 Md Azir	0.007656
 Alfas	0.007655
 Abukalam	0.007655
-Xm	0.007655
 Soraf	0.007655
 M Mizanur	0.007654
 Md Akmol	0.007654
@@ -10750,10 +10387,8 @@ Møhammad	0.007640
 Ismayel	0.007640
 Palok	0.007639
 Rial	0.007639
-Ãl	0.007638
 Click	0.007638
 Jusef	0.007638
-Iu	0.007638
 Risal	0.007637
 Himalay	0.007637
 Rushad	0.007637
@@ -10795,7 +10430,6 @@ Himadro	0.007624
 Pravas	0.007624
 Monzoor	0.007623
 Mdkhairul	0.007622
-P M	0.007621
 Arifur Rahaman	0.007621
 Jakiul	0.007620
 Eamon	0.007620
@@ -10807,7 +10441,6 @@ Saidulislam	0.007618
 Asif Rahman	0.007618
 Shanju	0.007618
 Shefu	0.007617
-H N	0.007617
 Rawshon	0.007617
 Nejam Uddin	0.007616
 Shifatul	0.007615
@@ -10840,7 +10473,6 @@ Md Kaosar	0.007604
 Md. Rayhan	0.007604
 Amar Shopno	0.007603
 Md Nishat	0.007603
-Ssr	0.007603
 Md Fardin	0.007602
 Md Shah Alom	0.007602
 Habibor	0.007602
@@ -10950,7 +10582,6 @@ Md Mahady	0.007564
 Nafizur	0.007564
 Zoshim	0.007564
 Onirban	0.007563
-Ntr	0.007563
 Omit Hasan	0.007563
 Kisu	0.007563
 Akbor Ali	0.007562

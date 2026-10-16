@@ -1,12 +1,9 @@
 sy
 any
-Sy	1.000000
 Ali	0.447214
 Ahmad	0.333333
 Hasan	0.229416
-Sh	0.213201
 Syr	0.179605
-Kh	0.152499
 Homs	0.133631
 Ibrahim	0.125988
 Saleh	0.121268
@@ -22,7 +19,6 @@ Alahmad	0.098533
 Othman	0.096225
 Hama	0.093659
 Sham	0.092450
-Al	0.092057
 Sleman	0.089443
 Ibrahem	0.088736
 Abdo	0.087370
@@ -30,12 +26,9 @@ Mansour	0.087039
 Lolo	0.086066
 Asaad	0.084819
 Abd	0.083624
-Gh	0.083045
 Haddad	0.082761
-Ha	0.080322
 Mostafa	0.079556
 Barakat	0.077850
-Sa	0.077152
 Nasser	0.076249
 Darwish	0.075593
 Awad	0.074536
@@ -43,7 +36,6 @@ Saad	0.073521
 Alhasan	0.073324
 Ghanem	0.072932
 Hamdan	0.072739
-Mh	0.070888
 Naser	0.070535
 Al Ali	0.069505
 Salloum	0.069338
@@ -52,7 +44,6 @@ Mhmad	0.068843
 Essa	0.068680
 Alasad	0.068041
 Ramadan	0.067574
-Ka	0.067420
 Ahmd	0.066372
 Lattakia	0.065372
 Saeed	0.065233
@@ -88,16 +79,12 @@ Hamza	0.053300
 Alaa	0.052705
 Aboud	0.052129
 Abdallah	0.051917
-Mhmd	0.051848
 Sliman	0.051640
 Nour	0.051299
 Masri	0.050899
-Na	0.050767
-As	0.050637
 Assad	0.050572
 Khoury	0.050379
 Youssef	0.049938
-Ab	0.049875
 Mosa	0.049629
 Sabbagh	0.049568
 Yosef	0.049447
@@ -108,7 +95,6 @@ Alsaleh	0.048280
 Ale	0.047946
 Soleman	0.047405
 Daher	0.047193
-Ah	0.047088
 Zedan	0.047036
 Hamoud	0.046984
 Salman	0.046881
@@ -131,7 +117,6 @@ Hallak	0.044721
 Abboud	0.044677
 Hamod	0.044499
 Salh	0.044455
-Hm	0.044194
 Mahfoud	0.043853
 Hammoud	0.043769
 Mansor	0.043602
@@ -148,9 +133,7 @@ Wassouf	0.042563
 Shahen	0.042524
 Khadour	0.042258
 Alhaj	0.042220
-Ak	0.042182
 Radwan	0.042033
-Da	0.041959
 Nader	0.041922
 Hassn	0.041885
 Homsi	0.041776
@@ -193,8 +176,6 @@ Esmail	0.037268
 Matar	0.037139
 Alasaad	0.037088
 Alkhateb	0.036860
-Mk	0.036835
-Ad	0.036811
 Hamood	0.036786
 Hosen	0.036736
 Salama	0.036711
@@ -218,10 +199,8 @@ Bilal	0.035400
 Nano	0.035377
 Aloosh	0.035093
 Ayoub	0.035072
-Fa	0.035050
 Abo Ali	0.035007
 Murad	0.034964
-Ta	0.034711
 Hafez	0.034690
 Hatem	0.034669
 Aswad	0.034442
@@ -245,8 +224,6 @@ Shami	0.033445
 Ebraheem	0.033426
 Shaker	0.033352
 Kiwan	0.033333
-Ja	0.033296
-Za	0.033150
 Makhlouf	0.032898
 Kurdi	0.032862
 Kassar	0.032791
@@ -267,7 +244,6 @@ Makhoul	0.032092
 Alhasn	0.032026
 Alhomse	0.031993
 Saed	0.031976
-Az	0.031944
 Asmar	0.031928
 Bittar	0.031895
 Yaseen	0.031766
@@ -301,7 +277,6 @@ Suleman	0.030557
 Faraj	0.030542
 Jaafar	0.030514
 Alsalh	0.030471
-Mhd	0.030443
 Abass	0.030429
 Alkhalil	0.030359
 Alnajjar	0.030275
@@ -351,12 +326,10 @@ Aloush	0.028808
 Almohamad	0.028784
 Souliman	0.028772
 Hilal	0.028724
-Hs	0.028712
 Abaas	0.028701
 Alhamad	0.028689
 Haydar	0.028677
 Hamze	0.028665
-Bk	0.028595
 Alsheikh	0.028583
 Afrin	0.028548
 Orabi	0.028537
@@ -375,7 +348,6 @@ Saloum	0.028127
 Salha	0.028028
 Dayob	0.027886
 Esmael	0.027864
-Hsn	0.027853
 Nahhas	0.027832
 Alabd	0.027821
 Haedar	0.027756
@@ -385,7 +357,6 @@ Alnaser	0.027692
 Hsen	0.027661
 Esber	0.027618
 Dawood	0.027608
-Aj	0.027597
 Haj	0.027566
 Alashkar	0.027545
 Ballan	0.027535
@@ -413,7 +384,6 @@ Shamma	0.026593
 Alsaeed	0.026584
 Alkadi	0.026575
 Mhana	0.026500
-At	0.026417
 Farhat	0.026407
 Kayali	0.026371
 Mouhamad	0.026343
@@ -421,7 +391,6 @@ Daboul	0.026334
 Harba	0.026325
 Jawad	0.026252
 Samra	0.026243
-Se	0.026216
 Kalil	0.026207
 Kaled	0.026198
 Majd	0.026171
@@ -453,10 +422,8 @@ Aleppo	0.025425
 Kherbek	0.025416
 Sadek	0.025408
 Amen	0.025400
-Hk	0.025392
 Jawish	0.025310
 Alhalabe	0.025286
-Af	0.025262
 Bash	0.025254
 Raslan	0.025246
 Takla	0.025214
@@ -482,7 +449,6 @@ Kabalan	0.024845
 Kousa	0.024784
 Alhariri	0.024739
 Nahas	0.024731
-Hb	0.024716
 Ataya	0.024708
 Najm	0.024686
 Hasoon	0.024678
@@ -491,7 +457,6 @@ Jarkas	0.024603
 Wardeh	0.024596
 Hussin	0.024507
 Amran	0.024500
-Ay	0.024485
 Rustom	0.024478
 Aslan	0.024470
 Nasra	0.024456
@@ -516,8 +481,6 @@ Haj Ali	0.023932
 Khaddam	0.023911
 Jood	0.023898
 Sallam	0.023803
-Es	0.023796
-Hd	0.023789
 Almasry	0.023783
 Alwan	0.023776
 Rahhal	0.023769
@@ -531,7 +494,6 @@ Almohammad	0.023676
 Al Assad	0.023610
 Shams	0.023590
 Antar	0.023577
-Rh	0.023570
 Nabhan	0.023564
 Mhammad	0.023551
 Alkhalaf	0.023538
@@ -542,7 +504,6 @@ Rstom	0.023421
 Solaiman	0.023408
 Roz	0.023402
 Ajam	0.023395
-Hn	0.023383
 Baghdadi	0.023376
 Rostom	0.023357
 Naddaf	0.023351
@@ -573,26 +534,20 @@ Ganem	0.022923
 Mahfood	0.022917
 Shhada	0.022863
 Bashour	0.022828
-Sb	0.022822
 Arabi	0.022816
 Rezk	0.022810
-Dh	0.022804
 Samo	0.022798
 Darweesh	0.022792
 Kanjo	0.022786
-Šý	0.022716
 Homse	0.022698
 Nassour	0.022686
 Khadoor	0.022646
 Eissa	0.022640
 Abdeen	0.022634
 Alhamed	0.022628
-Ib	0.022622
 Alhallak	0.022553
 Alsamman	0.022547
-Sý	0.022525
 Moualla	0.022519
-Kn	0.022513
 Bakri	0.022507
 Shawa	0.022490
 Soufi	0.022485
@@ -600,7 +555,6 @@ Alsalem	0.022479
 Wesam	0.022462
 Almousa	0.022456
 Maksoud	0.022451
-Hl	0.022445
 Alahmar	0.022439
 Sido	0.022417
 Alyosef	0.022411
@@ -610,7 +564,6 @@ Alhayek	0.022355
 Alabdallah	0.022327
 Khalouf	0.022316
 Adi	0.022283
-Tr	0.022277
 Hawa	0.022272
 Yaghi	0.022266
 Bakir	0.022261
@@ -646,7 +599,6 @@ Khayat	0.021729
 Almahmoud	0.021724
 Roze	0.021719
 Al Halabi	0.021713
-Zh	0.021708
 Nassr	0.021703
 Dalloul	0.021698
 Mokdad	0.021683
@@ -698,14 +650,12 @@ Alzeer	0.021134
 Alrashed	0.021129
 Swedan	0.021124
 Aboali	0.021110
-Zn	0.021105
 Alhmad	0.021096
 Kassas	0.021077
 Kewan	0.021049
 Aesa	0.021035
 Alshaer	0.020980
 Shehadeh	0.020975
-Kl	0.020970
 Abdallh	0.020966
 Laham	0.020961
 Alhussein	0.020947
@@ -795,7 +745,6 @@ Akeel	0.019784
 Ayoubi	0.019776
 Safadi	0.019772
 Azez	0.019768
-Hj	0.019764
 Tawil	0.019757
 Abdoo	0.019753
 Shammas	0.019749
@@ -811,7 +760,6 @@ Alabas	0.019615
 Idrees	0.019604
 Hosin	0.019600
 Ragab	0.019597
-Kd	0.019593
 Omari	0.019585
 Barkat	0.019582
 Haroun	0.019574
@@ -831,7 +779,6 @@ Rehan	0.019400
 Awwad	0.019396
 Omr	0.019382
 Sabra	0.019378
-Nj	0.019375
 Ghali	0.019371
 Alreem	0.019360
 Sakka	0.019356
@@ -854,7 +801,6 @@ Almhmd	0.019209
 Sabouni	0.019199
 Naseer	0.019160
 Mansoor	0.019157
-Sn	0.019149
 Gomaa	0.019146
 Seif	0.019135
 Alhaddad	0.019132
@@ -875,7 +821,6 @@ Zed	0.018959
 Ghareeb	0.018956
 Ramdan	0.018952
 Assaad	0.018946
-Ze	0.018939
 Dyab	0.018935
 Abbara	0.018932
 Sulieman	0.018925
@@ -889,7 +834,6 @@ Zaino	0.018798
 Altawel	0.018785
 Alshater	0.018781
 Amora	0.018748
-Ys	0.018745
 Sawaf	0.018742
 Kaseem	0.018735
 Nashed	0.018732
@@ -897,7 +841,6 @@ Eskandar	0.018725
 Alessa	0.018712
 Kallas	0.018705
 Arnous	0.018699
-Njm	0.018696
 Nassan	0.018692
 Kadro	0.018689
 Shalash	0.018679
@@ -907,7 +850,6 @@ Shbat	0.018657
 Tanous	0.018653
 Hedr	0.018644
 Tabaa	0.018627
-Śý	0.018602
 Khamis	0.018582
 Jasem	0.018576
 Najem	0.018573
@@ -962,7 +904,6 @@ Alattar	0.018131
 Arar	0.018128
 Hajar	0.018125
 Alzain	0.018122
-Hy	0.018116
 Abdalah	0.018113
 Fayyad	0.018107
 Sarraj	0.018104
@@ -981,7 +922,6 @@ Hmedan	0.017972
 Almokdad	0.017946
 Fallouh	0.017929
 Gan	0.017883
-Is	0.017880
 Zamzam	0.017877
 Jabri	0.017871
 Rifai	0.017866
@@ -991,7 +931,6 @@ Aldin	0.017857
 Sibai	0.017854
 Al Hassan	0.017851
 Khadam	0.017843
-Zy	0.017837
 Watfa	0.017834
 Saado	0.017809
 Alamora	0.017786
@@ -1006,7 +945,6 @@ Gharib	0.017691
 Ghandour	0.017686
 Fateh	0.017683
 Shehada	0.017680
-Nh	0.017678
 Alee	0.017672
 Sharef	0.017669
 Alrahman	0.017664
@@ -1029,7 +967,6 @@ Basmaji	0.017504
 Almahmod	0.017501
 Alhamwe	0.017490
 Odeh	0.017469
-Dy	0.017466
 Aga	0.017463
 Alnoor	0.017455
 Hmad	0.017453
@@ -1067,18 +1004,14 @@ Aly	0.017203
 Alomari	0.017201
 Tamim	0.017198
 Nouman	0.017195
-Dm	0.017193
 Mero	0.017188
 Al Khatib	0.017175
 Aziza	0.017173
 Aljamal	0.017170
 Hmood	0.017168
 Nasif	0.017165
-Hg	0.017162
 Hejazi	0.017160
 Abaza	0.017152
-Fh	0.017147
-Zr	0.017142
 Alamir	0.017140
 Rajeh	0.017137
 Naseef	0.017135
@@ -1095,7 +1028,6 @@ Rahmoun	0.017097
 Shbib	0.017095
 Ezzo	0.017070
 Alkade	0.017052
-Khdr	0.017050
 Tomeh	0.017040
 Rhal	0.017037
 Alshek	0.017005
@@ -1107,8 +1039,6 @@ Kadoor	0.016978
 Khalof	0.016969
 Molhem	0.016961
 Shahod	0.016956
-Şý	0.016952
-Kt	0.016937
 Bakkar	0.016935
 Aji	0.016932
 Saman	0.016930
@@ -1116,7 +1046,6 @@ Shama	0.016927
 Almadani	0.016922
 Nasrallah	0.016920
 Hawari	0.016918
-Eb	0.016910
 Ahmaad	0.016906
 Saood	0.016903
 Saade	0.016901
@@ -1161,8 +1090,6 @@ Kayal	0.016634
 Al Khateeb	0.016623
 Mezher	0.016621
 Jmal	0.016618
-Nsr	0.016616
-Aw	0.016614
 Obid	0.016611
 Altawil	0.016605
 Selo	0.016591
@@ -1174,7 +1101,6 @@ Rasho	0.016575
 Jarad	0.016570
 Bdran	0.016529
 Brkat	0.016518
-Nmr	0.016502
 Shhab	0.016493
 Khazem	0.016491
 Shlash	0.016460
@@ -1191,7 +1117,6 @@ Als	0.016391
 Alh	0.016389
 Sleiman	0.016382
 Alrifai	0.016378
-Tb	0.016374
 Qassem	0.016371
 Shawish	0.016365
 Darwich	0.016363
@@ -1201,7 +1126,6 @@ Sankari	0.016354
 Shakra	0.016352
 Soufan	0.016347
 Hatoum	0.016345
-Hz	0.016343
 Srouji	0.016339
 Alter	0.016330
 Ror	0.016326
@@ -1263,7 +1187,6 @@ Alibrahem	0.015927
 Alhade	0.015921
 Sahyouni	0.015915
 Kazzaz	0.015909
-Mlhm	0.015905
 Mershed	0.015903
 Akkam	0.015899
 Akad	0.015891
@@ -1275,14 +1198,10 @@ Nasar	0.015859
 Roro	0.015855
 Jabal	0.015851
 Hakem	0.015847
-Ob	0.015845
-Qa	0.015837
-Ez	0.015833
 Alfarra	0.015831
 Wahbi	0.015827
 Aldarwish	0.015819
 Lamar	0.015811
-Wh	0.015809
 Hamdosh	0.015807
 Souleman	0.015802
 Albash	0.015798
@@ -1323,11 +1242,8 @@ Adrees	0.015583
 Edris	0.015581
 Shalabi	0.015579
 Slam	0.015578
-Bdr	0.015574
 Hamzah	0.015570
-Ky	0.015568
 Hindi	0.015566
-Skr	0.015564
 Alameer	0.015562
 Nakad	0.015559
 Lahham	0.015557
@@ -1395,7 +1311,6 @@ Eed	0.015264
 Watan	0.015262
 Mhmed	0.015261
 Khalifeh	0.015259
-Zk	0.015257
 Zarour	0.015255
 Alakkad	0.015253
 Aed	0.015241
@@ -1440,10 +1355,8 @@ Zainab	0.014977
 Johar	0.014974
 Husein	0.014970
 Smadi	0.014967
-Nb	0.014965
 Sho	0.014964
 Makarem	0.014959
-Jh	0.014954
 Alhadad	0.014952
 Saka	0.014950
 Shaam	0.014949
@@ -1459,12 +1372,10 @@ Ava	0.014917
 Arabe	0.014915
 Aisa	0.014914
 Kaser	0.014912
-Jbr	0.014910
 Kazak	0.014909
 Derbas	0.014905
 Alsayd	0.014887
 Naman	0.014882
-Rzk	0.014881
 Doba	0.014879
 Kharrat	0.014877
 Badenjki	0.014876
@@ -1525,10 +1436,8 @@ Ayob	0.014633
 Rem	0.014632
 Adm	0.014630
 Daly	0.014625
-Hmd	0.014624
 Alian	0.014622
 Ahmar	0.014621
-Ft	0.014619
 Mortada	0.014618
 Al-Khateeb	0.014616
 Asfar	0.014615
@@ -1536,7 +1445,6 @@ Edres	0.014608
 Ibo	0.014605
 Ghader	0.014604
 Tarrab	0.014602
-Bkr	0.014599
 Alrajab	0.014597
 Shanaa	0.014588
 Alfadel	0.014585
@@ -1579,7 +1487,6 @@ Alyounes	0.014407
 Asfoura	0.014405
 Kanaa	0.014404
 Hallom	0.014396
-Kj	0.014386
 Hammadi	0.014384
 Alawi	0.014381
 Shamas	0.014380
@@ -1603,11 +1510,9 @@ Mualla	0.014344
 Adla	0.014343
 Allawi	0.014341
 Almeer	0.014340
-Zd	0.014336
 Alham	0.014328
 Asman	0.014324
 Otman	0.014321
-Dw	0.014318
 Break	0.014315
 Tatari	0.014312
 Temo	0.014311
@@ -1766,7 +1671,6 @@ Saqr	0.013723
 Alsalman	0.013719
 Nehme	0.013718
 Sahli	0.013715
-Mhm	0.013712
 Ahmab	0.013710
 Amoon	0.013709
 Loulou	0.013706
@@ -1870,7 +1774,6 @@ Falaha	0.013411
 Alyaseen	0.013401
 Al-Saleh	0.013397
 Fandy	0.013394
-Msh	0.013393
 Hsin	0.013392
 Zarzar	0.013391
 Barbour	0.013389
@@ -1899,7 +1802,6 @@ Jarbou	0.013260
 Alhussien	0.013259
 Shahada	0.013258
 Haj Hasan	0.013256
-Fhd	0.013251
 Almelhem	0.013250
 Harmoush	0.013249
 Zammar	0.013248
@@ -1915,7 +1817,6 @@ Sarakbi	0.013221
 Aboahmad	0.013218
 Hlak	0.013216
 Abo Yazan	0.013213
-Sÿ	0.013207
 Aessa	0.013204
 Wakkaf	0.013198
 Zenalden	0.013197
@@ -1943,7 +1844,6 @@ Elwan	0.013147
 Has	0.013145
 Alsh	0.013143
 Asmi	0.013142
-Fd	0.013140
 Jandali	0.013136
 Alrasheed	0.013135
 Sebai	0.013132
@@ -1978,7 +1878,6 @@ Alsore	0.013067
 Hajjo	0.013065
 Shawi	0.013064
 Al Hussein	0.013063
-Ngm	0.013045
 Refaee	0.013039
 Nadr	0.013030
 Tamr	0.013027
@@ -2062,7 +1961,6 @@ Alnabhan	0.012812
 Alshams	0.012806
 Alnassar	0.012805
 Hmo	0.012803
-Kw	0.012802
 Aeman	0.012801
 Hendi	0.012799
 Koke	0.012798
@@ -2153,7 +2051,6 @@ Shab	0.012524
 Ans	0.012521
 Fadl	0.012519
 Kal	0.012518
-Dn	0.012514
 Saeid	0.012513
 Hares	0.012511
 Zoro	0.012510
@@ -2286,7 +2183,6 @@ Alj	0.012191
 Ashoor	0.012188
 Jassem	0.012186
 Abden	0.012185
-Zx	0.012182
 Sul	0.012181
 Daba	0.012180
 Fakhouri	0.012179
@@ -2418,7 +2314,6 @@ Aljaramani	0.011896
 Ghanoom	0.011893
 Alsalloum	0.011881
 Hosamo	0.011880
-Šy	0.011879
 Arnos	0.011876
 Mhfod	0.011874
 Alsmman	0.011872
@@ -2443,13 +2338,11 @@ Wardah	0.011842
 Babi	0.011841
 Mohana	0.011840
 Alghawi	0.011839
-Od	0.011838
 Sed	0.011837
 Al Hariri	0.011836
 Hammoudeh	0.011835
 Dalil	0.011834
 Muhanna	0.011833
-Kf	0.011831
 Zoz	0.011828
 Alghazali	0.011825
 Jado	0.011825
@@ -2465,7 +2358,6 @@ Kaso	0.011802
 Kaml	0.011801
 Sallah	0.011799
 Anjel	0.011798
-Hw	0.011797
 Bouz	0.011797
 Asfoor	0.011796
 Al-Sayed	0.011795
@@ -2498,7 +2390,6 @@ Sharfo	0.011757
 Armanazi	0.011756
 Alawa	0.011749
 Danon	0.011748
-Sbh	0.011745
 Hammada	0.011744
 Nawras	0.011741
 Abozed	0.011731
@@ -2567,7 +2458,6 @@ Jmaa	0.011595
 Rashwani	0.011593
 Nehlawi	0.011593
 Alhmed	0.011590
-Mhmb	0.011589
 Abo Assi	0.011586
 Aldeab	0.011586
 Alazez	0.011585
@@ -2611,7 +2501,6 @@ Saftly	0.011493
 Cudi	0.011480
 Mawaldi	0.011478
 Mhala	0.011476
-Drdr	0.011475
 Raee	0.011474
 Yakoob	0.011473
 Zahed	0.011472
@@ -2646,7 +2535,6 @@ Syri	0.011424
 Kozma	0.011424
 Stef	0.011422
 Baza	0.011421
-Tw	0.011420
 Tanta	0.011419
 Sefo	0.011418
 Alias	0.011417
@@ -2665,7 +2553,6 @@ Shujaa	0.011404
 Alomary	0.011403
 Alramadan	0.011400
 Jaser	0.011395
-Hssn	0.011395
 Deek	0.011394
 Agag	0.011393
 Tibi	0.011392
@@ -2790,7 +2677,6 @@ Alakad	0.011157
 Ali Deeb	0.011153
 Halabia	0.011146
 Hamwy	0.011139
-Śy	0.011138
 Jlilaty	0.011135
 Mehob	0.011135
 Zarifa	0.011133
@@ -2801,7 +2687,6 @@ Totonji	0.011120
 Yaziji	0.011116
 Barode	0.011113
 Kalaje	0.011112
-Mhrz	0.011110
 Skif	0.011106
 Deob	0.011106
 Alkhen	0.011104
@@ -2871,7 +2756,6 @@ Almer	0.011030
 Talas	0.011029
 Kallab	0.011028
 Jadid	0.011028
-Fy	0.011027
 Stas	0.011026
 Tabak	0.011026
 Amouri	0.011025
@@ -2951,7 +2835,6 @@ Apd	0.010864
 Alwared	0.010864
 Al Deen	0.010862
 Alomer	0.010850
-Mjd	0.010850
 Basbous	0.010847
 Al Hayek	0.010845
 Hamadah	0.010844
@@ -2998,7 +2881,6 @@ Alabdalah	0.010800
 Aljomaa	0.010798
 Albaset	0.010797
 Almostafa	0.010796
-Rstm	0.010795
 Alalo	0.010795
 Tenawi	0.010793
 Almla	0.010791
@@ -3078,8 +2960,6 @@ Azhari	0.010664
 Jundi	0.010662
 Len	0.010661
 Al Zoubi	0.010659
-Mw	0.010658
-Nz	0.010658
 Idress	0.010657
 Zoom	0.010656
 Halwani	0.010656
@@ -3274,7 +3154,6 @@ Karraz	0.010367
 Dabbit	0.010364
 Sahyoni	0.010361
 Saboh	0.010361
-Brbr	0.010359
 Alzaim	0.010358
 Bayazed	0.010357
 Haedara	0.010356
@@ -3365,9 +3244,7 @@ Bashi	0.010241
 Mho	0.010240
 Easa	0.010240
 Marei	0.010239
-Mtr	0.010239
 Sabaa	0.010238
-Kz	0.010238
 Khairallah	0.010237
 Al Hamed	0.010236
 Hamida	0.010236
@@ -3396,7 +3273,6 @@ Take	0.010210
 Ghaze	0.010209
 Amari	0.010209
 Wared	0.010208
-Trk	0.010207
 Medani	0.010205
 Zene	0.010205
 Hiso	0.010204
@@ -3420,10 +3296,8 @@ Kholi	0.010195
 Nasem	0.010194
 Sulyman	0.010193
 Bashor	0.010193
-Dbs	0.010192
 Sys	0.010192
 Nanou	0.010191
-Krm	0.010191
 Yamak	0.010190
 Naoura	0.010190
 Ahed	0.010189
@@ -3444,7 +3318,6 @@ Gha	0.010173
 Hma	0.010172
 Al-Haj	0.010172
 Zaiton	0.010171
-Mkh	0.010171
 Jarah	0.010170
 Harash	0.010170
 Zean	0.010169
@@ -3486,7 +3359,6 @@ Mousli	0.010138
 Abda	0.010134
 Sousi	0.010134
 Fedda	0.010129
-Ķh	0.010122
 Raie	0.010119
 Neem	0.010119
 Ragb	0.010117
@@ -3621,7 +3493,6 @@ Alkayem	0.009914
 Syriana	0.009913
 Iesa	0.009913
 Almaghout	0.009910
-Şy	0.009910
 Brhoom	0.009909
 Alshaeer	0.009907
 Almedane	0.009906
@@ -3666,7 +3537,6 @@ Almonajed	0.009856
 Lattkia	0.009853
 Zayood	0.009852
 Shamso	0.009851
-Šÿ	0.009850
 Almhethawe	0.009850
 Daroish	0.009849
 Merheg	0.009849
@@ -3711,7 +3581,6 @@ Alai	0.009800
 Masod	0.009800
 Alyan	0.009799
 Hagi	0.009799
-Shr	0.009798
 Alasmi	0.009797
 Mater	0.009796
 Khal	0.009796
@@ -3734,7 +3603,6 @@ Bostani	0.009783
 Mashaal	0.009782
 Sayadi	0.009781
 Wasel	0.009779
-Šh	0.009779
 Wafai	0.009778
 Azeze	0.009776
 Hmidi	0.009775
@@ -3750,11 +3618,8 @@ Kadra	0.009768
 Kazma	0.009767
 Kilo	0.009767
 Shalla	0.009766
-Jz	0.009766
-Wr	0.009766
 Derek	0.009765
 Zefa	0.009765
-Nw	0.009764
 Borjas	0.009764
 Yunes	0.009763
 Aros	0.009763
@@ -3791,7 +3656,6 @@ Alnayef	0.009739
 Alhady	0.009737
 Flawer	0.009735
 Mahli	0.009735
-Yh	0.009734
 Atat	0.009734
 Mouti	0.009734
 Tiba	0.009733
@@ -3842,7 +3706,6 @@ Gabal	0.009689
 Abd Alla	0.009688
 Hagar	0.009687
 Ghazaly	0.009685
-Gbr	0.009683
 Fatoh	0.009677
 Askr	0.009674
 Abo Zed	0.009671
@@ -3981,7 +3844,6 @@ Al Ale	0.009520
 Alhanon	0.009515
 Alarbed	0.009514
 Barood	0.009512
-Wrd	0.009512
 Mhfoud	0.009511
 Shiban	0.009511
 Saai	0.009510
@@ -4002,7 +3864,6 @@ Mrshed	0.009489
 Al-Hallak	0.009488
 Jouria	0.009488
 Alhamoy	0.009484
-Mrhj	0.009484
 Abosaad	0.009481
 Alndaf	0.009480
 Rahwan	0.009479
@@ -4122,7 +3983,6 @@ Alz	0.009356
 Alsadi	0.009355
 Than	0.009354
 Alqadi	0.009354
-Kdr	0.009354
 Khattar	0.009353
 Rahel	0.009352
 Iskander	0.009352
@@ -4205,7 +4065,6 @@ Radoan	0.009300
 Tajo	0.009299
 Damen	0.009298
 Dello	0.009298
-Zhr	0.009298
 Kassoum	0.009297
 Hamado	0.009297
 Kabboul	0.009296
@@ -4423,7 +4282,6 @@ Altamer	0.009074
 Alnaasan	0.009074
 Akary	0.009074
 Taljeh	0.009073
-Skndr	0.009072
 Asod	0.009072
 Abo Haidar	0.009071
 Alsabaa	0.009071
@@ -4518,7 +4376,6 @@ Al Shikh	0.008987
 Merjaneh	0.008987
 Al-Habbal	0.008986
 Aljaramany	0.008985
-Mrhg	0.008984
 M Sy	0.008982
 Alsehnawe	0.008982
 Kntar	0.008980
@@ -4797,7 +4654,6 @@ Abdalhak	0.008792
 Ammoura	0.008791
 Alhak	0.008790
 Abd Alah	0.008787
-Klf	0.008787
 Zaine	0.008785
 Hessen	0.008784
 Algamal	0.008780
@@ -4851,7 +4707,6 @@ Bagdady	0.008702
 Sabhan	0.008701
 Al Najar	0.008698
 Mamd	0.008697
-Mslm	0.008695
 Baghdade	0.008695
 Alatwani	0.008694
 Smael	0.008691
@@ -4888,7 +4743,6 @@ Alaz	0.008669
 Alshemali	0.008669
 Alhatem	0.008669
 Al-Khaled	0.008668
-Hdhd	0.008668
 Alebraheem	0.008668
 Alsbah	0.008668
 Al Sh	0.008667
@@ -4972,7 +4826,6 @@ Fefo	0.008626
 Jalila	0.008625
 Ksar	0.008625
 Dhman	0.008625
-Nssr	0.008625
 Alyousfi	0.008624
 Katranji	0.008624
 Kreker	0.008624
@@ -5145,7 +4998,6 @@ Krdy	0.008483
 Jatal	0.008483
 Jabbor	0.008481
 Kahlous	0.008481
-Mrshd	0.008480
 Tayfor	0.008480
 Albelsan	0.008479
 Alyassen	0.008479
@@ -5250,11 +5102,9 @@ Masuod	0.008428
 Badin	0.008426
 Bahlol	0.008425
 Sayaf	0.008425
-Hdr	0.008424
 Oghli	0.008424
 Kamari	0.008422
 Abdulwahed	0.008420
-Ey	0.008419
 Naaem	0.008419
 Doko	0.008418
 Dilo	0.008418
@@ -5274,9 +5124,7 @@ Haki	0.008413
 Badini	0.008413
 Artin	0.008413
 Mob	0.008412
-Wd	0.008411
 Most	0.008411
-Rw	0.008411
 Ossi	0.008410
 Atr	0.008410
 Alos	0.008410
@@ -5305,7 +5153,6 @@ Sore	0.008402
 Kabor	0.008401
 Moubarak	0.008401
 Kalfa	0.008401
-Bhr	0.008400
 Darraj	0.008400
 Albarri	0.008399
 Al Saad	0.008398
@@ -5316,7 +5163,6 @@ Dakheel	0.008397
 Alsarhan	0.008396
 Abk	0.008394
 Alsagheer	0.008394
-Shm	0.008391
 Rezq	0.008388
 Alnaseer	0.008388
 Seria	0.008387
@@ -5389,10 +5235,8 @@ Lahlah	0.008360
 Amoun	0.008359
 Haboub	0.008359
 Malouk	0.008358
-Khl	0.008358
 Adl	0.008357
 Khadouj	0.008356
-Msl	0.008351
 Kahal	0.008351
 Mansoura	0.008349
 Jazairi	0.008349
@@ -5440,7 +5284,6 @@ Ghandor	0.008300
 Fadeel	0.008299
 Rahmo	0.008299
 Alnashar	0.008297
-Shms	0.008295
 Arafah	0.008293
 Tawila	0.008291
 Sharof	0.008291
@@ -5509,7 +5352,6 @@ Almhana	0.008243
 Almalak	0.008242
 Najjari	0.008233
 Raei	0.008232
-Rsh	0.008232
 Alkasir	0.008232
 Zaer	0.008231
 Nakour	0.008231
@@ -5620,7 +5462,6 @@ Al Mhamad	0.008183
 Karnoub	0.008182
 Abou Saada	0.008182
 Al Rouh	0.008182
-Ssnp	0.008181
 Nahlawi	0.008181
 Tinawe	0.008181
 Al Sakka	0.008180
@@ -5907,7 +5748,6 @@ Abotrabi	0.007991
 Alyones	0.007990
 Almrae	0.007989
 Mslmane	0.007989
-Khlf	0.007989
 Hemmami	0.007989
 Shalhoom	0.007988
 Alsmra	0.007987
@@ -5989,7 +5829,6 @@ Alhzn	0.007947
 Lazkany	0.007947
 Ayoud	0.007946
 Almhammad	0.007946
-Shrf	0.007945
 Shleha	0.007945
 Aboshaar	0.007945
 Daloo	0.007943
@@ -6053,7 +5892,6 @@ Almgd	0.007915
 Kaband	0.007914
 Sulman	0.007912
 Katta	0.007912
-Shk	0.007911
 Rahima	0.007911
 Shakar	0.007911
 Jaradat	0.007910
@@ -6107,7 +5945,6 @@ Alkhair	0.007895
 Murtada	0.007895
 Feda	0.007892
 Nehad	0.007890
-Śh	0.007889
 Torkman	0.007887
 Soz	0.007887
 Qudsi	0.007886
@@ -6118,7 +5955,6 @@ Abdy	0.007884
 Kako	0.007884
 Ayobe	0.007883
 Jubran	0.007883
-Şh	0.007882
 Habil	0.007881
 Qasm	0.007879
 Alikaj	0.007877
@@ -6141,16 +5977,12 @@ Geha	0.007873
 Dep	0.007873
 Sorea	0.007872
 Anjo	0.007872
-Yb	0.007872
 Mimas	0.007872
-Fw	0.007871
-Bw	0.007871
 Bosso	0.007871
 Renas	0.007871
 Malta	0.007870
 Walo	0.007870
 Gory	0.007870
-Wn	0.007870
 Massara	0.007869
 Dames	0.007868
 Tame	0.007868
@@ -6170,7 +6002,6 @@ Risha	0.007865
 Hobe	0.007864
 Solman	0.007864
 Johra	0.007864
-Mst	0.007863
 Joban	0.007863
 Al Hadi	0.007863
 Yafi	0.007863
@@ -6190,10 +6021,7 @@ Romans	0.007859
 Hannon	0.007859
 Damman	0.007858
 Ysf	0.007858
-Msr	0.007858
-Hms	0.007858
 Aouad	0.007857
-Bsh	0.007857
 Lots	0.007857
 Kevorkian	0.007857
 Festok	0.007856
@@ -6223,12 +6051,10 @@ Khorsheed	0.007846
 Aljarah	0.007846
 Alsabea	0.007845
 Awil	0.007845
-Gx	0.007844
 Alaneed	0.007844
 Asf	0.007843
 Al-Othman	0.007843
 Al Ameer	0.007842
-Ksh	0.007841
 Yakop	0.007841
 Ezan	0.007841
 Yaakob	0.007841
@@ -6244,7 +6070,6 @@ Aahmad	0.007838
 Mardin	0.007838
 Kasir	0.007838
 Hod	0.007837
-Qf	0.007837
 Jaro	0.007837
 Foz	0.007837
 Abade	0.007836
@@ -6275,8 +6100,6 @@ Njem	0.007830
 Souleiman	0.007830
 Alou	0.007830
 Sayom	0.007829
-Zw	0.007829
-Qw	0.007829
 Hidara	0.007829
 Knefaty	0.007829
 Bunni	0.007828
@@ -6333,7 +6156,6 @@ Aljana	0.007811
 Khalef	0.007811
 Atman	0.007811
 Naami	0.007807
-Mgh	0.007806
 Kabour	0.007805
 Jaloul	0.007804
 Fatoum	0.007803
@@ -6349,11 +6171,9 @@ Fado	0.007795
 Jilo	0.007794
 Ghadir	0.007794
 Maklouf	0.007793
-Rgb	0.007792
 Koor	0.007792
 Tooma	0.007792
 Mardo	0.007791
-Mrmr	0.007791
 Omry	0.007790
 Dahy	0.007788
 Zaghlol	0.007786
@@ -6383,7 +6203,6 @@ Sharkas	0.007759
 Ayop	0.007758
 Gwad	0.007757
 Aldeep	0.007757
-Brns	0.007755
 Refaai	0.007755
 Malky	0.007755
 Shoura	0.007754
@@ -6551,7 +6370,6 @@ Albakre	0.007649
 Husami	0.007648
 Al-Ibraheem	0.007646
 Alabad	0.007645
-Dndn	0.007645
 Beiruti	0.007644
 Aljazar	0.007644
 Alfarkh	0.007642
@@ -6712,7 +6530,6 @@ Dwayeb	0.007565
 Algabal	0.007564
 Rihawe	0.007564
 Naffouj	0.007564
-Mflh	0.007563
 Nhar	0.007563
 Maidaa	0.007563
 Alrass	0.007563
@@ -6839,7 +6656,6 @@ Alhosne	0.007495
 Sarmene	0.007494
 Shubat	0.007494
 Sarkas	0.007493
-Zrzr	0.007493
 Oghly	0.007493
 Brrow	0.007492
 Haeate	0.007492
@@ -7035,7 +6851,6 @@ Nesafe	0.007402
 Soed	0.007402
 Abo Dan	0.007401
 Alres	0.007401
-Zmzm	0.007400
 Ksab	0.007400
 Azaldeen	0.007399
 Mhemd	0.007399
@@ -7130,7 +6945,6 @@ Alkatep	0.007362
 Alraja	0.007361
 Demashki	0.007361
 Rmmo	0.007361
-Mdll	0.007361
 Aldrwish	0.007360
 Alrazak	0.007360
 Alklel	0.007359
@@ -7172,7 +6986,6 @@ Almarji	0.007343
 Sarag	0.007343
 Hasoud	0.007342
 Hammodi	0.007342
-Hrh	0.007342
 Kajouj	0.007341
 Zeen Aldeen	0.007341
 Altala	0.007340

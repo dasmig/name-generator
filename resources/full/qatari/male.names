@@ -1,6 +1,5 @@
 qa
 male
-Md	1.000000
 Abdul	0.707107
 Muhammad	0.577350
 Ram	0.500000
@@ -76,7 +75,6 @@ Sumon	0.116248
 Aslam	0.115470
 Basheer	0.114708
 Laxman	0.113961
-Sk	0.113228
 Pramod	0.112509
 Mani	0.111803
 Rajkumar	0.111111
@@ -311,7 +309,6 @@ Ahsan	0.056077
 Harish	0.055989
 Sulaiman	0.055902
 Sreejith	0.055815
-Rj	0.055641
 Navas	0.055556
 Rehan	0.055470
 Nishad	0.055385
@@ -381,7 +378,6 @@ Mizan	0.050443
 Sujon	0.050379
 Vipin	0.050315
 Shafeek	0.050252
-Mb	0.050189
 Jitendar	0.050125
 Jaber	0.050063
 Mir	0.049938
@@ -449,7 +445,6 @@ Aamir	0.046274
 Thapa	0.046225
 Tamang	0.046176
 Ratan	0.046127
-Rk	0.046078
 Prabin	0.046029
 Nazar	0.045980
 Raheem	0.045932
@@ -461,7 +456,6 @@ Kasim	0.045644
 Arul	0.045596
 Nepali	0.045549
 Bindas	0.045502
-Qtr	0.045455
 Parvez	0.045408
 Muhamed	0.045361
 Aminul	0.045314
@@ -532,7 +526,6 @@ Surendar	0.042333
 Asraf	0.042295
 Pardeshi	0.042258
 Sumit	0.042220
-Mhd	0.042182
 Umer	0.042145
 Gafoor	0.042108
 Sree	0.042070
@@ -724,7 +717,6 @@ Saqib	0.036131
 Israr	0.036108
 Sukhwinder	0.036084
 Manjit	0.036061
-Bu	0.036037
 Chinna	0.036014
 Sangam	0.035944
 Kanxa	0.035921
@@ -897,7 +889,6 @@ Sreekumar	0.032309
 Vineeth	0.032292
 Ashok Kumar	0.032275
 Kalu	0.032258
-Sd	0.032241
 Rayhan	0.032225
 Sajib	0.032208
 Bhupendra	0.032191
@@ -912,7 +903,6 @@ Firos	0.032059
 Abdurahman	0.032042
 Biswajit	0.032026
 Atik	0.031993
-Dk	0.031976
 Amarjit	0.031944
 Sattar	0.031928
 Shoukath	0.031911
@@ -972,7 +962,6 @@ Ritesh	0.030994
 Salahuddin	0.030979
 Ajay Kumar	0.030964
 Raihan	0.030934
-Km	0.030920
 Nanu	0.030905
 Ridoy	0.030890
 Anura	0.030875
@@ -1004,7 +993,6 @@ Giri	0.030471
 Elsayed	0.030429
 Rajaram	0.030415
 Md Monir	0.030401
-Rs	0.030387
 Sarif	0.030373
 Ruel	0.030359
 Lahiru	0.030345
@@ -1161,7 +1149,6 @@ Sakir	0.028296
 Prodip	0.028284
 Gobind	0.028273
 Shatrudhan	0.028239
-Gfj	0.028228
 Jassi	0.028217
 Kishore	0.028205
 Jaswant	0.028194
@@ -1169,7 +1156,6 @@ Abdulsalam	0.028183
 Rafeeque	0.028172
 Sharafu	0.028149
 Papu	0.028138
-Kp	0.028116
 Rihan	0.028105
 Ashim	0.028094
 Balaram	0.028083
@@ -1212,8 +1198,6 @@ Hiralal	0.027661
 Mark Anthony	0.027650
 Bipul	0.027639
 Subodh	0.027629
-Kb	0.027618
-Rn	0.027608
 Aashik	0.027597
 Mudassar	0.027587
 Rehman	0.027576
@@ -1316,7 +1300,6 @@ Samsuddin	0.026547
 Niroshan	0.026537
 Siyam	0.026528
 Ansarul	0.026519
-H&D	0.026509
 Liaqat	0.026500
 Azmat	0.026491
 Naseeb	0.026481
@@ -1378,7 +1361,6 @@ Thushara	0.025941
 Bullet	0.025933
 Shrawan	0.025915
 Rabindar	0.025906
-Grg	0.025898
 Gyanu	0.025889
 Satrudhan	0.025880
 Turki	0.025872
@@ -1437,7 +1419,6 @@ Suneer	0.025392
 Sajal	0.025384
 Nishanth	0.025375
 Dinesh Kumar	0.025359
-Bd	0.025343
 Ashis	0.025327
 Fayas	0.025310
 Md Shamim	0.025302
@@ -1473,7 +1454,6 @@ Shiv Kumar	0.025031
 Nawas	0.025023
 Md Shahin	0.025016
 Chhabi	0.025008
-Db	0.025000
 Niro	0.024992
 Kanthan	0.024984
 Naleem	0.024977
@@ -1522,13 +1502,11 @@ Tharindu	0.024581
 Gyanendra	0.024559
 Chanaka	0.024551
 Lasantha	0.024544
-Ej	0.024537
 Chhetri	0.024529
 Sisira	0.024522
 Jemal	0.024515
 Kanchha	0.024507
 Binod Kumar	0.024500
-Eg	0.024485
 Qatari	0.024478
 Baloch	0.024470
 Saifullah	0.024463
@@ -1557,7 +1535,6 @@ Ruban	0.024275
 Kanxo	0.024261
 Seelan	0.024254
 Tharsan	0.024246
-F(Jd	0.024239
 Haja	0.024232
 Jagtar	0.024225
 Aravind	0.024218
@@ -1586,13 +1563,11 @@ Dilshan	0.024049
 Omor	0.024042
 Mustakim	0.024028
 Isuru	0.024022
-Rb	0.024015
 Subba	0.024008
 Bhandari	0.024001
 Adhikari	0.023994
 Sisir	0.023987
 Alaudin	0.023980
-Dxn	0.023973
 Ridam	0.023966
 Ram Bahadur	0.023959
 Khadga	0.023953
@@ -1872,7 +1847,6 @@ Md Alamgir	0.022097
 Parmeshwar	0.022092
 Md Dulal	0.022086
 Samsher	0.022076
-Ek	0.022070
 Mahamud	0.022054
 Rupak	0.022049
 Taiyab	0.022043
@@ -2138,7 +2112,6 @@ Manir	0.020593
 Biplab	0.020585
 Aseem	0.020580
 Neyaz	0.020572
-Rc	0.020567
 Ramdev	0.020563
 Sorif	0.020559
 Raffy	0.020554
@@ -2154,7 +2127,6 @@ Rasmi	0.020507
 Abdelrhman	0.020502
 Aaditya	0.020498
 Dhruba	0.020494
-Hmd	0.020489
 Khatri	0.020485
 Nageshwar	0.020481
 Uthaya	0.020477
@@ -2212,7 +2184,6 @@ Kameshwar	0.020240
 Niloy	0.020236
 Bidur	0.020232
 Thusitha	0.020228
-Tmg	0.020224
 Thaman	0.020220
 Ram Chandra	0.020215
 Nisan	0.020211
@@ -2455,7 +2426,6 @@ Mankumar	0.019171
 Vithu	0.019167
 Biltu	0.019164
 Uwais	0.019160
-G/J	0.019157
 Abhagi	0.019146
 Sathi Ma	0.019142
 Shafqat	0.019139
@@ -2597,7 +2567,6 @@ Hashan	0.018631
 Pemba	0.018627
 Sudath	0.018624
 Sherpa	0.018621
-Lb	0.018618
 Ovi	0.018615
 Ranjit Kumar	0.018611
 Nim	0.018608
@@ -2606,7 +2575,6 @@ Murtuja	0.018602
 Prabesh	0.018598
 Eklo	0.018595
 Til	0.018592
-Mhm	0.018589
 Dil Bahadur	0.018586
 Jagarnath	0.018582
 Reyaj	0.018579
@@ -2614,7 +2582,6 @@ Sukra	0.018576
 Rohitha	0.018573
 Dahal	0.018570
 Jay Kumar	0.018566
-Fhd	0.018563
 Arsath	0.018557
 Almarri	0.018554
 Fiaz	0.018550
@@ -2669,7 +2636,6 @@ Sujal	0.018377
 Ramprit	0.018374
 Tul	0.018371
 Saukat	0.018368
-Nb	0.018362
 Arjun Kumar	0.018359
 Tek Bahadur	0.018356
 Aashis	0.018352
@@ -2790,7 +2756,6 @@ Istiyak	0.017949
 Bhojraj	0.017946
 Subedi	0.017943
 Bihari	0.017940
-Hb	0.017937
 Kirshna	0.017935
 Rumesh	0.017932
 Md Babu	0.017929
@@ -2802,13 +2767,11 @@ Md Shakil	0.017914
 Sangit	0.017909
 Md Rajib	0.017906
 Diwana	0.017903
-Msm	0.017900
 Mostakim	0.017897
 Mokim	0.017894
 Ramhari	0.017891
 Shisir	0.017889
 Nissanka	0.017886
-Ef	0.017883
 Irsath	0.017880
 Mayuran	0.017877
 Tharshan	0.017874
@@ -2817,7 +2780,6 @@ Rinas	0.017869
 Budhan	0.017866
 Kisun	0.017863
 Mukhiya	0.017860
-Ddg	0.017857
 Rajabul	0.017851
 Ram Pukar	0.017849
 Khizar	0.017846
@@ -2907,7 +2869,6 @@ Md Kabir	0.017593
 Hafijul	0.017590
 Arju	0.017584
 Mondal	0.017582
-Dp	0.017579
 Mahfuj	0.017576
 Zaldy	0.017571
 Ranil	0.017565
@@ -2941,7 +2902,6 @@ Bom	0.017485
 Rambilash	0.017482
 Lekhnath	0.017479
 Raj Kishor	0.017477
-Gj	0.017474
 Abuu	0.017471
 Biswash	0.017469
 Anojan	0.017466
@@ -3166,7 +3126,6 @@ Eranda	0.016810
 Dorje	0.016805
 Thava	0.016803
 Kamrudin	0.016798
-Qa	0.016795
 Him	0.016793
 Md Alomgir	0.016791
 Risan	0.016788
@@ -3263,7 +3222,6 @@ Malla	0.016536
 Kamesh	0.016532
 Mishra	0.016529
 Gafur	0.016527
-S M	0.016525
 Ajnas	0.016523
 Devilal	0.016520
 Ronnel	0.016518
@@ -3521,7 +3479,6 @@ Thulasi	0.015925
 Nav	0.015923
 Vipan	0.015921
 Rahan	0.015919
-Vk	0.015917
 Gopa	0.015915
 Taju	0.015913
 Gur	0.015911
@@ -3633,7 +3590,6 @@ Sansar	0.015671
 Majhi	0.015669
 Dilliram	0.015667
 Dedc	0.015665
-Gdd	0.015663
 Sikindar	0.015661
 Rikas	0.015659
 Dhanbir	0.015658
@@ -3805,7 +3761,6 @@ Shofikul	0.015309
 Md Islam	0.015305
 Desh	0.015303
 Ferdie	0.015298
-Rv	0.015296
 Athi	0.015294
 Ramdular	0.015293
 Rhey	0.015291
@@ -3837,7 +3792,6 @@ Harshana	0.015237
 Okil	0.015236
 Rajnarayan	0.015234
 Madusanka	0.015232
-Bp	0.015230
 Aadam	0.015229
 Bhesh	0.015227
 Rewat	0.015225
@@ -3851,13 +3805,11 @@ Sahabudin	0.015211
 Vai	0.015209
 Bechir	0.015207
 Vasanthan	0.015206
-Nh	0.015204
 Kopi	0.015202
 Alhaji	0.015200
 Chokri	0.015199
 Wissem	0.015197
 Kadiir	0.015195
-Lx	0.015193
 Damar	0.015192
 Birkha	0.015190
 Sathu	0.015188
@@ -3873,8 +3825,6 @@ Varathan	0.015172
 Sasikaran	0.015171
 Segar	0.015169
 Jibrail	0.015167
-J-J	0.015165
-Mhmmd	0.015164
 Rajip	0.015162
 Prameshwar	0.015160
 Farsan	0.015158
@@ -3998,7 +3948,6 @@ Md Irfan	0.014925
 Delip	0.014924
 Md Amin	0.014922
 Imon	0.014920
-Np	0.014919
 Sailendra	0.014917
 Ismath	0.014915
 Atikul	0.014914
@@ -4055,7 +4004,6 @@ Rifkhan	0.014820
 Sanjeep	0.014818
 Rambaran	0.014817
 Tejnarayan	0.014815
-D-Jg	0.014814
 Faleel	0.014812
 Jiffry	0.014810
 Timi Bina	0.014809
@@ -4255,7 +4203,6 @@ Bhupen	0.014459
 Taufik	0.014458
 Md Amran	0.014455
 Ramshid	0.014453
-Vm	0.014452
 Hijas	0.014450
 Jillur	0.014447
 Md Arman	0.014444
@@ -4313,7 +4260,6 @@ Ram Krishna	0.014359
 Tularam	0.014358
 Dik	0.014356
 Kovi	0.014355
-Mnm	0.014353
 Sukram	0.014352
 Sopner	0.014350
 Md Tuhin	0.014349
@@ -4341,7 +4287,6 @@ Tapeshwar	0.014318
 Mamtaj	0.014316
 Suneth	0.014315
 Asbin	0.014313
-D/Fj	0.014312
 D-E/Ddg	0.014311
 Nawfar	0.014309
 Imtiyas	0.014308
@@ -4359,7 +4304,6 @@ Dipnarayan	0.014292
 Kali Ko	0.014290
 Aayus	0.014289
 Ilameli	0.014287
-Mgr	0.014286
 Narbahadur	0.014284
 Salyani	0.014283
 Arshid	0.014281
@@ -4512,7 +4456,6 @@ Vinodan	0.014058
 Rowell	0.014057
 Raseed	0.014055
 Shukur	0.014052
-Vp	0.014051
 Bachan	0.014050
 Jaimon	0.014048
 Saqr	0.014047
@@ -4550,7 +4493,6 @@ Dwarika	0.013996
 Sohel Rana	0.013995
 Sarma	0.013993
 Shivram	0.013992
-M D	0.013989
 Md Akbar	0.013988
 Ashadul	0.013985
 Salin	0.013984
@@ -4668,7 +4610,6 @@ Dilkumar	0.013808
 Ritik	0.013807
 Buddhiman	0.013805
 Phul	0.013804
-Jbr	0.013803
 Mohamat	0.013801
 Awwal	0.013800
 Kiru	0.013799
@@ -4698,7 +4639,6 @@ Suraz	0.013769
 Samip	0.013767
 Kiyas	0.013766
 Atham	0.013765
-Mr	0.013762
 Mafas	0.013761
 Nafeer	0.013759
 Thowfeek	0.013758
@@ -4967,7 +4907,6 @@ Kanesh	0.013385
 Asanga	0.013383
 Kabin	0.013382
 Wimal	0.013381
-Oe	0.013379
 Sonalal	0.013377
 Durganand	0.013376
 Sithum	0.013375
@@ -5240,7 +5179,6 @@ Dindo	0.013020
 Anawar	0.013019
 Prashanta	0.013018
 Devnath	0.013017
-Ur	0.013016
 Bhart	0.013014
 Umakanta	0.013013
 Isham	0.013012
@@ -5321,7 +5259,6 @@ Jakariya	0.012916
 Md Sabuj	0.012915
 Md Shorif	0.012914
 Md Jowel	0.012913
-Sm	0.012912
 Md Abbas	0.012911
 Md Sohidul	0.012910
 Junel	0.012909
@@ -5346,7 +5283,6 @@ Seen	0.012888
 Amiin	0.012887
 Sivalingam	0.012886
 Farees	0.012885
-Wd	0.012884
 Nesan	0.012883
 Hadish	0.012882
 Selvarasa	0.012880
@@ -5381,7 +5317,6 @@ Anfas	0.012848
 E.Hj	0.012847
 Asmeer	0.012846
 Sajath	0.012845
-Mhmm	0.012844
 Sarjoon	0.012843
 Bhabin	0.012842
 Chanchale	0.012841
@@ -5545,7 +5480,6 @@ Baljit Singh	0.012643
 Apsar	0.012642
 Prasobh	0.012641
 Tufani	0.012640
-Aq	0.012639
 Oman	0.012638
 Motahar	0.012637
 Shebi	0.012636
@@ -5573,7 +5507,6 @@ Visal	0.012610
 Suhil	0.012609
 Md Delwar	0.012608
 Rahad	0.012607
-Pv	0.012606
 Syful	0.012605
 Haneesh	0.012604
 Md Anis	0.012603
@@ -5651,7 +5584,6 @@ Mubarek	0.012517
 Tufayel	0.012516
 Maikal	0.012515
 Bibak	0.012514
-Mrm	0.012513
 Sakal	0.012512
 Vanu	0.012511
 Trebor	0.012510
@@ -5666,7 +5598,6 @@ Md Shafiqul	0.012501
 Md Robin	0.012500
 Ujjol	0.012499
 Md Sakil	0.012498
-Rdx	0.012497
 Md Jahirul	0.012496
 Md Jony	0.012495
 Md Sahadat	0.012494
@@ -5676,7 +5607,6 @@ Parbej	0.012490
 Mafuj	0.012489
 Md Meraj	0.012488
 Samirul	0.012487
-Mbh	0.012486
 Debit	0.012485
 Rabii	0.012484
 Mekha	0.012481
@@ -5689,8 +5619,6 @@ Geeth	0.012470
 Prayash	0.012469
 Shyam Lal	0.012468
 Homnath	0.012467
-Rmg	0.012466
-Dd	0.012465
 Inshaf	0.012464
 Reason	0.012463
 Perm	0.012462
@@ -5702,7 +5630,6 @@ Sajeewa	0.012455
 Hamisi	0.012454
 Tissa	0.012452
 Abdelazim	0.012451
-Mbm	0.012450
 Abdhesh	0.012450
 Gurudev	0.012449
 Aajad	0.012448
@@ -5719,7 +5646,6 @@ Dananjaya	0.012438
 Regmi	0.012437
 Manoz	0.012436
 Senarath	0.012435
-Dh/H	0.012434
 Hafeel	0.012432
 Yonjan	0.012431
 Sunthar	0.012430
@@ -5729,7 +5655,6 @@ Bindass	0.012427
 Chandradip	0.012426
 Dalbahadur	0.012425
 Firthous	0.012425
-Jpt	0.012424
 Lamjunge	0.012423
 Namaraj	0.012422
 Nasarul	0.012421
@@ -5872,7 +5797,6 @@ Sewak	0.012271
 Ripan	0.012270
 Jijeesh	0.012269
 Jebin	0.012267
-Srk	0.012266
 Kadeer	0.012266
 Dharmendra Kumar	0.012265
 Mohim	0.012264
@@ -6192,7 +6116,6 @@ Rasad	0.011936
 Antor	0.011934
 Md Rakibul	0.011934
 Nahidul	0.011933
-M R	0.011932
 Md Raihan	0.011931
 Md Al Amin	0.011930
 Mostafiz	0.011929
@@ -6222,7 +6145,6 @@ Bishow	0.011909
 Debraj	0.011908
 Nowsad	0.011907
 Mdsaddam	0.011906
-Mbs	0.011906
 Chawki	0.011904
 Godfred	0.011903
 Jihed	0.011902
@@ -6343,9 +6265,7 @@ Bhusal	0.011790
 Chamith	0.011789
 Laxu	0.011788
 Af/Jf	0.011788
-D$J	0.011786
 Dhaj	0.011784
-Dg/J	0.011783
 Frdric	0.011783
 Thusara	0.011782
 Jge	0.011781
@@ -6353,8 +6273,6 @@ Sahabdeen	0.011780
 Irshan	0.011779
 Piyantha	0.011779
 Sleyman	0.011778
-Pr	0.011777
-Sbm	0.011776
 Venthan	0.011775
 Thilipan	0.011774
 Bhogendar	0.011774
@@ -6627,7 +6545,6 @@ Mojammal	0.011535
 Fokhrul	0.011535
 Hammod	0.011534
 Radhesyam	0.011533
-Ctg	0.011532
 Budhram	0.011532
 Simhachalam	0.011531
 Lallu	0.011530
@@ -6705,7 +6622,6 @@ Luckey	0.011465
 Uttom	0.011464
 Sahen	0.011463
 Magan	0.011462
-Smd	0.011462
 Azmol	0.011461
 Nashim	0.011460
 Sunit	0.011459
@@ -6787,7 +6703,6 @@ Md Sagir	0.011398
 Ishtiyak	0.011396
 Istak	0.011395
 Sihan	0.011395
-Xm	0.011394
 Abdela	0.011392
 Mudin	0.011391
 Arahman	0.011390
@@ -6869,14 +6784,12 @@ Md Afroj	0.011326
 Umes	0.011325
 Ramjivan	0.011324
 Dulan	0.011323
-Slm	0.011323
 Dileepa	0.011322
 Suminda	0.011321
 Muhammadh	0.011321
 Kafle	0.011320
 Lamichhane	0.011319
 Cjeh	0.011318
-D:Dj	0.011318
 Asath	0.011315
 Marsook	0.011314
 Aldren	0.011313
@@ -7214,7 +7127,6 @@ Domnic	0.011054
 Hassaan	0.011053
 Bhagwant	0.011053
 Ifthikar	0.011052
-Shk	0.011051
 Maeen	0.011050
 Rafiqul Islam	0.011049
 Amrjit	0.011049
@@ -7484,7 +7396,6 @@ Probashi	0.010846
 Jahar	0.010845
 Seyam	0.010845
 Sarajuddin	0.010844
-Mq	0.010843
 Safee	0.010843
 Toran	0.010841
 Ziyauddin	0.010841
@@ -7587,7 +7498,6 @@ Ejajul	0.010778
 Mozib	0.010778
 Md Najir	0.010777
 Md Rehan	0.010776
-Shm	0.010776
 Mongol	0.010775
 Shil	0.010775
 Kopal	0.010774
@@ -7698,7 +7608,6 @@ Thusyanthan	0.010695
 Thipan	0.010694
 Sba	0.010693
 Manil	0.010692
-Qr	0.010692
 Abdelmonem	0.010691
 Abdallaa	0.010690
 Tadele	0.010690
@@ -7819,9 +7728,7 @@ Redam	0.010618
 Salikram	0.010617
 Chandara	0.010617
 Ddge	0.010613
-D-F	0.010613
 E-J D/Jf	0.010611
-Mm	0.010609
 Nisthar	0.010608
 Dg/I	0.010608
 Abthul	0.010607
@@ -7925,13 +7832,11 @@ Dharma Raj	0.010544
 Dilli Ram	0.010544
 Drona	0.010543
 Hamzath	0.010543
-Hbk	0.010542
 Idunil	0.010542
 Jayanthan	0.010541
 Jerrin	0.010540
 Jiven	0.010540
 Kashindra	0.010539
-Kbm	0.010539
 Khawas	0.010538
 Kulung	0.010537
 Kumuthan	0.010537
@@ -8397,7 +8302,6 @@ Sadruddin	0.010234
 Jamaludin	0.010234
 Samoon	0.010233
 Rahmatulla	0.010233
-M S	0.010232
 Ebrar	0.010232
 Qaasim	0.010231
 Shamshir	0.010231
@@ -8412,8 +8316,6 @@ Manuka	0.010226
 Tirso	0.010226
 Yuusuf	0.010225
 Ilam	0.010225
-Ul	0.010224
-Ktm	0.010224
 Mondher	0.010222
 Chiheb	0.010222
 Gulsan	0.010221
@@ -8560,13 +8462,11 @@ Jaganathan	0.010130
 Denmark	0.010129
 Abdulgani	0.010128
 Doy	0.010127
-Bb	0.010127
 Chura	0.010126
 Jhak	0.010126
 Harison	0.010125
 Rodgers	0.010125
 Nakale	0.010124
-Dj	0.010124
 Shobhit	0.010123
 Mayooran	0.010123
 Girmay	0.010122
@@ -8714,10 +8614,7 @@ Anuruddha	0.010038
 Dushantha	0.010037
 Parbesh	0.010037
 Shiva Raj	0.010036
-J-Jj	0.010036
 Rathnayaka	0.010034
-Cdj	0.010034
-Djd	0.010033
 Mesfer	0.010032
 Halith	0.010030
 E#Ehf	0.010029
@@ -8771,7 +8668,6 @@ Jibchh	0.010004
 Kajee	0.010003
 Khotang	0.010002
 Kisori	0.010002
-Kpm	0.010001
 Kuddy	0.010001
 Lafa	0.010000
 Mahbul	0.010000
@@ -8843,7 +8739,6 @@ Mongolin	0.009966
 Nabeen	0.009966
 Naflan	0.009965
 Nasurdeen	0.009965
-Nbn	0.009964
 Nirash	0.009964
 Nirman	0.009963
 Njoroge	0.009963
@@ -9577,16 +9472,13 @@ Tap	0.009572
 Mayil	0.009571
 Farik	0.009571
 Makar	0.009570
-Kml	0.009570
 Abutalib	0.009569
 Muba	0.009569
 Wrong	0.009569
-Kmk	0.009568
 Rafsan	0.009568
 Tahmid	0.009567
 Farabi	0.009567
 Shariar	0.009566
-H M	0.009566
 Badhon	0.009565
 Tanjil	0.009564
 Raisul	0.009564
@@ -9599,7 +9491,6 @@ Naimur	0.009561
 Dusto	0.009559
 Md Sakib	0.009559
 Rafiul	0.009559
-S K	0.009558
 Likhon	0.009558
 Talukder	0.009557
 Sakibul	0.009557
@@ -9749,7 +9640,6 @@ Md Hasem	0.009492
 Mostakin	0.009492
 Hrithik	0.009492
 Md Sofik	0.009491
-Skm	0.009491
 Md Ansar	0.009490
 Reday	0.009490
 Sonjay	0.009489
@@ -9812,7 +9702,6 @@ Md Khurshid	0.009466
 Faim	0.009465
 Along	0.009465
 Saharul	0.009464
-Sbs	0.009464
 Dreem	0.009463
 Sahmim	0.009463
 Md Mansur	0.009463
@@ -9835,7 +9724,6 @@ Md Leton	0.009455
 Shamu	0.009455
 Mahananda	0.009455
 Monnaf	0.009454
-Spr	0.009453
 Md Jabir	0.009453
 Md Raza	0.009452
 Ashesh	0.009452
@@ -9848,11 +9736,9 @@ Abdolla	0.009450
 Krishnendu	0.009449
 Avash	0.009449
 Shahbaj	0.009448
-Ntr	0.009448
 Dilhan	0.009447
 Mohssine	0.009447
 Bastin	0.009447
-Hmz	0.009446
 Islem	0.009445
 Soufien	0.009445
 Monji	0.009444
@@ -9965,7 +9851,6 @@ Jonnel	0.009372
 Mark Kevin	0.009371
 Gambir	0.009370
 Ydnar	0.009370
-Vt	0.009369
 Walang	0.009368
 Mho	0.009368
 Sabudin	0.009367
@@ -10010,7 +9895,6 @@ Kebi	0.009344
 Howell	0.009344
 Shiyan	0.009343
 Debin	0.009343
-Kk	0.009342
 Myint	0.009341
 Agyei	0.009341
 Jojan	0.009340
@@ -10064,7 +9948,6 @@ Mohm	0.009313
 Crezy	0.009313
 Shif	0.009312
 Lope	0.009312
-Mcm	0.009311
 Tariku	0.009311
 Mamush	0.009310
 Worku	0.009310
@@ -10267,12 +10150,10 @@ Nilkantha	0.009226
 Dulare	0.009226
 Omkumar	0.009225
 Rajarajan	0.009225
-Rps	0.009225
 Ujal	0.009224
 Aatma	0.009224
 Irphan	0.009223
 Predeep	0.009223
-Mtm	0.009222
 Bobet	0.009222
 Kharel	0.009221
 Shamer	0.009221
@@ -10294,9 +10175,7 @@ Thamman	0.009215
 Vipula	0.009214
 Dilum	0.009214
 Janath	0.009214
-Chch	0.009213
 Phatan	0.009213
-H/J	0.009210
 E-E/ D	0.009210
 Disanayaka	0.009209
 Petmalu	0.009207
@@ -10314,7 +10193,6 @@ Sulai	0.009200
 Habeebulla	0.009200
 Abdulrhaman	0.009200
 Bismilla	0.009199
-Mjm	0.009198
 Najimudeen	0.009198
 Wije	0.009198
 Musxafaa	0.009197
@@ -10327,8 +10205,6 @@ Sajhan	0.009194
 Munar	0.009193
 Jemas	0.009193
 Auwal	0.009192
-`M	0.009192
-Ll	0.009191
 Akosi	0.009191
 Lemmor	0.009190
 Reymark	0.009190
@@ -10965,9 +10841,7 @@ Hasir	0.008925
 Bobot	0.008924
 Naindra	0.008924
 Anshari	0.008924
-Mbr	0.008923
 Mashhour	0.008923
-Kmr	0.008922
 Mahendra Singh	0.008921
 Devendra Kumar	0.008921
 Kishan Kumar	0.008921
@@ -11002,14 +10876,12 @@ Krisan	0.008911
 Bisher	0.008910
 Hasheem	0.008910
 Gareeb	0.008909
-Dhd	0.008908
 Abdulmohsin	0.008907
 Idol	0.008906
 Mouin	0.008906
 Faisy	0.008906
 Mitralal	0.008905
 Muftah	0.008905
-Hbm	0.008904
 Mark Lester	0.008904
 Biboy	0.008904
 Aldrine	0.008903
@@ -11053,7 +10925,6 @@ Azad Ali	0.008889
 Balbodh	0.008888
 Bambahadur	0.008888
 Bhoril	0.008887
-Bml	0.008887
 Bnod	0.008887
 Bomjan	0.008886
 Brish	0.008886
@@ -11072,7 +10943,6 @@ Fasith	0.008882
 Firosh	0.008881
 Gajindra	0.008881
 Gitendar	0.008881
-Gmc	0.008880
 Habeeb Rahman	0.008880
 Hasre	0.008880
 Isarafil	0.008879

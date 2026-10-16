@@ -3,9 +3,7 @@ any
 Ahmadi	1.000000
 Mohammadi	0.707107
 Karimi	0.577350
-Sh	0.500000
 Moradi	0.408248
-Gh	0.377964
 Jafari	0.353553
 Rahimi	0.333333
 Hosseini	0.316228
@@ -14,7 +12,6 @@ Amiri	0.288675
 Sadeghi	0.277350
 Rezaei	0.267261
 Ebrahimi	0.258199
-Kh	0.250000
 Ghasemi	0.235702
 Salehi	0.218218
 Akbari	0.208514
@@ -50,7 +47,6 @@ Mosavi	0.131306
 Maleki	0.130189
 Bahrami	0.128037
 Irani	0.125988
-Sa	0.122169
 Nasiri	0.120386
 Khosravi	0.118678
 Fathi	0.117041
@@ -73,7 +69,6 @@ Rajabi	0.103695
 Hamidi	0.103142
 Azimi	0.102598
 Ramezani	0.102062
-Ka	0.101535
 Rashidi	0.101015
 Rezaee	0.099504
 Kiani	0.099015
@@ -97,11 +92,9 @@ Hatami	0.090167
 Tanha	0.089803
 Alavi	0.089443
 Jamali	0.089087
-Ra	0.088736
 Jamshidi	0.088045
 Mahmoudi	0.087706
 Bayat	0.087370
-Mo	0.086066
 Babaei	0.085749
 Keshavarz	0.085126
 Asgari	0.084819
@@ -123,10 +116,8 @@ Shabani	0.078567
 Shirazi	0.078087
 Soleymani	0.077850
 Nemati	0.077615
-Es	0.077382
 Talebi	0.077152
 Eslami	0.076923
-Ab	0.076696
 Rezai	0.075593
 Tajik	0.075378
 Ghaderi	0.075165
@@ -165,8 +156,6 @@ Saberi	0.063888
 Shojaei	0.063758
 Hasanzadeh	0.063500
 Rasouli	0.063246
-Fa	0.062994
-Az	0.062257
 Miri	0.062017
 Izadi	0.061780
 Amani	0.061546
@@ -210,7 +199,6 @@ Shahi	0.052852
 Aghaei	0.052705
 Mortazavi	0.052559
 Zandi	0.052486
-Za	0.052129
 Nik	0.051778
 Rigi	0.051640
 Fatemi	0.051503
@@ -219,7 +207,6 @@ Jokar	0.051164
 Rezvani	0.051098
 Jahangiri	0.050899
 Javid	0.050833
-Mn	0.050767
 Shafiei	0.050702
 Nori	0.050379
 Khodadadi	0.050315
@@ -238,7 +225,6 @@ Danesh	0.049088
 Hemati	0.048970
 Rezazadeh	0.048622
 Mohebi	0.048564
-Rz	0.048280
 Aslani	0.048224
 Rafiee	0.048168
 Ahmadzadeh	0.048057
@@ -246,7 +232,6 @@ Salmani	0.047836
 Rezayi	0.047782
 Hajizadeh	0.047727
 Abedini	0.047673
-Hp	0.047246
 Rasoli	0.047193
 Farahmand	0.047140
 Zakeri	0.047036
@@ -266,13 +251,11 @@ Hosseinzadeh	0.045835
 Afzali	0.045691
 Jabbari	0.045596
 Hakimi	0.045502
-Hz	0.045455
 Sajadi	0.045314
 Heidary	0.045268
 Khaleghi	0.045222
 Nosrati	0.045083
 Far	0.045038
-Ir	0.044947
 Hemmati	0.044901
 Kian	0.044856
 Zolfaghari	0.044721
@@ -331,7 +314,6 @@ Ghanavati	0.040555
 Hassanzadeh	0.040522
 Kalantari	0.040456
 Fatahi	0.040423
-Af	0.040258
 Monfared	0.040226
 Salami	0.040096
 Ahadi	0.040064
@@ -401,7 +383,6 @@ Khaledi	0.036202
 Parvizi	0.036179
 Jafarzadeh	0.036155
 Seifi	0.036131
-Ap	0.036108
 Safa	0.036084
 Anvari	0.036014
 Piri	0.035991
@@ -418,7 +399,6 @@ Akbarzadeh	0.035422
 Abdoli	0.035267
 Abi	0.035245
 Vali	0.035202
-Eb	0.035180
 Hejazi	0.035158
 Hasanpour	0.035072
 Gharibi	0.035050
@@ -503,7 +483,6 @@ Golestani	0.031466
 Bordbar	0.031450
 Badri	0.031404
 Yas	0.031388
-Nz	0.031373
 Nazemi	0.031327
 Javaheri	0.031281
 Ebrahimzadeh	0.031265
@@ -575,7 +554,6 @@ Valipour	0.029111
 Sasani	0.029099
 Khosravani	0.029086
 Raad	0.029062
-Hn	0.029050
 Farhang	0.029025
 Masoomi	0.029013
 Gohari	0.029001
@@ -604,7 +582,6 @@ Kaabi	0.028205
 Hosseiny	0.028183
 Hooshmand	0.028172
 Hesami	0.028105
-Zr	0.028083
 Qasemi	0.028050
 Farahi	0.028039
 Safdari	0.028028
@@ -614,7 +591,6 @@ Shahriari	0.027973
 Hadadi	0.027875
 Nozari	0.027864
 Abolhasani	0.027853
-Sn	0.027842
 Roshani	0.027810
 Tavasoli	0.027799
 Rahimzadeh	0.027671
@@ -668,7 +644,6 @@ Hajian	0.026707
 Hajipour	0.026650
 Alimohammadi	0.026641
 Khajeh	0.026631
-Bn	0.026622
 Zafari	0.026593
 Kamyab	0.026584
 Khalaj	0.026481
@@ -709,7 +684,6 @@ Alijani	0.025726
 Teymouri	0.025717
 Makvandi	0.025709
 Shiraz	0.025692
-Nj	0.025683
 Ariya	0.025675
 Fayazi	0.025649
 Pakzad	0.025633
@@ -718,7 +692,6 @@ Nematollahi	0.025532
 Keshvari	0.025524
 Rajaei	0.025516
 Behroozi	0.025507
-Kz	0.025491
 Niki	0.025482
 Hedayat	0.025474
 Nezami	0.025466
@@ -735,7 +708,6 @@ Yegane	0.025182
 Kheiri	0.025071
 Hardani	0.025063
 Honarmand	0.025055
-Shz	0.025039
 Yadegari	0.025031
 Aliabadi	0.025023
 Baluch	0.025016
@@ -758,8 +730,6 @@ Baradaran	0.024663
 Solgi	0.024656
 Ahvazi	0.024641
 Moghadasi	0.024633
-Rn	0.024618
-Id	0.024611
 Del	0.024603
 Ramazani	0.024589
 Sabouri	0.024581
@@ -796,7 +766,6 @@ Jadidi	0.023925
 Razaghi	0.023918
 Khojasteh	0.023911
 Khodabakhshi	0.023905
-Eh	0.023898
 Mirzai	0.023877
 Bibak	0.023857
 Hojati	0.023843
@@ -833,7 +802,6 @@ Teymoori	0.023313
 Zanganeh	0.023306
 Falahati	0.023300
 Hoseinpour	0.023294
-Cfz	0.023287
 Abadani	0.023281
 Maghsoudi	0.023275
 Ghane	0.023268
@@ -859,10 +827,7 @@ Namdari	0.022966
 Golmohammadi	0.022960
 Morshedi	0.022954
 Jahed	0.022942
-Dn	0.022930
 Shirani	0.022923
-Bz	0.022911
-Ft	0.022905
 Saboori	0.022893
 Enayati	0.022887
 Sarani	0.022881
@@ -874,8 +839,6 @@ Shahraki	0.022774
 Torkaman	0.022768
 Mollaei	0.022763
 Haghani	0.022757
-Hj	0.022751
-Rf	0.022739
 Setayesh	0.022710
 Souri	0.022698
 Rezaeian	0.022692
@@ -1002,7 +965,6 @@ Neisi	0.021253
 Rak	0.021248
 Rabbani	0.021243
 Momen	0.021238
-Nb	0.021233
 Petrova	0.021229
 Hossaini	0.021224
 Poor	0.021219
@@ -1022,7 +984,6 @@ Moradpour	0.021040
 Hashemian	0.021031
 Namjoo	0.021026
 Pirhadi	0.021021
-Fz	0.021017
 Khanom	0.021012
 Helali	0.020993
 Motahari	0.020980
@@ -1078,7 +1039,6 @@ Hesari	0.020434
 Harati	0.020425
 Esmailzadeh	0.020412
 Por	0.020391
-Mgh	0.020269
 Shariat	0.020265
 Mahabad	0.020261
 Shamloo	0.020257
@@ -1089,26 +1049,21 @@ Tabatabaee	0.020240
 Mehrani	0.020236
 Sharifian	0.020232
 Kashi	0.020220
-Pn	0.020215
 Fakhar	0.020207
 Larki	0.020203
 Par	0.020199
-Sz	0.020195
-Zm	0.020191
 Masomi	0.020170
 Asefi	0.020166
 Khoram	0.020162
 Heydarian	0.020150
 Akbarian	0.020146
 Najafzadeh	0.020129
-Bnd	0.020125
 Mofidi	0.020121
 Gasemi	0.020117
 Maghami	0.020048
 Khodaparast	0.020044
 Daliri	0.020040
 Daryanavard	0.020036
-Msv	0.020032
 Farajzadeh	0.020028
 Bagherian	0.020024
 Molaee	0.020020
@@ -1156,7 +1111,6 @@ Hosseni	0.019657
 Alidadi	0.019653
 Mirzadeh	0.019649
 Shojaie	0.019646
-Tz	0.019638
 Sharifzadeh	0.019619
 Valizade	0.019615
 Parto	0.019608
@@ -1179,10 +1133,7 @@ Dadras	0.019422
 Farjam	0.019418
 Khanzadeh	0.019411
 Khoshdel	0.019407
-Zn	0.019404
 Heydarzadeh	0.019400
-Ef	0.019396
-Yz	0.019393
 Eyvazi	0.019371
 Marandi	0.019367
 Shahri	0.019364
@@ -1236,7 +1187,6 @@ Sepahvand	0.018881
 Gholamzadeh	0.018875
 Mohamadpour	0.018871
 Nuri	0.018868
-Tn	0.018865
 Parvaz	0.018861
 Assadi	0.018855
 Khalifeh	0.018851
@@ -1275,8 +1225,6 @@ Ahmadiyan	0.018538
 Tehran	0.018519
 Hatefi	0.018515
 Pars	0.018512
-Rst	0.018509
-Mrd	0.018393
 Hosseinian	0.018390
 Jalalian	0.018387
 Najari	0.018383
@@ -1322,7 +1270,6 @@ Khodadad	0.018233
 Ashkani	0.018227
 Steiner	0.018224
 Rosta	0.018188
-Msh	0.018185
 Kosari	0.018075
 Golkar	0.018072
 Harki	0.018069
@@ -1389,7 +1336,6 @@ Shahnavazi	0.017756
 Esf	0.017753
 Shakib	0.017747
 Rabani	0.017744
-Fn	0.017739
 Sharify	0.017733
 Naziri	0.017728
 Taban	0.017725
@@ -1407,7 +1353,6 @@ Feri	0.017686
 Hajati	0.017683
 Rez	0.017678
 Arzani	0.017672
-Slm	0.017552
 Pakdaman	0.017549
 Moradzadeh	0.017547
 Alinia	0.017544
@@ -1437,7 +1382,6 @@ Azin	0.017458
 Gorbani	0.017453
 Vatan	0.017450
 Maku	0.017447
-Rhm	0.017426
 Jangi	0.017424
 Ghotbi	0.017421
 Raissi	0.017272
@@ -1538,9 +1482,7 @@ Zanjani	0.016793
 Rahimzade	0.016791
 Kafi	0.016788
 Ferdosi	0.016786
-Mlk	0.016781
 Fakhr	0.016777
-Rmz	0.016774
 Matori	0.016772
 Houshmand	0.016769
 Vafaee	0.016767
@@ -1570,7 +1512,6 @@ Khojaste	0.016589
 Nobari	0.016586
 Lari	0.016582
 Ayoubi	0.016579
-Nsr	0.016573
 Sayah	0.016570
 Tabesh	0.016563
 Ayazi	0.016557
@@ -1626,7 +1567,6 @@ Abbassi	0.016276
 Afraz	0.016274
 Mosleh	0.016271
 Alamdar	0.016267
-Zd	0.016265
 Nasiry	0.016256
 Hanifi	0.016254
 Karimy	0.016252
@@ -1637,12 +1577,10 @@ Malaki	0.016224
 Dastan	0.016222
 Esmaeily	0.016220
 Moqadam	0.016216
-Mrz	0.016214
 Marjani	0.016209
 Jafarzade	0.016186
 Javadzadeh	0.016184
 Shahverdi	0.016182
-Mkh	0.016180
 Rouhani	0.016178
 Hagh	0.016038
 Balali	0.016033
@@ -1695,7 +1633,6 @@ Soltany	0.015907
 Mid	0.015903
 Rastgar	0.015899
 Baseri	0.015895
-Zb	0.015893
 Heydary	0.015891
 Sawari	0.015889
 Roshandel	0.015887
@@ -1741,7 +1678,6 @@ Moazen	0.015638
 Navaser	0.015636
 Owji	0.015635
 Elhaei	0.015633
-Fj	0.015629
 Mesbah	0.015627
 Saffar	0.015623
 Rahemi	0.015615
@@ -1757,9 +1693,7 @@ Khoshnood	0.015572
 Jannati	0.015566
 Dorri	0.015564
 Nili	0.015562
-Mf	0.015561
 Kashfi	0.015525
-Bhr	0.015519
 Badali	0.015516
 Safarian	0.015514
 Kianpour	0.015508
@@ -1841,7 +1775,6 @@ Teza	0.015136
 Vaez	0.015134
 Abaszade	0.015112
 Khalilzadeh	0.015110
-Jfr	0.015106
 Dorostkar	0.015105
 Haeri	0.015103
 Faghani	0.015101
@@ -1906,7 +1839,6 @@ Nezhad	0.014851
 Alipur	0.014848
 Shateri	0.014845
 Mik	0.014843
-Jz	0.014841
 Arami	0.014840
 Aghasi	0.014832
 Damirchi	0.014830
@@ -1968,7 +1900,6 @@ Bamari	0.014582
 Fayyaz	0.014580
 Ahm	0.014577
 Tahan	0.014576
-Mhm	0.014571
 Hadidi	0.014566
 Rohi	0.014565
 Rooz	0.014563
@@ -1985,9 +1916,7 @@ Kashef	0.014525
 Dianat	0.014522
 Balaghi	0.014520
 Behmanesh	0.014519
-Ei	0.014517
 Albo	0.014516
-Zp	0.014511
 Abbaszade	0.014476
 Xan	0.014475
 Dadashzadeh	0.014473
@@ -2035,7 +1964,6 @@ Azizkhani	0.014254
 Narouei	0.014252
 Liravi	0.014249
 Ranji	0.014247
-Str	0.014242
 Hemat	0.014241
 Mahbobi	0.014234
 Najibi	0.014232
@@ -2047,12 +1975,10 @@ Samari	0.014219
 Rahnavard	0.014216
 Sezar	0.014212
 Sehat	0.014209
-Sbr	0.014208
 Moj	0.014205
 Ghandi	0.014202
 Reh	0.014192
 Javanshir	0.014183
-Kzm	0.014182
 Ravan	0.014180
 Azh	0.014179
 Abz	0.014178
@@ -2149,7 +2075,6 @@ Salahshoor	0.013877
 Mazidi	0.013874
 Firuzi	0.013873
 Farjad	0.013872
-Hsh	0.013865
 Zal	0.013842
 Pashazadeh	0.013841
 Torbati	0.013840
@@ -2175,7 +2100,6 @@ Nazarzadeh	0.013655
 Mosazadeh	0.013654
 Etminan	0.013653
 Motalebi	0.013651
-Frz	0.013650
 Sherafati	0.013649
 Mohamadpoor	0.013648
 Khanmohammadi	0.013646
@@ -2223,9 +2147,7 @@ Ansary	0.013586
 Sahel	0.013583
 Hon	0.013582
 Abs	0.013581
-Tnt	0.013579
 Haidary	0.013578
-Zk	0.013577
 Kamani	0.013574
 Damani	0.013573
 Noory	0.013569
@@ -2246,14 +2168,11 @@ Ajdari	0.013531
 Smaili	0.013530
 Aghazade	0.013506
 Seyf	0.013505
-Brz	0.013502
 Dindar	0.013500
 Kish	0.013498
 Zarrabi	0.013496
 Sameni	0.013493
 Banan	0.013491
-Slt	0.013490
-Bkh	0.013330
 Joukar	0.013329
 Mahboubi	0.013327
 Seydi	0.013326
@@ -2322,8 +2241,6 @@ Baloochi	0.013243
 Shir	0.013242
 Noshad	0.013241
 Alsari	0.013240
-Shr	0.013238
-Kf	0.013236
 Sahra	0.013231
 Faryabi	0.013224
 Rezay	0.013220
@@ -2333,7 +2250,6 @@ Nikfar	0.013206
 Mosave	0.013201
 Khodayar	0.013197
 Mdi	0.013193
-Iz	0.013192
 Sorkhi	0.013191
 Qolami	0.013190
 Shojae	0.013189
@@ -2346,12 +2262,10 @@ Esmi	0.013178
 Adami	0.013177
 Afri	0.013174
 Georgiev	0.013169
-Am	0.013168
 Babazade	0.013161
 Hajari	0.013158
 Sein	0.013157
 Gha	0.013153
-Ksh	0.013152
 Teh	0.013151
 Sarraf	0.013148
 Asaadi	0.013147
@@ -2469,7 +2383,6 @@ Sabagh	0.012793
 Pavlova	0.012776
 Beik	0.012774
 Farshi	0.012773
-Fth	0.012772
 Sahari	0.012770
 Amn	0.012769
 Orang	0.012768
@@ -2563,7 +2476,6 @@ Rasi	0.012505
 Ashna	0.012504
 Pir	0.012503
 Bab	0.012500
-Mhr	0.012498
 Karemi	0.012492
 Sayar	0.012489
 Ozbak	0.012481
@@ -2574,9 +2486,7 @@ Saburi	0.012476
 Alizad	0.012470
 Hosiny	0.012467
 Mirzae	0.012466
-Yn	0.012464
 Sahraee	0.012463
-Hdr	0.012460
 Nohtani	0.012459
 Narooi	0.012458
 Hastam	0.012457
@@ -2591,7 +2501,6 @@ Mamadi	0.012441
 Zarini	0.012435
 Isazadeh	0.012418
 Feyz	0.012415
-Nrz	0.012413
 Barzin	0.012412
 Bahraini	0.012408
 Amori	0.012407
@@ -2603,7 +2512,6 @@ Saket	0.012229
 Lesani	0.012228
 Khayati	0.012227
 Eini	0.012226
-Rsh	0.012224
 Aalipour	0.012223
 Azarakhsh	0.012222
 Mohamadkhani	0.012222
@@ -2651,7 +2559,6 @@ Shahnazari	0.012182
 Alipanah	0.012182
 Nikjoo	0.012180
 Rasaei	0.012179
-Nzr	0.012178
 Mokhtarzadeh	0.012176
 Modarres	0.012175
 Kooti	0.012174
@@ -2726,7 +2633,6 @@ Alizadh	0.012075
 Fakoor	0.012074
 Khas	0.012072
 Rostamy	0.012071
-Hmz	0.012070
 Azmoon	0.012069
 Refahi	0.012068
 Roozegar	0.012067
@@ -2738,7 +2644,6 @@ Modares	0.012060
 Kherad	0.012059
 Jozi	0.012054
 Zita	0.012051
-Gsm	0.012047
 Schmid	0.012046
 Persia	0.012046
 Asadzade	0.012031
@@ -2746,11 +2651,8 @@ Safarzade	0.012029
 Agazadeh	0.012027
 Atri	0.012026
 Mesbahi	0.012026
-Thr	0.012025
-Brn	0.012024
 Ebra	0.012022
 Moayed	0.012021
-Hmt	0.012019
 Neh	0.012019
 Sayari	0.012018
 Vid	0.012017
@@ -2759,7 +2661,6 @@ Arshia	0.012013
 Orak	0.011816
 Safayi	0.011816
 Amiran	0.011815
-Rjb	0.011813
 Varmazyar	0.011812
 Irany	0.011811
 Hadavi	0.011811
@@ -2850,7 +2751,6 @@ Ziyaei	0.011732
 Badiee	0.011731
 Danandeh	0.011731
 Moghtader	0.011730
-Tgh	0.011729
 Ebrahimpoor	0.011727
 Daneshgar	0.011727
 Amirahmadi	0.011726
@@ -2899,7 +2799,6 @@ Zarea	0.011659
 Deljoo	0.011657
 Akb	0.011656
 Pashaee	0.011656
-Zf	0.011655
 Jabbary	0.011654
 Shafahi	0.011653
 Shahrestani	0.011652
@@ -2907,27 +2806,21 @@ Habashi	0.011652
 Ekhlasi	0.011651
 Farasat	0.011650
 Bazi	0.011645
-Nd	0.011644
 Esk	0.011644
-Mrt	0.011643
 Shafizadeh	0.011621
 Vahabzadeh	0.011620
-Prs	0.011619
 Assar	0.011616
 Bandar	0.011615
 Dris	0.011615
 Hendi	0.011614
-Slh	0.011613
 Sabour	0.011610
 Bolandi	0.011608
 Hout	0.011607
 Baboli	0.011606
 Meraji	0.011425
 Shahsavand	0.011424
-Bgh	0.011424
 Shahhosseini	0.011422
 Mardasi	0.011421
-Sdg	0.011421
 Aftabi	0.011420
 Forouzandeh	0.011419
 Babae	0.011418
@@ -2958,7 +2851,6 @@ Sadraei	0.011398
 Nikseresht	0.011397
 Pirmoradi	0.011396
 Javdan	0.011395
-Hgh	0.011395
 Khalilpour	0.011394
 Mizani	0.011393
 Hesabi	0.011392
@@ -3076,7 +2968,6 @@ Razmjo	0.011274
 Yazdany	0.011272
 Dis	0.011267
 Most	0.011266
-Prz	0.011265
 Jid	0.011264
 Bondar	0.011264
 Valid	0.011248
@@ -3085,11 +2976,8 @@ Khanzade	0.011247
 Radin	0.011245
 Msi	0.011244
 Meshkat	0.011244
-Shn	0.011243
 Solhi	0.011242
 Daram	0.011240
-Shm	0.011239
-Mdn	0.011238
 Nek	0.011237
 Kavari	0.011236
 Boustani	0.011235
@@ -3278,7 +3166,6 @@ Barzi	0.010847
 Krebs	0.010845
 Noha	0.010834
 Jahanara	0.010834
-Mst	0.010833
 Sohani	0.010833
 Akh	0.010832
 Kurdish	0.010831
@@ -3286,14 +3173,11 @@ Kazerooni	0.010829
 Maraghi	0.010828
 Bardestani	0.010827
 Mazda	0.010827
-Khz	0.010826
 Izad	0.010826
-Mhb	0.010824
 Yaghmaei	0.010820
 Pouri	0.010819
 Nasab	0.010614
 Zarandi	0.010614
-Htm	0.010613
 Meftahi	0.010613
 Masaeli	0.010611
 Parva	0.010609
@@ -3389,13 +3273,11 @@ Janghorban	0.010547
 Rahnema	0.010547
 Ahmadpor	0.010546
 Torkan	0.010545
-Ngh	0.010544
 Dorzade	0.010544
 Atighi	0.010543
 Derafshi	0.010542
 Hashemzehi	0.010540
 Pasban	0.010536
-Psh	0.010536
 Tafazoli	0.010535
 Mazandarani	0.010534
 Masoudian	0.010534
@@ -3422,7 +3304,6 @@ Talaie	0.010521
 Bizhani	0.010520
 Mohagheghi	0.010520
 Tarighat	0.010519
-Njf	0.010519
 Rahmanzadeh	0.010518
 Astaneh	0.010518
 Babapoor	0.010517
@@ -3479,20 +3360,16 @@ Bahonar	0.010461
 Vesal	0.010460
 Behfar	0.010459
 Azarm	0.010457
-Ghz	0.010455
 Ferdowsi	0.010454
 Shadmani	0.010454
 Najdi	0.010452
 Arch	0.010452
 Mob	0.010451
-Yp	0.010450
 Scholz	0.010447
 Tagizadeh	0.010436
 Sharifzade	0.010435
 Sahabi	0.010432
 Atmani	0.010431
-Bsh	0.010429
-Drs	0.010429
 Khabbaz	0.010427
 Sayyar	0.010426
 Bushehri	0.010426
@@ -3501,8 +3378,6 @@ Siah	0.010425
 Ashari	0.010424
 Zohari	0.010423
 Hra	0.010423
-Khm	0.010422
-Mzh	0.010422
 Najarian	0.010421
 Gho	0.010419
 Tiam	0.010419
@@ -3510,9 +3385,7 @@ Madah	0.010418
 Motie	0.010418
 Nej	0.010171
 Rabet	0.010170
-Sgh	0.010170
 Lamei	0.010169
-Frd	0.010169
 Askarian	0.010168
 Movahhed	0.010168
 Pishdad	0.010167
@@ -3524,7 +3397,6 @@ Khazali	0.010164
 Nozad	0.010163
 Vaisi	0.010163
 Mohamadnejad	0.010162
-Ghp	0.010162
 Gashtasbi	0.010161
 Garoosi	0.010161
 Babri	0.010160
@@ -3556,7 +3428,6 @@ Shapouri	0.010147
 Arsalani	0.010146
 Majidzadeh	0.010146
 Jannesari	0.010145
-Ghs	0.010145
 Izadyar	0.010144
 Pakniyat	0.010142
 Aziziyan	0.010142
@@ -3577,7 +3448,6 @@ Beladi	0.010134
 Ariaei	0.010133
 Makari	0.010133
 Joojoo	0.010132
-Mjd	0.010132
 Norbakhsh	0.010131
 Irannezhad	0.010131
 Kooravand	0.010130
@@ -3691,7 +3561,6 @@ Zavari	0.010064
 Tayefeh	0.010064
 Hanifeh	0.010063
 Effati	0.010063
-Vhd	0.010062
 Barjasteh	0.010062
 Zandian	0.010061
 Setoudeh	0.010061
@@ -3748,7 +3617,6 @@ Kazazi	0.009996
 Iri	0.009995
 Tamizi	0.009995
 Arani	0.009994
-Ndr	0.009994
 Sdi	0.009992
 Saravi	0.009989
 Kurz	0.009988
@@ -3763,11 +3631,7 @@ Saatchi	0.009969
 Khatam	0.009969
 Mandani	0.009968
 Smi	0.009968
-Jhn	0.009967
-Dsh	0.009967
 Yzd	0.009966
-Ltf	0.009965
-Zmn	0.009965
 Zaghi	0.009963
 Tabar	0.009962
 Hsi	0.009962
@@ -3776,13 +3640,10 @@ Vad	0.009738
 Hardan	0.009737
 Sna	0.009737
 Mohamedi	0.009736
-Tlb	0.009736
 Ghi	0.009735
-Ghm	0.009735
 Babaali	0.009734
 Jooni	0.009734
 Azm	0.009734
-Nmt	0.009733
 Arvan	0.009733
 Malahi	0.009732
 Vaghari	0.009731
@@ -3845,7 +3706,6 @@ Parishan	0.009700
 Khoshkholgh	0.009700
 Ahmadinia	0.009699
 Tolou	0.009699
-Rzn	0.009698
 Naghshbandi	0.009698
 Asiaban	0.009697
 Daniali	0.009697
@@ -3894,7 +3754,6 @@ Naghipoor	0.009672
 Hoseine	0.009671
 Esmailpoor	0.009671
 Shoeibi	0.009671
-Mhz	0.009670
 Pourjafar	0.009670
 Soleimanian	0.009669
 Mojaddam	0.009669
@@ -3951,7 +3810,6 @@ Albalushi	0.009642
 Hazara	0.009641
 Huk	0.009641
 Khonji	0.009640
-Khd	0.009640
 Rayat	0.009639
 Maani	0.009639
 Kowsar	0.009639
@@ -3989,7 +3847,6 @@ Saiedi	0.009600
 Razaei	0.009599
 Masodi	0.009597
 Pasdar	0.009597
-Sdt	0.009596
 Fadai	0.009594
 Fuladi	0.009594
 Sorkh	0.009592
@@ -4022,27 +3879,19 @@ Azimzade	0.009559
 Salehzade	0.009558
 Tafi	0.009557
 Tahri	0.009556
-Dhn	0.009556
-Bhd	0.009555
-Mns	0.009555
 Badie	0.009555
 Gorgi	0.009552
 Hoth	0.009551
 Alkhamis	0.009550
-Mzn	0.009549
 Paya	0.009549
 Dez	0.009548
 Feh	0.009547
 Molodi	0.009547
 Novikova	0.009545
 Golestaneh	0.009544
-Sfr	0.009287
-Dgh	0.009287
 Mirkhani	0.009286
 Mataji	0.009286
 Chaab	0.009285
-Smd	0.009284
-Prv	0.009284
 Sarhangi	0.009284
 Rhi	0.009283
 Mosvi	0.009283
@@ -4110,7 +3959,6 @@ Khoshnoodi	0.009255
 Taromi	0.009255
 Shirini	0.009254
 Bahamin	0.009254
-Hsz	0.009254
 Golnari	0.009253
 Sarbandi	0.009253
 Ahmadyan	0.009253
@@ -4133,7 +3981,6 @@ Farajpoor	0.009245
 Jamalzahi	0.009245
 Moltafet	0.009245
 Ardalani	0.009244
-Hpr	0.009244
 Ashtab	0.009243
 Ghadamyari	0.009243
 Bahmaei	0.009242
@@ -4216,7 +4063,6 @@ Sorouri	0.009204
 Andisheh	0.009204
 Talebpour	0.009203
 Rasoulian	0.009203
-Mhp	0.009203
 Mohamadnia	0.009202
 Tarahomi	0.009202
 Parvari	0.009201
@@ -4234,7 +4080,6 @@ Delkhosh	0.009196
 Amirzade	0.009195
 Padidar	0.009195
 Oliaei	0.009194
-Rnj	0.009194
 Cheraghali	0.009194
 Akbarnezhad	0.009193
 Fereydouni	0.009193
@@ -4307,9 +4152,7 @@ Saghar	0.009161
 Aliyar	0.009161
 Shaki	0.009160
 Talari	0.009160
-Tvk	0.009159
 Beig	0.009159
-Shb	0.009158
 Khanum	0.009158
 Tanhai	0.009157
 Gool	0.009157
@@ -4366,7 +4209,6 @@ Farhady	0.009097
 Kalantary	0.009097
 Azimian	0.009096
 Golbaz	0.009096
-Mzr	0.009095
 Rowshan	0.009095
 Babaiy	0.009094
 Maldar	0.009094
@@ -4404,24 +4246,15 @@ Eram	0.009055
 Ferdos	0.009054
 Jadid	0.009054
 Mokarram	0.009054
-Rsl	0.009053
 Fery	0.009052
-Brd	0.009052
 Amz	0.009052
-Bhm	0.009051
 Ashk	0.009050
 Falamarzi	0.009048
 Hmi	0.009048
-Bhz	0.009047
-Nsh	0.009047
-Kml	0.009047
 Zeini	0.009046
-Hbb	0.009045
-Sbt	0.009045
 Ayani	0.009045
 Ardani	0.009044
 Abr	0.009044
-Khp	0.009044
 Poori	0.009043
 Rybak	0.009041
 Talati	0.009041
@@ -4442,22 +4275,15 @@ Damiri	0.008710
 Solemani	0.008709
 Alilou	0.008709
 Rouz	0.008709
-Ghr	0.008709
 Khammar	0.008708
-Msl	0.008708
-Mzd	0.008708
 Samii	0.008707
 Paliz	0.008707
 Gomar	0.008706
-Shf	0.008706
-Slr	0.008706
 Gorgan	0.008705
 Khabazi	0.008705
 Anzali	0.008705
 Pasargad	0.008704
 Alayi	0.008704
-Tbz	0.008704
-Skh	0.008703
 Gordan	0.008703
 Sehati	0.008703
 Jeddy	0.008702
@@ -4479,7 +4305,6 @@ Tavakoly	0.008696
 Golzadeh	0.008695
 Sohrabian	0.008695
 Dadmehr	0.008695
-Fzl	0.008694
 Janbazi	0.008694
 Rezanejad	0.008693
 Yazd	0.008693
@@ -4626,7 +4451,6 @@ Hasiri	0.008642
 Hesaraki	0.008641
 Farsian	0.008641
 Dorrani	0.008641
-Sjd	0.008640
 Shahpouri	0.008640
 Dashtaki	0.008639
 Boveiri	0.008639
@@ -4679,7 +4503,6 @@ Sharahi	0.008620
 Rastgou	0.008620
 Zokaei	0.008619
 Deljo	0.008619
-Nkh	0.008618
 Ahmadipoor	0.008618
 Pourmohammadi	0.008617
 Ravand	0.008617
@@ -4692,7 +4515,6 @@ Daryayi	0.008615
 Abdavi	0.008615
 Hasanabadi	0.008615
 Khorramdel	0.008614
-Znd	0.008614
 Jahanfar	0.008614
 Hozhabr	0.008613
 Marhamati	0.008613
@@ -4772,7 +4594,6 @@ Alboali	0.008584
 Bahrini	0.008583
 Soroodi	0.008583
 Piry	0.008583
-Flh	0.008582
 Ebadian	0.008582
 Robatjazi	0.008582
 Akbarnejad	0.008581
@@ -4791,7 +4612,6 @@ Mosadeghi	0.008577
 Akhoundi	0.008577
 Movafagh	0.008577
 Azarpour	0.008576
-Fkh	0.008576
 Jalayer	0.008576
 Akherati	0.008575
 Babaey	0.008575
@@ -4812,10 +4632,8 @@ Gharbavi	0.008570
 Shakibi	0.008569
 Bamshad	0.008568
 Baghestani	0.008568
-Ghd	0.008568
 Akbarpor	0.008567
 Rostamiyan	0.008567
-Rzv	0.008566
 Mortezavi	0.008566
 Pishkar	0.008566
 Tatality	0.008565
@@ -4879,7 +4697,6 @@ Barahoei	0.008543
 Moeeni	0.008543
 Minavi	0.008543
 Azarbad	0.008542
-Kqz	0.008542
 Tamoradi	0.008540
 Sahraeian	0.008540
 Mojadami	0.008540
@@ -4981,21 +4798,14 @@ Tayyar	0.008461
 Bosak	0.008461
 Savar	0.008460
 Saz	0.008460
-Bst	0.008458
-Bhn	0.008458
 Nassaj	0.008458
 Touri	0.008457
-Bsr	0.008457
-Spr	0.008456
 Teb	0.008455
 Torosian	0.008454
 Eskafi	0.008453
 Saati	0.008453
 Scarf	0.008453
-Zj	0.008452
 Asn	0.008452
-Nzm	0.008452
-Hkh	0.008452
 Mhi	0.008451
 Pakar	0.008451
 Motori	0.008450
@@ -5014,12 +4824,9 @@ Moradmand	0.008441
 Parkan	0.008160
 Eliasi	0.008159
 Harouni	0.008159
-Sdn	0.008159
-Frh	0.008158
 Bod	0.008158
 Azd	0.008158
 Rabei	0.008157
-Sln	0.008157
 Abn	0.008157
 Momtahan	0.008156
 Khadiv	0.008156
@@ -5028,7 +4835,6 @@ Komasi	0.008155
 Ashabi	0.008155
 Olia	0.008155
 Papari	0.008154
-Ssh	0.008154
 Havasi	0.008154
 Seyedin	0.008153
 Abodi	0.008153
@@ -5042,7 +4848,6 @@ Afsahi	0.008149
 Mokhtarpour	0.008148
 Amanpour	0.008148
 Vatandoust	0.008148
-Mrj	0.008148
 Mehdinia	0.008147
 Mehrpoor	0.008147
 Mehrvar	0.008147
@@ -5075,7 +4880,6 @@ Neghabi	0.008137
 Onsori	0.008137
 Shamaei	0.008136
 Khabbazi	0.008136
-Ghn	0.008135
 Hosenzadeh	0.008134
 Moghaddami	0.008134
 Jodeyri	0.008134
@@ -5154,7 +4958,6 @@ Chanani	0.008110
 Toulabi	0.008109
 Banisaeed	0.008109
 Raveshi	0.008109
-Frj	0.008108
 Dilmaghani	0.008108
 Babanezhad	0.008107
 Babanejad	0.008107
@@ -5247,7 +5050,6 @@ Eghlimi	0.008081
 Saadaty	0.008080
 Gheitasi	0.008080
 Gaffari	0.008080
-Drv	0.008079
 Rahimii	0.008079
 Khajei	0.008079
 Meshkin	0.008078
@@ -5279,7 +5081,6 @@ Darami	0.008068
 Sajirati	0.008067
 Isvand	0.008067
 Moshkelgosha	0.008067
-Brt	0.008066
 Poursafar	0.008066
 Heidaryan	0.008066
 Alizadegan	0.008065
@@ -5414,7 +5215,6 @@ Khoshnavaz	0.008026
 Neyestani	0.008026
 Taebi	0.008026
 Khodaverdian	0.008026
-Sbz	0.008025
 Naghsh	0.008025
 Dortaj	0.008024
 Ahmadifard	0.008023
@@ -5516,7 +5316,6 @@ Hanife	0.007968
 Gomari	0.007967
 Horri	0.007967
 Hach	0.007967
-Trb	0.007966
 Sarli	0.007965
 Heil	0.007960
 Virag	0.007959
@@ -5535,13 +5334,11 @@ Valian	0.007946
 Pirali	0.007945
 Tajer	0.007944
 Tayari	0.007944
-Mhs	0.007943
 Candra	0.007943
 Ariani	0.007943
 Tey	0.007943
 Aein	0.007942
 Oji	0.007942
-Mkz	0.007942
 Jacko	0.007941
 Kasir	0.007941
 Gozali	0.007941
@@ -5559,8 +5356,6 @@ Asheri	0.007936
 Tomala	0.007935
 Jodi	0.007935
 Hdy	0.007935
-Vlz	0.007935
-Tbt	0.007934
 Tehrany	0.007933
 Belka	0.007635
 Brazdil	0.007620
@@ -5570,8 +5365,6 @@ Maktabi	0.007620
 Mahallati	0.007620
 Slami	0.007619
 Sabti	0.007619
-Bzr	0.007619
-Mrf	0.007619
 Barbari	0.007618
 Abase	0.007618
 Pad	0.007617
@@ -5580,7 +5373,6 @@ Tava	0.007617
 Haggi	0.007617
 Roshdi	0.007617
 Shahba	0.007616
-Srd	0.007616
 Nazaryan	0.007616
 Amirani	0.007615
 Paziresh	0.007615
@@ -5597,7 +5389,6 @@ Ranj	0.007612
 Irane	0.007612
 Hybl	0.007612
 Delaviz	0.007611
-Jkr	0.007611
 Ganj	0.007611
 Mirshafiee	0.007611
 Yasari	0.007611
@@ -5724,7 +5515,6 @@ Mohandesi	0.007581
 Zeynalzadeh	0.007580
 Rzi	0.007580
 Khoshniyat	0.007580
-Ghf	0.007579
 Senobari	0.007579
 Abasnejad	0.007579
 Farokhnia	0.007579
@@ -5780,7 +5570,6 @@ Alboghbeish	0.007564
 Zerafat	0.007564
 Oboodi	0.007564
 Boveyri	0.007564
-Mzf	0.007563
 Yaghtin	0.007563
 Haghnegahdar	0.007563
 Graphic	0.007563
@@ -5788,7 +5577,6 @@ Kouhestani	0.007563
 Soroori	0.007562
 Gooran	0.007562
 Payande	0.007562
-Hsp	0.007562
 Afr	0.007561
 Hadinejad	0.007561
 Shadpour	0.007561
@@ -5810,7 +5598,6 @@ Masrour	0.007557
 Mostashari	0.007556
 Soltanpoor	0.007556
 Smaeili	0.007556
-Rzd	0.007556
 Behdani	0.007556
 Tavafi	0.007555
 Hatamzadeh	0.007555
@@ -5831,7 +5618,6 @@ Pourkarimi	0.007552
 Rajabloo	0.007552
 Sadidi	0.007551
 Kolahdooz	0.007551
-Mzm	0.007551
 Ghambari	0.007551
 Rohbakhsh	0.007550
 Iranzad	0.007550
@@ -5968,7 +5754,6 @@ Yalali	0.007515
 Doraji	0.007515
 Ahwazy	0.007514
 Rend	0.007514
-Rhn	0.007513
 Ghamgosar	0.007513
 Irandoust	0.007513
 Yadolahi	0.007513
