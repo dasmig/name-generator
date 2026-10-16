@@ -169,11 +169,17 @@ jobs:
       - name: Install LLVM 18 and libstdc++ 14
         run: |
           sudo apt-get update
-          sudo apt-get install -y g++-14 clang-18
+          sudo apt-get install -y g++-14 clang-18 valgrind
           echo "/usr/lib/llvm-18/bin" >> "$GITHUB_PATH"
 
       - name: Run benchmarks
         run: make bench
+
+      # Instructions executed by a fixed workload under cachegrind: stable from run to
+      # run, unlike wall time on a shared runner. A rise of more than 10% over
+      # bench/gate_baseline.txt fails (scripts/gate.py).
+      - name: Instruction-count gate
+        run: make bench-gate
 
       - name: Upload benchmark report
         uses: actions/upload-artifact@v4

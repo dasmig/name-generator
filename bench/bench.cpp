@@ -24,5 +24,9 @@ int main(int argc, char** argv)
         return gen.get_name({}, seed).to_json();
     });
 
+    run.batches("get_name_batch", [&](std::size_t count, std::size_t threads, std::uint64_t seed) {
+        return gen.get_name_batch({}, {.count = count, .threads = threads}, seed);
+    });
+
     return run.finish();
 }
