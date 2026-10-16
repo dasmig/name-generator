@@ -21,13 +21,15 @@
 ///
 /// Options: `--tier lite|full` (default lite), `--out FILE` (append the
 /// results as TSV), `--calls N` (default 10000), `--loads N` (default 5),
-/// `--quick` (1000 calls, 1 load).
+/// `--quick` (1000 calls, 1 load), `--gate` (a fixed workload with no timing
+/// loops, for scripts/gate.py to count instructions under cachegrind).
 ///
 /// What is measured:
 /// - a load: median and minimum wall time over `--loads` fresh instances;
 /// - a getter: the mean from an untimed loop over `--calls` fixed seeds, then
 ///   the median and 99th percentile with each call timed (these include the
 ///   clock's own cost, tens of nanoseconds);
+/// - a batch: items per second at 1, 4 and 8 threads (median of three runs);
 /// - the process's peak memory at the end (resident set natively, linear
 ///   memory in WebAssembly).
 
@@ -160,6 +162,7 @@ class runner
             else if (arg == "--calls") _calls = count(value());
             else if (arg == "--loads") _loads = count(value());
             else if (arg == "--quick") { _calls = 1000; _loads = 1; }
+            else if (arg == "--gate") { _calls = 1000; _loads = 1; _gate = true; }
             else fail("unknown option " + std::string{arg});
         }
 #if defined(DASMIG_BENCH_EMBEDDED)
@@ -194,6 +197,11 @@ class runner
     /// @brief Times `call(seed)` over the fixed seeds.
     template <class Call> void calls(std::string_view name, Call&& call)
     {
+        if (_gate)
+        {
+            for (std::size_t i = 0; i < _calls; ++i) keep(call(seed(i)));
+            return;
+        }
         const std::size_t warmup = std::min<std::size_t>(_calls, 200);
         for (std::size_t i = 0; i < warmup; ++i) keep(call(seed(i)));
 
@@ -214,6 +222,33 @@ class runner
         add(name, "p50", us[us.size() / 2], "us");
         add(name, "p99", us[std::min(us.size() - 1, us.size() * 99 / 100)], "us");
         add(name, "per_second", 1e6 / mean, "calls");
+    }
+
+    /// @brief Times a batch call at 1, 4 and 8 threads and reports items per
+    ///        second. `batch(count, threads, seed)` returns the items.
+    template <class Batch> void batches(std::string_view name, Batch&& batch)
+    {
+        if (_gate)
+        {
+            keep(batch(std::size_t{1000}, std::size_t{1}, seed(0)));
+            return;
+        }
+        const std::size_t items = std::max<std::size_t>(_calls, 1000);
+        for (const std::size_t threads : {1U, 4U, 8U})
+        {
+            keep(batch(std::min<std::size_t>(items, 200), threads, seed(0))); // warm up
+            std::vector<double> ms;
+            for (std::size_t run = 0; run < 3; ++run)
+            {
+                const auto start = clock::now();
+                keep(batch(items, threads, seed(run + 1)));
+                ms.push_back(elapsed_ms(start));
+            }
+            std::ranges::sort(ms);
+            const std::string label = std::string{name} + " x" + std::to_string(items) + ", " +
+                                      std::to_string(threads) + (threads == 1 ? " thread" : " threads");
+            add(label, "per_second", static_cast<double>(items) / (ms[1] / 1000.0), "items");
+        }
     }
 
     /// @brief Reports a tier this library does not ship, and ends.
@@ -291,6 +326,7 @@ class runner
 
     std::string _library;
     dataset _tier{dataset::lite};
+    bool _gate{false};
     std::string _source;
     std::string _out;
     std::size_t _calls{10000};
