@@ -27,7 +27,9 @@ Usage:
 import argparse
 import math
 import os
+import re
 import sys
+import unicodedata
 
 # ---------------------------------------------------------------------------
 # Alpha-2 → folder name mapping (adjective/demonym, lowercase)
@@ -175,6 +177,42 @@ def is_ascii_latin(name):
     )
 
 
+# Vowel letters after accents are stripped (NFD), plus the Latin vowels that
+# have no decomposition: Norwegian/Danish ø æ, French œ, Turkish dotless ı.
+VOWELS = set("aeiouyøæœı")
+# Languages where r and l can be the vowel of a syllable (Czech Vlk, Smrž;
+# Croatian Krč, Vrh; Slovenian Črt, Škrlj).
+SYLLABIC_RL = {"CZ", "HR", "RS", "SI"}
+# Real names without a vowel letter: the Hokkien/Teochew and Cantonese
+# surnames Ng, Chng, Png, Tng, Sng, Hng, Kng, Khng, Thng; pinyin Lv (Lü);
+# the Cantonese given-name syllable Tsz.
+NO_VOWEL_NAMES = re.compile(r"(?:Ng|(?:Ch|Kh|Th|[HKPST])ng|Lv|Tsz)")
+# Cultures whose names are romanised from Arabic, Persian, Bengali or Thaana
+# script. No romanised name there has under three letters: the source's short
+# entries are particles and kunyas split from a longer name (Al, El, Om, Um),
+# abbreviations (Md, Sk, Sh) and truncations (Ma, Sa, Mo).
+ARABIC_SCRIPT = {"AE", "AF", "BD", "BH", "DJ", "DZ", "EG", "IQ", "IR", "JO",
+                 "KW", "LB", "LY", "MA", "MV", "OM", "PS", "QA", "SA", "SD",
+                 "SY", "TN", "YE"}
+
+
+def is_real_name(name, cc):
+    """Return False for initials, abbreviations and fragments.
+
+    The source holds account-name tokens, so many lists have initials and
+    abbreviations (Md for Mohammed, Sk for Sheikh, Jp, Ck) and keyboard
+    noise (Xcvbn). A name is dropped when it has no vowel letter, unless it
+    is a known vowel-less name or (in SYLLABIC_RL) has an r or l, and in the
+    ARABIC_SCRIPT cultures when it has fewer than three letters.
+    """
+    if cc in ARABIC_SCRIPT and len(name) < 3:
+        return False
+    vowels = VOWELS | ({"r", "l"} if cc in SYLLABIC_RL else set())
+    if any(unicodedata.normalize("NFD", c)[0].lower() in vowels for c in name):
+        return True
+    return bool(NO_VOWEL_NAMES.fullmatch(name))
+
+
 def filter_contaminated_surnames(sur_names, first_names_dict, last_names_dict, cc):
     """Remove given names that leaked into the surname list.
 
@@ -207,6 +245,33 @@ def filter_contaminated_surnames(sur_names, first_names_dict, last_names_dict, c
                 dropped.append(name)
                 continue
         clean.append(name)
+    return clean, dropped
+
+
+# Countries whose source lists hold another country's names: rows of the
+# second country's data filed under the first. Found by comparing every
+# country's top 100 names with every other's: Iran's lists hold Czech names
+# (70 of the top 100 female names: Jana, Petra, Kateřina...), the only
+# cross-language case among the cultures; the others share a language
+# (US/CA, AR/UY) or a migrant population (the Gulf states).
+CONTAMINATION = {"IR": "CZ"}
+
+
+def filter_contamination(names, raw_dict, cc):
+    """Drop names the contaminating country ranks better than this one.
+
+    A name of both cultures stays when it ranks better here (Sara in Iran).
+    """
+    other = CONTAMINATION.get(cc)
+    if not other:
+        return names, []
+    clean, dropped = [], []
+    for name in names:
+        ranks = raw_dict.get(name, {}).get("rank", {})
+        if other in ranks and (cc not in ranks or ranks[other] < ranks[cc]):
+            dropped.append(name)
+        else:
+            clean.append(name)
     return clean, dropped
 
 
@@ -276,12 +341,30 @@ def extract(output_dir, top_n, dry_run):
         female_names = [n.strip() for n in female_names if n.strip() and is_ascii_latin(n.strip())]
         surname_names = [n.strip() for n in surname_names if n.strip() and is_ascii_latin(n.strip())]
 
+        # Drop initials, abbreviations and fragments.
+        for label, names in (("male", male_names), ("female", female_names),
+                             ("surname", surname_names)):
+            dropped = [n for n in names if not is_real_name(n, cc)]
+            names[:] = [n for n in names if is_real_name(n, cc)]
+            if dropped:
+                print(f"    {cc} dropped {len(dropped)} {label} non-names: "
+                      f"{', '.join(dropped[:12])}{'...' if len(dropped) > 12 else ''}")
+
         # Remove given names that leaked into surname data.
         surname_names, sur_dropped = filter_contaminated_surnames(
             surname_names, nd.first_names, nd.last_names, cc
         )
         if sur_dropped:
             print(f"    {cc} dropped contaminated surnames: {', '.join(sur_dropped)}")
+
+        # Remove another country's names filed under this one.
+        for label, names, table in (("male", male_names, nd.first_names),
+                                    ("female", female_names, nd.first_names),
+                                    ("surname", surname_names, nd.last_names)):
+            names[:], dropped = filter_contamination(names, table, cc)
+            if dropped:
+                print(f"    {cc} dropped {len(dropped)} {label} names of {CONTAMINATION[cc]}: "
+                      f"{', '.join(dropped[:12])}{'...' if len(dropped) > 12 else ''}")
 
         # Resolve true per-country ranks from the raw pickle data.
         male_ranked = resolve_ranks(male_names, nd.first_names, cc)

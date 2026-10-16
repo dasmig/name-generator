@@ -1,6 +1,5 @@
 sg
 male
-Md	1.000000
 Tan	0.707107
 Lim	0.577350
 Lee	0.500000
@@ -89,7 +88,6 @@ Kyaw	0.089803
 Hong	0.089443
 Murugan	0.089087
 Rajesh	0.088388
-Sk	0.088045
 Neo	0.087706
 Lawrence	0.087039
 Jeff	0.086066
@@ -146,7 +144,6 @@ Ming	0.068680
 Ganesh	0.068359
 Stanley	0.068199
 Rubel	0.067884
-Ck	0.067574
 Choo	0.067420
 Timothy	0.067116
 Wu	0.066965
@@ -198,7 +195,6 @@ Ashok	0.059235
 Chit	0.059131
 Johnson	0.059028
 Shan	0.058824
-Kc	0.058722
 Durai	0.058621
 Saw	0.058521
 Quek	0.058222
@@ -283,7 +279,6 @@ Abdur	0.049690
 Teh	0.049629
 Glenn	0.049568
 Tham	0.049507
-Ks	0.049447
 Benedict	0.049386
 Zhi	0.049326
 Alamgir	0.049207
@@ -310,7 +305,6 @@ Azman	0.047727
 Santhosh	0.047673
 Mathi	0.047619
 Luke	0.047565
-Jj	0.047511
 Hao	0.047405
 Rajib	0.047351
 Balu	0.047298
@@ -361,7 +355,6 @@ Din	0.044194
 Jas	0.044151
 Phyo	0.044023
 Sivakumar	0.043980
-Kh	0.043895
 Rui	0.043853
 Fu	0.043811
 Zhen	0.043769
@@ -384,7 +377,6 @@ Selvaraj	0.042875
 Aw	0.042796
 Aminul	0.042757
 Saravana	0.042679
-Mg	0.042640
 Bin	0.042601
 Ragu	0.042524
 Jiang	0.042486
@@ -398,7 +390,6 @@ Gordon	0.042145
 Sakthivel	0.042070
 Evan	0.042033
 Dong	0.041996
-Sg	0.041959
 Chun	0.041922
 Ramasamy	0.041849
 Darryl	0.041812
@@ -408,7 +399,6 @@ Tai	0.041595
 Yao	0.041559
 Uzzal	0.041487
 Ananth	0.041451
-Sp	0.041416
 Caleb	0.041380
 Mahabub	0.041310
 Baskar	0.041274
@@ -422,7 +412,6 @@ Indra	0.040927
 Winson	0.040825
 Tiger	0.040791
 Sathiya	0.040757
-Hm	0.040555
 Chu	0.040522
 Guan	0.040456
 Zen	0.040357
@@ -463,7 +452,6 @@ Hock	0.038720
 Krish	0.038662
 Subra	0.038547
 Tao	0.038519
-Sc	0.038490
 Sohag	0.038433
 Mehedi	0.038405
 Shen	0.038376
@@ -556,7 +544,6 @@ Bong	0.035093
 Muthukumar	0.035072
 Kian	0.035028
 Shaik	0.034986
-Km	0.034964
 Alif	0.034943
 Sherman	0.034879
 Gao	0.034858
@@ -568,9 +555,7 @@ Pandian	0.034731
 Beng	0.034711
 Raihan	0.034648
 Anik	0.034627
-Kt	0.034606
 Nyi	0.034586
-Kl	0.034544
 How	0.034524
 Harish	0.034503
 Dulal	0.034483
@@ -603,7 +588,6 @@ Rasu	0.033748
 Jasim	0.033691
 Helal	0.033672
 Akter	0.033634
-Pk	0.033615
 Jothi	0.033596
 Hoo	0.033539
 Ramachandran	0.033520
@@ -614,7 +598,6 @@ Vishnu	0.033333
 Sarath	0.033315
 Aditya	0.033296
 Atik	0.033278
-Js	0.033260
 Chester	0.033223
 Mun	0.033204
 Yeow	0.033113
@@ -632,7 +615,6 @@ Arasu	0.032880
 Singapore	0.032862
 Emon	0.032827
 Ren	0.032809
-Hk	0.032791
 Aidil	0.032774
 Razali	0.032756
 Azizul	0.032739
@@ -643,7 +625,6 @@ Ji	0.032616
 Zac	0.032582
 Woon	0.032547
 Prasanth	0.032530
-Rk	0.032513
 Chandru	0.032478
 Ramalingam	0.032444
 Uddin	0.032427
@@ -706,7 +687,6 @@ Ky	0.031039
 Satheesh	0.030994
 Golam	0.030979
 Aravind	0.030964
-Bk	0.030934
 Srini	0.030905
 Panneer	0.030861
 Kan	0.030831
@@ -715,7 +695,6 @@ Minh	0.030787
 Haikal	0.030744
 Vijayakumar	0.030729
 Forhad	0.030715
-Rs	0.030686
 Aqil	0.030671
 Aries	0.030657
 Veeramani	0.030643
@@ -727,14 +706,12 @@ Sridhar	0.030514
 Anisur	0.030500
 Nathaniel	0.030471
 Hung	0.030429
-Tc	0.030415
 Humayun	0.030387
 Delowar	0.030373
 Mahbub	0.030359
 Khim	0.030317
 Mathan	0.030303
 Palanivel	0.030289
-Tk	0.030275
 Mega	0.030261
 Sundaram	0.030234
 Karuppaiah	0.030206
@@ -765,7 +742,6 @@ Rabiul	0.029827
 Sabbir	0.029814
 Gazi	0.029801
 Maruthu	0.029788
-Cm	0.029775
 Molla	0.029761
 Sen	0.029748
 Hee	0.029696
@@ -783,7 +759,6 @@ Cao	0.029437
 Siang	0.029386
 Kah	0.029374
 Mervyn	0.029361
-Ps	0.029336
 Des	0.029323
 Parthi	0.029298
 Chye	0.029235
@@ -793,7 +768,6 @@ Gaurav	0.029198
 Alom	0.029185
 Malai	0.029173
 Zach	0.029123
-Cl	0.029111
 Shahrul	0.029099
 Yazid	0.029086
 Jy	0.029074
@@ -829,7 +803,6 @@ Sherwin	0.028490
 Ramanathan	0.028467
 Go	0.028456
 Rodney	0.028421
-Lk	0.028410
 Matthias	0.028398
 Sarker	0.028387
 Yh	0.028375
@@ -886,7 +859,6 @@ Rajini	0.027524
 Trevor	0.027514
 Paramasivam	0.027503
 Joo	0.027493
-Lc	0.027482
 Kendrick	0.027472
 Ko Ko	0.027451
 Yusri	0.027441
@@ -894,16 +866,12 @@ Selamat	0.027420
 Yusoff	0.027410
 Jovin	0.027379
 Balan	0.027359
-Kp	0.027338
 Muni	0.027328
 Jahidul	0.027318
 Asraful	0.027308
-Gk	0.027277
 Gee	0.027257
-Sj	0.027247
 Viswa	0.027227
 Panda	0.027217
-Jl	0.027206
 Ku	0.027196
 Hon	0.027186
 Sum	0.027176
@@ -948,11 +916,8 @@ Kiat	0.026519
 Deng	0.026509
 Poe	0.026500
 Billa	0.026472
-Hs	0.026463
 Elaya	0.026444
-Jh	0.026407
 Subramaniam	0.026389
-Hc	0.026380
 Lincoln	0.026371
 Mamat	0.026361
 Weijie	0.026325
@@ -970,7 +935,6 @@ Shanmuga	0.026180
 Sang	0.026162
 Nantha	0.026135
 Rengasamy	0.026126
-Bc	0.026109
 Jac	0.026100
 Tien	0.026091
 Darrell	0.026082
@@ -986,14 +950,12 @@ Palanisamy	0.025950
 Hoang	0.025941
 Choi	0.025933
 Oo	0.025906
-Lh	0.025889
 Josiah	0.025863
 Kwang	0.025837
 Jiawei	0.025828
 Koon	0.025820
 Kim Seng	0.025811
 Hew	0.025803
-Cw	0.025794
 Hidayat	0.025777
 Khorshed	0.025768
 Sirajul	0.025760
@@ -1002,14 +964,11 @@ Bulbul	0.025743
 Abdul Rahim	0.025726
 Apon	0.025717
 Ilayaraja	0.025692
-Cp	0.025683
 Saro	0.025675
 Harith	0.025658
 Silambu	0.025649
-Pc	0.025633
 Zaini	0.025591
 Jaden	0.025582
-Hl	0.025574
 Jansen	0.025565
 Ashton	0.025557
 Nazri	0.025549
@@ -1079,7 +1038,6 @@ Kieran	0.024769
 Lie	0.024761
 Maverick	0.024754
 Alagappan	0.024739
-Wk	0.024723
 Too	0.024716
 Chay	0.024708
 Bryant	0.024686
@@ -1105,7 +1063,6 @@ Kok Leong	0.024434
 Haja	0.024419
 Appu	0.024412
 Md Sumon	0.024405
-Gs	0.024390
 Madhan	0.024383
 Suthakar	0.024376
 Rajagopal	0.024361
@@ -1159,13 +1116,11 @@ Thangaraj	0.023823
 Manivel	0.023816
 Ananthan	0.023803
 Ty	0.023783
-Ph	0.023776
 Jae	0.023769
 Karu	0.023762
 Aidan	0.023756
 Bear	0.023742
 Hy	0.023736
-Pl	0.023729
 Isaiah	0.023722
 Thian	0.023716
 Palaniappan	0.023702
@@ -1178,7 +1133,6 @@ Ravikumar	0.023643
 Al Amin	0.023636
 Mostofa	0.023629
 Abu Bakar	0.023616
-Kb	0.023590
 Loganathan	0.023570
 Ernie	0.023564
 Dass	0.023557
@@ -1203,7 +1157,6 @@ Har	0.023319
 Rian	0.023306
 Fai	0.023300
 Kavin	0.023294
-Sf	0.023287
 Rizky	0.023275
 Zan	0.023262
 Thiam	0.023256
@@ -1233,7 +1186,6 @@ Somu	0.023069
 Ayya	0.023051
 Asai	0.023045
 Duncan	0.023033
-Kj	0.023027
 Durairaj	0.023014
 Orange	0.023002
 Helmi	0.022990
@@ -1262,7 +1214,6 @@ Shimul	0.022804
 Govindan	0.022786
 Tofazzal	0.022780
 Devan	0.022774
-Dm	0.022768
 Mahe	0.022763
 Karuppaiya	0.022739
 Stone	0.022727
@@ -1298,7 +1249,6 @@ Budi	0.022451
 Chidambaram	0.022445
 Rei	0.022439
 Vu	0.022434
-Jt	0.022422
 Hiroshi	0.022411
 Fir	0.022406
 Then	0.022383
@@ -1313,9 +1263,7 @@ Jaffar	0.022299
 Ahammed	0.022294
 Mosharof	0.022277
 Ganapathi	0.022261
-Sn	0.022255
 Riz	0.022250
-Kr	0.022244
 Rajen	0.022233
 Lutfor	0.022228
 Govindaraj	0.022217
@@ -1327,7 +1275,6 @@ Pon	0.022168
 Thangavel	0.022162
 Joon	0.022157
 Kum	0.022146
-Kf	0.022135
 Hilmi	0.022130
 Aiden	0.022124
 Syazwan	0.022113
@@ -1345,15 +1292,12 @@ Udaya	0.021990
 Shahjahan	0.021985
 Somon	0.021969
 Sufi	0.021953
-Vj	0.021942
 Aravinth	0.021932
 Anbalagan	0.021926
 Aku	0.021916
 Senthil Kumar	0.021900
 Kumaravel	0.021895
 Anders	0.021869
-Ls	0.021858
-Ws	0.021853
 Jovi	0.021848
 Nathanael	0.021837
 Ker	0.021832
@@ -1361,7 +1305,6 @@ Kean	0.021827
 Sung	0.021822
 Zulkarnain	0.021801
 Kwong	0.021791
-Kw	0.021786
 Soong	0.021775
 Yifan	0.021770
 Zavier	0.021765
@@ -1387,7 +1330,6 @@ Ezhil	0.021642
 Ponnusamy	0.021637
 Faz	0.021627
 Addy	0.021602
-Ht	0.021587
 Adriel	0.021582
 Alvis	0.021577
 Pu	0.021572
@@ -1450,11 +1392,9 @@ Gunasekaran	0.020984
 Arunachalam	0.020975
 Ramamoorthy	0.020970
 Krishnamoorthy	0.020966
-Kg	0.020961
 Richmond	0.020956
 Shariff	0.020952
 Haha	0.020947
-Bl	0.020938
 Mie	0.020934
 Stewart	0.020929
 Shafie	0.020911
@@ -1523,7 +1463,6 @@ Yf	0.020481
 Kiong	0.020472
 Sazali	0.020468
 Ridzwan	0.020459
-Wl	0.020455
 December	0.020447
 Takeshi	0.020442
 Kow	0.020404
@@ -1550,7 +1489,6 @@ Partha	0.020303
 Jenson	0.020282
 Nayon	0.020278
 Mondal	0.020274
-Vs	0.020265
 Ragavan	0.020261
 Mahes	0.020257
 Tharma	0.020253
@@ -1567,8 +1505,6 @@ Darrel	0.020191
 Vellaisamy	0.020182
 Et	0.020174
 Eko	0.020170
-Cf	0.020162
-Bt	0.020150
 Thien	0.020146
 Akid	0.020137
 Hoi	0.020129
@@ -1576,7 +1512,6 @@ Nyo	0.020125
 Singaram	0.020113
 Ridhwan	0.020097
 Zy	0.020089
-Tl	0.020076
 Yp	0.020068
 Pua	0.020056
 Velan	0.020052
@@ -1642,16 +1577,13 @@ Mahedi	0.019642
 Sundara	0.019634
 Chinnadurai	0.019630
 Moshiur	0.019627
-Tp	0.019623
 Siam	0.019619
 Parthipan	0.019615
 Haque	0.019608
 Kathiresan	0.019604
 Thiruppathi	0.019600
 Sarathi	0.019597
-Hp	0.019593
 Thamarai	0.019585
-Hj	0.019578
 Jayabal	0.019567
 Thinesh	0.019563
 Vellai	0.019559
@@ -1661,7 +1593,6 @@ Zainudin	0.019533
 Lao	0.019525
 Trung	0.019514
 Shahrin	0.019499
-Gt	0.019496
 Jethro	0.019492
 Jega	0.019488
 Putera	0.019477
@@ -1699,17 +1630,14 @@ Doss	0.019263
 Saminathan	0.019259
 Zaidi	0.019256
 Fadhil	0.019245
-Gc	0.019241
 Brayden	0.019238
 Wy	0.019231
 Quang	0.019227
 Duy	0.019224
 Ewan	0.019220
 Muhaimin	0.019213
-Jx	0.019209
 Phong	0.019206
 Duong	0.019202
-Jw	0.019199
 Pay	0.019192
 Hing	0.019185
 Fendi	0.019178
@@ -1763,7 +1691,6 @@ Wind	0.018861
 Lang	0.018851
 Cornelius	0.018848
 Wo	0.018844
-Bg	0.018828
 Yiming	0.018824
 Mong	0.018821
 Kien	0.018808
@@ -1798,7 +1725,6 @@ Abdul Razak	0.018605
 Md Shamim	0.018602
 Devaraj	0.018595
 Julhas	0.018592
-Kv	0.018589
 Nalla	0.018586
 Raton	0.018582
 Hariharan	0.018579
@@ -1807,7 +1733,6 @@ Nayem	0.018560
 Bakul	0.018550
 Yuvaraj	0.018547
 Pavi	0.018541
-S M	0.018538
 Arockia	0.018534
 Kathiravan	0.018525
 Shawon	0.018522
@@ -1824,7 +1749,6 @@ Phoenix	0.018477
 Vasan	0.018474
 Elgin	0.018462
 Tho	0.018455
-Cg	0.018446
 Bertrand	0.018440
 Zali	0.018437
 Kyaw Kyaw	0.018433
@@ -1857,7 +1781,6 @@ Yar	0.018267
 Forid	0.018264
 Md Arif	0.018257
 Chanchal	0.018251
-Vk	0.018248
 Ainul	0.018245
 Eswar	0.018242
 Ganeshan	0.018233
@@ -1884,7 +1807,6 @@ Geoff	0.018137
 Ramki	0.018128
 Mollah	0.018125
 Karuppan	0.018122
-Gl	0.018116
 Iz	0.018113
 Tio	0.018110
 Dao	0.018101
@@ -2022,11 +1944,9 @@ Rajangam	0.017437
 Kuppusamy	0.017432
 Arasan	0.017429
 Dex	0.017424
-Wh	0.017421
 Gim	0.017416
 Tar	0.017413
 Chien	0.017408
-Lp	0.017402
 Kon	0.017397
 Joko	0.017392
 Hiroyuki	0.017384
@@ -2100,9 +2020,7 @@ Zillur	0.017072
 Mostafizur	0.017070
 Aynal	0.017065
 Parama	0.017057
-Gp	0.017055
 Reagan	0.017047
-Pt	0.017045
 Velayutham	0.017042
 Sathyaraj	0.017040
 Ashvin	0.017037
@@ -2113,7 +2031,6 @@ Dhanapal	0.017023
 Khang	0.017020
 Rajamani	0.017018
 Md Nazmul	0.017013
-Bp	0.017010
 Muthukrishnan	0.017008
 Logesh	0.017005
 Raiyan	0.017003
@@ -2227,7 +2144,6 @@ Malvin	0.016566
 Hansel	0.016561
 Benn	0.016559
 Nau	0.016554
-Lg	0.016552
 Murphy	0.016536
 Daeng	0.016532
 Bhuiyan	0.016527
@@ -2319,9 +2235,7 @@ Munis	0.016137
 Sathish Kumar	0.016133
 Jeyakumar	0.016129
 Natesan	0.016127
-Sv	0.016125
 Saravanakumar	0.016123
-Kn	0.016116
 Barani	0.016112
 Rave	0.016104
 Tamilselvan	0.016102
@@ -2338,7 +2252,6 @@ Seo	0.016073
 Chek	0.016071
 Tat	0.016060
 Jax	0.016056
-St	0.016054
 Cavan	0.016052
 Ayden	0.016050
 Elwin	0.016048
@@ -2358,7 +2271,6 @@ Moy	0.015988
 Rusli	0.015982
 Pow	0.015974
 Mohd Noor	0.015968
-Wt	0.015962
 Chian	0.015960
 Rhys	0.015958
 Yusman	0.015956
@@ -2440,12 +2352,10 @@ Nithish	0.015713
 Kolanchi	0.015712
 Rafiqul Islam	0.015710
 Alagarsamy	0.015708
-Fs	0.015706
 Sopno	0.015702
 Nikko	0.015698
 Vinz	0.015696
 Lanz	0.015694
-Cb	0.015692
 Arivalagan	0.015690
 Fuji	0.015688
 Renganathan	0.015683
@@ -2468,7 +2378,6 @@ Kevan	0.015623
 Ragil	0.015614
 Nithi	0.015612
 Kalaiselvan	0.015610
-Cn	0.015608
 Bun	0.015604
 Kaliyamoorthy	0.015602
 Abg	0.015600
@@ -2481,7 +2390,6 @@ Samat	0.015572
 Hairil	0.015561
 Lutfil	0.015559
 Skyler	0.015555
-Jz	0.015553
 Yit	0.015551
 Phu	0.015544
 Hongyu	0.015538
@@ -2567,7 +2475,6 @@ Kaliya	0.015278
 Ragupathi	0.015277
 Suthan	0.015275
 Juni	0.015273
-Gb	0.015271
 Mustafizur	0.015269
 Kiruba	0.015266
 Shajib	0.015264
@@ -2606,14 +2513,11 @@ Srabon	0.015192
 Sivanesan	0.015190
 Noordin	0.015186
 Bak	0.015185
-Hw	0.015183
 Yak	0.015181
 Martini	0.015178
 Nei	0.015174
 Hii	0.015172
 Coffee	0.015171
-Zh	0.015169
-Nc	0.015162
 Hùng	0.015160
 Cuong	0.015158
 Cash	0.015153
@@ -2650,7 +2554,6 @@ Azli	0.015055
 Jufri	0.015050
 Chiong	0.015038
 Sidek	0.015035
-Wm	0.015028
 Sivalingam	0.015026
 Jumadi	0.015024
 Ridz	0.015021
@@ -2660,12 +2563,10 @@ Willis	0.015001
 Hideki	0.014999
 Danson	0.014996
 Bennett	0.014992
-Tw	0.014991
 Addison	0.014989
 Bronson	0.014986
 Javin	0.014977
 Jerrold	0.014974
-Wj	0.014972
 Magen	0.014965
 Wenhao	0.014960
 Kuma	0.014950
@@ -2779,10 +2680,7 @@ Kodi	0.014633
 Jobayer	0.014632
 Topu	0.014629
 Shukor	0.014627
-Fk	0.014625
 Kaw	0.014622
-Lf	0.014621
-Sq	0.014619
 Clovis	0.014610
 Fah	0.014607
 Sek	0.014602
@@ -2839,11 +2737,9 @@ Yijie	0.014429
 Weijian	0.014417
 Yongsheng	0.014413
 Jiale	0.014411
-Jq	0.014410
 Junming	0.014408
 Vanness	0.014402
 Tow	0.014387
-Wc	0.014384
 Thamizh	0.014375
 Ganes	0.014374
 Havoc	0.014373
@@ -2911,7 +2807,6 @@ Kalidas	0.014257
 Lablu	0.014254
 Hafizul	0.014251
 Ramanan	0.014248
-Dx	0.014247
 Prabakar	0.014245
 Tofayel	0.014242
 Imon	0.014241
@@ -2944,7 +2839,6 @@ Mustaqim	0.014180
 Thennarasu	0.014175
 Jeyaraj	0.014173
 Vaira	0.014171
-Pg	0.014169
 Agung	0.014166
 Shohan	0.014165
 Khalis	0.014163
@@ -2999,7 +2893,6 @@ Lai Huat	0.014015
 Keen	0.014014
 Ganthi	0.014011
 Aaru	0.014007
-Gv	0.014006
 Keh	0.014001
 Goi	0.014000
 Juz	0.013999
@@ -3182,7 +3075,6 @@ Bond	0.013586
 Vũ	0.013584
 Yacob	0.013583
 Nuur	0.013581
-Tf	0.013578
 Jeriel	0.013577
 Tae	0.013574
 Duo	0.013573
@@ -3198,12 +3090,10 @@ Xuefeng	0.013554
 Tonmoy	0.013553
 Biddut	0.013551
 Shariful Islam	0.013549
-Lx	0.013548
 Shikder	0.013546
 Tohin	0.013544
 Howlader	0.013543
 Mahathir	0.013542
-Zx	0.013541
 Azrin	0.013539
 Shawal	0.013537
 Tse	0.013536
@@ -3257,7 +3147,6 @@ Yuxiang	0.013385
 Yonghui	0.013382
 Weiping	0.013375
 Hongjun	0.013374
-Xj	0.013373
 Mingyang	0.013371
 Kou	0.013362
 Guowei	0.013357
@@ -3270,7 +3159,6 @@ Fionn	0.013323
 Zakariah	0.013321
 Kyal	0.013320
 Kishen	0.013319
-Lw	0.013312
 Pasu	0.013309
 Koichi	0.013303
 Koe	0.013301
@@ -3374,7 +3262,6 @@ Rofiq	0.013137
 Vikrant	0.013135
 Rowell	0.013134
 Sipon	0.013133
-Vp	0.013132
 Priyan	0.013131
 Mojnu	0.013127
 Hiron	0.013126
@@ -3426,7 +3313,6 @@ Kaleeswaran	0.013047
 Dava	0.013042
 Jojie	0.013041
 Kham	0.013040
-Tb	0.013037
 Seran	0.013035
 Ern	0.013033
 Fon	0.013031
@@ -3440,10 +3326,8 @@ Dương	0.013018
 Khánh	0.013014
 Jovial	0.013013
 Malcom	0.013010
-Tn	0.013009
 Dedy	0.013008
 Stylo	0.013007
-Gn	0.013003
 Gaming	0.013001
 Nit	0.012999
 Azmir	0.012998
@@ -3518,7 +3402,6 @@ Kieron	0.012842
 Theva	0.012836
 Siyuan	0.012830
 Gerrard	0.012827
-Jk	0.012825
 Yg	0.012823
 Yuming	0.012819
 Sarjit	0.012818
@@ -3743,8 +3626,6 @@ Mbah	0.012444
 Mahabubur	0.012443
 Almamun	0.012442
 Mur	0.012441
-Mw	0.012440
-Nt	0.012439
 Xan	0.012438
 Yamaha	0.012436
 Rush	0.012434
@@ -3754,10 +3635,8 @@ Mizi	0.012429
 Gy	0.012428
 Parti	0.012427
 Eldon	0.012426
-Dt	0.012425
 Dydy	0.012424
 Yul	0.012419
-Pf	0.012417
 Lenz	0.012415
 Nix	0.012414
 Anselm	0.012413
@@ -3782,7 +3661,6 @@ Himu	0.012388
 Riday	0.012386
 Shahadot	0.012385
 Mollik	0.012384
-Mg Mg	0.012383
 Ghosh	0.012383
 Hossain Mohammad	0.012382
 Alhaz	0.012381
@@ -3791,7 +3669,6 @@ Dhali	0.012379
 Maulana	0.012378
 Maznu	0.012377
 Koi	0.012376
-Mf	0.012374
 Sleepy	0.012373
 Sihan	0.012372
 Koen	0.012371
@@ -3898,7 +3775,6 @@ Jianhong	0.012149
 Xiaoliang	0.012145
 Yongxin	0.012139
 Jinrong	0.012138
-Zq	0.012135
 Junwen	0.012134
 Weiyang	0.012133
 Zhixiang	0.012132
@@ -3908,7 +3784,6 @@ Junlong	0.012126
 Jianhao	0.012125
 Kaixuan	0.012117
 Jingjie	0.012113
-Wp	0.012112
 Wai Kit	0.012108
 Wen Jun	0.012107
 Junxian	0.012105
@@ -4125,7 +4000,6 @@ Jakir Hossain	0.011823
 Prapu	0.011822
 Md Habibur	0.011821
 Raka	0.011820
-Mrk	0.011819
 Veerakumar	0.011818
 Sojon	0.011816
 Ramamoorthi	0.011816
@@ -4137,7 +4011,6 @@ Wish	0.011806
 Khu	0.011804
 Safie	0.011803
 Cen	0.011802
-Xh	0.011801
 Coin	0.011800
 Enda	0.011798
 Zon	0.011797
@@ -4169,7 +4042,6 @@ Maari	0.011768
 Yuuki	0.011766
 Zikri	0.011764
 Taro	0.011763
-Sz	0.011762
 Vinc	0.011761
 Try	0.011761
 Kamen	0.011760
@@ -4187,15 +4059,12 @@ Shuk	0.011743
 Reduan	0.011741
 Kamruz	0.011740
 Novel	0.011740
-Kz	0.011739
 Sikdar	0.011738
 Nazirul	0.011736
 Cold	0.011736
 Taw	0.011735
-Hq	0.011734
 Myron	0.011731
 Tristen	0.011729
-Mbk	0.011727
 Issey	0.011726
 Niang	0.011725
 Darry	0.011723
@@ -4244,7 +4113,6 @@ Thanjai	0.011634
 Wataru	0.011633
 Jayme	0.011629
 Tiu	0.011624
-Bw	0.011622
 Theophilus	0.011622
 Caster	0.011621
 Japheth	0.011619
@@ -4308,7 +4176,6 @@ Lixiang	0.011489
 Biak	0.011486
 Tetsuya	0.011485
 Gallen	0.011484
-Wx	0.011483
 Weixiong	0.011481
 Hanwei	0.011477
 Weiquan	0.011476
@@ -4595,7 +4462,6 @@ Aril	0.011153
 Johanes	0.011152
 Kelven	0.011150
 Triple	0.011148
-Vc	0.011148
 Welson	0.011146
 Hendy	0.011146
 Ep	0.011144
@@ -4636,7 +4502,6 @@ Khan Md	0.011106
 Halder	0.011106
 Rohman	0.011105
 Paran	0.011104
-Xm	0.011102
 Coen	0.011097
 Giles	0.011097
 Reese	0.011094
@@ -4782,7 +4647,6 @@ Yanwei	0.010834
 Wenwei	0.010833
 Weiqing	0.010833
 Yeah	0.010832
-Wf	0.010829
 Yixiang	0.010828
 Jinhao	0.010827
 Jianzhong	0.010825
@@ -4829,7 +4693,6 @@ Noven	0.010764
 Wut	0.010760
 Chin Wah	0.010759
 Kohei	0.010757
-Cs	0.010756
 Eiji	0.010756
 Kentaro	0.010755
 Suratman	0.010753
@@ -5156,7 +5019,6 @@ Anshuman	0.010466
 Hazi	0.010465
 Md Halim	0.010464
 Shafiqul Islam	0.010463
-Msm	0.010463
 Sivaram	0.010462
 Md Mahabub	0.010461
 Joydeb	0.010460
@@ -5180,7 +5042,6 @@ Naimul	0.010449
 Dhanaraj	0.010448
 Tapu	0.010448
 Shaf	0.010446
-Smd	0.010445
 Mukil	0.010443
 Poomi	0.010442
 Malaisamy	0.010442
@@ -5210,7 +5071,6 @@ Reja	0.010425
 Elius	0.010425
 Hehe	0.010422
 Truman	0.010421
-Vl	0.010421
 Enson	0.010420
 Keon	0.010419
 Sirius	0.010418
@@ -5235,7 +5095,6 @@ Bojo	0.010400
 Wave	0.010399
 Mahmudur	0.010399
 Bock	0.010398
-Wg	0.010396
 Trent	0.010395
 Ahnaf	0.010394
 Md Emon	0.010393
@@ -5282,7 +5141,6 @@ Mokaddes	0.010363
 Toru	0.010363
 Rhaman	0.010362
 Bazlu	0.010362
-Rks	0.010361
 Bepari	0.010361
 Champ	0.010360
 Painful	0.010359
@@ -5373,7 +5231,6 @@ Rizz	0.010249
 Slamat	0.010248
 Stitch	0.010248
 Somboon	0.010244
-Zl	0.010241
 Akoh	0.010239
 Stevenson	0.010237
 Yiew	0.010233
@@ -5384,7 +5241,6 @@ Epic	0.010230
 Boon Hwa	0.010229
 Rusyaidi	0.010228
 Arep	0.010228
-Nd	0.010226
 Mung	0.010226
 Kalyanam	0.010225
 Hian	0.010224
@@ -5399,7 +5255,6 @@ Brandan	0.010215
 Kendric	0.010214
 Sparrow	0.010213
 Zayne	0.010212
-Pw	0.010211
 Doe	0.010210
 Tye	0.010209
 Sarthak	0.010207
@@ -5455,7 +5310,6 @@ Jiu	0.010137
 Guojun	0.010135
 Dongxu	0.010131
 Jiabao	0.010130
-Zw	0.010129
 Yonghua	0.010128
 Qifeng	0.010126
 Juncheng	0.010125
@@ -5486,9 +5340,6 @@ Junyong	0.010083
 Qiyuan	0.010083
 Weirong	0.010081
 Vong	0.010077
-Gw	0.010076
-Wq	0.010074
-Wb	0.010072
 Yuzhe	0.010069
 Aiken	0.010065
 Jian Ming	0.010061
@@ -5580,7 +5431,6 @@ Veerasekaran	0.009966
 Kyawmin	0.009965
 Bakiyaraj	0.009965
 Pugalenthi	0.009964
-Kps	0.009964
 Thandapani	0.009963
 Sabapathy	0.009963
 Jebat	0.009962
@@ -5954,7 +5804,6 @@ Sobug	0.009697
 Maynul	0.009697
 Azom	0.009696
 Mathiyalagan	0.009695
-Mks	0.009695
 Siddarth	0.009694
 Ragunath	0.009694
 Sudalai	0.009693
@@ -5974,8 +5823,6 @@ Ab Rahman	0.009685
 Ferdaus	0.009684
 Bahari	0.009684
 Jamalludin	0.009683
-Fn	0.009682
-Ssk	0.009682
 Muli	0.009681
 Alger	0.009680
 Endra	0.009679
@@ -6081,7 +5928,6 @@ Shahajalal	0.009613
 Mazidul	0.009613
 Shikdar	0.009612
 Billah	0.009612
-Skm	0.009611
 Rezuan	0.009611
 Akidul	0.009610
 Musharof	0.009610
@@ -6092,7 +5938,6 @@ Bozlur	0.009608
 Mdripon	0.009608
 Sorkar	0.009607
 Joherul	0.009607
-Mgmg	0.009606
 Topan	0.009606
 Mdrana	0.009605
 Akul	0.009605
@@ -6101,8 +5946,6 @@ Azmin	0.009603
 Prodhan	0.009603
 Ajid	0.009602
 Asp	0.009602
-Str	0.009601
-Rsk	0.009601
 Kundu	0.009600
 Safuan	0.009600
 Sonai	0.009599
@@ -6199,7 +6042,6 @@ Azzy	0.009519
 Vun	0.009519
 Kasman	0.009519
 Fauzie	0.009517
-Cz	0.009516
 Amirudin	0.009515
 Nelvin	0.009514
 Chokchai	0.009513
@@ -6228,14 +6070,11 @@ Appy	0.009489
 Bapak	0.009489
 Haizal	0.009489
 Hayashi	0.009488
-Wz	0.009487
 Qusyairi	0.009486
 Rickie	0.009485
 Raiden	0.009484
 Jin Wei	0.009483
-Vn	0.009482
 Oak	0.009482
-Vt	0.009481
 Zoul	0.009480
 Hamka	0.009480
 Ashari	0.009479
@@ -6343,7 +6182,6 @@ Dehua	0.009369
 Weibo	0.009368
 Juntao	0.009367
 Yongjian	0.009365
-Zj	0.009364
 Hongyuan	0.009363
 Jianli	0.009362
 East	0.009360
@@ -6364,7 +6202,6 @@ Yisheng	0.009346
 Shiping	0.009345
 Yongqi	0.009345
 Jiancheng	0.009345
-Xq	0.009344
 Chengwei	0.009343
 Zhenyi	0.009343
 Tianming	0.009343
@@ -6374,7 +6211,6 @@ Kaikai	0.009339
 Hongyang	0.009338
 Qingyang	0.009338
 Jinyang	0.009336
-Xf	0.009334
 Dewei	0.009333
 Chunyang	0.009331
 Jiansheng	0.009331
@@ -6391,14 +6227,12 @@ Jiewei	0.009322
 Jianliang	0.009321
 Weichen	0.009320
 Sihao	0.009319
-Xz	0.009319
 Jiwei	0.009319
 Chunming	0.009315
 Chengyi	0.009315
 Guofeng	0.009313
 Zhirong	0.009312
 Junting	0.009311
-Xw	0.009310
 Junsheng	0.009310
 Chenghua	0.009308
 Dejun	0.009307
@@ -6415,7 +6249,6 @@ Xianwei	0.009295
 Zhiguang	0.009294
 Chunhong	0.009294
 Jingkai	0.009293
-Ql	0.009292
 Xiao Long	0.009291
 Zhenfeng	0.009287
 Weizhi	0.009283
@@ -6455,7 +6288,6 @@ Jye	0.009245
 Prakhar	0.009245
 Moey	0.009244
 Elai	0.009243
-Tts	0.009242
 Erh	0.009241
 Zacchaeus	0.009241
 Edbert	0.009240
@@ -6465,7 +6297,6 @@ Kai Ming	0.009238
 Chun Hong	0.009236
 Kenken	0.009236
 Ming Hong	0.009232
-Sl	0.009227
 Tegar	0.009226
 Yuto	0.009225
 Hong Yu	0.009224
@@ -6542,7 +6373,6 @@ Abdul Gani	0.009169
 Jov	0.009165
 Tieu	0.009162
 Keng Hong	0.009161
-Kx	0.009160
 Hoy	0.009160
 Seng Chong	0.009158
 Thongchai	0.009158
@@ -6651,7 +6481,6 @@ Kok Poh	0.009087
 Sathiyamoorthi	0.009086
 Pazhanivel	0.009086
 Chin Hua	0.009085
-Mrnmrs	0.009084
 Peng Koon	0.009084
 Pyay	0.009082
 Chin Kok	0.009082
@@ -7054,7 +6883,6 @@ Tyo	0.008869
 Qui	0.008868
 Grady	0.008868
 Wey	0.008868
-Xc	0.008867
 Herlin	0.008866
 Yoe	0.008865
 Kern	0.008864
@@ -7070,7 +6898,6 @@ Md Rakibul	0.008855
 Md Sojib	0.008855
 Subroto	0.008854
 Md Raihan	0.008854
-M M	0.008854
 Shipu	0.008853
 Setu	0.008852
 Md Tuhin	0.008852
@@ -7132,15 +6959,12 @@ Khayer	0.008830
 Md Raton	0.008830
 Hawlader	0.008830
 Shohedul	0.008829
-Srm	0.008829
 Mazibur	0.008828
 Mirdha	0.008828
 Zzaman	0.008828
 Jewel Rana	0.008827
 Tokon	0.008827
-Sps	0.008825
 Santho	0.008825
-Ssr	0.008824
 Burt	0.008822
 Fredric	0.008822
 Benben	0.008821
@@ -7195,7 +7019,6 @@ Mohd Zain	0.008784
 Sambel	0.008783
 Yushi	0.008782
 Mazli	0.008782
-Zt	0.008782
 Baharom	0.008780
 Aidy	0.008780
 Eton	0.008779
@@ -7206,7 +7029,6 @@ Syafeeq	0.008776
 Mantan	0.008775
 Tarry	0.008775
 Ahmeng	0.008774
-Zc	0.008773
 Suhadi	0.008772
 Zean	0.008770
 Namaku	0.008770
@@ -7226,7 +7048,6 @@ Harin	0.008761
 Yie	0.008759
 Manian	0.008759
 Edwyn	0.008757
-Qc	0.008756
 Janz	0.008755
 Jau	0.008754
 Hideo	0.008753
@@ -7295,7 +7116,6 @@ Fusheng	0.008689
 Ruifeng	0.008689
 Xiaobai	0.008688
 Liguo	0.008688
-Hx	0.008687
 Haonan	0.008686
 Deming	0.008685
 Yijian	0.008684
@@ -7311,7 +7131,6 @@ Hongsheng	0.008675
 Junxi	0.008675
 Kaifeng	0.008674
 Yongqing	0.008672
-Xt	0.008672
 Jieming	0.008671
 Jiahe	0.008670
 Zhun	0.008669
@@ -7327,7 +7146,6 @@ Wengang	0.008659
 Zhi Hua	0.008658
 Yaowei	0.008656
 Chaoqun	0.008654
-Kk	0.008652
 Weiyong	0.008650
 Zi Jian	0.008648
 Junde	0.008648
@@ -7364,18 +7182,13 @@ Szeto	0.008626
 Kim Ming	0.008625
 Almond	0.008624
 Alfee	0.008623
-Cck	0.008622
-Tst	0.008619
 Shong	0.008618
 Hong Ming	0.008617
-Kks	0.008617
-Csk	0.008616
 Macan	0.008614
 Irawan	0.008613
 Dhika	0.008613
 Junius	0.008611
 Aat	0.008611
-Lq	0.008610
 Reyza	0.008610
 Yasuyuki	0.008609
 Akihiko	0.008608
@@ -7388,7 +7201,6 @@ Nagireddy	0.008602
 Varatharaj	0.008602
 Natesh	0.008601
 Dharan	0.008601
-Rps	0.008600
 Soori	0.008599
 Gifford	0.008598
 Tomoya	0.008598
@@ -7470,11 +7282,9 @@ Ruey	0.008546
 Pramuan	0.008545
 Sivarajan	0.008545
 Hernie	0.008542
-Kpm	0.008541
 Chor Meng	0.008541
 Peng Huat	0.008540
 Zheng Jie	0.008540
-Lsk	0.008539
 Jie Sheng	0.008539
 Swee Hock	0.008538
 Bapary	0.008537

@@ -1,6 +1,5 @@
 sa
 male
-Md	0.707107
 Muhammad	0.500000
 Mohammed	0.377964
 Ahmed	0.353553
@@ -78,7 +77,6 @@ Alaa	0.087706
 Alam	0.087370
 Aziz	0.087039
 Aslam	0.086387
-Ch	0.086066
 Ghulam	0.085436
 Abul	0.084819
 Osama	0.084515
@@ -112,7 +110,6 @@ Nasser	0.073721
 Abdu	0.073324
 Ayman	0.073127
 Saddam	0.072739
-Mo	0.072169
 Akbar	0.071796
 Said	0.071067
 Sunil	0.070888
@@ -141,7 +138,6 @@ Islam	0.064416
 Santosh	0.064282
 Jahangir	0.064150
 Gulam	0.063758
-Al	0.063500
 Afzal	0.063372
 Aftab	0.062994
 Shaik	0.062622
@@ -154,7 +150,6 @@ Abood	0.061430
 Salem	0.061314
 Sher	0.061199
 Amin	0.060412
-Sk	0.060193
 Tanveer	0.060084
 Krishna	0.059761
 Faruk	0.059655

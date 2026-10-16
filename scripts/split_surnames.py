@@ -19,6 +19,7 @@ Usage:
 """
 
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -72,6 +73,11 @@ STRONG_MASCULINE = {
 
 VOWELS = "aeiouyáéíóúůýěAEIOUY"
 
+# Cultures where the e of a final -ek, -ec or -el drops before the feminine
+# ending: Czech Vlček/Vlčková, Němec/Němcová, Pavel/Pavlová.
+FLEETING_E = {"czech"}
+CONSONANT = f"[^{VOWELS}]"
+
 
 def read_list(path):
     lines = path.read_text(encoding="utf-8").splitlines()
@@ -85,7 +91,7 @@ def read_list(path):
     return code, rows
 
 
-def counterparts(name, rules, to_feminine):
+def counterparts(name, rules, to_feminine, fleeting_e=False):
     """The other-gender forms of `name` that a rule gives, best guess first."""
     out = []
     for masc, fem in rules:
@@ -95,7 +101,15 @@ def counterparts(name, rules, to_feminine):
         if not masc and to_feminine and name[-1] in VOWELS:
             continue
         if name.endswith(src) and len(name) > len(src):
-            form = name[: len(name) - len(src)] + dst
+            stem = name[: len(name) - len(src)]
+            if not masc and fleeting_e:
+                # Vlček -> Vlčková and back; Beck (c-k) has no fleeting e.
+                if to_feminine and re.search(f"{CONSONANT}e[kcl]$", stem):
+                    out.append(stem[:-2] + stem[-1] + dst)
+                elif (not to_feminine and re.search(f"{CONSONANT}[kcl]$", stem)
+                      and not stem.endswith("ck")):
+                    out.append(stem[:-1] + "e" + stem[-1] + dst)
+            form = stem + dst
             if form not in out:
                 out.append(form)
     return out
@@ -108,12 +122,13 @@ def known(forms, rows):
 
 def split(culture, rows):
     rules = RULES[culture]
+    fleeting = culture in FLEETING_E
     feminine, masculine, neutral = {}, {}, {}
     for name, weight in rows.items():
         if len(name) < MIN_LENGTH:
             continue
-        as_masc = counterparts(name, rules, True)   # name read as masculine
-        as_fem = counterparts(name, rules, False)   # name read as feminine
+        as_masc = counterparts(name, rules, True, fleeting)   # name read as masculine
+        as_fem = counterparts(name, rules, False, fleeting)   # name read as feminine
         if as_fem and (known(as_fem, rows) or name.endswith(STRONG_FEMININE[culture])):
             feminine[name] = weight
         elif as_masc and (known(as_masc, rows) or name.endswith(STRONG_MASCULINE[culture])):
@@ -123,11 +138,11 @@ def split(culture, rows):
 
     # Derive the form a list lacks, at the weight of the form it comes from.
     for name, weight in list(masculine.items()):
-        forms = counterparts(name, rules, True)
+        forms = counterparts(name, rules, True, fleeting)
         if not known(forms, rows):
             feminine.setdefault(forms[0], weight)
     for name, weight in list(feminine.items()):
-        forms = counterparts(name, rules, False)
+        forms = counterparts(name, rules, False, fleeting)
         if not known(forms, rows):
             masculine.setdefault(forms[0], weight)
     return masculine, feminine, neutral

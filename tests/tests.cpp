@@ -1,6 +1,7 @@
 #include "catch_amalgamated.hpp"
 #include "../dasmig/namegen.hpp"
 
+#include <algorithm>
 #include <cstdint>
 #include <filesystem>
 #include <fstream>
@@ -1029,24 +1030,94 @@ dasmig::ng& lite()
 
 } // namespace
 
+TEST_CASE("Iranian names hold no Czech names", "[data]")
+{
+    // The source filed Czech names under Iran (scripts/extract_names.py,
+    // CONTAMINATION); these were among Iran's most common before the filter.
+    auto& g = lite();
+    const std::set<std::string> czech{"Jana", "Petra", "Lenka", "Petr", "Martin", "Jan", "Nov\xC3\xA1kov\xC3\xA1", "Nov\xC3\xA1k"};
+    for (std::uint64_t s = 0; s < 2000; ++s)
+    {
+        auto n = g.get_name({.gender = dasmig::gender::any, .culture = dasmig::culture::iranian}, s);
+        n.append_surname();
+        for (const auto& part : n.parts()) REQUIRE_FALSE(czech.contains(dasmig::core::to_utf8(part)));
+    }
+}
+
+TEST_CASE("initials, abbreviations and fragments are not drawn", "[data]")
+{
+    // The source's account-name tokens (scripts/extract_names.py,
+    // is_real_name): Md was the top male name in Bangladesh and the Gulf,
+    // Om and Um top female names in Libya and Jordan, El the top surname in
+    // Morocco.
+    using dasmig::culture;
+    auto& g = lite();
+    const std::set<std::string> no_vowel{"Md", "Sk", "Sh", "Kh", "Hj", "Jp", "Ck"};
+    const std::set<std::string> fragments{"Om", "Um", "Em", "Al", "El", "Ab", "Ma", "Sa"};
+    const auto arabic_script = {culture::bangladeshi, culture::emirati, culture::libyan, culture::jordanian,
+                                culture::moroccan};
+    for (const auto c : {culture::any, culture::bangladeshi, culture::emirati, culture::libyan, culture::jordanian,
+                         culture::moroccan, culture::bruneian, culture::hongkonger, culture::filipino})
+    {
+        const bool arabic = std::ranges::find(arabic_script, c) != arabic_script.end();
+        for (std::uint64_t s = 0; s < 1000; ++s)
+        {
+            auto n = g.get_name({.gender = dasmig::gender::any, .culture = c}, s);
+            n.append_surname();
+            for (const auto& part : n.parts())
+            {
+                const auto text = dasmig::core::to_utf8(part);
+                INFO(text);
+                REQUIRE_FALSE(no_vowel.contains(text));
+                REQUIRE_FALSE((arabic && fragments.contains(text)));
+            }
+        }
+    }
+    // Real short names stay.
+    bool ng = false;
+    for (std::uint64_t s = 0; s < 1000 && !ng; ++s)
+        ng = g.get_surname({.culture = culture::singaporean}, s).parts()[0] == L"Ng";
+    REQUIRE(ng);
+}
+
+TEST_CASE("Czech surnames have the form of their gender", "[data]")
+{
+    // The masculine form of -ková is -ek (Vlčková, Vlček), with a fleeting e
+    // (scripts/split_surnames.py, FLEETING_E); these were in both lists.
+    using dasmig::culture;
+    auto& g = lite();
+    const std::set<std::string> masculine{"N\xC4\x9B" "mec", "Marek", "H\xC3\xA1jek", "Vl\xC4\x8D" "ek"};
+    const std::set<std::string> misderived{"N\xC4\x9B" "mc", "Mark", "H\xC3\xA1jk", "Vl\xC4\x8Dk"};
+    bool vlcek = false;
+    for (std::uint64_t s = 0; s < 3000; ++s)
+    {
+        const auto f = dasmig::core::to_utf8(g.get_surname({.gender = dasmig::gender::f, .culture = culture::czech}, s).parts()[0]);
+        const auto m = dasmig::core::to_utf8(g.get_surname({.gender = dasmig::gender::m, .culture = culture::czech}, s).parts()[0]);
+        REQUIRE_FALSE(masculine.contains(f));
+        REQUIRE_FALSE(misderived.contains(m));
+        vlcek = vlcek || masculine.contains(m);
+    }
+    REQUIRE(vlcek);
+}
+
 TEST_CASE("known answers for fixed seeds", "[kat]")
 {
     using dasmig::culture;
     using dasmig::gender;
     auto& g = lite();
-    REQUIRE(g.data_hash() == 0x07bced2348a8cc4bULL);
+    REQUIRE(g.data_hash() == 0x9596eeceb4a9fe14ULL);
 
     REQUIRE(g.get_name({.gender = gender::any, .culture = culture::any}, 1).to_json() ==
-            R"({"name":"Lenroy","parts":["Lenroy"],"gender":"male","culture":"jamaican","signature":{"seed":"0000000000000001","data":"07bced2348a8cc4b"}})");
+            R"({"name":"Rasta","parts":["Rasta"],"gender":"male","culture":"jamaican","signature":{"seed":"0000000000000001","data":"9596eeceb4a9fe14"}})");
     REQUIRE(g.get_name({.gender = gender::m, .culture = culture::brazilian}, 2).to_json() ==
-            R"({"name":"Luiz","parts":["Luiz"],"gender":"male","culture":"brazilian","signature":{"seed":"0000000000000002","data":"07bced2348a8cc4b"}})");
+            R"({"name":"Luiz","parts":["Luiz"],"gender":"male","culture":"brazilian","signature":{"seed":"0000000000000002","data":"9596eeceb4a9fe14"}})");
     REQUIRE(g.get_surname({.culture = culture::japanese}, 3).to_json() ==
-            R"({"name":"Takahashi","parts":["Takahashi"],"gender":"male","culture":"japanese","signature":{"seed":"0000000000000003","data":"07bced2348a8cc4b"}})");
+            R"({"name":"Takahashi","parts":["Takahashi"],"gender":"male","culture":"japanese","signature":{"seed":"0000000000000003","data":"9596eeceb4a9fe14"}})");
     auto n = g.get_name({.gender = gender::f, .culture = culture::german}, 4);
     n.append_name().append_surname().append_surname(culture::polish);
     REQUIRE(n.to_json() ==
             "{\"name\":\"Elfriede Mandy Kr\xC3\xA4mer Baran\",\"parts\":[\"Elfriede\",\"Mandy\",\"Kr\xC3\xA4mer\",\"Baran\"],"
-            "\"gender\":\"female\",\"culture\":\"german\",\"signature\":{\"seed\":\"0000000000000004\",\"data\":\"07bced2348a8cc4b\"}}");
+            "\"gender\":\"female\",\"culture\":\"german\",\"signature\":{\"seed\":\"0000000000000004\",\"data\":\"9596eeceb4a9fe14\"}}");
 
     std::uint64_t h = 0xcbf29ce484222325ULL;
     for (std::uint64_t s = 0; s < 10000; ++s)
@@ -1059,7 +1130,7 @@ TEST_CASE("known answers for fixed seeds", "[kat]")
             h *= 0x100000001b3ULL;
         }
     }
-    REQUIRE(h == 0xf460d7b6aef21a95ULL);
+    REQUIRE(h == 0x737d8b521d38cb2fULL);
 }
 
 // ---------------------------------------------------------------------------

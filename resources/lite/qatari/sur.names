@@ -28,7 +28,6 @@ Babu	0.192450
 Shrestha	0.188982
 Shah	0.185695
 Thakur	0.182574
-Qtr	0.179605
 Mia	0.176777
 Miya	0.174078
 Chauhan	0.171499
@@ -36,7 +35,6 @@ Mahato	0.169031
 Raja	0.166667
 Prasad	0.164399
 Limbu	0.162221
-Kc	0.160128
 Shaikh	0.158114
 Karki	0.156174
 Doha	0.154303
@@ -59,7 +57,6 @@ Sahani	0.130189
 Nair	0.129099
 Mondal	0.128037
 Mukhiya	0.127000
-Sk	0.125000
 Basnet	0.124035
 Bhandari	0.123091
 Ray	0.122169
@@ -69,7 +66,6 @@ Hossen	0.118678
 Sunar	0.117851
 Kumari	0.117041
 Pandey	0.116248
-Bk	0.114708
 Faruk	0.113961
 Bhai	0.113228
 Chhetri	0.112509
@@ -84,8 +80,6 @@ Alkuwari	0.106000
 Khatri	0.105409
 Husain	0.104828
 Nepal	0.104257
-Pk	0.103695
-Kp	0.102598
 Sarkar	0.102062
 Pal	0.101535
 Paswan	0.100504
@@ -102,7 +96,6 @@ Raza	0.095346
 Alom	0.094491
 Anwar	0.093659
 Hossan	0.093250
-Bc	0.092848
 Shaik	0.092450
 Haque	0.092057
 Alhajri	0.091670
@@ -198,8 +191,6 @@ Nadaf	0.067267
 Alali	0.067116
 Cool	0.066965
 Chandran	0.066815
-Km	0.066667
-Ck	0.066372
 Nayak	0.066227
 Masud	0.066082
 Verma	0.065938
@@ -214,11 +205,9 @@ Saab	0.064685
 Sandhu	0.064416
 Stha	0.064150
 Alkaabi	0.064018
-Kv	0.063888
 Subba	0.063628
 Manik	0.063500
 Azad	0.063372
-Tmg	0.063246
 Bandara	0.063119
 Shafi	0.062994
 Muthu	0.062746
@@ -228,7 +217,6 @@ Kumal	0.062378
 Shahin	0.062257
 Majeed	0.062137
 Ahammed	0.062017
-Vp	0.061898
 Sekh	0.061780
 Vai	0.061663
 Pokhrel	0.061546
@@ -243,12 +231,8 @@ Kanxo	0.060634
 Samad	0.060523
 Shan	0.060412
 Alli	0.060302
-Tk	0.060193
-Qa	0.060084
-Grg	0.059976
 Rafi	0.059868
 Nawaz	0.059761
-Mp	0.059549
 Harun	0.059131
 Parsad	0.059028
 Bhuiyan	0.058926
@@ -258,13 +242,11 @@ Sampath	0.058521
 Awan	0.058421
 Rajbhar	0.058321
 Siddiqui	0.058222
-Pm	0.058124
 Prajapati	0.057928
 Gamal	0.057831
 Jha	0.057735
 Gujjar	0.057639
 Jaan	0.057544
-Vk	0.057448
 Hosain	0.057354
 Gazi	0.057260
 Alsulaiti	0.057073
@@ -278,7 +260,6 @@ Mehmood	0.056077
 Farooq	0.055902
 Pathan	0.055815
 Azeez	0.055641
-Cp	0.055556
 Azam	0.055470
 Dulal	0.055385
 Malla	0.055300
@@ -289,10 +270,8 @@ Dewan	0.054882
 Kumawat	0.054800
 Alamgir	0.054718
 Deep	0.054636
-Bd	0.054554
 Sarma	0.054473
 Almohannadi	0.054393
-Tp	0.054313
 Bhusal	0.054153
 Javed	0.054074
 Babul	0.053995
@@ -303,7 +282,6 @@ Heart	0.053683
 Shahzad	0.053606
 Wazir	0.053529
 Alabdulla	0.053225
-Pv	0.053149
 De Guzman	0.053000
 Degf/J	0.052926
 Almalki	0.052852
@@ -328,10 +306,8 @@ Sri	0.051367
 Nadeem	0.051299
 Kannur	0.051232
 Baral	0.051164
-Ks	0.051031
 Nasar	0.050965
 Dhimal	0.050899
-Gc	0.050767
 Moktan	0.050702
 Baig	0.050637
 Panday	0.050572
@@ -348,7 +324,6 @@ Narayanan	0.049752
 Alauddin	0.049690
 Regmi	0.049629
 Diwana	0.049568
-Kt	0.049507
 Mansur	0.049447
 Kawari	0.049386
 Raheem	0.049326
@@ -356,7 +331,6 @@ Hashim	0.049266
 Kasim	0.049207
 Sikder	0.049147
 Sohag	0.049088
-Gm	0.049029
 Almannai	0.048970
 Pasha	0.048912
 Jasim	0.048795
@@ -375,13 +349,10 @@ Chacko	0.047946
 Farook	0.047891
 Jaiswal	0.047836
 Milon	0.047782
-Ed	0.047727
 Almansoori	0.047673
 Rafiq	0.047565
-Ddg	0.047511
 Joshi	0.047458
 Razak	0.047351
-Nk	0.047298
 Sanu	0.047246
 Vishwakarma	0.047193
 Arman	0.047140

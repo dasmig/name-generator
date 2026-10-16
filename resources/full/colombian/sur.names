@@ -724,7 +724,6 @@ Artunduaga	0.036370
 Perlaza	0.036346
 Medrano	0.036322
 Rada	0.036298
-Lds	0.036250
 Lancheros	0.036226
 Arredondo	0.036202
 Izquierdo	0.036179
@@ -896,7 +895,6 @@ Barona	0.032564
 Ducuara	0.032547
 Orejuela	0.032530
 Anzola	0.032513
-Sdvsf	0.032496
 Gualdron	0.032478
 Builes	0.032461
 Mar	0.032444
@@ -938,7 +936,6 @@ Sanguino	0.031782
 Pimienta	0.031766
 Usma	0.031750
 Mancipe	0.031734
-Cdlm	0.031718
 Cáceres	0.031702
 Gualteros	0.031686
 Rodelo	0.031670
@@ -1063,8 +1060,6 @@ Paniagua	0.029788
 Rebolledo	0.029775
 Calero	0.029761
 Diaz Diaz	0.029748
-Cm	0.029735
-Cr	0.029722
 Torre	0.029709
 Lujan	0.029696
 Baldovino	0.029683
@@ -1093,7 +1088,6 @@ Gerrero	0.029386
 Rodriquez	0.029374
 Bolívar	0.029361
 Rave	0.029348
-Brs	0.029336
 Candelo	0.029323
 Talero	0.029311
 Carrasquilla	0.029285
@@ -1197,7 +1191,6 @@ Leguizamo	0.028072
 Timana	0.028050
 Madroñero	0.028039
 Grijalba	0.028028
-Rm	0.028017
 Chávez	0.027995
 Gelves	0.027984
 Ocoro	0.027973
@@ -1301,7 +1294,6 @@ Fragozo	0.026909
 Riasco	0.026900
 Ipuana	0.026890
 Carvajalino	0.026880
-Cg	0.026861
 Valera	0.026851
 Alcala	0.026841
 Chantre	0.026832
@@ -1349,9 +1341,6 @@ Landinez	0.026435
 Tuiran	0.026426
 Mueses	0.026417
 Menco	0.026407
-Gc	0.026389
-Gr	0.026380
-Rg	0.026361
 Martín	0.026334
 Carcamo	0.026325
 Ramiirez	0.026316
@@ -1442,7 +1431,6 @@ Mieles	0.025565
 Rivillas	0.025557
 Panesso	0.025549
 Soriano	0.025540
-Gp	0.025532
 Pestana	0.025524
 Tombe	0.025516
 Carrera	0.025507
@@ -1461,11 +1449,7 @@ Goyes	0.025408
 Santofimio	0.025400
 Vaquiro	0.025392
 Epieyu	0.025384
-Bc	0.025375
-Vs	0.025367
-Bm	0.025359
 Ag	0.025351
-Jj	0.025343
 Manga	0.025335
 Palomo	0.025327
 Roca	0.025318
@@ -1489,7 +1473,6 @@ Poloche	0.025174
 Pachón	0.025166
 Lambraño	0.025158
 De Alba	0.025150
-Pc	0.025142
 Gaspar	0.025134
 Fino	0.025118
 Monsalvo	0.025110
@@ -1515,7 +1498,6 @@ Otavo	0.024961
 Tulcan	0.024945
 Canchila	0.024938
 Rudas	0.024930
-Mp	0.024922
 Montano	0.024907
 Mayor	0.024899
 Chico	0.024891
@@ -1540,7 +1522,6 @@ Gomez Ramirez	0.024739
 Pirela	0.024731
 Perozo	0.024723
 Campiño	0.024716
-Mfc	0.024708
 Jiraldo	0.024701
 Tinjaca	0.024693
 Cuastumal	0.024686
@@ -1549,7 +1530,6 @@ Getial	0.024671
 Sucerquia	0.024663
 Mona	0.024656
 Aza	0.024648
-Sc	0.024626
 Verano	0.024618
 Barriga	0.024603
 Roldán	0.024596
@@ -1572,7 +1552,6 @@ Capacho	0.024470
 Holguín	0.024463
 Escarraga	0.024456
 Bernate	0.024448
-Jm	0.024441
 Matta	0.024434
 Ordonez	0.024427
 Abreu	0.024419
@@ -1600,7 +1579,6 @@ Joaqui	0.024268
 Cajamarca	0.024261
 Lasprilla	0.024254
 Atuesta	0.024246
-Dc	0.024239
 Cordova	0.024232
 Coba	0.024225
 Cristiano	0.024218
@@ -1637,9 +1615,6 @@ Utria	0.024008
 Luengas	0.024001
 Gelpud	0.023994
 Moncaleano	0.023987
-Cv	0.023980
-Rs	0.023973
-Fc	0.023966
 Llanes	0.023953
 Alcazar	0.023946
 Vázquez	0.023925
@@ -1670,7 +1645,6 @@ Piraquive	0.023756
 Mongui	0.023749
 Raigosa	0.023742
 Ovallos	0.023736
-Pg	0.023729
 Labrador	0.023722
 Sotto	0.023716
 Valiente	0.023709
@@ -1707,8 +1681,6 @@ Guaca	0.023492
 Visbal	0.023486
 Villero	0.023479
 Theran	0.023473
-Mv	0.023466
-Jc	0.023460
 Africano	0.023440
 Días	0.023434
 Fuente	0.023427
@@ -1788,8 +1760,6 @@ Fonnegra	0.022942
 Algarra	0.022936
 Sequeda	0.022930
 Art	0.022923
-Cb	0.022917
-Bg	0.022905
 Gracias	0.022899
 Nino	0.022893
 Maca	0.022887
@@ -1827,9 +1797,7 @@ Turriago	0.022698
 Quirama	0.022692
 Kintero	0.022686
 Abad	0.022680
-Vc	0.022675
 Mayo	0.022669
-Sg	0.022663
 Mata	0.022657
 Cardoza	0.022640
 Benito	0.022634
@@ -1863,10 +1831,8 @@ Lloreda	0.022473
 Socarras	0.022468
 Giraldo Lopez	0.022462
 Dulcey	0.022456
-Gs	0.022451
 Santo	0.022439
 Nunez	0.022434
-Gb	0.022428
 Bermejo	0.022422
 Josa	0.022406
 Negro	0.022400
@@ -1918,7 +1884,6 @@ Roqueme	0.022146
 Uparela	0.022140
 Fuquen	0.022135
 Paipa	0.022130
-Jp	0.022124
 Frias	0.022119
 Lazo	0.022113
 Mota	0.022108
@@ -1961,7 +1926,6 @@ Hormaza	0.021895
 Paba	0.021890
 Torregroza	0.021884
 Agualimpia	0.021879
-Ml	0.021874
 Donato	0.021869
 Pere	0.021863
 Cas	0.021853
@@ -2013,10 +1977,7 @@ Löpëz	0.021622
 Villabon	0.021617
 Tunubala	0.021612
 Cuaspud	0.021607
-Gt	0.021602
 Sala	0.021597
-Lm	0.021592
-Lp	0.021587
 Olivar	0.021582
 Verde	0.021572
 Bandera	0.021567
@@ -2073,8 +2034,6 @@ Lopez Giraldo	0.021310
 Tautiva	0.021306
 De Castro	0.021301
 Pai	0.021296
-Rv	0.021291
-Vg	0.021272
 Pelayo	0.021267
 Pastor	0.021262
 Barber	0.021257
@@ -2137,18 +2096,13 @@ Prasca	0.020961
 Varelas	0.020956
 Toncel	0.020952
 Güiza	0.020947
-Pm	0.020943
 Ap	0.020938
 Delacruz	0.020934
-Vr	0.020929
-Tc	0.020924
 Ditta	0.020920
 Ii	0.020915
-Bv	0.020911
 Gordon	0.020906
 Chima	0.020901
 Grande	0.020892
-Lc	0.020888
 Oc	0.020879
 Ernandes	0.020874
 Zurita	0.020870
@@ -2204,7 +2158,6 @@ Avirama	0.020637
 Numpaque	0.020633
 Marcelo	0.020628
 Malo	0.020620
-Gv	0.020615
 Dimas	0.020607
 Palomares	0.020602
 De La Vega	0.020598
@@ -2273,7 +2226,6 @@ Marcillo	0.020324
 Chona	0.020319
 Caldon	0.020315
 Valdelamar	0.020311
-Pt	0.020307
 Sad	0.020303
 Lema	0.020299
 Baltazar	0.020294
@@ -2284,7 +2236,6 @@ River	0.020261
 Ruda	0.020257
 Riko	0.020244
 Vida	0.020240
-Hc	0.020236
 Albino	0.020228
 Flow	0.020224
 Cosme	0.020220
@@ -2364,18 +2315,12 @@ Garcia Quintero	0.019920
 Siabato	0.019917
 Dangond	0.019913
 Av	0.019909
-Tr	0.019905
-Js	0.019901
-Pb	0.019897
-Sf	0.019889
-Hp	0.019885
 Basilio	0.019881
 Tobias	0.019877
 Yaya	0.019873
 Mor	0.019869
 Pana	0.019865
 Arguelles	0.019858
-Cl	0.019854
 Mile	0.019850
 Ramo	0.019842
 Tole	0.019838
@@ -2466,18 +2411,13 @@ Panche	0.019503
 Yaruro	0.019499
 Gomez Jimenez	0.019496
 Cajiao	0.019492
-Ct	0.019488
 Home	0.019485
-Dg	0.019481
-Jd	0.019477
 Smit	0.019474
 Amu	0.019470
 Barba	0.019466
 Balbin	0.019462
-Gl	0.019459
 Zoto	0.019448
 Franko	0.019444
-Cc	0.019440
 Kids	0.019437
 Pupo	0.019433
 Petit	0.019429
@@ -2600,18 +2540,14 @@ Cante	0.019014
 De Aguas	0.019011
 Piedraita	0.019007
 Britto	0.019004
-Cj	0.019000
 Paris	0.018997
-Bp	0.018993
 Rio	0.018990
 San Juan	0.018987
 Gar	0.018983
-Hg	0.018980
 Pe	0.018969
 Catalan	0.018966
 Paloma	0.018959
 Velarde	0.018956
-Lg	0.018952
 Corpus	0.018949
 Vila	0.018946
 Suta	0.018942
@@ -2731,9 +2667,6 @@ Giiraldo	0.018557
 Jimeno	0.018554
 Labrada	0.018550
 Mican	0.018547
-Vp	0.018544
-Rd	0.018541
-Rz	0.018534
 Alv	0.018531
 Domingues	0.018522
 Lucio	0.018519
@@ -2860,19 +2793,14 @@ Berrío	0.018137
 Montagut	0.018134
 Paisa	0.018131
 Cujia	0.018128
-Rc	0.018119
-Rt	0.018116
 Blue	0.018113
-Rh	0.018110
 Villan	0.018107
-Lr	0.018095
 Taba	0.018092
 Her	0.018089
 Kano	0.018086
 Grillo	0.018083
 Tuta	0.018075
 Lombo	0.018069
-Cf	0.018066
 Grosso	0.018060
 Memes	0.018054
 Matoma	0.018051
@@ -2903,7 +2831,6 @@ Góngora	0.017975
 Ridriguez	0.017972
 Juez	0.017969
 Olivella	0.017966
-Prz	0.017963
 Rojaz	0.017961
 Mandon	0.017958
 Muñozz	0.017955
@@ -3014,14 +2941,11 @@ Soacha	0.017656
 Pasaje	0.017653
 Valencia Giraldo	0.017650
 Jimenez Hernandez	0.017647
-Pv	0.017645
 Angeles	0.017642
 Va	0.017639
 House	0.017636
 Mila	0.017634
-Dp	0.017631
 London	0.017628
-Dz	0.017625
 Cris	0.017623
 Val	0.017617
 Rod	0.017614
@@ -3035,7 +2959,6 @@ Mix	0.017590
 Angola	0.017587
 Cristo	0.017584
 Baza	0.017582
-Jg	0.017579
 Arriaga	0.017576
 Cuta	0.017574
 Espindola	0.017571
@@ -3134,7 +3057,6 @@ Marin Gomez	0.017314
 Salgar	0.017311
 Tibaquira	0.017308
 Lambis	0.017306
-Frv	0.017303
 Cogua	0.017301
 Cardona Gomez	0.017298
 Rodriguez Beltran	0.017295
@@ -3195,12 +3117,10 @@ Spa	0.017155
 Pavi	0.017152
 Valerio	0.017147
 Najar	0.017145
-Gd	0.017142
 Inocencio	0.017140
 Magallanes	0.017137
 Delarosa	0.017132
 Saya	0.017130
-Rl	0.017127
 Salsa	0.017125
 Morante	0.017122
 Gon	0.017120
@@ -3391,10 +3311,8 @@ Rincon Rodriguez	0.016655
 Anteliz	0.016653
 Cermeño	0.016650
 Ramirez Jimenez	0.016648
-Tg	0.016646
 Ul	0.016644
 Os	0.016641
-Vb	0.016639
 Abdala	0.016637
 Ce	0.016634
 Dos	0.016632
@@ -3486,7 +3404,6 @@ Moreno Ruiz	0.016422
 Curvelo	0.016420
 Amariz	0.016418
 Carreno	0.016416
-Hdz	0.016413
 Badel	0.016411
 Muñoz Torres	0.016409
 Gonzalez Alvarez	0.016407
@@ -3540,7 +3457,6 @@ Sarasty	0.016304
 Ramirez Osorio	0.016302
 Ariza Ariza	0.016300
 Inagan	0.016297
-Rxn	0.016295
 Erira	0.016293
 Sanchez Quintero	0.016291
 Ibarbo	0.016289
@@ -3613,21 +3529,16 @@ Bolañoz	0.016144
 Ibagon	0.016142
 Gomez Duque	0.016140
 Mass	0.016137
-Nc	0.016135
 Feliciano	0.016133
-Ls	0.016129
 Carillo	0.016127
-Fg	0.016123
 Fadul	0.016121
 Mart	0.016119
-Lb	0.016116
 Pascal	0.016114
 Fit	0.016112
 Raga	0.016110
 Acuna	0.016108
 Oro	0.016106
 Uchiha	0.016104
-Jl	0.016102
 Paja	0.016100
 Baca	0.016098
 Freefire	0.016096
@@ -3857,7 +3768,6 @@ Desorden	0.015631
 Duque Gomez	0.015629
 Gulfo	0.015627
 Contento	0.015625
-Cpdj	0.015623
 Hernandez Jimenez	0.015621
 Florez Garcia	0.015619
 Lorza	0.015617
@@ -3907,13 +3817,9 @@ Troches	0.015536
 Gomez Ospina	0.015534
 Guauque	0.015532
 Pretelt	0.015530
-Bt	0.015527
-Pl	0.015521
 Ibanez	0.015519
-Gf	0.015517
 Kun	0.015514
 Casa	0.015512
-Vl	0.015510
 Moli	0.015508
 Duncan	0.015506
 Manzur	0.015504
@@ -4243,13 +4149,11 @@ Tepud	0.014919
 Malpud	0.014917
 Velaides	0.014915
 Amell	0.014914
-Frbs	0.014912
 Cañizales	0.014910
 Saurith	0.014909
 Layos	0.014907
 Hernandez Quintero	0.014905
 Rodriguez Lozano	0.014904
-Pj	0.014902
 Noble	0.014899
 Ty	0.014897
 Pink	0.014896
@@ -4260,12 +4164,10 @@ Cerezo	0.014889
 Fe	0.014887
 Howard	0.014886
 Tao	0.014884
-Gz	0.014882
 Alian	0.014881
 Laya	0.014879
 Uno	0.014877
 Dasa	0.014876
-Jf	0.014874
 Lago	0.014872
 Bechara	0.014871
 Prins	0.014868
@@ -4303,7 +4205,6 @@ Asevedo	0.014805
 Basques	0.014804
 Lavado	0.014802
 Leaño	0.014801
-Cz	0.014799
 Vive	0.014797
 Vence	0.014796
 Aviila	0.014794
@@ -4323,7 +4224,6 @@ Aristi	0.014773
 Bonfante	0.014772
 Castiillo	0.014770
 Conrrado	0.014768
-Gmz	0.014767
 Arrazola	0.014765
 Chiran	0.014762
 Maje	0.014760
@@ -4384,7 +4284,6 @@ Sanchez Peña	0.014674
 Castro Herrera	0.014671
 Diaz Ramos	0.014669
 Zarraga	0.014668
-Tqm	0.014666
 Pelaes	0.014663
 Ramirez Romero	0.014662
 Romero Ramirez	0.014660
@@ -4655,21 +4554,17 @@ Villamor	0.014257
 Raad	0.014254
 Tian	0.014252
 Simpson	0.014251
-Jh	0.014249
 De Torres	0.014248
 Gay	0.014245
 De Dios	0.014244
 Dayan	0.014242
 Golu	0.014239
 Jhonson	0.014238
-Jv	0.014236
 Bonita	0.014235
 Rap	0.014234
 Castle	0.014232
 Sigua	0.014231
-Rf	0.014229
 Baptista	0.014226
-Gj	0.014225
 Bike	0.014222
 Fran	0.014221
 Paso	0.014218
@@ -4679,7 +4574,6 @@ Tete	0.014208
 Latino	0.014203
 Floriano	0.014200
 Caita	0.014199
-Dt	0.014198
 Silva Silva	0.014196
 Noy	0.014195
 Duartes	0.014193
@@ -5193,10 +5087,7 @@ Deleon	0.013504
 Fayad	0.013502
 Zam	0.013501
 Asis	0.013500
-Pd	0.013498
-Fs	0.013496
 Alva	0.013495
-Dv	0.013493
 Roche	0.013491
 Samaniego	0.013490
 Pancho	0.013489
@@ -5214,7 +5105,6 @@ Londo	0.013472
 Celi	0.013469
 Mio	0.013468
 Iza	0.013467
-Ld	0.013466
 Agua	0.013464
 Arisa	0.013463
 Bru	0.013461
@@ -5223,7 +5113,6 @@ Arte	0.013458
 Per	0.013457
 Alsina	0.013456
 Primo	0.013455
-Lh	0.013452
 Araújo	0.013451
 Passos	0.013450
 Numa	0.013447
@@ -5234,7 +5123,6 @@ Fereira	0.013443
 Tambo	0.013441
 Laza	0.013440
 Pedroso	0.013439
-Zc	0.013438
 Egas	0.013436
 Siilva	0.013435
 Canela	0.013433
@@ -5272,7 +5160,6 @@ Guebara	0.013392
 Melean	0.013391
 Revollo	0.013389
 Cordon	0.013388
-Vz	0.013387
 Tabera	0.013386
 Basquez	0.013385
 Var	0.013383
@@ -5302,7 +5189,6 @@ De Rojas	0.013354
 Palasios	0.013351
 Poso	0.013349
 Gilon	0.013348
-Lbt	0.013345
 Montanez	0.013344
 Atilano	0.013343
 Castellón	0.013342
@@ -5597,7 +5483,6 @@ Sanchez Londoño	0.013009
 Ramirez Bedoya	0.013008
 Cordoba Mena	0.013007
 Perea Perea	0.013006
-Lpz	0.013005
 Gomez Hoyos	0.013003
 Agudelo Giraldo	0.013002
 Lopez Murillo	0.013001
@@ -5927,7 +5812,6 @@ Esparragoza	0.012658
 Cuavas	0.012657
 Dela Rosa	0.012656
 Barcelona	0.012655
-Db	0.012654
 Omr	0.012653
 Para	0.012651
 Pi	0.012650
@@ -5949,16 +5833,13 @@ Cupa	0.012632
 Teuta	0.012631
 Fori	0.012629
 Con	0.012627
-Fl	0.012626
 Zeta	0.012625
 Lindo	0.012623
 Londra	0.012621
 Umba	0.012620
 Lobato	0.012619
 Lote	0.012618
-Fp	0.012616
 De Lima	0.012615
-Jt	0.012614
 Serge	0.012613
 Percy	0.012612
 Crüz	0.012611
@@ -6018,7 +5899,6 @@ Rojass	0.012556
 Lopeez	0.012555
 Agilar	0.012554
 Gustamante	0.012553
-Zg	0.012552
 Ceballes	0.012550
 De Vega	0.012549
 Rodrige	0.012548
@@ -6044,7 +5924,6 @@ Moriones	0.012525
 Prez	0.012524
 Asebedo	0.012524
 Sojo	0.012523
-Pf	0.012522
 Artista	0.012521
 Santaella	0.012520
 Looez	0.012519
@@ -6450,7 +6329,6 @@ Carvajal Lopez	0.012136
 Buitrago Lopez	0.012135
 Gonzalez Henao	0.012134
 Moreno Mena	0.012133
-Tlr	0.012132
 Buitrago Garcia	0.012131
 De Sanchez	0.012130
 Fiscal	0.012129
@@ -6874,19 +6752,15 @@ Rodriguez Prieto	0.011770
 Rodriguez R	0.011770
 Arango Giraldo	0.011769
 Marin Mejia	0.011768
-Vt	0.011767
 Padua	0.011766
 Ov	0.011764
 Steel	0.011763
 Dita	0.011762
-Bf	0.011761
-Vh	0.011760
 Aries	0.011759
 App	0.011758
 Sira	0.011757
 San Jose	0.011757
 Diamante	0.011756
-Vd	0.011755
 Cars	0.011754
 Nazareno	0.011753
 Tano	0.011752
@@ -6899,26 +6773,21 @@ Ley	0.011747
 Navales	0.011745
 Barro	0.011744
 Meche	0.011744
-Bts	0.011743
-Mq	0.011741
 Penaranda	0.011740
 San Miguel	0.011740
 Hermosa	0.011739
 Sabor	0.011736
 Tor	0.011736
-Lf	0.011735
 Bega	0.011734
 Cota	0.011732
 Pera	0.011731
 Canga	0.011731
 Pire	0.011730
-Lz	0.011727
 Nates	0.011727
 Loren	0.011726
 Ciceri	0.011725
 Porta	0.011724
 Cita	0.011723
-Fv	0.011723
 Neusa	0.011717
 Americano	0.011716
 Morgado	0.011715
@@ -6926,7 +6795,6 @@ Santa Rosa	0.011712
 Rosada	0.011711
 Camela	0.011710
 Sanza	0.011709
-Zp	0.011708
 Viva	0.011707
 Chilo	0.011707
 Rolo	0.011706
@@ -6944,9 +6812,7 @@ Diz	0.011693
 Caso	0.011692
 Miel	0.011691
 Troyano	0.011691
-Hv	0.011690
 Moren	0.011688
-Qc	0.011687
 Veira	0.011687
 Conto	0.011685
 Castel	0.011684
@@ -7060,7 +6926,6 @@ Yamaha	0.011593
 Bogoya	0.011593
 Verastegui	0.011592
 Jarro	0.011591
-Qr	0.011590
 Mendoza Vargas	0.011590
 Guzman Rojas	0.011589
 Rodriguez Fernandez	0.011588
@@ -7249,7 +7114,6 @@ Geraldino	0.011446
 Machete	0.011445
 Tasco	0.011444
 Simmonds	0.011444
-Mtz	0.011443
 Paternostro	0.011442
 Gonzalez Silva	0.011441
 Silva Gonzalez	0.011441
@@ -7626,7 +7490,6 @@ Bedoya Restrepo	0.011172
 Arias Romero	0.011171
 Osorio Orozco	0.011171
 Martinez Restrepo	0.011170
-Lbk	0.011169
 Serna Ramirez	0.011168
 Jimenez Marin	0.011168
 Urresti	0.011167
@@ -7930,7 +7793,6 @@ Diaz Tovar	0.010962
 Garzon Hernandez	0.010961
 Gomez Lozano	0.010961
 Tonuzco	0.010960
-Mrtnz	0.010959
 Ospina Henao	0.010959
 Jaramillo Sanchez	0.010958
 Rambao	0.010957
@@ -8038,7 +7900,6 @@ Alvarez Cano	0.010891
 Delaossa	0.010891
 Franco Hernandez	0.010890
 De La Rans	0.010890
-Rvs	0.010889
 Duarte Rodriguez	0.010888
 Eljaiek	0.010888
 Diaz Granados	0.010887
@@ -8200,8 +8061,6 @@ Pama	0.010787
 Par	0.010786
 Arabia	0.010786
 Encarnacion	0.010785
-Fz	0.010785
-Jn	0.010784
 Manila	0.010783
 Aris	0.010783
 Villas	0.010782
@@ -8212,7 +8071,6 @@ Ando	0.010777
 Ym	0.010776
 Divina	0.010775
 Mania	0.010775
-Rx	0.010774
 Talavera	0.010773
 Rasta	0.010773
 Florida	0.010772
@@ -8223,12 +8081,10 @@ Noche	0.010770
 Agu	0.010769
 Mato	0.010768
 Sabio	0.010766
-Lj	0.010766
 Rodgers	0.010765
 Glen	0.010764
 Hawkins	0.010763
 Niz	0.010762
-Rq	0.010761
 Ort	0.010761
 Tarifa	0.010760
 Gucci	0.010759
@@ -8258,7 +8114,6 @@ Bless	0.010737
 Ico	0.010735
 Coque	0.010733
 Yeye	0.010733
-Vf	0.010732
 Chik	0.010732
 Zona	0.010730
 Cando	0.010730
@@ -8279,7 +8134,6 @@ Vento	0.010719
 Soza	0.010718
 Montes De Oca	0.010717
 Espada	0.010717
-Mtb	0.010716
 Olivarez	0.010716
 Funes	0.010715
 Brizuela	0.010714
@@ -8388,7 +8242,6 @@ Goyo	0.010649
 Torne	0.010648
 Retro	0.010647
 Creativo	0.010646
-Cq	0.010646
 Garcia Fernandez	0.010645
 Rodruguez	0.010644
 Automotriz	0.010644
@@ -8406,12 +8259,10 @@ Portes	0.010636
 Zepol	0.010636
 Magon	0.010635
 Kiing	0.010635
-Bq	0.010634
 Candelario	0.010633
 Andara	0.010632
 Gayon	0.010632
 Crow	0.010630
-Qm	0.010630
 Armijo	0.010629
 Cartajena	0.010629
 Fernandez Garcia	0.010628
@@ -9081,7 +8932,6 @@ Henao Agudelo	0.010245
 Trululu	0.010244
 Gallego Cardona	0.010244
 Dicue	0.010243
-Fdz	0.010243
 Castro Rincon	0.010242
 Kmpo	0.010241
 Lopez Carmona	0.010241
@@ -9363,7 +9213,6 @@ Perez Mesa	0.010096
 Wandurraga	0.010095
 Sendoya	0.010095
 Ocampo Osorio	0.010094
-Drb	0.010094
 Tibana	0.010093
 Ardila Rodriguez	0.010093
 Forero Gonzalez	0.010092
@@ -9867,7 +9716,6 @@ Torres Forero	0.009844
 Perez Cano	0.009844
 Torres Montoya	0.009843
 Rodriguez Rubio	0.009843
-Vlz	0.009842
 Duque Marin	0.009842
 Guegia	0.009841
 Inestroza	0.009841
@@ -10027,7 +9875,6 @@ Tauro	0.009767
 Rumba	0.009766
 Are	0.009766
 Monda	0.009766
-Td	0.009765
 Marzan	0.009765
 Rosal	0.009764
 Minu	0.009764
@@ -10059,7 +9906,6 @@ Ariz	0.009748
 Ganan	0.009748
 Bena	0.009747
 Saen	0.009747
-Tf	0.009746
 Toba	0.009746
 Pupi	0.009745
 Bozo	0.009745
@@ -10107,7 +9953,6 @@ Gomes Gomes	0.009716
 Salamandra	0.009716
 Jac	0.009715
 Barbas	0.009715
-Wb	0.009714
 Mauri	0.009714
 Skinner	0.009713
 Wey	0.009713
@@ -10117,8 +9962,6 @@ Chave	0.009711
 Ferre	0.009711
 Morenito	0.009710
 Daz	0.009708
-Qs	0.009708
-Qg	0.009707
 Lunar	0.009707
 Bellas	0.009706
 Gauna	0.009706
@@ -10286,7 +10129,6 @@ Celedón	0.009628
 Madre	0.009628
 Herre	0.009627
 Garzia	0.009627
-Crz	0.009627
 Estilos	0.009626
 Dinero	0.009625
 Prueba	0.009625
@@ -10486,7 +10328,6 @@ Andrade Garcia	0.009538
 Peña Morales	0.009537
 Rodriguez Cabrera	0.009537
 Duran Martinez	0.009536
-Mndz	0.009536
 Estrada Lopez	0.009535
 Romero Ortega	0.009535
 Salazar Suarez	0.009535
@@ -10565,7 +10406,6 @@ Vasquez Jimenez	0.009502
 Arias Cruz	0.009502
 Rios Rivera	0.009501
 Cegarra	0.009501
-Brr	0.009501
 López Ortiz	0.009500
 Hurtado Moreno	0.009500
 Martinez Camacho	0.009499
@@ -10959,7 +10799,6 @@ Caquimbo	0.009334
 Sierra Jimenez	0.009334
 Quintero Rincon	0.009334
 Camargo Camargo	0.009333
-Rpt	0.009333
 Yomayusa	0.009332
 Cordoba Gomez	0.009332
 Cantillo Martinez	0.009332
@@ -11398,7 +11237,6 @@ Moreno Rincon	0.009159
 Moreno Restrepo	0.009159
 Cucalon	0.009159
 Albán	0.009158
-Dpv	0.009158
 Galvis Hernandez	0.009157
 Leon Ruiz	0.009157
 Velez Cano	0.009157
@@ -11420,7 +11258,6 @@ Bedoya Castaño	0.009151
 Canro	0.009150
 Lacruz	0.009150
 Agudelo Rios	0.009150
-Jmnz	0.009149
 Sierra Contreras	0.009149
 Urbiñez	0.009149
 Villeros	0.009148
@@ -11776,7 +11613,6 @@ Riverita	0.009016
 Loaiza Valencia	0.009016
 Jaramilo	0.009015
 Duarte Hernandez	0.009015
-Zpt	0.009014
 Franco Muñoz	0.009014
 Osorio Aguirre	0.009014
 Simales	0.009013
@@ -11852,7 +11688,6 @@ Lopez Gaviria	0.008988
 Moreno Salazar	0.008988
 Mina Mina	0.008988
 Diaz Narvaez	0.008987
-Ptt	0.008987
 Gomez Loaiza	0.008986
 Orozco Morales	0.008986
 Gonzalez Cano	0.008985
@@ -12548,7 +12383,6 @@ Gomez Nieto	0.008742
 Gallego Sanchez	0.008742
 Franco Henao	0.008742
 Rodríguez Diaz	0.008741
-Rhlm	0.008741
 Quintero Florez	0.008741
 Alvarez Castaño	0.008740
 Restrepo Castro	0.008740
@@ -13038,7 +12872,6 @@ Pastes	0.008581
 Diaz Buitrago	0.008581
 Chaquea	0.008581
 Hernandez Marquez	0.008580
-Hrndz	0.008580
 Paez Ortiz	0.008580
 Lopez Duarte	0.008579
 Diiazz	0.008579
@@ -13054,7 +12887,6 @@ Gonzalez Murillo	0.008576
 Rendon Valencia	0.008576
 Toro Quintero	0.008576
 Trujillo Valencia	0.008575
-Hndz	0.008575
 Mejia Acosta	0.008575
 Torres Arango	0.008574
 Urmendiz	0.008574
@@ -13095,7 +12927,6 @@ Franco Montoya	0.008563
 Gavalo	0.008563
 Martinez Trujillo	0.008562
 Suarez Correa	0.008562
-Sls	0.008562
 Cortex	0.008561
 Herrara	0.008561
 Nuvan	0.008561
@@ -13118,7 +12949,6 @@ Manrike	0.008556
 Benavides Torres	0.008555
 Rueda Garcia	0.008555
 Torres Mesa	0.008555
-Mñz	0.008555
 Rojas Orozco	0.008554
 Cinfuentes	0.008554
 Nieto Torres	0.008554
@@ -13246,11 +13076,9 @@ Alz	0.008516
 Navaz	0.008515
 Cinco	0.008515
 Moras	0.008515
-Tkd	0.008514
 Sayo	0.008514
 Topa	0.008514
 Amante	0.008513
-Tkm	0.008513
 Oneill	0.008513
 Saga	0.008513
 Tena	0.008512
@@ -13279,9 +13107,6 @@ Bubu	0.008505
 Oria	0.008504
 Arb	0.008504
 Videos	0.008504
-Zb	0.008503
-Fx	0.008503
-Ln	0.008503
 Saes	0.008502
 Pepa	0.008502
 Duro	0.008502
@@ -13315,7 +13140,6 @@ Bros	0.008490
 Bross	0.008490
 Tapi	0.008490
 Punto	0.008490
-Jz	0.008489
 Criss	0.008489
 Core	0.008488
 Koral	0.008487
@@ -13357,7 +13181,6 @@ Riquelme	0.008470
 Misse	0.008469
 Juvenil	0.008468
 Brava	0.008468
-Zv	0.008468
 Yohanna	0.008468
 Alvez	0.008467
 Sauca	0.008467
@@ -13370,7 +13193,6 @@ Arroz	0.008465
 Pini	0.008464
 Carro	0.008464
 Mallungo	0.008463
-Pq	0.008463
 Barrionuevo	0.008462
 Cejas	0.008462
 Amarilla	0.008462
@@ -13511,7 +13333,6 @@ Once	0.008418
 Corres	0.008417
 Sonrisas	0.008417
 Navarra	0.008417
-Rjs	0.008416
 Marun	0.008416
 Montalban	0.008416
 Basque	0.008416
@@ -13614,7 +13435,6 @@ Andrae	0.008384
 Tru	0.008384
 Crew	0.008384
 Ceren	0.008383
-Qv	0.008383
 Tuning	0.008383
 Cru	0.008382
 Wear	0.008382
@@ -13622,7 +13442,6 @@ Mesu	0.008382
 Churi	0.008381
 Yr	0.008381
 Tua	0.008381
-Std	0.008381
 Tintin	0.008380
 Carlier	0.008380
 Paque	0.008379
@@ -13638,12 +13457,10 @@ Sofan	0.008376
 Mclean	0.008376
 Esmith	0.008376
 Barney	0.008376
-Mls	0.008375
 Arc	0.008375
 Flores Flores	0.008374
 Barbery	0.008374
 Charcas	0.008374
-Qp	0.008374
 Garcia Flores	0.008373
 Otoya	0.008373
 Vargas Fernandez	0.008373
@@ -13655,7 +13472,6 @@ Sespedes	0.008371
 Prinss	0.008371
 Fernandez Gutierrez	0.008370
 Rodriguez Cuellar	0.008370
-Qb	0.008370
 Gutierrez Ramos	0.008369
 Gardeazabal	0.008369
 Balcázar	0.008369
@@ -13670,7 +13486,6 @@ Pinto Vargas	0.008367
 Mendoza Gonzales	0.008366
 Aguilar Perez	0.008366
 Herrera Fernandez	0.008365
-Gq	0.008365
 Vargas Pinto	0.008365
 Rocha Rodriguez	0.008364
 Cuellar Garcia	0.008364
@@ -14113,7 +13928,6 @@ Muñoz Avila	0.008236
 Lavoe	0.008235
 Perez Sepulveda	0.008235
 Gonzalez Lara	0.008235
-Jsjs	0.008234
 Peña Silva	0.008234
 Silva Peña	0.008234
 Gonzalez Guerra	0.008234
@@ -14453,7 +14267,6 @@ Melende	0.008141
 Leche	0.008141
 Valarezo	0.008141
 Grijalva	0.008141
-Lsp	0.008140
 Villacres	0.008140
 Vinueza	0.008140
 Hernandez Nieto	0.008140
@@ -15047,7 +14860,6 @@ Rivera Guerrero	0.007984
 Suarez Montoya	0.007984
 Duarte Vargas	0.007984
 Alvarado Martinez	0.007983
-Bmx	0.007983
 Franco Ospina	0.007983
 Sanchez Zambrano	0.007983
 Mejia Ramos	0.007982
@@ -15704,7 +15516,6 @@ Diaz Castellanos	0.007821
 Triana Lopez	0.007820
 Frontado	0.007820
 Quiroga Moreno	0.007820
-Jdc	0.007820
 Montoya Aguirre	0.007819
 Romero Meza	0.007819
 Torres Jaimes	0.007819
@@ -16341,7 +16152,6 @@ Duque Jimenez	0.007671
 Romero Martínez	0.007671
 Janamejoy	0.007671
 Toro Arango	0.007670
-Gnzlz	0.007670
 Soto Duque	0.007670
 Suarez Zapata	0.007670
 Bustos Garcia	0.007669
@@ -16391,7 +16201,6 @@ Daza Hernandez	0.007660
 Puentes Rodriguez	0.007659
 Herrera Garzon	0.007659
 Quitián	0.007659
-Rdgz	0.007659
 Herrera Franco	0.007658
 Mendiz	0.007658
 Garcia Alarcon	0.007658
@@ -16578,7 +16387,6 @@ He He	0.007617
 Florez Arrieta	0.007617
 Osorio Velasquez	0.007617
 Cardenas Osorio	0.007616
-Rdz	0.007616
 Jimenez Calderon	0.007616
 Agudelo Vasquez	0.007616
 Pajajoy	0.007615
@@ -16835,7 +16643,6 @@ Loaiza Restrepo	0.007560
 Ruiz Ochoa	0.007559
 Guerrero Mejia	0.007559
 Angarita Garcia	0.007559
-Snchz	0.007559
 Gallego Rios	0.007558
 Lopez Garces	0.007558
 Peña Ortega	0.007558
@@ -17231,7 +17038,6 @@ Serna Mejia	0.007475
 Hoyos Zapata	0.007474
 Zumaque	0.007474
 Osten	0.007474
-Lmh	0.007474
 Lara Jimenez	0.007474
 Castill	0.007473
 Ramírez Valencia	0.007473
@@ -17608,7 +17414,6 @@ Bolaños Bravo	0.007396
 Tremendista	0.007396
 Guadir	0.007395
 Sanchez Gaviria	0.007395
-Ldsp	0.007395
 Marin Zuluaga	0.007395
 Chud	0.007395
 Urrea Giraldo	0.007394

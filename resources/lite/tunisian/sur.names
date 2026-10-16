@@ -15,7 +15,6 @@ Jlassi	0.288675
 Riahi	0.277350
 Gharbi	0.267261
 Amri	0.258199
-Ca	0.250000
 Aloui	0.242536
 Arfaoui	0.235702
 Amouna	0.229416
@@ -26,13 +25,10 @@ Salhi	0.208514
 Tlili	0.204124
 Sassi	0.200000
 Med	0.192450
-Ch	0.188982
 Ben Amor	0.185695
-Kh	0.182574
 Barhoumi	0.179605
 Ayadi	0.176777
 Ferchichi	0.174078
-Ma	0.169031
 Cherif	0.164399
 Ammar	0.162221
 Amine	0.160128
@@ -108,11 +104,9 @@ Boughanmi	0.091670
 Daloula	0.091287
 Hamouda	0.090909
 Romdhani	0.090536
-Na	0.090167
 Zarzis	0.089803
 Abbassi	0.089443
 Issaoui	0.089087
-Dh	0.088388
 Ben Ammar	0.088045
 Jerbi	0.087706
 Moussa	0.087370
@@ -127,7 +121,6 @@ Manou	0.084215
 Triki	0.083918
 Arbi	0.083624
 Mahmoud	0.083333
-Ra	0.083045
 Nouri	0.082479
 Sghaier	0.082199
 Weslati	0.081923
@@ -152,14 +145,11 @@ Saadaoui	0.076249
 Mahjoub	0.076029
 Gabsi	0.075593
 Slim	0.075378
-Mh	0.074953
 Mannai	0.074329
-Ha	0.073922
 Zidi	0.073721
 Jemai	0.073521
 Dhahri	0.073324
 Rayen	0.073127
-Hm	0.072932
 Abbes	0.072739
 Ayachi	0.072548
 Lassoued	0.072357
@@ -167,7 +157,6 @@ Ghribi	0.072169
 Gasmi	0.071796
 Hannachi	0.071611
 Ghazouani	0.071247
-Bk	0.071067
 Hamami	0.070888
 Zouari	0.070711
 Harrabi	0.070535
@@ -184,7 +173,6 @@ Mzoughi	0.068680
 Abdellaoui	0.068519
 Bouaziz	0.068199
 Fatouma	0.067574
-Da	0.067420
 Ben Mansour	0.067116
 Ala	0.066965
 Saoudi	0.066667
@@ -194,7 +182,6 @@ Yahya	0.065795
 Zizou	0.065512
 Achour	0.065233
 Benali	0.065094
-La	0.064957
 Heni	0.064820
 Slimen	0.064685
 Khelifi	0.064550
@@ -217,7 +204,6 @@ Belhadj	0.061898
 Zaidi	0.061663
 Ben Mahmoud	0.061546
 Attia	0.061430
-Ba	0.061314
 Khazri	0.061199
 Neji	0.061085
 Maalaoui	0.060971
@@ -225,13 +211,11 @@ Aouini	0.060746
 Malouka	0.060302
 Houda	0.060193
 Taraji	0.060084
-Ab	0.059976
 Omrani	0.059761
 Hmidi	0.059655
 Marzouki	0.059549
 Ayedi	0.059444
 Masmoudi	0.059339
-Fa	0.059235
 Shili	0.059131
 Zribi	0.059028
 Rekik	0.058926
@@ -327,7 +311,6 @@ Kaabi	0.050315
 Jiji	0.050252
 Sahbani	0.050189
 Khmiri	0.050125
-Wa	0.050063
 Khiari	0.050000
 Ben Fraj	0.049938
 Majdoub	0.049875
@@ -335,10 +318,7 @@ Dhibi	0.049814
 Chrif	0.049690
 Sboui	0.049629
 Allagui	0.049568
-Di	0.049507
-Msk	0.049447
 Zarga	0.049266
-Sa	0.049207
 Zarrouk	0.049147
 Mnasri	0.049088
 Dziri	0.049029
@@ -346,7 +326,6 @@ Ben Moussa	0.048970
 Bouha	0.048912
 Kallel	0.048853
 Jaballah	0.048795
-Mk	0.048737
 Saadi	0.048679
 Ghorbel	0.048507
 Zoghlami	0.048450
@@ -375,10 +354,7 @@ Bacha	0.046932
 Abed	0.046881
 Chaabane	0.046778
 Idoudi	0.046727
-Tns	0.046676
-Mi	0.046474
 Marzouk	0.046374
-Rh	0.046324
 Ameur	0.046225
 Ben Ameur	0.046176
 Ajili	0.046127
@@ -398,7 +374,6 @@ Sallemi	0.045502
 Nasraoui	0.045455
 Khadhraoui	0.045314
 Rine	0.045268
-Em	0.045222
 Sahraoui	0.045175
 Mnassri	0.045129
 Nousa	0.045083

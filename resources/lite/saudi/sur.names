@@ -12,14 +12,12 @@ Islam	0.242536
 Hossain	0.218218
 Rahman	0.204124
 Singh	0.192450
-Sk	0.188982
 Yadav	0.185695
 Ullah	0.182574
 Uddin	0.179605
 Malik	0.174078
 Shah	0.171499
 Hassan	0.169031
-Al	0.156174
 Iqbal	0.154303
 Shaikh	0.152499
 Hasan	0.149071
@@ -71,8 +69,6 @@ Anwar	0.089087
 Rehman	0.088736
 Ismail	0.088045
 Akhtar	0.087706
-Ch	0.087370
-Sa	0.087039
 Gul	0.086711
 Arif	0.086387
 Rashid	0.086066
@@ -97,7 +93,6 @@ Salim	0.077382
 Said	0.077152
 Lal	0.076923
 Arshad	0.076472
-Sh	0.076029
 Bahadur	0.075810
 Zaman	0.075378
 Nadeem	0.074744
@@ -132,13 +127,11 @@ Asiri	0.067267
 Patel	0.067116
 Alzahrani	0.066815
 Hossin	0.066667
-Bd	0.066372
 Almalki	0.066227
 Rahim	0.066082
 Mirza	0.065938
 Prasad	0.065795
 Molla	0.065233
-As	0.065094
 Karim	0.064957
 Osman	0.064550
 Khalil	0.064018
@@ -165,7 +158,6 @@ Abdu	0.059339
 Hayat	0.059131
 Jani	0.058926
 Hussein	0.058621
-Pk	0.058421
 Sharif	0.058321
 Tahir	0.058222
 Alom	0.058124
@@ -173,7 +165,6 @@ Naeem	0.057928
 Gondal	0.057831
 Majeed	0.057735
 Husen	0.057639
-Ma	0.057448
 Hanif	0.057354
 Azam	0.057260
 Moh	0.057166
@@ -181,7 +172,6 @@ Ramzan	0.057073
 Riaz	0.056888
 Hamed	0.056796
 Prince	0.055815
-Kc	0.055728
 Hamid	0.055641
 Bajwa	0.055385
 Limbu	0.055216
@@ -189,8 +179,6 @@ Hossan	0.055048
 Rafiq	0.054965
 Baba	0.054718
 Jee	0.054554
-Gh	0.054473
-Kh	0.053916
 Sekh	0.053838
 Ameen	0.053683
 Hussen	0.053606
@@ -217,7 +205,6 @@ Haq	0.050965
 Omer	0.050702
 Pathan	0.050572
 India	0.050508
-Mo	0.050443
 Alzhrani	0.050315
 Mon	0.050125
 Yasin	0.050063
@@ -252,7 +239,6 @@ Latif	0.047405
 Siraj	0.047351
 Otb	0.047246
 Alhrbi	0.047193
-Ab	0.047140
 Shafiq	0.047036
 Alali	0.046829
 John	0.046727
@@ -276,7 +262,6 @@ Asghar	0.045455
 Samir	0.045408
 Qasim	0.045314
 Hussin	0.045268
-Sy	0.045222
 Sing	0.045083
 Sagar	0.045038
 Alshammari	0.044947

@@ -246,7 +246,6 @@ Diop	0.063119
 Exposito	0.062994
 Salvador	0.062869
 Castaño	0.062746
-Cm	0.062622
 Calderon	0.062378
 Guillen	0.062257
 De La Rosa	0.062137
@@ -288,7 +287,6 @@ Navas	0.058124
 Arenas	0.058026
 Puig	0.057928
 Marín	0.057831
-Rm	0.057735
 Soria	0.057639
 Vallejo	0.057544
 Pozo	0.057448
@@ -310,12 +308,9 @@ Rodriguez Fernandez	0.056077
 Martinez Lopez	0.055989
 Marco	0.055902
 Pulido	0.055815
-Gc	0.055728
-Cg	0.055641
 Saavedra	0.055556
 Cortés	0.055470
 Fernandez Gonzalez	0.055385
-Gr	0.055300
 Mata	0.055216
 Salinas	0.055132
 Polo	0.055048
@@ -345,8 +340,6 @@ Lopez Fernandez	0.053225
 Rodriguez Perez	0.053149
 Leal	0.053074
 Escribano	0.053000
-Cr	0.052926
-Rg	0.052852
 Lopez Rodriguez	0.052778
 Barrios	0.052705
 Castellano	0.052632
@@ -356,7 +349,6 @@ Palma	0.052414
 Lopez Perez	0.052342
 Amaya	0.052271
 Carrera	0.052200
-Mp	0.052129
 Mejia	0.052058
 Martinez Sanchez	0.051988
 Traore	0.051917
@@ -383,7 +375,6 @@ Alcaraz	0.050379
 Cardenas	0.050315
 Corral	0.050189
 Garcia Gomez	0.050125
-Bm	0.050063
 Vela	0.050000
 Riera	0.049938
 Marrero	0.049875
@@ -406,14 +397,11 @@ Rosales	0.048912
 Figueroa	0.048853
 Ochoa	0.048737
 Gonzalez Lopez	0.048679
-Pm	0.048622
 Sala	0.048564
 Cordoba	0.048507
 Carballo	0.048450
-Gs	0.048393
 Bilbao	0.048337
 Sanchez Rodriguez	0.048280
-Gp	0.048224
 Pino	0.048168
 Castilla	0.048113
 Prado	0.048057
@@ -427,7 +415,6 @@ Ruiz Garcia	0.047673
 Keita	0.047619
 Carvajal	0.047565
 Gonzalez Sanchez	0.047511
-Pg	0.047458
 Moran	0.047405
 Balde	0.047351
 Llorente	0.047298
@@ -437,13 +424,10 @@ Lazaro	0.047088
 Velazquez	0.047036
 Bosch	0.046984
 Glez	0.046932
-Gm	0.046881
-Sg	0.046829
 Espinoza	0.046778
 Perez Martinez	0.046727
 Sanchez Gonzalez	0.046676
 Fajardo	0.046625
-Sc	0.046575
 Moral	0.046524
 Ballester	0.046474
 Sanchez Perez	0.046424
@@ -451,7 +435,6 @@ Sanchez Fernandez	0.046374
 Belmonte	0.046324
 Cantero	0.046274
 Fernandez Martinez	0.046225
-Mg	0.046176
 Tapia	0.046127
 Navarrete	0.046078
 Perea	0.046029
