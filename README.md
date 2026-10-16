@@ -133,6 +133,9 @@ make
 make test
 make test-embed
 
+# Benchmarks (results in build/bench.tsv)
+make bench
+
 # Code coverage
 make coverage
 

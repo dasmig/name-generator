@@ -157,6 +157,30 @@ jobs:
             -o build/test_runner.js tests/tests.cpp tests/catch_amalgamated.cpp
           node build/test_runner.js
 
+  # Benchmarks: a report, not a gate yet (see bench/bench.hpp), uploaded as
+  # the bench-report artifact.
+  bench:
+    name: Benchmarks (report)
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install LLVM 18 and libstdc++ 14
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y g++-14 clang-18
+          echo "/usr/lib/llvm-18/bin" >> "$GITHUB_PATH"
+
+      - name: Run benchmarks
+        run: make bench
+
+      - name: Upload benchmark report
+        uses: actions/upload-artifact@v4
+        with:
+          name: bench-report
+          path: build/bench.tsv
+
   deploy-docs:
     needs: [build-and-test, compat, msvc, wasm]
     if: github.ref == 'refs/heads/master' && github.event_name == 'push'
