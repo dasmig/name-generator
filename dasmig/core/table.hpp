@@ -156,7 +156,7 @@ class layered_table
             for (std::size_t i = 0; i < w.rows.size(); ++i)
             {
                 if (w.removed[i]) continue;
-                kept_index.emplace(key_of(w.rows[i]), kept.size());
+                kept_index.insert(key_index::hash_of(key_of(w.rows[i])), kept.size());
                 kept.push_back(w.rows[i]);
             }
         }
@@ -220,9 +220,9 @@ class layered_table
             if (i++ > 0) joined += key_separator;
             joined += part;
         }
-        const auto it = _index.find(joined);
-        if (it == _index.end()) return std::nullopt;
-        return _rows[it->second];
+        const auto at = locate(_index, _rows, *this, joined);
+        if (!at) return std::nullopt;
+        return _rows[*at];
     }
 
     /// @brief The layers in effect, in order: the last replace layer and
@@ -254,17 +254,112 @@ class layered_table
   private:
     static constexpr char key_separator = '\x1f';
 
-    // Keys to row indices. Only looked up, never iterated, so the order of a
-    // hash map does not reach the output.
-    struct key_hash
+    // Keys to row indices, as open addressing over 32-bit slots: 16 bytes
+    // per row instead of a node and a copy of the key. A slot keeps the
+    // key's hash and its row's index; the key itself is read from the row.
+    // Only looked up, never iterated, so the order does not reach the output.
+    class key_index
     {
-        using is_transparent = void;
-        [[nodiscard]] std::size_t operator()(std::string_view key) const noexcept
+      public:
+        [[nodiscard]] static std::uint32_t hash_of(std::string_view key) noexcept
         {
-            return std::hash<std::string_view>{}(key);
+            return static_cast<std::uint32_t>(std::hash<std::string_view>{}(key));
         }
+
+        // The row whose key satisfies @p matches(row_index), among those
+        // stored under @p hash.
+        template <typename Matches>
+        [[nodiscard]] std::optional<std::size_t> find(std::uint32_t hash, Matches&& matches) const
+        {
+            if (_slots.empty()) return std::nullopt;
+            const std::size_t mask = _slots.size() - 1;
+            for (std::size_t i = hash & mask;; i = (i + 1) & mask)
+            {
+                const slot& s = _slots[i];
+                if (s.row == vacant) return std::nullopt;
+                if (s.hash == hash && matches(static_cast<std::size_t>(s.row))) return s.row;
+            }
+        }
+
+        // Add a key known to be absent.
+        void insert(std::uint32_t hash, std::size_t row)
+        {
+            if (row >= vacant) throw std::length_error("layered_table: too many rows");
+            if ((_count + 1) * 2 > _slots.size()) grow(_slots.empty() ? 16 : _slots.size() * 2);
+            place(hash, static_cast<std::uint32_t>(row));
+            ++_count;
+        }
+
+        void clear() noexcept
+        {
+            _slots.clear();
+            _count = 0;
+        }
+
+        void reserve(std::size_t rows)
+        {
+            std::size_t want = 16;
+            while (want < rows * 2) want *= 2;
+            if (want > _slots.size()) grow(want);
+        }
+
+      private:
+        static constexpr std::uint32_t vacant = static_cast<std::uint32_t>(-1);
+        struct slot
+        {
+            std::uint32_t hash{0};
+            std::uint32_t row{vacant};
+        };
+
+        void place(std::uint32_t hash, std::uint32_t row)
+        {
+            const std::size_t mask = _slots.size() - 1;
+            std::size_t i = hash & mask;
+            while (_slots[i].row != vacant) i = (i + 1) & mask;
+            _slots[i] = {hash, row};
+        }
+
+        void grow(std::size_t slots)
+        {
+            std::vector<slot> old = std::move(_slots);
+            _slots.assign(slots, slot{});
+            for (const slot& s : old)
+            {
+                if (s.row != vacant) place(s.hash, s.row);
+            }
+        }
+
+        std::vector<slot> _slots;
+        std::size_t _count{0};
     };
-    using key_index = std::unordered_map<std::string, std::size_t, key_hash, std::equal_to<>>;
+
+    // Whether @p row has the key @p joined (its key cells joined by the
+    // separator), compared without building the row's own key.
+    [[nodiscard]] bool key_matches(const tsv_row& row, std::string_view joined) const
+    {
+        for (std::size_t i = 0; i < _schema.key.size(); ++i)
+        {
+            if (i > 0)
+            {
+                if (joined.empty() || joined.front() != key_separator) return false;
+                joined.remove_prefix(1);
+            }
+            const auto cell = row[_schema.key[i]];
+            if (!joined.starts_with(cell)) return false;
+            joined.remove_prefix(cell.size());
+        }
+        return joined.empty();
+    }
+
+    [[nodiscard]] static std::optional<std::size_t> locate(const key_index& index,
+                                                            const std::vector<tsv_row>& rows,
+                                                            const layered_table& self,
+                                                            std::string_view joined)
+    {
+        return index.find(key_index::hash_of(joined), [&](std::size_t r) {
+            return self.key_matches(rows[r], joined);
+        });
+    }
 
     static constexpr std::size_t untouched = static_cast<std::size_t>(-1);
 
@@ -277,7 +372,8 @@ class layered_table
         // Per row: the layer line that added, replaced or removed it, or
         // `untouched`. Finds keys repeated within the layer.
         std::vector<std::size_t> touched;
-        key_index disabled_unloaded; // keys the layer disabled that were not loaded -> line
+        std::unordered_map<std::string, std::size_t> disabled_unloaded;
+        // keys the layer disabled that were not loaded -> line
         std::string missing_required; // a required column the layer lacks, if any
     };
 
@@ -287,14 +383,14 @@ class layered_table
                    layer_info& info) const
     {
         std::string key = key_of(row);
-        const auto existing = w.index.find(key);
-        const bool exists = existing != w.index.end();
+        const auto existing = locate(w.index, w.rows, *this, key);
+        const bool exists = existing.has_value();
         // Keys are unique within a layer, so a key is never removed and added
         // again by the same layer.
         std::size_t first_line = untouched;
         if (exists)
         {
-            first_line = w.touched[existing->second];
+            first_line = w.touched[*existing];
         }
         else if (const auto it = w.disabled_unloaded.find(key); it != w.disabled_unloaded.end())
         {
@@ -313,8 +409,8 @@ class layered_table
             }
             if (exists)
             {
-                w.removed[existing->second] = true;
-                w.touched[existing->second] = row.line();
+                w.removed[*existing] = true;
+                w.touched[*existing] = row.line();
                 ++info.removed;
                 return true;
             }
@@ -336,12 +432,12 @@ class layered_table
             {
                 throw row.error("", "key already loaded (layer is in add mode)");
             }
-            w.rows[existing->second] = row;
-            w.touched[existing->second] = row.line();
+            w.rows[*existing] = row;
+            w.touched[*existing] = row.line();
             ++info.replaced;
             return false;
         }
-        w.index.emplace(std::move(key), w.rows.size());
+        w.index.insert(key_index::hash_of(key), w.rows.size());
         w.rows.push_back(row);
         w.removed.push_back(false);
         w.touched.push_back(row.line());

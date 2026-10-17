@@ -7,6 +7,7 @@
 #include "rng.hpp"
 #include "utf8.hpp"
 
+#include <algorithm>
 #include <array>
 #include <cfloat>
 #include <charconv>
@@ -18,6 +19,7 @@
 #include <fstream>
 #include <functional>
 #include <iterator>
+#include <limits>
 #include <locale>
 #include <map>
 #include <memory>
@@ -232,6 +234,20 @@ template <typename T>
     return value;
 }
 
+// A whole stream in one allocation and one read; the byte-at-a-time
+// istreambuf_iterator costs about 5 ns a byte.
+inline std::string read_all(std::ifstream& in)
+{
+    in.seekg(0, std::ios::end);
+    const auto size = in.tellg();
+    if (size < 0) return std::string{std::istreambuf_iterator<char>{in}, std::istreambuf_iterator<char>{}};
+    std::string text(static_cast<std::size_t>(size), '\0');
+    in.seekg(0, std::ios::beg);
+    in.read(text.data(), static_cast<std::streamsize>(text.size()));
+    text.resize(static_cast<std::size_t>(in.gcount()));
+    return text;
+}
+
 // The parsed content of a document, shared by its copies and its rows.
 struct tsv_data
 {
@@ -239,8 +255,20 @@ struct tsv_data
     std::string source;
     std::vector<std::string> columns;
     std::map<std::string, std::size_t, std::less<>> column_index;
-    std::vector<std::string_view> cells;  // rows * columns, into text
-    std::vector<std::size_t> row_lines;   // 1-based
+    // A cell is where it lies in text: 8 bytes instead of a string_view's 16.
+    struct cell_span
+    {
+        std::uint32_t offset{0};
+        std::uint32_t length{0};
+    };
+    std::vector<cell_span> cells;         // rows * columns
+    std::vector<std::uint32_t> row_lines; // 1-based
+
+    [[nodiscard]] std::string_view cell_at(std::size_t i) const noexcept
+    {
+        const cell_span c = cells[i];
+        return std::string_view{text}.substr(c.offset, c.length);
+    }
     std::uint64_t hash{0};
 
     [[nodiscard]] std::optional<std::size_t> find(std::string_view name) const
@@ -437,7 +465,7 @@ class tsv_document
         {
             throw tsv_error{path.generic_string(), 0, "", "cannot open file"};
         }
-        std::string text{std::istreambuf_iterator<char>{in}, std::istreambuf_iterator<char>{}};
+        std::string text = detail::read_all(in);
         if (columns.empty())
         {
             return tsv_document{std::move(text), path.generic_string(), {}};
@@ -519,11 +547,19 @@ class tsv_document
         {
             throw tsv_error{d.source, line_of(d.text, bad), "", "invalid UTF-8"};
         }
+        // Cells and lines are held as 32-bit offsets.
+        if (d.text.size() >= std::numeric_limits<std::uint32_t>::max())
+        {
+            throw tsv_error{d.source, 0, "", "file is too large (4 GiB or more)"};
+        }
         std::string_view rest = d.text;
         if (rest.starts_with("\xEF\xBB\xBF")) rest.remove_prefix(3);
 
         const bool header = columns.empty();
         d.columns = std::move(columns);
+        // One reservation for the rows, from the line count (an upper bound
+        // when there are comments and blank lines).
+        const auto line_count = static_cast<std::size_t>(std::ranges::count(rest, '\n')) + 1;
         std::size_t line = 0;
         bool have_header = !header;
         if (!header) index_columns(0);
@@ -544,16 +580,31 @@ class tsv_document
                 have_header = true;
                 continue;
             }
-            const auto cells = split(text_line);
-            if (cells.size() > d.columns.size())
+            const auto width = d.columns.size();
+            const auto count = static_cast<std::size_t>(std::ranges::count(text_line, '\t')) + 1;
+            if (count > width)
             {
                 throw tsv_error{d.source, line, "",
-                                "row has " + std::to_string(cells.size()) + " cells but there are " +
-                                    std::to_string(d.columns.size()) + " columns"};
+                                "row has " + std::to_string(count) + " cells but there are " +
+                                    std::to_string(width) + " columns"};
             }
-            d.cells.insert(d.cells.end(), cells.begin(), cells.end());
-            d.cells.insert(d.cells.end(), d.columns.size() - cells.size(), std::string_view{});
-            d.row_lines.push_back(line);
+            if (d.row_lines.empty())
+            {
+                d.cells.reserve(line_count * width);
+                d.row_lines.reserve(line_count);
+            }
+            std::string_view remaining = text_line;
+            for (;;)
+            {
+                const auto pos = remaining.find('\t');
+                const auto cell = remaining.substr(0, pos);
+                d.cells.push_back({static_cast<std::uint32_t>(cell.data() - d.text.data()),
+                                   static_cast<std::uint32_t>(cell.size())});
+                if (pos == std::string_view::npos) break;
+                remaining.remove_prefix(pos + 1);
+            }
+            d.cells.resize(d.cells.size() + (width - count));
+            d.row_lines.push_back(static_cast<std::uint32_t>(line));
         }
         if (!have_header)
         {
@@ -624,8 +675,12 @@ class tsv_document
         const auto width = static_cast<std::ptrdiff_t>(d.columns.size());
         for (std::size_t r = 0; r < d.row_lines.size(); ++r)
         {
-            const auto first = d.cells.begin() + (static_cast<std::ptrdiff_t>(r) * width);
-            feed_row(first, first + width);
+            for (std::ptrdiff_t c = 0; c < width; ++c)
+            {
+                if (c > 0) feed("\t");
+                feed(d.cell_at((r * static_cast<std::size_t>(width)) + static_cast<std::size_t>(c)));
+            }
+            feed("\n");
         }
         return h;
     }
@@ -647,7 +702,7 @@ inline std::string_view tsv_row::cell(std::size_t index) const
 {
     const auto width = _data->columns.size();
     if (index >= width) throw std::out_of_range("tsv_row::cell: index out of range");
-    return _data->cells[(_index * width) + index];
+    return _data->cell_at((_index * width) + index);
 }
 
 inline bool tsv_row::has(std::string_view column) const

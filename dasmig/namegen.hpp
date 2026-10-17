@@ -14,6 +14,7 @@
 #include <fstream>
 #include <functional>
 #include <iterator>
+#include <limits>
 #include <map>
 #include <optional>
 #include <ostream>
@@ -769,12 +770,44 @@ class ng
     static constexpr list_kind female_surname_list = 4;
     static constexpr std::size_t list_count = 5;
 
-    // Names of one list, ready for drawing.
+    // Names of one list, ready for drawing. The names lie one after the
+    // other in a single buffer: a string each would cost 32 bytes and often
+    // an allocation on top of the name.
     struct name_pool
     {
-        std::vector<std::wstring> names;
-        std::vector<double> weights;
+        std::wstring text;               // every name, in order
+        std::vector<std::uint32_t> ends; // where each name ends in text
         core::discrete dist{1.0};
+
+        [[nodiscard]] bool empty() const noexcept { return ends.empty(); }
+
+        // Every name, as strings (the tests compare against them).
+        [[nodiscard]] std::vector<std::wstring> names() const
+        {
+            std::vector<std::wstring> out;
+            out.reserve(ends.size());
+            for (std::size_t i = 0; i < ends.size(); ++i) out.push_back(at(i));
+            return out;
+        }
+
+        [[nodiscard]] bool contains(std::wstring_view name) const
+        {
+            std::size_t first = 0;
+            for (const std::uint32_t end : ends)
+            {
+                if (std::wstring_view{text}.substr(first, end - first) == name) return true;
+                first = end;
+            }
+            return false;
+        }
+
+        // The name at @p i; throws std::out_of_range past the last.
+        [[nodiscard]] std::wstring at(std::size_t i) const
+        {
+            const std::size_t end = ends.at(i);
+            const std::size_t first = i == 0 ? 0 : ends[i - 1];
+            return text.substr(first, end - first);
+        }
     };
 
     // The hash data_hash() returns: every table's layers, by list and culture.
@@ -931,7 +964,12 @@ class ng
     {
         std::ifstream in{file, std::ios::binary};
         if (!in) throw core::tsv_error{file.string(), 0, "", "cannot open file"};
-        std::string text{std::istreambuf_iterator<char>{in}, std::istreambuf_iterator<char>{}};
+        in.seekg(0, std::ios::end);
+        const auto size = in.tellg();
+        std::string text(size > 0 ? static_cast<std::size_t>(size) : 0, '\0');
+        in.seekg(0, std::ios::beg);
+        in.read(text.data(), static_cast<std::streamsize>(text.size()));
+        text.resize(static_cast<std::size_t>(in.gcount()));
         return parse_names_(std::move(text), file.string());
     }
 
@@ -988,14 +1026,28 @@ class ng
                 pools.at(list).erase(c);
                 if (table.empty()) continue;
                 name_pool pool;
-                pool.names.reserve(table.size());
-                pool.weights.reserve(table.size());
+                std::vector<double> weights;
+                weights.reserve(table.size());
+                pool.ends.reserve(table.size());
+                // A name has at most as many characters as bytes.
+                std::size_t bytes = 0;
+                for (const auto& row : table.rows()) bytes += row["name"].size();
+                if (bytes >= std::numeric_limits<std::uint32_t>::max())
+                {
+                    throw std::length_error("name-generator: too many names in one list");
+                }
+                pool.text.reserve(bytes);
                 for (const auto& row : table.rows())
                 {
-                    pool.names.push_back(core::from_utf8(row["name"]));
-                    pool.weights.push_back(weight_of_(row));
+                    pool.text += core::from_utf8(row["name"]);
+                    pool.ends.push_back(static_cast<std::uint32_t>(pool.text.size()));
+                    weights.push_back(weight_of_(row));
                 }
-                pool.dist = core::discrete{pool.weights};
+                if (pool.text.capacity() - pool.text.size() > pool.text.size() / 8)
+                {
+                    pool.text.shrink_to_fit();
+                }
+                pool.dist = core::discrete{weights};
                 pools.at(list).emplace(c, std::move(pool));
             }
         }
@@ -1049,14 +1101,14 @@ class ng
                                            culture c, gender g, core::rng& engine)
     {
         auto it = db.find(c);
-        if (it == db.end() || it->second.names.empty())
+        if (it == db.end() || it->second.empty())
         {
             throw std::invalid_argument(
                 std::string("No ") + gender_label(g) + " names loaded for culture '" +
                 std::string{culture_name(c)} + "'");
         }
         const auto& pool = it->second;
-        return pool.names.at(pool.dist(engine));
+        return pool.at(pool.dist(engine));
     }
 
     // One forename: gender, culture and name from their own streams.
