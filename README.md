@@ -7,19 +7,17 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/dasmig/name-generator/master/LICENSE.MIT)
 [![CI](https://github.com/dasmig/name-generator/actions/workflows/ci.yml/badge.svg)](https://github.com/dasmig/name-generator/actions/workflows/ci.yml)
 [![GitHub Releases](https://img.shields.io/github/release/dasmig/name-generator.svg)](https://github.com/dasmig/name-generator/releases)
-[![GitHub Issues](https://img.shields.io/github/issues/dasmig/name-generator.svg)](https://github.com/dasmig/name-generator/issues)
 [![C++23](https://img.shields.io/badge/standard-C%2B%2B23-blue.svg)](https://en.cppreference.com/w/cpp/23)
 [![Header-only](https://img.shields.io/badge/type-header--only-green.svg)](https://github.com/dasmig/name-generator#integration)
-[![Platform](https://img.shields.io/badge/platform-linux%20|%20windows%20|%20macos-lightgrey.svg)](https://github.com/dasmig/name-generator)
 [![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue.svg)](https://dasmig.github.io/name-generator/)
 
 **[API Reference](https://dasmig.github.io/name-generator/)** · **[Usage Guide](doc/usage.md)** · **[Releases](https://github.com/dasmig/name-generator/releases)**
 
+Culturally appropriate first names and surnames from popular name databases, by culture and gender.
+
 ## Features
 
 - **Name Generation**. Randomly generates first names from popular name databases, organized by gender and culture.
-
-- **Batch Generation**. Generate thousands of results from one seed, on several threads with the same output for any thread count, optionally unique by a key, and stream them as JSON Lines or CSV (see the usage guide).
 
 - **Surname Generation**. Randomly generates surnames, organized by culture.
 
@@ -33,7 +31,11 @@
 
 - **ISO 2-Letter Codes**. `to_culture()` and `to_gender()` for converting strings to enums.
 
+- **Resource Inspection**. `has_resources()` lets you verify databases loaded before generating.
+
 - **Deterministic Seeding**. Per-call `get_name(name_request, seed)` (the request carries the gender and culture) for reproducible results, and `name::seed()` for replaying a previous generation, appended parts included.
+
+- **Batch Generation**. Generate thousands of results from one seed, on several threads with the same output for any thread count, optionally unique by a key, and stream them as JSON Lines or CSV (see the usage guide).
 
 - **Identical Everywhere**. A seed gives the same name on every compiler, standard library and CPU (GCC, Clang, MSVC, Emscripten; x86-64 and ARM64), checked by known-answer tests.
 
@@ -43,24 +45,17 @@
 
 - **Compiled-in Data**. Define `DASMIG_NAME_EMBED` to build the `lite` tier into the program, for WebAssembly and other builds without files.
 
-- **Resource Inspection**. `has_resources()` lets you verify databases loaded before generating.
-
 - **Multi-Instance Support**. Construct independent `ng` instances with their own name databases.
 
 ## Integration
 
-[`namegen.hpp`](https://github.com/dasmig/name-generator/blob/master/dasmig/namegen.hpp) is the library [released here](https://github.com/dasmig/name-generator/releases). Keep [`core.hpp`](https://github.com/dasmig/name-generator/blob/master/dasmig/core.hpp) and the [`core/`](https://github.com/dasmig/name-generator/tree/master/dasmig/core) directory ([dasmig-core](https://github.com/dasmig/dasmig-core)) in the same directory. You need to add
+[`namegen.hpp`](https://github.com/dasmig/name-generator/blob/master/dasmig/namegen.hpp) is the library [released here](https://github.com/dasmig/name-generator/releases). Keep [`core.hpp`](https://github.com/dasmig/name-generator/blob/master/dasmig/core.hpp) and the [`core/`](https://github.com/dasmig/name-generator/tree/master/dasmig/core) directory ([dasmig-core](https://github.com/dasmig/dasmig-core)) in the same directory. Add
 
 ```cpp
 #include <dasmig/namegen.hpp>
-
-// For convenience.
-using ng = dasmig::ng;
 ```
 
-to the files you want to generate names and set the necessary switches to enable C++23 (e.g., `-std=c++23` for GCC and Clang).
-
-Additionally you must supply the name generator with the [`resources`](https://github.com/dasmig/name-generator/tree/master/resources) folder also available in the [release](https://github.com/dasmig/name-generator/releases), or define `DASMIG_NAME_EMBED` to compile the `lite` tier in.
+to the files you want to use it in, and supply the [`resources`](https://github.com/dasmig/name-generator/tree/master/resources) folder (or define `DASMIG_NAME_EMBED`).
 
 Version 3 changes every seeded result; see [Migrating from v2](doc/usage.md#migrating-from-v2). Version 4 makes `name_request` the only way to call a getter; see [Migrating from v3](doc/usage.md#migrating-from-v3).
 
@@ -128,24 +123,14 @@ For the complete feature guide — cultures, chaining, thread safety, seeding, e
 ## Building
 
 ```bash
-# Example
-make
-
-# Tests (and with the lite tier compiled in)
-make test
-make test-embed
-
-# Benchmarks (results in build/bench.tsv)
-make bench
-
-# Code coverage
-make coverage
-
-# API docs
-make docs
-
-# Regenerate the compiled-in lite tier
-make embed
+make            # example
+make test       # tests
+make bench      # benchmarks, results in build/bench.tsv
+make test-embed # tests with the lite tier compiled in
+make coverage   # code coverage
+make lint       # clang-tidy
+make docs       # API docs
+make embed      # regenerate dasmig/namegen_data.hpp from resources/lite
 ```
 
 ## Compiler Support
@@ -154,24 +139,32 @@ Tested with:
 - Clang 18+ (`-std=c++23`)
 - GCC 14+ (`-std=c++23`)
 - MSVC 19.38+ (`/std:c++latest`)
+- Emscripten 3.1.74
 
 ## Dependencies
 
 | Dependency | Version | Bundled | Purpose |
 |-----------|---------|---------|---------|
-| [dasmig-core](https://github.com/dasmig/dasmig-core) | 1.0 | Yes (`core.hpp`, `core/`) | Platform-independent random engine and weighted choice, data layers, JSON |
+| [dasmig-core](https://github.com/dasmig/dasmig-core) | 1.0 | Yes (`core.hpp`, `core/`) | Platform-independent random engine and distributions, data layers, JSON |
 | [Catch2](https://github.com/catchorg/Catch2) | 3.x | Yes (amalgamated) | Unit testing |
 
 ## Related Libraries
 
 | Library | Description |
 |---------|-------------|
-| [nickname-generator](https://github.com/dasmig/nickname-generator) | Gamer-style nicknames |
-| [birth-generator](https://github.com/dasmig/birth-generator) | Demographically plausible birthdays |
+| [address-generator](https://github.com/dasmig/address-generator) | Postal addresses with real streets by place |
 | [biodata-generator](https://github.com/dasmig/biodata-generator) | Procedural human physical characteristics |
+| [birth-generator](https://github.com/dasmig/birth-generator) | Demographically plausible birthdays |
 | [city-generator](https://github.com/dasmig/city-generator) | Weighted city selection by population |
 | [country-generator](https://github.com/dasmig/country-generator) | Weighted country selection by population |
+| [email-generator](https://github.com/dasmig/email-generator) | Email addresses in each country's style |
 | [entity-generator](https://github.com/dasmig/entity-generator) | ECS-based entity generation |
+| [interest-generator](https://github.com/dasmig/interest-generator) | Religion, hobbies and favourite media by country, age and sex |
+| [nickname-generator](https://github.com/dasmig/nickname-generator) | Gamer-style nicknames |
+| [occupation-generator](https://github.com/dasmig/occupation-generator) | Employment status, education and occupation by country, age and sex |
+| [persona-generator](https://github.com/dasmig/persona-generator) | Complete characters composed from the other generators |
+| [phone-generator](https://github.com/dasmig/phone-generator) | Phone numbers valid in each country's numbering plan |
+| [trait-generator](https://github.com/dasmig/trait-generator) | Personality traits with conflicts, synergies and Big Five axes |
 
 ## License
 
