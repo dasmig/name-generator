@@ -151,7 +151,7 @@ TEST_CASE("get_name produces names from loaded resources", "[ng]")
         bool found = false;
         for (const auto& [culture, pool] : m_db)
         {
-            if (std::find(pool.names.begin(), pool.names.end(), s) != pool.names.end())
+            if (pool.contains(s))
             {
                 found = true;
                 break;
@@ -161,7 +161,7 @@ TEST_CASE("get_name produces names from loaded resources", "[ng]")
         {
             for (const auto& [culture, pool] : f_db)
             {
-                if (std::find(pool.names.begin(), pool.names.end(), s) != pool.names.end())
+                if (pool.contains(s))
                 {
                     found = true;
                     break;
@@ -189,7 +189,7 @@ TEST_CASE("get_surname produces surnames from loaded resources", "[ng]")
         {
             for (const auto& [culture, pool] : *db)
             {
-                if (std::find(pool.names.begin(), pool.names.end(), s) != pool.names.end())
+                if (pool.contains(s))
                 {
                     found = true;
                     break;
@@ -211,7 +211,7 @@ TEST_CASE("get_name with specific gender picks from correct database", "[ng]")
     {
         auto n = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::american});
         std::wstring s = n;
-        const auto& american_m = m_db.at(dasmig::culture::american).names;
+        const auto& american_m = m_db.at(dasmig::culture::american).names();
         REQUIRE(std::find(american_m.begin(), american_m.end(), s) !=
                 american_m.end());
     }
@@ -221,7 +221,7 @@ TEST_CASE("get_name with specific gender picks from correct database", "[ng]")
     {
         auto n = g.get_name({.gender = dasmig::gender::f, .culture = dasmig::culture::american});
         std::wstring s = n;
-        const auto& american_f = f_db.at(dasmig::culture::american).names;
+        const auto& american_f = f_db.at(dasmig::culture::american).names();
         REQUIRE(std::find(american_f.begin(), american_f.end(), s) !=
                 american_f.end());
     }
@@ -237,8 +237,8 @@ TEST_CASE("get_name with specific culture picks from that culture", "[ng]")
     {
         auto n = g.get_name({.gender = dasmig::gender::any, .culture = dasmig::culture::brazilian});
         std::wstring s = n;
-        const auto& br_m = m_db.at(dasmig::culture::brazilian).names;
-        const auto& br_f = f_db.at(dasmig::culture::brazilian).names;
+        const auto& br_m = m_db.at(dasmig::culture::brazilian).names();
+        const auto& br_f = f_db.at(dasmig::culture::brazilian).names();
         bool in_m = std::find(br_m.begin(), br_m.end(), s) != br_m.end();
         bool in_f = std::find(br_f.begin(), br_f.end(), s) != br_f.end();
         REQUIRE((in_m || in_f));
@@ -254,7 +254,7 @@ TEST_CASE("get_surname with specific culture picks from that culture", "[ng]")
     {
         auto n = g.get_surname({.culture = dasmig::culture::german});
         std::wstring s = n;
-        const auto& de_sur = s_db.at(dasmig::culture::german).names;
+        const auto& de_sur = s_db.at(dasmig::culture::german).names();
         REQUIRE(std::find(de_sur.begin(), de_sur.end(), s) != de_sur.end());
     }
 }
@@ -268,7 +268,7 @@ TEST_CASE("get_name with gender and culture", "[ng]")
     {
         auto n = g.get_name({.gender = dasmig::gender::f, .culture = dasmig::culture::french});
         std::wstring s = n;
-        const auto& fr_f = f_db.at(dasmig::culture::french).names;
+        const auto& fr_f = f_db.at(dasmig::culture::french).names();
         REQUIRE(std::find(fr_f.begin(), fr_f.end(), s) != fr_f.end());
     }
 }
@@ -284,17 +284,17 @@ TEST_CASE("every concrete culture produces names", "[ng]")
     {
         auto c = static_cast<dasmig::culture>(i);
         INFO("culture index: " << i);
-        if (m_db.contains(c) && !m_db.at(c).names.empty())
+        if (m_db.contains(c) && !m_db.at(c).names().empty())
         {
             auto male = g.get_name({.gender = dasmig::gender::m, .culture = c});
             REQUIRE_FALSE(static_cast<std::wstring>(male).empty());
         }
-        if (f_db.contains(c) && !f_db.at(c).names.empty())
+        if (f_db.contains(c) && !f_db.at(c).names().empty())
         {
             auto female = g.get_name({.gender = dasmig::gender::f, .culture = c});
             REQUIRE_FALSE(static_cast<std::wstring>(female).empty());
         }
-        if (s_db.contains(c) && !s_db.at(c).names.empty())
+        if (s_db.contains(c) && !s_db.at(c).names().empty())
         {
             auto sur = g.get_surname({.culture = c});
             REQUIRE_FALSE(static_cast<std::wstring>(sur).empty());
@@ -338,7 +338,7 @@ TEST_CASE("append_surname with specific culture", "[ng][chaining]")
 
     // Verify the appended surname comes from the german surname database.
     auto& s_db = ng_test_access::surnames(gen());
-    const auto& de_sur = s_db.at(dasmig::culture::german).names;
+    const auto& de_sur = s_db.at(dasmig::culture::german).names();
     REQUIRE(std::find(de_sur.begin(), de_sur.end(), n.parts()[1]) !=
             de_sur.end());
 }
@@ -355,8 +355,8 @@ TEST_CASE("append_name with specific culture picks from that culture",
     REQUIRE(n.parts().size() == 2);
 
     // Second part should come from the brazilian male or female database.
-    const auto& br_m = m_db.at(dasmig::culture::brazilian).names;
-    const auto& br_f = f_db.at(dasmig::culture::brazilian).names;
+    const auto& br_m = m_db.at(dasmig::culture::brazilian).names();
+    const auto& br_f = f_db.at(dasmig::culture::brazilian).names();
     bool in_m = std::find(br_m.begin(), br_m.end(), n.parts()[1]) !=
                 br_m.end();
     bool in_f = std::find(br_f.begin(), br_f.end(), n.parts()[1]) !=
@@ -534,9 +534,9 @@ TEST_CASE("all cultures have male, female, and surname data", "[ng][resources]")
     for (int i = 0; i < static_cast<int>(dasmig::culture::any); ++i)
     {
         auto c = static_cast<dasmig::culture>(i);
-        if (m.contains(c) && !m.at(c).names.empty() &&
-            f.contains(c) && !f.at(c).names.empty() &&
-            s.contains(c) && !s.at(c).names.empty())
+        if (m.contains(c) && !m.at(c).names().empty() &&
+            f.contains(c) && !f.at(c).names().empty() &&
+            s.contains(c) && !s.at(c).names().empty())
         {
             ++complete;
         }
@@ -594,7 +594,7 @@ TEST_CASE("seeded name exists in the correct database", "[ng][seeding]")
 
     auto n = g.get_name({.gender = dasmig::gender::m, .culture = dasmig::culture::german}, seed);
     std::wstring s = n;
-    const auto& de_m = m_db.at(dasmig::culture::german).names;
+    const auto& de_m = m_db.at(dasmig::culture::german).names();
     REQUIRE(std::find(de_m.begin(), de_m.end(), s) != de_m.end());
 }
 
@@ -606,7 +606,7 @@ TEST_CASE("seeded surname exists in the correct database", "[ng][seeding]")
 
     auto n = g.get_surname({.culture = dasmig::culture::french}, seed);
     std::wstring s = n;
-    const auto& fr_sur = s_db.at(dasmig::culture::french).names;
+    const auto& fr_sur = s_db.at(dasmig::culture::french).names();
     REQUIRE(std::find(fr_sur.begin(), fr_sur.end(), s) != fr_sur.end());
 }
 
@@ -787,18 +787,18 @@ TEST_CASE("names are decoded from UTF-8", "[ng][utf8]")
     dasmig::ng g;
     g.extend_from_string("de\nany\nM\xC3\xBCller\nJo\xC3\xA3o\n\xF0\x9F\x98\x80\n", "utf8.names");
     const auto& pool = ng_test_access::surnames(g).at(dasmig::culture::german);
-    REQUIRE(pool.names.size() == 3);
-    REQUIRE(pool.names[0] == L"Müller");
-    REQUIRE(pool.names[1] == L"João");
+    REQUIRE(pool.names().size() == 3);
+    REQUIRE(pool.names()[0] == L"Müller");
+    REQUIRE(pool.names()[1] == L"João");
     // U+1F600: one wchar_t on Linux, a surrogate pair on Windows.
     if constexpr (sizeof(wchar_t) >= 4)
     {
-        REQUIRE(pool.names[2].size() == 1);
-        REQUIRE(static_cast<char32_t>(pool.names[2][0]) == 0x1F600U);
+        REQUIRE(pool.names()[2].size() == 1);
+        REQUIRE(static_cast<char32_t>(pool.names()[2][0]) == 0x1F600U);
     }
     else
     {
-        REQUIRE(pool.names[2].size() == 2);
+        REQUIRE(pool.names()[2].size() == 2);
     }
     REQUIRE(dasmig::core::to_utf8(std::wstring{g.get_surname({.culture = dasmig::culture::german}, 1)}).size() >= 2);
 }
@@ -831,7 +831,7 @@ TEST_CASE("random culture covers multiple cultures", "[ng][random]")
         // Identify which culture this name belongs to.
         for (const auto& [c, pool] : m_db)
         {
-            if (std::find(pool.names.begin(), pool.names.end(), s) != pool.names.end())
+            if (pool.contains(s))
             {
                 cultures_hit.insert(c);
                 break;
@@ -839,7 +839,7 @@ TEST_CASE("random culture covers multiple cultures", "[ng][random]")
         }
         for (const auto& [c, pool] : f_db)
         {
-            if (std::find(pool.names.begin(), pool.names.end(), s) != pool.names.end())
+            if (pool.contains(s))
             {
                 cultures_hit.insert(c);
                 break;
@@ -903,11 +903,11 @@ TEST_CASE("parse_file handles tab-delimited weights", "[ng][parse]")
     auto& pools = ng_test_access::f_names(g);
     REQUIRE(pools.contains(dasmig::culture::brazilian));
     const auto& pool = pools.at(dasmig::culture::brazilian);
-    REQUIRE(pool.names.size() == 3);
-    REQUIRE(pool.weights.size() == 3);
-    REQUIRE(pool.names[0] == L"Ana");
-    REQUIRE(pool.weights[0] == Catch::Approx(0.5));
-    REQUIRE(pool.weights[2] == Catch::Approx(0.2));
+    REQUIRE(pool.names().size() == 3);
+    REQUIRE(pool.dist.size() == 3);
+    REQUIRE(pool.names()[0] == L"Ana");
+    REQUIRE((pool.dist.probability(0) * pool.dist.total()) == Catch::Approx(0.5));
+    REQUIRE((pool.dist.probability(2) * pool.dist.total()) == Catch::Approx(0.2));
 
     std::filesystem::remove_all(tmp);
 }
@@ -926,9 +926,9 @@ TEST_CASE("parse_file defaults to weight 1.0 without tab", "[ng][parse]")
 
     auto& pools = ng_test_access::surnames(g);
     const auto& pool = pools.at(dasmig::culture::german);
-    REQUIRE(pool.names.size() == 2);
-    REQUIRE(pool.weights[0] == Catch::Approx(1.0));
-    REQUIRE(pool.weights[1] == Catch::Approx(1.0));
+    REQUIRE(pool.names().size() == 2);
+    REQUIRE((pool.dist.probability(0) * pool.dist.total()) == Catch::Approx(1.0));
+    REQUIRE((pool.dist.probability(1) * pool.dist.total()) == Catch::Approx(1.0));
 
     std::filesystem::remove_all(tmp);
 }
@@ -1238,7 +1238,7 @@ TEST_CASE("cultures without gendered surnames share one surname list", "[ng][sur
     g.load(std::filesystem::path{resource_path()});
     using dasmig::culture;
     using dasmig::gender;
-    // Japanese has no male.sur.names / female.sur.names: a surname of a given seed
+    // Japanese has no male.sur.names() / female.sur.names(): a surname of a given seed
     // is the same whatever the forename's gender.
     for (std::uint64_t seed = 1; seed <= 50; ++seed)
     {
@@ -1277,7 +1277,7 @@ TEST_CASE("extend adds, replaces and removes names", "[extend]")
     dasmig::ng g;
     g.load(std::filesystem::path{resource_path()});
     const auto hash = g.data_hash();
-    const auto before = ng_test_access::m_names(g).at(dasmig::culture::brazilian).names.size();
+    const auto before = ng_test_access::m_names(g).at(dasmig::culture::brazilian).names().size();
 
     // Add two names (the first replaces a loaded one's weight), then remove one.
     const auto info = g.extend_from_string("br\nmale\nJo\xC3\xA3o\t2.5\nCaetano\t0.1\n", "mod.names");
@@ -1288,8 +1288,8 @@ TEST_CASE("extend adds, replaces and removes names", "[extend]")
     const auto removal = g.extend_from_string("br\nmale\nCaetano\t\t1\n", "cleanup.names");
     REQUIRE(removal.removed == 1);
     const auto& pool = ng_test_access::m_names(g).at(dasmig::culture::brazilian);
-    REQUIRE(std::find(pool.names.begin(), pool.names.end(), L"Caetano") == pool.names.end());
-    REQUIRE(pool.names.size() == before + info.added - 1);
+    REQUIRE_FALSE(pool.contains(L"Caetano"));
+    REQUIRE(pool.names().size() == before + info.added - 1);
 
     // Removing every name of a list removes the list.
     dasmig::ng small;
