@@ -48,6 +48,26 @@ Ten cultures have them: Czech, Polish, Russian, Bulgarian, Lithuanian, Icelandic
 
 A layer for a gendered list uses `male-surname` or `female-surname` on its second line, and `layers()` for it is `surname_layers(culture, gender)`. A layer for `any` changes `sur.names` only: it does not reach a culture that has gendered lists, so change those two lists instead.
 
+## Naming Conventions
+
+`conventions.tsv` and `surname_forms.tsv` are **curated**, not derived from the name dataset; they are the basis of `get_full_name`, `get_child_name` and `get_married_name`. The name lists do not say how a culture writes a name, so the tables record what is generally known, and the code applies them.
+
+| Convention | Cultures |
+| --- | --- |
+| Family name first | Chinese, Japanese, Korean, Cambodian, Taiwanese, Hong Konger, Macanese, Hungarian |
+| Two surnames, the father's first surname then the mother's | Spanish, Mexican, Argentinian, Bolivian, Chilean, Colombian, Costa Rican, Ecuadorian, Guatemalan, Honduran, Panamanian, Peruvian, Puerto Rican, Salvadoran, Uruguayan |
+| Two surnames, the mother's last then the father's last | Portuguese, Brazilian (second surname with 0.6 chance), Angolan (0.8) |
+| East Slavic patronymic | Russian |
+| Icelandic patronymic, no family name | Icelandic |
+
+Limits of this model: Chinese, Korean and Japanese data holds the Latin forms the dataset lists, so the order is the only thing it changes; the Spanish rule ignores the optional `y`/`de` joiners and that spouses do not change surnames; Brazilian and Portuguese practice varies (a second surname by chance stands for it); Ukrainian, Belarusian and Moldovan patronymics are not modelled; patronymics of Arabic, Turkic and Mongolian cultures are not modelled; Vietnamese and other cultures the library has no list for are not covered.
+
+**Patronymic rules** are code, on the transliterated Latin forms. Russian: a name ending in a consonant takes `-ovich`/`-ovna` (Ivan, Ivanovich), one in `-y` after a vowel `-evich` (Sergey, Sergeyevich), in `-y` after a consonant `-yevich` (Vasily), in `-a` `-ich`/`-ichna`; a list of exceptions covers the irregular names (Pavel, Pavlovich; Lev; Pyotr; Dmitry; Igor; Yakov; Ilya; Nikita; Luka; Kuzma; Foma). Icelandic: the father's name in the genitive and `son` or `dóttir`: `-ur` becomes `s` (Ólafur, Ólafsson), `-i` becomes `a` (Árni, Árnason), a name ending in `s` takes nothing more (Magnús, Magnússon), the others take `s` (Jón, Jónsson). They are approximations: Icelandic has irregular genitives (Njáll, Njálsson) that the rules do not know.
+
+**Surname forms** are suffix rules written for the ten cultures with gendered lists. The longest matching male ending applies; a surname no rule matches stays as it is (Polish Nowak, Greek Papageorgiou). `married` is the form a wife takes, where it differs from a daughter's (Lithuanian Kazlauskas gives Kazlauskaitė and Kazlauskienė). A test checks that at least 75% of each culture's male surnames have their derived form in the culture's female list (in `lite`: 100% for Azerbaijani, Kazakh, Turkmen, Russian and Polish, 97% Bulgarian, 89% Greek, 85% Czech and 79% Lithuanian).
+
+The tables are part of the signatures of full names and child names only, not of `get_name` and `get_surname`, so adding or changing a convention does not change the output of those.
+
 ## Generation Model
 
 Every call draws from streams split from the call seed:

@@ -177,6 +177,58 @@ struct name_request
     dasmig::culture culture = dasmig::culture::any; ///< Requested culture.
 };
 
+/// @brief The order a culture writes the given and the family name in.
+enum class name_order : std::uint8_t
+{
+    given_family, ///< `John Smith`.
+    family_given  ///< `Kim Minjun`.
+};
+
+/// @brief How a culture forms a patronymic from the father's given name.
+enum class patronymic_style : std::uint8_t
+{
+    none,
+    east_slavic, ///< `Ivan` gives `Ivanovich` or `Ivanovna`.
+    icelandic    ///< `Jón` gives `Jónsson` or `Jónsdóttir`.
+};
+
+/// @brief Which parents' surnames a child of a two-surname culture takes,
+///        and in what order.
+enum class surname_order : std::uint8_t
+{
+    paternal_first, ///< The father's first surname, then the mother's first (Spain).
+    maternal_first  ///< The mother's last surname, then the father's last (Portugal).
+};
+
+/// @brief How a culture composes a full name; see ng::convention().
+///
+/// A culture without a row in `conventions.tsv` has the default: one
+/// surname, given name first.
+struct naming_convention
+{
+    name_order order = name_order::given_family;               ///< Given or family name first.
+    patronymic_style patronymic = patronymic_style::none;      ///< How the patronymic is formed.
+    bool family_name = true;      ///< False when the patronymic replaces the family name.
+    int surnames = 1;             ///< 1, or 2 for cultures with a double surname.
+    double second_surname = 1.0;  ///< Chance of the second surname when `surnames` is 2.
+    surname_order inheritance = surname_order::paternal_first; ///< Which parents' surnames a child takes.
+};
+
+/// @brief The part of a full name a word is.
+enum class name_role : std::uint8_t
+{
+    given,
+    patronymic,
+    family,
+    family2 ///< The second surname of a double surname.
+};
+
+/// @brief The per-call choices of ng::get_child_name().
+struct child_name_request
+{
+    dasmig::gender gender = dasmig::gender::any; ///< The child's gender; `any` draws one.
+};
+
 class ng;
 
 /// @brief Return type for name generation, holding both individual parts and
@@ -208,6 +260,38 @@ class name
     [[nodiscard]] const std::vector<std::wstring>& parts() const
     {
         return _parts;
+    }
+
+    /// @brief The role of each part, in the order of parts().
+    /// @return One role per part; `given` for a forename, `family` for a surname.
+    [[nodiscard]] const std::vector<name_role>& roles() const
+    {
+        return _roles;
+    }
+
+    /// @brief Whether this name was composed by a culture's convention
+    ///        (ng::get_full_name(), ng::get_child_name() or ng::get_married_name()).
+    [[nodiscard]] bool composed() const
+    {
+        return _composed;
+    }
+
+    /// @brief The given name (empty when the name has none).
+    [[nodiscard]] std::wstring given() const
+    {
+        return joined(name_role::given, name_role::given);
+    }
+
+    /// @brief The patronymic (empty when the culture has none).
+    [[nodiscard]] std::wstring patronymic() const
+    {
+        return joined(name_role::patronymic, name_role::patronymic);
+    }
+
+    /// @brief The family name; both surnames of a double surname, in order.
+    [[nodiscard]] std::wstring family() const
+    {
+        return joined(name_role::family, name_role::family2);
     }
 
     /// @brief Append a forename to this name, preserving gender and culture.
@@ -279,20 +363,38 @@ class name
 
   private:
     // Private constructor — names are created only by ng.
-    name(std::wstring name_str, gender g, culture c, const ng* owner)
+    name(std::wstring name_str, gender g, culture c, const ng* owner,
+         name_role role = name_role::given)
         : _full_string(std::move(name_str)), _gender(g), _culture(c), _owner(owner)
     {
         _parts.push_back(_full_string);
+        _roles.push_back(role);
     }
 
-    void append_part(std::wstring part)
+    void append_part(std::wstring part, name_role role)
     {
         _full_string.append(L" ").append(part);
         _parts.push_back(std::move(part));
+        _roles.push_back(role);
+    }
+
+    // The parts whose role lies in [first, last], joined by spaces.
+    [[nodiscard]] std::wstring joined(name_role first, name_role last) const
+    {
+        std::wstring out;
+        for (std::size_t i = 0; i < _parts.size(); ++i)
+        {
+            if (_roles.at(i) < first || _roles.at(i) > last) continue;
+            if (!out.empty()) out.append(L" ");
+            out.append(_parts.at(i));
+        }
+        return out;
     }
 
     std::wstring _full_string;        ///< Full composed name.
     std::vector<std::wstring> _parts; ///< Individual name parts.
+    std::vector<name_role> _roles;    ///< The role of each part.
+    bool _composed = false;           ///< Composed by a convention.
     gender _gender;                   ///< Gender of the forenames.
     culture _culture;                 ///< Culture of the first part.
     const ng* _owner;                 ///< Generator that created this name.
@@ -578,6 +680,227 @@ class ng
     }
 
 
+    // -- Full names, children and marriage ------------------------------------------
+
+    /// @brief How a culture composes a full name.
+    /// @param c Culture.
+    /// @return The convention loaded from `conventions.tsv`; the default (one
+    ///         surname, given name first) for a culture without a row.
+    [[nodiscard]] naming_convention convention(culture c) const
+    {
+        const auto it = _conventions.find(c);
+        return it == _conventions.end() ? naming_convention{} : it->second;
+    }
+
+    /// @brief Generate a full name by the culture's convention.
+    ///
+    /// The parts follow the culture's order: family name first for Chinese,
+    /// Japanese and Korean; two surnames for Spanish and Portuguese; a
+    /// patronymic from a drawn father's name for Russian and Icelandic. The
+    /// parts carry roles (name::roles()). get_name() and get_surname() are
+    /// unchanged by conventions.
+    ///
+    /// @param request Gender and culture (both default to `any`).
+    /// @return A composed name.
+    /// @throws std::invalid_argument If no names are loaded for the resolved
+    ///         culture and gender.
+    [[nodiscard]] name get_full_name(const name_request& request)
+    {
+        return get_full_name(request, _engine());
+    }
+
+    /// @brief Generate a deterministic full name.
+    /// @param request Gender and culture.
+    /// @param call_seed Seed; the same seed, request and data give the same
+    ///        name on every platform.
+    /// @return A composed name.
+    /// @throws std::invalid_argument If no names are loaded for the resolved
+    ///         culture and gender.
+    [[nodiscard]] name get_full_name(const name_request& request, std::uint64_t call_seed) const
+    {
+        const core::rng r{call_seed};
+        auto rg = r.split("gender");
+        const gender g = resolve_gender(request.gender, rg);
+        auto rc = r.split("culture");
+        const culture c = resolve_composed_culture_(request.culture, g == gender::m, g == gender::f, rc);
+        return make_name_(draw_person_(g, c, r.split("person")), c, call_seed);
+    }
+
+    /// @brief Generate a batch of full names from a seed drawn like
+    ///        get_full_name() draws its own.
+    /// @param request What every item is generated from.
+    /// @param options Count, first index, threads and uniqueness.
+    /// @return The results, in index order.
+    [[nodiscard]] std::vector<name> get_full_name_batch(const name_request& request,
+                                                        const core::batch_options& options)
+    {
+        return get_full_name_batch(request, options, _engine());
+    }
+
+    /// @brief Generate a batch of full names, deterministically: item `i` is
+    ///        `get_full_name(request, core::item_seed(batch_seed, options.first + i))`.
+    /// @param request What every item is generated from.
+    /// @param options Count, first index, threads and uniqueness.
+    /// @param batch_seed Seed of the whole batch.
+    /// @return The results, in index order.
+    [[nodiscard]] std::vector<name> get_full_name_batch(const name_request& request,
+                                                        const core::batch_options& options,
+                                                        std::uint64_t batch_seed) const
+    {
+        return core::run_batch(options, batch_seed, [&](std::uint64_t item_seed)
+                               { return get_full_name(request, item_seed); });
+    }
+
+    /// @brief Stream a batch of full names to a sink, in index order.
+    /// @tparam Sink Callable taking `(std::uint64_t, name&)`.
+    /// @param request What every item is generated from.
+    /// @param options Count, first index, threads and uniqueness.
+    /// @param batch_seed Seed of the whole batch.
+    /// @param sink Receives the items.
+    template <typename Sink>
+    void for_each_full_name(const name_request& request, const core::batch_options& options,
+                            std::uint64_t batch_seed, Sink&& sink) const
+    {
+        core::for_each_batch(options, batch_seed,
+                             [&](std::uint64_t item_seed) { return get_full_name(request, item_seed); },
+                             std::forward<Sink>(sink));
+    }
+
+    /// @brief Stream a batch of full names with a batch seed drawn like
+    ///        get_full_name() draws its own.
+    /// @tparam Sink Callable taking `(std::uint64_t, name&)`.
+    /// @param request What every item is generated from.
+    /// @param options Count, first index, threads and uniqueness.
+    /// @param sink Receives the items.
+    template <typename Sink>
+    void for_each_full_name(const name_request& request, const core::batch_options& options,
+                            Sink&& sink)
+    {
+        for_each_full_name(request, options, _engine(), std::forward<Sink>(sink));
+    }
+
+    /// @brief Name a child of two people by the culture's convention.
+    ///
+    /// The child takes its family name from the parents as the culture
+    /// does: one surname cultures give the father's family name (a
+    /// daughter its female form where the culture has one); two-surname
+    /// cultures give one surname of each parent, in the culture's
+    /// surname_order; patronymic cultures derive the patronymic from the
+    /// father's given name. The given name is drawn from the father's
+    /// culture. Only the parts' roles are read, so the parents can be any
+    /// names (composed or not); the structure of a family (who the
+    /// parents are, how many children) is the caller's.
+    ///
+    /// Siblings are not made distinct: draw each with its own seed and
+    /// compare, if that matters.
+    ///
+    /// @param father The father's name; its culture is the child's.
+    /// @param mother The mother's name.
+    /// @param request The child's gender.
+    /// @return A composed name.
+    /// @throws std::invalid_argument If the father's culture is `any` or has
+    ///         no forenames or surnames loaded.
+    [[nodiscard]] name get_child_name(const name& father, const name& mother,
+                                      const child_name_request& request)
+    {
+        return get_child_name(father, mother, request, _engine());
+    }
+
+    /// @brief Name a child of two people, deterministically.
+    /// @param father The father's name; its culture is the child's.
+    /// @param mother The mother's name.
+    /// @param request The child's gender.
+    /// @param call_seed Seed; the same seed, parents and data give the same
+    ///        name on every platform.
+    /// @return A composed name.
+    /// @throws std::invalid_argument If the father's culture is `any` or has
+    ///         no forenames or surnames loaded.
+    [[nodiscard]] name get_child_name(const name& father, const name& mother,
+                                      const child_name_request& request,
+                                      std::uint64_t call_seed) const
+    {
+        const culture c = father._culture;
+        if (c == culture::any) throw std::invalid_argument("get_child_name: the father has no culture");
+        const core::rng r{call_seed};
+        auto rg = r.split("gender");
+        const gender g = resolve_gender(request.gender, rg);
+        const auto cv = convention(c);
+        const person dad = person_of_(father);
+        const person mum = person_of_(mother);
+
+        person child{.g = g, .given = pick_forename_(g, c, r.split("given")), .patronymic = {}, .family = {}};
+        if (cv.patronymic != patronymic_style::none)
+        {
+            child.patronymic = patronymic_of_(cv.patronymic, dad.given, g == gender::f);
+        }
+        child.family = child_family_(dad, mum, g, c, cv);
+        return make_name_(child, c, call_seed);
+    }
+
+    /// @brief The name a woman has after marrying, by the culture's convention.
+    ///
+    /// A single-surname culture gives her the husband's family name, in its
+    /// married form where the culture has one (Kozlov gives Kozlova); a
+    /// two-surname or patronymic culture leaves her name as it is. Only the
+    /// roles of the names are read.
+    ///
+    /// @param wife The woman's name.
+    /// @param husband The husband's name; its culture is the one used.
+    /// @return A composed name with the wife's seed.
+    [[nodiscard]] name get_married_name(const name& wife, const name& husband) const
+    {
+        const culture c = husband._culture;
+        person p = person_of_(wife);
+        const person other = person_of_(husband);
+        const auto cv = convention(c);
+        if (c != culture::any && cv.family_name && cv.surnames == 1 && !other.family.empty())
+        {
+            p.family = {feminize_(other.family.front(), c, true)};
+        }
+        return make_name_(p, wife._culture, wife.seed());
+    }
+
+    /// @brief The patronymic a father's given name gives a child.
+    ///
+    /// Rule-based, for names in Latin script, with a short list of irregular
+    /// names (Pavel to Pavlovich, Jón to Jónsson).
+    /// @param style The culture's patronymic style.
+    /// @param father The father's given name.
+    /// @param daughter Whether the child is a daughter.
+    /// @return The patronymic; empty for patronymic_style::none.
+    [[nodiscard]] static std::wstring patronymic_of(patronymic_style style, const std::wstring& father,
+                                                    bool daughter)
+    {
+        return patronymic_of_(style, father, daughter);
+    }
+
+    /// @brief The female form of a male surname, by the culture's
+    ///        `surname_forms.tsv` rules.
+    /// @param surname A male surname.
+    /// @param c Culture.
+    /// @param married Whether to give the form a wife takes rather than the
+    ///        one a daughter has (they differ in Lithuanian).
+    /// @return The form; @p surname when the culture has no rule for it.
+    [[nodiscard]] std::wstring female_form(const std::wstring& surname, culture c,
+                                           bool married = false) const
+    {
+        return feminize_(surname, c, married);
+    }
+
+    /// @brief The layers in effect for `conventions.tsv`.
+    /// @return The layer records.
+    [[nodiscard]] const std::vector<core::layer_info>& convention_layers() const
+    {
+        return _convention_table.layers();
+    }
+
+    /// @brief The layers in effect for `surname_forms.tsv`.
+    /// @return The layer records.
+    [[nodiscard]] const std::vector<core::layer_info>& surname_form_layers() const
+    {
+        return _form_table.layers();
+    }
+
     /// @brief Check whether any name databases have been loaded.
     /// @return `true` if at least one name list is loaded.
     [[nodiscard]] bool has_resources() const
@@ -617,22 +940,32 @@ class ng
     [[nodiscard]] bool load(dataset tier)
     {
         const std::string tier_dir{core::tier_name(tier)};
-        std::vector<names_file> files;
+        data_bundle bundle;
         for (const auto& file : embedded_files_())
         {
-            if (file.path.starts_with(tier_dir + "/") && file.path.ends_with(".names"))
+            if (!file.path.starts_with(tier_dir + "/")) continue;
+            const std::string source = "embedded:" + std::string{file.path};
+            if (file.path.ends_with(".names"))
             {
-                files.push_back(parse_names_(file.text(), "embedded:" + std::string{file.path}));
+                bundle.names.push_back(parse_names_(file.text(), source));
+            }
+            else if (file.path == tier_dir + "/" + std::string{conventions_file_})
+            {
+                bundle.conventions = core::tsv_document::parse(file.text(), source);
+            }
+            else if (file.path == tier_dir + "/" + std::string{forms_file_})
+            {
+                bundle.forms = core::tsv_document::parse(file.text(), source);
             }
         }
-        if (files.empty())
+        if (bundle.names.empty())
         {
             const auto root = core::find_resources(library_name_, tier_dir + "/" + std::string{marker_file_});
             if (!root) return false;
-            files = read_directory_(*root / tier_dir);
+            bundle = read_directory_(*root / tier_dir);
         }
-        if (files.empty()) return false;
-        apply_(std::move(files), core::layer_mode::replace, true);
+        if (bundle.names.empty()) return false;
+        apply_(std::move(bundle), core::layer_mode::replace, true);
         return true;
     }
 
@@ -657,14 +990,64 @@ class ng
             apply_(read_directory_(path), mode, false);
             return;
         }
+        if (path.filename() == conventions_file_ || path.filename() == forms_file_)
+        {
+            data_bundle bundle;
+            auto doc = core::tsv_document::parse(read_text_(path), path.string());
+            (path.filename() == conventions_file_ ? bundle.conventions : bundle.forms) = std::move(doc);
+            apply_(std::move(bundle), mode, false);
+            return;
+        }
         if (path.extension() != ".names")
         {
-            throw std::invalid_argument("extend: expected a .names file, got " +
+            throw std::invalid_argument("extend: expected a .names, conventions.tsv or "
+                                        "surname_forms.tsv file, got " +
                                         path.filename().string());
         }
-        std::vector<names_file> files;
-        files.push_back(read_file_(path));
-        apply_(std::move(files), mode, false);
+        data_bundle bundle;
+        bundle.names.push_back(read_file_(path));
+        apply_(std::move(bundle), mode, false);
+    }
+
+    /// @brief Add a layer of `conventions.tsv` from text.
+    /// @param text Tab-separated text with a header line: `culture` (a
+    ///        culture name such as `russian`, the key) and any of `order`
+    ///        (`given_family`, `family_given`), `patronymic` (`none`,
+    ///        `east_slavic`, `icelandic`), `family_name` (0 or 1),
+    ///        `surnames` (1 or 2), `second_surname` (a chance from 0 to 1)
+    ///        and `surname_order` (`paternal_first`, `maternal_first`).
+    /// @param source Name used in errors.
+    /// @param mode How the layer combines with the conventions loaded before.
+    /// @return What the layer did.
+    /// @throws core::tsv_error If the text is invalid; nothing then changes.
+    const core::layer_info& extend_conventions_from_string(
+        std::string_view text, std::string source,
+        core::layer_mode mode = core::layer_mode::override)
+    {
+        data_bundle bundle;
+        bundle.conventions = core::tsv_document::parse(text, std::move(source));
+        apply_(std::move(bundle), mode, false);
+        return _convention_table.layers().back();
+    }
+
+    /// @brief Add a layer of `surname_forms.tsv` from text.
+    /// @param text Tab-separated text with a header line: `culture` and
+    ///        `male` (the keys: the ending of a male surname, or `*` for
+    ///        any), `female` (the ending a daughter has instead) and
+    ///        optionally `married` (the ending a wife has; `female` when
+    ///        empty). The longest matching `male` ending applies.
+    /// @param source Name used in errors.
+    /// @param mode How the layer combines with the rules loaded before.
+    /// @return What the layer did.
+    /// @throws core::tsv_error If the text is invalid; nothing then changes.
+    const core::layer_info& extend_surname_forms_from_string(
+        std::string_view text, std::string source,
+        core::layer_mode mode = core::layer_mode::override)
+    {
+        data_bundle bundle;
+        bundle.forms = core::tsv_document::parse(text, std::move(source));
+        apply_(std::move(bundle), mode, false);
+        return _form_table.layers().back();
     }
 
     /// @brief Add a name layer from text in the `.names` format.
@@ -680,11 +1063,11 @@ class ng
     const core::layer_info& extend_from_string(std::string_view text, std::string source,
                                                core::layer_mode mode = core::layer_mode::override)
     {
-        std::vector<names_file> files;
-        files.push_back(parse_names_(std::string{text}, std::move(source)));
-        const auto list = files.front().list;
-        const auto c = files.front().c;
-        apply_(std::move(files), mode, false);
+        data_bundle bundle;
+        bundle.names.push_back(parse_names_(std::string{text}, std::move(source)));
+        const auto list = bundle.names.front().list;
+        const auto c = bundle.names.front().c;
+        apply_(std::move(bundle), mode, false);
         return _tables.at(list).at(c).layers().back();
     }
 
@@ -722,6 +1105,8 @@ class ng
   private:
     static constexpr std::string_view library_name_ = "name-generator";
     static constexpr std::string_view marker_file_ = "american/male.names";
+    static constexpr std::string_view conventions_file_ = "conventions.tsv";
+    static constexpr std::string_view forms_file_ = "surname_forms.tsv";
 
     // Indexed by culture.
     static constexpr std::array<std::string_view, 105> culture_codes_{
@@ -834,6 +1219,22 @@ class ng
         core::tsv_document doc;
     };
 
+    // What a data directory holds: name lists, and the two convention tables.
+    struct data_bundle
+    {
+        std::vector<names_file> names;
+        std::optional<core::tsv_document> conventions;
+        std::optional<core::tsv_document> forms;
+    };
+
+    // One rule of surname_forms.tsv: a male ending and what replaces it.
+    struct form_rule
+    {
+        std::wstring male;    // empty for `*`: nothing is removed
+        std::wstring female;
+        std::wstring married;
+    };
+
     // Layered data per list kind and culture, and the pools built from it.
     std::array<std::map<culture, core::layered_table>, list_count> _tables;
     std::uint64_t _data_hash{0}; // hash_of_(_tables), kept with it: every result needs it
@@ -842,6 +1243,11 @@ class ng
     std::map<culture, name_pool> _sur_pool;
     std::map<culture, name_pool> _m_sur_pool;
     std::map<culture, name_pool> _f_sur_pool;
+    core::layered_table _convention_table{convention_schema_()};
+    core::layered_table _form_table{form_schema_()};
+    std::map<culture, naming_convention> _conventions;
+    std::map<culture, std::vector<form_rule>> _forms;
+    std::uint64_t _convention_hash{0};
 
     // Per-instance random engine for seed drawing.
     core::rng _engine{core::rng::from_entropy()};
@@ -962,6 +1368,11 @@ class ng
 
     static names_file read_file_(const std::filesystem::path& file)
     {
+        return parse_names_(read_text_(file), file.string());
+    }
+
+    static std::string read_text_(const std::filesystem::path& file)
+    {
         std::ifstream in{file, std::ios::binary};
         if (!in) throw core::tsv_error{file.string(), 0, "", "cannot open file"};
         in.seekg(0, std::ios::end);
@@ -970,10 +1381,10 @@ class ng
         in.seekg(0, std::ios::beg);
         in.read(text.data(), static_cast<std::streamsize>(text.size()));
         text.resize(static_cast<std::size_t>(in.gcount()));
-        return parse_names_(std::move(text), file.string());
+        return text;
     }
 
-    static std::vector<names_file> read_directory_(const std::filesystem::path& dir)
+    static data_bundle read_directory_(const std::filesystem::path& dir)
     {
         std::vector<std::filesystem::path> paths;
         for (const auto& entry : std::filesystem::recursive_directory_iterator(dir))
@@ -984,16 +1395,65 @@ class ng
             }
         }
         std::ranges::sort(paths); // the iteration order is unspecified
-        std::vector<names_file> files;
-        files.reserve(paths.size());
-        for (const auto& path : paths) files.push_back(read_file_(path));
-        return files;
+        data_bundle bundle;
+        bundle.names.reserve(paths.size());
+        for (const auto& path : paths) bundle.names.push_back(read_file_(path));
+        std::error_code ec;
+        if (const auto file = dir / conventions_file_; std::filesystem::is_regular_file(file, ec))
+        {
+            bundle.conventions = core::tsv_document::parse(read_text_(file), file.string());
+        }
+        if (const auto file = dir / forms_file_; std::filesystem::is_regular_file(file, ec))
+        {
+            bundle.forms = core::tsv_document::parse(read_text_(file), file.string());
+        }
+        return bundle;
+    }
+
+    // The lookup maps and the hash of the convention tables.
+    void rebuild_conventions_()
+    {
+        _conventions.clear();
+        for (const auto& row : _convention_table.rows())
+        {
+            _conventions.emplace(culture_from_name_(row["culture"]), convention_of_(row));
+        }
+        _forms.clear();
+        for (const auto& row : _form_table.rows())
+        {
+            _forms[culture_from_name_(row["culture"])].push_back(form_of_(row));
+        }
+        _convention_hash = core::hash_combine(_convention_table.data_hash(), _form_table.data_hash());
+    }
+
+    // Copies of the convention tables with the bundle's layers applied.
+    [[nodiscard]] std::pair<core::layered_table, core::layered_table> extended_convention_tables_(
+        data_bundle& bundle, core::layer_mode mode, bool reset) const
+    {
+        auto conventions = reset ? core::layered_table{convention_schema_()} : _convention_table;
+        auto forms = reset ? core::layered_table{form_schema_()} : _form_table;
+        const auto layer_mode = reset ? core::layer_mode::replace : mode;
+        if (bundle.conventions)
+        {
+            (void)conventions.extend(std::move(*bundle.conventions), layer_mode,
+                                     [](const core::tsv_row& row) { (void)convention_of_(row); });
+        }
+        if (bundle.forms)
+        {
+            (void)forms.extend(std::move(*bundle.forms), layer_mode,
+                               [](const core::tsv_row& row) { (void)form_of_(row); });
+        }
+        return {std::move(conventions), std::move(forms)};
     }
 
     // Apply layers to copies of the affected tables, then commit: all or
     // nothing. With @p reset (load), every list is replaced.
-    void apply_(std::vector<names_file> files, core::layer_mode mode, bool reset)
+    void apply_(data_bundle bundle, core::layer_mode mode, bool reset)
     {
+        // The convention tables first, on copies: a bad one changes nothing.
+        auto [next_conventions, next_forms] = extended_convention_tables_(bundle, mode, reset);
+
+        auto& files = bundle.names;
         auto next = reset ? decltype(_tables){} : _tables;
         // On reset each list's first file replaces; later files for the same
         // list extend it.
@@ -1051,6 +1511,10 @@ class ng
                 pools.at(list).emplace(c, std::move(pool));
             }
         }
+
+        _convention_table = std::move(next_conventions);
+        _form_table = std::move(next_forms);
+        rebuild_conventions_();
 
         _tables = std::move(next);
         _data_hash = hash_of_(_tables);
@@ -1138,6 +1602,342 @@ class ng
         return {pick(db, resolved_c, gender::any, rn), resolved_c};
     }
 
+    // -- Conventions and composing names -------------------------------
+
+    static core::table_schema convention_schema_()
+    {
+        return {.key = {"culture"},
+                .required = {},
+                .optional = {"order", "patronymic", "family_name", "surnames", "second_surname",
+                             "surname_order"}};
+    }
+
+    static core::table_schema form_schema_()
+    {
+        return {.key = {"culture", "male"}, .required = {"female"}, .optional = {"married"}};
+    }
+
+    [[nodiscard]] static culture culture_from_name_(std::string_view name)
+    {
+        for (std::size_t i = 0; i < culture_names_.size(); ++i)
+        {
+            if (culture_names_.at(i) == name) return static_cast<culture>(i);
+        }
+        return culture::any;
+    }
+
+    static void check_culture_(const core::tsv_row& row)
+    {
+        if (culture_from_name_(row["culture"]) == culture::any)
+        {
+            throw row.error("culture", "unknown culture '" + std::string{row["culture"]} + "'");
+        }
+    }
+
+    // One row of conventions.tsv, checked.
+    static naming_convention convention_of_(const core::tsv_row& row)
+    {
+        check_culture_(row);
+        naming_convention cv;
+        const auto order = row.get_or<std::string>("order", "given_family");
+        if (order == "family_given")
+        {
+            cv.order = name_order::family_given;
+        }
+        else if (order != "given_family")
+        {
+            throw row.error("order", "expected given_family or family_given, got '" + order + "'");
+        }
+        const auto patronymic = row.get_or<std::string>("patronymic", "none");
+        if (patronymic == "east_slavic")
+        {
+            cv.patronymic = patronymic_style::east_slavic;
+        }
+        else if (patronymic == "icelandic")
+        {
+            cv.patronymic = patronymic_style::icelandic;
+        }
+        else if (patronymic != "none")
+        {
+            throw row.error("patronymic",
+                            "expected none, east_slavic or icelandic, got '" + patronymic + "'");
+        }
+        cv.family_name = row.get_or<bool>("family_name", true);
+        cv.surnames = row.get_or<int>("surnames", 1);
+        if (cv.surnames < 1 || cv.surnames > 2) throw row.error("surnames", "must be 1 or 2");
+        cv.second_surname = row.get_or<double>("second_surname", 1.0);
+        if (cv.second_surname < 0.0 || cv.second_surname > 1.0)
+        {
+            throw row.error("second_surname", "must be between 0 and 1");
+        }
+        const auto inheritance = row.get_or<std::string>("surname_order", "paternal_first");
+        if (inheritance == "maternal_first")
+        {
+            cv.inheritance = surname_order::maternal_first;
+        }
+        else if (inheritance != "paternal_first")
+        {
+            throw row.error("surname_order",
+                            "expected paternal_first or maternal_first, got '" + inheritance + "'");
+        }
+        return cv;
+    }
+
+    // One row of surname_forms.tsv, checked.
+    static form_rule form_of_(const core::tsv_row& row)
+    {
+        check_culture_(row);
+        if (!row.has("male")) throw row.error("male", "missing value (use * for any ending)");
+        if (!row.has("female")) throw row.error("female", "missing value");
+        form_rule rule;
+        rule.male = row["male"] == "*" ? std::wstring{} : core::from_utf8(row["male"]);
+        rule.female = core::from_utf8(row["female"]);
+        rule.married = row.has("married") ? core::from_utf8(row["married"]) : rule.female;
+        return rule;
+    }
+
+    [[nodiscard]] std::uint64_t composed_hash_() const
+    {
+        return core::hash_combine(_data_hash, _convention_hash);
+    }
+
+    // A culture with forenames for the genders needed and surnames, drawn
+    // from those loaded when @p c is `any`.
+    [[nodiscard]] culture resolve_composed_culture_(culture c, bool need_male, bool need_female,
+                                                    core::rng& engine) const
+    {
+        if (c != culture::any) return c;
+        std::vector<culture> candidates;
+        for (const auto& [culture_id, pool] : _sur_pool)
+        {
+            if (pool.empty()) continue;
+            if (need_male && !_m_pool.contains(culture_id)) continue;
+            if (need_female && !_f_pool.contains(culture_id)) continue;
+            candidates.push_back(culture_id);
+        }
+        if (candidates.empty()) throw std::invalid_argument("No names loaded for any culture");
+        return candidates.at(core::bounded(engine, candidates.size()));
+    }
+
+    [[nodiscard]] std::wstring pick_forename_(gender g, culture c, core::rng r) const
+    {
+        return pick(g == gender::f ? _f_pool : _m_pool, c, g, r);
+    }
+
+    // A surname from the gendered list where the culture has one.
+    [[nodiscard]] std::wstring pick_surname_(gender g, culture c, core::rng r) const
+    {
+        const auto& gendered = g == gender::f ? _f_sur_pool : _m_sur_pool;
+        return pick(gendered.contains(c) ? gendered : _sur_pool, c, gender::any, r);
+    }
+
+    // The words of one person's name, before they are put in order.
+    struct person
+    {
+        gender g;
+        std::wstring given;
+        std::wstring patronymic;
+        std::vector<std::wstring> family; // one surname, or two
+    };
+
+    [[nodiscard]] person draw_person_(gender g, culture c, const core::rng& r) const
+    {
+        const auto cv = convention(c);
+        person p{.g = g, .given = pick_forename_(g, c, r.split("given")), .patronymic = {}, .family = {}};
+        if (cv.patronymic != patronymic_style::none)
+        {
+            const auto father = pick_forename_(gender::m, c, r.split("father"));
+            p.patronymic = patronymic_of_(cv.patronymic, father, g == gender::f);
+        }
+        if (cv.family_name)
+        {
+            p.family.push_back(pick_surname_(g, c, r.split("family")));
+            auto rs = r.split("second");
+            if (cv.surnames == 2 && core::bernoulli(rs, cv.second_surname))
+            {
+                // A second surname that differs from the first when it can.
+                const auto rf = r.split("family2");
+                std::wstring second;
+                for (std::size_t attempt = 0; attempt < 8; ++attempt)
+                {
+                    second = pick_surname_(g, c, rf.split(attempt));
+                    if (second != p.family.front()) break;
+                }
+                p.family.push_back(std::move(second));
+            }
+        }
+        return p;
+    }
+
+    // The words of a name, by role.
+    [[nodiscard]] static person person_of_(const name& n)
+    {
+        person p{.g = n._gender, .given = n.given(), .patronymic = n.patronymic(), .family = {}};
+        for (std::size_t i = 0; i < n._parts.size(); ++i)
+        {
+            if (n._roles.at(i) == name_role::family || n._roles.at(i) == name_role::family2)
+            {
+                p.family.push_back(n._parts.at(i));
+            }
+        }
+        return p;
+    }
+
+    // A person as a name: the parts in the culture's order, with their roles.
+    [[nodiscard]] name make_name_(const person& p, culture c, std::uint64_t seed) const
+    {
+        const auto cv = convention(c);
+        using part = std::pair<name_role, const std::wstring*>;
+        std::vector<part> given_parts;
+        given_parts.emplace_back(name_role::given, &p.given);
+        if (!p.patronymic.empty()) given_parts.emplace_back(name_role::patronymic, &p.patronymic);
+        std::vector<part> family_parts;
+        family_parts.reserve(p.family.size());
+        for (std::size_t i = 0; i < p.family.size(); ++i)
+        {
+            family_parts.emplace_back(i == 0 ? name_role::family : name_role::family2, &p.family.at(i));
+        }
+        const bool family_first = cv.order == name_order::family_given;
+        std::vector<part> sequence = family_first ? family_parts : given_parts;
+        const auto& rest = family_first ? given_parts : family_parts;
+        sequence.insert(sequence.end(), rest.begin(), rest.end());
+
+        name result{*sequence.front().second, p.g, c, this, sequence.front().first};
+        for (std::size_t i = 1; i < sequence.size(); ++i)
+        {
+            result.append_part(*sequence.at(i).second, sequence.at(i).first);
+        }
+        result._composed = true;
+        result._signature = {.seed = seed, .data = composed_hash_()};
+        return result;
+    }
+
+    // The family name of a child, from the parents' names.
+    [[nodiscard]] std::vector<std::wstring> child_family_(const person& father, const person& mother,
+                                                          gender g, culture c,
+                                                          const naming_convention& cv) const
+    {
+        if (!cv.family_name || father.family.empty()) return {};
+        if (cv.surnames == 2 && (father.family.size() == 2 || mother.family.size() == 2))
+        {
+            if (cv.inheritance == surname_order::maternal_first)
+            {
+                return {mother.family.back(), father.family.back()};
+            }
+            return {father.family.front(), mother.family.front()};
+        }
+        return {g == gender::f ? feminize_(father.family.back(), c, false) : father.family.back()};
+    }
+
+    // The female form of a male surname: the longest matching ending of the
+    // culture's rules, or the surname as it is.
+    [[nodiscard]] std::wstring feminize_(const std::wstring& surname, culture c, bool married) const
+    {
+        const auto it = _forms.find(c);
+        if (it == _forms.end()) return surname;
+        const form_rule* best = nullptr;
+        for (const auto& rule : it->second)
+        {
+            if (rule.male.size() > surname.size()) continue;
+            if (!std::wstring_view{surname}.ends_with(rule.male)) continue;
+            if (best == nullptr || rule.male.size() > best->male.size()) best = &rule;
+        }
+        if (best == nullptr) return surname;
+        return surname.substr(0, surname.size() - best->male.size()) +
+               (married ? best->married : best->female);
+    }
+
+    [[nodiscard]] static bool ends_with_(const std::wstring& text, std::wstring_view ending)
+    {
+        return text.size() >= ending.size() &&
+               std::wstring_view{text}.substr(text.size() - ending.size()) == ending;
+    }
+
+    [[nodiscard]] static std::wstring patronymic_of_(patronymic_style style, const std::wstring& father,
+                                                     bool daughter)
+    {
+        switch (style)
+        {
+        case patronymic_style::east_slavic: return east_slavic_patronymic_(father, daughter);
+        case patronymic_style::icelandic: return icelandic_patronymic_(father, daughter);
+        case patronymic_style::none: break;
+        }
+        return {};
+    }
+
+    // Russian-style patronymics from a transliterated father's name.
+    [[nodiscard]] static std::wstring east_slavic_patronymic_(const std::wstring& father, bool daughter)
+    {
+        struct irregular
+        {
+            std::wstring_view name;
+            std::wstring_view son;
+            std::wstring_view daughter;
+        };
+        static constexpr std::array<irregular, 12> exceptions{{
+            {.name = L"Pavel", .son = L"Pavlovich", .daughter = L"Pavlovna"},
+            {.name = L"Lev", .son = L"Lvovich", .daughter = L"Lvovna"},
+            {.name = L"Pyotr", .son = L"Petrovich", .daughter = L"Petrovna"},
+            {.name = L"Petr", .son = L"Petrovich", .daughter = L"Petrovna"},
+            {.name = L"Dmitry", .son = L"Dmitriyevich", .daughter = L"Dmitriyevna"},
+            {.name = L"Igor", .son = L"Igorevich", .daughter = L"Igorevna"},
+            {.name = L"Yakov", .son = L"Yakovlevich", .daughter = L"Yakovlevna"},
+            {.name = L"Ilya", .son = L"Ilyich", .daughter = L"Ilyinichna"},
+            {.name = L"Nikita", .son = L"Nikitich", .daughter = L"Nikitichna"},
+            {.name = L"Luka", .son = L"Lukich", .daughter = L"Lukinichna"},
+            {.name = L"Kuzma", .son = L"Kuzmich", .daughter = L"Kuzminichna"},
+            {.name = L"Foma", .son = L"Fomich", .daughter = L"Fominichna"},
+        }};
+        if (father.empty()) return {};
+        for (const auto& e : exceptions)
+        {
+            if (father == e.name) return std::wstring{daughter ? e.daughter : e.son};
+        }
+        auto stem = father;
+        if (ends_with_(father, L"iy") || ends_with_(father, L"ey") || ends_with_(father, L"ay") ||
+            ends_with_(father, L"oy") || ends_with_(father, L"uy"))
+        {
+            return stem + (daughter ? L"evna" : L"evich");
+        }
+        if (ends_with_(father, L"y"))
+        {
+            stem.pop_back();
+            return stem + (daughter ? L"yevna" : L"yevich");
+        }
+        if (ends_with_(father, L"a"))
+        {
+            stem.pop_back();
+            return stem + (daughter ? L"ichna" : L"ich");
+        }
+        for (const wchar_t vowel : std::wstring_view{L"eiou"})
+        {
+            if (father.back() == vowel) return stem + (daughter ? L"vna" : L"vich");
+        }
+        return stem + (daughter ? L"ovna" : L"ovich");
+    }
+
+    // Icelandic patronymics: the father's name in the genitive, then son or
+    // dóttir.
+    [[nodiscard]] static std::wstring icelandic_patronymic_(const std::wstring& father, bool daughter)
+    {
+        auto stem = father;
+        if (ends_with_(stem, L"ur"))
+        {
+            stem.resize(stem.size() - 2);
+            stem += L"s";
+        }
+        else if (ends_with_(stem, L"i"))
+        {
+            stem.pop_back();
+            stem += L"a";
+        }
+        else if (!ends_with_(stem, L"s"))
+        {
+            stem += L"s";
+        }
+        return stem + (daughter ? L"dóttir" : L"son");
+    }
+
     // Core generation logic.
     [[nodiscard]] name solver(bool is_name, gender requested_gender,
                               culture requested_culture, std::uint64_t call_seed) const
@@ -1153,7 +1953,7 @@ class ng
             auto rg = r.split("gender");
             const gender g = resolve_gender(requested_gender, rg);
             auto [text, c] = draw_surname_(g, requested_culture, r);
-            return {std::move(text), g, c, this};
+            return {std::move(text), g, c, this, name_role::family};
         }();
         result._signature = {.seed = call_seed, .data = data_hash()};
         return result;
@@ -1164,13 +1964,13 @@ class ng
     void append_name_impl(name& n, gender g, culture c) const
     {
         const auto r = core::rng{n.seed()}.split("part").split(n._parts.size());
-        n.append_part(std::get<0>(draw_forename_(g, c, r)));
+        n.append_part(std::get<0>(draw_forename_(g, c, r)), name_role::given);
     }
 
     void append_surname_impl(name& n, culture c) const
     {
         const auto r = core::rng{n.seed()}.split("part").split(n._parts.size());
-        n.append_part(draw_surname_(n._gender, c, r).first);
+        n.append_part(draw_surname_(n._gender, c, r).first, name_role::family);
     }
 
     friend class name;
@@ -1206,8 +2006,16 @@ inline void name::to_json(core::json_writer& w) const
 {
     w.begin_object().field("name", core::to_utf8(_full_string)).key("parts").begin_array();
     for (const auto& part : _parts) w.value(core::to_utf8(part));
-    w.end_array()
-        .field("gender", _gender == gender::f ? "female" : "male")
+    w.end_array();
+    if (_composed)
+    {
+        static constexpr std::array<std::string_view, 4> role_names{"given", "patronymic", "family",
+                                                                    "family2"};
+        w.key("roles").begin_array();
+        for (const auto role : _roles) w.value(role_names.at(static_cast<std::size_t>(role)));
+        w.end_array();
+    }
+    w.field("gender", _gender == gender::f ? "female" : "male")
         .field("culture", ng::culture_name(_culture))
         .key("signature");
     _signature.to_json(w);

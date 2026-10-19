@@ -1,0 +1,29 @@
+culture	order	surnames	second_surname	surname_order	patronymic	family_name
+chinese	family_given					
+japanese	family_given					
+korean	family_given					
+cambodian	family_given					
+taiwanese	family_given					
+hongkonger	family_given					
+macanese	family_given					
+hungarian	family_given					
+spanish		2	1	paternal_first		
+mexican		2	1	paternal_first		
+argentinian		2	1	paternal_first		
+bolivian		2	1	paternal_first		
+chilean		2	1	paternal_first		
+colombian		2	1	paternal_first		
+costarican		2	1	paternal_first		
+ecuadorian		2	1	paternal_first		
+guatemalan		2	1	paternal_first		
+honduran		2	1	paternal_first		
+panamanian		2	1	paternal_first		
+peruvian		2	1	paternal_first		
+puertorican		2	1	paternal_first		
+salvadoran		2	1	paternal_first		
+uruguayan		2	1	paternal_first		
+portuguese		2	1	maternal_first		
+brazilian		2	0.6	maternal_first		
+angolan		2	0.8	maternal_first		
+russian					east_slavic	
+icelandic					icelandic	0
