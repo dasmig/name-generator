@@ -50,7 +50,7 @@ A layer for a gendered list uses `male-surname` or `female-surname` on its secon
 
 ## Naming Conventions
 
-`conventions.tsv` and `surname_forms.tsv` are **curated**, not derived from the name dataset; they are the basis of `get_full_name` and `get_family`. The name lists do not say how a culture writes a name, so the tables record what is generally known, and the code applies them.
+`conventions.tsv` and `surname_forms.tsv` are **curated**, not derived from the name dataset; they are the basis of `get_full_name`, `get_child_name` and `get_married_name`. The name lists do not say how a culture writes a name, so the tables record what is generally known, and the code applies them.
 
 | Convention | Cultures |
 | --- | --- |
@@ -66,7 +66,7 @@ Limits of this model: Chinese, Korean and Japanese data holds the Latin forms th
 
 **Surname forms** are suffix rules written for the ten cultures with gendered lists. The longest matching male ending applies; a surname no rule matches stays as it is (Polish Nowak, Greek Papageorgiou). `married` is the form a wife takes, where it differs from a daughter's (Lithuanian Kazlauskas gives Kazlauskaitė and Kazlauskienė). A test checks that at least 75% of each culture's male surnames have their derived form in the culture's female list (in `lite`: 100% for Azerbaijani, Kazakh, Turkmen, Russian and Polish, 97% Bulgarian, 89% Greek, 85% Czech and 79% Lithuanian).
 
-The tables are part of `data_hash()` of full names and families only (their signatures), not of `get_name` and `get_surname`, so adding or changing a convention does not change the output of those.
+The tables are part of the signatures of full names and child names only, not of `get_name` and `get_surname`, so adding or changing a convention does not change the output of those.
 
 ## Generation Model
 

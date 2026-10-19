@@ -223,14 +223,10 @@ enum class name_role : std::uint8_t
     family2 ///< The second surname of a double surname.
 };
 
-/// @brief The per-call choices of ng::get_family().
-struct family_request
+/// @brief The per-call choices of ng::get_child_name().
+struct child_name_request
 {
-    dasmig::culture culture = dasmig::culture::any; ///< Culture of the whole family.
-    std::size_t children = 2;                       ///< Number of children.
-    /// Whether the mother keeps her own surname (cultures with a single
-    /// surname; double-surname and patronymic cultures always do).
-    bool mother_keeps_surname = false;
+    dasmig::gender gender = dasmig::gender::any; ///< The child's gender; `any` draws one.
 };
 
 class ng;
@@ -274,7 +270,7 @@ class name
     }
 
     /// @brief Whether this name was composed by a culture's convention
-    ///        (ng::get_full_name() or ng::get_family()).
+    ///        (ng::get_full_name(), ng::get_child_name() or ng::get_married_name()).
     [[nodiscard]] bool composed() const
     {
         return _composed;
@@ -403,57 +399,6 @@ class name
     culture _culture;                 ///< Culture of the first part.
     const ng* _owner;                 ///< Generator that created this name.
     core::seed_signature _signature;  ///< Seed and data hash.
-
-    friend class ng;
-};
-
-/// @brief A father, a mother and their children, named by their culture's
-///        convention. Returned by ng::get_family().
-class family
-{
-  public:
-    /// @brief The seed this family was generated from.
-    [[nodiscard]] std::uint64_t seed() const { return _signature.seed; }
-
-    /// @brief The seed and the data this family was generated from.
-    [[nodiscard]] const core::seed_signature& signature() const { return _signature; }
-
-    /// @brief The father.
-    [[nodiscard]] const name& father() const { return _father; }
-
-    /// @brief The mother.
-    [[nodiscard]] const name& mother() const { return _mother; }
-
-    /// @brief The children, in birth order.
-    [[nodiscard]] const std::vector<name>& children() const { return _children; }
-
-    /// @brief Write this family as a JSON object
-    ///        `{"culture":…,"father":…,"mother":…,"children":[…],"signature":{…}}`.
-    /// @param w Writer positioned where a value is allowed.
-    void to_json(core::json_writer& w) const;
-
-    /// @brief This family as a JSON document.
-    /// @return Compact JSON.
-    [[nodiscard]] std::string to_json() const
-    {
-        core::json_writer w;
-        to_json(w);
-        return w.str();
-    }
-
-  private:
-    family(name father, name mother, std::vector<name> children, culture c,
-           core::seed_signature signature)
-        : _father(std::move(father)), _mother(std::move(mother)),
-          _children(std::move(children)), _culture(c), _signature(signature)
-    {
-    }
-
-    name _father;
-    name _mother;
-    std::vector<name> _children;
-    culture _culture;
-    core::seed_signature _signature;
 
     friend class ng;
 };
@@ -735,7 +680,7 @@ class ng
     }
 
 
-    // -- Full names and families ------------------------------------------
+    // -- Full names, children and marriage ------------------------------------------
 
     /// @brief How a culture composes a full name.
     /// @param c Culture.
@@ -834,124 +779,85 @@ class ng
         for_each_full_name(request, options, _engine(), std::forward<Sink>(sink));
     }
 
-    /// @brief Generate a family.
-    /// @param request Culture, number of children and surname choice.
-    /// @return A family.
-    /// @throws std::invalid_argument If no names are loaded for the resolved
-    ///         culture.
-    [[nodiscard]] family get_family(const family_request& request)
+    /// @brief Name a child of two people by the culture's convention.
+    ///
+    /// The child takes its family name from the parents as the culture
+    /// does: one surname cultures give the father's family name (a
+    /// daughter its female form where the culture has one); two-surname
+    /// cultures give one surname of each parent, in the culture's
+    /// surname_order; patronymic cultures derive the patronymic from the
+    /// father's given name. The given name is drawn from the father's
+    /// culture. Only the parts' roles are read, so the parents can be any
+    /// names (composed or not); the structure of a family (who the
+    /// parents are, how many children) is the caller's.
+    ///
+    /// Siblings are not made distinct: draw each with its own seed and
+    /// compare, if that matters.
+    ///
+    /// @param father The father's name; its culture is the child's.
+    /// @param mother The mother's name.
+    /// @param request The child's gender.
+    /// @return A composed name.
+    /// @throws std::invalid_argument If the father's culture is `any` or has
+    ///         no forenames or surnames loaded.
+    [[nodiscard]] name get_child_name(const name& father, const name& mother,
+                                      const child_name_request& request)
     {
-        return get_family(request, _engine());
+        return get_child_name(father, mother, request, _engine());
     }
 
-    /// @brief Generate a deterministic family.
-    ///
-    /// The family shares its names by the culture's convention: the children
-    /// of a single-surname culture take the father's family name (a daughter
-    /// its female form where the culture has one, and the mother takes the
-    /// married form unless `mother_keeps_surname`); two-surname cultures give
-    /// a child one surname of each parent; patronymic cultures derive it from
-    /// the father's given name. Each person has a stream of their own, so the
-    /// number of children does not change the parents.
-    ///
-    /// @param request Culture, number of children and surname choice.
-    /// @param call_seed Seed for reproducible results.
-    /// @return A family.
-    /// @throws std::invalid_argument If no names are loaded for the resolved
-    ///         culture.
-    [[nodiscard]] family get_family(const family_request& request, std::uint64_t call_seed) const
+    /// @brief Name a child of two people, deterministically.
+    /// @param father The father's name; its culture is the child's.
+    /// @param mother The mother's name.
+    /// @param request The child's gender.
+    /// @param call_seed Seed; the same seed, parents and data give the same
+    ///        name on every platform.
+    /// @return A composed name.
+    /// @throws std::invalid_argument If the father's culture is `any` or has
+    ///         no forenames or surnames loaded.
+    [[nodiscard]] name get_child_name(const name& father, const name& mother,
+                                      const child_name_request& request,
+                                      std::uint64_t call_seed) const
     {
+        const culture c = father._culture;
+        if (c == culture::any) throw std::invalid_argument("get_child_name: the father has no culture");
         const core::rng r{call_seed};
-        auto rc = r.split("culture");
-        const culture c = resolve_composed_culture_(request.culture, true, true, rc);
+        auto rg = r.split("gender");
+        const gender g = resolve_gender(request.gender, rg);
         const auto cv = convention(c);
+        const person dad = person_of_(father);
+        const person mum = person_of_(mother);
 
-        person father = draw_person_(gender::m, c, r.split("father"));
-        person mother = draw_person_(gender::f, c, r.split("mother"));
-        // One surname: the wife takes the husband's, in its married form.
-        if (cv.family_name && cv.surnames == 1 && !request.mother_keeps_surname)
+        person child{.g = g, .given = pick_forename_(g, c, r.split("given")), .patronymic = {}, .family = {}};
+        if (cv.patronymic != patronymic_style::none)
         {
-            mother.family = {feminize_(father.family.front(), c, true)};
+            child.patronymic = patronymic_of_(cv.patronymic, dad.given, g == gender::f);
         }
+        child.family = child_family_(dad, mum, g, c, cv);
+        return make_name_(child, c, call_seed);
+    }
 
-        std::vector<name> children;
-        std::vector<std::wstring> taken;
-        for (std::size_t i = 0; i < request.children; ++i)
+    /// @brief The name a woman has after marrying, by the culture's convention.
+    ///
+    /// A single-surname culture gives her the husband's family name, in its
+    /// married form where the culture has one (Kozlov gives Kozlova); a
+    /// two-surname or patronymic culture leaves her name as it is. Only the
+    /// roles of the names are read.
+    ///
+    /// @param wife The woman's name.
+    /// @param husband The husband's name; its culture is the one used.
+    /// @return A composed name with the wife's seed.
+    [[nodiscard]] name get_married_name(const name& wife, const name& husband) const
+    {
+        const culture c = husband._culture;
+        person p = person_of_(wife);
+        const person other = person_of_(husband);
+        const auto cv = convention(c);
+        if (c != culture::any && cv.family_name && cv.surnames == 1 && !other.family.empty())
         {
-            const auto rk = r.split("child").split(i);
-            auto rg = rk.split("gender");
-            const gender g = core::bernoulli(rg, 0.5) ? gender::f : gender::m;
-            person child{.g = g, .given = {}, .patronymic = {}, .family = {}};
-            // A sibling's given name is not repeated when another can be drawn.
-            for (std::size_t attempt = 0; attempt < 8; ++attempt)
-            {
-                child.given = pick_forename_(g, c, rk.split("given").split(attempt));
-                if (std::ranges::find(taken, child.given) == taken.end()) break;
-            }
-            taken.push_back(child.given);
-            if (cv.patronymic != patronymic_style::none)
-            {
-                child.patronymic = patronymic_of_(cv.patronymic, father.given, g == gender::f);
-            }
-            child.family = child_family_(father, mother, g, c, cv);
-            children.push_back(make_name_(child, c, rk.seed()));
+            p.family = {feminize_(other.family.front(), c, true)};
         }
-        return {make_name_(father, c, r.split("father").seed()),
-                make_name_(mother, c, r.split("mother").seed()), std::move(children), c,
-                {.seed = call_seed, .data = composed_hash_()}};
-    }
-
-    /// @brief Generate a batch of families from a seed drawn like
-    ///        get_family() draws its own.
-    /// @param request What every item is generated from.
-    /// @param options Count, first index, threads and uniqueness.
-    /// @return The results, in index order.
-    [[nodiscard]] std::vector<family> get_family_batch(const family_request& request,
-                                                       const core::batch_options& options)
-    {
-        return get_family_batch(request, options, _engine());
-    }
-
-    /// @brief Generate a batch of families, deterministically: item `i` is
-    ///        `get_family(request, core::item_seed(batch_seed, options.first + i))`.
-    /// @param request What every item is generated from.
-    /// @param options Count, first index, threads and uniqueness.
-    /// @param batch_seed Seed of the whole batch.
-    /// @return The results, in index order.
-    [[nodiscard]] std::vector<family> get_family_batch(const family_request& request,
-                                                       const core::batch_options& options,
-                                                       std::uint64_t batch_seed) const
-    {
-        return core::run_batch(options, batch_seed, [&](std::uint64_t item_seed)
-                               { return get_family(request, item_seed); });
-    }
-
-    /// @brief Stream a batch of families to a sink, in index order.
-    /// @tparam Sink Callable taking `(std::uint64_t, family&)`.
-    /// @param request What every item is generated from.
-    /// @param options Count, first index, threads and uniqueness.
-    /// @param batch_seed Seed of the whole batch.
-    /// @param sink Receives the items.
-    template <typename Sink>
-    void for_each_family(const family_request& request, const core::batch_options& options,
-                         std::uint64_t batch_seed, Sink&& sink) const
-    {
-        core::for_each_batch(options, batch_seed,
-                             [&](std::uint64_t item_seed) { return get_family(request, item_seed); },
-                             std::forward<Sink>(sink));
-    }
-
-    /// @brief Stream a batch of families with a batch seed drawn like
-    ///        get_family() draws its own.
-    /// @tparam Sink Callable taking `(std::uint64_t, family&)`.
-    /// @param request What every item is generated from.
-    /// @param options Count, first index, threads and uniqueness.
-    /// @param sink Receives the items.
-    template <typename Sink>
-    void for_each_family(const family_request& request, const core::batch_options& options,
-                         Sink&& sink)
-    {
-        for_each_family(request, options, _engine(), std::forward<Sink>(sink));
+        return make_name_(p, wife._culture, wife.seed());
     }
 
     /// @brief The patronymic a father's given name gives a child.
@@ -1696,7 +1602,7 @@ class ng
         return {pick(db, resolved_c, gender::any, rn), resolved_c};
     }
 
-    // -- Conventions, full names and families -------------------------------
+    // -- Conventions and composing names -------------------------------
 
     static core::table_schema convention_schema_()
     {
@@ -1858,6 +1764,20 @@ class ng
                     if (second != p.family.front()) break;
                 }
                 p.family.push_back(std::move(second));
+            }
+        }
+        return p;
+    }
+
+    // The words of a name, by role.
+    [[nodiscard]] static person person_of_(const name& n)
+    {
+        person p{.g = n._gender, .given = n.given(), .patronymic = n.patronymic(), .family = {}};
+        for (std::size_t i = 0; i < n._parts.size(); ++i)
+        {
+            if (n._roles.at(i) == name_role::family || n._roles.at(i) == name_role::family2)
+            {
+                p.family.push_back(n._parts.at(i));
             }
         }
         return p;
@@ -2098,19 +2018,6 @@ inline void name::to_json(core::json_writer& w) const
     w.field("gender", _gender == gender::f ? "female" : "male")
         .field("culture", ng::culture_name(_culture))
         .key("signature");
-    _signature.to_json(w);
-    w.end_object();
-}
-
-inline void family::to_json(core::json_writer& w) const
-{
-    w.begin_object().field("culture", ng::culture_name(_culture)).key("father");
-    _father.to_json(w);
-    w.key("mother");
-    _mother.to_json(w);
-    w.key("children").begin_array();
-    for (const auto& child : _children) child.to_json(w);
-    w.end_array().key("signature");
     _signature.to_json(w);
     w.end_object();
 }
