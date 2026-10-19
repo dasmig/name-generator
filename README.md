@@ -165,6 +165,7 @@ Tested with:
 | [persona-generator](https://github.com/dasmig/persona-generator) | Complete characters composed from the other generators |
 | [phone-generator](https://github.com/dasmig/phone-generator) | Phone numbers valid in each country's numbering plan |
 | [trait-generator](https://github.com/dasmig/trait-generator) | Personality traits with conflicts, synergies and Big Five axes |
+| [user-generator](https://github.com/dasmig/user-generator) | Complete user records: account, username, email, phone and address |
 
 ## License
 
