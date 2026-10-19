@@ -1493,3 +1493,420 @@ TEST_CASE("surname batch: known answer of 10,000 items", "[batch][kat]")
                         { hash = dasmig::core::hash_combine(hash, dasmig::core::fnv1a64(item.to_json())); });
     REQUIRE(hash == 0xa5457295cd764651ULL);
 }
+
+// ===========================================================================
+// Conventions, full names and families
+// ===========================================================================
+namespace
+{
+std::string utf8(const std::wstring& text)
+{
+    return dasmig::core::to_utf8(text);
+}
+
+bool ends_with(const std::wstring& text, const std::wstring& ending)
+{
+    return text.size() >= ending.size() && text.compare(text.size() - ending.size(), ending.size(), ending) == 0;
+}
+} // namespace
+
+TEST_CASE("conventions: the shipped table", "[convention]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    REQUIRE(g.convention(culture::japanese).order == name_order::family_given);
+    REQUIRE(g.convention(culture::spanish).surnames == 2);
+    REQUIRE(g.convention(culture::portuguese).inheritance == surname_order::maternal_first);
+    REQUIRE(g.convention(culture::brazilian).second_surname == 0.6);
+    REQUIRE(g.convention(culture::russian).patronymic == patronymic_style::east_slavic);
+    REQUIRE(g.convention(culture::icelandic).patronymic == patronymic_style::icelandic);
+    REQUIRE_FALSE(g.convention(culture::icelandic).family_name);
+    // A culture without a row has the default.
+    const auto american = g.convention(culture::american);
+    REQUIRE(american.order == name_order::given_family);
+    REQUIRE(american.surnames == 1);
+    REQUIRE(american.patronymic == patronymic_style::none);
+    REQUIRE(g.convention_layers().size() == 1);
+    REQUIRE(g.surname_form_layers().size() == 1);
+}
+
+TEST_CASE("full name: given then family by default", "[convention]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    const auto n = g.get_full_name({.gender = gender::f, .culture = culture::american}, 7);
+    REQUIRE(n.composed());
+    REQUIRE(n.roles() == std::vector{name_role::given, name_role::family});
+    REQUIRE(n.parts().size() == 2);
+    REQUIRE(n.given() == n.parts()[0]);
+    REQUIRE(n.family() == n.parts()[1]);
+    REQUIRE(n.patronymic().empty());
+}
+
+TEST_CASE("full name: family name first for Japanese, Chinese and Korean", "[convention]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    for (const auto c : {culture::japanese, culture::chinese, culture::korean, culture::hungarian})
+    {
+        for (std::uint64_t seed = 0; seed < 50; ++seed)
+        {
+            const auto n = g.get_full_name({.gender = gender::f, .culture = c}, seed);
+            REQUIRE(n.roles() == std::vector{name_role::family, name_role::given});
+            REQUIRE(n.parts()[0] == n.family());
+            REQUIRE(n.parts()[1] == n.given());
+            REQUIRE(utf8(n) == utf8(n.family() + L" " + n.given()));
+        }
+    }
+}
+
+TEST_CASE("full name: Spanish speaking cultures have two surnames", "[convention]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    for (const auto c : {culture::spanish, culture::mexican, culture::peruvian})
+    {
+        for (std::uint64_t seed = 0; seed < 50; ++seed)
+        {
+            const auto n = g.get_full_name({.culture = c}, seed);
+            REQUIRE(n.roles() == std::vector{name_role::given, name_role::family, name_role::family2});
+            REQUIRE(n.parts()[1] != n.parts()[2]);
+        }
+    }
+}
+
+TEST_CASE("full name: a second surname by chance", "[convention]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    int two = 0;
+    for (std::uint64_t seed = 0; seed < 1000; ++seed)
+    {
+        const auto n = g.get_full_name({.culture = culture::brazilian}, seed);
+        REQUIRE((n.parts().size() == 2 || n.parts().size() == 3));
+        two += n.parts().size() == 3 ? 1 : 0;
+    }
+    REQUIRE(two > 520);
+    REQUIRE(two < 680);
+}
+
+TEST_CASE("full name: Russian patronymics", "[convention]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    for (std::uint64_t seed = 0; seed < 200; ++seed)
+    {
+        const auto m = g.get_full_name({.gender = gender::m, .culture = culture::russian}, seed);
+        const auto f = g.get_full_name({.gender = gender::f, .culture = culture::russian}, seed);
+        REQUIRE(m.roles() == std::vector{name_role::given, name_role::patronymic, name_role::family});
+        REQUIRE(ends_with(m.patronymic(), L"ch"));
+        REQUIRE(ends_with(f.patronymic(), L"na"));
+    }
+}
+
+TEST_CASE("full name: Icelandic patronymics replace the family name", "[convention]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    for (std::uint64_t seed = 0; seed < 100; ++seed)
+    {
+        const auto m = g.get_full_name({.gender = gender::m, .culture = culture::icelandic}, seed);
+        const auto f = g.get_full_name({.gender = gender::f, .culture = culture::icelandic}, seed);
+        REQUIRE(m.roles() == std::vector{name_role::given, name_role::patronymic});
+        REQUIRE(ends_with(m.patronymic(), L"son"));
+        REQUIRE(ends_with(f.patronymic(), L"dóttir"));
+        REQUIRE(m.family().empty());
+    }
+}
+
+TEST_CASE("patronymic rules", "[convention]")
+{
+    using namespace dasmig;
+    const auto p = [](patronymic_style s, const wchar_t* father, bool daughter)
+    { return ng::patronymic_of(s, father, daughter); };
+    const auto ru = patronymic_style::east_slavic;
+    REQUIRE(p(ru, L"Ivan", false) == L"Ivanovich");
+    REQUIRE(p(ru, L"Ivan", true) == L"Ivanovna");
+    REQUIRE(p(ru, L"Sergey", false) == L"Sergeyevich");
+    REQUIRE(p(ru, L"Yuriy", true) == L"Yuriyevna");
+    REQUIRE(p(ru, L"Vasily", false) == L"Vasilyevich");
+    REQUIRE(p(ru, L"Dmitry", false) == L"Dmitriyevich");
+    REQUIRE(p(ru, L"Pavel", false) == L"Pavlovich");
+    REQUIRE(p(ru, L"Ilya", true) == L"Ilyinichna");
+    REQUIRE(p(ru, L"Nikita", false) == L"Nikitich");
+    REQUIRE(p(ru, L"Igor", false) == L"Igorevich");
+    REQUIRE(p(ru, L"Vladimir", true) == L"Vladimirovna");
+    const auto is = patronymic_style::icelandic;
+    REQUIRE(p(is, L"Jón", false) == L"Jónsson");
+    REQUIRE(p(is, L"Jón", true) == L"Jónsdóttir");
+    REQUIRE(p(is, L"Ólafur", false) == L"Ólafsson");
+    REQUIRE(p(is, L"Árni", false) == L"Árnason");
+    REQUIRE(p(is, L"Gunnar", true) == L"Gunnarsdóttir");
+    REQUIRE(p(is, L"Magnús", false) == L"Magnússon");
+    REQUIRE(p(patronymic_style::none, L"Ivan", false).empty());
+}
+
+TEST_CASE("surname forms: examples", "[convention]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    REQUIRE(g.female_form(L"Ivanov", culture::russian) == L"Ivanova");
+    REQUIRE(g.female_form(L"Tolstoy", culture::russian) == L"Tolstaya");
+    REQUIRE(g.female_form(L"Kowalski", culture::polish) == L"Kowalska");
+    REQUIRE(g.female_form(L"Nowak", culture::polish) == L"Nowak");
+    REQUIRE(g.female_form(L"Papadopoulos", culture::greek) == L"Papadopoulou");
+    REQUIRE(g.female_form(L"Novák", culture::czech) == L"Nováková");
+    REQUIRE(g.female_form(L"Nový", culture::czech) == L"Nová");
+    REQUIRE(g.female_form(L"Němec", culture::czech) == L"Němcová");
+    REQUIRE(g.female_form(L"Kazlauskas", culture::lithuanian) == L"Kazlauskaitė");
+    REQUIRE(g.female_form(L"Kazlauskas", culture::lithuanian, true) == L"Kazlauskienė");
+    // A culture without rules keeps the surname.
+    REQUIRE(g.female_form(L"Smith", culture::american) == L"Smith");
+}
+
+TEST_CASE("surname forms cover most surnames of every gendered culture", "[convention]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    auto& pools = ng_test_access::m_surnames(g);
+    for (const auto& [c, male] : pools)
+    {
+        if (c == culture::icelandic) continue; // patronymics, not forms
+        const auto female = ng_test_access::f_surnames(g).at(c).names();
+        const std::set<std::wstring> listed(female.begin(), female.end());
+        std::size_t found = 0;
+        const auto names = male.names();
+        for (const auto& surname : names) found += listed.contains(g.female_form(surname, c)) ? 1 : 0;
+        INFO(ng::culture_name(c));
+        REQUIRE(found * 100 >= names.size() * 75);
+    }
+}
+
+TEST_CASE("family: a single surname culture shares the father's", "[family]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    const auto f = g.get_family({.culture = culture::american, .children = 3}, 11);
+    REQUIRE(f.children().size() == 3);
+    REQUIRE(f.father().family() == f.mother().family());
+    for (const auto& child : f.children()) REQUIRE(child.family() == f.father().family());
+    const auto keeps = g.get_family({.culture = culture::american, .children = 1, .mother_keeps_surname = true}, 11);
+    REQUIRE(keeps.father().family() != keeps.mother().family());
+    REQUIRE(keeps.children()[0].family() == keeps.father().family());
+}
+
+TEST_CASE("family: Spanish children take one surname of each parent", "[family]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    for (std::uint64_t seed = 0; seed < 50; ++seed)
+    {
+        const auto f = g.get_family({.culture = culture::spanish, .children = 2}, seed);
+        for (const auto& child : f.children())
+        {
+            REQUIRE(child.parts().size() == 3);
+            REQUIRE(child.parts()[1] == f.father().parts()[1]);
+            REQUIRE(child.parts()[2] == f.mother().parts()[1]);
+        }
+    }
+}
+
+TEST_CASE("family: Portuguese children take the mother's last surname, then the father's", "[family]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    for (std::uint64_t seed = 0; seed < 50; ++seed)
+    {
+        const auto f = g.get_family({.culture = culture::portuguese, .children = 2}, seed);
+        for (const auto& child : f.children())
+        {
+            REQUIRE(child.parts()[1] == f.mother().parts().back());
+            REQUIRE(child.parts()[2] == f.father().parts().back());
+        }
+    }
+}
+
+TEST_CASE("family: Russian patronymics and surname forms", "[family]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    for (std::uint64_t seed = 0; seed < 50; ++seed)
+    {
+        const auto f = g.get_family({.culture = culture::russian, .children = 4}, seed);
+        const auto surname = f.father().family();
+        REQUIRE(f.mother().family() == g.female_form(surname, culture::russian, true));
+        // The father's given name gives every child's patronymic; the
+        // daughters have the female form of the surname.
+        const auto father = f.father().given();
+        for (const auto& child : f.children())
+        {
+            const bool daughter = ends_with(child.patronymic(), L"na");
+            REQUIRE(child.patronymic() == ng::patronymic_of(patronymic_style::east_slavic, father, daughter));
+            REQUIRE(child.family() == (daughter ? g.female_form(surname, culture::russian) : surname));
+        }
+    }
+}
+
+TEST_CASE("family: Icelandic children are named after the father", "[family]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    const auto f = g.get_family({.culture = culture::icelandic, .children = 6}, 5);
+    const auto father = f.father().given();
+    for (const auto& child : f.children())
+    {
+        const bool daughter = ends_with(child.patronymic(), L"dóttir");
+        REQUIRE(child.patronymic() == ng::patronymic_of(patronymic_style::icelandic, father, daughter));
+        REQUIRE(child.family().empty());
+    }
+}
+
+TEST_CASE("family: replay, streams and siblings", "[family]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    const auto a = g.get_family({.culture = culture::german, .children = 2}, 99);
+    REQUIRE(a.to_json() == g.get_family({.culture = culture::german, .children = 2}, 99).to_json());
+    REQUIRE(a.seed() == 99);
+    // The number of children does not change the parents or the first child.
+    const auto b = g.get_family({.culture = culture::german, .children = 5}, 99);
+    REQUIRE(utf8(a.father()) == utf8(b.father()));
+    REQUIRE(utf8(a.mother()) == utf8(b.mother()));
+    REQUIRE(utf8(a.children()[0]) == utf8(b.children()[0]));
+    REQUIRE(b.children().size() == 5);
+    REQUIRE(g.get_family({.culture = culture::german, .children = 0}, 1).children().empty());
+    // Both genders show up among many children.
+    std::set<std::string> genders;
+    for (const auto& child : g.get_family({.culture = culture::german, .children = 40}, 3).children())
+    {
+        genders.insert(child.to_json().find("\"female\"") != std::string::npos ? "f" : "m");
+    }
+    REQUIRE(genders.size() == 2);
+}
+
+TEST_CASE("full name and family: no data", "[family]")
+{
+    dasmig::ng empty;
+    REQUIRE_THROWS_AS(empty.get_full_name({}, 1), std::invalid_argument);
+    REQUIRE_THROWS_AS(empty.get_family({}, 1), std::invalid_argument);
+}
+
+TEST_CASE("full name: get_name and get_surname do not use conventions", "[convention]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    const auto n = g.get_name({.gender = gender::f, .culture = culture::japanese}, 5);
+    REQUIRE_FALSE(n.composed());
+    REQUIRE(n.to_json().find("\"roles\"") == std::string::npos);
+    REQUIRE(n.roles() == std::vector{name_role::given});
+    REQUIRE(g.get_surname({.culture = culture::japanese}, 5).roles() == std::vector{name_role::family});
+}
+
+TEST_CASE("conventions: layers", "[convention][extend]")
+{
+    using namespace dasmig;
+    ng g;
+    g.load(resource_path());
+    REQUIRE(g.has_resources());
+    const auto hash = g.data_hash();
+    const auto before = g.get_full_name({.gender = gender::f, .culture = culture::german}, 3).to_json();
+
+    // An override changes the convention, not the name lists.
+    g.extend_conventions_from_string("culture\torder\ngerman\tfamily_given\n", "mod.tsv");
+    REQUIRE(g.convention(culture::german).order == name_order::family_given);
+    REQUIRE(g.convention(culture::russian).patronymic == patronymic_style::east_slavic);
+    REQUIRE(g.data_hash() == hash);
+    REQUIRE(g.convention_layers().size() == 2);
+    const auto after = g.get_full_name({.gender = gender::f, .culture = culture::german}, 3);
+    REQUIRE(after.roles() == std::vector{name_role::family, name_role::given});
+    REQUIRE(after.to_json() != before);
+
+    // Bad layers change nothing.
+    const auto layers = g.convention_layers().size();
+    REQUIRE_THROWS_AS(g.extend_conventions_from_string("culture\torder\nnowhere\tfamily_given\n", "bad.tsv"),
+                      dasmig::core::tsv_error);
+    REQUIRE_THROWS_AS(g.extend_conventions_from_string("culture\torder\ngerman\tbackwards\n", "bad.tsv"),
+                      dasmig::core::tsv_error);
+    REQUIRE_THROWS_AS(g.extend_conventions_from_string("culture\tsurnames\ngerman\t3\n", "bad.tsv"),
+                      dasmig::core::tsv_error);
+    REQUIRE_THROWS_AS(g.extend_conventions_from_string("culture\tpatronymic\ngerman\tmoon\n", "bad.tsv"),
+                      dasmig::core::tsv_error);
+    REQUIRE(g.convention_layers().size() == layers);
+    REQUIRE(g.convention(culture::german).order == name_order::family_given);
+
+    // A row can be removed.
+    g.extend_conventions_from_string("culture\tdisabled\ngerman\t1\n", "off.tsv");
+    REQUIRE(g.convention(culture::german).order == name_order::given_family);
+
+    // A surname form layer.
+    const auto form_layers = g.surname_form_layers().size();
+    g.extend_surname_forms_from_string("culture\tmale\tfemale\nrussian\tkin\tkina\n", "forms.tsv");
+    REQUIRE(g.female_form(L"Chaykin", culture::russian) == L"Chaykina");
+    REQUIRE_THROWS_AS(g.extend_surname_forms_from_string("culture\tmale\tfemale\nrussian\tx\t\n", "bad.tsv"),
+                      dasmig::core::tsv_error);
+    REQUIRE(g.surname_form_layers().size() == form_layers + 1);
+}
+
+TEST_CASE("conventions: load replaces the conventions", "[convention][extend]")
+{
+    using namespace dasmig;
+    ng g;
+    g.load(resource_path());
+    REQUIRE(g.has_resources());
+    g.extend_conventions_from_string("culture\torder\ngerman\tfamily_given\n", "mod.tsv");
+    g.load(resource_path());
+    REQUIRE(g.has_resources());
+    REQUIRE(g.convention(culture::german).order == name_order::given_family);
+    REQUIRE(g.convention_layers().size() == 1);
+
+    // A directory without the tables has the default conventions.
+    const auto dir = std::filesystem::temp_directory_path() / "namegen-no-conventions";
+    std::filesystem::remove_all(dir);
+    std::filesystem::create_directories(dir);
+    std::ofstream{dir / "a.names"} << "jp\nmale\nTakashi\n";
+    std::ofstream{dir / "b.names"} << "jp\nany\nSato\n";
+    g.load(dir);
+    REQUIRE(g.convention(culture::japanese).order == name_order::given_family);
+    REQUIRE(utf8(g.get_full_name({.gender = gender::m, .culture = culture::japanese}, 1)) == "Takashi Sato");
+    std::filesystem::remove_all(dir);
+}
+
+TEST_CASE("full name and family: batches", "[batch][convention]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    const auto request = name_request{.gender = gender::any, .culture = culture::russian};
+    const auto batch = g.get_full_name_batch(request, {.count = 50, .threads = 3}, 77);
+    REQUIRE(batch.size() == 50);
+    for (std::size_t i = 0; i < batch.size(); ++i)
+    {
+        REQUIRE(batch[i].to_json() == g.get_full_name(request, dasmig::core::item_seed(77, i)).to_json());
+    }
+    const auto families = g.get_family_batch({.culture = culture::spanish}, {.count = 20, .threads = 2}, 5);
+    REQUIRE(families.size() == 20);
+    for (std::size_t i = 0; i < families.size(); ++i)
+    {
+        REQUIRE(families[i].to_json() ==
+                g.get_family({.culture = culture::spanish}, dasmig::core::item_seed(5, i)).to_json());
+    }
+    std::size_t seen = 0;
+    g.for_each_family({.culture = culture::spanish}, {.count = 20}, 5,
+                      [&](std::uint64_t, const dasmig::family&) { ++seen; });
+    REQUIRE(seen == 20);
+}
+
+TEST_CASE("full name and family: known answers", "[kat][convention]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    std::uint64_t names = 0xcbf29ce484222325ULL;
+    g.for_each_full_name({.gender = gender::any, .culture = culture::any}, {.count = 10000, .threads = 4}, 1,
+                         [&](std::uint64_t, const dasmig::name& item)
+                         { names = dasmig::core::hash_combine(names, dasmig::core::fnv1a64(item.to_json())); });
+    REQUIRE(names == 0xc3f5ad2062c146b9ULL);
+    std::uint64_t families = 0xcbf29ce484222325ULL;
+    g.for_each_family({.culture = culture::any}, {.count = 2000, .threads = 4}, 1,
+                      [&](std::uint64_t, const dasmig::family& item)
+                      { families = dasmig::core::hash_combine(families, dasmig::core::fnv1a64(item.to_json())); });
+    REQUIRE(families == 0x72c9ffbdfd33f9ebULL);
+}

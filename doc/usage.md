@@ -191,6 +191,52 @@ auto mixed = gen.get_name({.gender = dasmig::gender::f, .culture = dasmig::cultu
 
 Each appended part draws from the name's seed and its position, so replaying the seed and the same appends gives the same full name (see Replay and JSON).
 
+## Full Names and Families
+
+`get_name` and `get_surname` draw one part and leave composing to you. `get_full_name` composes a whole name by the culture's convention, and `get_family` names a father, a mother and their children.
+
+```cpp
+auto& gen = dasmig::ng::instance();
+
+auto jp = gen.get_full_name({.gender = dasmig::gender::f, .culture = dasmig::culture::japanese}); // family name first
+auto ru = gen.get_full_name({.gender = dasmig::gender::m, .culture = dasmig::culture::russian});  // given, patronymic, family
+auto es = gen.get_full_name({.culture = dasmig::culture::spanish});                             // given, two surnames
+auto is = gen.get_full_name({.gender = dasmig::gender::f, .culture = dasmig::culture::icelandic}); // given, patronymic
+
+std::wcout << ru.given() << L" " << ru.patronymic() << L" " << ru.family() << L"
+";
+```
+
+The parts of a composed name carry roles (`name::roles()`: `given`, `patronymic`, `family`, `family2`) and `to_json()` lists them. The string follows the culture's order. Results of `get_name` and `get_surname` are unchanged by conventions.
+
+```cpp
+auto family = gen.get_family({.culture = dasmig::culture::russian, .children = 3});
+family.father();   // Ivan Petrovich Kozlov
+family.mother();   // Dasha Matveyevna Kozlova  (the married form of her husband's surname)
+family.children(); // Vadim Ivanovich Kozlov, Anna Ivanovna Kozlova, ...
+```
+
+- **One surname** (most cultures): the children take the father's family name and the mother takes it too, unless `mother_keeps_surname` is set. Where the culture has female surname forms (Russian, Polish, Czech, Bulgarian, Greek, Lithuanian, Kazakh, Azerbaijani, Turkmen), a daughter has the female form, and so does the mother (the married form in Lithuanian).
+- **Two surnames** (Spanish speaking cultures, Portuguese, Brazilian, Angolan): a child takes the father's first surname then the mother's first (Spain and Latin America), or the mother's last then the father's last (Portuguese `surname_order`). Brazilian and Angolan names have a second surname only by chance (`second_surname`).
+- **Patronymics** (Russian, Icelandic): from the father's given name, Ivan gives Ivanovich or Ivanovna, Jón gives Jónsson or Jónsdóttir. Icelanders have no family name.
+- Each person has a stream of their own (`"father"`, `"mother"`, `"child"` and the child's index), so changing the number of children does not change the parents. The batch forms are `get_full_name_batch`, `get_family_batch`, `for_each_full_name` and `for_each_family`.
+
+### Conventions
+
+The conventions are data, in `conventions.tsv` and `surname_forms.tsv` next to the name lists, and extend like them:
+
+```cpp
+gen.extend_conventions_from_string("culture	order
+hungarian	given_family
+", "mod.tsv");
+gen.extend_surname_forms_from_string("culture	male	female
+russian	kin	kina
+", "forms.tsv");
+auto c = gen.convention(dasmig::culture::russian); // order, patronymic, surnames, ...
+```
+
+`extend(path)` also accepts the two files, and a directory with them. The columns of `conventions.tsv` are `culture`, `order`, `patronymic`, `family_name`, `surnames`, `second_surname` and `surname_order`; those of `surname_forms.tsv` are `culture`, `male` (an ending, or `*`), `female` and `married`. See [Data and Method](data.md#naming-conventions).
+
 ## Thread Safety
 
 Each `ng` instance is independent. The static `instance()` singleton uses a

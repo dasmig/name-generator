@@ -21,6 +21,8 @@ Culturally appropriate first names and surnames from popular name databases, by 
 
 - **Surname Generation**. Randomly generates surnames, organized by culture.
 
+- **Full Names and Families**. `get_full_name` composes a name by the culture's convention (family name first, two surnames, patronymics) and `get_family` names parents and children with shared surnames, female surname forms and patronymics.
+
 - **Full Name Chaining**. Append one or more names and surnames with an intuitive chainable API.
 
 - **105 Cultures Supported**. Afghan, Albanian, Algerian, American, Angolan, Argentinian, Austrian, Azerbaijani, Bahraini, Bangladeshi, Belgian, Bolivian, Botswanan, Brazilian, British, Bruneian, Bulgarian, Burkinabe, Burundian, Cambodian, Cameroonian, Canadian, Chilean, Chinese, Colombian, Costa Rican, Croatian, Cypriot, Czech, Danish, Djiboutian, Dutch, Ecuadorian, Egyptian, Emirati, Estonian, Ethiopian, Fijian, Filipino, Finnish, French, Georgian, German, Ghanaian, Greek, Guatemalan, Haitian, Honduran, Hong Konger, Hungarian, Icelandic, Indian, Indonesian, Iranian, Iraqi, Irish, Israeli, Italian, Jamaican, Japanese, Jordanian, Kazakh, Korean, Kuwaiti, Lebanese, Libyan, Lithuanian, Luxembourgish, Macanese, Malaysian, Maldivian, Maltese, Mauritian, Mexican, Moldovan, Moroccan, Namibian, Nigerian, Norwegian, Omani, Palestinian, Panamanian, Peruvian, Polish, Portuguese, Puerto Rican, Qatari, Russian, Salvadoran, Saudi, Serbian, Singaporean, Slovenian, South African, Spanish, Sudanese, Swedish, Swiss, Syrian, Taiwanese, Tunisian, Turkish, Turkmen, Uruguayan, Yemeni.
