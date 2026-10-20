@@ -193,7 +193,7 @@ Each appended part draws from the name's seed and its position, so replaying the
 
 ## Full Names, Children and Marriage
 
-`get_name` and `get_surname` draw one part and leave composing to you. `get_full_name` composes a whole name by the culture's convention. `get_child_name` and `get_married_name` apply the culture's rules for sharing names between people.
+`get_name` and `get_surname` draw one part and leave composing to you. `get_full_name` composes a whole name by the culture's convention. `get_child_name`, `get_parent_name` and `get_married_name` apply the culture's rules for sharing names between people.
 
 ```cpp
 auto& gen = dasmig::ng::instance();
@@ -217,6 +217,8 @@ auto child = gen.get_child_name(father, wife, {.gender = dasmig::gender::f}); //
 ```
 
 `get_child_name(father, mother, request[, seed])` names one child of two people; the father's culture is the child's. Who the parents are, how many children there are and how old everyone is are not decided here: that is the caller's (the `relationship-generator` library builds families on it). Only the roles of the parents' parts are read, so the parents can also be built with `get_name` and `append_surname`. Siblings are not made distinct: give each child its own seed and compare names if that matters.
+
+`get_parent_name(child, parent_gender[, seed])` is the inverse: it names a father or a mother consistently with an existing child. The father gets the child's family name (in its male form where the culture has one) and, in a patronymic culture, a given name whose patronymic is the child's. In a two-surname culture each parent gets the surname the child took from them, in the slot the culture uses. What the child's name does not fix (the mother's family name, the other surname of a parent, the grandfather in a patronymic) is drawn. Naming the parents of a given person, and then theirs in turn, gives a consistent tree upward.
 
 - **One surname** (most cultures): the child takes the father's family name. Where the culture has female surname forms (Russian, Polish, Czech, Bulgarian, Greek, Lithuanian, Kazakh, Azerbaijani, Turkmen), a daughter has the female form. `get_married_name` gives a wife her husband's family name, in the married form (the same, except in Lithuanian).
 - **Two surnames** (Spanish speaking cultures, Portuguese, Brazilian, Angolan): a child takes the father's first surname then the mother's first (Spain and Latin America), or the mother's last then the father's last (Portuguese `surname_order`). Brazilian and Angolan names have a second surname only by chance (`second_surname`). A wife keeps her name.

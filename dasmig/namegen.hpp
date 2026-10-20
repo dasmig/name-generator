@@ -860,6 +860,78 @@ class ng
         return make_name_(p, wife._culture, wife.seed());
     }
 
+    /// @brief Name a parent of an existing person, consistently with the
+    ///        person's name; the inverse of get_child_name().
+    ///
+    /// The father's family name is the child's (in its male form where the
+    /// culture has one), and in a patronymic culture his given name is one
+    /// whose patronymic is the child's. Two-surname cultures give the
+    /// surname the child took from this parent, in the slot the culture
+    /// puts it. Everything the child's name does not fix (the mother's
+    /// family name, the other surname of a parent, a grandparent's name in
+    /// a patronymic) is drawn. The culture is the child's. Only the roles
+    /// of the child's parts are read.
+    ///
+    /// @param child The person's name; its culture is the parent's.
+    /// @param parent_gender `gender::m` or `gender::f`.
+    /// @return A composed name.
+    /// @throws std::invalid_argument If the child's culture is `any`, the
+    ///         gender is `any`, or the culture has no names loaded.
+    [[nodiscard]] name get_parent_name(const name& child, gender parent_gender)
+    {
+        return get_parent_name(child, parent_gender, _engine());
+    }
+
+    /// @brief Name a parent of an existing person, deterministically.
+    /// @param child The person's name; its culture is the parent's.
+    /// @param parent_gender `gender::m` or `gender::f`.
+    /// @param call_seed Seed; the same seed, child and data give the same
+    ///        name on every platform.
+    /// @return A composed name.
+    /// @throws std::invalid_argument If the child's culture is `any`, the
+    ///         gender is `any`, or the culture has no names loaded.
+    [[nodiscard]] name get_parent_name(const name& child, gender parent_gender,
+                                       std::uint64_t call_seed) const
+    {
+        const culture c = child._culture;
+        if (c == culture::any) throw std::invalid_argument("get_parent_name: the child has no culture");
+        if (parent_gender != gender::m && parent_gender != gender::f)
+        {
+            throw std::invalid_argument("get_parent_name: the parent's gender must be male or female");
+        }
+        const core::rng r{call_seed};
+        const auto cv = convention(c);
+        const person kid = person_of_(child);
+        const bool father = parent_gender == gender::m;
+        person p = draw_person_(parent_gender, c, r.split("person"));
+
+        if (father && cv.patronymic != patronymic_style::none && !kid.patronymic.empty())
+        {
+            p.given = father_given_(cv.patronymic, kid, c, p.given, r.split("given"));
+        }
+        if (cv.family_name && !kid.family.empty())
+        {
+            if (cv.surnames == 2 && kid.family.size() == 2)
+            {
+                // The inverse of child_family_(): which of the child's surnames
+                // came from this parent, and the slot it sits in.
+                const bool paternal = cv.inheritance == surname_order::paternal_first;
+                const auto& inherited = kid.family.at(father == paternal ? 0 : 1);
+                if (p.family.size() < 2) p.family.push_back(pick_surname_(parent_gender, c, r.split("family2")));
+                p.family.at(paternal ? 0 : 1) = inherited;
+            }
+            else if (father)
+            {
+                p.family = {masculine_(kid.family.back(), c)};
+            }
+            else if (cv.surnames == 2)
+            {
+                p.family.resize(1); // a child with one surname had parents with one
+            }
+        }
+        return make_name_(p, c, call_seed);
+    }
+
     /// @brief The patronymic a father's given name gives a child.
     ///
     /// Rule-based, for names in Latin script, with a short list of irregular
@@ -1845,6 +1917,47 @@ class ng
         if (best == nullptr) return surname;
         return surname.substr(0, surname.size() - best->male.size()) +
                (married ? best->married : best->female);
+    }
+
+    // The male surname a female form comes from: the longest female ending
+    // that undoes to a surname the rules turn back into this one, or the
+    // surname as it is.
+    [[nodiscard]] std::wstring masculine_(const std::wstring& surname, culture c) const
+    {
+        const auto it = _forms.find(c);
+        if (it == _forms.end()) return surname;
+        std::wstring best = surname;
+        std::size_t best_size = 0;
+        for (const auto& rule : it->second)
+        {
+            if (rule.female.size() < best_size || rule.female.size() > surname.size()) continue;
+            if (!std::wstring_view{surname}.ends_with(rule.female)) continue;
+            auto candidate = surname.substr(0, surname.size() - rule.female.size()) + rule.male;
+            if (feminize_(candidate, c, false) != surname) continue;
+            best = std::move(candidate);
+            best_size = rule.female.size();
+        }
+        return best;
+    }
+
+    // A father's given name that gives the child's patronymic: drawn from
+    // the male forenames that do, or `fallback` when none does.
+    [[nodiscard]] std::wstring father_given_(patronymic_style style, const person& kid, culture c,
+                                             const std::wstring& fallback, core::rng r) const
+    {
+        const auto it = _m_pool.find(c);
+        if (it == _m_pool.end()) return fallback;
+        std::vector<std::wstring> fits;
+        for (std::size_t i = 0; i < it->second.ends.size(); ++i)
+        {
+            auto candidate = it->second.at(i);
+            if (patronymic_of_(style, candidate, kid.g == gender::f) == kid.patronymic)
+            {
+                fits.push_back(std::move(candidate));
+            }
+        }
+        if (fits.empty()) return fallback;
+        return fits.at(core::bounded(r, fits.size()));
     }
 
     [[nodiscard]] static bool ends_with_(const std::wstring& text, std::wstring_view ending)
