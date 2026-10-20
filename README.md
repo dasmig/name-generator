@@ -21,7 +21,7 @@ Culturally appropriate first names and surnames from popular name databases, by 
 
 - **Surname Generation**. Randomly generates surnames, organized by culture.
 
-- **Full Names and Naming Conventions**. `get_full_name` composes a name by the culture's convention (family name first, two surnames, patronymics); `get_child_name` and `get_married_name` share surnames between people by the same rules.
+- **Full Names and Naming Conventions**. `get_full_name` composes a name by the culture's convention (family name first, two surnames, patronymics); `get_child_name`, `get_parent_name` and `get_married_name` share surnames between people by the same rules.
 
 - **Full Name Chaining**. Append one or more names and surnames with an intuitive chainable API.
 

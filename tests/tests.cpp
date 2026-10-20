@@ -1792,6 +1792,92 @@ TEST_CASE("child name: replay, plain names and errors", "[child]")
     REQUIRE(nobody.roles().size() == 1);
 }
 
+TEST_CASE("parent name: a single surname culture gives the father the child's family name", "[parent]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    for (std::uint64_t seed = 0; seed < 30; ++seed)
+    {
+        const auto child = g.get_full_name({.culture = culture::american}, seed);
+        const auto dad = g.get_parent_name(child, gender::m, seed);
+        const auto mum = g.get_parent_name(child, gender::f, seed);
+        REQUIRE(dad.composed());
+        REQUIRE(dad.family() == child.family());
+        REQUIRE(mum.to_json().find("\"female\"") != std::string::npos);
+        REQUIRE(dad.to_json().find("\"male\"") != std::string::npos);
+    }
+}
+
+TEST_CASE("parent name: it inverts get_child_name in every convention", "[parent]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    for (const auto c : {culture::american, culture::spanish, culture::portuguese, culture::russian,
+                         culture::icelandic, culture::chinese, culture::german})
+    {
+        for (std::uint64_t seed = 0; seed < 60; ++seed)
+        {
+            const auto [father, mother] = couple_of(c, seed);
+            const auto child = g.get_child_name(father, mother, {}, seed);
+            const auto dad = g.get_parent_name(child, gender::m, seed);
+            const auto mum = g.get_parent_name(child, gender::f, seed);
+            // The parents named back give the same child, but for the given name.
+            const auto again = g.get_child_name(dad, mum, {.gender = child.to_json().find("\"female\"") != std::string::npos ? gender::f : gender::m}, seed);
+            REQUIRE(again.family() == child.family());
+            REQUIRE(again.patronymic() == child.patronymic());
+        }
+    }
+}
+
+TEST_CASE("parent name: Russian father's given name gives the child's patronymic", "[parent]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    for (std::uint64_t seed = 0; seed < 50; ++seed)
+    {
+        const auto child = g.get_full_name({.culture = culture::russian}, seed);
+        const auto dad = g.get_parent_name(child, gender::m, seed);
+        const bool daughter = child.to_json().find("\"female\"") != std::string::npos;
+        REQUIRE(ng::patronymic_of(patronymic_style::east_slavic, dad.given(), daughter) == child.patronymic());
+        REQUIRE((daughter ? g.female_form(dad.family(), culture::russian) : dad.family()) == child.family());
+    }
+}
+
+TEST_CASE("parent name: two-surname cultures give each parent the surname the child took", "[parent]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    for (std::uint64_t seed = 0; seed < 50; ++seed)
+    {
+        const auto es = g.get_full_name({.culture = culture::spanish}, seed);
+        if (es.parts().size() == 3)
+        {
+            REQUIRE(g.get_parent_name(es, gender::m, seed).parts()[1] == es.parts()[1]);
+            REQUIRE(g.get_parent_name(es, gender::f, seed).parts()[1] == es.parts()[2]);
+        }
+        const auto pt = g.get_full_name({.culture = culture::portuguese}, seed);
+        if (pt.parts().size() == 3)
+        {
+            REQUIRE(g.get_parent_name(pt, gender::f, seed).parts().back() == pt.parts()[1]);
+            REQUIRE(g.get_parent_name(pt, gender::m, seed).parts().back() == pt.parts()[2]);
+        }
+    }
+}
+
+TEST_CASE("parent name: replay and errors", "[parent]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    const auto child = g.get_full_name({.culture = culture::german}, 3);
+    REQUIRE(g.get_parent_name(child, gender::m, 9).to_json() == g.get_parent_name(child, gender::m, 9).to_json());
+    REQUIRE(g.get_parent_name(child, gender::m, 9).seed() == 9);
+    REQUIRE_THROWS_AS(g.get_parent_name(child, gender::any, 1), std::invalid_argument);
+    const auto nobody = g.get_surname({.culture = culture::any}, 1);
+    ng empty;
+    REQUIRE_THROWS_AS(empty.get_parent_name(child, gender::m, 1), std::invalid_argument);
+    (void)nobody;
+}
+
 TEST_CASE("married name: a wife takes the husband's family name", "[child]")
 {
     using namespace dasmig;
