@@ -223,6 +223,15 @@ enum class name_role : std::uint8_t
     family2 ///< The second surname of a double surname.
 };
 
+/// @brief The words of a name the caller already has; see ng::compose_name().
+struct name_parts
+{
+    dasmig::gender gender = dasmig::gender::any; ///< `m` or `f`.
+    std::wstring given;                          ///< The given name.
+    std::wstring patronymic;                     ///< The patronymic; empty for none.
+    std::vector<std::wstring> family;            ///< One surname, or two; empty for none.
+};
+
 /// @brief The per-call choices of ng::get_child_name().
 struct child_name_request
 {
@@ -860,6 +869,32 @@ class ng
         return make_name_(p, wife._culture, wife.seed());
     }
 
+    /// @brief A name made from words the caller already has, put in the
+    ///        culture's order and carrying the roles of its parts.
+    ///
+    /// For a person whose name is known and whose relatives are to be named
+    /// to match: pass the result to get_child_name(), get_parent_name() or
+    /// get_married_name(), which read only the roles of the parts.
+    ///
+    /// @param parts The words of the name.
+    /// @param c The culture whose convention orders them; not `any`.
+    /// @param call_seed Seed recorded in the name's signature.
+    /// @return A composed name.
+    /// @throws std::invalid_argument If the culture is `any`, the gender is not
+    ///         male or female, or the given name is empty.
+    [[nodiscard]] name compose_name(const name_parts& parts, culture c, std::uint64_t call_seed = 0) const
+    {
+        if (c == culture::any) throw std::invalid_argument("compose_name: the culture must not be any");
+        if (parts.gender != gender::m && parts.gender != gender::f)
+        {
+            throw std::invalid_argument("compose_name: the gender must be male or female");
+        }
+        if (parts.given.empty()) throw std::invalid_argument("compose_name: the given name is empty");
+        const person p{.g = parts.gender, .given = parts.given, .patronymic = parts.patronymic,
+                       .family = parts.family};
+        return make_name_(p, c, call_seed);
+    }
+
     /// @brief Name a parent of an existing person, consistently with the
     ///        person's name; the inverse of get_child_name().
     ///
@@ -918,7 +953,18 @@ class ng
                 const bool paternal = cv.inheritance == surname_order::paternal_first;
                 const auto& inherited = kid.family.at(father == paternal ? 0 : 1);
                 if (p.family.size() < 2) p.family.push_back(pick_surname_(parent_gender, c, r.split("family2")));
-                p.family.at(paternal ? 0 : 1) = inherited;
+                const std::size_t kept = paternal ? 0 : 1;
+                // The surname the parent was not given by the child must differ
+                // from the inherited one when it can, as in draw_person_().
+                if (p.family.at(1 - kept) == inherited)
+                {
+                    const auto rf = r.split("family3");
+                    for (std::size_t attempt = 0; attempt < 8 && p.family.at(1 - kept) == inherited; ++attempt)
+                    {
+                        p.family.at(1 - kept) = pick_surname_(parent_gender, c, rf.split(attempt));
+                    }
+                }
+                p.family.at(kept) = inherited;
             }
             else if (father)
             {
@@ -1892,11 +1938,27 @@ class ng
         if (!cv.family_name || father.family.empty()) return {};
         if (cv.surnames == 2 && (father.family.size() == 2 || mother.family.size() == 2))
         {
-            if (cv.inheritance == surname_order::maternal_first)
+            const bool maternal_first = cv.inheritance == surname_order::maternal_first;
+            auto first = maternal_first ? mother.family.back() : father.family.front();
+            auto second = maternal_first ? father.family.back() : mother.family.front();
+            if (first == second)
             {
-                return {mother.family.back(), father.family.back()};
+                // Two parents who share a surname do not pass it on twice when the
+                // other surname of one of them is different.
+                const auto& of_second = maternal_first ? father.family : mother.family;
+                const auto& of_first = maternal_first ? mother.family : father.family;
+                const auto different = std::ranges::find_if(of_second, [&](const std::wstring& w) { return w != first; });
+                if (different != of_second.end())
+                {
+                    second = *different;
+                }
+                else if (const auto alt = std::ranges::find_if(of_first, [&](const std::wstring& w) { return w != second; });
+                         alt != of_first.end())
+                {
+                    first = *alt;
+                }
             }
-            return {father.family.front(), mother.family.front()};
+            return {first, second};
         }
         return {g == gender::f ? feminize_(father.family.back(), c, false) : father.family.back()};
     }

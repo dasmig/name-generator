@@ -2011,3 +2011,73 @@ TEST_CASE("full name: known answers", "[kat][convention]")
                          { names = dasmig::core::hash_combine(names, dasmig::core::fnv1a64(item.to_json())); });
     REQUIRE(names == 0xc3f5ad2062c146b9ULL);
 }
+
+TEST_CASE("parent name: a parent's two surnames differ when they can", "[parent]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    for (const auto c : {culture::spanish, culture::portuguese})
+    {
+        for (std::uint64_t seed = 0; seed < 500; ++seed)
+        {
+            const auto child = g.get_full_name({.culture = c}, seed);
+            for (const auto pg : {gender::m, gender::f})
+            {
+                const auto parent = g.get_parent_name(child, pg, seed);
+                std::vector<std::wstring> family;
+                for (std::size_t i = 0; i < parent.parts().size(); ++i)
+                {
+                    if (parent.roles()[i] == name_role::family || parent.roles()[i] == name_role::family2)
+                    {
+                        family.push_back(parent.parts()[i]);
+                    }
+                }
+                if (family.size() == 2) REQUIRE(family[0] != family[1]);
+            }
+        }
+    }
+}
+
+TEST_CASE("compose_name: words in the culture's order that relatives can be named from", "[compose]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    const auto us = g.compose_name({.gender = gender::f, .given = L"Mary", .patronymic = {}, .family = {L"Smith"}},
+                                   culture::american, 7);
+    REQUIRE(static_cast<std::wstring>(us) == L"Mary Smith");
+    REQUIRE(us.composed());
+    REQUIRE(us.given() == L"Mary");
+    REQUIRE(us.family() == L"Smith");
+    REQUIRE(us.seed() == 7);
+
+    const auto es = g.compose_name({.gender = gender::m, .given = L"Juan", .patronymic = {}, .family = {L"Garcia", L"Perez"}},
+                                   culture::spanish);
+    REQUIRE(static_cast<std::wstring>(es) == L"Juan Garcia Perez");
+    REQUIRE(es.family() == L"Garcia Perez");
+    // Relatives follow the words given.
+    const auto dad = g.get_parent_name(es, gender::m, 3);
+    REQUIRE(dad.parts()[1] == L"Garcia");
+    const auto kid = g.get_child_name(es, g.get_full_name({.gender = gender::f, .culture = culture::spanish}, 4), {}, 5);
+    REQUIRE(kid.parts()[1] == L"Garcia");
+
+    REQUIRE_THROWS_AS(g.compose_name({.gender = gender::m, .given = L"Juan", .patronymic = {}, .family = {}}, culture::any), std::invalid_argument);
+    REQUIRE_THROWS_AS(g.compose_name({.gender = gender::any, .given = L"Juan", .patronymic = {}, .family = {}}, culture::spanish), std::invalid_argument);
+    REQUIRE_THROWS_AS(g.compose_name({.gender = gender::m, .given = L"", .patronymic = {}, .family = {}}, culture::spanish), std::invalid_argument);
+}
+
+TEST_CASE("child name: parents who share a surname do not pass it on twice", "[child]")
+{
+    using namespace dasmig;
+    auto& g = lite();
+    const auto dad = g.compose_name({.gender = gender::m, .given = L"Juan", .patronymic = {}, .family = {L"Garcia", L"Lopez"}}, culture::spanish);
+    const auto mum = g.compose_name({.gender = gender::f, .given = L"Ana", .patronymic = {}, .family = {L"Garcia", L"Ruiz"}}, culture::spanish);
+    for (std::uint64_t seed = 0; seed < 10; ++seed)
+    {
+        const auto kid = g.get_child_name(dad, mum, {}, seed);
+        REQUIRE(kid.family() == L"Garcia Ruiz");
+    }
+    // With one surname each, the child has one.
+    const auto solo = g.compose_name({.gender = gender::f, .given = L"Eva", .patronymic = {}, .family = {L"Garcia"}}, culture::spanish);
+    const auto kid = g.get_child_name(g.compose_name({.gender = gender::m, .given = L"Luis", .patronymic = {}, .family = {L"Garcia"}}, culture::spanish), solo, {}, 1);
+    REQUIRE(kid.family() == L"Garcia");
+}

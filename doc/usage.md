@@ -193,7 +193,7 @@ Each appended part draws from the name's seed and its position, so replaying the
 
 ## Full Names, Children and Marriage
 
-`get_name` and `get_surname` draw one part and leave composing to you. `get_full_name` composes a whole name by the culture's convention. `get_child_name`, `get_parent_name` and `get_married_name` apply the culture's rules for sharing names between people.
+`get_name` and `get_surname` draw one part and leave composing to you. `get_full_name` composes a whole name by the culture's convention. `get_child_name`, `get_parent_name` and `get_married_name` apply the culture's rules for sharing names between people. `compose_name` puts words you already have (a person whose name is known) into the culture's order, so those functions can name their relatives to match.
 
 ```cpp
 auto& gen = dasmig::ng::instance();
