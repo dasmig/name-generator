@@ -16,7 +16,7 @@
 ///        incompatibly.
 #define DASMIG_CORE_VERSION_MAJOR 1
 /// @brief Minor version. Changes when features are added compatibly.
-#define DASMIG_CORE_VERSION_MINOR 2
+#define DASMIG_CORE_VERSION_MINOR 3
 /// @brief Patch version. Changes for fixes that keep output identical.
 #define DASMIG_CORE_VERSION_PATCH 0
 

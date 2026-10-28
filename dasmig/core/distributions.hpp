@@ -243,6 +243,94 @@ namespace detail
     return math::exp(normal(r, mu, sigma));
 }
 
+/// @brief Gamma-distributed double.
+///
+/// Marsaglia and Tsang (2000): with d = shape - 1/3 and c = 1 / sqrt(9 d),
+/// draw x = normal(r, 0, 1) and u = uniform01(r) until t = 1 + c x is
+/// positive, u is positive and log(u) < x^2 / 2 + d - d v + d log(v), where
+/// v = t^3 (a non-positive t redraws x without drawing u); return
+/// `d * v * scale`. A shape below 1 first draws u0 = 1 - uniform01(r), uses
+/// shape + 1, and multiplies the result by `exp(log(u0) / shape)`. log and exp
+/// are math::log and math::exp.
+///
+/// @param r Engine.
+/// @param shape Shape k (mean k * scale).
+/// @param scale Scale (0 returns 0 after the same draws).
+/// @return The variate (non-negative).
+/// @throws std::invalid_argument If @p shape is not finite and positive, or
+///         @p scale is not finite or is negative.
+[[nodiscard]] inline double gamma(rng& r, double shape, double scale) // NOLINT(bugprone-easily-swappable-parameters)
+{
+    if (!std::isfinite(shape) || !(shape > 0.0) || !std::isfinite(scale) || scale < 0.0)
+    {
+        throw std::invalid_argument("gamma: need finite shape > 0 and scale >= 0");
+    }
+    double boost = 1.0;
+    if (shape < 1.0)
+    {
+        const double u = 1.0 - uniform01(r); // (0, 1]
+        boost = math::exp(math::log(u) / shape);
+        shape += 1.0;
+    }
+    const double d = shape - (1.0 / 3.0);
+    const double c = 1.0 / std::sqrt(9.0 * d);
+    for (;;)
+    {
+        const double x = normal(r, 0.0, 1.0);
+        const double t = 1.0 + math::fenced(c * x);
+        if (t <= 0.0) continue;
+        const double v = t * t * t;
+        const double u = uniform01(r);
+        if (u <= 0.0) continue;
+        const double bound = math::fenced(0.5 * x * x) + d - math::fenced(d * v) +
+                             math::fenced(d * math::log(v));
+        if (math::log(u) < bound) return d * v * scale * boost;
+    }
+}
+
+/// @brief Beta-distributed double in [0, 1].
+///
+/// `x / (x + y)` with x = gamma(r, a, 1) drawn first and y = gamma(r, b, 1).
+/// For a mean m and a concentration k, pass a = m k and b = (1 - m) k.
+///
+/// @param r Engine.
+/// @param a First shape (alpha).
+/// @param b Second shape (beta).
+/// @return The variate.
+/// @throws std::invalid_argument If a shape is not finite and positive.
+[[nodiscard]] inline double beta(rng& r, double a, double b) // NOLINT(bugprone-easily-swappable-parameters)
+{
+    if (!std::isfinite(a) || !(a > 0.0) || !std::isfinite(b) || !(b > 0.0))
+    {
+        throw std::invalid_argument("beta: need finite shapes > 0");
+    }
+    const double x = gamma(r, a, 1.0);
+    const double y = gamma(r, b, 1.0);
+    return x / (x + y);
+}
+
+/// @brief Weibull-distributed double.
+///
+/// Inversion: e = -log(1 - uniform01(r)), then `scale * exp(log(e) / shape)`,
+/// or 0 when e is 0. Consumes one value.
+///
+/// @param r Engine.
+/// @param shape Shape k.
+/// @param scale Scale (0 returns 0).
+/// @return The variate (non-negative).
+/// @throws std::invalid_argument If @p shape is not finite and positive, or
+///         @p scale is not finite or is negative.
+[[nodiscard]] inline double weibull(rng& r, double shape, double scale) // NOLINT(bugprone-easily-swappable-parameters)
+{
+    if (!std::isfinite(shape) || !(shape > 0.0) || !std::isfinite(scale) || scale < 0.0)
+    {
+        throw std::invalid_argument("weibull: need finite shape > 0 and scale >= 0");
+    }
+    const double u = 1.0 - uniform01(r); // (0, 1]
+    const double e = -math::log(u);
+    return e > 0.0 ? scale * math::exp(math::log(e) / shape) : 0.0;
+}
+
 /// @brief Index chosen with probability proportional to a weight.
 ///
 /// Keeps the cumulative sums of the weights (added left to right). A draw is
