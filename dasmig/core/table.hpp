@@ -269,7 +269,7 @@ class layered_table
         // The row whose key satisfies @p matches(row_index), among those
         // stored under @p hash.
         template <typename Matches>
-        [[nodiscard]] std::optional<std::size_t> find(std::uint32_t hash, Matches&& matches) const
+        [[nodiscard]] std::optional<std::size_t> find(std::uint32_t hash, const Matches& matches) const
         {
             if (_slots.empty()) return std::nullopt;
             const std::size_t mask = _slots.size() - 1;
@@ -316,12 +316,12 @@ class layered_table
             const std::size_t mask = _slots.size() - 1;
             std::size_t i = hash & mask;
             while (_slots[i].row != vacant) i = (i + 1) & mask;
-            _slots[i] = {hash, row};
+            _slots[i] = {.hash = hash, .row = row};
         }
 
         void grow(std::size_t slots)
         {
-            std::vector<slot> old = std::move(_slots);
+            const std::vector<slot> old = std::move(_slots);
             _slots.assign(slots, slot{});
             for (const slot& s : old)
             {

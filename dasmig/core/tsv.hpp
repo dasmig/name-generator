@@ -593,24 +593,33 @@ class tsv_document
                 d.cells.reserve(line_count * width);
                 d.row_lines.reserve(line_count);
             }
-            std::string_view remaining = text_line;
-            for (;;)
-            {
-                const auto pos = remaining.find('\t');
-                const auto cell = remaining.substr(0, pos);
-                d.cells.push_back({static_cast<std::uint32_t>(cell.data() - d.text.data()),
-                                   static_cast<std::uint32_t>(cell.size())});
-                if (pos == std::string_view::npos) break;
-                remaining.remove_prefix(pos + 1);
-            }
-            d.cells.resize(d.cells.size() + (width - count));
-            d.row_lines.push_back(static_cast<std::uint32_t>(line));
+            add_row(text_line, static_cast<std::uint32_t>(line));
         }
         if (!have_header)
         {
             throw tsv_error{d.source, 0, "", "no header line"};
         }
         d.hash = canonical_hash();
+    }
+
+    // Store one data line's cells as offsets into the text, padded with empty
+    // cells to the column count.
+    void add_row(std::string_view text_line, std::uint32_t line)
+    {
+        auto& d = *_data;
+        const std::size_t first = d.cells.size();
+        std::string_view remaining = text_line;
+        for (;;)
+        {
+            const auto pos = remaining.find('\t');
+            const auto cell = remaining.substr(0, pos);
+            d.cells.push_back({.offset = static_cast<std::uint32_t>(cell.data() - d.text.data()),
+                               .length = static_cast<std::uint32_t>(cell.size())});
+            if (pos == std::string_view::npos) break;
+            remaining.remove_prefix(pos + 1);
+        }
+        d.cells.resize(first + d.columns.size());
+        d.row_lines.push_back(line);
     }
 
     static std::vector<std::string_view> split(std::string_view line)
