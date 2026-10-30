@@ -6,7 +6,8 @@
 
 /// @file core.hpp
 /// @brief dasmig-core: the shared foundation of the dasmig generator
-///        libraries (random engine, distributions, data tables, JSON).
+///        libraries (random engine, distributions, data tables, JSON, check
+///        digits, patterns, money and time-zone rules).
 /// @author Diego Dasso Migotto (diegomigotto at hotmail dot com)
 /// @see See doc/usage.md for the narrative tutorial.
 ///
@@ -16,11 +17,14 @@
 #include "core/version.hpp"
 
 #include "core/batch.hpp"
+#include "core/check_digits.hpp"
 #include "core/country.hpp"
 #include "core/dataset.hpp"
 #include "core/distributions.hpp"
 #include "core/json.hpp"
 #include "core/math.hpp"
+#include "core/money.hpp"
+#include "core/pattern.hpp"
 #include "core/resources.hpp"
 #include "core/rng.hpp"
 #include "core/seed_signature.hpp"
@@ -28,6 +32,7 @@
 #include "core/sinks.hpp"
 #include "core/table.hpp"
 #include "core/tsv.hpp"
+#include "core/tz.hpp"
 #include "core/utf8.hpp"
 #include "core/weighted_table.hpp"
 
