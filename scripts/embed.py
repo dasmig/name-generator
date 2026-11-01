@@ -17,10 +17,12 @@ not change.
 
 Usage:
   python embed.py RESOURCES_DIR --tier lite --name biodatagen \
-      --output dasmig/biodatagen_data.hpp [--include core.hpp] [--chunk-bytes 16000]
+      --output dasmig/biodatagen_data.hpp [--include core.hpp] [--chunk-bytes 16000] \
+      [--files a.tsv b.tsv]
 
 Every file below RESOURCES_DIR/<tier>/ is embedded, in sorted order, under
-the path "<tier>/<relative path>".
+the path "<tier>/<relative path>"; with --files, only those files, so a
+library can split its tables between headers behind separate macros.
 """
 
 import argparse
@@ -89,11 +91,17 @@ def literal_pieces(chunk: bytes):
     return pieces
 
 
-def generate(resources: Path, tier: str, name: str, include: str, chunk_bytes: int) -> str:
+def generate(resources: Path, tier: str, name: str, include: str, chunk_bytes: int, only=None) -> str:
     root = resources / tier
     if not root.is_dir():
         raise SystemExit(f"embed.py: {root} is not a directory")
-    files = sorted(p for p in root.rglob("*") if p.is_file())
+    if only:
+        missing = [f for f in only if not (root / f).is_file()]
+        if missing:
+            raise SystemExit(f"embed.py: not below {root}: {', '.join(missing)}")
+        files = sorted(root / f for f in only)
+    else:
+        files = sorted(p for p in root.rglob("*") if p.is_file())
     if not files:
         raise SystemExit(f"embed.py: no files below {root}")
 
@@ -149,10 +157,11 @@ def main(argv=None):
     parser.add_argument("--output", type=Path, required=True, help="header to write")
     parser.add_argument("--include", default="core.hpp", help="how the header includes the core")
     parser.add_argument("--chunk-bytes", type=int, default=16000, help="bytes per chunk (default 16000)")
+    parser.add_argument("--files", nargs="+", help="embed only these files of the tier (default: all)")
     args = parser.parse_args(argv)
     if not args.name.isidentifier():
         raise SystemExit("embed.py: --name must be a C++ identifier")
-    text = generate(args.resources, args.tier, args.name, args.include, args.chunk_bytes)
+    text = generate(args.resources, args.tier, args.name, args.include, args.chunk_bytes, args.files)
     args.output.write_text(text, encoding="ascii", newline="\n")
     print(f"wrote {args.output} ({len(text)} bytes)")
 
