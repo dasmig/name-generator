@@ -162,6 +162,8 @@ Tested with:
 | [device-generator](https://github.com/dasmig/device-generator) | Devices, browsers, user agents and IP addresses that fit together |
 | [email-generator](https://github.com/dasmig/email-generator) | Email addresses in each country's style |
 | [entity-generator](https://github.com/dasmig/entity-generator) | ECS-based entity generation |
+| [finance-generator](https://github.com/dasmig/finance-generator) | Bank accounts and payment cards in each country's form |
+| [id-generator](https://github.com/dasmig/id-generator) | National identity numbers, passports and identity cards that fit a person and a date |
 | [interest-generator](https://github.com/dasmig/interest-generator) | Religion, hobbies and favourite media by country, age and sex |
 | [nickname-generator](https://github.com/dasmig/nickname-generator) | Gamer-style nicknames |
 | [occupation-generator](https://github.com/dasmig/occupation-generator) | Employment status, education and occupation by country, age and sex |
@@ -170,6 +172,8 @@ Tested with:
 | [relationship-generator](https://github.com/dasmig/relationship-generator) | Families around a person: parents, siblings, partners and children |
 | [trait-generator](https://github.com/dasmig/trait-generator) | Personality traits with conflicts, synergies and Big Five axes |
 | [user-generator](https://github.com/dasmig/user-generator) | Complete user records: account, username, email, phone and address |
+| [vehicle-generator](https://github.com/dasmig/vehicle-generator) | Cars and motorcycles with plates and VINs that fit their country and date |
+| [weather-generator](https://github.com/dasmig/weather-generator) | Daily weather for any place on land and any date |
 
 ## License
 
